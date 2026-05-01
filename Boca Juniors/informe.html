@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Boca Juniors — Informe Ejecutivo</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root { --azul:#003087; --amarillo:#F5C800; --verde:#2E7D32; --rojo:#C62828; --naranja:#EF6C00; }
+  body { font-family: 'Segoe UI', system-ui, sans-serif; background: #F5F7FA; color: #1A1A2E; font-size: 15px; line-height: 1.7; }
+
+  header { background: var(--azul); color: #fff; padding: 22px 40px; border-bottom: 4px solid var(--amarillo); display:flex; align-items:center; gap:20px; }
+  header div { flex:1; }
+  header h1 { font-size: 22px; font-weight: 700; }
+  header p  { font-size: 12px; opacity: .7; margin-top: 4px; }
+
+  .doc { max-width: 900px; margin: 40px auto; padding: 0 24px 60px; }
+
+  h2 { font-size: 20px; font-weight: 800; color: var(--azul); border-bottom: 3px solid var(--amarillo);
+       padding-bottom: 10px; margin: 40px 0 24px; text-transform: uppercase; letter-spacing: .5px; }
+  h3 { font-size: 15px; font-weight: 700; color: var(--azul); margin: 28px 0 10px; }
+  p  { margin-bottom: 12px; }
+
+  .card { background: #fff; border-radius: 10px; padding: 24px 28px; margin-bottom: 20px;
+          box-shadow: 0 2px 10px rgba(0,0,0,.07); }
+
+  .alert { border-radius: 8px; padding: 14px 18px; margin: 16px 0; font-weight: 600; font-size: 14px; }
+  .alert.r { background: #FFEBEE; color: var(--rojo); border-left: 4px solid var(--rojo); }
+  .alert.n { background: #FFF3E0; color: var(--naranja); border-left: 4px solid var(--naranja); }
+  .alert.v { background: #E8F5E9; color: var(--verde); border-left: 4px solid var(--verde); }
+  .alert.a { background: #E3F2FD; color: var(--azul); border-left: 4px solid var(--azul); }
+  .alert.g { background: #FFF9E0; color: #7A6000; border-left: 4px solid var(--amarillo); }
+
+  .insight { background: #fff; border-radius: 10px; padding: 20px 24px; margin-bottom: 16px;
+             box-shadow: 0 2px 8px rgba(0,0,0,.07); border-top: 4px solid var(--amarillo); }
+  .insight.urgente  { border-top-color: var(--rojo); }
+  .insight.medio    { border-top-color: var(--naranja); }
+  .insight.positivo { border-top-color: var(--verde); }
+  .insight.gold     { border-top-color: var(--amarillo); }
+  .insight h4 { font-size: 14px; font-weight: 700; margin-bottom: 8px; }
+  .insight h4.urgente  { color: var(--rojo); }
+  .insight h4.medio    { color: var(--naranja); }
+  .insight h4.positivo { color: var(--verde); }
+  .insight h4.gold     { color: #7A6000; }
+  .insight p { font-size: 14px; color: #444; margin-bottom: 8px; }
+  .insight .accion { font-size: 13px; background: #F5F7FA; border-radius: 6px; padding: 8px 12px; color: #333; margin-top: 8px; }
+  .insight .accion strong { color: var(--azul); }
+
+  table { width: 100%; border-collapse: collapse; font-size: 13px; margin: 12px 0; }
+  th { background: var(--azul); color: #fff; padding: 8px 12px; text-align: left; font-size: 11px; text-transform: uppercase; }
+  td { padding: 8px 12px; border-bottom: 1px solid #F0F2F7; }
+
+  footer { text-align: center; padding: 20px; font-size: 11px; color: #aaa; margin-top: 20px; }
+  footer a { color: var(--azul); }
+</style>
+</head>
+<body>
+
+<header>
+  <div>
+    <h1>Boca Juniors — Informe Ejecutivo</h1>
+    <p>Documento de análisis · Temporada 2025/26 · Generado el 24/04/2026</p>
+  </div>
+  <img src="https://tmssl.akamaized.net/images/wappen/big/189.png" alt="Boca Juniors" style="height:64px;filter:drop-shadow(0 2px 6px rgba(0,0,0,.4));flex-shrink:0">
+</header>
+
+<div class="doc">
+
+<h2>Sección 1 — Explicación de la información</h2>
+
+<div class="card">
+  <h3>Plantel Deportivo — Valor de Mercado (Transfermarkt / Minuto Uno)</h3>
+  <p><strong>¿Qué es el valor de mercado?</strong> Es la estimación de cuánto valdría cada jugador si fuera vendido hoy en el mercado internacional. No es el sueldo ni el precio contractual: es la valuación del mercado basada en rendimiento, edad, posición y demanda. Transfermarkt es el estándar de referencia para este indicador a nivel global.</p>
+  <p><strong>¿De dónde vienen los datos?</strong> Los valores del plantel de Boca Juniors fueron extraídos del artículo de Minuto Uno sobre el Superclásico (abril 2026), que listó los 32 jugadores de Boca con sus valuaciones de Transfermarkt. Total del plantel: <strong>EUR 90.100.000</strong> — el plantel de mayor valor de mercado en Argentina, seguido por Racing (EUR 79.2M) y River (EUR 68M aprox.).</p>
+  <p><strong>¿Qué significa EUR 90.1M?</strong> Que si Boca vendiera todos los jugadores a precio de mercado, ingresaría EUR 90.1M. En la práctica, el valor real de negociación por jugador específico puede diferir. Lo relevante para la dirigencia es la <em>capacidad de generación de ingresos por transferencias</em> que representa este plantel.</p>
+  <p><strong>Los tres jugadores más valiosos</strong> (cada uno valuado en EUR 7M) son Santiago Ascacíbar (pivote, 29 años), Exequiel Zeballos (extremo, 24 años) y Milton Delgado (mediocampista, 20 años). Zeballos es el caso más urgente: su contrato vence en diciembre 2026 y las negociaciones de renovación están estancadas.</p>
+
+  <h3>Distribución etaria del plantel</h3>
+  <p>El plantel tiene <strong>4 jugadores de 17 a 21 años</strong> (base futura con bajo costo salarial y alto potencial de apreciación), <strong>10 jugadores de 22 a 26 años</strong> (la franja de mayor valor de mercado), <strong>8 jugadores de 27 a 30 años</strong> (madurez deportiva plena) y <strong>9 jugadores de 31 años en adelante</strong>. Este último número es elevado: un plantel con 9 jugadores veteranos implica costos salariales altos para activos con valor de mercado decreciente. Cavani (39), Marchesín (38), Herrera (36) y García (39) son los casos más extremos.</p>
+
+  <h3>Contratos que vencen en diciembre 2026</h3>
+  <p>Tres jugadores tienen contrato hasta el 31 de diciembre de 2026: <strong>Exequiel Zeballos</strong> (EUR 7M, extremo derecho titular), <strong>Kevin Zenón</strong> (EUR 4.5M, extremo/mediocampista) y <strong>Tomás Aranda</strong> (EUR 800K, prospecto categoría 2007). Un detalle crítico del derecho laboral argentino: cuando un contrato tiene menos de 6 meses de vigencia, el jugador puede negociar libremente con cualquier club del mundo. Eso significa que <strong>desde el 1 de julio de 2026</strong>, Zeballos y Zenón pueden firmar con cualquier club sin que Boca reciba un peso. La ventana de decisión es antes de esa fecha.</p>
+</div>
+
+<div class="card">
+  <h3>Finanzas Consolidadas — Ejercicio 121 (Jul 2024 – Jun 2025)</h3>
+  <p><strong>¿Qué es el superávit?</strong> Es la diferencia entre los ingresos totales del club y todos sus gastos en un período de 12 meses. Un superávit significa que el club generó más dinero del que gastó. Para un club de fútbol argentino, esto es la excepción — la mayoría opera con déficit crónico.</p>
+  <p><strong>El dato clave del Ejercicio 121:</strong> Boca Juniors cerró el ejercicio 2024-25 con un <strong>superávit de ARS 35.581 millones</strong> — calificado por la dirigencia como el mayor superávit de la historia del club. Este resultado fue aprobado por unanimidad en la asamblea de socios de octubre de 2025. El Patrimonio Neto del club alcanzó <strong>ARS 316.270 millones</strong>, también un máximo histórico.</p>
+  <p><strong>¿De dónde vienen los ingresos?</strong> Las cuotas de socios representan aproximadamente el 70% de los ingresos ordinarios del club — esto es inusualmente alto incluso para el estándar argentino y refleja la fortaleza de la masa societaria de Boca (323.586 socios). El 30% restante proviene principalmente de derechos televisivos, sponsors y transferencias de jugadores.</p>
+  <p><strong>Transferencias del ejercicio:</strong> Boca generó ingresos importantes por ventas de jugadores durante el Ej. 2024-25. Las principales fueron la venta de Cristian Medina (~USD 15M), Carlos Palacios (~USD 4.8M) y Ayrton Costa (~USD 3.5M). Combinadas, estas tres operaciones suman ~USD 23.3M — un ingreso extraordinario que contribuyó al superávit record.</p>
+  <p><strong>La masa salarial</strong> es estimada en ~ARS 2.300 millones anuales (~USD 19.8M), lo que equivale a aproximadamente ARS 44.5 millones semanales. Este dato no es público oficial, pero fue publicado por Diario Norte en 2025 con base en fuentes del club. Es un indicador relevante porque la masa salarial es el principal egreso recurrente de cualquier club de fútbol.</p>
+
+  <h3>Presupuesto 2025-26 (Ej. 122)</h3>
+  <p>La asamblea de octubre 2025 aprobó simultáneamente el balance del Ej. 121 y el presupuesto del Ej. 122 (julio 2025 – junio 2026). El presupuesto proyecta <strong>ingresos de ARS 171.000 millones</strong> y <strong>egresos de ARS 168.000 millones</strong>, es decir, un superávit proyectado de más de ARS 3.000 millones. Si bien el presupuesto es una proyección y puede verse afectado por factores externos (inflación, tipo de cambio, resultados deportivos), la aprobación de un presupuesto equilibrado indica disciplina financiera de la gestión actual.</p>
+
+  <h3>Ingresos por entradas — La Bombonera</h3>
+  <p>Los ingresos por entradas en La Bombonera durante el Ej. 2024-25 son estimados en aproximadamente USD 41 millones (fuente: Diario Norte). La Bombonera tiene capacidad para 54.000 espectadores y es uno de los estadios con mayor demanda de Argentina. Esta fuente de ingreso se vería amplificada por la Copa Libertadores 2026, donde los partidos de local generan ingresos por taquilla significativamente superiores a los partidos de liga.</p>
+</div>
+
+<div class="card">
+  <h3>Socios y Abonos</h3>
+  <p><strong>¿Cuántos socios tiene Boca?</strong> Al cierre de 2025, Boca Juniors tiene <strong>323.586 socios</strong>, lo que lo ubica como el <strong>segundo club más grande de Argentina</strong>, detrás de River Plate (351.487). Es más del doble que el tercer club en el ranking: Independiente (146.570). Esta masa societaria gigante es la principal fortaleza institucional de Boca — es la fuente de ingresos ordinarios más estable y predecible del club.</p>
+  <p><strong>Categorías de socios:</strong> La categoría principal es <strong>Activo</strong>, con una cuota de ARS 36.800 mensuales (febrero 2026). Existe la categoría <strong>Adherente</strong> (ARS 18.400/mes, la mitad del Activo), que incluye también a socios del interior y del exterior. Las categorías Vitalicio, Activo y Cadete están actualmente cerradas para nuevos ingresos — solo es posible asociarse como Adherente.</p>
+  <p><strong>¿Qué ingreso generan los socios?</strong> Si se toma solo la cuota Activa de ARS 36.800 aplicada a los 323.586 socios, el ingreso potencial anual es de <strong>ARS 142.900 millones</strong>. En la práctica, una porción de socios paga cuota Adherente (la mitad), por lo que el ingreso real es menor — pero en cualquier caso, las cuotas representan el 70% de los ingresos ordinarios según datos del balance. Esto explica por qué la masa societaria es el activo institucional más importante de Boca.</p>
+  <p><strong>¿Cómo compara Boca con la competencia?</strong> Boca y River son en Argentina los dos únicos clubes que superan los 300.000 socios. El siguiente es Independiente con 146.570 — menos de la mitad. Esta brecha convierte a Boca en uno de los pocos clubes de la región que puede financiar su operación corriente principalmente con ingresos propios de su base de socios, sin depender estructuralmente de la venta de jugadores.</p>
+</div>
+
+<div class="card">
+  <h3>Transferencias 2024-26 — Ventas, Libres y Cedidos</h3>
+  <p><strong>¿Qué muestra el tab "Transferencias 2024-26"?</strong> Resume todas las salidas de jugadores con impacto económico desde enero 2024 hasta la fecha: nueve ventas con compensación económica para Boca, doce salidas sin ingreso (libres y rescisiones), y los jugadores propios actualmente cedidos a otros clubes.</p>
+
+  <h3>Ventas con ingreso — ~USD 84M en 9 operaciones</h3>
+  <p>Las operaciones más significativas del período fueron la venta de Cristian Medina (~USD 15M), Valentín Barco (~USD 13.5M) y Luca Langoni (~USD 10M). En todos los casos, Boca vendió <em>por encima</em> del valor de mercado Transfermarkt al momento de la operación — ratio promedio de 1.8 veces el VM en las operaciones más grandes. Esto indica una gestión de mercado eficiente: el club no "liquidó" activos, sino que negoció desde posición de fortaleza.</p>
+  <p>El <strong>balance neto de transferencias</strong> del período es +USD 41M: Boca ingresó ~USD 84M y reinvirtió ~USD 43M en refuerzos. Esto implica que las transferencias generaron un excedente neto positivo — es decir, Boca mejoró el plantel gastando menos de lo que recibió.</p>
+
+  <h3>VM resignada en libres y rescisiones — ~€10.7M en 12 salidas</h3>
+  <p>Este indicador muestra el valor de mercado total de jugadores que Boca no pudo convertir en ingreso: salidas por vencimiento de contrato o rescisión mutua. El caso más importante es <strong>Valentini (€4M resignados)</strong>, que se fue libre a Fiorentina. El caso <strong>Almendra</strong> (€1.5M resignados) es distinto: el jugador fue desvinculado por conflicto institucional y existe un juicio judicial activo. Advíncula (€800K) firmó rescisión anticipada cuando aún tenía contrato hasta diciembre 2026.</p>
+  <p>La VM resignada no es "dinero gastado" directamente — es el valor que Boca no capturó porque los jugadores se fueron sin compensación. Doce salidas por esta vía en dos años representa un área de mejora en la gestión de contratos.</p>
+
+  <h3>Cedidos propios a préstamo (sección inferior del tab Plantel)</h3>
+  <p>Son jugadores bajo contrato con Boca que están temporalmente en otro club. Boca los puede recuperar, vender desde su posición propietaria, o dejar que el club receptor ejerza una opción de compra. La tabla muestra el club de destino, el vencimiento del préstamo, la opción de compra (si existe) y la tendencia de rendimiento (↑ → ↓). Estos jugadores son activos de Boca: a diferencia de los préstamos recibidos (como los que Boca recibe de otros clubes), Boca tiene control sobre su futuro.</p>
+</div>
+
+<h2>Sección 2 — Insights y Recomendaciones</h2>
+
+<div class="insight urgente">
+  <h4 class="urgente">⚠ URGENTE — Zeballos y Zenón: ventana crítica antes del 1 de julio de 2026</h4>
+  <p>Dos jugadores clave con contrato hasta diciembre 2026 pueden negociar libremente con terceros a partir del 1 de julio de 2026. Ese momento —que ocurre en 10 semanas— es el punto de inflexión: antes del 1/7, Boca controla la negociación y puede imponer condiciones. Después del 1/7, la iniciativa pasa al jugador.</p>
+  <p><strong>Exequiel Zeballos (EUR 7M, extremo derecho):</strong> Es el caso más complejo. Napoli confirmó interés a través de su director de fútbol. Su cláusula de rescisión es USD 20M. Las diferencias en la negociación de renovación no son solo de monto sino también de duración del nuevo contrato. Zeballos está recuperándose de un desgarro muscular (perdió 11 partidos consecutivos), lo que puede afectar el valor de cualquier transferencia inmediata — pero también puede ser el último momento para negociar desde una posición de fortaleza si el club decide vender. Ver análisis específico en <em>analisis_zeballos.html</em>.</p>
+  <p><strong>Kevin Zenón (EUR 4.5M, extremo/mediocampista):</strong> La situación de Zenón es distinta. Boca intentó venderlo a Olympiacos en enero 2025 (oferta de EUR 7M rechazada, según reportes). No tiene club comprador concreto ahora, pero tampoco renovación. Si Boca no lo vende ni renueva antes del 1/7, el jugador podrá acordar con un tercero un contrato a partir de enero 2027 — y Boca no recibirá nada por un activo que hoy vale EUR 4.5M.</p>
+  <div class="accion"><strong>Acción:</strong> Resolver ambas situaciones antes del 1 de julio. Para Zeballos: definir renovación o apertura formal al mercado con precio mínimo USD 20M (cláusula). Para Zenón: renovar o buscar comprador activamente en los próximos 60 días. Cada semana sin decisión erosiona el poder negociador del club.</div>
+</div>
+
+<div class="insight urgente">
+  <h4 class="urgente">⚠ URGENTE — Tomás Aranda: renovar antes de que el contrato venza</h4>
+  <p>Aranda tiene 18 años (categoría 2007), fue elogiado públicamente por el cuerpo técnico y tiene su primer contrato profesional venciendo en diciembre 2026. Es el prospecto más joven de los tres contratos urgentes. A EUR 800K de valor de mercado, su renovación no tiene costo económico significativo — pero su eventual libre (si no se renueva) sí tendría costo. El riesgo aquí no es la venta: es perderlo sin compensación.</p>
+  <div class="accion"><strong>Acción:</strong> Renovar el contrato de Aranda antes del segundo semestre de 2026, idealmente con cláusula de rescisión que lo proteja como activo del club. No es urgente por su impacto deportivo inmediato, sino por el riesgo de pérdida gratuita de un prospecto formado en el club.</div>
+</div>
+
+<div class="insight positivo">
+  <h4 class="positivo">✓ FORTALEZA ESTRUCTURAL — Superávit ARS 35.581M: Boca opera sin necesidad de vender jugadores</h4>
+  <p>El resultado más significativo del balance Ej. 121 es el superávit histórico de ARS 35.581 millones, aprobado por unanimidad en asamblea. Más importante que el número en sí es lo que revela sobre la estructura financiera del club: Boca financia su operación principalmente con las cuotas de sus 323.586 socios (~70% de ingresos ordinarios). Las ventas de jugadores (Medina USD 15M, Palacios USD 4.8M, Costa USD 3.5M) son ingresos extraordinarios que <em>potencian</em> el resultado, pero no son la fuente de equilibrio del presupuesto ordinario.</p>
+  <p>Esta estructura es excepcional en el fútbol argentino. La mayoría de los clubes de Primera División necesitan vender al menos un jugador por ejercicio para no cerrar en déficit. Boca, con 323.586 socios pagando ARS 36.800 al mes, tiene una base de ingresos recurrentes que ningún otro club del país — excepto River — puede replicar.</p>
+  <div class="accion"><strong>Acción:</strong> Proteger este modelo. Las decisiones de inversión (contrataciones, infraestructura, formativas) deben evaluarse contra el principio de que el club no necesita depender de transferencias para equilibrar el presupuesto ordinario. Si se contrata a costa del equilibrio ordinario, se pierde la mayor fortaleza institucional del club.</div>
+</div>
+
+<div class="insight positivo">
+  <h4 class="positivo">✓ FORTALEZA — EUR 90.1M en valor de plantel: el mayor capital deportivo de Argentina</h4>
+  <p>Con EUR 90.100.000 en valor de mercado total (Minuto Uno / Transfermarkt, abr 2026), Boca Juniors tiene el plantel de mayor valor del fútbol argentino — por encima de Racing (EUR 79.2M) y River (EUR 68M aprox.). Los 10 jugadores más valiosos suman EUR 56.7M, encabezados por Ascacíbar, Zeballos y Delgado (EUR 7M cada uno).</p>
+  <p>Este capital deportivo representa capacidad real de generación de ingresos por transferencias. La tendencia histórica reciente lo confirma: en el Ej. 2024-25, Boca generó ~USD 23.3M por ventas de tres jugadores. Si en el Ej. 2025-26 se concreta la venta de Zeballos a Napoli (cláusula USD 20M), el ingreso por transferencias de ese ejercicio podría superar el del año anterior.</p>
+  <div class="accion"><strong>Acción:</strong> Mapear sistemáticamente los contratos y las ventanas de mayor valor de venta para cada jugador. El valor de mercado no se mantiene constante: sube con el rendimiento y baja con la edad, las lesiones y el tiempo de contrato remanente. La política de renovación debe sincronizarse con el ciclo de valor de cada jugador.</div>
+</div>
+
+<div class="insight positivo">
+  <h4 class="positivo">✓ FORTALEZA — 323.586 socios: base institucional inigualable en Argentina</h4>
+  <p>Boca Juniors es el segundo club con más socios de Argentina (detrás de River por apenas 27.901), pero su ventaja sobre el tercero (Independiente, 146.570) es de más del doble. Esta masa societaria es la fuente de ingresos más estable y predecible del club. Con una cuota Activo de ARS 36.800/mes, el potencial de ingreso anual solo por cuotas supera los ARS 142.000 millones — una cifra que ningún otro club argentino puede alcanzar por vía societaria.</p>
+  <p>La única restricción actual es que las categorías Activo, Vitalicio y Cadete están cerradas para nuevos ingresos. Los nuevos socios solo pueden ingresar como Adherentes (ARS 18.400/mes, la mitad). Esto limita el crecimiento del ingreso por cuotas en el corto plazo.</p>
+  <div class="accion"><strong>Acción:</strong> Evaluar si la apertura controlada de nuevas altas en categoría Activo (con criterios de residencia y cumplimiento) podría incrementar el ingreso por cuotas sin comprometer la capacidad operativa del club. Incluso 5.000 nuevos socios Activos representarían un ingreso adicional de ARS 2.200M anuales.</div>
+</div>
+
+<div class="insight gold">
+  <h4 class="gold">★ OPORTUNIDAD — Copa Libertadores 2026: la mayor plataforma comercial de la temporada</h4>
+  <p>Boca clasificó a la Copa Libertadores 2026 tras ganar el Superclásico en noviembre 2025 y finalizar con buen posicionamiento en el Clausura 2025. La Copa Libertadores tiene implicancias directas en la gestión del plantel en los próximos meses:</p>
+  <p>1. <strong>Ingresos por taquilla amplificados:</strong> Los partidos de Copa Libertadores en La Bombonera generan ingresos por entrada significativamente superiores a los de liga. Con 54.000 espectadores y precios en dólares para partidos internacionales, cada partido de local puede generar varios millones de dólares adicionales.</p>
+  <p>2. <strong>Exposición internacional = mayor valor de mercado:</strong> Un jugador que brilla en Copa Libertadores puede ver su valor de mercado incrementarse en 20-40% en una sola temporada. Esto aplica especialmente a Zeballos, Zenón, Di Lollo y Delgado — jugadores en edad de crecimiento de valor que tendrán proyección continental.</p>
+  <p>3. <strong>Costo deportivo de vender jugadores clave ahora:</strong> Cualquier transferencia de Zeballos o Zenón antes del inicio de la Copa Libertadores debilita el plantel justo antes del torneo más importante. La dirigencia debe sopesar el ingreso económico de una venta contra el impacto deportivo y comercial de participar con el plantel completo.</p>
+  <div class="accion"><strong>Acción:</strong> La Copa Libertadores no es solo un objetivo deportivo — es una oportunidad de negocio. Presupuestar los ingresos adicionales de taquilla, sponsors específicos del torneo y potencial premio monetario (el campeón de Copa Libertadores recibe ~USD 23M de CONMEBOL). Evaluar si retrasar la venta de Zeballos hasta junio (post fase de grupos) maximiza el precio de venta y los ingresos del club.</div>
+</div>
+
+<div class="insight positivo">
+  <h4 class="positivo">✓ FORTALEZA INESPERADA — Leandro Paredes: el mejor jugador del plantel desde que regresó</h4>
+  <p>Paredes regresó a Boca el 11 de julio de 2025, después de más de 11 años en Europa (Roma, Zenit, PSG, Juventus). Desde ese día no tuvo un solo partido con rating por debajo de 7 en SofaScore — en 30 partidos consecutivos. Fue elegido <strong>Player of the Season del Torneo Clausura 2025 por SofaScore</strong>: 17 PJ, 1G, 4A en ese torneo. En la Liga Profesional 2026 promedia <strong>7.5 de rating en 13 PJ</strong>. En sus dos partidos de Copa Libertadores 2026, promedió <strong>8.6</strong>.</p>
+  <p>Sus números acumulados desde el regreso (30 PJ): <strong>3 goles, 7 asistencias, 70 pases decisivos, 88% precisión de pase, 79% de regates completados, 150 duelos ganados</strong>. En el LPF Apertura 2026 (13 PJ, 963 min): <strong>rating SofaScore 7.77 — el más alto del plantel</strong>, 2G, 3A. Esto no es un jugador que vuelve a despedirse — es el cerebro y motor del equipo.</p>
+  <p>Paredes llegó formado a los 7 años por Boca. Debutó en Primera a los 15. Se fue para crecer en Europa y volvió campeón del mundo. Su regreso es el cierre de una historia institucional que el club debe honrar: Paredes se retira en Boca cuando él lo decida. No es una negociación — es un compromiso.</p>
+  <div class="accion"><strong>Postura institucional:</strong> Renovar en los términos que Paredes proponga. No tratar su continuidad como una variable de optimización salarial. El retiro de Paredes en Boca vale más en términos de identidad institucional que cualquier ahorro de masa salarial.</div>
+</div>
+
+<div class="insight medio">
+  <h4 class="medio">⚡ MEDIO PLAZO — Veteranos sin retorno de valor: liberar masa salarial</h4>
+  <p>Boca tiene 8 jugadores de 31 años o más (excluyendo a Paredes): Merentiel (31), Ángel Romero (33), Battaglia (34), Janson (31), Cavani (39), Marchesín (38), Herrera (36) y Javier García (39). <strong>Marchesín está fuera de competencia hasta 2027 como mínimo</strong> tras operarse de ACL en Copa Libertadores (abr 2026) — su situación se resuelve sola. El valor de mercado combinado de Cavani, Herrera y García es marginal en relación a sus costos salariales.</p>
+  <p>El cuerpo técnico (Úbeda) ya comunicó que Martegani y Janson no están en sus planes. Cavani (39), Marchesín (38) y Herrera (36) están en el tramo final de sus carreras con contribución deportiva decreciente. La no renovación de estos contratos liberaría masa salarial para inversiones estratégicas.</p>
+  <div class="accion"><strong>Acción:</strong> No renovar a Cavani, Marchesín, Herrera ni García. Evaluar salida de Janson y Martegani (rescindir o vender). El ahorro salarial de no renovar a los cuatro más veteranos puede financiar una incorporación joven de impacto.</div>
+</div>
+
+<div class="insight positivo">
+  <h4 class="positivo">✓ FORTALEZA — ~USD 84M en ventas 2024-26: Boca opera como exportador neto de talento</h4>
+  <p>Con nueve ventas por ~USD 84M y una reinversión de ~USD 43M en refuerzos, Boca generó un excedente neto de +USD 41M por transferencias en el período 2024-2026. En todos los casos documentados, el precio cobrado superó el valor Transfermarkt del jugador al momento de la venta (ratio promedio 1.8x). Esto revela una capacidad negociadora superior al promedio del fútbol argentino — el club no necesitó vender bajo presión financiera.</p>
+  <p>Combinado con el superávit operativo del Ej. 121 (ARS 35.581M) que tiene como base los ingresos societarios, el modelo financiero de Boca tiene dos pilares independientes: una operación corriente financiada por socios, y un flujo extraordinario positivo generado por transferencias. La coexistencia de ambos es la principal fortaleza institucional del club.</p>
+  <div class="accion"><strong>Acción:</strong> Sostener el modelo: vender cuando el precio es favorable, no cuando el club necesita fondos urgentes. La fortaleza financiera documentada permite negociar con tiempo y rechazar ofertas por debajo del valor de mercado.</div>
+</div>
+
+<div class="insight medio">
+  <h4 class="medio">⚡ MEDIO PLAZO — €10.7M en VM resignada: 12 salidas sin ingreso en 2 años es demasiado</h4>
+  <p>Si bien la VM resignada incluye casos justificados (Advíncula por decisión técnica de Úbeda, veteranos con contrato cumplido), el número acumulado de 12 salidas sin compensación en dos años es elevado. Los tres casos con mayor impacto son Valentini (€4M libre a Fiorentina), Almendra (€1.5M con conflicto institucional, juicio activo) y Advíncula (€800K con contrato vigente rescindido anticipadamente).</p>
+  <p>El caso Almendra en particular combina pérdida económica con daño institucional: un conflicto que llegó a instancias judiciales genera publicidad negativa, incertidumbre jurídica y puede afectar la confianza de otros jugadores en los términos institucionales del club. Su resolución —independientemente del resultado judicial— debe manejarse con criterio de imagen y no solo económico.</p>
+  <div class="accion"><strong>Acción:</strong> Para los jugadores con contrato que vence en ≤18 meses, iniciar la negociación de renovación o venta con al menos 12 meses de anticipación. Los casos Zeballos y Zenón son los más urgentes. El objetivo es no repetir la situación de Valentini, donde Boca perdió €4M de valor sin compensación por no renovar a tiempo.</div>
+</div>
+
+<div class="card" style="border-top: 3px solid #ccc;">
+  <h3>Brechas de información — Datos no disponibles públicamente</h3>
+  <ul style="margin-left:20px;margin-top:8px;line-height:2">
+    <li><strong>Desglose exacto de ingresos ordinarios:</strong> El Ej. 121 fue aprobado en asamblea pero el balance completo con Anexo III (desglose línea por línea de cuotas, TV, sponsors, etc.) no está publicado en el sitio oficial de Boca. El dato del 70% cuotas proviene de reportes periodísticos con base en declaraciones del club.</li>
+    <li><strong>Historial de cuotas sociales:</strong> Solo se confirmó la cuota Activo de febrero 2026 (ARS 36.800) y la Adherente (ARS 18.400). No fue posible obtener la serie histórica completa para construir un gráfico de evolución y calcular el ajuste real vs. inflación.</li>
+    <li><strong>Activos vs. al corriente de pago:</strong> El dato de 323.586 es el padrón total registrado. No hay información pública sobre cuántos socios están al corriente de pago ni sobre la distribución por categoría (Activo / Adherente / Vitalicio).</li>
+    <li><strong>Sueldos individuales del plantel:</strong> La masa salarial de ~ARS 2.300M/año es una estimación de Diario Norte (2025), no un dato oficial del balance. Los contratos individuales son privados.</li>
+    <li><strong>Condiciones de la venta de Medina:</strong> El valor ~USD 15M fue reportado por Infobae Deportes, pero las condiciones de pago (cuotas, bonos condicionales, % de reventa) no son públicas.</li>
+  </ul>
+  <p style="margin-top:12px;font-size:12px;color:#888"><em>Fuentes primarias verificadas: asamblea de socios oct 2025 (superávit ARS 35.581M, PN ARS 316.270M, presupuesto 2025-26), bocajuniors.com.ar (presupuesto), Transfermarkt / Minuto Uno (valores de plantel, abr 2026), La Número 12 (cuotas feb 2026), AFA (ranking socios 2025).</em></p>
+</div>
+
+</div>
+
+<footer>
+  Fuentes:
+  <a href="https://www.bocajuniors.com.ar" target="_blank">Boca Juniors Oficial</a> (balance Ej. 121, presupuesto Ej. 122, oct 2025) ·
+  <a href="https://www.minutouno.com" target="_blank">Minuto Uno</a> (valores de plantel, abr 2026) ·
+  <a href="https://www.transfermarkt.us/ca-boca-juniors/startseite/verein/189" target="_blank">Transfermarkt</a> ·
+  <a href="https://lanumero12.com.ar" target="_blank">La Número 12</a> (cuotas, feb 2026) ·
+  <a href="https://www.dobleamarilla.com.ar" target="_blank">Doble Amarilla</a> ·
+  AFA (ranking socios 2025) ·
+  Diario Norte, Diario Xeneize, Infobae Deportes (datos financieros complementarios, 2025).
+  Actualizado el 29/04/2026.
+</footer>
+</body>
+</html>

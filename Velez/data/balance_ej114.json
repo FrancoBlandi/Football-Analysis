@@ -1,0 +1,24 @@
+{
+  "fecha_extraccion": "2026-04-19",
+  "fuente_url": "https://velez.com.ar/pdf/2024-balance-general.pdf",
+  "situacion_patrimonial": {
+    "total_activo": 61190773672989445204,
+    "activo_corriente": null,
+    "activo_no_corriente": null,
+    "total_pasivo": null,
+    "pasivo_corriente": null,
+    "pasivo_no_corriente": null,
+    "patrimonio_neto": null
+  },
+  "recursos_gastos": {
+    "recursos_ordinarios_total": null,
+    "gastos_ordinarios_total": null,
+    "resultados_financieros": 1540413211421746164711,
+    "resultado_ejercicio": null
+  },
+  "_debug": {
+    "pagina_activo": 41,
+    "pagina_pasivo": 42,
+    "pagina_recursos_gastos": 8
+  }
+}

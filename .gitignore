@@ -1,0 +1,16 @@
+# Claude internal
+.claude/settings.json
+.claude/settings.local.json
+.mcp.json
+
+# Patch scripts temporales
+lpf/patch*.py
+lpf/generate_dashboard.py
+Velez/data/generar_excels.py
+
+# JSON intermedios grandes
+lpf/lpf_data.json
+lpf/lpf_slim.json
+
+# Power BI
+*.pbix

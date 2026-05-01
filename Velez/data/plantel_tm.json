@@ -1,0 +1,198 @@
+{
+  "club": "Velez Sarsfield",
+  "club_id": 1029,
+  "fecha_extraccion": "2026-04-19",
+  "fuente": "https://www.transfermarkt.es/verein/kader/verein/1029",
+  "valor_total_eur": 32225000,
+  "jugadores": [
+    {
+      "nombre": "Tomás Marchiori",
+      "posicion": "Portero",
+      "edad": "30",
+      "valor_eur": 2500000,
+      "contrato_hasta": "31/12/2028"
+    },
+    {
+      "nombre": "Álvaro Montero",
+      "posicion": "Portero",
+      "edad": "31",
+      "valor_eur": 2500000,
+      "contrato_hasta": "31/12/2026"
+    },
+    {
+      "nombre": "Álvaro Busso",
+      "posicion": "Portero",
+      "edad": "19",
+      "valor_eur": 100000,
+      "contrato_hasta": "-"
+    },
+    {
+      "nombre": "Emanuel Mammana",
+      "posicion": "Defensa central",
+      "edad": "30",
+      "valor_eur": 2500000,
+      "contrato_hasta": "31/12/2028"
+    },
+    {
+      "nombre": "Aarón Quirós",
+      "posicion": "Defensa central",
+      "edad": "24",
+      "valor_eur": 2200000,
+      "contrato_hasta": "31/12/2027"
+    },
+    {
+      "nombre": "Lisandro Magallán",
+      "posicion": "Defensa central",
+      "edad": "32",
+      "valor_eur": 1200000,
+      "contrato_hasta": "31/12/2027"
+    },
+    {
+      "nombre": "Thiago Silvero",
+      "posicion": "Defensa central",
+      "edad": "20",
+      "valor_eur": 300000,
+      "contrato_hasta": "31/12/2028"
+    },
+    {
+      "nombre": "Leo Cristaldo",
+      "posicion": "Defensa central",
+      "edad": "17",
+      "valor_eur": 0,
+      "contrato_hasta": "31/12/2027"
+    },
+    {
+      "nombre": "Elías Gómez",
+      "posicion": "Lateral izquierdo",
+      "edad": "31",
+      "valor_eur": 1300000,
+      "contrato_hasta": "31/12/2028"
+    },
+    {
+      "nombre": "Demián Domínguez",
+      "posicion": "Lateral izquierdo",
+      "edad": "20",
+      "valor_eur": 0,
+      "contrato_hasta": "31/12/2027"
+    },
+    {
+      "nombre": "Joaquín García",
+      "posicion": "Lateral derecho",
+      "edad": "24",
+      "valor_eur": 2700000,
+      "contrato_hasta": "31/12/2027"
+    },
+    {
+      "nombre": "Jano Gordon",
+      "posicion": "Lateral derecho",
+      "edad": "21",
+      "valor_eur": 1200000,
+      "contrato_hasta": "31/12/2028"
+    },
+    {
+      "nombre": "Claudio Baeza",
+      "posicion": "Pivote",
+      "edad": "32",
+      "valor_eur": 1700000,
+      "contrato_hasta": "31/12/2027"
+    },
+    {
+      "nombre": "Tobías Andrada",
+      "posicion": "Mediocentro",
+      "edad": "19",
+      "valor_eur": 3000000,
+      "contrato_hasta": "31/12/2029"
+    },
+    {
+      "nombre": "Lucas Robertone",
+      "posicion": "Mediocentro",
+      "edad": "29",
+      "valor_eur": 2000000,
+      "contrato_hasta": "31/12/2026"
+    },
+    {
+      "nombre": "Rodrigo Aliendro",
+      "posicion": "Mediocentro",
+      "edad": "35",
+      "valor_eur": 400000,
+      "contrato_hasta": "31/12/2027"
+    },
+    {
+      "nombre": "Diego Valdés",
+      "posicion": "Mediocentro ofensivo",
+      "edad": "32",
+      "valor_eur": 2800000,
+      "contrato_hasta": "31/12/2027"
+    },
+    {
+      "nombre": "Manuel Lanzini",
+      "posicion": "Mediocentro ofensivo",
+      "edad": "33",
+      "valor_eur": 1000000,
+      "contrato_hasta": "31/12/2026"
+    },
+    {
+      "nombre": "Maximiliano Porcel",
+      "posicion": "Mediocentro ofensivo",
+      "edad": "20",
+      "valor_eur": 75000,
+      "contrato_hasta": "31/12/2027"
+    },
+    {
+      "nombre": "Matías Arias",
+      "posicion": "Mediocentro ofensivo",
+      "edad": "18",
+      "valor_eur": 50000,
+      "contrato_hasta": "31/12/2028"
+    },
+    {
+      "nombre": "Matías Pellegrini",
+      "posicion": "Extremo izquierdo",
+      "edad": "26",
+      "valor_eur": 1500000,
+      "contrato_hasta": "31/12/2026"
+    },
+    {
+      "nombre": "Álex Verón",
+      "posicion": "Extremo izquierdo",
+      "edad": "17",
+      "valor_eur": 50000,
+      "contrato_hasta": "31/12/2027"
+    },
+    {
+      "nombre": "Rodrigo Piñeiro",
+      "posicion": "Extremo derecho",
+      "edad": "26",
+      "valor_eur": 350000,
+      "contrato_hasta": "31/12/2026"
+    },
+    {
+      "nombre": "Imanol Machuca",
+      "posicion": "Extremo derecho",
+      "edad": "26",
+      "valor_eur": 0,
+      "contrato_hasta": "31/12/2026"
+    },
+    {
+      "nombre": "Florián Monzón",
+      "posicion": "Delantero centro",
+      "edad": "25",
+      "valor_eur": 1800000,
+      "contrato_hasta": "31/12/2027"
+    },
+    {
+      "nombre": "Braian Romero",
+      "posicion": "Delantero centro",
+      "edad": "34",
+      "valor_eur": 700000,
+      "contrato_hasta": "31/12/2027"
+    },
+    {
+      "nombre": "Dilan Godoy",
+      "posicion": "Delantero centro",
+      "edad": "20",
+      "valor_eur": 300000,
+      "contrato_hasta": "31/12/2028"
+    }
+  ]
+}

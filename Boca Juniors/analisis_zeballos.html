@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Exequiel Zeballos — Análisis Ejecutivo · Boca Juniors</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --azul: #003087; --amarillo: #F5C800; --blanco: #fff;
+    --verde: #2E7D32; --rojo: #C62828; --naranja: #EF6C00;
+    --gris: #F5F7FA; --texto: #1A1A2E;
+  }
+  body { font-family: 'Segoe UI', system-ui, sans-serif; background: var(--gris); color: var(--texto); font-size: 14px; line-height: 1.6; }
+
+  header { background: var(--azul); color: #fff; padding: 22px 40px; display: flex; align-items: center; gap: 20px; }
+  header .titulos { flex: 1; }
+  header h1 { font-size: 20px; font-weight: 800; }
+  header p  { font-size: 12px; opacity: .7; margin-top: 3px; }
+  .tipo { display:inline-block; background: var(--amarillo); color: var(--azul); padding: 3px 10px; border-radius: 20px; font-size: 11px; font-weight: 700; margin-bottom: 6px; letter-spacing: .5px; }
+
+  .doc { max-width: 1100px; margin: 0 auto; padding: 32px 24px 60px; }
+  h2 { font-size: 12px; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; color: var(--azul); border-bottom: 2px solid var(--amarillo); padding-bottom: 8px; margin: 36px 0 20px; }
+
+  .card { background: #fff; border-radius: 10px; padding: 22px 24px; box-shadow: 0 2px 8px rgba(0,0,0,.07); }
+  .card h3 { font-size: 10px; font-weight: 700; color: #999; text-transform: uppercase; letter-spacing: .6px; margin-bottom: 14px; }
+
+  /* HERO */
+  .hero { display: grid; grid-template-columns: auto 1fr; gap: 28px; align-items: center;
+          background: linear-gradient(135deg, var(--azul) 55%, #004BB5 100%);
+          border-radius: 12px; padding: 28px 32px; color: #fff; margin-bottom: 28px; }
+  .hero-avatar { width: 100px; height: 100px; border-radius: 50%; background: rgba(255,255,255,.12);
+                 border: 3px solid var(--amarillo); display: flex; align-items: center;
+                 justify-content: center; font-size: 36px; font-weight: 900; flex-shrink: 0; letter-spacing:-1px; }
+  .hero-name { font-size: 30px; font-weight: 900; letter-spacing: -.4px; }
+  .hero-role { font-size: 14px; opacity: .8; margin-top: 4px; }
+  .hero-tags { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 12px; }
+  .hero-tag { background: rgba(255,255,255,.15); border: 1px solid rgba(255,255,255,.3); border-radius: 20px; padding: 3px 11px; font-size: 11px; font-weight: 600; }
+  .hero-tag.gold { background: var(--amarillo); color: var(--azul); border-color: var(--amarillo); }
+  .hero-tag.red  { background: #C62828; color: #fff; border-color: #C62828; }
+  .hero-stats { display: flex; gap: 28px; margin-top: 20px; flex-wrap: wrap; }
+  .hs { text-align: center; }
+  .hs .v { font-size: 26px; font-weight: 900; }
+  .hs .v.gold { color: var(--amarillo); }
+  .hs .v.red  { color: #FF8080; }
+  .hs .l { font-size: 10px; opacity: .6; text-transform: uppercase; letter-spacing: .5px; margin-top: 2px; }
+
+  /* GRIDS */
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px; }
+  .grid3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; margin-bottom: 20px; }
+  .grid4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-bottom: 20px; }
+
+  /* KPI */
+  .kpi { background: #fff; border-radius: 10px; padding: 16px 18px; box-shadow: 0 2px 8px rgba(0,0,0,.07); border-left: 4px solid var(--amarillo); }
+  .kpi.v { border-left-color: var(--verde); }
+  .kpi.r { border-left-color: var(--rojo); }
+  .kpi.a { border-left-color: var(--azul); }
+  .kpi.n { border-left-color: var(--naranja); }
+  .kpi label { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: .6px; color: #aaa; }
+  .kpi .val  { font-size: 24px; font-weight: 800; color: var(--azul); margin: 4px 0 2px; line-height: 1; }
+  .kpi .val.v { color: var(--verde); }
+  .kpi .val.r { color: var(--rojo); }
+  .kpi .val.n { color: var(--naranja); }
+  .kpi .val.gold { color: #B8960C; }
+  .kpi .sub  { font-size: 11px; color: #bbb; }
+  .kpi .note { font-size: 11px; color: var(--azul); font-weight: 600; margin-top: 2px; }
+
+  /* TIMELINE */
+  .timeline { list-style: none; }
+  .timeline li { display: flex; gap: 16px; padding: 14px 0; border-bottom: 1px solid #F0F2F7; align-items: flex-start; }
+  .timeline li:last-child { border-bottom: none; }
+  .tl-dot { width: 36px; height: 36px; border-radius: 50%; flex-shrink: 0; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 900; margin-top: 2px; }
+  .tl-dot.azul  { background: #E3F2FD; color: var(--azul); }
+  .tl-dot.verde { background: #E8F5E9; color: var(--verde); }
+  .tl-dot.gold  { background: #FFF9E0; color: #B8960C; }
+  .tl-dot.rojo  { background: #FFEBEE; color: var(--rojo); }
+  .tl-dot.naranja { background: #FFF3E0; color: var(--naranja); }
+  .tl-date { font-size: 11px; font-weight: 700; color: #aaa; margin-bottom: 2px; }
+  .tl-title { font-size: 14px; font-weight: 700; color: var(--texto); }
+  .tl-desc { font-size: 12px; color: #777; margin-top: 2px; }
+
+  .alert { border-radius: 8px; padding: 13px 16px; margin: 8px 0 18px; font-size: 13px; font-weight: 600; }
+  .alert.v { background: #E8F5E9; color: var(--verde); border-left: 4px solid var(--verde); }
+  .alert.n { background: #FFF3E0; color: var(--naranja); border-left: 4px solid var(--naranja); }
+  .alert.a { background: #E3F2FD; color: #1565C0; border-left: 4px solid #1565C0; }
+  .alert.r { background: #FFEBEE; color: var(--rojo); border-left: 4px solid var(--rojo); }
+  .alert.gold { background: #FFF9E0; color: #7A6000; border-left: 4px solid var(--amarillo); }
+
+  /* ESCENARIOS */
+  .scenarios { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; margin-bottom: 20px; }
+  .scenario { border-radius: 10px; padding: 18px 20px; }
+  .scenario.a { background: #E3F2FD; border-top: 4px solid var(--azul); }
+  .scenario.v { background: #E8F5E9; border-top: 4px solid var(--verde); }
+  .scenario.r { background: #FFEBEE; border-top: 4px solid var(--rojo); }
+  .scenario h4 { font-size: 12px; font-weight: 800; text-transform: uppercase; letter-spacing: .5px; margin-bottom: 8px; }
+  .scenario.a h4 { color: var(--azul); }
+  .scenario.v h4 { color: var(--verde); }
+  .scenario.r h4 { color: var(--rojo); }
+  .scenario p { font-size: 13px; color: #444; line-height: 1.5; margin-bottom: 8px; }
+  .scenario .prob { font-size: 11px; font-weight: 700; padding: 3px 8px; border-radius: 20px; display: inline-block; margin-bottom: 6px; }
+  .scenario.a .prob { background: rgba(0,48,135,.15); color: var(--azul); }
+  .scenario.v .prob { background: rgba(46,125,50,.15); color: var(--verde); }
+  .scenario.r .prob { background: rgba(198,40,40,.15); color: var(--rojo); }
+
+  /* VEREDICTO */
+  .veredicto { background: linear-gradient(135deg, var(--azul) 60%, #004BB5); color: #fff;
+               border-radius: 12px; padding: 28px 32px; margin-top: 24px; }
+  .veredicto h3 { font-size: 13px; font-weight: 800; text-transform: uppercase; letter-spacing: 1px;
+                  opacity: .7; margin-bottom: 16px; }
+  .veredicto .decision { font-size: 22px; font-weight: 900; color: var(--amarillo); margin-bottom: 12px; line-height: 1.2; }
+  .veredicto p { font-size: 14px; opacity: .9; line-height: 1.6; margin-bottom: 10px; }
+  .veredicto .deadline { background: rgba(245,200,0,.15); border: 1px solid rgba(245,200,0,.4);
+                         border-radius: 8px; padding: 10px 14px; margin-top: 14px; font-size: 13px; }
+  .veredicto .deadline strong { color: var(--amarillo); }
+
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  th { background: var(--azul); color: #fff; padding: 8px 12px; text-align: left; font-size: 11px; text-transform: uppercase; }
+  td { padding: 8px 12px; border-bottom: 1px solid #F0F2F7; }
+  tr:hover td { background: #F0F6FF; }
+
+  footer { text-align: center; padding: 20px 40px; font-size: 11px; color: #aaa; margin-top: 20px; border-top: 1px solid #E0E4EE; }
+  footer a { color: var(--azul); text-decoration: none; }
+
+  @media (max-width: 900px) {
+    .grid2, .grid3, .grid4 { grid-template-columns: 1fr; }
+    .scenarios { grid-template-columns: 1fr; }
+    .doc { padding: 20px 16px 40px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="titulos">
+    <div class="tipo">ANÁLISIS EJECUTIVO DE JUGADOR</div>
+    <h1>Exequiel Zeballos — "El Changuito"</h1>
+    <p>Boca Juniors · Extremo derecho · Análisis de decisión contractual · Generado el 24/04/2026</p>
+  </div>
+  <img src="https://tmssl.akamaized.net/images/wappen/big/189.png" alt="Boca Juniors" style="height:64px;filter:drop-shadow(0 2px 6px rgba(0,0,0,.4));flex-shrink:0">
+</header>
+
+<div class="doc">
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-avatar">EZ</div>
+  <div>
+    <div class="hero-name">Exequiel Zeballos</div>
+    <div class="hero-role">Extremo derecho · 24 años · Hinojo, Pcia. de Buenos Aires</div>
+    <div class="hero-tags">
+      <span class="hero-tag">Formado en Boca</span>
+      <span class="hero-tag">Debut 2021</span>
+      <span class="hero-tag gold">Napoli interesado</span>
+      <span class="hero-tag red">Contrato: dic 2026</span>
+      <span class="hero-tag">Cláusula: USD 20M</span>
+    </div>
+    <div class="hero-stats">
+      <div class="hs"><div class="v gold">€7M</div><div class="l">Valor TM</div></div>
+      <div class="hs"><div class="v">24</div><div class="l">Años</div></div>
+      <div class="hs"><div class="v red">7.07</div><div class="l">Rating SS · LPF 2026</div></div>
+      <div class="hs"><div class="v">9/10</div><div class="l">Superclásico nov 2025</div></div>
+      <div class="hs"><div class="v gold">1G · 2A</div><div class="l">LPF 2026 (6 PJ)</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- KPIs -->
+<div class="grid4">
+  <div class="kpi r">
+    <label>Contrato vence</label>
+    <div class="val r">31/12/2026</div>
+    <div class="sub">Libre a negociar desde el 1/7/2026</div>
+  </div>
+  <div class="kpi">
+    <label>Cláusula de rescisión</label>
+    <div class="val">USD 20M</div>
+    <div class="sub">Cláusula en contrato vigente</div>
+  </div>
+  <div class="kpi n">
+    <label>Valor de mercado (TM)</label>
+    <div class="val n">EUR 7M</div>
+    <div class="sub">Transfermarkt / Minuto Uno, abr 2026</div>
+  </div>
+  <div class="kpi a">
+    <label>Situación médica</label>
+    <div class="val a" style="font-size:18px">Recuperado</div>
+    <div class="sub">Desgarro muscular · 11 partidos ausente · alta réciente</div>
+  </div>
+</div>
+
+<h2>Perfil Deportivo</h2>
+
+<div class="grid2">
+  <div class="card">
+    <h3>Características técnicas</h3>
+    <p style="font-size:14px;color:#333">Zeballos es un extremo derecho natural: <strong>diestro</strong>, juega por la banda derecha aprovechando su velocidad punta para superar al lateral por fuera o desequilibrar en diagonal hacia el área. También maneja muy bien la zurda, lo que lo hace difícil de anticipar en el uno vs. uno. Sus fortalezas más reconocidas son:</p>
+    <ul style="margin-left:18px;margin-top:10px;font-size:13px;color:#555;line-height:2">
+      <li><strong>Velocidad en el uno vs. uno:</strong> uno de los más rápidos del fútbol argentino</li>
+      <li><strong>Desequilibrio en transiciones:</strong> letal en los contraataques rápidos de Boca</li>
+      <li><strong>Buen manejo de la zurda:</strong> le permite variar el perfil en el último tercio y sorprender al defensor</li>
+      <li><strong>Presión alta sin pelota:</strong> contribuye activamente en la presión del equipo</li>
+    </ul>
+    <p style="font-size:13px;color:#888;margin-top:12px">Área de mejora documentada: consistencia en los partidos de alta presión cuando la marca es intensa. Su rendimiento puede fluctuar cuando el rival lo marca con dobleteo.</p>
+    <div class="alert n" style="margin-top:14px;font-size:12px">⚡ Contexto táctico: Boca cambió de esquema durante la Copa de la Liga 2025, lo que afectó el rol de Zeballos antes de su lesión. En el sistema actual de Úbeda recupera protagonismo como extremo titular.</div>
+  </div>
+
+  <div class="card">
+    <h3>Estadísticas — Temporada 2025-26 (SofaScore / Fichajes)</h3>
+    <table>
+      <thead><tr><th>Competición</th><th>PJ</th><th>G</th><th>A</th><th>Nota</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>Copa de la Liga 2025 (hasta lesión)</td>
+          <td>parcial</td><td colspan="2" style="color:#EF6C00;font-weight:700">4 participaciones directas en últimas 3 PJ</td>
+          <td style="font-size:11px;color:#aaa">Era de los mejores del equipo antes del desgarro</td>
+        </tr>
+        <tr>
+          <td>Copa de la Liga 2025 (lesión)</td>
+          <td colspan="4" style="color:#C62828;font-size:12px">⬛ Desgarro muscular — 11 partidos consecutivos ausente</td>
+        </tr>
+        <tr>
+          <td><strong>Superclásico (nov 2025)</strong></td>
+          <td><strong>1</strong></td><td><strong>1</strong></td><td><strong>1</strong></td>
+          <td style="font-weight:700;color:#2E7D32">Figura del partido · 9/10 prensa deportiva</td>
+        </tr>
+        <tr class="best">
+          <td><strong>Apertura 2026 LPF (en curso)</strong></td>
+          <td><strong>6</strong></td><td><strong>1</strong></td><td><strong>2</strong></td>
+          <td style="font-weight:700;color:#2E7D32">Rating SS 7.07 · 391 min · titular recurrente</td>
+        </tr>
+        <tr>
+          <td>Temporada 2025-26 (todas las comp.)</td>
+          <td>~9</td><td>1</td><td>2</td>
+          <td style="font-size:11px;color:#aaa">Copa Liga 2025 parcial + Superclásico + LPF 2026</td>
+        </tr>
+      </tbody>
+    </table>
+    <p style="font-size:11px;color:#aaa;margin-top:10px">Rating SofaScore LPF 2026: <strong style="color:#003087">7.07</strong> (6 PJ, 391 min). El rating de los últimos 12 meses (~6.9) sigue deprimido por el período de lesión. En los PJ disputados, el nivel es claramente superior. Fuentes: SofaScore (plantel_stats_lpf2026, 25/4/2026), Fichajes.com, El Intransigente.</p>
+  </div>
+</div>
+
+<h2>Cronología del Caso Zeballos</h2>
+
+<div class="card">
+  <ul class="timeline">
+    <li>
+      <div class="tl-dot azul">21</div>
+      <div>
+        <div class="tl-date">Julio 2021</div>
+        <div class="tl-title">Debut profesional en Boca Juniors</div>
+        <div class="tl-desc">Con 19 años debuta en el primer equipo. Formado en las inferiores del club desde los 14 años.</div>
+      </div>
+    </li>
+    <li>
+      <div class="tl-dot rojo">L</div>
+      <div>
+        <div class="tl-date">Octubre 2023</div>
+        <div class="tl-title">Primera lesión grave — fractura de tibia</div>
+        <div class="tl-desc">Fractura de tibia en partido ante Vélez. Ausente por más de 4 meses. Su primer contrato largo con Boca ya estaba negociado para entonces.</div>
+      </div>
+    </li>
+    <li>
+      <div class="tl-dot naranja">€</div>
+      <div>
+        <div class="tl-date">Febrero 2026</div>
+        <div class="tl-title">CSKA Moscú ofrece USD 10M — Boca rechaza</div>
+        <div class="tl-desc">Oferta concreta de CSKA Moscú (Rusia) por USD 10 millones. Boca se mantuvo firme: solo vende a precio de cláusula (USD 20M). Fuente: Infobae Deportes, 3/2/2026.</div>
+      </div>
+    </li>
+    <li>
+      <div class="tl-dot azul">B</div>
+      <div>
+        <div class="tl-date">2024 — 2025</div>
+        <div class="tl-title">Consolidación como titular — Extensión de contrato</div>
+        <div class="tl-desc">Zeballos se establece como el extremo derecho titular indiscutido. Boca le extiende el contrato; el nuevo vencimiento queda en diciembre 2026.</div>
+      </div>
+    </li>
+    <li>
+      <div class="tl-dot gold">★</div>
+      <div>
+        <div class="tl-date">Noviembre 2025</div>
+        <div class="tl-title">Figura del Superclásico — Gol + asistencia, 9/10</div>
+        <div class="tl-desc">Partido de Copa de la Liga ante River Plate. Zeballos fue la figura del partido según la prensa especializada: gol, asistencia, rating 9/10. Boca gana y clasifica a Copa Libertadores 2026.</div>
+      </div>
+    </li>
+    <li>
+      <div class="tl-dot rojo">L</div>
+      <div>
+        <div class="tl-date">Diciembre 2025 — Febrero 2026</div>
+        <div class="tl-title">Desgarro muscular — 11 partidos ausente</div>
+        <div class="tl-desc">Nuevo episodio de lesión muscular. Zeballos pierde 11 partidos consecutivos. Su recuperación afecta las negociaciones de renovación y limita el interés de compradores que esperan verlo en acción.</div>
+      </div>
+    </li>
+    <li>
+      <div class="tl-dot naranja">N</div>
+      <div>
+        <div class="tl-date">Marzo 2026</div>
+        <div class="tl-title">Napoli confirma interés — renovación estancada</div>
+        <div class="tl-desc">El director de fútbol del Napoli (Serie A) confirma interés en Zeballos. Las negociaciones de renovación con Boca están estancadas desde marzo: las diferencias incluyen tanto el monto del nuevo contrato como la duración. Zeballos regresa a las prácticas.</div>
+      </div>
+    </li>
+    <li>
+      <div class="tl-dot azul">▶</div>
+      <div>
+        <div class="tl-date">Abril 2026 (hoy)</div>
+        <div class="tl-title">Titular consolidado · 6 PJ, 1G, 2A · Rating SS 7.07</div>
+        <div class="tl-desc">Recuperó el ritmo de competencia y es titular recurrente en el Apertura 2026. En 6 partidos (391 minutos): 1 gol, 2 asistencias, rating SofaScore 7.07. La renovación sigue sin cerrarse — "no está cerca" según fuentes de abril 2026. Trabzonspor (Turquía) prepara oferta de €10–12M para mitad de año junto a Napoli, que espera resolver sus problemas de Fair Play Financiero.</div>
+      </div>
+    </li>
+    <li>
+      <div class="tl-dot rojo">!</div>
+      <div>
+        <div class="tl-date">1 julio 2026 — PUNTO DE NO RETORNO</div>
+        <div class="tl-title">Zeballos puede negociar libremente con terceros</div>
+        <div class="tl-desc">Con menos de 6 meses de contrato, la legislación argentina permite al jugador iniciar negociaciones con cualquier club del mundo sin compensación para Boca. Ese es el momento en que el club pierde el control de la situación.</div>
+      </div>
+    </li>
+  </ul>
+</div>
+
+<h2>Situación Contractual y de Mercado</h2>
+
+<div class="grid2">
+  <div class="card">
+    <h3>Estado de la negociación (abr 2026)</h3>
+    <table>
+      <tbody>
+        <tr><td style="font-weight:700;color:#aaa;font-size:11px;text-transform:uppercase">Cláusula de rescisión</td><td style="font-weight:700">USD 20.000.000</td></tr>
+        <tr><td style="font-weight:700;color:#aaa;font-size:11px;text-transform:uppercase">Valor TM actual</td><td style="font-weight:700;color:#003087">EUR 7.000.000</td></tr>
+        <tr><td style="font-weight:700;color:#aaa;font-size:11px;text-transform:uppercase">Vencimiento contrato</td><td style="font-weight:700;color:#C62828">31/12/2026</td></tr>
+        <tr><td style="font-weight:700;color:#aaa;font-size:11px;text-transform:uppercase">Libre a negociar desde</td><td style="font-weight:700;color:#C62828">01/07/2026</td></tr>
+        <tr><td style="font-weight:700;color:#aaa;font-size:11px;text-transform:uppercase">Estado renovación</td><td style="font-weight:700;color:#C62828">"No está cerca" — abr 2026</td></tr>
+        <tr><td style="font-weight:700;color:#aaa;font-size:11px;text-transform:uppercase">Diferencias</td><td style="font-weight:700;color:#EF6C00">Monto + duración del nuevo contrato</td></tr>
+        <tr><td style="font-weight:700;color:#aaa;font-size:11px;text-transform:uppercase">Interesado 1</td><td style="font-weight:700;color:#2E7D32">Napoli (Serie A) — FFP le impidió hacer oferta antes; esperan julio</td></tr>
+        <tr><td style="font-weight:700;color:#aaa;font-size:11px;text-transform:uppercase">Interesado 2</td><td style="font-weight:700;color:#EF6C00">Trabzonspor (Turquía) — prepara oferta €10–12M para mitad de año</td></tr>
+        <tr><td style="font-weight:700;color:#aaa;font-size:11px;text-transform:uppercase">Oferta rechazada</td><td>CSKA Moscú USD 10M (feb 2026) — Boca exige cláusula USD 20M</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="card">
+    <h3>Análisis financiero de una venta</h3>
+    <p style="font-size:14px;color:#333;margin-bottom:12px">Si Boca accede a vender, los números son los siguientes:</p>
+    <table>
+      <tbody>
+        <tr><td>Cláusula (precio mínimo oficial)</td><td style="font-weight:700">USD 20M</td></tr>
+        <tr><td>Valor de mercado TM (referencia)</td><td>EUR 7M ≈ USD 7.5M</td></tr>
+        <tr><td>Precio real de negociación esperado</td><td style="font-weight:700;color:#003087">USD 12–20M (según urgencia del comprador)</td></tr>
+        <tr><td>Formado en Boca — sin costo de compra</td><td style="color:#2E7D32;font-weight:700">100% del ingreso para Boca</td></tr>
+        <tr><td>Sell-on clause (reportada, no confirmada)</td><td style="color:#bbb;font-size:11px">No verificada en fuentes oficiales</td></tr>
+        <tr style="background:#F0FFF4"><td><strong>Ingreso neto estimado para Boca</strong></td><td style="font-weight:800;color:#2E7D32">USD 12–20M</td></tr>
+      </tbody>
+    </table>
+    <p style="font-size:11px;color:#aaa;margin-top:10px">Nota: Zeballos surgió de las inferiores de Boca. No hay costo de adquisición que recuperar. Cualquier venta es ingreso neto para el club.</p>
+  </div>
+</div>
+
+<div class="alert r">⚠ VENTANA CRITICA: Desde el 1 de julio de 2026, Zeballos puede acordar con cualquier club del mundo para firmar en enero 2027 sin que Boca reciba ninguna compensación. Antes de esa fecha, Boca puede imponer la cláusula de USD 20M como precio de referencia. La ventana de decisión es ahora.</div>
+
+<div class="alert gold">★ CONTEXTO COPA LIBERTADORES: Boca clasificó a Copa Libertadores 2026. Zeballos fue la figura del Superclásico que selló esa clasificación. Perderlo antes del torneo tiene un costo deportivo que va más allá del valor de mercado — es el extremo derecho más desequilibrante del plantel en partidos de alta exigencia.</div>
+
+<h2>Posibles Reemplazos</h2>
+
+<div class="card">
+  <h3>Opciones si Zeballos sale</h3>
+  <table>
+    <thead><tr><th>Jugador</th><th>Club actual</th><th>Perfil</th><th>Valor TM</th><th>Viabilidad para Boca</th></tr></thead>
+    <tbody>
+      <tr>
+        <td><strong>Kevin Zenón</strong></td>
+        <td>Boca (interno)</td>
+        <td>Extremo/MC, 24 años, zurdo — perfil diferente pero versátil</td>
+        <td>EUR 4.5M</td>
+        <td style="color:#2E7D32;font-weight:700">Ya en el plantel — reconversión posible</td>
+      </tr>
+      <tr>
+        <td><strong>Alan Velasco</strong></td>
+        <td>Boca (interno)</td>
+        <td>Extremo, 23 años, EUR 2.8M — actualmente relegado</td>
+        <td>EUR 2.8M</td>
+        <td style="color:#EF6C00;font-weight:700">Opción interna, pero cuestionado tácticamente</td>
+      </tr>
+      <tr>
+        <td><strong>Mercado externo</strong></td>
+        <td>—</td>
+        <td>Extremo derecho joven de ligas menores de Sudamérica</td>
+        <td>EUR 2–5M</td>
+        <td style="color:#EF6C00;font-weight:700">Posible, pero requiere adaptación y tiempo</td>
+      </tr>
+    </tbody>
+  </table>
+  <p style="font-size:12px;color:#aaa;margin-top:10px">Conclusión: No existe en el plantel actual un reemplazo de nivel equivalente. El gap deportivo de perder a Zeballos — especialmente en Copa Libertadores — es significativo. Esto fortalece el argumento de priorizar la renovación sobre la venta en este momento.</p>
+</div>
+
+<h2>Escenarios de Decisión</h2>
+
+<div class="scenarios">
+  <div class="scenario v">
+    <div class="prob">ESCENARIO A</div>
+    <h4>Renovación antes del 1/7/2026</h4>
+    <p><strong>¿Qué implica?</strong> Boca llega a un acuerdo con Zeballos y el jugador firma extensión de contrato (2028 o 2029). La cláusula de rescisión sube o se mantiene en USD 20M.</p>
+    <p><strong>Resultado financiero:</strong> Boca retiene un activo de EUR 7M, mantiene a su extremo titular para la Copa Libertadores 2026, y aplaza la decisión de venta a cuando el precio sea más alto o el reemplazo esté listo.</p>
+    <p><strong>Resultado deportivo:</strong> Estabilidad en el sector derecho. Zeballos en Copa Libertadores es uno de los desequilibrantes más peligrosos del continente en ese rol.</p>
+    <p><strong>Riesgo:</strong> Si Zeballos vuelve a lesionarse, el valor cae y el club pierde la ventana de venta óptima.</p>
+  </div>
+  <div class="scenario a">
+    <div class="prob">ESCENARIO B</div>
+    <h4>Venta a Napoli / Trabzonspor antes del 1/7</h4>
+    <p><strong>¿Qué implica?</strong> Boca acepta una oferta por Zeballos. El precio mínimo es la cláusula (USD 20M). En la práctica, si Napoli activa la cláusula, Boca recibe USD 20M limpios — el mayor ingreso por transferencia de un jugador formado en el club en años.</p>
+    <p><strong>Resultado financiero:</strong> USD 20M netos para Boca (formación propia, sin costo de compra). En el contexto del superávit Ej. 121 de ARS 35.581M, un ingreso de USD 20M (~ARS 23.200M al tipo de cambio actual) haría del Ej. 122 un ejercicio aún más positivo.</p>
+    <p><strong>Resultado deportivo:</strong> Pérdida del extremo derecho más desequilibrante justo antes de Copa Libertadores. Úbeda deberá adaptar el sistema.</p>
+    <p><strong>Riesgo:</strong> Napoli podría no llegar a los USD 20M y negociar. Si el precio acordado es menor a la cláusula, requiere acuerdo explícito de Boca.</p>
+  </div>
+  <div class="scenario r">
+    <div class="prob">ESCENARIO C — PEOR CASO</div>
+    <h4>Ni renovación ni venta antes del 1/7</h4>
+    <p><strong>¿Qué implica?</strong> Boca llega al 1 de julio sin haber renovado ni vendido. Zeballos queda libre de negociar con terceros. Puede acordar con Napoli (o cualquier otro club) para firmar en enero 2027. Boca no recibe nada.</p>
+    <p><strong>Resultado financiero:</strong> EUR 7M en valor de mercado que se evapora. El club pierde el activo sin contraprestación alguna.</p>
+    <p><strong>Resultado deportivo:</strong> Zeballos puede quedarse hasta diciembre 2026 (termina el contrato) pero la situación genera incertidumbre, bajo rendimiento y conflicto de intereses.</p>
+    <p><strong>Riesgo:</strong> Es el único escenario en que Boca no recibe nada por un activo de EUR 7M que formó desde las inferiores.</p>
+  </div>
+</div>
+
+<h2>Veredicto Ejecutivo</h2>
+
+<div class="veredicto">
+  <h3>Recomendación de la Comisión Técnica</h3>
+  <div class="decision">Priorizar renovación. Si no hay acuerdo antes del 15 de junio: activar proceso de venta con cláusula de USD 20M.</div>
+  <p>El análisis de los tres escenarios indica que la renovación es la opción que maximiza el valor combinado (deportivo + económico) del activo. Con Copa Libertadores 2026 en juego, Zeballos en el plantel vale más que los USD 20M netos que ingresaría su venta — especialmente si Boca avanza en el torneo y el jugador tiene una temporada de alto impacto que suba su valor de mercado.</p>
+  <p>Sin embargo, si las negociaciones de renovación no cierran antes del 15 de junio, la estrategia debe cambiar: en ese punto es preferible vender a USD 20M (cláusula) que arriesgar el Escenario C (pérdida del activo sin compensación). La fecha del 1 de julio no admite vacilaciones.</p>
+  <p>El elemento diferencial es la Copa Libertadores: si Boca avanza a semis o final, el valor de mercado de Zeballos puede escalar a EUR 10–12M, lo que elevaría el precio de negociación natural más allá de la cláusula. Ese es el escenario donde la renovación más la venta posterior en verano europeo 2027 generaría el mayor retorno.</p>
+  <div class="deadline">
+    <strong>FECHA LÍMITE OPERATIVA: 15 de junio de 2026.</strong> Si no hay acuerdo de renovación firmado para esa fecha, Boca debe abrir formalmente el proceso de venta con Napoli u otros interesados, exigiendo la cláusula de USD 20M como precio mínimo. Después del 1/7, el poder de negociación del club desaparece.
+  </div>
+</div>
+
+</div>
+
+<footer>
+  Fuentes:
+  <a href="https://www.transfermarkt.us/ca-boca-juniors/startseite/verein/189" target="_blank">Transfermarkt</a> (valor de mercado EUR 7M, abr 2026) ·
+  <a href="https://www.minutouno.com" target="_blank">Minuto Uno</a> (valores plantel, abr 2026) ·
+  <a href="https://www.dobleamarilla.com.ar" target="_blank">Doble Amarilla</a> (Superclásico nov 2025, rating, renovación) ·
+  <a href="https://www.ole.com.ar" target="_blank">Olé</a> (lesión muscular, regreso, Napoli) ·
+  <a href="https://www.sofascore.com" target="_blank">SofaScore</a> (rating LPF Apertura 2026, 6PJ/391min/7.07) ·
+  <a href="https://www.infobae.com/deportes/2026/02/03/la-importante-oferta-por-exequiel-zeballos-que-rechazo-boca-juniors/" target="_blank">Infobae</a> (oferta CSKA Moscú rechazada, feb 2026) ·
+  <a href="https://www.lanacion.com.ar/deportes/futbol/exequiel-zeballos-vuelve-a-aparecer-en-el-radar-del-napoli-mientras-boca-negocia-su-renovacion-nid13032026/" target="_blank">La Nación</a> (Napoli FFP, renovación, mar 2026) ·
+  Bolavip (Trabzonspor €10–12M, abr 2026).
+  Actualizado el 26/04/2026.
+</footer>
+</body>
+</html>
