@@ -1,0 +1,3209 @@
+{
+  "player_id": 906811,
+  "fuente": "SofaScore",
+  "fecha_extraccion": "2026-04-25",
+  "perfil": {
+    "nombre": "Adrián Martínez",
+    "posicion": "F",
+    "edad": null,
+    "altura": 176,
+    "pie": "Left",
+    "pais": "Argentina",
+    "club": "Racing Club",
+    "valor_eur": 3300000
+  },
+  "estadisticas_temporada": [
+    {
+      "competicion": "Liga Profesional de Fútbol",
+      "temporada": "Primera LPF 2026",
+      "tournament_id": "155",
+      "season_id": "87913",
+      "rating": 6.3615384615385,
+      "appearances": 13,
+      "minutesPlayed": 1062,
+      "goals": 4,
+      "assists": 0,
+      "yellowCards": 3,
+      "redCards": 0,
+      "tackles": 4,
+      "interceptions": 2,
+      "clearances": 10,
+      "aerialDuelsWon": 10,
+      "groundDuelsWon": 12,
+      "successfulDribbles": 3,
+      "keyPasses": 8,
+      "accuratePasses": 121,
+      "totalPasses": 177,
+      "accurateLongBalls": 4,
+      "totalLongBalls": 5,
+      "bigChancesCreated": 1,
+      "shotsOnTarget": 8,
+      "shotsOffTarget": 14
+    },
+    {
+      "competicion": "Liga Profesional de Fútbol",
+      "temporada": "Liga Profesional 2023",
+      "tournament_id": "155",
+      "season_id": "47647",
+      "rating": 6.8461538461538,
+      "appearances": 26,
+      "minutesPlayed": 2288,
+      "goals": 11,
+      "assists": 1,
+      "yellowCards": 9,
+      "redCards": 0,
+      "tackles": 21,
+      "interceptions": 1,
+      "clearances": 22,
+      "aerialDuelsWon": 51,
+      "groundDuelsWon": 59,
+      "successfulDribbles": 14,
+      "keyPasses": 30,
+      "accuratePasses": 395,
+      "totalPasses": 581,
+      "accurateLongBalls": 10,
+      "totalLongBalls": 17,
+      "bigChancesCreated": 5,
+      "shotsOnTarget": 20,
+      "shotsOffTarget": 21,
+      "expectedGoals": 11.1511,
+      "expectedAssists": 2.19226645
+    },
+    {
+      "competicion": "Liga Profesional de Fútbol",
+      "temporada": "Liga Profesional 2024",
+      "tournament_id": "155",
+      "season_id": "57478",
+      "rating": 6.915,
+      "appearances": 20,
+      "minutesPlayed": 1435,
+      "goals": 7,
+      "assists": 3,
+      "yellowCards": 7,
+      "redCards": 1,
+      "tackles": 11,
+      "interceptions": 4,
+      "clearances": 13,
+      "aerialDuelsWon": 21,
+      "groundDuelsWon": 31,
+      "successfulDribbles": 3,
+      "keyPasses": 14,
+      "accuratePasses": 142,
+      "totalPasses": 225,
+      "accurateLongBalls": 11,
+      "totalLongBalls": 20,
+      "bigChancesCreated": 3,
+      "shotsOnTarget": 21,
+      "shotsOffTarget": 26,
+      "expectedGoals": 9.2255,
+      "expectedAssists": 0.81696011
+    },
+    {
+      "competicion": "Copa de la Liga Profesional",
+      "temporada": "Copa de la Liga 2024",
+      "tournament_id": "13475",
+      "season_id": "57487",
+      "rating": 7.4214285714286,
+      "appearances": 14,
+      "minutesPlayed": 1131,
+      "goals": 12,
+      "assists": 1,
+      "yellowCards": 4,
+      "redCards": 0,
+      "tackles": 7,
+      "interceptions": 4,
+      "clearances": 9,
+      "aerialDuelsWon": 11,
+      "groundDuelsWon": 20,
+      "successfulDribbles": 5,
+      "keyPasses": 14,
+      "accuratePasses": 140,
+      "totalPasses": 204,
+      "accurateLongBalls": 4,
+      "totalLongBalls": 8,
+      "bigChancesCreated": 3,
+      "shotsOnTarget": 14,
+      "shotsOffTarget": 11
+    },
+    {
+      "competicion": "Copa de la Liga Profesional",
+      "temporada": "Copa de la Liga 2023",
+      "tournament_id": "13475",
+      "season_id": "47644",
+      "rating": 7.2307692307692,
+      "appearances": 13,
+      "minutesPlayed": 1166,
+      "goals": 5,
+      "assists": 3,
+      "yellowCards": 5,
+      "redCards": 0,
+      "tackles": 9,
+      "interceptions": 1,
+      "clearances": 17,
+      "aerialDuelsWon": 39,
+      "groundDuelsWon": 25,
+      "successfulDribbles": 10,
+      "keyPasses": 15,
+      "accuratePasses": 144,
+      "totalPasses": 224,
+      "accurateLongBalls": 7,
+      "totalLongBalls": 12,
+      "bigChancesCreated": 3,
+      "shotsOnTarget": 9,
+      "shotsOffTarget": 16
+    },
+    {
+      "competicion": "CONMEBOL Libertadores",
+      "temporada": "Copa Libertadores 2020",
+      "tournament_id": "384",
+      "season_id": "26785",
+      "rating": 6.8444444444444,
+      "appearances": 9,
+      "minutesPlayed": 483,
+      "goals": 2,
+      "assists": 0,
+      "yellowCards": 0,
+      "redCards": 0,
+      "tackles": 6,
+      "interceptions": 5,
+      "clearances": 1,
+      "aerialDuelsWon": 8,
+      "groundDuelsWon": 22,
+      "successfulDribbles": 6,
+      "keyPasses": 7,
+      "accuratePasses": 69,
+      "totalPasses": 103,
+      "accurateLongBalls": 3,
+      "totalLongBalls": 6,
+      "bigChancesCreated": 1,
+      "shotsOnTarget": 3,
+      "shotsOffTarget": 6
+    },
+    {
+      "competicion": "CONMEBOL Libertadores",
+      "temporada": "Copa Libertadores 2019",
+      "tournament_id": "384",
+      "season_id": "19989",
+      "rating": 7.1428571428571,
+      "appearances": 7,
+      "minutesPlayed": 484,
+      "goals": 2,
+      "assists": 1,
+      "yellowCards": 0,
+      "redCards": 0,
+      "tackles": 4,
+      "interceptions": 3,
+      "clearances": 3,
+      "aerialDuelsWon": 8,
+      "groundDuelsWon": 20,
+      "successfulDribbles": 9,
+      "keyPasses": 11,
+      "accuratePasses": 93,
+      "totalPasses": 116,
+      "accurateLongBalls": 3,
+      "totalLongBalls": 5,
+      "bigChancesCreated": 5,
+      "shotsOnTarget": 5,
+      "shotsOffTarget": 12
+    },
+    {
+      "competicion": "Primera División, Clausura",
+      "temporada": "Primera División, Clausura 2021",
+      "tournament_id": "11541",
+      "season_id": "37057",
+      "appearances": 7,
+      "minutesPlayed": 92,
+      "goals": 0,
+      "yellowCards": 1,
+      "redCards": 0
+    },
+    {
+      "competicion": "Primera División, Clausura",
+      "temporada": "Primera División, Clausura 2020",
+      "tournament_id": "11541",
+      "season_id": "34490",
+      "appearances": 6,
+      "minutesPlayed": 335,
+      "goals": 2,
+      "yellowCards": 1,
+      "redCards": 1
+    },
+    {
+      "competicion": "Primera División, Apertura",
+      "temporada": "Primera División, Apertura 2020",
+      "tournament_id": "11540",
+      "season_id": "26853",
+      "appearances": 17,
+      "minutesPlayed": 694,
+      "goals": 4,
+      "yellowCards": 4,
+      "redCards": 0
+    },
+    {
+      "competicion": "Primera División, Apertura",
+      "temporada": "Primera División 2019",
+      "tournament_id": "11540",
+      "season_id": "20170",
+      "appearances": 15,
+      "minutesPlayed": 1037,
+      "goals": 4,
+      "yellowCards": 1,
+      "redCards": 0
+    },
+    {
+      "competicion": "CONMEBOL Sudamericana",
+      "temporada": "Copa Sudamericana 2024",
+      "tournament_id": "480",
+      "season_id": "57297",
+      "rating": 7.6,
+      "appearances": 13,
+      "minutesPlayed": 1082,
+      "goals": 10,
+      "assists": 4,
+      "yellowCards": 3,
+      "redCards": 0,
+      "tackles": 10,
+      "interceptions": 2,
+      "clearances": 8,
+      "aerialDuelsWon": 15,
+      "groundDuelsWon": 30,
+      "successfulDribbles": 6,
+      "keyPasses": 13,
+      "accuratePasses": 144,
+      "totalPasses": 203,
+      "accurateLongBalls": 7,
+      "totalLongBalls": 12,
+      "bigChancesCreated": 4,
+      "shotsOnTarget": 20,
+      "shotsOffTarget": 15
+    },
+    {
+      "competicion": "CONMEBOL Sudamericana",
+      "temporada": "CONMEBOL Sudamericana 2026",
+      "tournament_id": "480",
+      "season_id": "87770",
+      "rating": 6.65,
+      "appearances": 2,
+      "minutesPlayed": 156,
+      "goals": 1,
+      "assists": 0,
+      "yellowCards": 0,
+      "redCards": 0,
+      "tackles": 2,
+      "interceptions": 1,
+      "clearances": 1,
+      "aerialDuelsWon": 3,
+      "groundDuelsWon": 7,
+      "successfulDribbles": 2,
+      "keyPasses": 3,
+      "accuratePasses": 24,
+      "totalPasses": 30,
+      "accurateLongBalls": 1,
+      "totalLongBalls": 2,
+      "bigChancesCreated": 0,
+      "shotsOnTarget": 4,
+      "shotsOffTarget": 2,
+      "expectedGoals": 2.4102,
+      "expectedAssists": 0.11197
+    },
+    {
+      "competicion": "Copa Argentina",
+      "temporada": "Copa Argentina 2026",
+      "tournament_id": "1024",
+      "season_id": "88177",
+      "appearances": 1,
+      "minutesPlayed": 73,
+      "goals": 1,
+      "assists": 0,
+      "yellowCards": 0,
+      "redCards": 0
+    },
+    {
+      "competicion": "Copa Argentina",
+      "temporada": "Copa Argentina 2025",
+      "tournament_id": "1024",
+      "season_id": "70664",
+      "appearances": 3,
+      "minutesPlayed": 187,
+      "goals": 2,
+      "assists": 0,
+      "yellowCards": 1,
+      "redCards": 2
+    },
+    {
+      "competicion": "CONMEBOL Recopa",
+      "temporada": "CONMEBOL Recopa 2025",
+      "tournament_id": "490",
+      "season_id": "69954",
+      "rating": 7.55,
+      "appearances": 2,
+      "minutesPlayed": 176,
+      "goals": 1,
+      "assists": 0,
+      "yellowCards": 1,
+      "redCards": 0,
+      "tackles": 0,
+      "interceptions": 0,
+      "clearances": 2,
+      "aerialDuelsWon": 5,
+      "groundDuelsWon": 4,
+      "successfulDribbles": 1,
+      "keyPasses": 3,
+      "accuratePasses": 21,
+      "totalPasses": 31,
+      "accurateLongBalls": 1,
+      "totalLongBalls": 2,
+      "bigChancesCreated": 1,
+      "shotsOnTarget": 3,
+      "shotsOffTarget": 3
+    },
+    {
+      "competicion": "Brasileirão Betano",
+      "temporada": "Brasileirão Série A 2022",
+      "tournament_id": "325",
+      "season_id": "40557",
+      "rating": 6.6380952380952,
+      "appearances": 22,
+      "minutesPlayed": 1012,
+      "goals": 4,
+      "assists": 1,
+      "yellowCards": 7,
+      "redCards": 0,
+      "tackles": 7,
+      "interceptions": 4,
+      "clearances": 3,
+      "aerialDuelsWon": 18,
+      "groundDuelsWon": 21,
+      "successfulDribbles": 5,
+      "keyPasses": 11,
+      "accuratePasses": 118,
+      "totalPasses": 179,
+      "accurateLongBalls": 6,
+      "totalLongBalls": 10,
+      "bigChancesCreated": 0,
+      "shotsOnTarget": 10,
+      "shotsOffTarget": 11,
+      "expectedGoals": 4.4214,
+      "expectedAssists": 0.52982029
+    }
+  ],
+  "_raw_keys": [
+    "perfil",
+    "statistics_seasons",
+    "unique-tournament_155_season_87913_statistics_overall",
+    "unique-tournament_155_season_47647_statistics_overall",
+    "unique-tournament_155_season_57478_statistics_overall",
+    "unique-tournament_13475_season_57487_statistics_overall",
+    "unique-tournament_13475_season_47644_statistics_overall",
+    "unique-tournament_384_season_26785_statistics_overall",
+    "unique-tournament_384_season_19989_statistics_overall",
+    "unique-tournament_11541_season_37057_statistics_overall",
+    "unique-tournament_11541_season_34490_statistics_overall",
+    "unique-tournament_11540_season_26853_statistics_overall",
+    "unique-tournament_11540_season_20170_statistics_overall",
+    "unique-tournament_480_season_57297_statistics_overall",
+    "unique-tournament_480_season_87770_statistics_overall",
+    "unique-tournament_1024_season_88177_statistics_overall",
+    "unique-tournament_1024_season_70664_statistics_overall",
+    "unique-tournament_490_season_69954_statistics_overall",
+    "unique-tournament_325_season_40557_statistics_overall"
+  ],
+  "_raw": {
+    "perfil": {
+      "player": {
+        "name": "Adrián Martínez",
+        "slug": "martinez-adrian",
+        "shortName": "A. Martínez",
+        "team": {
+          "name": "Racing Club",
+          "slug": "racing-club",
+          "shortName": "Racing",
+          "gender": "M",
+          "sport": {
+            "name": "Football",
+            "slug": "football",
+            "id": 1
+          },
+          "tournament": {
+            "name": "Liga Profesional de Fútbol",
+            "slug": "liga-profesional",
+            "category": {
+              "name": "Argentina",
+              "slug": "argentina",
+              "sport": {
+                "name": "Football",
+                "slug": "football",
+                "id": 1
+              },
+              "priority": 0,
+              "country": {
+                "alpha2": "AR",
+                "alpha3": "ARG",
+                "name": "Argentina",
+                "slug": "argentina"
+              },
+              "id": 48,
+              "flag": "argentina",
+              "alpha2": "AR",
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "ar": "الأرجنتين",
+                  "ru": "Аргентина"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "uniqueTournament": {
+              "name": "Liga Profesional de Fútbol",
+              "slug": "liga-profesional-de-futbol",
+              "primaryColorHex": "#0cbad8",
+              "secondaryColorHex": "#daa813",
+              "category": {
+                "name": "Argentina",
+                "slug": "argentina",
+                "sport": {
+                  "name": "Football",
+                  "slug": "football",
+                  "id": 1
+                },
+                "priority": 0,
+                "country": {
+                  "alpha2": "AR",
+                  "alpha3": "ARG",
+                  "name": "Argentina",
+                  "slug": "argentina"
+                },
+                "id": 48,
+                "flag": "argentina",
+                "alpha2": "AR",
+                "fieldTranslations": {
+                  "nameTranslation": {
+                    "ar": "الأرجنتين",
+                    "ru": "Аргентина"
+                  },
+                  "shortNameTranslation": {}
+                }
+              },
+              "userCount": 59640,
+              "country": {},
+              "id": 155,
+              "displayInverseHomeAwayTeams": false,
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "ar": "دوري كرة القدم للمحترفين",
+                  "bn": "লীগা প্রোফেশনাল ডে ফুটবল",
+                  "hi": "लीगा प्रोफेशनल डी फुटबॉल"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "priority": 433,
+            "isLive": false,
+            "id": 68,
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "الدوري الممتاز",
+                "bn": "লীগ প্রোফেশনাল",
+                "hi": "लीगा प्रोफेशनल"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "primaryUniqueTournament": {
+            "name": "Liga Profesional de Fútbol",
+            "slug": "liga-profesional-de-futbol",
+            "primaryColorHex": "#0cbad8",
+            "secondaryColorHex": "#daa813",
+            "category": {
+              "name": "Argentina",
+              "slug": "argentina",
+              "sport": {
+                "name": "Football",
+                "slug": "football",
+                "id": 1
+              },
+              "priority": 0,
+              "country": {
+                "alpha2": "AR",
+                "alpha3": "ARG",
+                "name": "Argentina",
+                "slug": "argentina"
+              },
+              "id": 48,
+              "flag": "argentina",
+              "alpha2": "AR",
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "ar": "الأرجنتين",
+                  "ru": "Аргентина"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "userCount": 59640,
+            "country": {},
+            "id": 155,
+            "displayInverseHomeAwayTeams": false,
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "دوري كرة القدم للمحترفين",
+                "bn": "লীগা প্রোফেশনাল ডে ফুটবল",
+                "hi": "लीगा प्रोफेशनल डी फुटबॉल"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "userCount": 85565,
+          "nameCode": "RCS",
+          "disabled": false,
+          "national": false,
+          "type": 0,
+          "country": {
+            "alpha2": "AR",
+            "alpha3": "ARG",
+            "name": "Argentina",
+            "slug": "argentina"
+          },
+          "id": 3215,
+          "teamColors": {
+            "primary": "#00ccff",
+            "secondary": "#ffffff",
+            "text": "#ffffff"
+          },
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "راسينغ كلوب",
+              "ru": "Расинг Клаб"
+            },
+            "shortNameTranslation": {
+              "ar": "راسينغ"
+            }
+          }
+        },
+        "position": "F",
+        "positionsDetailed": [
+          "ST"
+        ],
+        "jerseyNumber": "9",
+        "height": 176,
+        "dateOfBirth": "1992-07-07T00:00:00+00:00",
+        "preferredFoot": "Left",
+        "userCount": 2671,
+        "deceased": false,
+        "gender": "M",
+        "country": {
+          "alpha2": "AR",
+          "alpha3": "ARG",
+          "name": "Argentina",
+          "slug": "argentina"
+        },
+        "id": 906811,
+        "shirtNumber": 9,
+        "dateOfBirthTimestamp": 710467200,
+        "contractUntilTimestamp": 1861833600,
+        "proposedMarketValue": 3300000,
+        "proposedMarketValueRaw": {
+          "value": 3300000,
+          "currency": "EUR"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "مارتينيز، أدريان",
+            "bn": "মার্টিনেজ, আদ্রিয়ান",
+            "hi": "मार्टिनेज, एड्रियन"
+          },
+          "shortNameTranslation": {
+            "ar": "أ. مارتينيز",
+            "bn": "এ. মার্টিনেজ",
+            "hi": "ए. मार्टिनेज"
+          }
+        }
+      }
+    },
+    "statistics_seasons": {
+      "uniqueTournamentSeasons": [
+        {
+          "uniqueTournament": {
+            "name": "Liga Profesional de Fútbol",
+            "slug": "liga-profesional-de-futbol",
+            "primaryColorHex": "#0cbad8",
+            "secondaryColorHex": "#daa813",
+            "category": {
+              "name": "Argentina",
+              "slug": "argentina",
+              "sport": {
+                "name": "Football",
+                "slug": "football",
+                "id": 1
+              },
+              "priority": 0,
+              "id": 48,
+              "flag": "argentina",
+              "alpha2": "AR",
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "ar": "الأرجنتين",
+                  "ru": "Аргентина"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "userCount": 59640,
+            "id": 155,
+            "displayInverseHomeAwayTeams": false,
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "دوري كرة القدم للمحترفين",
+                "bn": "লীগা প্রোফেশনাল ডে ফুটবল",
+                "hi": "लीगा प्रोफेशनल डी फुटबॉल"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "seasons": [
+            {
+              "name": "Primera LPF 2026",
+              "year": "2026",
+              "editor": false,
+              "seasonCoverageInfo": {},
+              "id": 87913
+            },
+            {
+              "name": "Torneo Clausura",
+              "year": "2025",
+              "editor": false,
+              "id": 77826
+            },
+            {
+              "name": "Torneo Apertura",
+              "year": "2025",
+              "editor": false,
+              "id": 70268
+            },
+            {
+              "name": "Liga Profesional 2024",
+              "year": "2024",
+              "editor": false,
+              "id": 57478
+            },
+            {
+              "name": "Liga Profesional 2023",
+              "year": "2023",
+              "editor": false,
+              "seasonCoverageInfo": {},
+              "id": 47647
+            }
+          ]
+        },
+        {
+          "uniqueTournament": {
+            "name": "CONMEBOL Sudamericana",
+            "slug": "conmebol-sudamericana",
+            "primaryColorHex": "#e3c000",
+            "secondaryColorHex": "#13489c",
+            "category": {
+              "name": "South America",
+              "slug": "south-america",
+              "sport": {
+                "name": "Football",
+                "slug": "football",
+                "id": 1
+              },
+              "priority": 18,
+              "id": 1470,
+              "flag": "south-america",
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "ar": "أمريكا الجنوبية",
+                  "ru": "Южная Америка"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "userCount": 118110,
+            "id": 480,
+            "displayInverseHomeAwayTeams": false,
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "كأس أمريكا الجنوبية لكرة القدم",
+                "bn": "কনমেবল সুদাআমেরিকানা",
+                "hi": "कॉनमेबोल सुदामेरिकाना"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "seasons": [
+            {
+              "name": "CONMEBOL Sudamericana 2026",
+              "year": "2026",
+              "editor": false,
+              "id": 87770
+            },
+            {
+              "name": "Copa Sudamericana 2024",
+              "year": "2024",
+              "editor": false,
+              "id": 57297
+            },
+            {
+              "name": "Copa Sudamericana 2021",
+              "year": "2021",
+              "editor": false,
+              "id": 35645
+            },
+            {
+              "name": "Copa Sudamericana 2018",
+              "year": "2018",
+              "editor": false,
+              "id": 15809
+            }
+          ]
+        },
+        {
+          "uniqueTournament": {
+            "name": "Copa Argentina",
+            "slug": "copa-argentina",
+            "primaryColorHex": "#187ec0",
+            "secondaryColorHex": "#44a4d8",
+            "category": {
+              "name": "Argentina",
+              "slug": "argentina",
+              "sport": {
+                "name": "Football",
+                "slug": "football",
+                "id": 1
+              },
+              "priority": 0,
+              "id": 48,
+              "flag": "argentina",
+              "alpha2": "AR",
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "ar": "الأرجنتين",
+                  "ru": "Аргентина"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "userCount": 17298,
+            "id": 1024,
+            "displayInverseHomeAwayTeams": false,
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "كأس الأرجنتين",
+                "bn": "কোপা আর্জেন্টিনা",
+                "hi": "कोपा अर्जेंटीना"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "seasons": [
+            {
+              "name": "Copa Argentina 2026",
+              "year": "2026",
+              "editor": false,
+              "seasonCoverageInfo": {
+                "editorCoverageLevel": 1
+              },
+              "id": 88177
+            },
+            {
+              "name": "Copa Argentina 2025",
+              "year": "2025",
+              "editor": false,
+              "seasonCoverageInfo": {
+                "editorCoverageLevel": 1
+              },
+              "id": 70664
+            }
+          ]
+        },
+        {
+          "uniqueTournament": {
+            "name": "CONMEBOL Recopa",
+            "slug": "conmebol-recopa",
+            "primaryColorHex": "#989898",
+            "secondaryColorHex": "#0183be",
+            "category": {
+              "name": "South America",
+              "slug": "south-america",
+              "sport": {
+                "name": "Football",
+                "slug": "football",
+                "id": 1
+              },
+              "priority": 18,
+              "id": 1470,
+              "flag": "south-america",
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "ar": "أمريكا الجنوبية",
+                  "ru": "Южная Америка"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "userCount": 25275,
+            "id": 490,
+            "displayInverseHomeAwayTeams": false,
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "كوبا كونميبول",
+                "bn": "কনমেবল রেকোপা",
+                "hi": "कॉनमेबोल रेकोपा"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "seasons": [
+            {
+              "name": "CONMEBOL Recopa 2025",
+              "year": "2025",
+              "editor": false,
+              "id": 69954
+            }
+          ]
+        },
+        {
+          "uniqueTournament": {
+            "name": "CONMEBOL Libertadores",
+            "slug": "conmebol-libertadores",
+            "primaryColorHex": "#573215",
+            "secondaryColorHex": "#dfaf49",
+            "category": {
+              "name": "South America",
+              "slug": "south-america",
+              "sport": {
+                "name": "Football",
+                "slug": "football",
+                "id": 1
+              },
+              "priority": 18,
+              "id": 1470,
+              "flag": "south-america",
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "ar": "أمريكا الجنوبية",
+                  "ru": "Южная Америка"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "userCount": 205181,
+            "id": 384,
+            "displayInverseHomeAwayTeams": false,
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "كوبا ليبرتادوريس",
+                "bn": "কনমেবল লিবার্তাদোরেস",
+                "hi": "कॉनमेबोल लिबर्टाडोरेस"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "seasons": [
+            {
+              "name": "CONMEBOL Libertadores 2025",
+              "year": "2025",
+              "editor": false,
+              "id": 70083
+            },
+            {
+              "name": "Copa Libertadores 2021",
+              "year": "2021",
+              "editor": false,
+              "id": 35576
+            },
+            {
+              "name": "Copa Libertadores 2020",
+              "year": "2020",
+              "editor": false,
+              "id": 26785
+            },
+            {
+              "name": "Copa Libertadores 2019",
+              "year": "2019",
+              "editor": false,
+              "id": 19989
+            }
+          ]
+        },
+        {
+          "uniqueTournament": {
+            "name": "Copa de la Liga Profesional",
+            "slug": "copa-de-la-liga-profesional",
+            "primaryColorHex": "#0cbad8",
+            "secondaryColorHex": "#daa813",
+            "category": {
+              "name": "Argentina",
+              "slug": "argentina",
+              "sport": {
+                "name": "Football",
+                "slug": "football",
+                "id": 1
+              },
+              "priority": 0,
+              "id": 48,
+              "flag": "argentina",
+              "alpha2": "AR",
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "ar": "الأرجنتين",
+                  "ru": "Аргентина"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "userCount": 22867,
+            "id": 13475,
+            "displayInverseHomeAwayTeams": false,
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "كأس دوري المحترفين",
+                "bn": "কোপা দে লা লিগা প্রোফেশনাল",
+                "hi": "कोपा डे ला लीगा प्रोफेशनल"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "seasons": [
+            {
+              "name": "Copa de la Liga 2024",
+              "year": "2024",
+              "editor": false,
+              "id": 57487
+            },
+            {
+              "name": "Copa de la Liga 2023",
+              "year": "2023",
+              "editor": false,
+              "id": 47644
+            }
+          ]
+        },
+        {
+          "uniqueTournament": {
+            "name": "Brasileirão Betano",
+            "slug": "brasileirao-serie-a",
+            "primaryColorHex": "#C7FF00",
+            "secondaryColorHex": "#969696",
+            "category": {
+              "name": "Brazil",
+              "slug": "brazil",
+              "sport": {
+                "name": "Football",
+                "slug": "football",
+                "id": 1
+              },
+              "priority": 0,
+              "id": 13,
+              "flag": "brazil",
+              "alpha2": "BR",
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "ar": "البرازيل",
+                  "ru": "Бразилия"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "userCount": 317234,
+            "id": 325,
+            "displayInverseHomeAwayTeams": false,
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "بطولة بيتانو البرازيلية",
+                "bn": "ব্রাসিলিরাও বেতানো",
+                "hi": "ब्राज़ीलेइराओ बेटानो"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "seasons": [
+            {
+              "name": "Brasileirão Série A 2022",
+              "year": "2022",
+              "editor": false,
+              "id": 40557
+            }
+          ]
+        },
+        {
+          "uniqueTournament": {
+            "name": "Primera División, Apertura",
+            "slug": "primera-division-apertura",
+            "primaryColorHex": "#003e80",
+            "secondaryColorHex": "#c20c0d",
+            "category": {
+              "name": "Paraguay",
+              "slug": "paraguay",
+              "sport": {
+                "name": "Football",
+                "slug": "football",
+                "id": 1
+              },
+              "priority": 0,
+              "id": 280,
+              "flag": "paraguay",
+              "alpha2": "PY",
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "ar": "باراغواي",
+                  "ru": "Парагвай"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "userCount": 8349,
+            "id": 11540,
+            "displayInverseHomeAwayTeams": false,
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "الدوري الممتاز، مرحلة الذهاب",
+                "bn": "প্রিমিয়ার ডিভিশন, অ্যাপার্তুরা",
+                "hi": "प्राइमेरा डिविज़न, एपर्टुरा"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "seasons": [
+            {
+              "name": "Primera División, Apertura 2022",
+              "year": "2022",
+              "editor": false,
+              "id": 40096
+            },
+            {
+              "name": "Primera División, Apertura 2021",
+              "year": "2021",
+              "editor": false,
+              "id": 35356
+            },
+            {
+              "name": "Primera División, Apertura 2020",
+              "year": "2020",
+              "editor": false,
+              "id": 26853
+            },
+            {
+              "name": "Primera División 2019",
+              "year": "2019",
+              "editor": false,
+              "id": 20170
+            }
+          ]
+        },
+        {
+          "uniqueTournament": {
+            "name": "Primera División, Clausura",
+            "slug": "primera-division-clausura",
+            "primaryColorHex": "#003e80",
+            "secondaryColorHex": "#c20c0d",
+            "category": {
+              "name": "Paraguay",
+              "slug": "paraguay",
+              "sport": {
+                "name": "Football",
+                "slug": "football",
+                "id": 1
+              },
+              "priority": 0,
+              "id": 280,
+              "flag": "paraguay",
+              "alpha2": "PY",
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "ar": "باراغواي",
+                  "ru": "Парагвай"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "userCount": 6862,
+            "id": 11541,
+            "displayInverseHomeAwayTeams": false,
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "الدوري الأول، مرحلة الإياب",
+                "bn": "প্রিমেরা ডিভিশন, ক্লাউসুরা",
+                "hi": "प्राइमेरा डिविज़न, क्लॉसुरा"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "seasons": [
+            {
+              "name": "Primera División, Clausura 2021",
+              "year": "2021",
+              "editor": false,
+              "id": 37057
+            },
+            {
+              "name": "Primera División, Clausura 2020",
+              "year": "2020",
+              "editor": false,
+              "id": 34490
+            },
+            {
+              "name": "Primera División, Clausura 2019",
+              "year": "2019",
+              "editor": false,
+              "id": 24026
+            },
+            {
+              "name": "Primera División 2018",
+              "year": "2018",
+              "editor": false,
+              "id": 19405
+            }
+          ]
+        }
+      ],
+      "typesMap": {
+        "155": {
+          "47647": [
+            "overall",
+            "home",
+            "away"
+          ],
+          "57478": [
+            "overall",
+            "home",
+            "away"
+          ],
+          "77826": [
+            "overall",
+            "home",
+            "away"
+          ],
+          "87913": [
+            "overall",
+            "home",
+            "away"
+          ],
+          "70268": [
+            "overall",
+            "home",
+            "away"
+          ]
+        },
+        "384": {
+          "26785": [
+            "overall",
+            "home",
+            "away"
+          ],
+          "19989": [
+            "overall",
+            "home",
+            "away"
+          ],
+          "35576": [
+            "overall",
+            "home",
+            "away"
+          ],
+          "70083": [
+            "overall",
+            "home",
+            "away"
+          ]
+        },
+        "11541": {
+          "37057": [
+            "overall"
+          ],
+          "34490": [
+            "overall"
+          ],
+          "24026": [
+            "overall"
+          ],
+          "19405": [
+            "overall"
+          ]
+        },
+        "11540": {
+          "26853": [
+            "overall"
+          ],
+          "20170": [
+            "overall"
+          ],
+          "35356": [
+            "overall"
+          ],
+          "40096": [
+            "overall"
+          ]
+        },
+        "480": {
+          "57297": [
+            "overall",
+            "home",
+            "away"
+          ],
+          "87770": [
+            "overall",
+            "home",
+            "away"
+          ],
+          "35645": [
+            "overall",
+            "home",
+            "away"
+          ],
+          "15809": [
+            "overall",
+            "home",
+            "away"
+          ]
+        },
+        "1024": {
+          "88177": [
+            "overall"
+          ],
+          "70664": [
+            "overall"
+          ]
+        },
+        "490": {
+          "69954": [
+            "overall",
+            "home",
+            "away"
+          ]
+        },
+        "13475": {
+          "57487": [
+            "overall",
+            "home",
+            "away"
+          ],
+          "47644": [
+            "overall",
+            "home",
+            "away"
+          ]
+        },
+        "325": {
+          "40557": [
+            "overall",
+            "home",
+            "away"
+          ]
+        }
+      }
+    },
+    "unique-tournament_155_season_87913_statistics_overall": {
+      "statistics": {
+        "rating": 6.3615384615385,
+        "totalRating": 82.7,
+        "countRating": 13,
+        "goals": 4,
+        "bigChancesCreated": 1,
+        "bigChancesMissed": 11,
+        "assists": 0,
+        "goalsAssistsSum": 4,
+        "accuratePasses": 121,
+        "inaccuratePasses": 56,
+        "totalPasses": 177,
+        "accuratePassesPercentage": 68.361581920904,
+        "accurateOwnHalfPasses": 36,
+        "accurateOppositionHalfPasses": 85,
+        "accurateFinalThirdPasses": 50,
+        "keyPasses": 8,
+        "successfulDribbles": 3,
+        "successfulDribblesPercentage": 27.272727272727,
+        "tackles": 4,
+        "interceptions": 2,
+        "yellowCards": 3,
+        "directRedCards": 0,
+        "redCards": 0,
+        "accurateCrosses": 0,
+        "accurateCrossesPercentage": 0,
+        "totalShots": 27,
+        "shotsOnTarget": 8,
+        "shotsOffTarget": 14,
+        "groundDuelsWon": 12,
+        "groundDuelsWonPercentage": 22.641509433962,
+        "aerialDuelsWon": 10,
+        "aerialDuelsWonPercentage": 21.276595744681,
+        "totalDuelsWon": 22,
+        "totalDuelsWonPercentage": 22,
+        "minutesPlayed": 1062,
+        "goalConversionPercentage": 14.814814814815,
+        "penaltiesTaken": 2,
+        "penaltyGoals": 1,
+        "penaltyWon": 0,
+        "penaltyConceded": 0,
+        "shotFromSetPiece": 0,
+        "freeKickGoal": 0,
+        "goalsFromInsideTheBox": 4,
+        "goalsFromOutsideTheBox": 0,
+        "shotsFromInsideTheBox": 24,
+        "shotsFromOutsideTheBox": 3,
+        "headedGoals": 1,
+        "leftFootGoals": 3,
+        "rightFootGoals": 0,
+        "accurateLongBalls": 4,
+        "accurateLongBallsPercentage": 80,
+        "clearances": 10,
+        "errorLeadToGoal": 0,
+        "errorLeadToShot": 0,
+        "dispossessed": 11,
+        "possessionLost": 109,
+        "possessionWonAttThird": 7,
+        "totalChippedPasses": 16,
+        "accurateChippedPasses": 10,
+        "touches": 309,
+        "wasFouled": 5,
+        "fouls": 22,
+        "hitWoodwork": 2,
+        "ownGoals": 0,
+        "dribbledPast": 2,
+        "offsides": 8,
+        "blockedShots": 5,
+        "passToAssist": 0,
+        "saves": 0,
+        "cleanSheet": 3,
+        "penaltyFaced": 0,
+        "penaltySave": 0,
+        "savedShotsFromInsideTheBox": 0,
+        "savedShotsFromOutsideTheBox": 0,
+        "goalsConcededInsideTheBox": 10,
+        "goalsConcededOutsideTheBox": 3,
+        "punches": 0,
+        "runsOut": 0,
+        "successfulRunsOut": 0,
+        "highClaims": 0,
+        "crossesNotClaimed": 0,
+        "matchesStarted": 12,
+        "penaltyConversion": 50,
+        "setPieceConversion": 0,
+        "totalAttemptAssist": 8,
+        "totalContest": 11,
+        "totalCross": 3,
+        "duelLost": 78,
+        "aerialLost": 37,
+        "attemptPenaltyMiss": 1,
+        "attemptPenaltyPost": 0,
+        "attemptPenaltyTarget": 0,
+        "totalLongBalls": 5,
+        "goalsConceded": 13,
+        "tacklesWon": 2,
+        "tacklesWonPercentage": 50,
+        "scoringFrequency": 265.5,
+        "yellowRedCards": 0,
+        "savesCaught": 0,
+        "savesParried": 0,
+        "totalOwnHalfPasses": 42,
+        "totalOppositionHalfPasses": 135,
+        "totwAppearances": 0,
+        "goalKicks": 0,
+        "ballRecovery": 23,
+        "outfielderBlocks": 0,
+        "id": 2608556,
+        "type": "overall",
+        "appearances": 13,
+        "statisticsType": {
+          "sportSlug": "football",
+          "statisticsType": "player"
+        }
+      },
+      "team": {
+        "name": "Racing Club",
+        "slug": "racing-club",
+        "shortName": "Racing",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "userCount": 85565,
+        "nameCode": "RCS",
+        "disabled": false,
+        "national": false,
+        "type": 0,
+        "id": 3215,
+        "teamColors": {
+          "primary": "#00ccff",
+          "secondary": "#ffffff",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "راسينغ كلوب",
+            "ru": "Расинг Клаб"
+          },
+          "shortNameTranslation": {
+            "ar": "راسينغ"
+          }
+        }
+      }
+    },
+    "unique-tournament_155_season_47647_statistics_overall": {
+      "statistics": {
+        "rating": 6.8461538461538,
+        "totalRating": 178,
+        "countRating": 26,
+        "goals": 11,
+        "bigChancesCreated": 5,
+        "bigChancesMissed": 12,
+        "assists": 1,
+        "expectedAssists": 2.19226645,
+        "goalsAssistsSum": 12,
+        "accuratePasses": 395,
+        "inaccuratePasses": 186,
+        "totalPasses": 581,
+        "accuratePassesPercentage": 67.986230636833,
+        "accurateOwnHalfPasses": 95,
+        "accurateOppositionHalfPasses": 303,
+        "accurateFinalThirdPasses": 179,
+        "keyPasses": 30,
+        "successfulDribbles": 14,
+        "successfulDribblesPercentage": 50,
+        "tackles": 21,
+        "interceptions": 1,
+        "yellowCards": 9,
+        "directRedCards": 0,
+        "redCards": 0,
+        "accurateCrosses": 3,
+        "accurateCrossesPercentage": 37.5,
+        "totalShots": 54,
+        "shotsOnTarget": 20,
+        "shotsOffTarget": 21,
+        "groundDuelsWon": 59,
+        "groundDuelsWonPercentage": 35.542168674699,
+        "aerialDuelsWon": 51,
+        "aerialDuelsWonPercentage": 29.824561403509,
+        "totalDuelsWon": 110,
+        "totalDuelsWonPercentage": 32.640949554896,
+        "minutesPlayed": 2288,
+        "goalConversionPercentage": 20.37037037037,
+        "penaltiesTaken": 1,
+        "penaltyGoals": 1,
+        "penaltyWon": 0,
+        "penaltyConceded": 0,
+        "shotFromSetPiece": 0,
+        "freeKickGoal": 0,
+        "goalsFromInsideTheBox": 11,
+        "goalsFromOutsideTheBox": 0,
+        "shotsFromInsideTheBox": 47,
+        "shotsFromOutsideTheBox": 7,
+        "headedGoals": 3,
+        "leftFootGoals": 6,
+        "rightFootGoals": 2,
+        "accurateLongBalls": 10,
+        "accurateLongBallsPercentage": 58.823529411765,
+        "clearances": 22,
+        "errorLeadToGoal": 0,
+        "errorLeadToShot": 0,
+        "dispossessed": 28,
+        "possessionLost": 323,
+        "possessionWonAttThird": 25,
+        "totalChippedPasses": 23,
+        "accurateChippedPasses": 13,
+        "touches": 940,
+        "wasFouled": 24,
+        "fouls": 48,
+        "hitWoodwork": 2,
+        "ownGoals": 0,
+        "dribbledPast": 19,
+        "offsides": 11,
+        "blockedShots": 13,
+        "passToAssist": 0,
+        "saves": 0,
+        "cleanSheet": 3,
+        "penaltyFaced": 0,
+        "penaltySave": 0,
+        "savedShotsFromInsideTheBox": 0,
+        "savedShotsFromOutsideTheBox": 0,
+        "goalsConcededInsideTheBox": 25,
+        "goalsConcededOutsideTheBox": 8,
+        "punches": 0,
+        "runsOut": 0,
+        "successfulRunsOut": 0,
+        "highClaims": 0,
+        "crossesNotClaimed": 0,
+        "matchesStarted": 26,
+        "penaltyConversion": 100,
+        "setPieceConversion": 0,
+        "totalAttemptAssist": 30,
+        "totalContest": 28,
+        "totalCross": 8,
+        "duelLost": 227,
+        "aerialLost": 120,
+        "attemptPenaltyMiss": 0,
+        "attemptPenaltyPost": 0,
+        "attemptPenaltyTarget": 0,
+        "totalLongBalls": 17,
+        "goalsConceded": 33,
+        "tacklesWon": 13,
+        "tacklesWonPercentage": 61.904761904762,
+        "scoringFrequency": 208,
+        "yellowRedCards": 0,
+        "savesCaught": 0,
+        "savesParried": 0,
+        "totalOwnHalfPasses": 128,
+        "totalOppositionHalfPasses": 461,
+        "totwAppearances": 1,
+        "expectedGoals": 11.1511,
+        "goalKicks": 0,
+        "ballRecovery": 96,
+        "id": 943504,
+        "type": "overall",
+        "appearances": 26,
+        "statisticsType": {
+          "sportSlug": "football",
+          "statisticsType": "player"
+        }
+      },
+      "team": {
+        "name": "Instituto De Córdoba",
+        "slug": "instituto-cordoba",
+        "shortName": "Instituto",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "userCount": 12674,
+        "nameCode": "IAC",
+        "national": false,
+        "type": 0,
+        "id": 4937,
+        "teamColors": {
+          "primary": "#e72328",
+          "secondary": "#222226",
+          "text": "#222226"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "معهد دي قرطبة",
+            "ru": "Институто Атлетико"
+          },
+          "shortNameTranslation": {
+            "ar": "معهد"
+          }
+        }
+      }
+    },
+    "unique-tournament_155_season_57478_statistics_overall": {
+      "statistics": {
+        "rating": 6.915,
+        "totalRating": 138.3,
+        "countRating": 20,
+        "goals": 7,
+        "bigChancesCreated": 3,
+        "bigChancesMissed": 19,
+        "assists": 3,
+        "expectedAssists": 0.81696011,
+        "goalsAssistsSum": 10,
+        "accuratePasses": 142,
+        "inaccuratePasses": 83,
+        "totalPasses": 225,
+        "accuratePassesPercentage": 63.111111111111,
+        "accurateOwnHalfPasses": 42,
+        "accurateOppositionHalfPasses": 102,
+        "accurateFinalThirdPasses": 60,
+        "keyPasses": 14,
+        "successfulDribbles": 3,
+        "successfulDribblesPercentage": 27.272727272727,
+        "tackles": 11,
+        "interceptions": 4,
+        "yellowCards": 7,
+        "directRedCards": 1,
+        "redCards": 1,
+        "accurateCrosses": 2,
+        "accurateCrossesPercentage": 40,
+        "totalShots": 50,
+        "shotsOnTarget": 21,
+        "shotsOffTarget": 26,
+        "groundDuelsWon": 31,
+        "groundDuelsWonPercentage": 37.349397590361,
+        "aerialDuelsWon": 21,
+        "aerialDuelsWonPercentage": 27.631578947368,
+        "totalDuelsWon": 52,
+        "totalDuelsWonPercentage": 32.704402515723,
+        "minutesPlayed": 1435,
+        "goalConversionPercentage": 14,
+        "penaltiesTaken": 2,
+        "penaltyGoals": 0,
+        "penaltyWon": 0,
+        "penaltyConceded": 0,
+        "shotFromSetPiece": 0,
+        "freeKickGoal": 0,
+        "goalsFromInsideTheBox": 6,
+        "goalsFromOutsideTheBox": 1,
+        "shotsFromInsideTheBox": 41,
+        "shotsFromOutsideTheBox": 9,
+        "headedGoals": 2,
+        "leftFootGoals": 2,
+        "rightFootGoals": 3,
+        "accurateLongBalls": 11,
+        "accurateLongBallsPercentage": 55,
+        "clearances": 13,
+        "errorLeadToGoal": 0,
+        "errorLeadToShot": 0,
+        "dispossessed": 11,
+        "possessionLost": 147,
+        "possessionWonAttThird": 6,
+        "totalChippedPasses": 18,
+        "accurateChippedPasses": 9,
+        "touches": 435,
+        "wasFouled": 17,
+        "fouls": 30,
+        "hitWoodwork": 1,
+        "ownGoals": 0,
+        "dribbledPast": 7,
+        "offsides": 14,
+        "blockedShots": 3,
+        "passToAssist": 0,
+        "saves": 0,
+        "cleanSheet": 2,
+        "penaltyFaced": 0,
+        "penaltySave": 0,
+        "savedShotsFromInsideTheBox": 0,
+        "savedShotsFromOutsideTheBox": 0,
+        "goalsConcededInsideTheBox": 15,
+        "goalsConcededOutsideTheBox": 0,
+        "punches": 0,
+        "runsOut": 0,
+        "successfulRunsOut": 0,
+        "highClaims": 0,
+        "crossesNotClaimed": 0,
+        "matchesStarted": 17,
+        "penaltyConversion": 0,
+        "setPieceConversion": 0,
+        "totalAttemptAssist": 14,
+        "totalContest": 11,
+        "totalCross": 5,
+        "duelLost": 107,
+        "aerialLost": 55,
+        "attemptPenaltyMiss": 0,
+        "attemptPenaltyPost": 1,
+        "attemptPenaltyTarget": 1,
+        "totalLongBalls": 20,
+        "goalsConceded": 15,
+        "tacklesWon": 7,
+        "tacklesWonPercentage": 63.636363636364,
+        "scoringFrequency": 205,
+        "yellowRedCards": 0,
+        "savesCaught": 0,
+        "savesParried": 0,
+        "totalOwnHalfPasses": 49,
+        "totalOppositionHalfPasses": 181,
+        "totwAppearances": 1,
+        "expectedGoals": 9.2255,
+        "goalKicks": 0,
+        "ballRecovery": 33,
+        "id": 1404640,
+        "type": "overall",
+        "appearances": 20,
+        "statisticsType": {
+          "sportSlug": "football",
+          "statisticsType": "player"
+        }
+      },
+      "team": {
+        "name": "Racing Club",
+        "slug": "racing-club",
+        "shortName": "Racing",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "userCount": 85565,
+        "nameCode": "RCS",
+        "disabled": false,
+        "national": false,
+        "type": 0,
+        "id": 3215,
+        "teamColors": {
+          "primary": "#00ccff",
+          "secondary": "#ffffff",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "راسينغ كلوب",
+            "ru": "Расинг Клаб"
+          },
+          "shortNameTranslation": {
+            "ar": "راسينغ"
+          }
+        }
+      }
+    },
+    "unique-tournament_13475_season_57487_statistics_overall": {
+      "statistics": {
+        "rating": 7.4214285714286,
+        "totalRating": 103.9,
+        "countRating": 14,
+        "goals": 12,
+        "bigChancesCreated": 3,
+        "bigChancesMissed": 5,
+        "assists": 1,
+        "goalsAssistsSum": 13,
+        "accuratePasses": 140,
+        "inaccuratePasses": 64,
+        "totalPasses": 204,
+        "accuratePassesPercentage": 68.627450980392,
+        "accurateOwnHalfPasses": 26,
+        "accurateOppositionHalfPasses": 116,
+        "accurateFinalThirdPasses": 70,
+        "keyPasses": 14,
+        "successfulDribbles": 5,
+        "successfulDribblesPercentage": 50,
+        "tackles": 7,
+        "interceptions": 4,
+        "yellowCards": 4,
+        "directRedCards": 0,
+        "redCards": 0,
+        "accurateCrosses": 2,
+        "accurateCrossesPercentage": 50,
+        "totalShots": 29,
+        "shotsOnTarget": 14,
+        "shotsOffTarget": 11,
+        "groundDuelsWon": 20,
+        "groundDuelsWonPercentage": 32.258064516129,
+        "aerialDuelsWon": 11,
+        "aerialDuelsWonPercentage": 24.444444444444,
+        "totalDuelsWon": 31,
+        "totalDuelsWonPercentage": 28.971962616822,
+        "minutesPlayed": 1131,
+        "goalConversionPercentage": 41.379310344828,
+        "penaltiesTaken": 0,
+        "penaltyGoals": 0,
+        "penaltyWon": 0,
+        "penaltyConceded": 0,
+        "shotFromSetPiece": 0,
+        "freeKickGoal": 0,
+        "goalsFromInsideTheBox": 12,
+        "goalsFromOutsideTheBox": 0,
+        "shotsFromInsideTheBox": 26,
+        "shotsFromOutsideTheBox": 3,
+        "headedGoals": 2,
+        "leftFootGoals": 8,
+        "rightFootGoals": 2,
+        "accurateLongBalls": 4,
+        "accurateLongBallsPercentage": 50,
+        "clearances": 9,
+        "errorLeadToGoal": 0,
+        "errorLeadToShot": 0,
+        "dispossessed": 12,
+        "possessionLost": 116,
+        "possessionWonAttThird": 9,
+        "totalChippedPasses": 15,
+        "accurateChippedPasses": 7,
+        "touches": 344,
+        "wasFouled": 8,
+        "fouls": 22,
+        "hitWoodwork": 0,
+        "ownGoals": 0,
+        "dribbledPast": 4,
+        "offsides": 8,
+        "blockedShots": 4,
+        "passToAssist": 0,
+        "saves": 0,
+        "cleanSheet": 3,
+        "penaltyFaced": 0,
+        "penaltySave": 0,
+        "savedShotsFromInsideTheBox": 0,
+        "savedShotsFromOutsideTheBox": 0,
+        "goalsConcededInsideTheBox": 8,
+        "goalsConcededOutsideTheBox": 2,
+        "punches": 0,
+        "runsOut": 0,
+        "successfulRunsOut": 0,
+        "highClaims": 0,
+        "crossesNotClaimed": 0,
+        "matchesStarted": 13,
+        "penaltyConversion": 0,
+        "setPieceConversion": 0,
+        "totalAttemptAssist": 14,
+        "totalContest": 10,
+        "totalCross": 4,
+        "duelLost": 76,
+        "aerialLost": 34,
+        "attemptPenaltyMiss": 0,
+        "attemptPenaltyPost": 0,
+        "attemptPenaltyTarget": 0,
+        "totalLongBalls": 8,
+        "goalsConceded": 10,
+        "tacklesWon": 3,
+        "tacklesWonPercentage": 42.857142857143,
+        "scoringFrequency": 94.25,
+        "yellowRedCards": 0,
+        "savesCaught": 0,
+        "savesParried": 0,
+        "totalOwnHalfPasses": 33,
+        "totalOppositionHalfPasses": 175,
+        "totwAppearances": 2,
+        "goalKicks": 0,
+        "ballRecovery": 32,
+        "id": 1281671,
+        "type": "overall",
+        "appearances": 14,
+        "statisticsType": {
+          "sportSlug": "football",
+          "statisticsType": "player"
+        }
+      },
+      "team": {
+        "name": "Racing Club",
+        "slug": "racing-club",
+        "shortName": "Racing",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "userCount": 85565,
+        "nameCode": "RCS",
+        "disabled": false,
+        "national": false,
+        "type": 0,
+        "id": 3215,
+        "teamColors": {
+          "primary": "#00ccff",
+          "secondary": "#ffffff",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "راسينغ كلوب",
+            "ru": "Расинг Клаб"
+          },
+          "shortNameTranslation": {
+            "ar": "راسينغ"
+          }
+        }
+      }
+    },
+    "unique-tournament_13475_season_47644_statistics_overall": {
+      "statistics": {
+        "rating": 7.2307692307692,
+        "totalRating": 94,
+        "countRating": 13,
+        "goals": 5,
+        "bigChancesCreated": 3,
+        "bigChancesMissed": 6,
+        "assists": 3,
+        "goalsAssistsSum": 8,
+        "accuratePasses": 144,
+        "inaccuratePasses": 80,
+        "totalPasses": 224,
+        "accuratePassesPercentage": 64.285714285714,
+        "accurateOwnHalfPasses": 35,
+        "accurateOppositionHalfPasses": 109,
+        "accurateFinalThirdPasses": 71,
+        "keyPasses": 15,
+        "successfulDribbles": 10,
+        "successfulDribblesPercentage": 58.823529411765,
+        "tackles": 9,
+        "interceptions": 1,
+        "yellowCards": 5,
+        "directRedCards": 0,
+        "redCards": 0,
+        "accurateCrosses": 0,
+        "accurateCrossesPercentage": 0,
+        "totalShots": 31,
+        "shotsOnTarget": 9,
+        "shotsOffTarget": 16,
+        "groundDuelsWon": 25,
+        "groundDuelsWonPercentage": 32.051282051282,
+        "aerialDuelsWon": 39,
+        "aerialDuelsWonPercentage": 40.20618556701,
+        "totalDuelsWon": 64,
+        "totalDuelsWonPercentage": 36.571428571429,
+        "minutesPlayed": 1166,
+        "goalConversionPercentage": 16.129032258065,
+        "penaltiesTaken": 1,
+        "penaltyGoals": 1,
+        "penaltyWon": 1,
+        "penaltyConceded": 0,
+        "shotFromSetPiece": 0,
+        "freeKickGoal": 0,
+        "goalsFromInsideTheBox": 5,
+        "goalsFromOutsideTheBox": 0,
+        "shotsFromInsideTheBox": 26,
+        "shotsFromOutsideTheBox": 5,
+        "headedGoals": 3,
+        "leftFootGoals": 2,
+        "rightFootGoals": 0,
+        "accurateLongBalls": 7,
+        "accurateLongBallsPercentage": 58.333333333333,
+        "clearances": 17,
+        "errorLeadToGoal": 0,
+        "errorLeadToShot": 0,
+        "dispossessed": 15,
+        "possessionLost": 149,
+        "possessionWonAttThird": 16,
+        "totalChippedPasses": 16,
+        "accurateChippedPasses": 10,
+        "touches": 416,
+        "wasFouled": 7,
+        "fouls": 30,
+        "hitWoodwork": 2,
+        "ownGoals": 0,
+        "dribbledPast": 4,
+        "offsides": 24,
+        "blockedShots": 6,
+        "passToAssist": 0,
+        "saves": 0,
+        "cleanSheet": 5,
+        "penaltyFaced": 0,
+        "penaltySave": 0,
+        "savedShotsFromInsideTheBox": 0,
+        "savedShotsFromOutsideTheBox": 0,
+        "goalsConcededInsideTheBox": 4,
+        "goalsConcededOutsideTheBox": 1,
+        "punches": 0,
+        "runsOut": 0,
+        "successfulRunsOut": 0,
+        "highClaims": 0,
+        "crossesNotClaimed": 0,
+        "matchesStarted": 13,
+        "penaltyConversion": 100,
+        "setPieceConversion": 0,
+        "totalAttemptAssist": 15,
+        "totalContest": 17,
+        "totalCross": 1,
+        "duelLost": 111,
+        "aerialLost": 58,
+        "attemptPenaltyMiss": 0,
+        "attemptPenaltyPost": 0,
+        "attemptPenaltyTarget": 0,
+        "totalLongBalls": 12,
+        "goalsConceded": 5,
+        "tacklesWon": 6,
+        "tacklesWonPercentage": 66.666666666667,
+        "scoringFrequency": 233.2,
+        "yellowRedCards": 0,
+        "savesCaught": 0,
+        "savesParried": 0,
+        "totalOwnHalfPasses": 44,
+        "totalOppositionHalfPasses": 181,
+        "totwAppearances": 1,
+        "goalKicks": 0,
+        "ballRecovery": 47,
+        "id": 1089313,
+        "type": "overall",
+        "appearances": 13,
+        "statisticsType": {
+          "sportSlug": "football",
+          "statisticsType": "player"
+        }
+      },
+      "team": {
+        "name": "Instituto De Córdoba",
+        "slug": "instituto-cordoba",
+        "shortName": "Instituto",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "userCount": 12674,
+        "nameCode": "IAC",
+        "national": false,
+        "type": 0,
+        "id": 4937,
+        "teamColors": {
+          "primary": "#e72328",
+          "secondary": "#222226",
+          "text": "#222226"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "معهد دي قرطبة",
+            "ru": "Институто Атлетико"
+          },
+          "shortNameTranslation": {
+            "ar": "معهد"
+          }
+        }
+      }
+    },
+    "unique-tournament_384_season_26785_statistics_overall": {
+      "statistics": {
+        "rating": 6.8444444444444,
+        "totalRating": 61.6,
+        "countRating": 9,
+        "goals": 2,
+        "bigChancesCreated": 1,
+        "bigChancesMissed": 2,
+        "assists": 0,
+        "goalsAssistsSum": 2,
+        "accuratePasses": 69,
+        "inaccuratePasses": 34,
+        "totalPasses": 103,
+        "accuratePassesPercentage": 66.990291262136,
+        "accurateOwnHalfPasses": 25,
+        "accurateOppositionHalfPasses": 44,
+        "accurateFinalThirdPasses": 23,
+        "keyPasses": 7,
+        "successfulDribbles": 6,
+        "successfulDribblesPercentage": 100,
+        "tackles": 6,
+        "interceptions": 5,
+        "yellowCards": 0,
+        "directRedCards": 0,
+        "redCards": 0,
+        "accurateCrosses": 0,
+        "accurateCrossesPercentage": 0,
+        "totalShots": 9,
+        "shotsOnTarget": 3,
+        "shotsOffTarget": 6,
+        "groundDuelsWon": 22,
+        "groundDuelsWonPercentage": 51.162790697674,
+        "aerialDuelsWon": 8,
+        "aerialDuelsWonPercentage": 28.571428571429,
+        "totalDuelsWon": 30,
+        "totalDuelsWonPercentage": 42.253521126761,
+        "minutesPlayed": 483,
+        "goalConversionPercentage": 22.222222222222,
+        "penaltiesTaken": 0,
+        "penaltyGoals": 0,
+        "penaltyWon": 0,
+        "penaltyConceded": 0,
+        "shotFromSetPiece": 0,
+        "freeKickGoal": 0,
+        "goalsFromInsideTheBox": 2,
+        "goalsFromOutsideTheBox": 0,
+        "shotsFromInsideTheBox": 9,
+        "shotsFromOutsideTheBox": 0,
+        "headedGoals": 0,
+        "leftFootGoals": 2,
+        "rightFootGoals": 0,
+        "accurateLongBalls": 3,
+        "accurateLongBallsPercentage": 50,
+        "clearances": 1,
+        "errorLeadToGoal": 0,
+        "errorLeadToShot": 0,
+        "dispossessed": 11,
+        "possessionLost": 65,
+        "possessionWonAttThird": 4,
+        "totalChippedPasses": 7,
+        "accurateChippedPasses": 3,
+        "touches": 193,
+        "wasFouled": 10,
+        "fouls": 5,
+        "hitWoodwork": 1,
+        "ownGoals": 0,
+        "dribbledPast": 6,
+        "offsides": 2,
+        "blockedShots": 0,
+        "passToAssist": 0,
+        "saves": 0,
+        "cleanSheet": 0,
+        "penaltyFaced": 0,
+        "penaltySave": 0,
+        "savedShotsFromInsideTheBox": 0,
+        "savedShotsFromOutsideTheBox": 0,
+        "goalsConcededInsideTheBox": 4,
+        "goalsConcededOutsideTheBox": 4,
+        "punches": 0,
+        "runsOut": 0,
+        "successfulRunsOut": 0,
+        "highClaims": 0,
+        "crossesNotClaimed": 0,
+        "matchesStarted": 6,
+        "penaltyConversion": 0,
+        "setPieceConversion": 0,
+        "totalAttemptAssist": 7,
+        "totalContest": 6,
+        "totalCross": 5,
+        "duelLost": 41,
+        "aerialLost": 20,
+        "attemptPenaltyMiss": 0,
+        "attemptPenaltyPost": 0,
+        "attemptPenaltyTarget": 0,
+        "totalLongBalls": 6,
+        "goalsConceded": 8,
+        "tacklesWon": 1,
+        "tacklesWonPercentage": 16.666666666667,
+        "scoringFrequency": 241.5,
+        "yellowRedCards": 0,
+        "savesCaught": 0,
+        "savesParried": 0,
+        "totalOwnHalfPasses": 32,
+        "totalOppositionHalfPasses": 76,
+        "totwAppearances": 0,
+        "id": 517364,
+        "type": "overall",
+        "appearances": 9,
+        "statisticsType": {
+          "sportSlug": "football",
+          "statisticsType": "player"
+        }
+      },
+      "team": {
+        "name": "Libertad",
+        "slug": "libertad",
+        "shortName": "Libertad",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "userCount": 29108,
+        "nameCode": "LIB",
+        "disabled": false,
+        "national": false,
+        "type": 0,
+        "id": 5996,
+        "teamColors": {
+          "primary": "#ffffff",
+          "secondary": "#000000",
+          "text": "#000000"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "ليبرتاد",
+            "ru": "Либертад Асунсьон"
+          },
+          "shortNameTranslation": {
+            "ar": "ليبرتاد"
+          }
+        }
+      }
+    },
+    "unique-tournament_384_season_19989_statistics_overall": {
+      "statistics": {
+        "rating": 7.1428571428571,
+        "totalRating": 50,
+        "countRating": 7,
+        "goals": 2,
+        "bigChancesCreated": 5,
+        "bigChancesMissed": 3,
+        "assists": 1,
+        "goalsAssistsSum": 3,
+        "accuratePasses": 93,
+        "inaccuratePasses": 23,
+        "totalPasses": 116,
+        "accuratePassesPercentage": 80.172413793103,
+        "accurateOwnHalfPasses": 22,
+        "accurateOppositionHalfPasses": 73,
+        "accurateFinalThirdPasses": 51,
+        "keyPasses": 11,
+        "successfulDribbles": 9,
+        "successfulDribblesPercentage": 60,
+        "tackles": 4,
+        "interceptions": 3,
+        "yellowCards": 0,
+        "directRedCards": 0,
+        "redCards": 0,
+        "accurateCrosses": 2,
+        "accurateCrossesPercentage": 100,
+        "totalShots": 23,
+        "shotsOnTarget": 5,
+        "shotsOffTarget": 12,
+        "groundDuelsWon": 20,
+        "groundDuelsWonPercentage": 42.553191489362,
+        "aerialDuelsWon": 8,
+        "aerialDuelsWonPercentage": 34.782608695652,
+        "totalDuelsWon": 28,
+        "totalDuelsWonPercentage": 40,
+        "minutesPlayed": 484,
+        "goalConversionPercentage": 8.695652173913,
+        "penaltiesTaken": 0,
+        "penaltyGoals": 0,
+        "penaltyWon": 1,
+        "penaltyConceded": 0,
+        "shotFromSetPiece": 0,
+        "freeKickGoal": 0,
+        "goalsFromInsideTheBox": 2,
+        "goalsFromOutsideTheBox": 0,
+        "shotsFromInsideTheBox": 15,
+        "shotsFromOutsideTheBox": 8,
+        "headedGoals": 0,
+        "leftFootGoals": 1,
+        "rightFootGoals": 1,
+        "accurateLongBalls": 3,
+        "accurateLongBallsPercentage": 60,
+        "clearances": 3,
+        "errorLeadToGoal": 0,
+        "errorLeadToShot": 0,
+        "dispossessed": 11,
+        "possessionLost": 58,
+        "possessionWonAttThird": 8,
+        "totalChippedPasses": 11,
+        "accurateChippedPasses": 7,
+        "touches": 221,
+        "wasFouled": 7,
+        "fouls": 7,
+        "hitWoodwork": 0,
+        "ownGoals": 0,
+        "dribbledPast": 3,
+        "offsides": 1,
+        "blockedShots": 6,
+        "passToAssist": 0,
+        "saves": 0,
+        "cleanSheet": 1,
+        "penaltyFaced": 0,
+        "penaltySave": 0,
+        "savedShotsFromInsideTheBox": 0,
+        "savedShotsFromOutsideTheBox": 0,
+        "goalsConcededInsideTheBox": 7,
+        "goalsConcededOutsideTheBox": 2,
+        "punches": 0,
+        "runsOut": 0,
+        "successfulRunsOut": 0,
+        "highClaims": 0,
+        "crossesNotClaimed": 0,
+        "matchesStarted": 5,
+        "penaltyConversion": 0,
+        "setPieceConversion": 0,
+        "totalAttemptAssist": 11,
+        "totalContest": 15,
+        "totalCross": 2,
+        "duelLost": 42,
+        "aerialLost": 15,
+        "attemptPenaltyMiss": 0,
+        "attemptPenaltyPost": 0,
+        "attemptPenaltyTarget": 0,
+        "totalLongBalls": 5,
+        "goalsConceded": 9,
+        "tacklesWon": 3,
+        "tacklesWonPercentage": 75,
+        "scoringFrequency": 242,
+        "yellowRedCards": 0,
+        "savesCaught": 0,
+        "savesParried": 0,
+        "totalOwnHalfPasses": 26,
+        "totalOppositionHalfPasses": 92,
+        "totwAppearances": 1,
+        "id": 177151,
+        "type": "overall",
+        "appearances": 7,
+        "statisticsType": {
+          "sportSlug": "football",
+          "statisticsType": "player"
+        }
+      },
+      "team": {
+        "name": "Libertad",
+        "slug": "libertad",
+        "shortName": "Libertad",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "userCount": 29108,
+        "nameCode": "LIB",
+        "disabled": false,
+        "national": false,
+        "type": 0,
+        "id": 5996,
+        "teamColors": {
+          "primary": "#ffffff",
+          "secondary": "#000000",
+          "text": "#000000"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "ليبرتاد",
+            "ru": "Либертад Асунсьон"
+          },
+          "shortNameTranslation": {
+            "ar": "ليبرتاد"
+          }
+        }
+      }
+    },
+    "unique-tournament_11541_season_37057_statistics_overall": {
+      "statistics": {
+        "goals": 0,
+        "goalsAssistsSum": 0,
+        "yellowCards": 1,
+        "directRedCards": 0,
+        "redCards": 0,
+        "minutesPlayed": 92,
+        "matchesStarted": 0,
+        "yellowRedCards": 0,
+        "substitutionsIn": 7,
+        "substitutionsOut": 0,
+        "id": 682328,
+        "type": "overall",
+        "appearances": 7,
+        "statisticsType": {
+          "sportSlug": "football",
+          "statisticsType": "player"
+        }
+      }
+    },
+    "unique-tournament_11541_season_34490_statistics_overall": {
+      "statistics": {
+        "goals": 2,
+        "goalsAssistsSum": 2,
+        "yellowCards": 1,
+        "directRedCards": 1,
+        "redCards": 1,
+        "minutesPlayed": 335,
+        "matchesStarted": 2,
+        "scoringFrequency": 167.5,
+        "yellowRedCards": 0,
+        "substitutionsIn": 4,
+        "substitutionsOut": 2,
+        "id": 600899,
+        "type": "overall",
+        "appearances": 6,
+        "statisticsType": {
+          "sportSlug": "football",
+          "statisticsType": "player"
+        }
+      },
+      "team": {
+        "name": "Libertad",
+        "slug": "libertad",
+        "shortName": "Libertad",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "userCount": 29108,
+        "nameCode": "LIB",
+        "disabled": false,
+        "national": false,
+        "type": 0,
+        "id": 5996,
+        "teamColors": {
+          "primary": "#ffffff",
+          "secondary": "#000000",
+          "text": "#000000"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "ليبرتاد",
+            "ru": "Либертад Асунсьон"
+          },
+          "shortNameTranslation": {
+            "ar": "ليبرتاد"
+          }
+        }
+      }
+    },
+    "unique-tournament_11540_season_26853_statistics_overall": {
+      "statistics": {
+        "totalRating": 0,
+        "countRating": 0,
+        "goals": 4,
+        "goalsAssistsSum": 4,
+        "yellowCards": 4,
+        "directRedCards": 0,
+        "redCards": 0,
+        "minutesPlayed": 694,
+        "matchesStarted": 6,
+        "scoringFrequency": 173.5,
+        "yellowRedCards": 0,
+        "substitutionsIn": 11,
+        "substitutionsOut": 3,
+        "id": 502736,
+        "type": "overall",
+        "appearances": 17,
+        "statisticsType": {
+          "sportSlug": "football",
+          "statisticsType": "player"
+        }
+      },
+      "team": {
+        "name": "Libertad",
+        "slug": "libertad",
+        "shortName": "Libertad",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "userCount": 29108,
+        "nameCode": "LIB",
+        "disabled": false,
+        "national": false,
+        "type": 0,
+        "id": 5996,
+        "teamColors": {
+          "primary": "#ffffff",
+          "secondary": "#000000",
+          "text": "#000000"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "ليبرتاد",
+            "ru": "Либертад Асунсьон"
+          },
+          "shortNameTranslation": {
+            "ar": "ليبرتاد"
+          }
+        }
+      }
+    },
+    "unique-tournament_11540_season_20170_statistics_overall": {
+      "statistics": {
+        "totalRating": 0,
+        "countRating": 0,
+        "goals": 4,
+        "goalsAssistsSum": 4,
+        "yellowCards": 1,
+        "directRedCards": 0,
+        "redCards": 0,
+        "minutesPlayed": 1037,
+        "matchesStarted": 11,
+        "scoringFrequency": 259.25,
+        "yellowRedCards": 0,
+        "substitutionsIn": 4,
+        "substitutionsOut": 3,
+        "id": 475474,
+        "type": "overall",
+        "appearances": 15,
+        "statisticsType": {
+          "sportSlug": "football",
+          "statisticsType": "player"
+        }
+      },
+      "team": {
+        "name": "Libertad",
+        "slug": "libertad",
+        "shortName": "Libertad",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "userCount": 29108,
+        "nameCode": "LIB",
+        "disabled": false,
+        "national": false,
+        "type": 0,
+        "id": 5996,
+        "teamColors": {
+          "primary": "#ffffff",
+          "secondary": "#000000",
+          "text": "#000000"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "ليبرتاد",
+            "ru": "Либертад Асунсьон"
+          },
+          "shortNameTranslation": {
+            "ar": "ليبرتاد"
+          }
+        }
+      }
+    },
+    "unique-tournament_480_season_57297_statistics_overall": {
+      "statistics": {
+        "rating": 7.6,
+        "totalRating": 98.8,
+        "countRating": 13,
+        "goals": 10,
+        "bigChancesCreated": 4,
+        "bigChancesMissed": 4,
+        "assists": 4,
+        "goalsAssistsSum": 14,
+        "accuratePasses": 144,
+        "inaccuratePasses": 59,
+        "totalPasses": 203,
+        "accuratePassesPercentage": 70.935960591133,
+        "accurateOwnHalfPasses": 35,
+        "accurateOppositionHalfPasses": 109,
+        "accurateFinalThirdPasses": 60,
+        "keyPasses": 13,
+        "successfulDribbles": 6,
+        "successfulDribblesPercentage": 46.153846153846,
+        "tackles": 10,
+        "interceptions": 2,
+        "yellowCards": 3,
+        "directRedCards": 0,
+        "redCards": 0,
+        "accurateCrosses": 0,
+        "accurateCrossesPercentage": 0,
+        "totalShots": 40,
+        "shotsOnTarget": 20,
+        "shotsOffTarget": 15,
+        "groundDuelsWon": 30,
+        "groundDuelsWonPercentage": 35.714285714286,
+        "aerialDuelsWon": 15,
+        "aerialDuelsWonPercentage": 27.272727272727,
+        "totalDuelsWon": 45,
+        "totalDuelsWonPercentage": 32.374100719424,
+        "minutesPlayed": 1082,
+        "goalConversionPercentage": 25,
+        "penaltiesTaken": 2,
+        "penaltyGoals": 2,
+        "penaltyWon": 2,
+        "penaltyConceded": 0,
+        "shotFromSetPiece": 0,
+        "freeKickGoal": 0,
+        "goalsFromInsideTheBox": 10,
+        "goalsFromOutsideTheBox": 0,
+        "shotsFromInsideTheBox": 35,
+        "shotsFromOutsideTheBox": 5,
+        "headedGoals": 1,
+        "leftFootGoals": 6,
+        "rightFootGoals": 3,
+        "accurateLongBalls": 7,
+        "accurateLongBallsPercentage": 58.333333333333,
+        "clearances": 8,
+        "errorLeadToGoal": 0,
+        "errorLeadToShot": 0,
+        "dispossessed": 11,
+        "possessionLost": 119,
+        "possessionWonAttThird": 8,
+        "totalChippedPasses": 15,
+        "accurateChippedPasses": 7,
+        "touches": 382,
+        "wasFouled": 14,
+        "fouls": 32,
+        "hitWoodwork": 2,
+        "ownGoals": 0,
+        "dribbledPast": 7,
+        "offsides": 8,
+        "blockedShots": 5,
+        "passToAssist": 0,
+        "saves": 0,
+        "cleanSheet": 2,
+        "penaltyFaced": 0,
+        "penaltySave": 0,
+        "savedShotsFromInsideTheBox": 0,
+        "savedShotsFromOutsideTheBox": 0,
+        "goalsConcededInsideTheBox": 9,
+        "goalsConcededOutsideTheBox": 1,
+        "punches": 0,
+        "runsOut": 0,
+        "successfulRunsOut": 0,
+        "highClaims": 0,
+        "crossesNotClaimed": 0,
+        "matchesStarted": 13,
+        "penaltyConversion": 100,
+        "setPieceConversion": 0,
+        "totalAttemptAssist": 13,
+        "totalContest": 13,
+        "totalCross": 3,
+        "duelLost": 94,
+        "aerialLost": 40,
+        "attemptPenaltyMiss": 0,
+        "attemptPenaltyPost": 0,
+        "attemptPenaltyTarget": 0,
+        "totalLongBalls": 12,
+        "goalsConceded": 10,
+        "tacklesWon": 6,
+        "tacklesWonPercentage": 60,
+        "scoringFrequency": 108.2,
+        "yellowRedCards": 0,
+        "savesCaught": 0,
+        "savesParried": 0,
+        "totalOwnHalfPasses": 40,
+        "totalOppositionHalfPasses": 166,
+        "totwAppearances": 4,
+        "goalKicks": 0,
+        "ballRecovery": 39,
+        "id": 1339558,
+        "type": "overall",
+        "appearances": 13,
+        "statisticsType": {
+          "sportSlug": "football",
+          "statisticsType": "player"
+        }
+      },
+      "team": {
+        "name": "Racing Club",
+        "slug": "racing-club",
+        "shortName": "Racing",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "userCount": 85565,
+        "nameCode": "RCS",
+        "disabled": false,
+        "national": false,
+        "type": 0,
+        "id": 3215,
+        "teamColors": {
+          "primary": "#00ccff",
+          "secondary": "#ffffff",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "راسينغ كلوب",
+            "ru": "Расинг Клаб"
+          },
+          "shortNameTranslation": {
+            "ar": "راسينغ"
+          }
+        }
+      }
+    },
+    "unique-tournament_480_season_87770_statistics_overall": {
+      "statistics": {
+        "rating": 6.65,
+        "totalRating": 13.3,
+        "countRating": 2,
+        "goals": 1,
+        "bigChancesCreated": 0,
+        "bigChancesMissed": 4,
+        "assists": 0,
+        "expectedAssists": 0.11197,
+        "goalsAssistsSum": 1,
+        "accuratePasses": 24,
+        "inaccuratePasses": 6,
+        "totalPasses": 30,
+        "accuratePassesPercentage": 80,
+        "accurateOwnHalfPasses": 12,
+        "accurateOppositionHalfPasses": 12,
+        "accurateFinalThirdPasses": 9,
+        "keyPasses": 3,
+        "successfulDribbles": 2,
+        "successfulDribblesPercentage": 100,
+        "tackles": 2,
+        "interceptions": 1,
+        "yellowCards": 0,
+        "directRedCards": 0,
+        "redCards": 0,
+        "accurateCrosses": 0,
+        "accurateCrossesPercentage": 0,
+        "totalShots": 7,
+        "shotsOnTarget": 4,
+        "shotsOffTarget": 2,
+        "groundDuelsWon": 7,
+        "groundDuelsWonPercentage": 46.666666666667,
+        "aerialDuelsWon": 3,
+        "aerialDuelsWonPercentage": 42.857142857143,
+        "totalDuelsWon": 10,
+        "totalDuelsWonPercentage": 45.454545454545,
+        "minutesPlayed": 156,
+        "goalConversionPercentage": 14.285714285714,
+        "penaltiesTaken": 0,
+        "penaltyGoals": 0,
+        "penaltyWon": 0,
+        "penaltyConceded": 0,
+        "shotFromSetPiece": 0,
+        "freeKickGoal": 0,
+        "goalsFromInsideTheBox": 1,
+        "goalsFromOutsideTheBox": 0,
+        "shotsFromInsideTheBox": 6,
+        "shotsFromOutsideTheBox": 1,
+        "headedGoals": 0,
+        "leftFootGoals": 1,
+        "rightFootGoals": 0,
+        "accurateLongBalls": 1,
+        "accurateLongBallsPercentage": 50,
+        "clearances": 1,
+        "errorLeadToGoal": 0,
+        "errorLeadToShot": 0,
+        "dispossessed": 3,
+        "possessionLost": 11,
+        "possessionWonAttThird": 2,
+        "totalChippedPasses": 4,
+        "accurateChippedPasses": 3,
+        "touches": 58,
+        "wasFouled": 3,
+        "fouls": 5,
+        "hitWoodwork": 0,
+        "ownGoals": 0,
+        "dribbledPast": 0,
+        "offsides": 1,
+        "blockedShots": 1,
+        "passToAssist": 0,
+        "saves": 0,
+        "cleanSheet": 0,
+        "penaltyFaced": 0,
+        "penaltySave": 0,
+        "savedShotsFromInsideTheBox": 0,
+        "savedShotsFromOutsideTheBox": 0,
+        "goalsConcededInsideTheBox": 4,
+        "goalsConcededOutsideTheBox": 0,
+        "punches": 0,
+        "runsOut": 0,
+        "successfulRunsOut": 0,
+        "highClaims": 0,
+        "crossesNotClaimed": 0,
+        "matchesStarted": 2,
+        "penaltyConversion": 0,
+        "setPieceConversion": 0,
+        "totalAttemptAssist": 3,
+        "totalContest": 2,
+        "totalCross": 0,
+        "duelLost": 12,
+        "aerialLost": 4,
+        "attemptPenaltyMiss": 0,
+        "attemptPenaltyPost": 0,
+        "attemptPenaltyTarget": 0,
+        "totalLongBalls": 2,
+        "goalsConceded": 4,
+        "tacklesWon": 1,
+        "tacklesWonPercentage": 50,
+        "scoringFrequency": 156,
+        "yellowRedCards": 0,
+        "savesCaught": 0,
+        "savesParried": 0,
+        "totalOwnHalfPasses": 12,
+        "totalOppositionHalfPasses": 18,
+        "totwAppearances": 0,
+        "expectedGoals": 2.4102,
+        "goalKicks": 0,
+        "ballRecovery": 5,
+        "outfielderBlocks": 1,
+        "id": 2805105,
+        "type": "overall",
+        "appearances": 2,
+        "statisticsType": {
+          "sportSlug": "football",
+          "statisticsType": "player"
+        }
+      },
+      "team": {
+        "name": "Racing Club",
+        "slug": "racing-club",
+        "shortName": "Racing",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "userCount": 85565,
+        "nameCode": "RCS",
+        "disabled": false,
+        "national": false,
+        "type": 0,
+        "id": 3215,
+        "teamColors": {
+          "primary": "#00ccff",
+          "secondary": "#ffffff",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "راسينغ كلوب",
+            "ru": "Расинг Клаб"
+          },
+          "shortNameTranslation": {
+            "ar": "راسينغ"
+          }
+        }
+      }
+    },
+    "unique-tournament_1024_season_88177_statistics_overall": {
+      "statistics": {
+        "goals": 1,
+        "assists": 0,
+        "yellowCards": 0,
+        "redCards": 0,
+        "minutesPlayed": 73,
+        "penaltiesTaken": 0,
+        "penaltyGoals": 0,
+        "ownGoals": 0,
+        "matchesStarted": 1,
+        "scoringFrequency": 73,
+        "yellowRedCards": 0,
+        "id": 2779097,
+        "type": "overall",
+        "appearances": 1,
+        "statisticsType": {
+          "sportSlug": "football",
+          "statisticsType": "player"
+        }
+      },
+      "team": {
+        "name": "Racing Club",
+        "slug": "racing-club",
+        "shortName": "Racing",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "userCount": 85565,
+        "nameCode": "RCS",
+        "disabled": false,
+        "national": false,
+        "type": 0,
+        "id": 3215,
+        "teamColors": {
+          "primary": "#00ccff",
+          "secondary": "#ffffff",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "راسينغ كلوب",
+            "ru": "Расинг Клаб"
+          },
+          "shortNameTranslation": {
+            "ar": "راسينغ"
+          }
+        }
+      }
+    },
+    "unique-tournament_1024_season_70664_statistics_overall": {
+      "statistics": {
+        "goals": 2,
+        "assists": 0,
+        "yellowCards": 1,
+        "redCards": 2,
+        "minutesPlayed": 187,
+        "penaltiesTaken": 0,
+        "penaltyGoals": 0,
+        "ownGoals": 0,
+        "matchesStarted": 2,
+        "goalsConceded": 2,
+        "scoringFrequency": 93.5,
+        "yellowRedCards": 1,
+        "id": 2240666,
+        "type": "overall",
+        "appearances": 3,
+        "statisticsType": {
+          "sportSlug": "football",
+          "statisticsType": "player"
+        }
+      },
+      "team": {
+        "name": "Racing Club",
+        "slug": "racing-club",
+        "shortName": "Racing",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "userCount": 85565,
+        "nameCode": "RCS",
+        "disabled": false,
+        "national": false,
+        "type": 0,
+        "id": 3215,
+        "teamColors": {
+          "primary": "#00ccff",
+          "secondary": "#ffffff",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "راسينغ كلوب",
+            "ru": "Расинг Клаб"
+          },
+          "shortNameTranslation": {
+            "ar": "راسينغ"
+          }
+        }
+      }
+    },
+    "unique-tournament_490_season_69954_statistics_overall": {
+      "statistics": {
+        "rating": 7.55,
+        "totalRating": 15.1,
+        "countRating": 2,
+        "goals": 1,
+        "bigChancesCreated": 1,
+        "bigChancesMissed": 1,
+        "assists": 0,
+        "goalsAssistsSum": 1,
+        "accuratePasses": 21,
+        "inaccuratePasses": 10,
+        "totalPasses": 31,
+        "accuratePassesPercentage": 67.741935483871,
+        "accurateOwnHalfPasses": 4,
+        "accurateOppositionHalfPasses": 17,
+        "accurateFinalThirdPasses": 10,
+        "keyPasses": 3,
+        "successfulDribbles": 1,
+        "successfulDribblesPercentage": 100,
+        "tackles": 0,
+        "interceptions": 0,
+        "yellowCards": 1,
+        "directRedCards": 0,
+        "redCards": 0,
+        "accurateCrosses": 0,
+        "accurateCrossesPercentage": 0,
+        "totalShots": 7,
+        "shotsOnTarget": 3,
+        "shotsOffTarget": 3,
+        "groundDuelsWon": 4,
+        "groundDuelsWonPercentage": 40,
+        "aerialDuelsWon": 5,
+        "aerialDuelsWonPercentage": 50,
+        "totalDuelsWon": 9,
+        "totalDuelsWonPercentage": 45,
+        "minutesPlayed": 176,
+        "goalConversionPercentage": 14.285714285714,
+        "penaltiesTaken": 0,
+        "penaltyGoals": 0,
+        "penaltyWon": 1,
+        "penaltyConceded": 0,
+        "shotFromSetPiece": 0,
+        "freeKickGoal": 0,
+        "goalsFromInsideTheBox": 1,
+        "goalsFromOutsideTheBox": 0,
+        "shotsFromInsideTheBox": 6,
+        "shotsFromOutsideTheBox": 1,
+        "headedGoals": 0,
+        "leftFootGoals": 1,
+        "rightFootGoals": 0,
+        "accurateLongBalls": 1,
+        "accurateLongBallsPercentage": 50,
+        "clearances": 2,
+        "errorLeadToGoal": 0,
+        "errorLeadToShot": 0,
+        "dispossessed": 2,
+        "possessionLost": 13,
+        "possessionWonAttThird": 0,
+        "totalChippedPasses": 3,
+        "accurateChippedPasses": 0,
+        "touches": 52,
+        "wasFouled": 3,
+        "fouls": 3,
+        "hitWoodwork": 0,
+        "ownGoals": 0,
+        "dribbledPast": 1,
+        "offsides": 2,
+        "blockedShots": 1,
+        "passToAssist": 0,
+        "saves": 0,
+        "cleanSheet": 1,
+        "penaltyFaced": 0,
+        "penaltySave": 0,
+        "savedShotsFromInsideTheBox": 0,
+        "savedShotsFromOutsideTheBox": 0,
+        "goalsConcededInsideTheBox": 0,
+        "goalsConcededOutsideTheBox": 0,
+        "punches": 0,
+        "runsOut": 0,
+        "successfulRunsOut": 0,
+        "highClaims": 0,
+        "crossesNotClaimed": 0,
+        "matchesStarted": 2,
+        "penaltyConversion": 0,
+        "setPieceConversion": 0,
+        "totalAttemptAssist": 3,
+        "totalContest": 1,
+        "totalCross": 0,
+        "duelLost": 11,
+        "aerialLost": 5,
+        "attemptPenaltyMiss": 0,
+        "attemptPenaltyPost": 0,
+        "attemptPenaltyTarget": 0,
+        "totalLongBalls": 2,
+        "goalsConceded": 0,
+        "tacklesWon": 0,
+        "tacklesWonPercentage": 0,
+        "scoringFrequency": 176,
+        "yellowRedCards": 0,
+        "savesCaught": 0,
+        "savesParried": 0,
+        "totalOwnHalfPasses": 4,
+        "totalOppositionHalfPasses": 27,
+        "totwAppearances": 0,
+        "goalKicks": 0,
+        "ballRecovery": 3,
+        "id": 1837990,
+        "type": "overall",
+        "appearances": 2,
+        "statisticsType": {
+          "sportSlug": "football",
+          "statisticsType": "player"
+        }
+      },
+      "team": {
+        "name": "Racing Club",
+        "slug": "racing-club",
+        "shortName": "Racing",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "userCount": 85565,
+        "nameCode": "RCS",
+        "disabled": false,
+        "national": false,
+        "type": 0,
+        "id": 3215,
+        "teamColors": {
+          "primary": "#00ccff",
+          "secondary": "#ffffff",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "راسينغ كلوب",
+            "ru": "Расинг Клаб"
+          },
+          "shortNameTranslation": {
+            "ar": "راسينغ"
+          }
+        }
+      }
+    },
+    "unique-tournament_325_season_40557_statistics_overall": {
+      "statistics": {
+        "rating": 6.6380952380952,
+        "totalRating": 139.4,
+        "countRating": 21,
+        "goals": 4,
+        "bigChancesCreated": 0,
+        "bigChancesMissed": 3,
+        "assists": 1,
+        "expectedAssists": 0.52982029,
+        "goalsAssistsSum": 5,
+        "accuratePasses": 118,
+        "inaccuratePasses": 61,
+        "totalPasses": 179,
+        "accuratePassesPercentage": 65.921787709497,
+        "accurateOwnHalfPasses": 33,
+        "accurateOppositionHalfPasses": 85,
+        "accurateFinalThirdPasses": 63,
+        "keyPasses": 11,
+        "successfulDribbles": 5,
+        "successfulDribblesPercentage": 38.461538461538,
+        "tackles": 7,
+        "interceptions": 4,
+        "yellowCards": 7,
+        "directRedCards": 0,
+        "redCards": 0,
+        "accurateCrosses": 0,
+        "accurateCrossesPercentage": 0,
+        "totalShots": 27,
+        "shotsOnTarget": 10,
+        "shotsOffTarget": 11,
+        "groundDuelsWon": 21,
+        "groundDuelsWonPercentage": 28.378378378378,
+        "aerialDuelsWon": 18,
+        "aerialDuelsWonPercentage": 30.508474576271,
+        "totalDuelsWon": 39,
+        "totalDuelsWonPercentage": 29.323308270677,
+        "minutesPlayed": 1012,
+        "goalConversionPercentage": 14.814814814815,
+        "penaltiesTaken": 0,
+        "penaltyGoals": 0,
+        "penaltyWon": 0,
+        "penaltyConceded": 0,
+        "shotFromSetPiece": 0,
+        "freeKickGoal": 0,
+        "goalsFromInsideTheBox": 3,
+        "goalsFromOutsideTheBox": 1,
+        "shotsFromInsideTheBox": 22,
+        "shotsFromOutsideTheBox": 5,
+        "headedGoals": 0,
+        "leftFootGoals": 1,
+        "rightFootGoals": 3,
+        "accurateLongBalls": 6,
+        "accurateLongBallsPercentage": 60,
+        "clearances": 3,
+        "errorLeadToGoal": 0,
+        "errorLeadToShot": 0,
+        "dispossessed": 14,
+        "possessionLost": 118,
+        "possessionWonAttThird": 5,
+        "totalChippedPasses": 12,
+        "accurateChippedPasses": 9,
+        "touches": 327,
+        "wasFouled": 9,
+        "fouls": 22,
+        "hitWoodwork": 0,
+        "ownGoals": 0,
+        "dribbledPast": 9,
+        "offsides": 6,
+        "blockedShots": 6,
+        "passToAssist": 0,
+        "saves": 0,
+        "cleanSheet": 0,
+        "penaltyFaced": 0,
+        "penaltySave": 0,
+        "savedShotsFromInsideTheBox": 0,
+        "savedShotsFromOutsideTheBox": 0,
+        "goalsConcededInsideTheBox": 14,
+        "goalsConcededOutsideTheBox": 2,
+        "punches": 0,
+        "runsOut": 0,
+        "successfulRunsOut": 0,
+        "highClaims": 0,
+        "crossesNotClaimed": 0,
+        "matchesStarted": 10,
+        "penaltyConversion": 0,
+        "setPieceConversion": 0,
+        "totalAttemptAssist": 11,
+        "totalContest": 13,
+        "totalCross": 4,
+        "duelLost": 94,
+        "aerialLost": 41,
+        "attemptPenaltyMiss": 0,
+        "attemptPenaltyPost": 0,
+        "attemptPenaltyTarget": 0,
+        "totalLongBalls": 10,
+        "goalsConceded": 16,
+        "tacklesWon": 5,
+        "tacklesWonPercentage": 71.428571428571,
+        "scoringFrequency": 253,
+        "yellowRedCards": 0,
+        "savesCaught": 0,
+        "savesParried": 0,
+        "totalOwnHalfPasses": 41,
+        "totalOppositionHalfPasses": 142,
+        "totwAppearances": 0,
+        "expectedGoals": 4.4214,
+        "id": 810322,
+        "type": "overall",
+        "appearances": 22,
+        "statisticsType": {
+          "sportSlug": "football",
+          "statisticsType": "player"
+        }
+      },
+      "team": {
+        "name": "Coritiba",
+        "slug": "coritiba",
+        "shortName": "Coritiba",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "userCount": 58542,
+        "nameCode": "COR",
+        "disabled": false,
+        "national": false,
+        "type": 0,
+        "id": 1982,
+        "teamColors": {
+          "primary": "#ffffff",
+          "secondary": "#009966",
+          "text": "#009966"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "كوريتيبا",
+            "ru": "ФК Коритиба"
+          },
+          "shortNameTranslation": {
+            "ar": "كوريتيبا"
+          }
+        }
+      }
+    }
+  }
+}

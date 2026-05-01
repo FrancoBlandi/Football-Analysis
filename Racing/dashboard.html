@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Racing Club — Dashboard Ejecutivo</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --azul: #005BAA; --celeste: #00AEEF; --blanco: #FFFFFF;
+    --verde: #2E7D32; --rojo: #C62828; --naranja: #EF6C00;
+    --gris: #F5F7FA; --texto: #1A1A2E;
+  }
+  body { font-family: 'Segoe UI', system-ui, sans-serif; background: var(--gris); color: var(--texto); font-size: 14px; }
+
+  header { background: var(--azul); color: #fff; padding: 18px 32px; display: flex; align-items: center; gap: 16px; border-bottom: 4px solid var(--celeste); }
+  header h1 { font-size: 22px; font-weight: 700; letter-spacing: .3px; }
+  header p  { font-size: 12px; opacity: .75; margin-top: 2px; }
+
+  nav { background: #fff; border-bottom: 2px solid #E0E4EE; display: flex; padding: 0 32px; }
+  nav button {
+    background: none; border: none; padding: 14px 20px; font-size: 13px; font-weight: 600;
+    color: #777; cursor: pointer; border-bottom: 3px solid transparent; margin-bottom: -2px; transition: all .2s;
+  }
+  nav button:hover { color: var(--azul); }
+  nav button.active { color: var(--azul); border-bottom-color: var(--celeste); }
+
+  .page { display: none; padding: 28px 32px; }
+  .page.active { display: block; }
+
+  .kpi-row { display: grid; gap: 16px; margin-bottom: 24px; }
+  .kpi-row.c4 { grid-template-columns: repeat(4, 1fr); }
+  .kpi-row.c3 { grid-template-columns: repeat(3, 1fr); }
+  .kpi-row.c2 { grid-template-columns: repeat(2, 1fr); }
+  .charts-row { display: grid; gap: 20px; margin-bottom: 24px; }
+  .charts-row.c2 { grid-template-columns: 1fr 1fr; }
+
+  .kpi {
+    background: #fff; border-radius: 10px; padding: 20px 22px;
+    box-shadow: 0 2px 8px rgba(0,0,0,.07); border-left: 4px solid var(--celeste);
+  }
+  .kpi.v { border-left-color: var(--verde); }
+  .kpi.r { border-left-color: var(--rojo); }
+  .kpi.n { border-left-color: var(--naranja); }
+  .kpi.a { border-left-color: var(--azul); }
+  .kpi label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: .6px; color: #888; }
+  .kpi .val { font-size: 26px; font-weight: 800; color: var(--azul); margin: 6px 0 2px; line-height: 1; }
+  .kpi .val.r { color: var(--rojo); }
+  .kpi .val.v { color: var(--verde); }
+  .kpi .val.n { color: var(--naranja); }
+  .kpi .sub { font-size: 11px; color: #999; }
+
+  .card { background: #fff; border-radius: 10px; padding: 20px; box-shadow: 0 2px 8px rgba(0,0,0,.07); }
+  .card h3 { font-size: 12px; font-weight: 700; color: var(--azul); margin-bottom: 16px; text-transform: uppercase; letter-spacing: .5px; }
+  .card canvas { max-height: 260px; }
+
+  .alert { border-radius: 8px; padding: 12px 16px; margin-bottom: 20px; font-size: 13px; font-weight: 600; }
+  .alert.n { background: #FFF3E0; color: var(--naranja); border-left: 4px solid var(--naranja); }
+  .alert.r { background: #FFEBEE; color: var(--rojo); border-left: 4px solid var(--rojo); }
+  .alert.v { background: #E8F5E9; color: var(--verde); border-left: 4px solid var(--verde); }
+
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  th { background: var(--azul); color: #fff; padding: 8px 12px; text-align: left; font-size: 11px; text-transform: uppercase; letter-spacing: .4px; }
+  td { padding: 8px 12px; border-bottom: 1px solid #F0F2F7; }
+  tr:hover td { background: #F0F6FF; }
+  .badge { display: inline-block; padding: 2px 8px; border-radius: 20px; font-size: 11px; font-weight: 600; }
+  .bv { background: #E8F5E9; color: var(--verde); }
+  .bn { background: #FFF3E0; color: var(--naranja); }
+  .br { background: #FFEBEE; color: var(--rojo); }
+  .ba { background: #E3F2FD; color: var(--azul); }
+  .bp { background: #F3E5F5; color: #7B1FA2; border: 1px dashed #AB47BC; }
+
+  footer { margin-top: 8px; padding: 14px 32px; font-size: 11px; color: #aaa; border-top: 1px solid #E0E4EE; background: #fff; }
+  footer a { color: var(--celeste); text-decoration: none; }
+
+  @media (max-width: 900px) {
+    .kpi-row.c4, .kpi-row.c3 { grid-template-columns: 1fr 1fr; }
+    .charts-row.c2 { grid-template-columns: 1fr; }
+    .page { padding: 20px 16px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div style="flex:1">
+    <h1>Racing Club de Avellaneda — Dashboard Ejecutivo</h1>
+    <p>Temporada 2025/26 · Transfermarkt abr 2026 · Balance Oficial Ej. Jul 2024-Jun 2025 (aprobado nov 2025) · Racing de Alma / Doble Amarilla</p>
+  </div>
+  <img src="https://tmssl.akamaized.net/images/wappen/big/1444.png" alt="Racing Club" style="height:64px;filter:drop-shadow(0 2px 6px rgba(0,0,0,.4));flex-shrink:0">
+</header>
+
+<nav>
+  <button class="active" onclick="showTab('resumen',this)">Resumen Ejecutivo</button>
+  <button onclick="showTab('plantel',this)">Plantel Deportivo</button>
+  <button onclick="showTab('finanzas',this)">Finanzas Consolidadas</button>
+  <button onclick="showTab('socios',this)">Socios y Abonos</button>
+  <button onclick="showTab('mercado',this)">Decisiones de Mercado</button>
+  <button onclick="showTab('transferencias',this)">Transferencias 2023-26</button>
+</nav>
+
+<!-- ══════════════════ RESUMEN ══════════════════ -->
+<div id="tab-resumen" class="page active">
+  <div class="kpi-row c4">
+    <div class="kpi a">
+      <label>Valor del Plantel</label>
+      <div class="val">EUR 79.2M</div>
+      <div class="sub">29 jugadores · Transfermarkt abr 2026</div>
+    </div>
+    <div class="kpi v">
+      <label>Superávit Operativo (sin transf.)</label>
+      <div class="val v">+$9.189M ARS</div>
+      <div class="sub">Sin depender de ventas · Ej. 2024-25 (histórico)</div>
+    </div>
+    <div class="kpi">
+      <label>Socios (jun 2025)</label>
+      <div class="val">110.000</div>
+      <div class="sub">4° en Argentina · +26% vs inicio gestión · Racing de Alma</div>
+    </div>
+    <div class="kpi n">
+      <label>Préstamos en el plantel</label>
+      <div class="val n">3 jugadores</div>
+      <div class="sub">Carboni sin OC · Cannavo y Pizarro con OC</div>
+    </div>
+  </div>
+
+  <div class="charts-row c2">
+    <div class="card">
+      <h3>Top 5 Jugadores por Valor de Mercado (EUR)</h3>
+      <canvas id="ch-r-top5"></canvas>
+    </div>
+    <div class="card">
+      <h3>Resultado Financiero — Ej. 2024-25 (ARS millones)</h3>
+      <canvas id="ch-r-resultado"></canvas>
+    </div>
+  </div>
+
+  <div class="kpi-row c3">
+    <div class="kpi v">
+      <label>Ratio de Solvencia</label>
+      <div class="val v">4.46x</div>
+      <div class="sub">Activo Total / Pasivo Total · Corriente: 0.70x · Ej. 2024-25</div>
+    </div>
+    <div class="kpi a">
+      <label>Valor Plantel — Propiedad Racing</label>
+      <div class="val">EUR 65.7M</div>
+      <div class="sub">EUR 79.2M total minus EUR 13.5M en préstamos</div>
+    </div>
+    <div class="kpi">
+      <label>Cuota Activo (dic 2025)</label>
+      <div class="val">$29.400 ARS</div>
+      <div class="sub">Mensual · Doble Amarilla, dic 2025</div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════ PLANTEL ══════════════════ -->
+<div id="tab-plantel" class="page">
+  <div class="kpi-row c3">
+    <div class="kpi a">
+      <label>Valor Total del Plantel</label>
+      <div class="val">EUR 79.175.000</div>
+      <div class="sub">Fuente: Transfermarkt · 19 abr 2026</div>
+    </div>
+    <div class="kpi">
+      <label>Jugadores en el Plantel</label>
+      <div class="val">29</div>
+      <div class="sub">Profesionales registrados en Transfermarkt</div>
+    </div>
+    <div class="kpi n">
+      <label>Préstamos sin opción de compra</label>
+      <div class="val n">3 jugadores</div>
+      <div class="sub">Carboni, Pizarro, Cannavo — NO son activos de Racing</div>
+    </div>
+  </div>
+
+  <div class="alert n">⚠ 3 JUGADORES A PRÉSTAMO — Carboni (Inter Milan, sin OC): vence dic 2026 y regresa a Inter sin compensación. Pizarro (Udinese, OC €5M por 70%): Racing puede adquirir el 70% de su pase. Cannavo (Def. y Justicia, OC USD 2.5M por 100%): Racing puede comprar el 100% de sus derechos. Los colores en la columna de contrato indican la situación.</div>
+  <div class="alert a">ℹ TITULARIDAD PARCIAL (Nota 2.h — Balance oficial Ej. 2024-25): Racing posee el 70% de los derechos de Di Césare y Martirena, y el 50% de los de Tagliamonte. El restante pertenece a terceros. El valor de mercado de Transfermarkt refleja el 100% del jugador — el ingreso real de Racing en caso de venta es proporcional a su porcentaje.</div>
+
+  <div class="charts-row c2">
+    <div class="card">
+      <h3>Top 10 por Valor de Mercado (EUR)</h3>
+      <canvas id="ch-p-top10"></canvas>
+    </div>
+    <div class="card">
+      <h3>Distribución Etaria del Plantel</h3>
+      <canvas id="ch-p-edades"></canvas>
+    </div>
+  </div>
+
+  <div class="card" style="margin-bottom:0">
+    <h3>Plantel Completo — Valores y Contratos (Transfermarkt, abr 2026)</h3>
+    <table>
+      <thead>
+        <tr><th>#</th><th>Jugador</th><th>Posición</th><th>Edad</th><th>Valor de Mercado</th><th>Contrato hasta</th></tr>
+      </thead>
+      <tbody id="tbody-plantel"></tbody>
+    </table>
+  </div>
+
+  <div class="card" style="margin-top:16px;margin-bottom:0">
+    <h3>Rendimiento Individual — LPF Apertura 2026 (SofaScore)</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Jugador</th>
+          <th style="text-align:center">PJ</th>
+          <th style="text-align:center">MIN</th>
+          <th style="text-align:center">G</th>
+          <th style="text-align:center">A</th>
+          <th style="text-align:center">AM</th>
+          <th style="text-align:center">AR</th>
+          <th style="text-align:center">Rating SS</th>
+        </tr>
+      </thead>
+      <tbody id="tbody-stats"></tbody>
+    </table>
+    <p style="margin-top:10px;font-size:11px;color:#999">Fuente: SofaScore · scrape abr 2026 · season_id 87913. AM = amarillas · AR = rojas. † Préstamo recibido. * Pocos minutos (muestra pequeña). Sin datos LPF 2026: Rubio, García Basso, Escudero, Tagliamonte, I.Rodríguez, Torres, A.Fernández, Gómez.</p>
+  </div>
+
+  <div class="card" style="margin-top:16px;margin-bottom:0">
+    <h3>Jugadores Propios Cedidos a Préstamo — Estado abr 2026</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Jugador</th><th>Posición</th><th>Club actual</th><th>País</th>
+          <th>Rendimiento</th><th>Opción de compra</th><th>Retorno</th><th>Tend.</th>
+        </tr>
+      </thead>
+      <tbody id="tbody-cedidos-r"></tbody>
+    </table>
+    <p style="margin-top:10px;font-size:11px;color:#999">Fuente: Racing de Alma · vermouth-deportivo.com.ar · abr 2026. No incluye jugadores ya reintegrados al plantel (Rubio devuelto por DyJ ene 2026, Tagliamonte devuelto por Unión).</p>
+  </div>
+</div>
+
+<!-- ══════════════════ FINANZAS ══════════════════ -->
+<div id="tab-finanzas" class="page">
+  <div class="kpi-row c3">
+    <div class="kpi v">
+      <label>Superávit Operativo Genuino</label>
+      <div class="val v">+$9.189M ARS</div>
+      <div class="sub">Sin ventas de jugadores · Ej. 2024-25 (histórico)</div>
+    </div>
+    <div class="kpi v">
+      <label>Resultado Operativo Total</label>
+      <div class="val v">+$20.171M ARS</div>
+      <div class="sub">Incluye pases · +37.5% vs año anterior · Ej. 2024-25</div>
+    </div>
+    <div class="kpi v">
+      <label>Ratio de Solvencia (Activo / Pasivo)</label>
+      <div class="val v">4.46x</div>
+      <div class="sub">Activo Total/Pasivo Total · Corriente: 0.70x · Ej. 2024-25 · Balance oficial auditado</div>
+    </div>
+  </div>
+
+  <div class="alert v">✓ Ejercicio 2024-25 aprobado por unanimidad (nov 2025): superávit operativo histórico de ARS 9.189M sin depender de ventas de jugadores. Cuotas sociales +21.7% e ingresos comerciales +11.5% impulsaron el resultado. Campeonatos oficiales +130% (Copa Sudamericana 2024). Resultado contable final: ARS −178M (≈ USD −149K, prácticamente en equilibrio), mejora sustancial vs. ejercicios anteriores. Salas (€8M, hecho posterior julio 2025) ingresa al Ej. 2025-26.</div>
+
+  <div class="kpi-row c2">
+    <div class="kpi n">
+      <label>Resultado Contable del Ejercicio</label>
+      <div class="val n">ARS −178M</div>
+      <div class="sub">≈ USD −149K · Prácticamente equilibrio · Ej. 2024-25</div>
+    </div>
+    <div class="kpi">
+      <label>Índice de Endeudamiento</label>
+      <div class="val">28.9%</div>
+      <div class="sub">Pasivo / Patrimonio Neto · Ej. 2024-25 · Balance oficial auditado</div>
+    </div>
+  </div>
+
+  <div class="charts-row c2">
+    <div class="card">
+      <h3>Resultado Financiero — Ej. 2024-25 (ARS millones)</h3>
+      <canvas id="ch-f-resultados"></canvas>
+    </div>
+    <div class="card">
+      <h3>Composición de Ingresos — Ej. 2024-25 (ARS millones · Anexo III)</h3>
+      <canvas id="ch-f-ingresos"></canvas>
+    </div>
+  </div>
+
+  <div class="card" style="margin-bottom:0">
+    <h3>Indicadores Financieros Clave — Fuentes verificadas</h3>
+    <table>
+      <thead><tr><th>Indicador</th><th>Valor</th><th>Período</th><th>Fuente</th></tr></thead>
+      <tbody>
+        <tr><td>Superávit operativo (sin transferencias)</td><td style="color:#2E7D32;font-weight:700">+ARS 9.189M</td><td>Jul 2024-Jun 2025</td><td>Racing de Alma / Santa Fe Deportivo, nov 2025</td></tr>
+        <tr><td>Resultado operativo total</td><td style="color:#2E7D32;font-weight:700">+ARS 20.171M</td><td>Jul 2024-Jun 2025</td><td>Racing de Alma / Doble Amarilla, nov 2025</td></tr>
+        <tr><td>Resultado contable final</td><td style="color:#EF6C00;font-weight:700">ARS −178M (≈ USD −149K)</td><td>Jul 2024-Jun 2025</td><td>Balance oficial Ej. 2024-25, auditado Bertora y Asociados (Crowe)</td></tr>
+        <tr><td>Ratio de solvencia (Activo / Pasivo Total)</td><td style="font-weight:700">4.46x · Corriente: 0.70x</td><td>Ej. 2024-25</td><td>Balance oficial Ej. 2024-25, auditado Bertora y Asociados (Crowe)</td></tr>
+        <tr><td>Índice de endeudamiento (Pasivo / PN)</td><td style="font-weight:700">28.9%</td><td>Ej. 2024-25</td><td>Balance oficial Ej. 2024-25, auditado Bertora y Asociados (Crowe)</td></tr>
+        <tr><td>Ingresos por cuotas sociales</td><td style="font-weight:700">ARS 20.397M (+21.7%)</td><td>Jul 2024-Jun 2025</td><td>Anexo III, Balance oficial Ej. 2024-25</td></tr>
+        <tr><td>Ingresos por campeonatos oficiales (inc. Copa Sudamericana)</td><td style="color:#2E7D32;font-weight:700">ARS 18.774M (+130%)</td><td>Jul 2024-Jun 2025</td><td>Anexo III, Balance oficial Ej. 2024-25</td></tr>
+        <tr><td>Ingresos por televisación</td><td style="font-weight:700">ARS 6.494M</td><td>Jul 2024-Jun 2025</td><td>Anexo III, Balance oficial Ej. 2024-25</td></tr>
+        <tr><td>Ingresos por transferencias de jugadores</td><td style="font-weight:700">ARS 13.516M</td><td>Jul 2024-Jun 2025</td><td>Anexo III, Balance oficial Ej. 2024-25</td></tr>
+        <tr><td>Ingresos publicitarios / sponsors</td><td style="font-weight:700">ARS 5.135M (+11.5%)</td><td>Jul 2024-Jun 2025</td><td>Anexo III, Balance oficial Ej. 2024-25</td></tr>
+        <tr><td>Deuda por compra de Sosa (Atlanta United / MLS)</td><td style="color:#EF6C00;font-weight:700">USD 3.0M pendiente</td><td>Ej. 2024-25</td><td>Anexo VI, Balance oficial Ej. 2024-25</td></tr>
+        <tr><td>Venta Nardoni a Grêmio (2026)</td><td style="color:#2E7D32;font-weight:700">USD 8M + USD 2M bonos</td><td>Feb 2026 (Ej. 2025-26)</td><td>Infobae Deportes, feb 2026</td></tr>
+        <tr><td>Venta Salas (hecho posterior al balance)</td><td style="color:#2E7D32;font-weight:700">€8M · cobrado 11/jul/2025</td><td>Jul 2025 (Ej. 2025-26)</td><td>Nota 10, Balance oficial Ej. 2024-25</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- ══════════════════ SOCIOS ══════════════════ -->
+<div id="tab-socios" class="page">
+  <div class="kpi-row c3">
+    <div class="kpi a">
+      <label>Total de Socios (jun 2025)</label>
+      <div class="val">110.000</div>
+      <div class="sub">4° en Argentina · +26% vs inicio gestión · Racing de Alma / Doble Amarilla</div>
+    </div>
+    <div class="kpi">
+      <label>Cuota Categoría Activo</label>
+      <div class="val">$29.400 ARS</div>
+      <div class="sub">Mensual · vigente desde dic 2025</div>
+    </div>
+    <div class="kpi v">
+      <label>Ingreso Potencial Anual</label>
+      <div class="val v">$38.8B ARS</div>
+      <div class="sub">110.000 × $29.400 × 12 meses</div>
+    </div>
+  </div>
+
+  <div class="charts-row c2">
+    <div class="card">
+      <h3>Ranking de Socios — Top 9 clubes AFA (Racing: jun 2025 · resto: AFA 2024)</h3>
+      <canvas id="ch-s-ranking"></canvas>
+    </div>
+    <div class="card">
+      <h3>Categorías y Cuotas Vigentes — dic 2025 (ARS/mes)</h3>
+      <canvas id="ch-s-categorias"></canvas>
+    </div>
+  </div>
+
+  <div class="card" style="margin-bottom:0">
+    <h3>Cuotas Sociales Vigentes — Racing Club (dic 2025)</h3>
+    <table>
+      <thead><tr><th>Categoría</th><th>Cuota Mensual (ARS)</th><th>Descripción</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Activo</strong></td><td style="font-weight:700">$29.400</td><td>Residentes en radio de 200 km de Avellaneda</td></tr>
+        <tr><td>Jubilado / Pensionado</td><td>$26.700</td><td>Mujeres ≥60 años, hombres ≥65 años</td></tr>
+        <tr><td>Cadete Institucional</td><td>$15.800</td><td>13 a 15 años</td></tr>
+        <tr><td>Menor</td><td>$14.500</td><td>4 a 12 años</td></tr>
+        <tr><td>Interior / Exterior</td><td>$16.200</td><td>Más de 200 km de Avellaneda</td></tr>
+      </tbody>
+    </table>
+    <p style="margin-top:12px;font-size:11px;color:#999">Fuente: Doble Amarilla / lacomuderacing.com, diciembre 2025</p>
+  </div>
+</div>
+
+<!-- ══════════════════ MERCADO ══════════════════ -->
+<div id="tab-mercado" class="page">
+
+  <div class="kpi-row c4">
+    <div class="kpi r">
+      <label>Sin contrato / Vence ≤ jun 2026</label>
+      <div class="val r">2 jugadores</div>
+      <div class="sub">Rojo (jun 2026) · Pérez (sin fecha)</div>
+    </div>
+    <div class="kpi n">
+      <label>Activos propios · vencen dic 2026</label>
+      <div class="val n">€1.25M</div>
+      <div class="sub">Zuculini €600K · García Basso €650K</div>
+    </div>
+    <div class="kpi r">
+      <label>Carboni — regresa sin compensación</label>
+      <div class="val r">€8.5M</div>
+      <div class="sub">Préstamo Inter Milan · sin OC · dic 2026</div>
+    </div>
+    <div class="kpi a">
+      <label>Grupo 2027 — renovar o planificar venta</label>
+      <div class="val">€28.1M</div>
+      <div class="sub">9 jugadores · Di Césare, Cambeses, Martirena + 6 más</div>
+    </div>
+  </div>
+
+  <div class="alert r">⚠ CARBONI LESIONADO — LCA + colateral externo (27/2/2026). Operado. Baja 6-8 meses: no juega más en 2026. Solo 5 PJ antes de la lesión. Préstamo de Inter Milan SIN opción de compra: regresa automáticamente en dic 2026 sin compensación. Milito gestionó con Inter en marzo. Racing pagó el cargo del préstamo y pierde el jugador a los 2 meses de uso.</div>
+
+  <div class="charts-row c2">
+    <div class="card">
+      <h3>Valor de Mercado en Juego por Año de Vencimiento (EUR millones)</h3>
+      <canvas id="ch-m-valor"></canvas>
+    </div>
+    <div class="card">
+      <h3>Contratos que Vencen en 2026 — Desglose por Jugador (EUR millones)</h3>
+      <canvas id="ch-m-2026"></canvas>
+    </div>
+  </div>
+
+  <div class="card" style="margin-bottom:0">
+    <h3>Clasificación por Urgencia de Decisión — Contratos del Plantel (Transfermarkt, abr 2026)</h3>
+    <table>
+      <thead>
+        <tr><th>Jugador</th><th>Posición</th><th>Edad</th><th>Valor de Mercado</th><th>Vencimiento</th><th>Situación</th><th>Acción recomendada</th></tr>
+      </thead>
+      <tbody id="tbody-mercado"></tbody>
+    </table>
+    <p style="margin-top:10px;font-size:11px;color:#999">Fuente: Transfermarkt, abril 2026. Acciones recomendadas basadas en situación contractual y valor de mercado verificado.</p>
+  </div>
+</div>
+
+<!-- ══════════════════ TRANSFERENCIAS ══════════════════ -->
+<div id="tab-transferencias" class="page">
+
+  <div class="kpi-row c4">
+    <div class="kpi v">
+      <label>Ingresos por Ventas 2023-26</label>
+      <div class="val v">~USD 60M</div>
+      <div class="sub">8 operaciones con ingreso confirmado</div>
+    </div>
+    <div class="kpi a">
+      <label>Mayor Operación</label>
+      <div class="val">€13.65M</div>
+      <div class="sub">Alcaraz → Southampton, ene 2023 · 2ª más cara de la historia del club</div>
+    </div>
+    <div class="kpi n">
+      <label>VM Resignada en Libres</label>
+      <div class="val n">~€4.6M</div>
+      <div class="sub">5 salidas sin compensación · Quintero €2M + Martínez €1.5M</div>
+    </div>
+    <div class="kpi r">
+      <label>Principales Bajas Evitables</label>
+      <div class="val r">€3.5M</div>
+      <div class="sub">Quintero (€2M) y R. Martínez (€1.5M) · ambos a rivales directos</div>
+    </div>
+  </div>
+
+  <div class="alert v">✓ BALANCE 2023-26 (gestión Milito): Racing generó ~USD 60M en ventas de 8 jugadores — uno de los ciclos de ventas más productivos de la historia del club. Alcaraz (€13.65M, ene 2023) marcó el inicio de la era; Nardoni (USD 10M, feb 2026) la sostuvo. Las dos únicas bajas evitables fueron Quintero y Roger Martínez, ambos libres en ene 2025 y ambos terminaron en clubs rivales sin compensación para Racing.</div>
+
+  <div class="charts-row c2">
+    <div class="card">
+      <h3>Ingresos por Venta (USD aprox.)</h3>
+      <canvas id="ch-t-ventas"></canvas>
+    </div>
+    <div class="card">
+      <h3>VM Resignada en Salidas Libres (EUR millones)</h3>
+      <canvas id="ch-t-libres-vm"></canvas>
+    </div>
+  </div>
+
+  <div class="card" style="margin-bottom:16px">
+    <h3>Ventas Confirmadas 2024-26</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Jugador</th><th>Posición</th><th>Destino</th><th>Liga</th>
+          <th>Fecha</th><th>Precio / Condición</th><th>VM Transf.</th>
+          <th>Aprox. recibido</th><th>Evaluación y análisis</th>
+        </tr>
+      </thead>
+      <tbody id="tbody-ventas"></tbody>
+    </table>
+    <p style="margin-top:10px;font-size:11px;color:#999">Fuente: Infobae Deportes · Racing de Alma · Ambito · 442 · El Economista · Vermouth Deportivo · La Página Millonaria · TNT Sports · abr 2026. Montos en USD aprox. donde corresponde (€ convertidos a tasa ~1.10).</p>
+  </div>
+
+  <div class="card" style="margin-bottom:0">
+    <h3>Salidas Libres 2024-26</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Jugador</th><th>Posición</th><th>Destino</th>
+          <th>Fecha</th><th>VM al partir</th><th>Tipo</th><th>Evaluación</th><th>Análisis</th>
+        </tr>
+      </thead>
+      <tbody id="tbody-libres"></tbody>
+    </table>
+    <p style="margin-top:10px;font-size:11px;color:#999">VM: valor de mercado Transfermarkt al momento de la salida (estimación). Fuente: Racing de Alma · Transfermarkt · Doble Amarilla · abr 2026.</p>
+  </div>
+</div>
+
+<footer>
+  Fuentes verificadas:
+  <a href="https://www.transfermarkt.es/verein/kader/verein/1444" target="_blank">Transfermarkt</a> (plantel y valores, abr 2026) ·
+  Balance Oficial Ej. 2024-25 (Jul 2024–Jun 2025), auditado por Bertora y Asociados (Crowe), firmado 1/10/2025, aprobado asamblea nov 2025 ·
+  <a href="https://www.racingdealma.com.ar" target="_blank">Racing de Alma</a> / <a href="https://www.dobleamarilla.com.ar" target="_blank">Doble Amarilla</a> ·
+  <a href="https://www.infobae.com/deportes" target="_blank">Infobae Deportes</a> (Nardoni a Grêmio, feb 2026) ·
+  lacomuderacing.com / Doble Amarilla (cuotas, dic 2025).
+  Generado el 23/04/2026.
+</footer>
+
+<script>
+// ── COLORES ───────────────────────────────────────────────────────────
+const AZUL='#005BAA', CELS='#00AEEF', VERDE='#2E7D32', ROJO='#C62828', NRNJ='#EF6C00', VIOLETA='#7B1FA2';
+
+// ── DATOS PLANTEL (Transfermarkt, 19 abr 2026) ────────────────────────
+const PLANTEL = [
+  {n:"Valentín Carboni",    p:"M. Ofensivo",       e:21, v:8500000, c:"31/12/2026", pr:"Inter Milan",    oc:null},
+  {n:"Santiago Sosa",       p:"Pivote",            e:26, v:8000000, c:"31/12/2029"},
+  {n:"Marco Di Césare",     p:"Defensa central",   e:24, v:6000000, c:"31/12/2027"},
+  {n:"Facundo Cambeses",    p:"Portero",           e:29, v:5000000, c:"31/12/2027"},
+  {n:"Matko Miljevic",      p:"M. Ofensivo",       e:24, v:5000000, c:"31/12/2029"},
+  {n:"Gastón Martirena",    p:"Lateral derecho",   e:26, v:4500000, c:"31/12/2027"},
+  {n:"Baltasar Rodríguez",  p:"M. Ofensivo",       e:22, v:4500000, c:"31/12/2027"},
+  {n:"Gabriel Rojas",       p:"Lateral izquierdo", e:28, v:4000000, c:"31/12/2028"},
+  {n:"Nazareno Colombo",    p:"Defensa central",   e:27, v:3500000, c:"31/12/2027"},
+  {n:"Santiago Solari",     p:"Extremo derecho",   e:28, v:3500000, c:"31/12/2027"},
+  {n:"Matías Zaracho",      p:"M. Ofensivo",       e:28, v:3500000, c:"31/12/2028"},
+  {n:"Adrián Martínez",     p:"Delantero centro",  e:33, v:3200000, c:"31/12/2028"},
+  {n:"Duván Vergara",       p:"Extremo izquierdo", e:29, v:2800000, c:"31/12/2028"},
+  {n:"Ezequiel Cannavo",    p:"Lateral derecho",   e:23, v:2500000, c:"31/12/2026", pr:"Def. y Justicia", oc:"USD 2.5M (100%)"},
+  {n:"Damián Pizarro",      p:"Delantero centro",  e:21, v:2500000, c:"31/12/2026", pr:"Udinese",          oc:"€5M (70%)"},
+  {n:"Tomás Conechny",      p:"Extremo izquierdo", e:28, v:2500000, c:"31/12/2029"},
+  {n:"Franco Pardo",        p:"Defensa central",   e:29, v:2300000, c:"31/12/2028"},
+  {n:"Matías Tagliamonte",  p:"Portero",           e:28, v:1800000, c:"31/12/2028"},
+  {n:"Ignacio Rodríguez",   p:"Interior izquierdo",e:24, v:1200000, c:"31/12/2028"},
+  {n:"Elías Torres",        p:"Delantero centro",  e:25, v:1200000, c:"31/12/2029"},
+  {n:"Alan Forneris",       p:"Pivote",            e:21, v:600000,  c:"31/12/2029"},
+  {n:"Bruno Zuculini",      p:"Pivote",            e:33, v:600000,  c:"31/12/2026"},
+  {n:"Adrián Fernández",    p:"M. Ofensivo",       e:24, v:500000,  c:"31/12/2029"},
+  {n:"Tobías Rubio",        p:"Lateral derecho",   e:21, v:400000,  c:"31/12/2027"},
+  {n:"Agustín García Basso",p:"Defensa central",   e:34, v:650000,  c:"31/12/2027"},
+  {n:"Gonzalo Escudero",    p:"Defensa central",   e:19, v:50000,   c:"31/12/2029"},
+  {n:"Marcos Rojo",         p:"Defensa central",   e:36, v:225000,  c:"30/06/2026"},
+  {n:"Tomás Pérez",         p:"Delantero centro",  e:19, v:150000,  c:"—"},
+  {n:"Francisco Gómez",     p:"Portero",           e:22, v:0,       c:"31/12/2027"},
+];
+
+function fmtEUR(v) {
+  if (!v) return '<span style="color:#ccc">S/V</span>';
+  if (v>=1000000) return '€'+(v/1000000).toFixed(2).replace('.',',')+'M';
+  return '€'+(v/1000).toFixed(0)+'K';
+}
+function fmtC(c) {
+  if (c==='—') return '<span style="color:#bbb">—</span>';
+  if (c.includes('2026')) return `<span class="badge bn">${c}</span>`;
+  if (c.includes('2028')||c.includes('2029')) return `<span class="badge bv">${c}</span>`;
+  return c;
+}
+function fmtPr(j) {
+  if (!j.pr) return fmtC(j.c);
+  const ocTxt = j.oc
+    ? `<span class="badge" style="background:#E8F5E9;color:#2E7D32;margin-left:4px" title="Opción de compra disponible">OC: ${j.oc}</span>`
+    : `<span class="badge" style="background:#FFEBEE;color:#C62828;margin-left:4px" title="Sin opción de compra">sin OC</span>`;
+  return `${fmtC(j.c)} <span class="badge bp">préstamo · ${j.pr}</span> ${ocTxt}`;
+}
+function evalColor(e){ return e==='EXCELENTE'?VERDE:e==='BUENA'?'#558B2F':e==='AL VALOR'?NRNJ:e==='EVITABLE'?ROJO:'#6A1B9A'; }
+function evalBg(e){ return e==='EXCELENTE'?'#E8F5E9':e==='BUENA'?'#F1F8E9':e==='AL VALOR'?'#FFF3E0':e==='EVITABLE'?'#FFEBEE':'#F3E5F5'; }
+
+// ── TABS ──────────────────────────────────────────────────────────────
+const inited={};
+function showTab(name, btn) {
+  document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+  document.querySelectorAll('nav button').forEach(b=>b.classList.remove('active'));
+  document.getElementById('tab-'+name).classList.add('active');
+  btn.classList.add('active');
+  if (!inited[name]) { inited[name]=true; buildTab(name); }
+}
+
+// ── CHART HELPERS ─────────────────────────────────────────────────────
+const DOPT = { responsive:true, maintainAspectRatio:true, plugins:{legend:{display:false}} };
+function barH(id, labels, data, colors, xFmt) {
+  new Chart(document.getElementById(id), {
+    type:'bar',
+    data:{ labels, datasets:[{ data, backgroundColor:Array.isArray(colors)?colors:data.map(()=>colors), borderRadius:6 }] },
+    options:{ ...DOPT, indexAxis:'y', scales:{ x:{ ticks:{ callback: xFmt||(v=>v) } } } }
+  });
+}
+function barV(id, labels, data, colors, yFmt) {
+  new Chart(document.getElementById(id), {
+    type:'bar',
+    data:{ labels, datasets:[{ data, backgroundColor:Array.isArray(colors)?colors:data.map(()=>colors), borderRadius:6 }] },
+    options:{ ...DOPT, scales:{ y:{ ticks:{ callback: yFmt||(v=>v) } } } }
+  });
+}
+
+// ── BUILD TABS ────────────────────────────────────────────────────────
+function buildTab(name) {
+
+  if (name==='resumen') {
+    const top5 = PLANTEL.slice(0,5);
+    barH('ch-r-top5',
+      top5.map(j=>j.n.split(' ').slice(0,2).join(' ')),
+      top5.map(j=>j.v/1000000),
+      top5.map(j=>j.pr?VIOLETA:j.c.includes('2026')?ROJO:AZUL),
+      v=>'€'+v+'M');
+    // Resultado operativo 2024-25
+    barV('ch-r-resultado',
+      ['Superávit sin transferencias','Resultado operativo total'],
+      [9189, 20171],
+      [VERDE, AZUL],
+      v=>'+$'+v.toLocaleString('es-AR')+'M');
+  }
+
+  if (name==='plantel') {
+    const top10 = PLANTEL.slice(0,10);
+    barH('ch-p-top10',
+      top10.map(j=>j.n.split(' ').slice(0,2).join(' ')),
+      top10.map(j=>j.v/1000000),
+      top10.map(j=>j.pr?VIOLETA:j.c.includes('2026')?ROJO:AZUL),
+      v=>'€'+v+'M');
+
+    const brackets=[[17,21],[22,26],[27,30],[31,40]];
+    barV('ch-p-edades',
+      ['17-21 años','22-26 años','27-30 años','31+ años'],
+      brackets.map(([a,b])=>PLANTEL.filter(j=>j.e>=a&&j.e<=b).length),
+      [VERDE, CELS, NRNJ, ROJO],
+      v=>v+' jug.');
+
+    document.getElementById('tbody-plantel').innerHTML = PLANTEL.map((j,i)=>`
+      <tr${j.pr?' style="background:#fdf6ff"':''}>
+        <td style="color:#bbb;font-size:11px">${i+1}</td>
+        <td><strong>${j.n}</strong>${j.pr?'':''}</td>
+        <td>${j.p}</td>
+        <td>${j.e}</td>
+        <td style="font-weight:700;color:${j.v>=3000000?AZUL:j.v>=500000?'#555':'#aaa'}">${fmtEUR(j.v)}${j.pr?'<span style="font-size:10px;color:#999;font-weight:400"> *</span>':''}</td>
+        <td>${fmtPr(j)}</td>
+      </tr>`).join('');
+    // footnote
+    const card = document.getElementById('tbody-plantel').closest('.card');
+    if (!card.querySelector('.fn')) {
+      const fn = document.createElement('p');
+      fn.className='fn'; fn.style.cssText='margin-top:10px;font-size:11px;color:#999';
+      fn.textContent='* Valor de mercado según Transfermarkt. Los jugadores marcados como préstamo no son activos de Racing Club — los derechos pertenecen al club de origen.';
+      card.appendChild(fn);
+    }
+
+    const STATS_LPF2026 = [
+      {n:"Gabriel Rojas",      pj:11, min:990,  g:1, a:3, am:2, ar:0, ss:7.21},
+      {n:"Santiago Sosa",      pj:15, min:1324, g:0, a:1, am:5, ar:0, ss:7.13},
+      {n:"Facundo Cambeses",   pj:15, min:1350, g:0, a:0, am:1, ar:0, ss:6.93},
+      {n:"Marco Di Cesare",    pj:12, min:979,  g:2, a:0, am:5, ar:1, ss:6.85},
+      {n:"Ezequiel Cannavo",   pj:12, min:1074, g:0, a:0, am:1, ar:0, ss:6.85, pr:true},
+      {n:"Santiago Solari",    pj:14, min:1077, g:2, a:3, am:3, ar:0, ss:6.84},
+      {n:"Nazareno Colombo",   pj:8,  min:426,  g:0, a:0, am:1, ar:0, ss:6.79},
+      {n:"Franco Pardo",       pj:11, min:649,  g:0, a:0, am:3, ar:0, ss:6.76},
+      {n:"Bruno Zuculini",     pj:13, min:505,  g:0, a:1, am:1, ar:0, ss:6.72},
+      {n:"Duván Vergara",      pj:12, min:441,  g:2, a:0, am:2, ar:0, ss:6.71},
+      {n:"Marcos Rojo",        pj:7,  min:462,  g:0, a:0, am:2, ar:0, ss:6.69},
+      {n:"Matías Zaracho",     pj:13, min:470,  g:2, a:0, am:2, ar:0, ss:6.68},
+      {n:"Tomás Conechny",     pj:15, min:743,  g:3, a:2, am:2, ar:0, ss:6.65},
+      {n:"Baltasar Rodríguez", pj:11, min:501,  g:0, a:1, am:4, ar:0, ss:6.65},
+      {n:"Matko Miljevic",     pj:12, min:611,  g:0, a:0, am:3, ar:1, ss:6.64},
+      {n:"Alan Forneris",      pj:2,  min:53,   g:0, a:0, am:1, ar:0, ss:6.85, sm:true},
+      {n:"Valentín Carboni",   pj:5,  min:204,  g:0, a:0, am:1, ar:0, ss:6.45, pr:true, sm:true},
+      {n:"Gastón Martirena",   pj:5,  min:298,  g:0, a:0, am:0, ar:0, ss:6.42, sm:true},
+      {n:"Damián Pizarro",     pj:2,  min:117,  g:0, a:1, am:0, ar:0, ss:6.40, pr:true, sm:true},
+      {n:"Adrián Martínez",    pj:13, min:1062, g:4, a:0, am:3, ar:0, ss:6.36},
+    ];
+    // Re-sort: separate full-sample from small-sample, keep sorted by rating within each group
+    const statsMain = STATS_LPF2026.filter(j=>!j.sm).sort((a,b)=>b.ss-a.ss);
+    const statsSm   = STATS_LPF2026.filter(j=> j.sm).sort((a,b)=>b.ss-a.ss);
+    const statsAll  = [...statsMain, ...statsSm];
+    function ssColor(r){ return r>=7.0?'#1B5E20':r>=6.7?'#2E7D32':r>=6.5?'#558B2F':'#EF6C00'; }
+    document.getElementById('tbody-stats').innerHTML = statsAll.map(j=>`<tr${j.sm?' style="background:#fafafa;opacity:.85"':''}>
+      <td><strong>${j.n}</strong>${j.pr?` <span class="badge bp" style="font-size:10px">†préstamo</span>`:''}${j.sm?' <span style="font-size:10px;color:#aaa">*</span>':''}</td>
+      <td style="text-align:center">${j.pj}</td>
+      <td style="text-align:center;color:#888;font-size:12px">${j.min}'</td>
+      <td style="text-align:center;font-weight:700">${j.g||'—'}</td>
+      <td style="text-align:center;font-weight:700">${j.a||'—'}</td>
+      <td style="text-align:center;color:#888">${j.am||'—'}</td>
+      <td style="text-align:center;color:${j.ar?'#C62828':'#bbb'};font-weight:${j.ar?800:400}">${j.ar||'—'}</td>
+      <td style="text-align:center;font-weight:800;color:${ssColor(j.ss)}">${j.ss.toFixed(2)}</td>
+    </tr>`).join('');
+
+    const CEDIDOS_R = [
+      {n:'Juan Elordi',    p:'Lateral izquierdo', club:'Ind. Rivadavia', pais:'ARG', rend:'10 PJ (2 titular) en Central 2025 · cedido en nuevo préstamo ene 2026', oc:'Con OC (monto N/D)', retorno:'Ene 2027', est:'→', nota:'31 años. Rendimiento limitado en Rosario Central (2025). Racing lo envió en nuevo préstamo a Ind. Rivadavia en enero 2026 con cargo + OC. Contrato Racing hasta dic 2027. Su futuro depende del rendimiento en Mendoza.'},
+      {n:'Matías Bergara', p:'Delantero',          club:'Ind. Rivadavia', pais:'ARG', rend:'Cedido ene 2026 · pocos minutos hasta la fecha',                        oc:'Sin OC conocida',    retorno:'Jun 2026', est:'↓', nota:'21 años, jugador en desarrollo. Enviado a Ind. Rivadavia hasta junio 2026 para sumar minutos en la Primera Nacional. Sin antecedentes de rendimiento sostenido en Racing.'},
+    ];
+    document.getElementById('tbody-cedidos-r').innerHTML = CEDIDOS_R.map(j=>`
+      <tr>
+        <td><strong>${j.n}</strong></td>
+        <td style="color:#888;font-size:12px">${j.p}</td>
+        <td>${j.club}</td>
+        <td style="color:#888;font-size:12px">${j.pais}</td>
+        <td style="font-size:12px;color:#555">${j.rend}</td>
+        <td style="font-size:12px">${j.oc}</td>
+        <td style="font-size:12px;color:#555">${j.retorno}</td>
+        <td style="color:${j.est==='↑'?VERDE:j.est==='↓'?ROJO:'#999'};font-size:18px;font-weight:800;text-align:center">${j.est}</td>
+      </tr>
+      <tr style="background:#F9FAFB">
+        <td colspan="8" style="font-size:11px;color:#777;padding:4px 12px 10px">${j.nota}</td>
+      </tr>`).join('');
+  }
+
+  if (name==='finanzas') {
+    barV('ch-f-resultados',
+      ['Superávit sin transferencias','Resultado operativo total'],
+      [9189, 20171],
+      [VERDE, AZUL],
+      v=>'+$'+v.toLocaleString('es-AR')+'M');
+    // Composición de ingresos Ej. 2024-25 (Anexo III)
+    barH('ch-f-ingresos',
+      ['Cuotas sociales','Campeonatos (inc. Copa Suda)','Transf. jugadores','Televisación','Publicidad / sponsors','Otros deportivos'],
+      [20397, 18774, 13516, 6494, 5135, 6558],
+      [AZUL, VERDE, NRNJ, CELS, CELS, CELS],
+      v=>'$'+v.toLocaleString('es-AR')+'M');
+  }
+
+  if (name==='mercado') {
+    // Agrupar VM por año de vencimiento
+    const vm_anio = {'Sin fecha':0,'Jun 2026':0,'Dic 2026':0,'Dic 2027':0,'Dic 2028':0,'Dic 2029':0};
+    PLANTEL.forEach(j=>{
+      if(j.c==='—') vm_anio['Sin fecha']+=j.v;
+      else if(j.c==='30/06/2026') vm_anio['Jun 2026']+=j.v;
+      else if(j.c==='31/12/2026') vm_anio['Dic 2026']+=j.v;
+      else if(j.c==='31/12/2027') vm_anio['Dic 2027']+=j.v;
+      else if(j.c==='31/12/2028') vm_anio['Dic 2028']+=j.v;
+      else if(j.c==='31/12/2029') vm_anio['Dic 2029']+=j.v;
+    });
+    barH('ch-m-valor',
+      Object.keys(vm_anio),
+      Object.values(vm_anio).map(v=>v/1000000),
+      [ROJO, ROJO, NRNJ, AZUL, VERDE, VERDE],
+      v=>'€'+v.toFixed(1)+'M');
+
+    // Desglose 2026 por jugador (todos los que vencen en 2026 + jun 2026)
+    const p2026 = PLANTEL.filter(j=>j.c==='31/12/2026'||j.c==='30/06/2026').sort((a,b)=>b.v-a.v);
+    barH('ch-m-2026',
+      p2026.map(j=>j.n.split(' ').slice(0,2).join(' ')+(j.pr?' ⟵ préstamo':'')),
+      p2026.map(j=>j.v/1000000),
+      p2026.map(j=>j.pr&&!j.oc?ROJO:j.pr&&j.oc?NRNJ:AZUL),
+      v=>'€'+v.toFixed(2)+'M');
+
+    // Tabla categorizada
+    const fn = (accion, fundamento) =>
+      `<strong>${accion}</strong><br><span style="font-size:11px;color:#666;font-weight:400">${fundamento}</span>`;
+    const ACCIONES = {
+      'Bruno Zuculini':       fn('Renovar o desvincular — decisión dic 2026','Contrato dic 2026. Único pivot de experiencia disponible tras salida de Nardoni. Si Sosa sale (Monterrey): insuficiente para cubrir el rol de solo. Racing planea extender a dic 2027 a bajo costo. Si Sosa se va, la renovación de Zuculini debe ir acompañada de incorporación de posición.'),
+      'Tomás Pérez':          fn('Regularizar contrato juvenil','A €150K, Racing debe asegurar los derechos antes de que el jugador quede libre.'),
+      'Marcos Rojo':          fn('No renovar — fin de ciclo','36 años, liderazgo debe transferirse a Di Césare. Planificar despedida institucional.'),
+      'Valentín Carboni':     fn('LESIONADO — LCA rodilla derecha · no juega más en 2026','Rotura LCA + ligamento colateral externo parcial el 27/2/2026 en entrenamiento. Operado con éxito. Baja 6-8 meses — no regresa en 2026. Solo jugó 5 PJ (204 min) antes de la lesión. Milito viajó a Inter en marzo para gestionar el préstamo. El contrato de préstamo vence dic 2026 igualmente — Racing no tiene opción de compra ni compensación. Costo real: Racing pagó el cargo del préstamo pero perdió al jugador a los 2 meses.'),
+      'Ezequiel Cannavo':     fn('EJERCER la opción de compra (USD 2.5M)','Titular indiscutido desde su debut (feb 2026). Racing no perdió ningún partido con él. Lateral del presente y futuro a valor de mercado.'),
+      'Damián Pizarro':       fn('No ejercer la opción de compra','OC €5M por 70% está al doble de su valor (€2.5M). Racing tiene cobertura en la posición. Si su valor sube en Udinese, la OC se vuelve aún menos conveniente.'),
+      'Matías Tagliamonte':   fn('Contrato vigente hasta 2028 — cobertura de arco asegurada','Renovó hasta dic 2028 con mejora salarial. Buen nivel en préstamo en Unión (22PJ, 12 vallas invictas). Suplente de Cambeses, rol definido. No requiere acción urgente.'),
+      'Agustín García Basso': fn('EVALUAR VENTA en julio 2026 — quiere irse','34 años, perdió la titularidad ante Di Césare/Colombo/Pardo. Contrato dic 2027 pero quiere salir: representante negocia con San Lorenzo y Toluca (México). Ventana de venta activa julio 2026 antes que se concrete un préstamo o libre. A €650K, transferencia simbólica que libera salario y abre cupo.'),
+      'Santiago Sosa':        fn('DECISIÓN URGENTE — Monterrey tiene negociaciones avanzadas','Renovó a dic 2029 con cláusula de €12M. Monterrey es el interesado concreto con oferta ~€12M. Racing postergó discusión salarial a junio — ese plazo puede acelerar su salida. La dirigencia debe resolver antes de julio: aceptar la oferta (ingreso extraordinario + reinversión) o cerrar la negociación salarial para que el jugador se quede cómodo. Ver análisis completo adjunto.'),
+      'Adrián Martínez':      fn('BLINDADO — cláusula histórica USD 122M','Renovó hasta dic 2028 con la cláusula más alta del fútbol argentino. 33 años pero el mejor goleador del plantel (4G en LPF 2026). Dijo que quiere retirarse en Racing. No requiere acción.'),
+      'Marco Di Césare':      fn('Renovar — prioridad alta · cláusula $20M','24 años, figura central, cláusula $20M. Interés de Roma (Italia) y clubes de Brasil. Sin renovación, en 18 meses el mercado sabe que se libera. Blindar con cláusula más alta antes de junio 2027.'),
+      'Facundo Cambeses':     fn('Renovar — prioridad alta · cláusula €12M','Arquero titular indiscutido, campeón con la Selección. 29 años con 3-4 años de peak. Cláusula actual €12M — sube en la renovación proyectada. Muy difícil de reemplazar; Racing negocia extensión con mejora salarial.'),
+      'Gastón Martirena':     fn('EVALUAR VENTA en julio 2026','Perdió la titularidad de lateral ante Cannavo (feb 2026). Costas lo usó también como extremo derecho en el 4-3-3, aunque sin consolidarse en ninguna posición. Conflicto disciplinario en marzo; lesionado desde abr. Grêmio prepara oferta formal para julio (como lateral-derecho). Contrato hasta dic 2027 = ventana de venta activa con valor.'),
+      'Gabriel Rojas':        fn('BLINDADO — renovó a 2028 · cláusula $15M','Renovó hasta dic 2028 con cláusula actualizada de $15M (era $10M). Lateral izquierdo titular y mejor calificado del plantel (7.21 SS). 28 años = pico de carrera. Muy buen negocio cerrar esto.'),
+      'Baltasar Rodríguez':   fn('Renovar y clausular · cláusula €20M','22 años y €4.5M con proyección de crecimiento. Cláusula actual €20M. Interés de Inter Miami (no ejecutó OC de $5M). Mismo tratamiento que Di Césare: blindar antes de que el mercado presione en 2027.'),
+      'Nazareno Colombo':     fn('Renovar','Con Rojo y García Basso saliendo, Colombo es el tercer defensor central activo del plantel.'),
+      'Santiago Solari':      fn('Renovar o evaluar venta','28 años = ventana de mercado activa. Si aparece oferta >€5M, es el momento de vender y reinvertir en posición.'),
+      'Tobías Rubio':         fn('Renovar','Lateral joven de bajo costo como cobertura. Actualmente se busca darle salida a préstamo para sumarle minutos.'),
+    };
+    const secciones = [
+      {label:'SIN CONTRATO — DECISIÓN INMEDIATA',      color:ROJO, bg:'#FFF5F5', items:PLANTEL.filter(j=>j.c==='—')},
+      {label:'URGENTE — VENCE JUN 2026 (2 MESES)',     color:ROJO, bg:'#FFF5F5', items:PLANTEL.filter(j=>j.c==='30/06/2026')},
+      {label:'DIC 2026 — PRÉSTAMOS CON DECISIÓN',      color:NRNJ, bg:'#FFFBF0', items:PLANTEL.filter(j=>j.c==='31/12/2026'&&j.pr).sort((a,b)=>b.v-a.v)},
+      {label:'DIC 2026 — ACTIVOS PROPIOS',             color:NRNJ, bg:'#FFFBF0', items:PLANTEL.filter(j=>j.c==='31/12/2026'&&!j.pr).sort((a,b)=>b.v-a.v)},
+      {label:'DIC 2027 — PLANIFICACIÓN PRÓXIMA',       color:AZUL, bg:'#F0F6FF', items:PLANTEL.filter(j=>j.c==='31/12/2027').sort((a,b)=>b.v-a.v)},
+      {label:'DIC 2028 — CONTRATOS VIGENTES',          color:'#5C6BC0', bg:'#F3F4FF', items:PLANTEL.filter(j=>j.c==='31/12/2028').sort((a,b)=>b.v-a.v)},
+      {label:'DIC 2029 — BLINDADOS',                   color:VERDE, bg:'#F0FFF4', items:PLANTEL.filter(j=>j.c==='31/12/2029').sort((a,b)=>b.v-a.v)},
+    ];
+    document.getElementById('tbody-mercado').innerHTML = secciones.map(sec=>{
+      if(!sec.items.length) return '';
+      const hdr=`<tr style="background:${sec.bg}"><td colspan="7" style="font-size:11px;font-weight:800;letter-spacing:.5px;color:${sec.color};padding:8px 12px;text-transform:uppercase;border-left:3px solid ${sec.color}">${sec.label}</td></tr>`;
+      const rows=sec.items.map(j=>`<tr>
+        <td><strong>${j.n}</strong></td>
+        <td style="color:#888;font-size:12px">${j.p}</td>
+        <td>${j.e}</td>
+        <td style="font-weight:700">${fmtEUR(j.v)}</td>
+        <td>${j.c==='—'?'<span style="color:#C62828;font-weight:700">Sin fecha</span>':j.c}</td>
+        <td>${j.pr?`<span class="badge bp" style="font-size:10px">${j.pr}</span> ${j.oc?`<span class="badge bv" style="font-size:10px">OC: ${j.oc}</span>`:'<span class="badge br" style="font-size:10px">sin OC</span>'}`:'<span class="badge ba" style="font-size:10px">Propio</span>'}</td>
+        <td style="font-size:12px;color:#444">${ACCIONES[j.n]||'—'}</td>
+      </tr>`).join('');
+      return hdr+rows;
+    }).join('');
+  }
+
+  if (name==='transferencias') {
+    const VENTAS = [
+      {n:"Carlos Alcaraz",     p:"Mediocentro",   destino:"Southampton",         liga:"ENG",  fecha:"Ene 2023",
+       precio:"€13.65M + 15% sell-on", vm:14000000, recibio:15000000, eval:"EXCELENTE", clausula:false,
+       analisis:"Segunda operación más cara de la historia de Racing (tras Lautaro Martínez). Racing vendió el pase + retuvo 15% de futura venta + €1M en objetivos. Joven de 20 años formado en la Academia. Financió el mercado de ingresos de 2023 y marcó el inicio de la era Milito como vendedor de activos."},
+      {n:"Juan Nardoni",       p:"Pivote",        destino:"Grêmio",              liga:"BRA",  fecha:"Feb 2026",
+       precio:"USD 10M (8M base + 2M bonos)", vm:7000000, recibio:8000000, eval:"EXCELENTE", clausula:false,
+       analisis:"Mayor venta nominal de la gestión. Racing posee el 100% del pase. Grêmio pagó USD 8M + USD 2M en bonos. Vendido a los 26 años en su pico de valor. Libera masa salarial y refuerza el fondo para julio 2026."},
+      {n:"Tomás Avilés",       p:"Defensa central",destino:"Inter Miami",        liga:"MLS",  fecha:"Ago 2023",
+       precio:"USD 9M (7M + 2M bonos)", vm:7000000, recibio:9000000, eval:"EXCELENTE", clausula:false,
+       analisis:"Primer gran éxito de la gestión Milito. Joven de 19 años vendido por USD 9M (Racing exigía 10M, rechazó oferta inicial de 8M). Racing conservó porcentaje de futuras ventas. Ingreso histórico para un jugador de 20 PJ en primera."},
+      {n:"Maximiliano Salas",  p:"Delantero",     destino:"River Plate",         liga:"ARG",  fecha:"Jul 2025",
+       precio:"€8M (cláusula)", vm:8000000, recibio:8800000, eval:"BUENA",     clausula:true,
+       analisis:"Ejecutó su cláusula de salida (€8M ≈ USD 8.8M). Racing no pudo bloquear la operación. Fue a rival directo. Registrado como hecho posterior al Ej. 2024-25; impacto pleno en Ej. 2025-26."},
+      {n:"Axel Ojeda",         p:"Extremo",       destino:"New York City FC",    liga:"MLS",  fecha:"Feb 2024",
+       precio:"€7M", vm:7000000, recibio:7700000, eval:"EXCELENTE", clausula:false,
+       analisis:"100% del pase. 25 años en su mejor momento. Ingreso directo sin intermediación. Financió refuerzos del Clausura 2024 (Conechny, entre otros)."},
+      {n:"Aníbal Moreno",      p:"Mediocentro",   destino:"Palmeiras",           liga:"BRA",  fecha:"Ene 2024",
+       precio:"€7M (80% del pase)", vm:7000000, recibio:7700000, eval:"EXCELENTE", clausula:false,
+       analisis:"Vendido por €7M (80% del pase) + 1M en bonos + cláusula de sell-on del 20% en futura venta. En dic 2025 Palmeiras lo vendió a River por ~USD 18M: Racing recibió ~USD 3.6M adicionales por la cláusula de reventa, aunque reportes indican que el monto final fue menor al esperado."},
+      {n:"Agustín Almendra",   p:"Mediocentro",   destino:"Necaxa",              liga:"MEX",  fecha:"Dic 2025",
+       precio:"USD 2.5M (100%)", vm:4000000, recibio:2500000, eval:"EXCELENTE", clausula:false,
+       analisis:"Racing lo fichó libre desde Boca — sin inversión inicial. Vendido por USD 2.5M generando utilidad pura. 102 PJ, campeón Sudamericana 2024 y Recopa 2025. Precio por debajo del VM (€4M) pero margen neto máximo dado el costo de adquisición cero."},
+      {n:"Tomás Chancalay",    p:"Extremo",       destino:"New England Revo.",   liga:"MLS",  fecha:"2024",
+       precio:"USD 3.1M OC (75% del pase)", vm:3000000, recibio:1700000, eval:"BUENA", clausula:true,
+       analisis:"New England ejerció OC de préstamo por USD 3.1M por el 75% del pase. Racing y Colón co-poseían derechos — Racing recibió ~USD 1.7M (su parte + cargo de préstamo). Chancalay estaba fuera de los planes del CT."},
+    ];
+
+    const LIBRES = [
+      {n:"Juan Fernando Quintero", p:"M. Ofensivo",    destino:"América de Cali → River Plate", fecha:"Ene 2025", vm:2000000, tipo:"Libre",
+       eval:"EVITABLE", analisis:"Mayor VM resignada del período. Contrato hasta dic 2025, pero Racing no llegó a acuerdo salarial. Quintero pedía retirarse en Racing o cobrar igual que en Arabia Saudita — inviable. Fue libre a Colombia (América de Cali, ene 2025) y en jul 2025 firmó con River Plate — rival directo — también libre."},
+      {n:"Roger Martínez",          p:"Delantero",       destino:"Al-Taawoun (Arabia Saudita)",   fecha:"Ene 2025", vm:1500000, tipo:"Libre",
+       eval:"EVITABLE", analisis:"Racing realizó 3 reuniones para renovar (Saja + Cifarelli + representante) pero no pudo igualar la oferta saudita, 4 veces superior. Contrato venció dic 2024. Jugador de 30 años con lugar en la consideración del CT (Costas lo tenía de titular). La pérdida simultánea de Quintero y Martínez en ene 2025 fue un golpe al plantel ofensivo."},
+      {n:"Luciano Vietto",          p:"Delantero",       destino:"Sin club / Europa",             fecha:"2026",      vm:500000,  tipo:"Libre",
+       eval:"PLANIFICADO", analisis:"33 años, contrato cumplido. Salida planificada por ciclo natural. No estaba en los planes del cuerpo técnico para 2026."},
+      {n:"Leonardo Sigali",         p:"Defensa central", destino:"Lokomotiva Zagreb",             fecha:"Dic 2024",  vm:300000,  tipo:"Libre",
+       eval:"PLANIFICADO", analisis:"34 años, ídolo del grupo campeón (Copa Sudamericana 2024). Ciclo natural en Racing. Eligió volver a Croacia, donde había jugado antes de llegar a la Academia."},
+      {n:"Facundo Mura",            p:"Mediocampista",   destino:"Inter Miami",                   fecha:"2026",      vm:300000,  tipo:"Libre",
+       eval:"PLANIFICADO", analisis:"Contrato cumplido. Parte del plantel campeón (Sudamericana 2024, Recopa 2025). Firmó en la MLS. 30 años, salida sin conflicto."},
+    ];
+
+    const ventasSorted = [...VENTAS].sort((a,b)=>b.recibio-a.recibio);
+    const libresSorted = [...LIBRES].sort((a,b)=>b.vm-a.vm);
+
+    barH('ch-t-ventas',
+      ventasSorted.map(v=>v.n.split(' ').slice(-1)[0]),
+      ventasSorted.map(v=>v.recibio/1000000),
+      ventasSorted.map(v=>v.eval==='EXCELENTE'?VERDE:'#558B2F'),
+      x=>'USD '+x.toFixed(1)+'M');
+
+    barH('ch-t-libres-vm',
+      libresSorted.map(l=>l.n.split(' ').slice(-1)[0]),
+      libresSorted.map(l=>l.vm/1000000),
+      libresSorted.map(l=>l.eval==='EVITABLE'?ROJO:NRNJ),
+      x=>'€'+x.toFixed(1)+'M');
+
+    document.getElementById('tbody-ventas').innerHTML = VENTAS.map(v=>`
+      <tr>
+        <td><strong>${v.n}</strong></td>
+        <td style="color:#888;font-size:12px">${v.p}</td>
+        <td>${v.destino}</td>
+        <td style="color:#888;font-size:12px">${v.liga}</td>
+        <td style="font-size:12px;color:#555">${v.fecha}</td>
+        <td style="font-weight:700;font-size:12px">${v.precio}${v.clausula?' <span class="badge ba" style="font-size:10px">cláusula/OC</span>':''}</td>
+        <td style="color:#888;font-size:12px">€${(v.vm/1000000).toFixed(1)}M</td>
+        <td style="font-weight:800;color:${VERDE}">≈USD ${(v.recibio/1000000).toFixed(1)}M</td>
+        <td style="font-size:12px">
+          <span class="badge" style="background:${evalBg(v.eval)};color:${evalColor(v.eval)}">${v.eval}</span><br>
+          <span style="color:#666">${v.analisis}</span>
+        </td>
+      </tr>`).join('');
+
+    document.getElementById('tbody-libres').innerHTML = LIBRES.map(l=>`
+      <tr>
+        <td><strong>${l.n}</strong></td>
+        <td style="color:#888;font-size:12px">${l.p}</td>
+        <td style="font-size:12px">${l.destino}</td>
+        <td style="font-size:12px;color:#555">${l.fecha}</td>
+        <td style="font-weight:700;color:#888">€${(l.vm/1000000).toFixed(1)}M</td>
+        <td><span class="badge" style="background:#F5F5F5;color:#888">${l.tipo}</span></td>
+        <td><span class="badge" style="background:${evalBg(l.eval)};color:${evalColor(l.eval)};font-size:11px">${l.eval}</span></td>
+        <td style="font-size:12px;color:#666">${l.analisis}</td>
+      </tr>`).join('');
+  }
+
+  if (name==='socios') {
+    // Ranking — Racing actualizado a jun 2025, resto AFA 2024; ordenado desc
+    barH('ch-s-ranking',
+      ['River','Boca','Independiente','Racing','Rosario Central','San Lorenzo','Newell\'s','Talleres','Belgrano'],
+      [351487, 323586, 146570, 110000, 96297, 89717, 83040, 74262, 65139],
+      (v,i) => ['#C62828','#001D6E','#C62828','#005BAA','#004A9F','#001D6E','#C62828','#002147','#005BAA'][i] || AZUL,
+      v=>v.toLocaleString('es-AR'));
+    // Categorías y cuotas
+    barH('ch-s-categorias',
+      ['Activo','Jubilado','Interior/Ext.','Cadete Inst.','Menor'],
+      [29400, 26700, 16200, 15800, 14500],
+      [AZUL, CELS, CELS, CELS, CELS],
+      v=>'$'+v.toLocaleString('es-AR'));
+  }
+}
+
+// init resumen
+inited['resumen']=true; buildTab('resumen');
+</script>
+</body>
+</html>

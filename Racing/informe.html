@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Racing Club — Informe Ejecutivo</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root { --azul:#005BAA; --celeste:#00AEEF; --verde:#2E7D32; --rojo:#C62828; --naranja:#EF6C00; }
+  body { font-family: 'Segoe UI', system-ui, sans-serif; background: #F5F7FA; color: #1A1A2E; font-size: 15px; line-height: 1.7; }
+
+  header { background: var(--azul); color: #fff; padding: 22px 40px; border-bottom: 4px solid var(--celeste); }
+  header h1 { font-size: 22px; font-weight: 700; }
+  header p  { font-size: 12px; opacity: .7; margin-top: 4px; }
+
+  .doc { max-width: 900px; margin: 40px auto; padding: 0 24px 60px; }
+
+  h2 { font-size: 20px; font-weight: 800; color: var(--azul); border-bottom: 3px solid var(--celeste);
+       padding-bottom: 10px; margin: 40px 0 24px; text-transform: uppercase; letter-spacing: .5px; }
+  h3 { font-size: 15px; font-weight: 700; color: var(--azul); margin: 28px 0 10px; }
+  p  { margin-bottom: 12px; }
+
+  .card { background: #fff; border-radius: 10px; padding: 24px 28px; margin-bottom: 20px;
+          box-shadow: 0 2px 10px rgba(0,0,0,.07); }
+
+  .alert { border-radius: 8px; padding: 14px 18px; margin: 16px 0; font-weight: 600; font-size: 14px; }
+  .alert.r { background: #FFEBEE; color: var(--rojo); border-left: 4px solid var(--rojo); }
+  .alert.n { background: #FFF3E0; color: var(--naranja); border-left: 4px solid var(--naranja); }
+  .alert.v { background: #E8F5E9; color: var(--verde); border-left: 4px solid var(--verde); }
+  .alert.a { background: #E3F2FD; color: var(--azul); border-left: 4px solid var(--azul); }
+
+  .insight { background: #fff; border-radius: 10px; padding: 20px 24px; margin-bottom: 16px;
+             box-shadow: 0 2px 8px rgba(0,0,0,.07); border-top: 4px solid var(--celeste); }
+  .insight.urgente  { border-top-color: var(--rojo); }
+  .insight.medio    { border-top-color: var(--naranja); }
+  .insight.positivo { border-top-color: var(--verde); }
+  .insight h4 { font-size: 14px; font-weight: 700; margin-bottom: 8px; }
+  .insight h4.urgente  { color: var(--rojo); }
+  .insight h4.medio    { color: var(--naranja); }
+  .insight h4.positivo { color: var(--verde); }
+  .insight p { font-size: 14px; color: #444; margin-bottom: 8px; }
+  .insight .accion { font-size: 13px; background: #F5F7FA; border-radius: 6px; padding: 8px 12px; color: #333; margin-top: 8px; }
+  .insight .accion strong { color: var(--azul); }
+
+  table { width: 100%; border-collapse: collapse; font-size: 13px; margin: 12px 0; }
+  th { background: var(--azul); color: #fff; padding: 8px 12px; text-align: left; font-size: 11px; text-transform: uppercase; }
+  td { padding: 8px 12px; border-bottom: 1px solid #F0F2F7; }
+
+  footer { text-align: center; padding: 20px; font-size: 11px; color: #aaa; margin-top: 20px; }
+  footer a { color: var(--celeste); }
+</style>
+</head>
+<body>
+
+<header style="display:flex;align-items:center;gap:20px">
+  <div style="flex:1">
+    <h1>Racing Club de Avellaneda — Informe Ejecutivo</h1>
+    <p>Documento de análisis · Temporada 2025/26 · Generado el 24/04/2026</p>
+  </div>
+  <img src="https://tmssl.akamaized.net/images/wappen/big/1444.png" alt="Racing Club" style="height:64px;filter:drop-shadow(0 2px 6px rgba(0,0,0,.4));flex-shrink:0">
+</header>
+
+<div class="doc">
+
+<h2>Sección 1 — Explicación de la información</h2>
+
+<div class="card">
+  <h3>Plantel Deportivo — Valor de Mercado (Transfermarkt)</h3>
+  <p><strong>¿Qué es?</strong> El valor de mercado refleja cuánto estima Transfermarkt que valdría cada jugador si fuera vendido hoy. No es el precio contractual: es la valuación de mercado basada en rendimiento, edad, posición y mercado internacional.</p>
+  <p><strong>¿De dónde viene?</strong> Extraído directamente de Transfermarkt el 19 de abril de 2026 mediante scraping automatizado. Fuente: <em>transfermarkt.es/verein/kader/verein/1444</em>.</p>
+  <p><strong>¿Qué significa EUR 79.175.000?</strong> El plantel de Racing tiene casi 2.5 veces el valor de mercado de Vélez (EUR 32.2M). Sin embargo, EUR 13.5M de ese total corresponden a jugadores a préstamo (Carboni, Pizarro, Cannavo) que Racing no puede vender. El <strong>valor real en activos propios</strong> es EUR 65.7M, igualmente muy alto. El jugador propio más valioso es Santiago Sosa (EUR 8M), seguido por Marco Di Césare (EUR 6M) y Facundo Cambeses (EUR 5M).</p>
+
+  <h3>Distribución etaria</h3>
+  <p>Racing tiene una distribución etaria equilibrada: 6 jugadores sub-22 (base del futuro), 10 entre 22 y 26 años (la franja de mayor valor de mercado potencial), 9 entre 27 y 30 (madurez deportiva plena), y solo 4 mayores de 31. Esto es una ventaja: pocos veteranos implican menores costos salariales altos sin contrapartida de valor de mercado.</p>
+
+  <h3>Préstamos y contratos 2026</h3>
+  <p>Hay 3 jugadores a préstamo con contrato hasta dic 2026. <strong>Carboni (Inter Milan) es el único sin opción de compra</strong>: regresa automáticamente a Inter sin ninguna compensación para Racing. Pizarro (Udinese) y Cannavo (Def. y Justicia) sí tienen opción de compra — Cannavo a USD 2.5M por el 100% (se recomienda ejercer: es el lateral derecho titular indiscutido desde febrero 2026); Pizarro a €5M por el 70% (se recomienda no ejercer: el precio duplica su valor de mercado). Los otros 3 (Tagliamonte, García Basso, Rojo) son contratos propios sobre los que la dirigencia tiene poder de decisión.</p>
+</div>
+
+<div class="card">
+  <h3>Finanzas Consolidadas — Ejercicio Jul 2024 – Jun 2025 (aprobado por asamblea, nov 2025)</h3>
+  <p><strong>¿Qué es el superávit operativo?</strong> Es la diferencia entre lo que el club ingresa por su actividad normal (cuotas, TV, sponsors, entradas) y lo que gasta en su operación (sueldos, infraestructura, divisiones inferiores). Un superávit operativo significa que el club gana dinero con su funcionamiento diario, sin necesitar vender jugadores para pagar las cuentas.</p>
+  <p><strong>El dato clave del Ej. 2024-25:</strong> Racing generó ARS 9.189 millones de superávit operativo <em>sin contar ingresos de transferencias</em> — resultado calificado como histórico en la asamblea de noviembre 2025. El resultado operativo total, incluyendo pases, fue de ARS 20.171 millones (+37.5% respecto al ejercicio anterior). Los ingresos por cuotas crecieron 21.7% y los ingresos comerciales 11.5% interanual.</p>
+  <p><strong>Resultado contable final: ARS −178 millones (≈ USD −149.000, prácticamente equilibrio).</strong> Los ejercicios anteriores registraban pérdidas contables de miles de millones de pesos por ajuste por inflación (RT N°6). La contracción a ARS −178M confirma una tendencia financiera marcadamente positiva. Dato del balance oficial auditado por Bertora y Asociados (Crowe), firmado 1/10/2025.</p>
+  <p><strong>Ratio de solvencia 4.46x</strong> (Activo Total / Pasivo Total = ARS 215.200M / ARS 48.211M). El ratio corriente (activo corriente / pasivo corriente) es 0.70x — por debajo de 1, lo que es habitual en clubes de fútbol donde el pasivo corriente incluye vencimientos de deuda por transferencias. <strong>Índice de endeudamiento: 28.9%</strong> (Pasivo / Patrimonio Neto = ARS 48.211M / ARS 166.989M), uno de los más bajos de la Primera División.</p>
+  <p><strong>Composición del pasivo (Nota 4, balance oficial):</strong> La deuda de Racing NO es bancaria. El componente principal del pasivo corriente (~ARS 18.7B de los ARS 35.6B) son "Acreedores por operaciones de jugadores" — dinero que Racing debe a otros clubes por transferencias realizadas (ej.: USD 3M owed a Atlanta United por Sosa, USD 950K a Liverpool por Martirena, USD 2.4M a América de México por Sánchez). Es deuda propia del negocio del fútbol, no apalancamiento financiero externo.</p>
+
+  <h3>Desglose de ingresos — Ej. 2024-25 (Anexo III, balance oficial)</h3>
+  <p>Por primera vez se dispone del desglose exacto de ingresos ordinarios del club: <strong>cuotas sociales ARS 20.397M</strong> (primera fuente de ingresos, +21.7%), <strong>campeonatos oficiales ARS 18.774M</strong> (+130% interanual — impulsado por la Copa Sudamericana 2024 y sus distribuciones), <strong>transferencias de jugadores ARS 13.516M</strong>, <strong>televisación ARS 6.494M</strong>, <strong>otros ingresos deportivos ARS 6.558M</strong>, <strong>publicidad ARS 5.135M</strong> (+11.5%). El total ordinario asciende a ARS 70.874M antes de ajustes.</p>
+
+  <h3>Transferencias y hechos posteriores</h3>
+  <p>Racing ingresó ARS 13.516M por transferencias en el Ej. 2024-25 (balance oficial). En febrero de 2026, ya en el ejercicio siguiente, Racing vendió a Juan Nardoni a Grêmio por USD 8M base + USD 2M en bonos condicionales. Adicionalmente, la Nota 10 del balance confirma que Maximiliano Salas ejerció su cláusula de salida de €8M el 1 de julio de 2025 y el dinero fue cobrado el 11 de julio de 2025 — ambos hechos corresponden al Ej. 2025-26.</p>
+</div>
+
+<div class="card">
+  <h3>Socios y Abonos</h3>
+  <p><strong>¿Cuántos socios tiene Racing?</strong> Al cierre del Ej. 2024-25 (junio 2025), Racing Club alcanzó <strong>110.000 socios</strong>, creciendo un 26% respecto al inicio de la gestión actual (87.000). Esto ubica al club en el <strong>4° lugar</strong> entre los clubes argentinos, superando a San Lorenzo (89.717) y Rosario Central (96.297), detrás de River (351.487), Boca (323.586) e Independiente (146.570). Fuente: Racing de Alma / Doble Amarilla, 2025.</p>
+  <p><strong>¿Qué categorías existen?</strong> La categoría principal es la Activo, para socios residentes en un radio de 200 km de Avellaneda. La cuota vigente desde diciembre 2025 es ARS 29.400 mensuales. Existen categorías menores para jubilados, menores e interior/exterior.</p>
+  <p><strong>Ingreso potencial:</strong> 110.000 socios × ARS 29.400 × 12 meses = ARS 38.8 mil millones anuales. Representa un incremento significativo respecto a ejercicios anteriores, impulsado tanto por el crecimiento del padrón como por los ajustes de cuota (+21.7% en el ejercicio).</p>
+</div>
+
+<div class="card">
+  <h3>Transferencias 2023-26 — Ventas, Libres y Cedidos</h3>
+  <p><strong>¿Qué muestra este tab?</strong> Resume todas las salidas con impacto económico de Racing entre enero 2023 y la fecha actual: jugadores vendidos (con compensación económica a Racing), jugadores liberados al vencimiento de contrato sin compensación, y jugadores propios cedidos a préstamo a otros clubes.</p>
+
+  <h3>Ventas (tabla "Ventas confirmadas")</h3>
+  <p>Cada fila representa una transferencia en la que Racing recibió dinero. Los campos clave son: <strong>precio</strong> (lo que Racing cobró o cobró parcialmente), <strong>VM en venta</strong> (la valuación de Transfermarkt al momento de la operación, que permite saber si Racing vendió por encima o por debajo del valor estimado), y <strong>evaluación</strong> (ver más abajo).</p>
+  <p>El total de ~USD 60M en 8 operaciones posiciona a Racing como uno de los clubes más activos y rentables del mercado de pases argentino en el período 2023-2026. La mayor operación individual fue Alcaraz → Southampton (€13.65M, enero 2023), la segunda más cara de la historia del club.</p>
+
+  <h3>Escala de evaluación (columna "EVALUACIÓN")</h3>
+  <p>Cada venta se califica en una escala de 5 niveles:</p>
+  <ul style="margin-left:20px;line-height:2;margin-bottom:10px">
+    <li><strong style="color:#2E7D32">EXCELENTE</strong> — Precio significativamente superior al VM, o la operación generó valor estratégico excepcional (Racing vendió mejor que el mercado).</li>
+    <li><strong style="color:#558B2F">BUENA</strong> — Precio en línea con el VM o situación aceptable dada la naturaleza de la operación (ej.: cláusula ejecutada por el comprador, jugador sin renovación).</li>
+    <li><strong style="color:#EF6C00">AL VALOR</strong> — Precio igual al VM de mercado; Racing no generó plusvalía pero tampoco perdió.</li>
+    <li><strong style="color:#C62828">EVITABLE</strong> — Racing perdió ingresos potenciales: el jugador se fue libre o se vendió muy por debajo de su valor a un rival directo.</li>
+    <li><strong style="color:#6A1B9A">PLANIFICADO</strong> — Salida a fin de contrato de un jugador veterano cuya partida estaba planificada.</li>
+  </ul>
+
+  <h3>VM Resignada en Libres (KPI)</h3>
+  <p>Este indicador suma el valor de mercado de todos los jugadores que Racing dejó salir sin compensación económica (fin de contrato o salida libre). No representa dinero cobrado ni gastado directamente: es el <em>valor que Racing cedió gratuitamente</em> al mundo. Un jugador que vale €2M al mercado y se va libre le "transfiere" ese valor al club que lo contrata sin que Racing reciba nada.</p>
+  <p>El dato de ~€4.6M resignado en 5 libres incluye dos salidas claramente evitables (Quintero €2M + R.Martínez €1.5M, ambos con clubes dispuestos a pagar pero sin acuerdo con Racing) y tres planificadas (Vietto, Sigali, Mura — veteranos con contrato cumplido).</p>
+
+  <h3>Cedidos propios a préstamo (sección inferior del tab Plantel)</h3>
+  <p>Son jugadores que Racing posee bajo contrato pero presta temporalmente a otro club. A diferencia de los préstamos recibidos, son activos propios de Racing: el club puede recuperarlos, revenderlos o dejar que el club receptor ejerza una opción de compra. La tabla muestra club de destino, vencimiento del préstamo, opción de compra (si existe) y una tendencia de rendimiento (↑ → ↓).</p>
+  <p>Al 30 de abril de 2026, Racing tiene 2 jugadores propios cedidos: <strong>Juan Elordi</strong> (lateral, 31 años, en Ind. Rivadavia con OC — bajo rendimiento histórico, poco probable que la OC se ejerza) y <strong>Matías Bergara</strong> (delantero, 21 años, en Ind. Rivadavia — enviado para sumar minutos de desarrollo).</p>
+</div>
+
+<h2>Sección 2 — Insights y Recomendaciones</h2>
+
+<div class="insight urgente">
+  <h4 class="urgente">⚠ URGENTE — Decisiones sobre préstamos que vencen dic 2026</h4>
+  <p><strong>Carboni (EUR 8.5M · Inter Milan · sin OC):</strong> Regresa automáticamente a Inter en diciembre 2026 sin compensación para Racing. No hay margen de negociación — es pérdida de activo garantizada. Capitalizar su presencia deportiva y comercial mientras está.</p>
+  <p><strong>Cannavo (EUR 2.5M · Def. y Justicia · OC: USD 2.5M por 100%):</strong> Titular indiscutido en el lateral derecho desde su llegada (feb 2026). Racing no perdió ningún partido con él. La opción de compra a USD 2.5M equivale prácticamente a su valor de mercado — ejercerla es la decisión recomendada.</p>
+  <p><strong>Pizarro (EUR 2.5M · Udinese · OC: €5M por 70%):</strong> La opción está al doble de su valor de mercado actual. Con cobertura en la posición, no se recomienda ejercer.</p>
+  <p>Contratos propios de Racing que vencen en 2026: Tagliamonte (€1.8M), García Basso (€650K) y Marcos Rojo (€225K, jun 2026). Los dos últimos son fin de ciclo por edad.</p>
+  <div class="accion"><strong>Acción:</strong> Ejercer OC de Cannavo (USD 2.5M). No ejercer OC de Pizarro. Vender o renovar a Tagliamonte antes de dic. No renovar a Rojo ni García Basso.</div>
+</div>
+
+<div class="insight positivo">
+  <h4 class="positivo">✓ FORTALEZA ESTRUCTURAL — Superávit operativo genuino: Racing no depende de vender jugadores para pagar sus gastos</h4>
+  <p>El resultado más significativo del balance Ej. 2024-25 (aprobado por unanimidad en asamblea, nov 2025) es que Racing generó ARS 9.189M de superávit operativo <em>sin contar las ventas de jugadores</em> — calificado como histórico. El resultado operativo total, incluyendo pases, fue de ARS 20.171M. Los ingresos ordinarios (cuotas +21.7%, comercial +11.5%) crecen estructuralmente.</p>
+  <p>La mayoría de los clubes argentinos tienen déficit operativo y compensan con ventas de jugadores — que son ingresos extraordinarios e impredecibles. Racing ha logrado la situación opuesta: opera con superávit genuino y las ventas de jugadores se convierten en excedente para inversiones futuras, no en oxígeno de emergencia.</p>
+  <div class="accion"><strong>Acción:</strong> Proteger este modelo. Las decisiones de inversión (contratar jugadores caros, construir infraestructura) deben evaluarse asegurando que no comprometan la estructura de superávit operativo que el club ha logrado.</div>
+</div>
+
+<div class="insight positivo">
+  <h4 class="positivo">✓ FORTALEZA — Plantel de EUR 79.2M: capital deportivo de primer nivel en el fútbol argentino</h4>
+  <p>Con EUR 79.175M en valor de mercado total, los 10 jugadores más valiosos del plantel suman EUR 56.5M. Este valor no figura en el balance contable, pero representa capacidad real de generar ingresos extraordinarios a través del mercado de pases, como ocurrió en 2024 con USD 18.4M en transferencias y en 2026 con la venta de Nardoni a Grêmio por USD 8M.</p>
+  <p>Particular atención merece el núcleo joven de activos propios: Di Césare (24, €6M), Miljevic (24, €5M) y Baltasar Rodríguez (22, €4.5M) representan EUR 15.5M en jugadores que Racing controla directamente, todos en su fase de mayor crecimiento de valor. A esto se suma Cannavo (23, €2.5M), cuya opción de compra se recomienda ejercer, lo que elevaría el núcleo joven propio a EUR 18M.</p>
+  <div class="accion"><strong>Acción:</strong> Priorizar la renovación de los contratos del núcleo joven con cláusulas de rescisión altas. El objetivo es retener el control del activo mientras sigue apreciándose.</div>
+</div>
+
+<div class="insight positivo">
+  <h4 class="positivo">✓ FORTALEZA — 110.000 socios: 4° en Argentina y crecimiento del 26% en un ejercicio</h4>
+  <p>Al cierre del Ej. 2024-25, Racing alcanzó 110.000 socios (+23.000 en el año), superando a Rosario Central y San Lorenzo para ubicarse en el 4° lugar nacional. Con una cuota de ARS 29.400, el ingreso potencial de cuotas es ARS 38.8B anuales — significativamente mayor al ejercicio anterior. Una base societaria en crecimiento reduce la dependencia de transferencias y TV como fuentes de ingreso.</p>
+  <div class="accion"><strong>Acción:</strong> Sostener el crecimiento del padrón. Con cuotas que ya son altas, el riesgo de deserción existe. Un 5% de caída del padrón representa -ARS 1.9B anuales en potencial de ingresos.</div>
+</div>
+
+<div class="insight medio">
+  <h4 class="medio">⚡ CONTEXTO — Resultado contable: de -ARS 6.127M a ARS -178M en un ejercicio</h4>
+  <p>El resultado contable del Ej. 2023-24 fue de -ARS 6.127M, explicado principalmente por ajustes técnicos por inflación (RT N°6 / RECPAM). Esos ajustes generan pérdidas contables sin salida real de fondos. En el Ej. 2024-25 ese déficit se contrajo a ARS −178M (≈ USD −149K, prácticamente equilibrio), lo que confirma una tendencia financiera muy positiva. Fuente: balance oficial auditado Ej. 2024-25.</p>
+  <p>El índice de endeudamiento es 28.9% (Pasivo / Patrimonio Neto) — uno de los más bajos de la Primera División argentina. La deuda es en su mayoría por compra de jugadores a otros clubes (no bancaria).</p>
+  <div class="accion"><strong>Acción:</strong> Comunicar la diferencia entre resultado contable (afectado por inflación) y resultado operativo real. La tendencia de mejora continua es el dato relevante para la dirigencia.</div>
+</div>
+
+<div class="insight medio">
+  <h4 class="medio">⚡ MEDIO PLAZO — Distribución etaria favorable pero 4 veteranos sobre 31 años con alto salario</h4>
+  <p>Marcos Rojo (36), Agustín García Basso (34), Adrián Martínez (33) y Bruno Zuculini (33) son los cuatro jugadores mayores de 31. Su valor de mercado combinado es EUR 4.075M — relativamente bajo para sus posibles costos salariales. Los contratos de Rojo y García Basso vencen en 2026, lo que facilita la renovación generacional.</p>
+  <div class="accion"><strong>Acción:</strong> No renovar automáticamente a los veteranos sub-valorados. Evaluar si el aporte deportivo justifica el costo salarial en relación con alternativas más jóvenes del plantel o del mercado.</div>
+</div>
+
+<div class="insight positivo">
+  <h4 class="positivo">✓ FORTALEZA — ~USD 60M en ventas 2023-2026: gestión de mercado de primer nivel argentino</h4>
+  <p>Racing concretó 8 ventas confirmadas en 3 años por un total aproximado de USD 60M. Las operaciones más destacadas fueron Alcaraz → Southampton (€13.65M, 2ª más cara de la historia del club), Nardoni → Grêmio (USD 10M), y Avilés → Inter Miami (USD 9M). En los tres casos, Racing vendió por encima o en línea con el valor de mercado del momento — es decir, la dirigencia maximizó el precio sin dejar dinero en la mesa.</p>
+  <p>El patrón de 2024 es especialmente positivo: Ojeda (€7M) y Moreno (€7M) fueron vendidos en la misma ventana de enero 2024, totalizando €14M en dos operaciones simultáneas — sin desmembrar el plantel competitivo (Racing ganó la Copa Sudamericana 2024 con ese plantel).</p>
+  <div class="accion"><strong>Acción:</strong> Sostener el modelo: vender cuando el precio es favorable, no cuando el club necesita fondos. La fortaleza financiera documentada en el balance permite negociar desde posición de fuerza.</div>
+</div>
+
+<div class="insight medio">
+  <h4 class="medio">⚡ MEDIO PLAZO — €3.5M resignados en 2 salidas evitables: Quintero y Martínez</h4>
+  <p><strong>Juan Fernando Quintero (€2M):</strong> Llegó libre desde Fluminense y se fue libre a América de Cali en enero 2025 — Racing hizo 3 reuniones sin llegar a acuerdo. Seis meses después firmó con River Plate, el rival directo. El club cedió €2M de valor a su máximo competidor sin recibir compensación.</p>
+  <p><strong>Roger Martínez (€1.5M):</strong> Racing negoció 3 veces la renovación sin éxito. Martínez aceptó la oferta saudita de Al-Taawoun. El valor de mercado resignado fue €1.5M. Aunque es una salida más comprensible (oferta saudita difícil de igualar), el timing y el destino no generan impacto competitivo adverso directo.</p>
+  <p>Combinadas, estas dos salidas representan €3.5M de valor no capturado — más que el 50% del valor resignado en libres. El caso Quintero es el de mayor impacto estratégico negativo: fortaleció a River.</p>
+  <div class="accion"><strong>Acción:</strong> Para los jugadores con contrato que vence en ≤18 meses, iniciar negociación de renovación o venta con un año de anticipación — no esperar al último semestre. El objetivo es nunca llegar a la situación de "renueva o sale libre".</div>
+</div>
+
+<div class="card" style="border-top: 3px solid #ccc;">
+  <h3>Brechas de información — Datos no disponibles públicamente</h3>
+  <ul style="margin-left:20px;margin-top:8px;line-height:2">
+    <li><strong>Historial de cuotas sociales:</strong> Solo se confirmó la cuota Activo de diciembre 2025 (ARS 29.400). No fue posible obtener la serie histórica completa para construir un gráfico de evolución.</li>
+    <li><strong>Socios activos vs. total:</strong> El dato de 110.000 es el padrón total. No hay desglose de cuántos están al corriente de pago ni de la distribución por categoría.</li>
+    <li><strong>Sueldos del plantel:</strong> Los contratos individuales y la masa salarial no son públicos. Solo se conocen referencias indirectas (Sosa pidió igualar al mejor pagado del plantel = Adrián Martínez).</li>
+  </ul>
+  <p style="margin-top:12px;font-size:12px;color:#888"><em>Nota: los datos del estado patrimonial (activo, pasivo, PN), desglose de ingresos por línea (Anexo III), composición del pasivo (Nota 4) y hechos posteriores (Nota 10) fueron obtenidos directamente del balance oficial Ej. 2024-25 auditado por Bertora y Asociados (Crowe).</em></p>
+</div>
+
+</div>
+
+<footer>
+  Fuentes: <a href="https://www.transfermarkt.es/verein/kader/verein/1444">Transfermarkt</a> (abr 2026) ·
+  Balance Oficial Ej. 2024-25 (Jul 2024–Jun 2025), auditado por Bertora y Asociados (Crowe), firmado 1/10/2025, aprobado asamblea nov 2025 ·
+  <a href="https://www.racingdealma.com.ar">Racing de Alma</a> / <a href="https://www.dobleamarilla.com.ar">Doble Amarilla</a> ·
+  Racing de Alma / Doble Amarilla (socios jun 2025) · lacomuderacing.com / Doble Amarilla (cuotas, dic 2025) ·
+  <a href="https://www.infobae.com/deportes">Infobae Deportes</a> (venta Nardoni, feb 2026).
+  Generado el 24/04/2026.
+</footer>
+</body>
+</html>

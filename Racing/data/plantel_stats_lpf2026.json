@@ -1,0 +1,38 @@
+{
+  "fuente": "SofaScore scraper — Apertura LPF 2026",
+  "fecha": "2026-04-25",
+  "season_id": 87913,
+  "jugadores": [
+    {"n":"Gabriel Rojas",       "id":1387300, "pj":11, "min":990,  "g":1, "a":3, "am":2, "ar":0, "ss":7.21},
+    {"n":"Santiago Sosa",       "id":928237,  "pj":15, "min":1324, "g":0, "a":1, "am":5, "ar":0, "ss":7.13},
+    {"n":"Facundo Cambeses",    "id":836159,  "pj":15, "min":1350, "g":0, "a":0, "am":1, "ar":0, "ss":6.93},
+    {"n":"Marco Di Cesare",     "id":1017460, "pj":12, "min":979,  "g":2, "a":0, "am":5, "ar":1, "ss":6.85},
+    {"n":"Ezequiel Cannavo",    "id":1094180, "pj":12, "min":1074, "g":0, "a":0, "am":1, "ar":0, "ss":6.85},
+    {"n":"Santiago Solari",     "id":1104323, "pj":14, "min":1077, "g":2, "a":3, "am":3, "ar":0, "ss":6.84},
+    {"n":"Nazareno Colombo",    "id":913596,  "pj":8,  "min":426,  "g":0, "a":0, "am":1, "ar":0, "ss":6.79},
+    {"n":"Franco Pardo",        "id":879962,  "pj":11, "min":649,  "g":0, "a":0, "am":3, "ar":0, "ss":6.76},
+    {"n":"Bruno Zuculini",      "id":249409,  "pj":13, "min":505,  "g":0, "a":1, "am":1, "ar":0, "ss":6.72},
+    {"n":"Duván Vergara",       "id":819149,  "pj":12, "min":441,  "g":2, "a":0, "am":2, "ar":0, "ss":6.71},
+    {"n":"Marcos Rojo",         "id":46998,   "pj":7,  "min":462,  "g":0, "a":0, "am":2, "ar":0, "ss":6.69},
+    {"n":"Matías Zaracho",      "id":859970,  "pj":13, "min":470,  "g":2, "a":0, "am":2, "ar":0, "ss":6.68},
+    {"n":"Tomás Conechny",      "id":822607,  "pj":15, "min":743,  "g":3, "a":2, "am":2, "ar":0, "ss":6.65},
+    {"n":"Baltasar Rodríguez",  "id":1201515, "pj":11, "min":501,  "g":0, "a":1, "am":4, "ar":0, "ss":6.65},
+    {"n":"Matko Miljevic",      "id":1146881, "pj":12, "min":611,  "g":0, "a":0, "am":3, "ar":1, "ss":6.64},
+    {"n":"Valentín Carboni",    "id":1153083, "pj":5,  "min":204,  "g":0, "a":0, "am":1, "ar":0, "ss":6.45},
+    {"n":"Gastón Martirena",    "id":1017433, "pj":5,  "min":298,  "g":0, "a":0, "am":0, "ar":0, "ss":6.42},
+    {"n":"Damián Pizarro",      "id":1177565, "pj":2,  "min":117,  "g":0, "a":1, "am":0, "ar":0, "ss":6.40},
+    {"n":"Adrián Martínez",     "id":906811,  "pj":13, "min":1062, "g":4, "a":0, "am":3, "ar":0, "ss":6.36},
+    {"n":"Alan Forneris",       "id":1868531, "pj":2,  "min":53,   "g":0, "a":0, "am":1, "ar":0, "ss":6.85}
+  ],
+  "sin_lpf2026": [
+    "Tobías Rubio",
+    "Agustín García Basso",
+    "Gonzalo Escudero",
+    "Ignacio Rodríguez",
+    "Elías Torres",
+    "Adrián Fernández",
+    "Francisco Gómez",
+    "Matías Tagliamonte"
+  ],
+  "notas": "Carboni (5PJ) — lesionado y préstamo sin OC. Martirena (5PJ) — lesionado. Pizarro (2PJ) — préstamo Udinese. Cannavo — préstamo Def. y Justicia. Di Cesare recibió roja en LPF. Forneris (2PJ) — prospecto joven."
+}
