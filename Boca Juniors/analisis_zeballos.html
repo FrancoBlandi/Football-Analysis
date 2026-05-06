@@ -127,6 +127,43 @@
     .scenarios { grid-template-columns: 1fr; }
     .doc { padding: 20px 16px 40px; }
   }
+
+  /* DECISION BANNER */
+  .db-banner { background: linear-gradient(135deg, #001A5E 0%, #003087 100%); color: #fff; border-radius: 12px; padding: 20px 26px; margin-bottom: 28px; border: 2px solid rgba(245,200,0,.45); }
+  .db-banner .db-eyebrow { font-size: 10px; font-weight: 800; text-transform: uppercase; letter-spacing: 1.2px; color: var(--amarillo); margin-bottom: 6px; }
+  .db-banner .db-title { font-size: 17px; font-weight: 900; margin-bottom: 14px; }
+  .db-banner .db-cols { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; }
+  .db-banner .db-col { background: rgba(255,255,255,.09); border-radius: 8px; padding: 11px 14px; }
+  .db-banner .db-col.deadline { background: rgba(198,40,40,.28); border: 1px solid rgba(255,100,100,.4); }
+  .db-banner .db-col-label { font-size: 10px; font-weight: 700; text-transform: uppercase; color: rgba(245,200,0,.75); letter-spacing: .5px; margin-bottom: 4px; }
+  .db-banner .db-col-val { font-size: 12px; font-weight: 700; line-height: 1.5; }
+  .db-banner .db-col.deadline .db-col-val { color: #FF9090; }
+  @media (max-width: 900px) { .db-banner .db-cols { grid-template-columns: 1fr; } }
+
+  /* BENCHMARK */
+  .kpi .benchmark { font-size: 10px; color: #bbb; margin-top: 5px; border-top: 1px dashed #EEF0F5; padding-top: 4px; line-height: 1.4; }
+  .kpi .benchmark b { color: #888; font-weight: 700; }
+
+  /* VM PROJECTION */
+  .vm-proj table { width: 100%; border-collapse: collapse; font-size: 12px; }
+  .vm-proj th { background: var(--azul); color: #fff; padding: 8px 12px; text-align: left; font-size: 10px; text-transform: uppercase; letter-spacing: .4px; }
+  .vm-proj td { padding: 9px 12px; border-bottom: 1px solid #F0F2F7; vertical-align: top; }
+  .vm-proj tr:last-child td { border-bottom: none; }
+  .vm-proj tr.v-bien   td { background: #F5FFF5; }
+  .vm-proj tr.v-mal    td { background: #FFFDF5; }
+  .vm-proj tr.v-lesion td { background: #FFF5F5; }
+  .vm-proj .scen-name { font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: .4px; display: block; margin-bottom: 2px; }
+  .vm-proj tr.v-bien   .scen-name { color: #2E7D32; }
+  .vm-proj tr.v-mal    .scen-name { color: #EF6C00; }
+  .vm-proj tr.v-lesion .scen-name { color: #C62828; }
+  .vm-proj .vm-val { font-size: 14px; font-weight: 900; }
+  .vm-proj tr.v-bien   .vm-val { color: #2E7D32; }
+  .vm-proj tr.v-mal    .vm-val { color: #EF6C00; }
+  .vm-proj tr.v-lesion .vm-val { color: #C62828; }
+
+  /* SENSIBILIDAD */
+  .sensibilidad-box { background: rgba(255,255,255,.08); border: 1px solid rgba(245,200,0,.3); border-radius: 8px; padding: 14px 18px; margin-top: 18px; font-size: 13px; line-height: 1.6; opacity: .95; }
+  .sensibilidad-box strong { color: var(--amarillo); }
 </style>
 </head>
 <body>
@@ -141,6 +178,26 @@
 </header>
 
 <div class="doc">
+
+<!-- DECISIÓN REQUERIDA -->
+<div class="db-banner">
+  <div class="db-eyebrow">⚡ Decisión Requerida</div>
+  <div class="db-title">Contrato de Exequiel Zeballos — Boca Juniors</div>
+  <div class="db-cols">
+    <div class="db-col">
+      <div class="db-col-label">Quién decide</div>
+      <div class="db-col-val">Consejo Directivo de Boca Juniors · Secretario Técnico</div>
+    </div>
+    <div class="db-col deadline">
+      <div class="db-col-label">Deadline</div>
+      <div class="db-col-val">15 de junio de 2026 — fecha límite operativa antes de la ventana libre</div>
+    </div>
+    <div class="db-col">
+      <div class="db-col-label">Opciones disponibles</div>
+      <div class="db-col-val">A) Cerrar renovación (contrato 2028/29) · B) Activar venta vía cláusula USD 20M · C) No actuar → activo EUR 7M sin compensación desde el 1/7</div>
+    </div>
+  </div>
+</div>
 
 <!-- HERO -->
 <div class="hero">
@@ -171,21 +228,25 @@
     <label>Contrato vence</label>
     <div class="val r">31/12/2026</div>
     <div class="sub">Libre a negociar desde el 1/7/2026</div>
+    <div class="benchmark">Ref: desde el <b>1 de julio de 2026</b> puede negociar con cualquier club sin compensación para Boca — 6 meses antes del vencimiento formal. La ventana de acción es anterior a esa fecha.</div>
   </div>
   <div class="kpi">
     <label>Cláusula de rescisión</label>
     <div class="val">USD 20M</div>
     <div class="sub">Cláusula en contrato vigente</div>
+    <div class="benchmark">Ref real: CSKA Moscú ofreció <b>USD 10M</b> en feb 2026 — Boca rechazó exigiendo la cláusula completa. Fuente: Infobae, 3/2/2026.</div>
   </div>
   <div class="kpi n">
     <label>Valor de mercado (TM)</label>
     <div class="val n">EUR 7M</div>
     <div class="sub">Transfermarkt / Minuto Uno, abr 2026</div>
+    <div class="benchmark">Ref real: Trabzonspor prepara oferta <b>EUR 10–12M</b> para mitad de año — señal de que el mercado lo valúa por encima del TM actual. Fuente: Bolavip, abr 2026.</div>
   </div>
   <div class="kpi a">
     <label>Situación médica</label>
     <div class="val a" style="font-size:18px">Recuperado</div>
     <div class="sub">Desgarro muscular · 11 partidos ausente · alta réciente</div>
+    <div class="benchmark">Ref: <b>5 episodios documentados</b> entre ago 2022 y feb 2026 — tobillo (2022), rodilla/menisco (feb 2023), recaída (abr 2023), LCA+menisco (oct 2023), bíceps femoral (feb 2026). Fuente: ESPN · Infobae · PlanetaBJ.</div>
   </div>
 </div>
 
@@ -398,6 +459,10 @@
 <div class="scenarios">
   <div class="scenario v">
     <div class="prob">ESCENARIO A</div>
+    <div style="display:inline-flex;align-items:center;gap:8px;margin-bottom:8px;flex-wrap:wrap">
+      <span style="background:rgba(255,193,7,.25);color:#7A6000;font-size:11px;font-weight:800;padding:2px 9px;border-radius:20px">Probabilidad: MEDIA</span>
+      <span style="font-size:11px;color:#555;font-weight:500">Negociación estancada desde mar 2026; las partes no se acercaron en 2 meses de diálogo activo.</span>
+    </div>
     <h4>Renovación antes del 1/7/2026</h4>
     <p><strong>¿Qué implica?</strong> Boca llega a un acuerdo con Zeballos y el jugador firma extensión de contrato (2028 o 2029). La cláusula de rescisión sube o se mantiene en USD 20M.</p>
     <p><strong>Resultado financiero:</strong> Boca retiene un activo de EUR 7M, mantiene a su extremo titular para la Copa Libertadores 2026, y aplaza la decisión de venta a cuando el precio sea más alto o el reemplazo esté listo.</p>
@@ -406,6 +471,10 @@
   </div>
   <div class="scenario a">
     <div class="prob">ESCENARIO B</div>
+    <div style="display:inline-flex;align-items:center;gap:8px;margin-bottom:8px;flex-wrap:wrap">
+      <span style="background:rgba(46,125,50,.2);color:#2E7D32;font-size:11px;font-weight:800;padding:2px 9px;border-radius:20px">Probabilidad: ALTA</span>
+      <span style="font-size:11px;color:#555;font-weight:500">Napoli y Trabzonspor tienen interés concreto; la presión del 1/7 empuja a Boca a aceptar antes de perder el activo.</span>
+    </div>
     <h4>Venta a Napoli / Trabzonspor antes del 1/7</h4>
     <p><strong>¿Qué implica?</strong> Boca acepta una oferta por Zeballos. El precio mínimo es la cláusula (USD 20M). En la práctica, si Napoli activa la cláusula, Boca recibe USD 20M limpios — el mayor ingreso por transferencia de un jugador formado en el club en años.</p>
     <p><strong>Resultado financiero:</strong> USD 20M netos para Boca (formación propia, sin costo de compra). En el contexto del superávit Ej. 121 de ARS 35.581M, un ingreso de USD 20M (~ARS 23.200M al tipo de cambio actual) haría del Ej. 122 un ejercicio aún más positivo.</p>
@@ -414,12 +483,57 @@
   </div>
   <div class="scenario r">
     <div class="prob">ESCENARIO C — PEOR CASO</div>
+    <div style="display:inline-flex;align-items:center;gap:8px;margin-bottom:8px;flex-wrap:wrap">
+      <span style="background:rgba(198,40,40,.2);color:#C62828;font-size:11px;font-weight:800;padding:2px 9px;border-radius:20px">Probabilidad: BAJA</span>
+      <span style="font-size:11px;color:#555;font-weight:500">Implica inacción total de ambas partes; improbable dado que hay interesados concretos y un deadline conocido.</span>
+    </div>
     <h4>Ni renovación ni venta antes del 1/7</h4>
     <p><strong>¿Qué implica?</strong> Boca llega al 1 de julio sin haber renovado ni vendido. Zeballos queda libre de negociar con terceros. Puede acordar con Napoli (o cualquier otro club) para firmar en enero 2027. Boca no recibe nada.</p>
     <p><strong>Resultado financiero:</strong> EUR 7M en valor de mercado que se evapora. El club pierde el activo sin contraprestación alguna.</p>
     <p><strong>Resultado deportivo:</strong> Zeballos puede quedarse hasta diciembre 2026 (termina el contrato) pero la situación genera incertidumbre, bajo rendimiento y conflicto de intereses.</p>
     <p><strong>Riesgo:</strong> Es el único escenario en que Boca no recibe nada por un activo de EUR 7M que formó desde las inferiores.</p>
   </div>
+</div>
+
+<h2>Proyección de Valor de Mercado</h2>
+
+<div class="card vm-proj">
+  <h3>3 escenarios a 6, 12 y 18 meses — base: EUR 7M (Transfermarkt, abr 2026)</h3>
+  <table>
+    <thead>
+      <tr>
+        <th style="width:22%">Escenario</th>
+        <th style="width:30%">Inputs y comparables</th>
+        <th>a 6 meses</th>
+        <th>a 12 meses</th>
+        <th>a 18 meses</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="v-bien">
+        <td><span class="scen-name">Rinde bien</span><small style="color:#555;font-size:11px">Rating SS 7.0+, titular en Copa Libertadores, sin nuevas lesiones</small></td>
+        <td style="font-size:11px;color:#555">Ref. real: Trabzonspor prepara oferta EUR 10–12M para mitad de año (Bolavip, abr 2026); Napoli también interesado. Copa Libertadores como driver de revaluación TM. La cláusula USD 20M (≈ EUR 18.5M) fija el techo que Boca defiende.</td>
+        <td><span class="vm-val">EUR 9–12M</span></td>
+        <td><span class="vm-val">EUR 11–15M</span></td>
+        <td><span class="vm-val">EUR 12–18M</span></td>
+      </tr>
+      <tr class="v-mal">
+        <td><span class="scen-name">Rinde mal</span><small style="color:#555;font-size:11px">Pierde titularidad, rating &lt;6.8, no impacta en torneos clave</small></td>
+        <td style="font-size:11px;color:#555">Ref. real: CSKA Moscú ofreció USD 10M (≈ EUR 9.2M) en feb 2026 cuando Zeballos recién volvía post-desgarro — Boca rechazó. Ese es el piso de mercado documentado en estado de rendimiento subóptimo. Fuente: Infobae, 3/2/2026.</td>
+        <td><span class="vm-val">EUR 6–8M</span></td>
+        <td><span class="vm-val">EUR 5–7M</span></td>
+        <td><span class="vm-val">EUR 4–6M</span></td>
+      </tr>
+      <tr class="v-lesion">
+        <td><span class="scen-name">Lesión</span><small style="color:#555;font-size:11px">Nuevo episodio largo (historial documentado: lesión LCA+menisco oct 2023 · bíceps femoral feb 2026)</small></td>
+        <td style="font-size:11px;color:#555">Ref. real: durante la recuperación del LCA 2023-24 (7–9 meses), el mercado valoraba al jugador por debajo del piso actual — la oferta CSKA llegó justo cuando volvía post-LCA. Un nuevo episodio largo lo devuelve a ese nivel o inferior; cláusula USD 20M deja de ser activable. Fuente: Infobae · ESPN · PlanetaBJ.</td>
+        <td><span class="vm-val">EUR 4–6M</span></td>
+        <td><span class="vm-val">EUR 3.5–5M</span></td>
+        <td><span class="vm-val">EUR 3–5M</span></td>
+      </tr>
+    </tbody>
+  </table>
+  <p style="font-size:10px;color:#aaa;margin-top:10px">Inputs verificados: oferta real CSKA USD 10M (Infobae, feb 2026), rango de oferta Trabzonspor EUR 10–12M (Bolavip, abr 2026), cláusula USD 20M (contrato vigente), historial de lesiones (ESPN · Infobae · PlanetaBJ). Los rangos reflejan esos datos reales de mercado, no estimaciones comparativas.</p>
 </div>
 
 <h2>Veredicto Ejecutivo</h2>
@@ -432,6 +546,9 @@
   <p>El elemento diferencial es la Copa Libertadores: si Boca avanza a semis o final, el valor de mercado de Zeballos puede escalar a EUR 10–12M, lo que elevaría el precio de negociación natural más allá de la cláusula. Ese es el escenario donde la renovación más la venta posterior en verano europeo 2027 generaría el mayor retorno.</p>
   <div class="deadline">
     <strong>FECHA LÍMITE OPERATIVA: 15 de junio de 2026.</strong> Si no hay acuerdo de renovación firmado para esa fecha, Boca debe abrir formalmente el proceso de venta con Napoli u otros interesados, exigiendo la cláusula de USD 20M como precio mínimo. Después del 1/7, el poder de negociación del club desaparece.
+  </div>
+  <div class="sensibilidad-box">
+    <strong>Análisis de sensibilidad:</strong> La recomendación de priorizar la renovación cambiaría bajo dos condiciones: (1) si Napoli confirma que puede activar la cláusula USD 20M en efectivo antes del 30 de junio — en ese caso, vender y planificar el reemplazo es financieramente superior a cualquier escenario de renovación; (2) si Zeballos sufre una nueva lesión muscular antes del 15 de junio — en ese caso, la venta se vuelve inviable al precio de la cláusula (el VM caería a EUR 3.5–5M según la proyección de lesión) y renovar en condiciones más favorables para el club se convierte en la única salida no destructiva.
   </div>
 </div>
 

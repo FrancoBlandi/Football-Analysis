@@ -113,6 +113,39 @@
     .hero { grid-template-columns: 1fr; }
     .verdict-grid { grid-template-columns: 1fr; }
   }
+
+  /* DECISION BANNER */
+  .db-banner { background: linear-gradient(135deg, #001A5E 0%, #003087 100%); color: #fff; border-radius: 12px; padding: 20px 26px; margin-bottom: 28px; border: 2px solid rgba(245,200,0,.45); }
+  .db-banner .db-eyebrow { font-size: 10px; font-weight: 800; text-transform: uppercase; letter-spacing: 1.2px; color: var(--amarillo); margin-bottom: 6px; }
+  .db-banner .db-title { font-size: 17px; font-weight: 900; margin-bottom: 14px; }
+  .db-banner .db-cols { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; }
+  .db-banner .db-col { background: rgba(255,255,255,.09); border-radius: 8px; padding: 11px 14px; }
+  .db-banner .db-col.deadline { background: rgba(198,40,40,.28); border: 1px solid rgba(255,100,100,.4); }
+  .db-banner .db-col-label { font-size: 10px; font-weight: 700; text-transform: uppercase; color: rgba(245,200,0,.75); letter-spacing: .5px; margin-bottom: 4px; }
+  .db-banner .db-col-val { font-size: 12px; font-weight: 700; line-height: 1.5; }
+  .db-banner .db-col.deadline .db-col-val { color: #FF9090; }
+  @media (max-width: 900px) { .db-banner .db-cols { grid-template-columns: 1fr; } }
+
+  /* BENCHMARK */
+  .kpi .benchmark { font-size: 10px; color: #bbb; margin-top: 5px; border-top: 1px dashed #EEF0F5; padding-top: 4px; line-height: 1.4; }
+  .kpi .benchmark b { color: #888; font-weight: 700; }
+
+  /* VM PROJECTION */
+  .vm-proj table { width: 100%; border-collapse: collapse; font-size: 12px; }
+  .vm-proj th { background: var(--azul); color: #fff; padding: 8px 12px; text-align: left; font-size: 10px; text-transform: uppercase; letter-spacing: .4px; }
+  .vm-proj td { padding: 9px 12px; border-bottom: 1px solid #F0F2F7; vertical-align: top; }
+  .vm-proj tr:last-child td { border-bottom: none; }
+  .vm-proj tr.v-bien   td { background: #F5FFF5; }
+  .vm-proj tr.v-mal    td { background: #FFFDF5; }
+  .vm-proj tr.v-lesion td { background: #FFF5F5; }
+  .vm-proj .scen-name { font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: .4px; display: block; margin-bottom: 2px; }
+  .vm-proj tr.v-bien   .scen-name { color: #2E7D32; }
+  .vm-proj tr.v-mal    .scen-name { color: #EF6C00; }
+  .vm-proj tr.v-lesion .scen-name { color: #C62828; }
+  .vm-proj .vm-val { font-size: 14px; font-weight: 900; }
+  .vm-proj tr.v-bien   .vm-val { color: #2E7D32; }
+  .vm-proj tr.v-mal    .vm-val { color: #EF6C00; }
+  .vm-proj tr.v-lesion .vm-val { color: #C62828; }
 </style>
 </head>
 <body>
@@ -127,6 +160,26 @@
 </header>
 
 <div class="doc">
+
+<!-- DECISIÓN REQUERIDA -->
+<div class="db-banner">
+  <div class="db-eyebrow">⚡ Decisión Requerida</div>
+  <div class="db-title">Camino al Primer Equipo — Leonel Flores · Boca Juniors</div>
+  <div class="db-cols">
+    <div class="db-col">
+      <div class="db-col-label">Quién decide</div>
+      <div class="db-col-val">Claudio Úbeda (DT) · Secretaría Técnica de Boca Juniors</div>
+    </div>
+    <div class="db-col deadline">
+      <div class="db-col-label">Deadline</div>
+      <div class="db-col-val">Ventana de junio–julio 2026 — cierre del Apertura 2026</div>
+    </div>
+    <div class="db-col">
+      <div class="db-col-label">Opciones disponibles</div>
+      <div class="db-col-val">A) Debut oficial en primera antes de fin del Apertura 2026 · B) Préstamo a club de primera (1.000+ min en 2026/27) · C) Continuar en reserva — sin urgencia contractual pero con riesgo de exposición al mercado exterior sin capitalizar</div>
+    </div>
+  </div>
+</div>
 
 <!-- HERO -->
 <div class="hero">
@@ -165,9 +218,27 @@
 <h2>Estadísticas — Torneo Proyección (Reserva)</h2>
 
 <div class="grid3">
-  <div class="kpi a"><label>Proyección Apertura 2026</label><div class="val">4+ goles</div><div class="sub">~7 partidos · en curso</div><div class="note">Incluye gol olímpico vs Platense · Superclásico vs River</div></div>
-  <div class="kpi v"><label>Proyección 2025</label><div class="val v">10 goles</div><div class="sub">8 partidos · 1.25 goles por partido</div><div class="note">Campeón Clausura · Póker vs Aldosivi</div></div>
-  <div class="kpi"><label>Total reserva</label><div class="val">14+ goles</div><div class="sub">~19 partidos · promedio excepcional</div><div class="note">Selección Argentina Sub-20: 1 PJ</div></div>
+  <div class="kpi a">
+    <label>Proyección Apertura 2026</label>
+    <div class="val">4+ goles</div>
+    <div class="sub">~7 partidos · en curso</div>
+    <div class="note">Incluye gol olímpico vs Platense · Superclásico vs River</div>
+    <div class="benchmark">Ref real: en el Torneo Proyección 2025 (Clausura), Flores finalizó como <b>10° goleador de toda la competencia</b> con 10 goles — junto a jugadores de Huracán, Belgrano y San Lorenzo. Fuente: BeSoccer.</div>
+  </div>
+  <div class="kpi v">
+    <label>Proyección 2025</label>
+    <div class="val v">10 goles</div>
+    <div class="sub">8 partidos · 1.25 goles por partido</div>
+    <div class="note">Campeón Clausura · Póker vs Aldosivi</div>
+    <div class="benchmark">Ref real: tabla de goleadores Torneo Proyección 2025 (BeSoccer): líder J. De Asís (Gimnasia LP) con <b>17 goles</b>; V. Simoni (Boca II) con 13. Flores (10 goles) está en el <b>top 10 de toda la LPF</b> en esa edición.</div>
+  </div>
+  <div class="kpi">
+    <label>Total reserva</label>
+    <div class="val">14+ goles</div>
+    <div class="sub">~19 partidos · promedio excepcional</div>
+    <div class="note">Selección Argentina Sub-20: 1 PJ</div>
+    <div class="benchmark">Ref real: en el ranking BeSoccer del Torneo Proyección 2025, la mayoría de los goleadores del top-15 acumuló entre <b>9 y 17 goles en el torneo completo</b>. Flores acumula 14+ en dos torneos — ritmo de los mejores goleadores de la categoría a nivel LPF.</div>
+  </div>
 </div>
 
 <div class="grid2" style="margin-bottom:28px">
@@ -394,6 +465,47 @@
           <td style="padding:8px 12px">Hasta 2029</td></tr>
     </tbody>
   </table>
+</div>
+
+<h2>Proyección de Valor de Mercado</h2>
+
+<div class="card vm-proj" style="margin-bottom:28px">
+  <h3>3 escenarios a 6, 12 y 18 meses — base: no cotizado en TM (prospecto, reserva)</h3>
+  <table>
+    <thead>
+      <tr>
+        <th style="width:22%">Escenario</th>
+        <th style="width:30%">Ancla real documentada</th>
+        <th>a 6 meses</th>
+        <th>a 12 meses</th>
+        <th>a 18 meses</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="v-bien">
+        <td><span class="scen-name">Rinde bien</span><small style="color:#555;font-size:11px">Debuta en primera, 3+ goles en LPF, rating SS 7.0+</small></td>
+        <td style="font-size:11px;color:#555">Últimas salidas de juveniles Boca a los 19 años: <b>V. Barco → Brighton</b> ene 2024: EUR ~8M (Infobae, 17/1/2024). <b>A. Anselmino → Chelsea</b> ene 2024: EUR ~8M (Olé, 6/1/2024). Ambos con debut consolidado en primera antes de la venta. Flores sin debut aún → piso inferior a esas referencias.</td>
+        <td><span class="vm-val">proyección*</span></td>
+        <td><span class="vm-val">proyección*</span></td>
+        <td><span class="vm-val">proyección*</span></td>
+      </tr>
+      <tr class="v-mal">
+        <td><span class="scen-name">Rinde mal / no debuta</span><small style="color:#555;font-size:11px">Se estanca en reserva, sin minutos en primera, el mercado lo ignora</small></td>
+        <td style="font-size:11px;color:#555">Sin debut en primera, TM no genera cotización pública. El contrato vigente hasta dic 2029 protege el activo para Boca pero el valor de transferencia no se aprecia sin exposición en LPF. No existen transacciones documentadas de juveniles Boca vendidos sin debut en primera.</td>
+        <td><span class="vm-val">proyección*</span></td>
+        <td><span class="vm-val">proyección*</span></td>
+        <td><span class="vm-val">proyección*</span></td>
+      </tr>
+      <tr class="v-lesion">
+        <td><span class="scen-name">Lesión importante</span><small style="color:#555;font-size:11px">Lesión larga que interrumpe su debut y visibilidad en el mercado</small></td>
+        <td style="font-size:11px;color:#555">Historial de lesiones: sin antecedentes documentados de lesiones largas. El riesgo principal es perder la ventana de debut bajo Úbeda y la convocatoria a Sub-20 — no existe referencia comparable documentada de jugador Boca vendido sin debut post-lesión juvenil.</td>
+        <td><span class="vm-val">proyección*</span></td>
+        <td><span class="vm-val">proyección*</span></td>
+        <td><span class="vm-val">proyección*</span></td>
+      </tr>
+    </tbody>
+  </table>
+  <p style="font-size:10px;color:#aaa;margin-top:10px">* Los valores de mercado futuros no están disponibles como dato público. Las anclas documentadas son las ventas reales de Boca: Barco (EUR ~8M, Infobae 17/1/2024) y Anselmino (EUR ~8M, Olé 6/1/2024). Flores no tiene cotización TM activa — cualquier cifra sería especulación no verificable. La tabla refleja la lógica de escenario sin fabricar números. Contrato vigente dic 2029.</p>
 </div>
 
 <!-- VEREDICTO -->

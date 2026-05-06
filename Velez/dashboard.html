@@ -79,6 +79,34 @@
     .charts-row.c2 { grid-template-columns: 1fr; }
     .page { padding: 20px 16px; }
   }
+
+  /* DECISION BANNER */
+  .db-banner { background: linear-gradient(135deg, #001055 0%, #001D6E 100%); color: #fff; border-radius: 10px; padding: 16px 22px; margin-bottom: 18px; border: 2px solid rgba(0,158,224,.4); }
+  .db-banner .db-eyebrow { font-size: 10px; font-weight: 800; text-transform: uppercase; letter-spacing: 1.2px; color: var(--celeste); margin-bottom: 5px; }
+  .db-banner .db-title { font-size: 15px; font-weight: 900; margin-bottom: 12px; }
+  .db-banner .db-cols { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; }
+  .db-banner .db-col { background: rgba(255,255,255,.09); border-radius: 7px; padding: 10px 12px; }
+  .db-banner .db-col.deadline { background: rgba(198,40,40,.28); border: 1px solid rgba(255,100,100,.4); }
+  .db-banner .db-col-label { font-size: 10px; font-weight: 700; text-transform: uppercase; color: rgba(0,158,224,.85); letter-spacing: .5px; margin-bottom: 3px; }
+  .db-banner .db-col-val { font-size: 12px; font-weight: 700; line-height: 1.4; }
+  .db-banner .db-col.deadline .db-col-val { color: #FF9090; }
+  @media (max-width: 900px) { .db-banner .db-cols { grid-template-columns: 1fr; } }
+
+  /* BENCHMARK */
+  .kpi .benchmark { font-size: 10px; color: #bbb; margin-top: 5px; border-top: 1px dashed #EEF0F5; padding-top: 4px; line-height: 1.4; }
+  .kpi .benchmark b { color: #888; font-weight: 700; }
+
+  /* IMPLICANCIA CRUZADA */
+  .cruzada-card { background: linear-gradient(135deg, #F8F9FF, #EEF2FF); border-radius: 10px; padding: 20px 22px; box-shadow: 0 2px 8px rgba(0,0,0,.07); border-left: 4px solid var(--azul); margin-top: 24px; }
+  .cruzada-card h3 { font-size: 12px; font-weight: 800; color: var(--azul); text-transform: uppercase; letter-spacing: .5px; margin-bottom: 16px; }
+  .cruzada-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; }
+  .cruzada-item { background: #fff; border-radius: 8px; padding: 14px 16px; box-shadow: 0 1px 4px rgba(0,0,0,.06); }
+  .cruzada-item .ci-label { font-size: 10px; font-weight: 700; text-transform: uppercase; color: #aaa; letter-spacing: .5px; margin-bottom: 4px; }
+  .cruzada-item .ci-val { font-size: 20px; font-weight: 900; color: var(--azul); line-height: 1; margin-bottom: 4px; }
+  .cruzada-item .ci-val.r { color: var(--rojo); }
+  .cruzada-item .ci-val.v { color: var(--verde); }
+  .cruzada-item .ci-sub { font-size: 11px; color: #999; line-height: 1.4; }
+  @media (max-width: 900px) { .cruzada-grid { grid-template-columns: 1fr; } }
 </style>
 </head>
 <body>
@@ -106,21 +134,64 @@
       <label>Valor del Plantel</label>
       <div class="val">EUR 32.2M</div>
       <div class="sub">27 jugadores · Transfermarkt abr 2026</div>
+      <div class="benchmark">Fuente: Transfermarkt abr 2026. Los valores de mercado de otros clubes LPF no están disponibles con acceso público verificado en esta fecha — comparación entre clubes excluida por falta de fuente.</div>
     </div>
     <div class="kpi">
       <label>Socios Activos</label>
       <div class="val">33.225</div>
       <div class="sub">AFA / Infobae, 2025</div>
+      <div class="benchmark">Fuente: AFA / Infobae 2025. Conteo de socios activos de otros clubes no disponible con fuente pública verificable — comparación entre clubes excluida.</div>
     </div>
     <div class="kpi r">
       <label>Resultado Ej. 114</label>
       <div class="val r">-$1.113M ARS</div>
       <div class="sub">Déficit operativo · Balance oficial</div>
+      <div class="benchmark">Ref crítico: resultado negativo sostenido por financieros extraordinarios (ARS +15.4M). Sin ellos, el déficit real del ejercicio sería <b>-ARS 16.5M</b> — 35% de los recursos ordinarios.</div>
     </div>
     <div class="kpi v">
       <label>Patrimonio Neto</label>
       <div class="val v">$42.625M ARS</div>
       <div class="sub">Balance oficial Ej. 114 · jun 2024</div>
+      <div class="benchmark">Ref: PN positivo confirma solvencia estructural, pero el gap operativo de <b>ARS 16.5M</b> requiere ingresos extraordinarios para no erosionarlo año a año.</div>
+    </div>
+  </div>
+
+  <!-- BANNERS DE DECISIÓN REQUERIDA -->
+  <div class="db-banner">
+    <div class="db-eyebrow">⚡ Decisión Requerida — Finanzas</div>
+    <div class="db-title">Déficit Operativo Estructural — Ejercicio 114</div>
+    <div class="db-cols">
+      <div class="db-col">
+        <div class="db-col-label">Responsable</div>
+        <div class="db-col-val">Comisión Directiva — Área de Economía y Finanzas</div>
+      </div>
+      <div class="db-col deadline">
+        <div class="db-col-label">Deadline</div>
+        <div class="db-col-val">Antes del cierre del Ejercicio 115 (jun 2025) — ya en ejecución</div>
+      </div>
+      <div class="db-col">
+        <div class="db-col-label">Opciones disponibles</div>
+        <div class="db-col-val">A) Incrementar recursos ordinarios (socios, activaciones, abonos) · B) Reducir egresos estructurales · C) Cubrir con ingresos por ventas de plantel (no sostenible en el largo plazo)</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="db-banner">
+    <div class="db-eyebrow">⚡ Decisión Requerida — Plantel</div>
+    <div class="db-title">5 Contratos Vencen en Diciembre 2026</div>
+    <div class="db-cols">
+      <div class="db-col">
+        <div class="db-col-label">Responsable</div>
+        <div class="db-col-val">Secretaría Técnica · Comisión Directiva</div>
+      </div>
+      <div class="db-col deadline">
+        <div class="db-col-label">Deadline</div>
+        <div class="db-col-val">30 de junio de 2026 — ventana de invierno · antes de la libre negociación</div>
+      </div>
+      <div class="db-col">
+        <div class="db-col-label">Opciones disponibles</div>
+        <div class="db-col-val">A) Renovar contratos estratégicos (Pellegrini, Piñeiro, Lanzini) · B) Negociar ventas para capturar valor antes del vencimiento · C) Dejar expirar → Vélez no recibe compensación por activos formados</div>
+      </div>
     </div>
   </div>
 
@@ -140,17 +211,43 @@
       <label>Contratos vencen en 2026</label>
       <div class="val">5 jugadores</div>
       <div class="sub">Robertone, Pellegrini, Piñeiro, Machuca, Lanzini</div>
+      <div class="benchmark">Ref: 5 de 27 jugadores = <b>18.5% del plantel</b> en riesgo de quedar libre simultáneamente. Nivel alto de renovación requerida en una sola ventana.</div>
     </div>
     <div class="kpi">
       <label>Cuota Activo (abr 2025)</label>
       <div class="val">$38.000 ARS</div>
       <div class="sub">Fuente: Doble Amarilla, abr 2025</div>
+      <div class="benchmark">Fuente: Doble Amarilla, abr 2025. Las cuotas de otros clubes no están disponibles con fuente pública verificable para esta fecha — comparación entre clubes excluida.</div>
     </div>
     <div class="kpi v">
       <label>Ingreso Potencial Socios / Año</label>
       <div class="val v">$15.1B ARS</div>
       <div class="sub">33.225 × $38.000 × 12 meses</div>
+      <div class="benchmark">Ref: los ingresos de socios cubren <b>~32%</b> de los egresos ordinarios del Ej. 114 (ARS 63.1M). Ampliar la base de socios en un 10% agregaría ~ARS 1.5M anuales.</div>
     </div>
+  </div>
+
+  <!-- IMPLICANCIA CRUZADA -->
+  <div class="cruzada-card">
+    <h3>Implicancia Cruzada — ¿Qué significa el déficit en términos del plantel y las transferencias?</h3>
+    <div class="cruzada-grid">
+      <div class="cruzada-item">
+        <div class="ci-label">Gap operativo Ej. 114</div>
+        <div class="ci-val r">ARS 16.5M</div>
+        <div class="ci-sub">Egresos ordinarios (ARS 63.1M) menos recursos ordinarios (ARS 46.6M). Equivale al 35% de los recursos propios del ejercicio.</div>
+      </div>
+      <div class="cruzada-item">
+        <div class="ci-label">Ventas promedio necesarias</div>
+        <div class="ci-val">~3–4 ventas</div>
+        <div class="ci-sub">Promedio por operación 2023–26: €5M/transacción (€60M en 12 ops). A tipo de cambio de referencia del período (~ARS 900/EUR), 3–4 ventas al promedio cubren el gap de un ejercicio completo.</div>
+      </div>
+      <div class="cruzada-item">
+        <div class="ci-label">Como % del valor del plantel</div>
+        <div class="ci-val">~47%</div>
+        <div class="ci-sub">El gap operativo representa ~EUR 15M al tipo de cambio abr 2026 (ARS 1.100/EUR), equivalente al 47% del valor total del plantel (EUR 32.2M, TM abr 2026). El club necesita vender prácticamente la mitad del plantel para cubrir un año de déficit operativo — sin tocar el capital.</div>
+      </div>
+    </div>
+    <p style="font-size:10px;color:#aaa;margin-top:12px">Fuentes: Balance Oficial Ej. 114 (egresos/recursos), Transfermarkt (plantel abr 2026), historial de transferencias 2023–26. Tipos de cambio de referencia: ARS 900/EUR (período Ej. 114) y ARS 1.100/EUR (abr 2026). La comparación es orientativa — las ventas de plantel no son ingresos ordinarios y no resuelven el déficit estructural de forma sostenible.</p>
   </div>
 </div>
 
