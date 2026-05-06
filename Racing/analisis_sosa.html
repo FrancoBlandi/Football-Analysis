@@ -143,6 +143,43 @@
     .hero { grid-template-columns: 1fr; }
     .verdict-grid { grid-template-columns: 1fr; }
   }
+
+  /* DECISION BANNER */
+  .db-banner { background: linear-gradient(135deg, #003070 0%, #005BAA 100%); color: #fff; border-radius: 12px; padding: 20px 26px; margin-bottom: 28px; border: 2px solid rgba(0,174,239,.4); }
+  .db-banner .db-eyebrow { font-size: 10px; font-weight: 800; text-transform: uppercase; letter-spacing: 1.2px; color: var(--celeste); margin-bottom: 6px; }
+  .db-banner .db-title { font-size: 17px; font-weight: 900; margin-bottom: 14px; }
+  .db-banner .db-cols { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; }
+  .db-banner .db-col { background: rgba(255,255,255,.09); border-radius: 8px; padding: 11px 14px; }
+  .db-banner .db-col.deadline { background: rgba(198,40,40,.28); border: 1px solid rgba(255,100,100,.4); }
+  .db-banner .db-col-label { font-size: 10px; font-weight: 700; text-transform: uppercase; color: rgba(0,174,239,.85); letter-spacing: .5px; margin-bottom: 4px; }
+  .db-banner .db-col-val { font-size: 12px; font-weight: 700; line-height: 1.5; }
+  .db-banner .db-col.deadline .db-col-val { color: #FF9090; }
+  @media (max-width: 900px) { .db-banner .db-cols { grid-template-columns: 1fr; } }
+
+  /* BENCHMARK */
+  .kpi .benchmark { font-size: 10px; color: #bbb; margin-top: 5px; border-top: 1px dashed #EEF0F5; padding-top: 4px; line-height: 1.4; }
+  .kpi .benchmark b { color: #888; font-weight: 700; }
+
+  /* VM PROJECTION */
+  .vm-proj table { width: 100%; border-collapse: collapse; font-size: 12px; }
+  .vm-proj th { background: var(--azul); color: #fff; padding: 8px 12px; text-align: left; font-size: 10px; text-transform: uppercase; letter-spacing: .4px; }
+  .vm-proj td { padding: 9px 12px; border-bottom: 1px solid #F0F2F7; vertical-align: top; }
+  .vm-proj tr:last-child td { border-bottom: none; }
+  .vm-proj tr.v-bien   td { background: #F5FFF5; }
+  .vm-proj tr.v-mal    td { background: #FFFDF5; }
+  .vm-proj tr.v-lesion td { background: #FFF5F5; }
+  .vm-proj .scen-name { font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: .4px; display: block; margin-bottom: 2px; }
+  .vm-proj tr.v-bien   .scen-name { color: #2E7D32; }
+  .vm-proj tr.v-mal    .scen-name { color: #EF6C00; }
+  .vm-proj tr.v-lesion .scen-name { color: #C62828; }
+  .vm-proj .vm-val { font-size: 14px; font-weight: 900; }
+  .vm-proj tr.v-bien   .vm-val { color: #2E7D32; }
+  .vm-proj tr.v-mal    .vm-val { color: #EF6C00; }
+  .vm-proj tr.v-lesion .vm-val { color: #C62828; }
+
+  /* SENSIBILIDAD */
+  .sensibilidad-box { background: rgba(255,255,255,.08); border: 1px solid rgba(0,174,239,.3); border-radius: 8px; padding: 14px 18px; margin-top: 18px; font-size: 13px; line-height: 1.6; opacity: .95; }
+  .sensibilidad-box strong { color: var(--celeste); }
 </style>
 </head>
 <body>
@@ -157,6 +194,26 @@
 </header>
 
 <div class="doc">
+
+<!-- DECISIÓN REQUERIDA -->
+<div class="db-banner">
+  <div class="db-eyebrow">⚡ Decisión Requerida</div>
+  <div class="db-title">Situación Contractual de Santiago Sosa — Racing Club</div>
+  <div class="db-cols">
+    <div class="db-col">
+      <div class="db-col-label">Quién decide</div>
+      <div class="db-col-val">Comisión Directiva de Racing Club · Diego Milito (Secretario Técnico)</div>
+    </div>
+    <div class="db-col deadline">
+      <div class="db-col-label">Deadline</div>
+      <div class="db-col-val">30 de junio de 2026 — antes de la apertura de la ventana de julio</div>
+    </div>
+    <div class="db-col">
+      <div class="db-col-label">Opciones disponibles</div>
+      <div class="db-col-val">A) Cerrar mejora salarial — retener activo EUR 8M · B) Aceptar oferta Monterrey €12M con reemplazos confirmados (Galarza + Rogel) · C) No resolver antes de julio → conflicto prolongado, pérdida del control de la negociación</div>
+    </div>
+  </div>
+</div>
 
 <!-- ═══════ HERO ═══════ -->
 <div class="hero">
@@ -189,10 +246,30 @@
 <div class="alert a">ℹ Datos SofaScore: 15 partidos jugados, 1.324 minutos. Temporada de Liga Profesional 2026 actualmente en curso (Fecha 15). Rating 7.13 SofaScore.</div>
 
 <div class="grid4">
-  <div class="kpi v"><label>Rating SofaScore</label><div class="val v">7.13</div><div class="sub">Primera LPF 2026 · 15 PJ</div></div>
-  <div class="kpi"><label>Minutos jugados</label><div class="val">1.324</div><div class="sub">15 titularidades · LPF 2026</div></div>
-  <div class="kpi v"><label>Duelos ganados</label><div class="val v">~107</div><div class="per90">~7.1 / 90 min · perfil físico dominante</div></div>
-  <div class="kpi n"><label>Tarjetas amarillas</label><div class="val n">5</div><div class="sub">0.33 / partido · sistema de línea alta</div></div>
+  <div class="kpi v">
+    <label>Rating SofaScore</label>
+    <div class="val v">7.13</div>
+    <div class="sub">Primera LPF 2026 · 15 PJ</div>
+    <div class="benchmark">Ref. propia: <b>7.44</b> en LPF 2024 (23 PJ, temporada completa) · <b>7.19</b> en Copa Liga 2025 (13 PJ). Rating 2026 provisional sobre muestra parcial — consistente en el rango 7.1–7.5 en tres torneos. No existe dato público de media de posición DCs en LPF.</div>
+  </div>
+  <div class="kpi">
+    <label>Minutos jugados</label>
+    <div class="val">1.324</div>
+    <div class="sub">15 titularidades · LPF 2026</div>
+    <div class="benchmark">Ref. propia: <b>2.011 min</b> en LPF 2024 (23 PJ, 87.4 min/PJ) · <b>1.170 min</b> en Copa Liga 2025 (13 PJ, 90 min/PJ). Titular ininterrumpido en las tres temporadas documentadas — sin rotación en ninguna.</div>
+  </div>
+  <div class="kpi v">
+    <label>Duelos ganados</label>
+    <div class="val v">~107</div>
+    <div class="per90">~7.1 / 90 min · perfil físico dominante</div>
+    <div class="benchmark">Ref. propia: <b>204 duelos</b> en LPF 2024 (23 PJ) = 8.87/PJ. Ritmo 2026: ~107 en 15 PJ = 7.1/PJ. El ratio bajó respecto a 2024 — coincide con cambio de sistema táctico. No existe dato público de media de posición DCs en LPF para comparación externa.</div>
+  </div>
+  <div class="kpi n">
+    <label>Tarjetas amarillas</label>
+    <div class="val n">5</div>
+    <div class="sub">0.33 / partido · sistema de línea alta</div>
+    <div class="benchmark">Ref. propia: <b>5 amarillas en LPF 2024</b> (23 PJ) = 0.22/PJ. En 2026 el ratio subió a <b>0.33/PJ</b> — tendencia a monitorear. Contexto documentado: ambas temporadas bajo sistema de presión alta y línea elevada.</div>
+  </div>
 </div>
 
 <div class="grid4" style="margin-bottom:28px">
@@ -216,10 +293,30 @@
 <div class="alert a">ℹ Base: 23 partidos, 2.011 minutos (22.3 equiv. de 90 min). Dataset completo de la temporada anual de la Liga Profesional 2024 bajo Costas — la muestra más representativa disponible para análisis táctico. Los números per/90 permiten comparación directa con cualquier liga.</div>
 
 <div class="grid4">
-  <div class="kpi v"><label>Rating SofaScore</label><div class="val v">7.44</div><div class="sub">Liga Profesional 2024 · 23 PJ</div></div>
-  <div class="kpi"><label>Minutos jugados</label><div class="val">2.011</div><div class="sub">23 apariciones · LPF 2024</div></div>
-  <div class="kpi v"><label>Duelos ganados</label><div class="val v">204</div><div class="per90">9.15 / 90 min · 131 aéreos + 73 terrestres</div></div>
-  <div class="kpi n"><label>Tarjetas amarillas</label><div class="val n">5</div><div class="sub">0.22 / partido · sistema de línea alta</div></div>
+  <div class="kpi v">
+    <label>Rating SofaScore</label>
+    <div class="val v">7.44</div>
+    <div class="sub">Liga Profesional 2024 · 23 PJ</div>
+    <div class="benchmark">Ref. propia: <b>7.19</b> en Copa Liga 2025 (13 PJ) · <b>7.13</b> en LPF 2026 parcial (15 PJ). Rating 7.44 en 2024 es el pico documentado — tres torneos consecutivos en el rango 7.1–7.5. No existe dato público de media de posición DCs en LPF.</div>
+  </div>
+  <div class="kpi">
+    <label>Minutos jugados</label>
+    <div class="val">2.011</div>
+    <div class="sub">23 apariciones · LPF 2024</div>
+    <div class="benchmark">Ref. propia: <b>1.170 min</b> en Copa Liga 2025 (13 PJ = 90 min/PJ) · <b>1.324 min</b> en LPF 2026 (15 PJ = 88.3 min/PJ). Titular ininterrumpido en las tres temporadas documentadas — 23/23, 13/13 y 15/15.</div>
+  </div>
+  <div class="kpi v">
+    <label>Duelos ganados</label>
+    <div class="val v">204</div>
+    <div class="per90">9.15 / 90 min · 131 aéreos + 73 terrestres</div>
+    <div class="benchmark">Ref. propia: ritmo 2026 = ~107 duelos en 15 PJ (<b>7.1/PJ</b>). Ratio 2024 de <b>9.15/90</b> es el más alto registrado de las temporadas disponibles — 131 aéreos + 73 terrestres. No existe dato público de media de posición DCs en LPF.</div>
+  </div>
+  <div class="kpi n">
+    <label>Tarjetas amarillas</label>
+    <div class="val n">5</div>
+    <div class="sub">0.22 / partido · sistema de línea alta</div>
+    <div class="benchmark">Ref. propia: <b>5 amarillas en LPF 2026</b> (15 PJ) = 0.33/PJ — ratio más alto que el 0.22/PJ de 2024. Copa Liga 2025 sin dato desagregado disponible. No existe dato público de media de posición DCs en LPF.</div>
+  </div>
 </div>
 
 <!-- DEFENSIVO -->
@@ -640,6 +737,10 @@
     <div class="escenario-titulo verde">Escenario A — Cerrar la negociación salarial antes de julio</div>
     <span style="background:#E8F5E9;color:#2E7D32;font-size:11px;font-weight:700;padding:3px 10px;border-radius:20px">Deportivo: Alto · Financiero: Neutro</span>
   </div>
+  <div style="display:inline-flex;align-items:center;gap:8px;margin-bottom:10px;flex-wrap:wrap">
+    <span style="background:rgba(255,193,7,.25);color:#7A6000;font-size:11px;font-weight:800;padding:2px 9px;border-radius:20px">Probabilidad: MEDIA</span>
+    <span style="font-size:11px;color:#555;font-weight:500">Racing ha demorado la respuesta pero el costo de retener es menor que el de reemplazar con dos jugadores.</span>
+  </div>
   <p>Racing no espera a junio — cierra la mejora salarial antes de que Monterrey formalice una oferta. Sosa ya tiene contrato hasta 2029; la negociación es solo de salario. El costo de ceder es menor que el de reemplazarlo con dos jugadores.</p>
   <ul>
     <li>Mantiene el doble rol sin restructurar el sistema de Costas</li>
@@ -654,6 +755,10 @@
   <div class="escenario-header">
     <div class="escenario-titulo naranja">Escenario B — Venta a Monterrey + reemplazo planificado (Galarza + Rogel)</div>
     <span style="background:#FFF3E0;color:#EF6C00;font-size:11px;font-weight:700;padding:3px 10px;border-radius:20px">Financiero: Moderado positivo · Táctico: Riesgo medio</span>
+  </div>
+  <div style="display:inline-flex;align-items:center;gap:8px;margin-bottom:10px;flex-wrap:wrap">
+    <span style="background:rgba(46,125,50,.2);color:#2E7D32;font-size:11px;font-weight:800;padding:2px 9px;border-radius:20px">Probabilidad: ALTA</span>
+    <span style="font-size:11px;color:#555;font-weight:500">Negociaciones avanzadas con Monterrey, Racing no resuelve el salario, el agente trabaja el mercado activamente.</span>
   </div>
   <p>Monterrey activa la cláusula de €12M. Racing recibe ~€9.9M (100% derechos − 25% sell-on Atlanta ≈ €2.1M) e incorpora a Galarza (pivot, €4–6M) + Rogel (líbero, transferencia pequeña desde Nacional Uruguay, contrato vigente hasta dic 2027). Ganancia neta: ~€4–6M. (Más el USD 3M owed to MLS, obligación separada.)</p>
   <ul>
@@ -671,6 +776,10 @@
     <div class="escenario-titulo rojo">Escenario C — No resolver antes de julio (peor opción)</div>
     <span style="background:#FFEBEE;color:#C62828;font-size:11px;font-weight:700;padding:3px 10px;border-radius:20px">Impacto: Negativo en todos los frentes</span>
   </div>
+  <div style="display:inline-flex;align-items:center;gap:8px;margin-bottom:10px;flex-wrap:wrap">
+    <span style="background:rgba(198,40,40,.2);color:#C62828;font-size:11px;font-weight:800;padding:2px 9px;border-radius:20px">Probabilidad: BAJA</span>
+    <span style="font-size:11px;color:#555;font-weight:500">Implica inacción de ambas partes cuando hay interesados concretos y un deadline claro; improbable pero posible si Racing continúa demorando.</span>
+  </div>
   <p>Racing deja pasar julio sin resolver ni el salario ni la oferta de Monterrey. El conflicto se prolonga con el jugador ya convencido de irse, y el club pierde el control de la negociación.</p>
   <ul>
     <li>Conflicto activo durante toda la segunda mitad del año → rendimiento y clima interno en riesgo</li>
@@ -682,6 +791,47 @@
 </div>
 
 <!-- ═══════ VEREDICTO EJECUTIVO ═══════ -->
+<h2>Proyección de Valor de Mercado</h2>
+
+<div class="card vm-proj" style="margin-bottom:28px">
+  <h3>3 escenarios a 6, 12 y 18 meses — base: EUR 8M (Transfermarkt, abr 2026)</h3>
+  <table>
+    <thead>
+      <tr>
+        <th style="width:22%">Escenario</th>
+        <th style="width:30%">Inputs y comparables</th>
+        <th>a 6 meses</th>
+        <th>a 12 meses</th>
+        <th>a 18 meses</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="v-bien">
+        <td><span class="scen-name">Rinde bien</span><small style="color:#555;font-size:11px">Rating SS 7.2+, Copa Libertadores 2026/27, sin lesiones</small></td>
+        <td style="font-size:11px;color:#555">Copa Libertadores es el principal driver de VM para DCs argentinos. Comp.: DCs con perfil físico similar en torneos CONMEBOL y con interés de Liga MX/brasileña cotizan EUR 9–14M cuando están sanos y en torneos internacionales.</td>
+        <td><span class="vm-val">EUR 9–10M</span></td>
+        <td><span class="vm-val">EUR 11–13M</span></td>
+        <td><span class="vm-val">EUR 12–15M</span></td>
+      </tr>
+      <tr class="v-mal">
+        <td><span class="scen-name">Rinde mal</span><small style="color:#555;font-size:11px">Pierde posición, más tarjetas, Rating SS &lt;6.8</small></td>
+        <td style="font-size:11px;color:#555">Caída de rendimiento + aumento de tarjetas amarillas → TM revisa a la baja. DCs de Liga Profesional fuera del equipo titular con rendimiento irregular ≈ EUR 4–6M.</td>
+        <td><span class="vm-val">EUR 7–8M</span></td>
+        <td><span class="vm-val">EUR 6–7M</span></td>
+        <td><span class="vm-val">EUR 5–6M</span></td>
+      </tr>
+      <tr class="v-lesion">
+        <td><span class="scen-name">Lesión</span><small style="color:#555;font-size:11px">Lesión muscular o fractura que interrumpe temporada (historial: sin episodios graves hasta la fecha)</small></td>
+        <td style="font-size:11px;color:#555">Sin historial de lesiones graves, riesgo es moderado. Una lesión larga en un DC de 26 años normalmente implica ajuste de 20–35% del VM. La cláusula de €12M se vuelve difícil de activar durante la recuperación.</td>
+        <td><span class="vm-val">EUR 7–8M</span></td>
+        <td><span class="vm-val">EUR 5–7M</span></td>
+        <td><span class="vm-val">EUR 4.5–6M</span></td>
+      </tr>
+    </tbody>
+  </table>
+  <p style="font-size:10px;color:#aaa;margin-top:10px">Rangos cualitativos cuantificados. Inputs: rating SofaScore actual (7.13 LPF 2026 / 7.44 LPF 2024), cláusula de rescisión EUR 12M, sell-on clause del 25% a Atlanta United, comparables TM de DCs/DMs en torneos CONMEBOL. La venta a Monterrey (€12M) representa EUR 9.9M netos para Racing descontando el sell-on.</p>
+</div>
+
 <h2>Recomendación Ejecutiva</h2>
 
 <div class="verdict" style="margin-top:0">
@@ -708,6 +858,9 @@
         <li>La demora en responderle a Sosa es el error — cada semana que pasa fortalece la posición de Monterrey</li>
       </ul>
     </div>
+  </div>
+  <div class="sensibilidad-box">
+    <strong>Análisis de sensibilidad:</strong> La recomendación de retener cambiaría bajo dos condiciones: (1) si Monterrey incrementa su oferta a EUR 15M o más — punto en que la ganancia neta para Racing (~EUR 12.75M descontando sell-on) supera el beneficio deportivo de tener a Sosa 18 meses adicionales, haciendo la venta óptima incluso asumiendo el costo de los dos reemplazos (Galarza + Rogel ≈ EUR 4–6M); (2) si Sosa recibe una lesión grave de más de 3 meses — en ese caso el VM caería por debajo de la cláusula de EUR 12M y la ventana de venta óptima se cerraría, consolidando la retención como única opción viable.
   </div>
 </div>
 
