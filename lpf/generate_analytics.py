@@ -100,8 +100,12 @@ EXCLUDED_FM_IDS = {
 # Usar cuando hay info de prensa confirmando titularidad o reemplazo para la fecha.
 # El override reemplaza avg_mins_gm en el cálculo de P(titular).
 PLAYER_MINUTE_OVERRIDES = {
-    2110313:  85,   # Giovanni Baroni  — Talleres (probable titular vs Belgrano, 9/5)
-    822088:   25,   # Diego Valoyes    — Talleres (baja del once por Baroni)
+    2110313:  60,   # Giovanni Baroni          — Talleres (probable titular vs Belgrano, 9/5)
+    1066573:  25,   # Mateo Cáceres            — Talleres (pierde lugar por Baroni)
+    896773:   75,   # Francisco Glez. Metilli  — Belgrano (confirmado titular banda izq vs Talleres, 9/5)
+    579316:   75,   # Lucas Passerini          — Belgrano (confirmado titular 9 vs Talleres, 9/5)
+    581804:   25,   # Nicolás Fernández        — Belgrano (pierde lugar de 9 por Passerini)
+    1835748:  15,   # Ramiro Hernandes         — Belgrano (pierde banda izq por Metilli)
 }
 
 # ── Ejecutantes de pelota parada — reducen k de regresión xA (4 en vez de 8) ─
