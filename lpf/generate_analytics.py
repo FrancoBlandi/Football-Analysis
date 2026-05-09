@@ -112,6 +112,8 @@ PLAYER_MINUTE_OVERRIDES = {
     1835748:  15,   # Ramiro Hernandes         — fuera del once
     1185702:  20,   # Alcides Benítez          — fuera del once (avg 70 pero no juega)
     215246:   20,   # Franco Vázquez           — fuera del once (avg 78 pero no juega)
+    # Rosario Central — confirmados vs Independiente 10/5
+    30027:    85,   # Ángel Di María            — confirmado titular
 }
 
 # ── Ejecutantes de pelota parada — reducen k de regresión xA (4 en vez de 8) ─
