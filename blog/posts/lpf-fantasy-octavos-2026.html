@@ -829,10 +829,17 @@ document.getElementById("sort-select").addEventListener("change",e=>{
 });
 
 // ── FDR Grid ───────────────────────────────────────────────────────────────
+const CLASIFICADOS = new Set([
+  "CA Talleres","Club Atlético Belgrano","Boca Juniors","Huracán",
+  "Argentinos Juniors","CA Lanús","Independiente Rivadavia","Club Atlético Unión de Santa Fe",
+  "Rosario Central","CA Independiente","Estudiantes de La Plata","Racing Club",
+  "River Plate","San Lorenzo","Vélez Sarsfield","Gimnasia y Esgrima"
+]);
+
 function renderFDRGrid(){
   const grid = document.getElementById("fdr-grid");
   grid.innerHTML = "";
-  D.fdr_table.forEach(t=>{
+  D.fdr_table.filter(t=>CLASIFICADOS.has(t.club)).forEach(t=>{
     const fdr = t.fdr;
     const fdrColors = {
       1:{bg:"#00c853",txt:"#fff"},
