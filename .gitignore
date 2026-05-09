@@ -1,0 +1,41 @@
+# Claude internal
+.claude/
+CLAUDE.md
+.mcp.json
+
+# Patch scripts temporales
+lpf/patch*.py
+lpf/generate_dashboard.py
+Velez/data/generar_excels.py
+
+# JSON intermedios grandes
+lpf/lpf_data.json
+lpf/lpf_slim.json
+
+# Datos scrapeados (grandes)
+lpf/fm_players.json
+lpf/fm_mapped.json
+lpf/form_data.json
+lpf/bpr_*.json
+lpf/bpr_*.png
+lpf/bpr_html_dump.json
+lpf/bpr_explore_log.json
+lpf/shotmap_xgc.json
+lpf/team_xgc.json
+lpf/scrape_log.txt
+
+# Datos de clubes
+Boca Juniors/data/
+Racing/data/
+Velez/data/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Power BI
+*.pbix
+
+# OS
+.DS_Store
+Thumbs.db
