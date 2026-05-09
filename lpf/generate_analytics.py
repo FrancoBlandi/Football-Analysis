@@ -90,6 +90,11 @@ EXCLUDED_PLAYER_IDS = {
 # FM player IDs de lesionados graves sin mapeo SofaScore (excluir del loop de duda)
 EXCLUDED_FM_IDS = {
     211190,    # Franco Armani         — River Plate (lesión larga)
+    # Boca Juniors — fuera toda la temporada
+    96088,     # Edinson Cavani        — lesión
+    37357223,  # Carlos Palacios       — lesión
+    159934,    # Rodrigo Battaglia     — lesión
+    37261285,  # Juan Barinaga         — lesión
 }
 
 # ── Ejecutantes de pelota parada — reducen k de regresión xA (4 en vez de 8) ─
