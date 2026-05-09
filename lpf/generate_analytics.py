@@ -94,7 +94,14 @@ EXCLUDED_FM_IDS = {
     96088,     # Edinson Cavani        — lesión
     37357223,  # Carlos Palacios       — lesión
     159934,    # Rodrigo Battaglia     — lesión
-    37261285,  # Juan Barinaga         — lesión
+}
+
+# ── Override de minutos proyectados — corrige subutilización histórica ────────
+# Usar cuando hay info de prensa confirmando titularidad o reemplazo para la fecha.
+# El override reemplaza avg_mins_gm en el cálculo de P(titular).
+PLAYER_MINUTE_OVERRIDES = {
+    2110313:  85,   # Giovanni Baroni  — Talleres (probable titular vs Belgrano, 9/5)
+    822088:   25,   # Diego Valoyes    — Talleres (baja del once por Baroni)
 }
 
 # ── Ejecutantes de pelota parada — reducen k de regresión xA (4 en vez de 8) ─
@@ -555,6 +562,12 @@ def project_player(p, opp_club, is_home, ts):
     team_games  = max(team_total_games.get(p.get("Club",""), games), games)
     availability = min(1.0, games / team_games)
     avg_mins_gm  = mins / games
+
+    # Override manual de minutos proyectados (titularidades confirmadas por prensa)
+    pid_int = p.get("player_id")
+    if pid_int in PLAYER_MINUTE_OVERRIDES:
+        avg_mins_gm  = PLAYER_MINUTE_OVERRIDES[pid_int]
+        availability = 1.0 if avg_mins_gm >= 60 else availability
 
     if pos == "G":
         p_over60 = 0.96                                            # no existe el cambio de arquero
