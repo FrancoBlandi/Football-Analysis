@@ -200,6 +200,16 @@ if FM_PLAYERS_PATH.exists():
 fm_id_to_ss_id = {int(v["fm_id"]): int(k) for k, v in fm_data.items() if v.get("fm_id")}
 print(f"[fm] {len(fm_data)} jugadores cargados ({_with_bpr} con al menos 1 BPR)")
 
+# ss_id → posición FM (para usar scoring correcto: M=5pts gol, F=4pts gol)
+_POS_FM_MAP = {"GOALKEEPER": "G", "DEFENDER": "D", "MIDFIELDER": "M", "ATTACKER": "F"}
+_fm_id_to_pos = {str(fp["id"]): _POS_FM_MAP.get(fp.get("position", ""), None)
+                 for fp in fm_players_raw if fp.get("id")}
+ss_id_to_fm_pos = {}
+for ss_id, entry in fm_data.items():
+    fm_id = entry.get("fm_id")
+    if fm_id and str(fm_id) in _fm_id_to_pos and _fm_id_to_pos[str(fm_id)]:
+        ss_id_to_fm_pos[int(ss_id)] = _fm_id_to_pos[str(fm_id)]
+
 # ── STEP 1: Stats por equipo ───────────────────────────────────────────────
 def get_team_stats(players, xgc_data=None):
     from collections import defaultdict
@@ -626,10 +636,9 @@ def project_player(p, opp_club, is_home, ts):
     # Multiplicadores
     def_mult  = 1.0 + (50 - opp_def) / 100          # 0.5–1.5
     home_mult = 1.12 if is_home else 0.88
-    avg_mins  = mins / games
-    if avg_mins >= 60:
+    if avg_mins_gm >= 60:
         role, exp_mins = "Titular",    82
-    elif avg_mins >= 35:
+    elif avg_mins_gm >= 35:
         role, exp_mins = "Rotacional", 55
     else:
         role, exp_mins = "Suplente",   25
@@ -822,6 +831,12 @@ for p in players_raw:
     # Para arqueros, solo incluir el titular
     if pos == "G" and gk_starter.get(club, {}).get("player_id") != p.get("player_id"):
         continue
+
+    # Usar posición de FM cuando existe (más relevante para scoring de fantasy)
+    fm_pos = ss_id_to_fm_pos.get(p.get("player_id"))
+    if fm_pos and fm_pos != pos:
+        p = {**p, "Posicion": fm_pos}
+        pos = fm_pos
 
     opp_club, is_home = fixture_map[club]
     proj = project_player(p, opp_club, is_home, team_stats)
