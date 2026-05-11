@@ -932,14 +932,6 @@ function runSimulator(){
 
 document.getElementById("sim-run-btn").addEventListener("click", runSimulator);
 
-document.getElementById("sim-pos-tabs").querySelectorAll(".tab").forEach(btn=>{
-  btn.addEventListener("click",()=>{
-    document.getElementById("sim-pos-tabs").querySelectorAll(".tab").forEach(b=>b.classList.remove("active"));
-    btn.classList.add("active");
-    simPos = btn.dataset.pos;
-    runSimulator();
-  });
-});
 
 // ── INIT ──────────────────────────────────────────────────────────────────
 renderTopPicks();
