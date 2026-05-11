@@ -64,6 +64,7 @@ EXCLUDED_PLAYER_IDS = {
     1537838,   # Valentín Fascendini   — Unión de Santa Fe (desgarro muscular)
     1094180,   # Ezequiel Cannavo      — Racing Club (desgarro recto anterior)
     790004,    # Paulo Díaz            — River Plate (desgarro recto anterior izq.)
+    877299,    # Jaminton Campaz       — Rosario Central (lesión, no estuvo ni en banco en octavos)
     # Suspendidos — roja/doble amarilla en octavos
     579316,    # Lucas Passerini       — Belgrano (doble amarilla vs Talleres)
     792334,    # Eric Ramírez          — Huracán (roja vs Boca)
@@ -82,7 +83,12 @@ EXCLUDED_FM_IDS = {
 # Usar cuando hay info de prensa confirmando titularidad o reemplazo para la fecha.
 # El override reemplaza avg_mins_gm en el cálculo de P(titular).
 PLAYER_MINUTE_OVERRIDES = {
-    # Agregar overrides cuando haya onces confirmados para cuartos
+    # Rosario Central — basado en octavos vs Independiente
+    30027:   85,   # Ángel Di María     — titular confirmado
+    1116987: 20,   # Alejo Véliz        — suplente en octavos
+    860045:  85,   # Enzo Copetti       — titular (reemplaza a Campaz lesionado)
+    # River Plate — Quintero entró como suplente vs San Lorenzo
+    221162:  20,   # Juan Fernando Quintero — suplente en octavos
 }
 
 # ── Ejecutantes de pelota parada — reducen k de regresión xA (4 en vez de 8) ─
@@ -178,6 +184,7 @@ for ss_id, entry in fm_data.items():
     fm_id = entry.get("fm_id")
     if fm_id and str(fm_id) in _fm_id_to_pos and _fm_id_to_pos[str(fm_id)]:
         ss_id_to_fm_pos[int(ss_id)] = _fm_id_to_pos[str(fm_id)]
+ss_id_to_fm_pos[1186068] = "M"  # Alan Lescano (ARG) — fix: mapped to L. Lescano (HUR, DEF)
 
 # ── STEP 1: Stats por equipo ───────────────────────────────────────────────
 def get_team_stats(players, xgc_data=None):
@@ -867,7 +874,7 @@ for p in players_raw:
     xa_90 = (xa_tot / mins * 90) if mins > 0 else 0.0
     xg_90_reg, xa_90_reg, _ = regress_to_mean(xg_90, xa_90, games, pos, pos_avgs)
 
-    avg_m   = mins / games
+    avg_m   = PLAYER_MINUTE_OVERRIDES.get(p.get("player_id"), mins / games)
     sim_emins = 82 if avg_m >= 60 else 55 if avg_m >= 35 else 25
     sim_role  = "Titular" if avg_m >= 60 else "Rotacional" if avg_m >= 35 else "Suplente"
     sim_players.append({
