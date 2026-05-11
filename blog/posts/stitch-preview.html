@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Narrow:wght@400;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<style>
+        body {
+            background-color: #050505;
+            color: #e2e2e2;
+            -webkit-font-smoothing: antialiased;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        ::-webkit-scrollbar { width: 4px; height: 4px; }
+        ::-webkit-scrollbar-track { background: #121414; }
+        ::-webkit-scrollbar-thumb { background: #444933; }
+        ::-webkit-scrollbar-thumb:hover { background: #c3f400; }
+        .diagonal-divider {
+            clip-path: polygon(0 0, 100% 0, 98% 100%, 0% 100%);
+        }
+        .data-grid-row:hover {
+            background-color: rgba(195, 244, 0, 0.05);
+            border-left: 2px solid #c3f400;
+        }
+        /* Blog header */
+        .blog-header { background: #0f172a; border-bottom: 3px solid #1a56db; font-family: 'Inter', system-ui, sans-serif; }
+        .blog-header-inner { display: flex; align-items: center; justify-content: space-between; padding: 18px 20px; max-width: 1440px; margin: 0 auto; }
+        .blog-brand { display: flex; align-items: center; gap: 12px; }
+        .blog-brand-icon { width: 36px; height: 36px; background: #1a56db; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 18px; }
+        .blog-brand-name { font-size: 17px; font-weight: 700; color: #fff; letter-spacing: .3px; }
+        .blog-brand-sub  { font-size: 11px; color: #94a3b8; margin-top: 1px; }
+        .blog-nav a { font-size: 13px; color: #94a3b8; margin-left: 24px; text-decoration: none; transition: color .15s; }
+        .blog-nav a:hover { color: #fff; }
+
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        .animate-marquee {
+            animation: marquee 80s linear infinite;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "tertiary-fixed": "#e5e2e1",
+                      "surface-container": "#1e2020",
+                      "on-tertiary": "#313030",
+                      "surface-bright": "#37393a",
+                      "surface-container-low": "#1a1c1c",
+                      "outline": "#8e9379",
+                      "inverse-primary": "#506600",
+                      "primary-container": "#c3f400",
+                      "surface-dim": "#121414",
+                      "inverse-surface": "#e2e2e2",
+                      "on-surface-variant": "#c4c9ac",
+                      "on-tertiary-fixed": "#1c1b1b",
+                      "surface-container-highest": "#333535",
+                      "surface-tint": "#abd600",
+                      "on-secondary-fixed": "#1c1b1b",
+                      "secondary-fixed": "#e5e2e1",
+                      "secondary": "#c9c6c5",
+                      "primary-fixed": "#c3f400",
+                      "primary": "#ffffff",
+                      "surface-container-high": "#282a2b",
+                      "tertiary-fixed-dim": "#c8c6c5",
+                      "error-container": "#93000a",
+                      "background": "#121414",
+                      "error": "#ffb4ab",
+                      "on-error": "#690005",
+                      "secondary-fixed-dim": "#c9c6c5",
+                      "on-secondary": "#313030",
+                      "on-surface": "#e2e2e2",
+                      "on-secondary-fixed-variant": "#474646",
+                      "on-error-container": "#ffdad6",
+                      "primary-fixed-dim": "#abd600",
+                      "on-secondary-container": "#b7b4b4",
+                      "outline-variant": "#444933",
+                      "on-tertiary-container": "#656464",
+                      "on-primary-container": "#556d00",
+                      "on-primary-fixed-variant": "#3c4d00",
+                      "on-primary-fixed": "#161e00",
+                      "inverse-on-surface": "#2f3131",
+                      "tertiary-container": "#e5e2e1",
+                      "secondary-container": "#474646",
+                      "on-tertiary-fixed-variant": "#474746",
+                      "on-primary": "#283500",
+                      "surface": "#121414",
+                      "tertiary": "#ffffff",
+                      "surface-container-lowest": "#0c0f0f",
+                      "surface-variant": "#333535",
+                      "on-background": "#e2e2e2"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "margin-mobile": "16px",
+                      "gutter": "16px",
+                      "unit": "4px",
+                      "container-max": "1440px",
+                      "margin-desktop": "48px"
+              },
+              "fontFamily": {
+                      "headline-md": ["Anton"],
+                      "label-data": ["JetBrains Mono"],
+                      "ticker-text": ["Anton"],
+                      "headline-lg": ["Anton"],
+                      "body-lg": ["Archivo Narrow"],
+                      "headline-lg-mobile": ["Anton"],
+                      "body-md": ["Archivo Narrow"],
+                      "display-xl": ["Anton"]
+              },
+              "fontSize": {
+                      "headline-md": ["24px", {"lineHeight": "110%", "fontWeight": "400"}],
+                      "label-data": ["14px", {"lineHeight": "100%", "letterSpacing": "0.05em", "fontWeight": "700"}],
+                      "ticker-text": ["14px", {"lineHeight": "100%", "letterSpacing": "0.02em", "fontWeight": "400"}],
+                      "headline-lg": ["48px", {"lineHeight": "100%", "letterSpacing": "-0.02em", "fontWeight": "400"}],
+                      "body-lg": ["18px", {"lineHeight": "150%", "fontWeight": "400"}],
+                      "headline-lg-mobile": ["36px", {"lineHeight": "100%", "fontWeight": "400"}],
+                      "body-md": ["16px", {"lineHeight": "150%", "fontWeight": "400"}],
+                      "display-xl": ["96px", {"lineHeight": "90%", "letterSpacing": "-0.04em", "fontWeight": "400"}]
+              }
+            },
+          },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="flex flex-col min-h-screen">
+
+<!-- Top AppBar -->
+<header class="bg-surface border-b border-outline-variant flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop h-16">
+  <div class="flex items-center gap-4">
+    <h1 class="font-display-xl text-headline-md italic tracking-tighter text-primary-fixed">FRANCO ANALYTICS</h1>
+  </div>
+  <div class="hidden md:flex gap-8">
+    <span class="text-primary-fixed border-b-2 border-primary-fixed font-bold px-2 font-label-data text-xs uppercase">Base de Datos</span>
+  </div>
+  <div class="flex items-center gap-6">
+    <a href="https://www.linkedin.com/in/franco-blandi/" target="_blank" class="font-label-data text-xs text-on-surface-variant hover:text-primary-fixed transition-colors uppercase">LinkedIn</a>
+    <a href="/blog/index.html" class="font-label-data text-xs text-on-surface-variant hover:text-primary-fixed transition-colors flex items-center gap-1 uppercase">
+      <span class="material-symbols-outlined text-sm" style="font-size:14px">arrow_back</span>
+      Blog
+    </a>
+  </div>
+</header>
+
+<!-- Ticker Zone -->
+<div class="w-full bg-surface-container-lowest border-b border-outline-variant h-8 overflow-hidden flex items-center">
+  <div class="whitespace-nowrap flex items-center gap-6 animate-marquee">
+    <span class="font-ticker-text text-ticker-text text-primary-fixed">LPF APERTURA 2026 // OCTAVOS DE FINAL COMPLETADOS</span>
+    <span class="font-ticker-text text-ticker-text text-on-surface">TOP GOLEADOR // G. ÁVALOS (INDEPENDIENTE) 9G 5A // PRECIO FM: $7.52M</span>
+    <span class="font-ticker-text text-ticker-text text-primary-fixed">XGC // BOCA 0.336 DEFENSA MÁS COMPROMETIDA // RIESTRA 0.208 LA MÁS SÓLIDA</span>
+    <span class="font-ticker-text text-ticker-text text-on-surface">FANTASY // BRACAMONTE 7.3 PTS PROM // ÁVALOS 6.9 // MONTIEL 5.3</span>
+    <span class="font-ticker-text text-ticker-text text-primary-fixed">FUENTE: SOFASCORE + FM ARGENTINA // ACTUALIZADO 11 MAY 2026</span>
+    <!-- duplicate for seamless loop -->
+    <span class="font-ticker-text text-ticker-text text-primary-fixed">LPF APERTURA 2026 // OCTAVOS DE FINAL COMPLETADOS</span>
+    <span class="font-ticker-text text-ticker-text text-on-surface">TOP GOLEADOR // G. ÁVALOS (INDEPENDIENTE) 9G 5A // PRECIO FM: $7.52M</span>
+    <span class="font-ticker-text text-ticker-text text-primary-fixed">XGC // BOCA 0.336 DEFENSA MÁS COMPROMETIDA // RIESTRA 0.208 LA MÁS SÓLIDA</span>
+    <span class="font-ticker-text text-ticker-text text-on-surface">FANTASY // BRACAMONTE 7.3 PTS PROM // ÁVALOS 6.9 // MONTIEL 5.3</span>
+    <span class="font-ticker-text text-ticker-text text-primary-fixed">FUENTE: SOFASCORE + FM ARGENTINA // ACTUALIZADO 11 MAY 2026</span>
+  </div>
+</div>
+
+<!-- Main Content Area -->
+<main class="flex-grow pt-8 pb-20 md:pb-12 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto w-full">
+
+  <!-- Header & Search Terminal -->
+  <section class="mt-8 mb-12">
+    <div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+      <div>
+        <h2 class="font-headline-lg text-headline-lg uppercase text-primary">Terminal de Datos</h2>
+        <p class="font-label-data text-label-data text-on-surface-variant">LPF APERTURA 2026 // QUERY SYSTEM v2.0 // SOFASCORE + FM ARG</p>
+      </div>
+      <div class="w-full md:w-1/2">
+        <div class="relative group">
+          <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+            <span class="material-symbols-outlined text-outline">search</span>
+          </div>
+          <input class="w-full bg-surface-container-low border border-outline-variant focus:border-primary-fixed focus:ring-0 font-label-data text-on-surface py-3 pl-10 pr-4 placeholder-outline" placeholder="BUSCAR JUGADOR O CLUB..." type="text"/>
+          <div class="absolute inset-y-0 right-0 pr-3 flex items-center">
+            <span class="font-label-data text-[10px] text-outline border border-outline px-1">CMD+K</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Filters Bar -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-2 mt-6">
+      <div class="bg-surface-container border border-outline-variant p-2 group hover:border-primary-fixed transition-colors">
+        <label class="font-label-data text-[10px] text-outline block uppercase">Liga</label>
+        <select class="w-full bg-transparent border-none text-on-surface font-label-data text-sm focus:ring-0 p-0 cursor-pointer">
+          <option>LPF APERTURA 2026</option>
+          <option>LPF CLAUSURA 2025</option>
+          <option>LPF APERTURA 2025</option>
+        </select>
+      </div>
+      <div class="bg-surface-container border border-outline-variant p-2 group hover:border-primary-fixed transition-colors">
+        <label class="font-label-data text-[10px] text-outline block uppercase">Posición</label>
+        <select class="w-full bg-transparent border-none text-on-surface font-label-data text-sm focus:ring-0 p-0 cursor-pointer">
+          <option>TODOS</option>
+          <option>DELANTERO</option>
+          <option>MEDIOCAMPISTA</option>
+          <option>DEFENSOR</option>
+          <option>ARQUERO</option>
+        </select>
+      </div>
+      <div class="bg-surface-container border border-outline-variant p-2 group hover:border-primary-fixed transition-colors">
+        <label class="font-label-data text-[10px] text-outline block uppercase">Ordenar por</label>
+        <select class="w-full bg-transparent border-none text-on-surface font-label-data text-sm focus:ring-0 p-0 cursor-pointer">
+          <option>GOLES</option>
+          <option>ASISTENCIAS</option>
+          <option>RATING</option>
+          <option>PRECIO FM</option>
+        </select>
+      </div>
+      <button class="bg-primary-fixed text-on-primary-fixed font-headline-md text-sm py-2 flex items-center justify-center gap-2 hover:scale-95 transition-transform">
+        <span class="material-symbols-outlined text-sm">filter_alt</span>
+        APLICAR FILTROS
+      </button>
+    </div>
+  </section>
+
+  <!-- Structured Data Grid -->
+  <div class="bg-surface-container-low border border-outline-variant overflow-hidden">
+    <div class="bg-surface-container-highest border-b border-outline-variant px-4 py-2 flex justify-between items-center">
+      <span class="font-label-data text-xs text-on-surface font-bold uppercase">Top Rendimiento — LPF Apertura 2026</span>
+      <div class="flex gap-4">
+        <span class="material-symbols-outlined text-outline text-sm cursor-pointer">download</span>
+        <span class="material-symbols-outlined text-outline text-sm cursor-pointer">settings</span>
+      </div>
+    </div>
+    <div class="overflow-x-auto">
+      <table class="w-full text-left border-collapse">
+        <thead>
+          <tr class="bg-surface-dim border-b border-outline-variant">
+            <th class="p-4 font-label-data text-xs text-outline uppercase">#</th>
+            <th class="p-4 font-label-data text-xs text-outline uppercase">Jugador</th>
+            <th class="p-4 font-label-data text-xs text-outline uppercase">Club</th>
+            <th class="p-4 font-label-data text-xs text-outline uppercase text-center">Goles</th>
+            <th class="p-4 font-label-data text-xs text-outline uppercase text-center">Asist</th>
+            <th class="p-4 font-label-data text-xs text-outline uppercase text-center">Disp</th>
+            <th class="p-4 font-label-data text-xs text-outline uppercase text-center">Rating</th>
+            <th class="p-4 font-label-data text-xs text-outline uppercase text-right">Precio FM</th>
+          </tr>
+        </thead>
+        <tbody class="font-body-md text-on-surface">
+
+          <!-- Row 1 — Ávalos -->
+          <tr class="data-grid-row border-b border-outline-variant/30 transition-all">
+            <td class="p-4 font-label-data text-primary-fixed font-bold">1</td>
+            <td class="p-4">
+              <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-full border border-primary-fixed bg-surface-container-highest flex items-center justify-center font-label-data text-xs text-primary-fixed font-bold">GA</div>
+                <div>
+                  <div class="font-bold">GABRIEL ÁVALOS</div>
+                  <div class="font-label-data text-[10px] text-outline">DEL</div>
+                </div>
+              </div>
+            </td>
+            <td class="p-4 font-label-data text-xs">INDEPENDIENTE</td>
+            <td class="p-4 text-center font-headline-md text-primary-fixed">9</td>
+            <td class="p-4 text-center font-label-data text-primary-fixed-dim">5</td>
+            <td class="p-4 text-center font-label-data text-on-surface-variant">42</td>
+            <td class="p-4 text-center font-label-data text-primary-fixed">7.45</td>
+            <td class="p-4 text-right font-label-data text-primary-fixed">$7.52M</td>
+          </tr>
+
+          <!-- Row 2 — Montiel -->
+          <tr class="data-grid-row border-b border-outline-variant/30 transition-all">
+            <td class="p-4 font-label-data text-on-surface-variant">2</td>
+            <td class="p-4">
+              <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-full border border-outline bg-surface-container-highest flex items-center justify-center font-label-data text-xs text-on-surface-variant font-bold">GM</div>
+                <div>
+                  <div class="font-bold">GONZALO MONTIEL</div>
+                  <div class="font-label-data text-[10px] text-outline">DEF</div>
+                </div>
+              </div>
+            </td>
+            <td class="p-4 font-label-data text-xs">RIVER PLATE</td>
+            <td class="p-4 text-center font-headline-md text-primary-fixed">4</td>
+            <td class="p-4 text-center font-label-data text-primary-fixed-dim">1</td>
+            <td class="p-4 text-center font-label-data text-on-surface-variant">16</td>
+            <td class="p-4 text-center font-label-data text-primary-fixed">7.21</td>
+            <td class="p-4 text-right font-label-data text-primary-fixed">$7.50M</td>
+          </tr>
+
+          <!-- Row 3 — Del Blanco -->
+          <tr class="data-grid-row border-b border-outline-variant/30 transition-all">
+            <td class="p-4 font-label-data text-on-surface-variant">3</td>
+            <td class="p-4">
+              <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-full border border-outline bg-surface-container-highest flex items-center justify-center font-label-data text-xs text-on-surface-variant font-bold">MD</div>
+                <div>
+                  <div class="font-bold">MATEO DEL BLANCO</div>
+                  <div class="font-label-data text-[10px] text-outline">MED</div>
+                </div>
+              </div>
+            </td>
+            <td class="p-4 font-label-data text-xs">UNIÓN SANTA FE</td>
+            <td class="p-4 text-center font-headline-md text-primary-fixed">2</td>
+            <td class="p-4 text-center font-label-data text-primary-fixed-dim">1</td>
+            <td class="p-4 text-center font-label-data text-on-surface-variant">43</td>
+            <td class="p-4 text-center font-label-data text-primary-fixed">7.30</td>
+            <td class="p-4 text-right font-label-data text-primary-fixed">$5.00M</td>
+          </tr>
+
+          <!-- Row 4 — Velasco -->
+          <tr class="data-grid-row border-b border-outline-variant/30 transition-all">
+            <td class="p-4 font-label-data text-on-surface-variant">4</td>
+            <td class="p-4">
+              <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-full border border-outline bg-surface-container-highest flex items-center justify-center font-label-data text-xs text-on-surface-variant font-bold">AV</div>
+                <div>
+                  <div class="font-bold">ALAN VELASCO</div>
+                  <div class="font-label-data text-[10px] text-outline">MED</div>
+                </div>
+              </div>
+            </td>
+            <td class="p-4 font-label-data text-xs">BOCA JUNIORS</td>
+            <td class="p-4 text-center font-headline-md text-primary-fixed">2</td>
+            <td class="p-4 text-center font-label-data text-primary-fixed-dim">1</td>
+            <td class="p-4 text-center font-label-data text-on-surface-variant">8</td>
+            <td class="p-4 text-center font-label-data text-primary-fixed">7.40</td>
+            <td class="p-4 text-right font-label-data text-primary-fixed">$5.60M</td>
+          </tr>
+
+          <!-- Row 5 — Maidana -->
+          <tr class="data-grid-row border-b border-outline-variant/30 transition-all">
+            <td class="p-4 font-label-data text-on-surface-variant">5</td>
+            <td class="p-4">
+              <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-full border border-outline bg-surface-container-highest flex items-center justify-center font-label-data text-xs text-on-surface-variant font-bold">AM</div>
+                <div>
+                  <div class="font-bold">ALEXANDRO MAIDANA</div>
+                  <div class="font-label-data text-[10px] text-outline">MED</div>
+                </div>
+              </div>
+            </td>
+            <td class="p-4 font-label-data text-xs">TALLERES CBA</td>
+            <td class="p-4 text-center font-headline-md text-primary-fixed">2</td>
+            <td class="p-4 text-center font-label-data text-primary-fixed-dim">1</td>
+            <td class="p-4 text-center font-label-data text-on-surface-variant">7</td>
+            <td class="p-4 text-center font-label-data text-primary-fixed">7.06</td>
+            <td class="p-4 text-right font-label-data text-primary-fixed">$3.40M</td>
+          </tr>
+
+          <!-- Row 6 — Rojas -->
+          <tr class="data-grid-row border-b border-outline-variant/30 transition-all">
+            <td class="p-4 font-label-data text-on-surface-variant">6</td>
+            <td class="p-4">
+              <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-full border border-outline bg-surface-container-highest flex items-center justify-center font-label-data text-xs text-on-surface-variant font-bold">GR</div>
+                <div>
+                  <div class="font-bold">GABRIEL ROJAS</div>
+                  <div class="font-label-data text-[10px] text-outline">MED</div>
+                </div>
+              </div>
+            </td>
+            <td class="p-4 font-label-data text-xs">RACING CLUB</td>
+            <td class="p-4 text-center font-headline-md text-primary-fixed">1</td>
+            <td class="p-4 text-center font-label-data text-primary-fixed-dim">3</td>
+            <td class="p-4 text-center font-label-data text-on-surface-variant">7</td>
+            <td class="p-4 text-center font-label-data text-primary-fixed">7.20</td>
+            <td class="p-4 text-right font-label-data text-primary-fixed">$6.90M</td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+    <!-- Pagination -->
+    <div class="bg-surface-container-low px-4 py-3 border-t border-outline-variant flex flex-col md:flex-row justify-between items-center gap-4">
+      <div class="font-label-data text-[10px] text-outline uppercase">
+        Página 1 de 6 // Mostrando 1-6 de 32 jugadores con datos completos
+      </div>
+      <div class="flex gap-2">
+        <button class="border border-outline-variant px-3 py-1 font-label-data text-xs hover:bg-surface-container-highest transition-colors">ANTERIOR</button>
+        <button class="bg-primary-container text-on-primary-container px-3 py-1 font-label-data text-xs">1</button>
+        <button class="border border-outline-variant px-3 py-1 font-label-data text-xs hover:bg-surface-container-highest transition-colors">2</button>
+        <button class="border border-outline-variant px-3 py-1 font-label-data text-xs hover:bg-surface-container-highest transition-colors">3</button>
+        <button class="border border-outline-variant px-3 py-1 font-label-data text-xs hover:bg-surface-container-highest transition-colors">SIGUIENTE</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Secondary Insights -->
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter mt-12">
+    <!-- Bar chart — xG Concedido -->
+    <div class="md:col-span-2 bg-surface-container border border-outline-variant relative overflow-hidden p-6">
+      <div class="absolute top-0 left-0 w-1 bg-primary-fixed h-full"></div>
+      <h3 class="font-headline-md text-primary uppercase mb-1">xG Concedido por Club</h3>
+      <p class="font-label-data text-[10px] text-outline uppercase mb-4">Promedio por disparo recibido — LPF Apertura 2026</p>
+
+      <!-- Chart bars -->
+      <div class="h-48 flex items-end gap-2 border-b border-outline-variant pb-2">
+        <!-- Riestra: 0.208 → 62% -->
+        <div class="flex flex-col items-center gap-1 flex-1">
+          <span class="font-label-data text-[9px] text-on-surface-variant">0.208</span>
+          <div class="w-full bg-primary-container/30 relative group" style="height:62%">
+            <div class="absolute -top-5 left-0 right-0 text-center font-label-data text-[9px] text-primary-fixed opacity-0 group-hover:opacity-100">MEJOR</div>
+          </div>
+        </div>
+        <!-- Lanús: 0.210 → 63% -->
+        <div class="flex flex-col items-center gap-1 flex-1">
+          <span class="font-label-data text-[9px] text-on-surface-variant">0.210</span>
+          <div class="w-full bg-primary-container/30" style="height:63%"></div>
+        </div>
+        <!-- Talleres: 0.222 → 66% -->
+        <div class="flex flex-col items-center gap-1 flex-1">
+          <span class="font-label-data text-[9px] text-on-surface-variant">0.222</span>
+          <div class="w-full bg-primary-container/30" style="height:66%"></div>
+        </div>
+        <!-- Argentinos: 0.208 → 62% (same as Riestra) -->
+        <div class="flex flex-col items-center gap-1 flex-1">
+          <span class="font-label-data text-[9px] text-on-surface-variant">0.208</span>
+          <div class="w-full bg-primary-container/30" style="height:62%"></div>
+        </div>
+        <!-- Prom Liga: 0.255 → 76% — highlighted -->
+        <div class="flex flex-col items-center gap-1 flex-1">
+          <span class="font-label-data text-[9px] text-primary-fixed font-bold">0.255</span>
+          <div class="w-full bg-primary-fixed" style="height:76%"></div>
+        </div>
+        <!-- Independiente: 0.323 → 96% -->
+        <div class="flex flex-col items-center gap-1 flex-1">
+          <span class="font-label-data text-[9px] text-on-surface-variant">0.323</span>
+          <div class="w-full bg-primary-container/30" style="height:96%"></div>
+        </div>
+        <!-- Boca: 0.336 → 100% -->
+        <div class="flex flex-col items-center gap-1 flex-1">
+          <span class="font-label-data text-[9px] text-on-surface-variant">0.336</span>
+          <div class="w-full bg-primary-container/20 relative group" style="height:100%">
+            <div class="absolute -top-5 left-0 right-0 text-center font-label-data text-[9px] text-on-surface-variant opacity-0 group-hover:opacity-100">PEOR</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Legend -->
+      <div class="flex gap-4 mt-3 flex-wrap">
+        <div class="flex items-center gap-1">
+          <div class="w-3 h-3 bg-primary-fixed"></div>
+          <span class="font-label-data text-[9px] text-primary-fixed uppercase">Promedio liga</span>
+        </div>
+        <div class="flex items-center gap-1">
+          <div class="w-3 h-3 bg-primary-container/30"></div>
+          <span class="font-label-data text-[9px] text-on-surface-variant uppercase">Clubes</span>
+        </div>
+      </div>
+      <p class="font-label-data text-[10px] text-outline mt-3 uppercase">Fuente: SofaScore // Disp. recibidos en LPF Apertura 2026</p>
+    </div>
+
+    <!-- Stats panel -->
+    <div class="bg-primary-fixed p-6 flex flex-col justify-between">
+      <span class="material-symbols-outlined text-on-primary-fixed text-4xl">bolt</span>
+      <div>
+        <h3 class="font-display-xl text-4xl italic text-on-primary-fixed leading-none">FANTASY<br/>PICKS</h3>
+        <p class="font-label-data text-on-primary-fixed text-xs mt-4 uppercase font-bold">Próxima fecha: Cuartos de Final</p>
+        <div class="mt-4 space-y-2">
+          <div class="border-b border-on-primary-fixed/30 pb-2">
+            <div class="font-label-data text-[10px] text-on-primary-fixed/70 uppercase">Capitán recomendado</div>
+            <div class="font-headline-md text-sm text-on-primary-fixed">G. ÁVALOS</div>
+          </div>
+          <div class="border-b border-on-primary-fixed/30 pb-2">
+            <div class="font-label-data text-[10px] text-on-primary-fixed/70 uppercase">Pick de valor</div>
+            <div class="font-headline-md text-sm text-on-primary-fixed">M. BRACAMONTE</div>
+          </div>
+          <div>
+            <div class="font-label-data text-[10px] text-on-primary-fixed/70 uppercase">Puntos promedio #1</div>
+            <div class="font-headline-md text-sm text-on-primary-fixed">7.3 pts/fecha</div>
+          </div>
+        </div>
+        <a href="/blog/posts/lpf-fantasy-octavos-2026.html" class="mt-6 border-2 border-on-primary-fixed text-on-primary-fixed px-4 py-2 font-headline-md hover:bg-on-primary-fixed hover:text-primary-fixed transition-colors w-full block text-center text-sm">VER ANÁLISIS COMPLETO</a>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<!-- Footer (blog style) -->
+<footer style="background:#0f172a; padding:28px 20px; text-align:center; margin-top:48px;">
+  <p style="font-size:12px; color:#475569; font-family:'Inter',system-ui,sans-serif;">
+    Franco Analytics · Datos: SofaScore + FM Argentina ·
+    <a href="https://www.linkedin.com/in/franco-blandi/" target="_blank" style="color:#94a3b8;">Franco Blandi en LinkedIn</a>
+  </p>
+</footer>
+
+</body></html>
