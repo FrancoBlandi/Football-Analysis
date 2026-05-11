@@ -38,82 +38,51 @@ FM = {
 # ── Fixtures confirmados Octavos de Final Apertura 2026 ───────────────────
 # Sábado 9 de mayo + Domingo 10 de mayo 2026
 FIXTURES = [
-    {"id": 1, "home": "CA Talleres",                      "away": "Club Atlético Belgrano",      "round": "Octavos — Sáb 9/5", "date": "Sáb 9/5 16:30"},
-    {"id": 2, "home": "Boca Juniors",                     "away": "Huracán",                     "round": "Octavos — Sáb 9/5", "date": "Sáb 9/5 19:00"},
-    {"id": 3, "home": "Argentinos Juniors",               "away": "CA Lanús",                    "round": "Octavos — Sáb 9/5", "date": "Sáb 9/5 21:30"},
-    {"id": 4, "home": "Independiente Rivadavia",          "away": "Club Atlético Unión de Santa Fe", "round": "Octavos — Sáb 9/5", "date": "Sáb 9/5 21:30"},
-    {"id": 5, "home": "Rosario Central",                  "away": "CA Independiente",             "round": "Octavos — Dom 10/5", "date": "Dom 10/5 15:00"},
-    {"id": 6, "home": "Estudiantes de La Plata",          "away": "Racing Club",                  "round": "Octavos — Dom 10/5", "date": "Dom 10/5 17:00"},
-    {"id": 7, "home": "River Plate",                      "away": "San Lorenzo",                  "round": "Octavos — Dom 10/5", "date": "Dom 10/5 19:00"},
-    {"id": 8, "home": "Vélez Sarsfield",                  "away": "Gimnasia y Esgrima",           "round": "Octavos — Dom 10/5", "date": "Dom 10/5 21:30"},
+    {"id": 1, "home": "Club Atlético Belgrano",           "away": "Club Atlético Unión de Santa Fe", "round": "Cuartos — Lun 12/5", "date": "Lun 12/5 19:00"},
+    {"id": 2, "home": "Argentinos Juniors",               "away": "Huracán",                         "round": "Cuartos — Lun 12/5", "date": "Lun 12/5 21:30"},
+    {"id": 3, "home": "Rosario Central",                  "away": "Racing Club",                     "round": "Cuartos — Mar 13/5", "date": "Mar 13/5 19:00"},
+    {"id": 4, "home": "River Plate",                      "away": "Gimnasia y Esgrima",              "round": "Cuartos — Mar 13/5", "date": "Mar 13/5 21:30"},
 ]
 
-# ── DT (entrenador) por equipo — Octavos de Final 2026 ───────────────────
+# ── DT (entrenador) por equipo — Cuartos de Final 2026 ───────────────────
 # Verificar y actualizar antes de cada fecha
 COACHES = {
-    "CA Talleres":                      "Carlos Tevez",
     "Club Atlético Belgrano":           "Ricardo Zielinski",
-    "Boca Juniors":                     "Claudio Ubeda",
-    "Huracán":                          "Diego Hernán Martínez",
-    "Argentinos Juniors":               "Nicolás Diez",
-    "CA Lanús":                         "Mauricio Pellegrino",
-    "Independiente Rivadavia":          "Alfredo Berti",
     "Club Atlético Unión de Santa Fe":  "Leonardo Madelon",
+    "Argentinos Juniors":               "Nicolás Diez",
+    "Huracán":                          "Diego Hernán Martínez",
     "Rosario Central":                  "Jorge Almirón",
-    "CA Independiente":                 "Gustavo Quinteros",
-    "Estudiantes de La Plata":          "Fernando Machado",
     "Racing Club":                      "Gustavo Costas",
     "River Plate":                      "Eduardo Coudet",
-    "San Lorenzo":                      "Gustavo Álvarez",
-    "Vélez Sarsfield":                  "Guillermo Schelotto",
     "Gimnasia y Esgrima":               "Ariel Pereyra",
 }
 
-# ── Jugadores no disponibles — Octavos de Final (9-10 mayo 2026) ──────────
+# ── Jugadores no disponibles — Cuartos de Final (12-13 mayo 2026) ──────────
 EXCLUDED_PLAYER_IDS = {
-    # Transferidos
-    1003010,   # Cristian Medina       — Estudiantes → Botafogo (febrero 2026)
     # Lesionados
-    # 82474,  # Ander Herrera         — disponible (concentrado oct. 2026)
     1131305,   # Nicolás Palavecino    — Unión de Santa Fe (desgarro muscular)
     1537838,   # Valentín Fascendini   — Unión de Santa Fe (desgarro muscular)
     1094180,   # Ezequiel Cannavo      — Racing Club (desgarro recto anterior)
     790004,    # Paulo Díaz            — River Plate (desgarro recto anterior izq.)
-    # Suspendidos
-    943166,    # Marcelo Estigarribia  — Unión de Santa Fe (5ª amarilla)
-    1201515,   # Baltasar Rodríguez    — Racing Club (5ª amarilla vs Huracán)
+    # Suspendidos — roja/doble amarilla en octavos
+    579316,    # Lucas Passerini       — Belgrano (doble amarilla vs Talleres)
+    792334,    # Eric Ramírez          — Huracán (roja vs Boca)
+    943995,    # Fabio Pereyra         — Huracán (doble amarilla vs Boca)
+    932234,    # Enzo Martínez         — Gimnasia (roja vs Vélez)
     # Lesionados graves — fuera varios meses (no proyectar)
-    47339,     # Agustín Marchesín     — Boca Juniors (rotura ligamentos cruzados)
     1153083,   # Valentín Carboni      — Racing Club (rotura ligamentos cruzados, ~8 meses)
 }
 
 # FM player IDs de lesionados graves sin mapeo SofaScore (excluir del loop de duda)
 EXCLUDED_FM_IDS = {
     211190,    # Franco Armani         — River Plate (lesión larga)
-    # Boca Juniors — fuera toda la temporada
-    96088,     # Edinson Cavani        — lesión
-    37357223,  # Carlos Palacios       — lesión
-    159934,    # Rodrigo Battaglia     — lesión
 }
 
 # ── Override de minutos proyectados — corrige subutilización histórica ────────
 # Usar cuando hay info de prensa confirmando titularidad o reemplazo para la fecha.
 # El override reemplaza avg_mins_gm en el cálculo de P(titular).
 PLAYER_MINUTE_OVERRIDES = {
-    # Talleres — once confirmado vs Belgrano 9/5
-    2110313:  85,   # Giovanni Baroni          — confirmado titular AM centro
-    822088:   85,   # Diego Valoyes            — confirmado titular AM izq (no pierde lugar)
-    1066573:  20,   # Mateo Cáceres            — fuera del once
-    # Belgrano — once confirmado vs Talleres 9/5
-    896773:   85,   # Francisco Glez. Metilli  — confirmado titular MED izq
-    579316:   85,   # Lucas Passerini          — confirmado titular 9
-    990171:   85,   # Santiago Longo           — confirmado titular MED
-    581804:   20,   # Nicolás Fernández        — fuera del once
-    1835748:  15,   # Ramiro Hernandes         — fuera del once
-    1185702:  20,   # Alcides Benítez          — fuera del once (avg 70 pero no juega)
-    215246:   20,   # Franco Vázquez           — fuera del once (avg 78 pero no juega)
-    # Rosario Central — confirmados vs Independiente 10/5
-    30027:    85,   # Ángel Di María            — confirmado titular
+    # Agregar overrides cuando haya onces confirmados para cuartos
 }
 
 # ── Ejecutantes de pelota parada — reducen k de regresión xA (4 en vez de 8) ─

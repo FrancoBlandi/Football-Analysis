@@ -3,10 +3,11 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>LPF Fantasy Analytics | Apertura 2026</title>
-<meta property="og:title"       content="LPF Fantasy Analytics | Apertura 2026"/>
-<meta property="og:description" content="Análisis probabilístico de jugadores para Fantasy Manager Argentina — basado en metodología Opta/FPL."/>
-<meta property="og:type"        content="website"/>
+<title>Fantasy Analytics — Cuartos de Final LPF | Franco Analytics</title>
+<meta name="description" content="Capitán recomendado, picks por posición y tabla completa de jugadores con xPts para los cuartos del Apertura 2026."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"/>
+<link rel="stylesheet" href="/blog/assets/style.css"/>
 <style>
 *{box-sizing:border-box;margin:0;padding:0;}
 body{background:#f8fafc;font-family:'Segoe UI',Arial,sans-serif;color:#0f172a;min-width:320px;}
@@ -260,24 +261,6 @@ td:first-child{position:sticky;left:0;z-index:1;background:inherit;}
 </style>
 </head>
 <body>
-
-<div id="header">
-  <div class="header-left">
-    <div>
-      <span class="badge-lpf">LPF</span>
-    </div>
-    <div class="header-title">
-      <h1>Fantasy Analytics</h1>
-      <p>Liga Profesional Argentina · Apertura 2026</p>
-    </div>
-  </div>
-  <div class="header-meta">
-    Metodología: <span>Opta · FPL Review</span><br>
-    Actualizado: <span>Mayo 2026</span><br>
-    <a href="https://github.com" style="color:#1a56db;font-size:11px;">Ver en GitHub</a>
-  </div>
-</div>
-
 <div id="main">
 
   <!-- CAPTAIN CARD -->
@@ -574,95 +557,10 @@ td:first-child{position:sticky;left:0;z-index:1;background:inherit;}
   </div>
 
   <!-- SIMULATOR -->
-  <div id="sim-section">
-    <div class="sec-title">Simulador de fixture</div>
-    <p style="font-size:11.5px;color:#64748b;margin-bottom:14px;">
-      Seleccioná cualquier enfrentamiento para ver las proyecciones de ambos equipos.
-      Útil para fechas futuras o torneos que aún no tienen fixtures definidos.
-    </p>
-    <div class="sim-controls">
-      <div class="sim-row" style="margin-bottom:12px;">
-        <span class="sim-label">Local</span>
-        <select class="sim-select" id="sim-home"></select>
-        <div class="sim-toggle" id="home-toggle">
-          <button class="active" data-val="true">Local</button>
-          <button data-val="false">Visitante</button>
-        </div>
-      </div>
-      <div class="sim-row" style="margin-bottom:12px;">
-        <span class="sim-label">Visitante</span>
-        <select class="sim-select" id="sim-away"></select>
-      </div>
-      <div class="sim-row">
-        <button id="sim-run-btn">Ver proyección →</button>
-        <span id="sim-fdr-preview" style="font-size:12px;color:#7891b5;margin-left:8px;"></span>
-      </div>
-    </div>
-    <div id="sim-results">
-      <div class="tabs" id="sim-pos-tabs">
-        <button class="tab active" data-pos="ALL">Todos</button>
-        <button class="tab" data-pos="G">Arqueros</button>
-        <button class="tab" data-pos="D">Defensores</button>
-        <button class="tab" data-pos="M">Mediocampistas</button>
-        <button class="tab" data-pos="F">Delanteros</button>
-      </div>
-      <div class="tbl-wrap">
-        <table id="sim-table">
-          <thead>
-            <tr>
-              <th>Jugador</th>
-              <th>Club</th>
-              <th>Pos</th>
-              <th>L/V</th>
-              <th>xPts</th>
-              <th>P(Gol)</th>
-              <th>P(Asist)</th>
-              <th>P(VI)</th>
-              <th>xG/90</th>
-            </tr>
-          </thead>
-          <tbody id="sim-tbody"></tbody>
-        </table>
-      </div>
-    </div>
-  </div>
+  
 
   <!-- METHODOLOGY -->
-  <div id="method-section">
-    <h3>Metodología</h3>
-    <div class="method-grid">
-      <div class="method-card">
-        <h4>P(Gol) — Probabilidad de gol</h4>
-        <p>Inspirada en el modelo xG de Opta. Usa el xG acumulado del jugador normalizado a 90 minutos, ajustado por tres factores:</p>
-        <div class="method-formula">xG/90 × def_rival × local/visit × pos_mult</div>
-      </div>
-      <div class="method-card">
-        <h4>P(Asistencia)</h4>
-        <p>Basada en xA/90 del jugador. Con fallback a pases clave × 0.08 cuando no hay xA disponible. Mismo ajuste por rival y posición.</p>
-        <div class="method-formula">xA/90 × def_rival × local/visit × pos_mult</div>
-      </div>
-      <div class="method-card">
-        <h4>P(Valla Invicta)</h4>
-        <p>Depende del balance entre la defensa del propio equipo y el poder ofensivo del rival. Aplica solo a ARQ, DEF y MED.</p>
-        <div class="method-formula">(def_propio − ataque_rival + 100) / 200 × factor_local</div>
-      </div>
-      <div class="method-card">
-        <h4>FDR — Dificultad de fixture</h4>
-        <p>Defense Score calculado con goles concedidos/partido (65%) y tasa de vallas invictas (35%). Convertido a escala 1–5.</p>
-        <div class="method-formula">gc_pg × −52 + vi_rate × 1.3 → normalizado 0–100 → FDR 1–5</div>
-      </div>
-      <div class="method-card">
-        <h4>xPts — Puntos esperados</h4>
-        <p>Combina todas las probabilidades con la puntuación de Fantasy Manager Argentina. Incluye penalización por promedio de tarjetas.</p>
-        <div class="method-formula">P(G)×pts_gol + P(A)×3 + P(VI)×pts_vi + mins_pts + card_pen</div>
-      </div>
-      <div class="method-card">
-        <h4>Fuentes de datos</h4>
-        <p>Stats de jugadores: SofaScore + FotMob (Opta). Cobertura: Primera LPF 2026, 30 equipos, ~580 jugadores con minutos.</p>
-        <div class="method-formula">Datos al 05/05/2026 · No garantiza resultados</div>
-      </div>
-    </div>
-  </div>
+  
 
 </div><!-- /main -->
 
@@ -1043,7 +941,7 @@ renderTopPicks();
 renderFixtures();
 renderPlayerTable();
 renderFDRGrid();
-populateSimSelects();
 </script>
+
 </body>
 </html>
