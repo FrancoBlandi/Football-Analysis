@@ -72,7 +72,9 @@ EXCLUDED_PLAYER_IDS = {
     932234,    # Enzo Martínez         — Gimnasia (roja vs Vélez)
     # Lesionados graves — fuera varios meses (no proyectar)
     1153083,   # Valentín Carboni      — Racing Club (rotura ligamentos cruzados, ~8 meses)
-    1807994,   # Nicolás Schelotto     — Gimnasia (baja confirmada vs River, lesión)
+    1807994,   # Nicolás Schelotto     — Gimnasia (5ª amarilla, suspendido para cuartos)
+    1201515,   # Baltasar Rodríguez    — Racing Club (5ª amarilla, suspendido para cuartos)
+    590036,    # Federico Ricca        — Belgrano (expulsado en octavos vs Talleres)
 }
 
 # FM player IDs de lesionados graves sin mapeo SofaScore (excluir del loop de duda)
