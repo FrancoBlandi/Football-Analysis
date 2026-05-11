@@ -27,7 +27,7 @@ BPR_PTS = 2
 
 # ── Scoring Fantasy Manager Argentina ─────────────────────────────────────
 FM = {
-    "goal":   {"G": 8, "D": 6, "M": 5, "F": 4},
+    "goal":   {"G": 8, "D": 8, "M": 5, "F": 4},
     "assist": 3,
     "cs":     {"G": 5, "D": 4, "M": 1, "F": 0},
     "mins":   2,      # jugó >60 min
@@ -1542,7 +1542,7 @@ td:first-child{position:sticky;left:0;z-index:1;background:inherit;}
     <div class="sec-title">Proyecciones por jugador</div>
     <p style="font-size:11.5px;color:#64748b;margin-bottom:14px;">
       xPts calculado con metodología Opta: xG/90 × debilidad defensiva del rival × ventaja de local/visitante × multiplicador de posición.
-      Puntuación: gol ARQ 8pts / DEF 6pts / MED 5pts / DEL 4pts · asistencia 3pts · valla invicta ARQ 5pts / DEF 4pts / MED 1pt.
+      Puntuación: gol ARQ 8pts / DEF 8pts / MED 5pts / DEL 4pts · asistencia 3pts · valla invicta ARQ 5pts / DEF 4pts / MED 1pt.
     </p>
 
     <div class="tabs" id="pos-tabs">
@@ -2023,7 +2023,7 @@ function calcSimProjection(p, oppClub, isHome){
   const csRaw   = (ownDef - oppAtt + 100)/200;
   const pCs     = Math.min(0.72, Math.max(0.03, csRaw * (isHome?1.15:0.85)));
 
-  const GOAL_PTS = {G:8,D:6,M:5,F:4};
+  const GOAL_PTS = {G:8,D:8,M:5,F:4};
   const CS_PTS   = {G:5,D:4,M:1,F:0};
   const cardPen  = (p.amarillas / Math.max(p.games,1)) * -1;
   const xpts = pGoal*(GOAL_PTS[p.pos]||4) + pAssist*3 + pCs*(CS_PTS[p.pos]||0) + minsFac*2 + cardPen;
