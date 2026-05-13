@@ -623,6 +623,10 @@ def project_player(p, opp_club, is_home, ts):
         if historical_avg_m < 55 and avg_mins_gm >= 70:
             xg_90 *= 0.80
             xa_90 *= 0.80
+            _role_change_log.append(
+                f"  [role-change] {p.get('Jugador')} ({p.get('Club')}) - "
+                f"hist {historical_avg_m:.0f}min/PJ -> override {avg_mins_gm:.0f}min: xG/90 x0.80"
+            )
         availability = 1.0 if avg_mins_gm >= 60 else availability
 
     if pos == "G":
@@ -871,6 +875,7 @@ for p in players_raw:
             gk_starter[club] = p
 
 player_list = []
+_role_change_log = []
 for p in players_raw:
     club = p.get("Club")
     pos  = p.get("Posicion")
@@ -2172,3 +2177,27 @@ print(f"Jugadores en simulador: {len(sim_players)}")
 print("\nTop 10 xPts:")
 for p in player_list[:10]:
     print(f"  {p['xpts']:5.2f} xPts | {p['name']:<25} ({p['club']}) vs {p['opp']} FDR{p['fdr_opp']}")
+
+# ── Reporte de ajustes automáticos de rol ─────────────────────────────────
+if _role_change_log:
+    print("\n[role-change discount aplicado - xG/90 x0.80 por cambio suplente->titular]")
+    for line in _role_change_log:
+        print(line)
+
+# ── Chequeo: suplentes/rotacionales con xG/90 alto sin override ──────────
+# Avisa si hay candidatos que podrían necesitar ajuste manual de titularidad.
+_warn_threshold = 0.25
+_warn_players = [
+    p for p in player_list
+    if p.get("role") in ("Suplente", "Rotacional")
+    and (p.get("xg_90") or 0) > _warn_threshold
+    and p.get("pos") in ("M", "F")
+]
+if _warn_players:
+    print(f"\n[REVISAR] Suplentes/Rotacionales con xG/90 > {_warn_threshold} — confirmar titularidad:")
+    print(f"  {'Jugador':<28} {'Club':<8} Pos  avg_m  xG/90   Rol")
+    for p in sorted(_warn_players, key=lambda x: x.get("xg_90", 0), reverse=True):
+        mins  = p.get("mins", 0)
+        games = p.get("games", 1)
+        avg_m = mins / max(games, 1)
+        print(f"  {p['name'][:28]:<28} {p['club'][:8]:<8}  {p['pos']}  {avg_m:>5.1f}  {p.get('xg_90',0):.3f}  {p['role']}")
