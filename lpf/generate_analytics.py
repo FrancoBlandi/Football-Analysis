@@ -27,12 +27,14 @@ BPR_PTS = 2
 
 # ── Scoring Fantasy Manager Argentina ─────────────────────────────────────
 FM = {
-    "goal":   {"G": 8, "D": 8, "M": 5, "F": 4},
-    "assist": 3,
-    "cs":     {"G": 5, "D": 4, "M": 1, "F": 0},
-    "mins":   2,      # jugó >60 min
-    "yellow": -1,
-    "red":    -3,
+    "goal":         {"G": 8, "D": 8, "M": 5, "F": 4},
+    "assist":       3,
+    "cs":           {"G": 5, "D": 4, "M": 1, "F": 0},
+    "mins":         2,      # jugó >60 min
+    "yellow":      -1,
+    "red":         -3,
+    "winning_goal": 3,      # gol definitivo (el gol de la victoria)
+    "save_per_4":   1,      # 1pt cada 4 atajadas (solo GK)
 }
 
 # ── Fixtures confirmados Octavos de Final Apertura 2026 ───────────────────
@@ -658,12 +660,27 @@ def project_player(p, opp_club, is_home, ts):
     yellows  = p.get("Amarillas") or 0
     card_pen = (yellows / games) * FM["yellow"]
 
+    # Gol definitivo (+3 pts) — gol que da la victoria final
+    # E[gol_def] = p_goal × P(partido ganado por 1 gol) / λ_equipo
+    # λ_equipo: expected goals del equipo vs este rival/localía
+    own_att_pg = (own.get("xg_pg", LEAGUE_AVG_GC_PG) * 0.65 +
+                  own.get("gf_pg", LEAGUE_AVG_GC_PG) * 0.35)
+    λ_scored   = own_att_pg * (opp.get("xgc_pg", LEAGUE_AVG_GC_PG) /
+                               max(LEAGUE_AVG_GC_PG, 0.01)) * (1.15 if is_home else 0.85)
+    # ~28% de partidos LPF se ganan por exactamente 1 gol de diferencia
+    gol_def_pts = p_goal * 0.28 / max(λ_scored, 0.5) * FM["winning_goal"]
+
+    # Atajadas (+1pt cada 4) — solo GK, usando xSv_pg calculado arriba
+    save_pts = (xSv_pg / 4.0) * mins_fac if pos == "G" else 0.0
+
     xpts = (
-        p_goal   * FM["goal"].get(pos, 4) +
-        p_assist * FM["assist"] +
-        p_cs     * FM["cs"].get(pos, 0) +
-        mins_fac * FM["mins"] +
-        card_pen
+        p_goal      * FM["goal"].get(pos, 4) +
+        p_assist    * FM["assist"] +
+        p_cs        * FM["cs"].get(pos, 0) +
+        mins_fac    * FM["mins"] +
+        card_pen    +
+        gol_def_pts +
+        save_pts
     )
 
     # Consistencia: jugadores boom-or-bust bajan hasta 8% en xPts
@@ -699,11 +716,13 @@ def project_player(p, opp_club, is_home, ts):
     goal_pts_val = FM["goal"].get(pos, 4)
     cs_pts_val   = FM["cs"].get(pos, 0)
     breakdown = {
-        "gol":    round(p_goal   * goal_pts_val, 2),
-        "asist":  round(p_assist * FM["assist"], 2),
-        "vi":     round(p_cs     * cs_pts_val,   2),
-        "mins":   round(mins_fac * FM["mins"],   2),
-        "cards":  round(card_pen, 2),
+        "gol":     round(p_goal      * goal_pts_val, 2),
+        "asist":   round(p_assist    * FM["assist"],  2),
+        "vi":      round(p_cs        * cs_pts_val,    2),
+        "mins":    round(mins_fac    * FM["mins"],    2),
+        "cards":   round(card_pen,   2),
+        "gol_def": round(gol_def_pts, 2),
+        "saves":   round(save_pts,    2),
     }
 
     return {
