@@ -26,11 +26,20 @@ SEASON_WEIGHT  = 1.0 - FORM_WEIGHT
 BPR_PTS = 2
 
 # ── Ajustes fase eliminatoria (KO) ────────────────────────────────────────
+# ESTIMACIÓN — solo aplica a fechas de playoffs con posibilidad de alargue.
+# En fase de grupos / temporada regular, estos parámetros no tienen efecto.
+#
 # En octavos, los GKs proyectados #1-3 tuvieron CS rate << season → corregir P(CS)
 PLAYOFF_CS_DISCOUNT  = 0.80   # P(valla invicta) × 0.80 en KO (ambos equipos atacan)
 # FDR ventaja/desventaja comprimida: en KO los equipos "débiles" defienden y atacan
 # más agresivamente → diferencias de calidad defensiva impactan menos
 KO_DEF_MULT_SCALE    = 0.60   # rango def_mult: temporada=±50%, KO=±30%
+# Alargue: en KO hay ~20% de probabilidad de prórroga (30 min extra).
+# FM da 2 pts fijos por minutos sin importar 90 o 120 min jugados, pero los
+# 30 min extra generan oportunidades adicionales de gol/asistencia/BPR.
+# Boost = 1 + P(ET) × (30/90) ≈ 1.067 → se aplica a p_goal y p_assist.
+KO_ET_PROB           = 0.20   # P(empate al 90') estimada para partidos KO
+KO_ET_MULT           = round(1.0 + KO_ET_PROB * (30 / 90), 4)  # ≈ 1.0667
 
 # ── Scoring Fantasy Manager Argentina ─────────────────────────────────────
 FM = {
@@ -666,8 +675,8 @@ def project_player(p, opp_club, is_home, ts):
     GOAL_POS   = {"G": 0.004, "D": 0.055, "M": 0.44, "F": 0.85}
     ASSIST_POS = {"G": 0.004, "D": 0.11,  "M": 0.60, "F": 0.38}
 
-    p_goal   = min(0.70, xg_90_reg * def_mult * home_mult * GOAL_POS.get(pos, 0.3) * mins_fac * g_type_m)
-    p_assist = min(0.55, xa_90_reg * def_mult * home_mult * ASSIST_POS.get(pos, 0.3) * mins_fac * a_type_m)
+    p_goal   = min(0.70, xg_90_reg * def_mult * home_mult * GOAL_POS.get(pos, 0.3) * mins_fac * g_type_m * KO_ET_MULT)
+    p_assist = min(0.55, xa_90_reg * def_mult * home_mult * ASSIST_POS.get(pos, 0.3) * mins_fac * a_type_m * KO_ET_MULT)
 
     # Clean sheet — modelo Poisson (alineado con Opta)
     # P(VI=0) = e^(-λ) donde λ = blend xGA propio + xGF rival, ajustado por local/visita
