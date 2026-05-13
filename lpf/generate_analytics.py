@@ -546,8 +546,12 @@ def project_player(p, opp_club, is_home, ts):
     form_entry = form_data.get(pid_str, {}).get("form") if pid_str else None
     has_form   = bool(form_entry)
     if has_form:
-        xg_90 = SEASON_WEIGHT * xg_90 + FORM_WEIGHT * form_entry["form_xg_90"]
-        xa_90 = SEASON_WEIGHT * xa_90 + FORM_WEIGHT * form_entry["form_xa_90"]
+        # Cap form values — un partido raro (pocos min + gol) no debe explotar el blend
+        POS_XG_CAP = {"G": 0.20, "D": 0.50, "M": 0.70, "F": 1.10}
+        form_xg = min(form_entry["form_xg_90"], POS_XG_CAP.get(pos, 0.80))
+        form_xa = min(form_entry["form_xa_90"], 0.80)
+        xg_90 = SEASON_WEIGHT * xg_90 + FORM_WEIGHT * form_xg
+        xa_90 = SEASON_WEIGHT * xa_90 + FORM_WEIGHT * form_xa
 
     # xGI/90 (xG + xA combinados, post-blend)
     xgi_90_val = round(xg_90 + xa_90, 3)
