@@ -36,7 +36,6 @@ FM = {
 }
 
 # ── Fixtures confirmados Octavos de Final Apertura 2026 ───────────────────
-# Sábado 9 de mayo + Domingo 10 de mayo 2026
 FIXTURES = [
     {"id": 1, "home": "Club Atlético Belgrano",           "away": "Club Atlético Unión de Santa Fe", "round": "Cuartos — Lun 12/5", "date": "Lun 12/5 19:00"},
     {"id": 2, "home": "Argentinos Juniors",               "away": "Huracán",                         "round": "Cuartos — Lun 12/5", "date": "Lun 12/5 21:30"},
@@ -89,9 +88,9 @@ PLAYER_MINUTE_OVERRIDES = {
     # Rosario Central — basado en octavos vs Independiente
     30027:   85,   # Ángel Di María     — titular confirmado
     1116987: 20,   # Alejo Véliz        — suplente en octavos
-    860045:  85,   # Enzo Copetti       — titular (reemplaza a Campaz lesionado)
+    860045:  20,   # Enzo Copetti       — suplente en cuartos (confirmado prensa)
     # River Plate — Quintero entró como suplente vs San Lorenzo
-    221162:  20,   # Juan Fernando Quintero — suplente en octavos
+    221162:  40,   # Juan Fernando Quintero — suplente en octavos
 }
 
 # ── Ejecutantes de pelota parada — reducen k de regresión xA (4 en vez de 8) ─
