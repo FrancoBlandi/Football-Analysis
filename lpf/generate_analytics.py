@@ -25,6 +25,13 @@ SEASON_WEIGHT  = 1.0 - FORM_WEIGHT
 # Se reemplaza por datos exactos por ronda cuando bpr_rounds.json está disponible
 BPR_PTS = 2
 
+# ── Ajustes fase eliminatoria (KO) ────────────────────────────────────────
+# En octavos, los GKs proyectados #1-3 tuvieron CS rate << season → corregir P(CS)
+PLAYOFF_CS_DISCOUNT  = 0.80   # P(valla invicta) × 0.80 en KO (ambos equipos atacan)
+# FDR ventaja/desventaja comprimida: en KO los equipos "débiles" defienden y atacan
+# más agresivamente → diferencias de calidad defensiva impactan menos
+KO_DEF_MULT_SCALE    = 0.60   # rango def_mult: temporada=±50%, KO=±30%
+
 # ── Scoring Fantasy Manager Argentina ─────────────────────────────────────
 FM = {
     "goal":         {"G": 8, "D": 8, "M": 5, "F": 4},
@@ -613,8 +620,8 @@ def project_player(p, opp_club, is_home, ts):
 
     opp_def = opp["def_score"]
 
-    # Multiplicadores
-    def_mult  = 1.0 + (50 - opp_def) / 100          # 0.5–1.5
+    # Multiplicadores — rango comprimido en fases KO (KO_DEF_MULT_SCALE)
+    def_mult  = 1.0 + (50 - opp_def) / 100 * KO_DEF_MULT_SCALE   # KO: ±30%
     home_mult = 1.12 if is_home else 0.88
     if avg_mins_gm >= 60:
         role, exp_mins = "Titular",    82
@@ -644,7 +651,7 @@ def project_player(p, opp_club, is_home, ts):
     own_def_pg  = own_xgc_pg * 0.60 + own_gc_pg * 0.40
     opp_xgf_pg  = opp.get("xg_pg") or LEAGUE_AVG_GC_PG
     lam         = (own_def_pg * 0.55 + opp_xgf_pg * 0.45) * (0.85 if is_home else 1.15)
-    p_cs        = min(0.60, max(0.03, math.exp(-lam)))
+    p_cs        = min(0.60, max(0.03, math.exp(-lam))) * PLAYOFF_CS_DISCOUNT
 
     # xSv: para arqueros — expected saves/pg (solo para display, no modifica p_cs)
     # p_cs ya incorpora xgc_pg que correlaciona con SOT → no double-count
