@@ -197,6 +197,28 @@ for ss_id, entry in fm_data.items():
         ss_id_to_fm_pos[int(ss_id)] = _fm_id_to_pos[str(fm_id)]
 ss_id_to_fm_pos[1186068] = "M"  # Alan Lescano (ARG) — fix: mapped to L. Lescano (HUR, DEF)
 
+CLUB_SHORT = {
+    "Club Atlético Belgrano":           "BEL",
+    "Club Atlético Unión de Santa Fe":  "UNI",
+    "Argentinos Juniors":               "ARG",
+    "Huracán":                          "HUR",
+    "Rosario Central":                  "ROS",
+    "Racing Club":                      "RAC",
+    "River Plate":                      "RIV",
+    "Gimnasia y Esgrima":               "GIM",
+    "Boca Juniors":                     "BOC",
+    "CA Talleres":                      "TAL",
+    "CA Lanús":                         "LAN",
+    "Independiente Rivadavia":          "IRV",
+    "CA Independiente":                 "IND",
+    "Estudiantes de La Plata":          "EST",
+    "San Lorenzo":                      "SLO",
+    "Vélez Sarsfield":                  "VÉL",
+}
+
+def club_tag(club_name):
+    return CLUB_SHORT.get(club_name) or (club_name or "")[:3].upper()
+
 # ── STEP 1: Stats por equipo ───────────────────────────────────────────────
 def get_team_stats(players, xgc_data=None):
     from collections import defaultdict
@@ -1019,7 +1041,7 @@ def build_leaders_html(players, n=3):
         rows_html = ""
         for i, p in enumerate(ranked, 1):
             val = sorter(p)
-            club_short = (p.get("club") or "")[:3].upper()
+            club_short = club_tag(p.get("club") or "")
             rows_html += (
                 f'<div class="leader-row">'
                 f'<span class="leader-rank">{i}</span>'
@@ -1058,7 +1080,7 @@ def build_captain_card_html(players, n=3):
         pl        = POS_LABELS.get(pos, pos)
         fdr       = str(p.get("fdr_opp") or 3)
         fdr_col   = FDR_COLORS.get(fdr, "#f59e0b")
-        opp_short = (p.get("opp") or "").split(" ")[0][:3].upper()
+        opp_short = club_tag(p.get("opp") or "")
         cons      = p.get("consistency")
         cons_str  = f"{cons}/100" if cons is not None else "—"
         xpts      = p.get("xpts") or 0
