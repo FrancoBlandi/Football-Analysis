@@ -613,8 +613,16 @@ def project_player(p, opp_club, is_home, ts):
 
     # Override manual de minutos proyectados (titularidades confirmadas por prensa)
     pid_int = p.get("player_id")
+    historical_avg_m = avg_mins_gm   # guardar antes del override para role-change check
     if pid_int in PLAYER_MINUTE_OVERRIDES:
         avg_mins_gm  = PLAYER_MINUTE_OVERRIDES[pid_int]
+        # Descuento por cambio de rol: suplente habitual proyectado como titular.
+        # xG/90 de sub sobreestima el rendimiento de 85+ min (entradas en momentos
+        # ventajosos: juego abierto, rival cansado). Descuento ~20% cuando el
+        # promedio histórico < 55 min/PJ y el override lo proyecta como titular (≥70 min).
+        if historical_avg_m < 55 and avg_mins_gm >= 70:
+            xg_90 *= 0.80
+            xa_90 *= 0.80
         availability = 1.0 if avg_mins_gm >= 60 else availability
 
     if pos == "G":
