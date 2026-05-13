@@ -90,7 +90,6 @@ EXCLUDED_PLAYER_IDS = {
     # Lesionados graves — fuera varios meses (no proyectar)
     1153083,   # Valentín Carboni      — Racing Club (rotura ligamentos cruzados, ~8 meses)
     1807994,   # Nicolás Schelotto     — Gimnasia (5ª amarilla, suspendido para cuartos)
-    1201515,   # Baltasar Rodríguez    — Racing Club (5ª amarilla, suspendido para cuartos)
     590036,    # Federico Ricca        — Belgrano (expulsado en octavos vs Talleres)
 }
 
@@ -103,10 +102,14 @@ EXCLUDED_FM_IDS = {
 # Usar cuando hay info de prensa confirmando titularidad o reemplazo para la fecha.
 # El override reemplaza avg_mins_gm en el cálculo de P(titular).
 PLAYER_MINUTE_OVERRIDES = {
-    # Rosario Central — basado en octavos vs Independiente
+    # Rosario Central — titulares cuartos vs Racing
     30027:   85,   # Ángel Di María     — titular confirmado
-    1116987: 20,   # Alejo Véliz        — suplente en octavos
-    860045:  20,   # Enzo Copetti       — suplente en cuartos (confirmado prensa)
+    1116987: 85,   # Alejo Véliz        — titular cuartos (confirmado prensa)
+    860045:  85,   # Enzo Copetti       — titular cuartos (confirmado prensa)
+    # Racing Club — titulares cuartos vs Rosario Central
+    1017433: 85,   # Gastón Martirena   — titular confirmado
+    46998:   85,   # Marcos Rojo        — titular confirmado
+    1201515: 85,   # Baltasar Rodríguez — titular (suspensión levantada)
     # River Plate — Quintero entró como suplente vs San Lorenzo
     221162:  40,   # Juan Fernando Quintero — suplente en octavos
 }
