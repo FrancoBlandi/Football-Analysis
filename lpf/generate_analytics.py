@@ -106,6 +106,7 @@ PLAYER_MINUTE_OVERRIDES = {
     30027:   85,   # Ángel Di María     — titular confirmado
     1116987: 85,   # Alejo Véliz        — titular cuartos (confirmado prensa)
     860045:  85,   # Enzo Copetti       — titular cuartos (confirmado prensa)
+    927326:  85,   # Enzo Giménez       — titular confirmado
     # Racing Club — titulares cuartos vs Rosario Central
     1017433: 85,   # Gastón Martirena   — titular confirmado
     46998:   85,   # Marcos Rojo        — titular confirmado
