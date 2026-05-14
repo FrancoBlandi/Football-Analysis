@@ -75,22 +75,22 @@ COACHES = {
 }
 
 # ── Jugadores no disponibles — Cuartos de Final (12-13 mayo 2026) ──────────
+# NOTA: Schelotto figuraba como suspendido (5ª amarilla) pero jugó — dato incorrecto, removido.
 EXCLUDED_PLAYER_IDS = {
     # Lesionados
     1131305,   # Nicolás Palavecino    — Unión de Santa Fe (desgarro muscular)
     1537838,   # Valentín Fascendini   — Unión de Santa Fe (desgarro muscular)
     1094180,   # Ezequiel Cannavo      — Racing Club (desgarro recto anterior)
     790004,    # Paulo Díaz            — River Plate (desgarro recto anterior izq.)
-    877299,    # Jaminton Campaz       — Rosario Central (lesión, no estuvo ni en banco en octavos)
+    877299,    # Jaminton Campaz       — Rosario Central (lesión)
     # Suspendidos — roja/doble amarilla en octavos
     579316,    # Lucas Passerini       — Belgrano (doble amarilla vs Talleres)
     792334,    # Eric Ramírez          — Huracán (roja vs Boca)
     943995,    # Fabio Pereyra         — Huracán (doble amarilla vs Boca)
     932234,    # Enzo Martínez         — Gimnasia (roja vs Vélez)
-    # Lesionados graves — fuera varios meses (no proyectar)
-    1153083,   # Valentín Carboni      — Racing Club (rotura ligamentos cruzados, ~8 meses)
-    1807994,   # Nicolás Schelotto     — Gimnasia (5ª amarilla, suspendido para cuartos)
     590036,    # Federico Ricca        — Belgrano (expulsado en octavos vs Talleres)
+    # Lesionados graves — fuera varios meses
+    1153083,   # Valentín Carboni      — Racing Club (rotura ligamentos cruzados, ~8 meses)
 }
 
 # FM player IDs de lesionados graves sin mapeo SofaScore (excluir del loop de duda)
