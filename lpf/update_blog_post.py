@@ -64,6 +64,14 @@ def update_blog_post():
         blog = blog.replace(old_div, new_div, 1)
         print(f"  {div_id}: {len(new_div)} chars — OK")
 
+    # Adaptar colores del tema light (analytics.html) al tema dark del blog post
+    DARK_THEME = [
+        ("background:#fffbeb;border:1.5px solid #fbbf24;", "background:#2d2200;border:1.5px solid #fbbf24;"),
+        ("background:#f0fdf4;border:1.5px solid #86efac;", "background:#052e16;border:1.5px solid #86efac;"),
+    ]
+    for light, dark in DARK_THEME:
+        blog = blog.replace(light, dark)
+
     with open(BLOG_POST, 'w', encoding='utf-8') as f:
         f.write(blog)
     print(f"  {BLOG_POST.name} actualizado")
