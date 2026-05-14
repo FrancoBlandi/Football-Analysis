@@ -1,0 +1,6870 @@
+{
+  "torneo": "Liga AUF Uruguaya — Torneo Apertura 2026",
+  "fecha_extraccion": "2026-05-11",
+  "nota": "Goles corregidos = incidents (base) + correcciones manuales confirmadas por prensa. Los errores incidents>lineups quedan subsanados al usar incidents como base. Los artefactos J15 (partidos del 9-10 May) se mantienen en incidents hasta que SofaScore procese los stats.",
+  "total_jugadores_con_goles": 147,
+  "correcciones_aplicadas": {
+    "manuales": 1,
+    "incidents_sobre_lineups": 7,
+    "timing_artifacts": 8
+  },
+  "goleadores": [
+    {
+      "player_id": 1110287,
+      "nombre": "Álvaro López",
+      "goles_corregidos": 12,
+      "goles_sofascore_incidents": 12,
+      "goles_sofascore_lineups": 11,
+      "correcciones": [
+        {
+          "tipo": "incidents_sobre_lineups",
+          "jornada": 10,
+          "partido": "Albion FC vs Cerro Largo",
+          "incidents": 3,
+          "lineups": 2,
+          "nota": "incidents corrige lineups (gol registrado en evento pero no propagado a stats)."
+        }
+      ],
+      "partidos": [
+        {
+          "ev_id": 15456565,
+          "fecha": "2026-02-06",
+          "jornada": 1,
+          "minuto": 79,
+          "tipo": "goal",
+          "partido": "Albion FC vs Liverpool UY"
+        },
+        {
+          "ev_id": 15471982,
+          "fecha": "2026-02-16",
+          "jornada": 2,
+          "minuto": 90,
+          "tipo": "goal",
+          "partido": "Albion FC vs CA Cerro"
+        },
+        {
+          "ev_id": 15634213,
+          "fecha": "2026-03-07",
+          "jornada": 5,
+          "minuto": 71,
+          "tipo": "goal",
+          "partido": "Progreso vs Albion FC"
+        },
+        {
+          "ev_id": 15713289,
+          "fecha": "2026-03-22",
+          "jornada": 7,
+          "minuto": 10,
+          "tipo": "goal",
+          "partido": "Juventud de Las Piedras vs Albion FC"
+        },
+        {
+          "ev_id": 15873058,
+          "fecha": "2026-04-05",
+          "jornada": 10,
+          "minuto": 79,
+          "tipo": "goal",
+          "partido": "Albion FC vs Cerro Largo"
+        },
+        {
+          "ev_id": 15873058,
+          "fecha": "2026-04-05",
+          "jornada": 10,
+          "minuto": 29,
+          "tipo": "goal",
+          "partido": "Albion FC vs Cerro Largo"
+        },
+        {
+          "ev_id": 15873058,
+          "fecha": "2026-04-05",
+          "jornada": 10,
+          "minuto": 12,
+          "tipo": "goal",
+          "partido": "Albion FC vs Cerro Largo"
+        },
+        {
+          "ev_id": 15967900,
+          "fecha": "2026-04-17",
+          "jornada": 12,
+          "minuto": 84,
+          "tipo": "goal",
+          "partido": "Albion FC vs Central Español"
+        },
+        {
+          "ev_id": 16026949,
+          "fecha": "2026-04-25",
+          "jornada": 13,
+          "minuto": 67,
+          "tipo": "goal",
+          "partido": "Deportivo Maldonado vs Albion FC"
+        },
+        {
+          "ev_id": 16026952,
+          "fecha": "2026-05-03",
+          "jornada": 14,
+          "minuto": 43,
+          "tipo": "goal",
+          "partido": "Albion FC vs Nacional"
+        },
+        {
+          "ev_id": 16026952,
+          "fecha": "2026-05-03",
+          "jornada": 14,
+          "minuto": 8,
+          "tipo": "goal",
+          "partido": "Albion FC vs Nacional"
+        },
+        {
+          "ev_id": 16131056,
+          "fecha": "2026-05-09",
+          "jornada": 15,
+          "minuto": 45,
+          "tipo": "goal",
+          "partido": "Danubio vs Albion FC"
+        }
+      ]
+    },
+    {
+      "player_id": 1472602,
+      "nombre": "Fernando Mimbacas",
+      "goles_corregidos": 7,
+      "goles_sofascore_incidents": 7,
+      "goles_sofascore_lineups": 6,
+      "correcciones": [
+        {
+          "tipo": "incidents_sobre_lineups",
+          "jornada": 10,
+          "partido": "Racing de Montevideo vs Juventud",
+          "incidents": 2,
+          "lineups": 1,
+          "nota": "incidents corrige lineups (gol registrado en evento pero no propagado a stats)."
+        }
+      ],
+      "partidos": [
+        {
+          "ev_id": 15523833,
+          "fecha": "2026-03-02",
+          "jornada": 4,
+          "minuto": 20,
+          "tipo": "goal",
+          "partido": "Deportivo Maldonado vs Juventud de Las Piedras"
+        },
+        {
+          "ev_id": 15713276,
+          "fecha": "2026-03-30",
+          "jornada": 9,
+          "minuto": 80,
+          "tipo": "goal",
+          "partido": "Juventud de Las Piedras vs Boston River"
+        },
+        {
+          "ev_id": 15873061,
+          "fecha": "2026-04-04",
+          "jornada": 10,
+          "minuto": 45,
+          "tipo": "goal",
+          "partido": "Racing de Montevideo vs Juventud de Las Piedras"
+        },
+        {
+          "ev_id": 15873061,
+          "fecha": "2026-04-04",
+          "jornada": 10,
+          "minuto": 37,
+          "tipo": "goal",
+          "partido": "Racing de Montevideo vs Juventud de Las Piedras"
+        },
+        {
+          "ev_id": 15873064,
+          "fecha": "2026-04-12",
+          "jornada": 11,
+          "minuto": 43,
+          "tipo": "goal",
+          "partido": "Juventud de Las Piedras vs Progreso"
+        },
+        {
+          "ev_id": 15967899,
+          "fecha": "2026-04-20",
+          "jornada": 12,
+          "minuto": 77,
+          "tipo": "goal",
+          "partido": "Peñarol vs Juventud de Las Piedras"
+        },
+        {
+          "ev_id": 16026960,
+          "fecha": "2026-05-02",
+          "jornada": 14,
+          "minuto": 90,
+          "tipo": "goal",
+          "partido": "Juventud de Las Piedras vs Montevideo Wanderers"
+        }
+      ]
+    },
+    {
+      "player_id": 805245,
+      "nombre": "Maximiliano Gómez",
+      "goles_corregidos": 7,
+      "goles_sofascore_incidents": 7,
+      "goles_sofascore_lineups": 7,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15456567,
+          "fecha": "2026-02-08",
+          "jornada": 1,
+          "minuto": 61,
+          "tipo": "goal",
+          "partido": "Boston River vs Nacional"
+        },
+        {
+          "ev_id": 15471985,
+          "fecha": "2026-02-14",
+          "jornada": 2,
+          "minuto": 17,
+          "tipo": "goal",
+          "partido": "Nacional vs Racing de Montevideo"
+        },
+        {
+          "ev_id": 15634212,
+          "fecha": "2026-03-08",
+          "jornada": 5,
+          "minuto": 49,
+          "tipo": "goal",
+          "partido": "Juventud de Las Piedras vs Nacional"
+        },
+        {
+          "ev_id": 15713281,
+          "fecha": "2026-03-28",
+          "jornada": 9,
+          "minuto": 35,
+          "tipo": "goal",
+          "partido": "Montevideo City Torque vs Nacional"
+        },
+        {
+          "ev_id": 15713281,
+          "fecha": "2026-03-28",
+          "jornada": 9,
+          "minuto": 33,
+          "tipo": "goal",
+          "partido": "Montevideo City Torque vs Nacional"
+        },
+        {
+          "ev_id": 15967902,
+          "fecha": "2026-04-19",
+          "jornada": 12,
+          "minuto": 56,
+          "tipo": "goal",
+          "partido": "Liverpool UY vs Nacional"
+        },
+        {
+          "ev_id": 15967902,
+          "fecha": "2026-04-19",
+          "jornada": 12,
+          "minuto": 21,
+          "tipo": "goal",
+          "partido": "Liverpool UY vs Nacional"
+        }
+      ]
+    },
+    {
+      "player_id": 1020191,
+      "nombre": "Salomón Rodríguez",
+      "goles_corregidos": 6,
+      "goles_sofascore_incidents": 6,
+      "goles_sofascore_lineups": 6,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15471986,
+          "fecha": "2026-02-17",
+          "jornada": 2,
+          "minuto": 86,
+          "tipo": "goal",
+          "partido": "Montevideo City Torque vs Juventud de Las Piedras"
+        },
+        {
+          "ev_id": 15523835,
+          "fecha": "2026-02-22",
+          "jornada": 3,
+          "minuto": 11,
+          "tipo": "goal",
+          "partido": "Montevideo Wanderers vs Montevideo City Torque"
+        },
+        {
+          "ev_id": 15634211,
+          "fecha": "2026-03-09",
+          "jornada": 5,
+          "minuto": 72,
+          "tipo": "goal",
+          "partido": "Cerro Largo vs Montevideo City Torque"
+        },
+        {
+          "ev_id": 15713286,
+          "fecha": "2026-03-21",
+          "jornada": 7,
+          "minuto": 16,
+          "tipo": "goal",
+          "partido": "Montevideo City Torque vs Central Español"
+        },
+        {
+          "ev_id": 15713281,
+          "fecha": "2026-03-28",
+          "jornada": 9,
+          "minuto": 59,
+          "tipo": "goal",
+          "partido": "Montevideo City Torque vs Nacional"
+        },
+        {
+          "ev_id": 15713281,
+          "fecha": "2026-03-28",
+          "jornada": 9,
+          "minuto": 4,
+          "tipo": "goal",
+          "partido": "Montevideo City Torque vs Nacional"
+        }
+      ]
+    },
+    {
+      "player_id": 975814,
+      "nombre": "Matías Arezo",
+      "goles_corregidos": 6,
+      "goles_sofascore_incidents": 6,
+      "goles_sofascore_lineups": 6,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15456570,
+          "fecha": "2026-02-07",
+          "jornada": 1,
+          "minuto": 2,
+          "tipo": "goal",
+          "partido": "Peñarol vs Montevideo City Torque"
+        },
+        {
+          "ev_id": 15471984,
+          "fecha": "2026-02-15",
+          "jornada": 2,
+          "minuto": 90,
+          "tipo": "goal",
+          "partido": "Central Español vs Peñarol"
+        },
+        {
+          "ev_id": 15523837,
+          "fecha": "2026-02-22",
+          "jornada": 3,
+          "minuto": 63,
+          "tipo": "goal",
+          "partido": "Peñarol vs Deportivo Maldonado"
+        },
+        {
+          "ev_id": 15523842,
+          "fecha": "2026-03-01",
+          "jornada": 4,
+          "minuto": 76,
+          "tipo": "goal",
+          "partido": "Nacional vs Peñarol"
+        },
+        {
+          "ev_id": 15713292,
+          "fecha": "2026-03-21",
+          "jornada": 7,
+          "minuto": 18,
+          "tipo": "goal",
+          "partido": "Peñarol vs CA Cerro"
+        },
+        {
+          "ev_id": 15713273,
+          "fecha": "2026-03-25",
+          "jornada": 8,
+          "minuto": 81,
+          "tipo": "goal",
+          "partido": "Boston River vs Peñarol"
+        }
+      ]
+    },
+    {
+      "player_id": 924761,
+      "nombre": "Maximiliano Noble",
+      "goles_corregidos": 6,
+      "goles_sofascore_incidents": 6,
+      "goles_sofascore_lineups": 6,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15471983,
+          "fecha": "2026-02-14",
+          "jornada": 2,
+          "minuto": 61,
+          "tipo": "goal",
+          "partido": "Deportivo Maldonado vs Progreso"
+        },
+        {
+          "ev_id": 15471983,
+          "fecha": "2026-02-14",
+          "jornada": 2,
+          "minuto": 29,
+          "tipo": "goal",
+          "partido": "Deportivo Maldonado vs Progreso"
+        },
+        {
+          "ev_id": 15523833,
+          "fecha": "2026-03-02",
+          "jornada": 4,
+          "minuto": 38,
+          "tipo": "goal",
+          "partido": "Deportivo Maldonado vs Juventud de Las Piedras"
+        },
+        {
+          "ev_id": 15713287,
+          "fecha": "2026-03-20",
+          "jornada": 7,
+          "minuto": 28,
+          "tipo": "goal",
+          "partido": "Cerro Largo vs Deportivo Maldonado"
+        },
+        {
+          "ev_id": 15873052,
+          "fecha": "2026-04-05",
+          "jornada": 10,
+          "minuto": 40,
+          "tipo": "goal",
+          "partido": "Liverpool UY vs Deportivo Maldonado"
+        },
+        {
+          "ev_id": 15873060,
+          "fecha": "2026-04-11",
+          "jornada": 11,
+          "minuto": 90,
+          "tipo": "goal",
+          "partido": "Deportivo Maldonado vs Nacional"
+        }
+      ]
+    },
+    {
+      "player_id": 247219,
+      "nombre": "Raúl Andrés Tarragona Lemos",
+      "goles_corregidos": 6,
+      "goles_sofascore_incidents": 6,
+      "goles_sofascore_lineups": 5,
+      "correcciones": [
+        {
+          "tipo": "timing_artifact",
+          "nota": "Partido del 2026-05-09 o 2026-05-10. Stats de lineups no procesadas aún. Incidents es base correcta."
+        }
+      ],
+      "partidos": [
+        {
+          "ev_id": 15456569,
+          "fecha": "2026-02-07",
+          "jornada": 1,
+          "minuto": 3,
+          "tipo": "goal",
+          "partido": "Progreso vs Central Español"
+        },
+        {
+          "ev_id": 15635513,
+          "fecha": "2026-03-15",
+          "jornada": 6,
+          "minuto": 60,
+          "tipo": "goal",
+          "partido": "Central Español vs Cerro Largo"
+        },
+        {
+          "ev_id": 15713275,
+          "fecha": "2026-03-31",
+          "jornada": 9,
+          "minuto": 65,
+          "tipo": "goal",
+          "partido": "Central Español vs Deportivo Maldonado"
+        },
+        {
+          "ev_id": 15873063,
+          "fecha": "2026-04-12",
+          "jornada": 11,
+          "minuto": 83,
+          "tipo": "goal",
+          "partido": "Central Español vs Danubio"
+        },
+        {
+          "ev_id": 16026947,
+          "fecha": "2026-04-26",
+          "jornada": 13,
+          "minuto": 45,
+          "tipo": "goal",
+          "partido": "Central Español vs CA Cerro"
+        },
+        {
+          "ev_id": 16131179,
+          "fecha": "2026-05-09",
+          "jornada": 15,
+          "minuto": 62,
+          "tipo": "goal",
+          "partido": "Central Español vs Racing de Montevideo"
+        }
+      ]
+    },
+    {
+      "player_id": 212842,
+      "nombre": "Brian Montenegro",
+      "goles_corregidos": 6,
+      "goles_sofascore_incidents": 6,
+      "goles_sofascore_lineups": 6,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15471981,
+          "fecha": "2026-02-14",
+          "jornada": 2,
+          "minuto": 33,
+          "tipo": "goal",
+          "partido": "Liverpool UY vs Defensor Sporting"
+        },
+        {
+          "ev_id": 15523840,
+          "fecha": "2026-02-21",
+          "jornada": 3,
+          "minuto": 52,
+          "tipo": "goal",
+          "partido": "Defensor Sporting vs Cerro Largo"
+        },
+        {
+          "ev_id": 15713284,
+          "fecha": "2026-03-21",
+          "jornada": 7,
+          "minuto": 76,
+          "tipo": "goal",
+          "partido": "Defensor Sporting vs Nacional"
+        },
+        {
+          "ev_id": 15907396,
+          "fecha": "2026-03-31",
+          "jornada": 9,
+          "minuto": 8,
+          "tipo": "goal",
+          "partido": "Defensor Sporting vs Albion FC"
+        },
+        {
+          "ev_id": 15967905,
+          "fecha": "2026-04-18",
+          "jornada": 12,
+          "minuto": 76,
+          "tipo": "goal",
+          "partido": "Racing de Montevideo vs Defensor Sporting"
+        },
+        {
+          "ev_id": 16026957,
+          "fecha": "2026-05-04",
+          "jornada": 14,
+          "minuto": 68,
+          "tipo": "goal",
+          "partido": "Peñarol vs Defensor Sporting"
+        }
+      ]
+    },
+    {
+      "player_id": 36981,
+      "nombre": "Sebastián Fernández",
+      "goles_corregidos": 4,
+      "goles_sofascore_incidents": 4,
+      "goles_sofascore_lineups": 4,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15471987,
+          "fecha": "2026-02-15",
+          "jornada": 2,
+          "minuto": 49,
+          "tipo": "goal",
+          "partido": "Danubio vs Boston River"
+        },
+        {
+          "ev_id": 15523841,
+          "fecha": "2026-02-28",
+          "jornada": 4,
+          "minuto": 75,
+          "tipo": "goal",
+          "partido": "Danubio vs Progreso"
+        },
+        {
+          "ev_id": 15635517,
+          "fecha": "2026-03-16",
+          "jornada": 6,
+          "minuto": 90,
+          "tipo": "goal",
+          "partido": "Danubio vs Juventud de Las Piedras"
+        },
+        {
+          "ev_id": 15967897,
+          "fecha": "2026-04-19",
+          "jornada": 12,
+          "minuto": 14,
+          "tipo": "goal",
+          "partido": "Danubio vs Deportivo Maldonado"
+        }
+      ]
+    },
+    {
+      "player_id": 1931507,
+      "nombre": "Axel Pandiani",
+      "goles_corregidos": 4,
+      "goles_sofascore_incidents": 4,
+      "goles_sofascore_lineups": 4,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15471980,
+          "fecha": "2026-02-13",
+          "jornada": 2,
+          "minuto": 47,
+          "tipo": "goal",
+          "partido": "Cerro Largo vs Montevideo Wanderers"
+        },
+        {
+          "ev_id": 15635513,
+          "fecha": "2026-03-15",
+          "jornada": 6,
+          "minuto": 30,
+          "tipo": "goal",
+          "partido": "Central Español vs Cerro Largo"
+        },
+        {
+          "ev_id": 15713287,
+          "fecha": "2026-03-20",
+          "jornada": 7,
+          "minuto": 61,
+          "tipo": "goal",
+          "partido": "Cerro Largo vs Deportivo Maldonado"
+        },
+        {
+          "ev_id": 15873058,
+          "fecha": "2026-04-05",
+          "jornada": 10,
+          "minuto": 49,
+          "tipo": "goal",
+          "partido": "Albion FC vs Cerro Largo"
+        }
+      ]
+    },
+    {
+      "player_id": 1190239,
+      "nombre": "Tiziano Correa",
+      "goles_corregidos": 4,
+      "goles_sofascore_incidents": 4,
+      "goles_sofascore_lineups": 4,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15456571,
+          "fecha": "2026-02-08",
+          "jornada": 1,
+          "minuto": 25,
+          "tipo": "goal",
+          "partido": "Juventud de Las Piedras vs Cerro Largo"
+        },
+        {
+          "ev_id": 15713287,
+          "fecha": "2026-03-20",
+          "jornada": 7,
+          "minuto": 90,
+          "tipo": "goal",
+          "partido": "Cerro Largo vs Deportivo Maldonado"
+        },
+        {
+          "ev_id": 15713283,
+          "fecha": "2026-03-30",
+          "jornada": 9,
+          "minuto": 90,
+          "tipo": "goal",
+          "partido": "Cerro Largo vs Danubio"
+        },
+        {
+          "ev_id": 16026959,
+          "fecha": "2026-05-03",
+          "jornada": 14,
+          "minuto": 56,
+          "tipo": "goal",
+          "partido": "Progreso vs Cerro Largo"
+        }
+      ]
+    },
+    {
+      "player_id": 2441750,
+      "nombre": "Enzo Cabrera",
+      "goles_corregidos": 4,
+      "goles_sofascore_incidents": 4,
+      "goles_sofascore_lineups": 4,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15634215,
+          "fecha": "2026-03-07",
+          "jornada": 5,
+          "minuto": 9,
+          "tipo": "goal",
+          "partido": "Peñarol vs Danubio"
+        },
+        {
+          "ev_id": 15635517,
+          "fecha": "2026-03-16",
+          "jornada": 6,
+          "minuto": 36,
+          "tipo": "goal",
+          "partido": "Danubio vs Juventud de Las Piedras"
+        },
+        {
+          "ev_id": 15873053,
+          "fecha": "2026-04-04",
+          "jornada": 10,
+          "minuto": 45,
+          "tipo": "goal",
+          "partido": "Danubio vs Montevideo City Torque"
+        },
+        {
+          "ev_id": 16026954,
+          "fecha": "2026-04-25",
+          "jornada": 13,
+          "minuto": 76,
+          "tipo": "goal",
+          "partido": "Nacional vs Danubio"
+        }
+      ]
+    },
+    {
+      "player_id": 1020529,
+      "nombre": "Carlos Airala",
+      "goles_corregidos": 4,
+      "goles_sofascore_incidents": 4,
+      "goles_sofascore_lineups": 4,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15471982,
+          "fecha": "2026-02-16",
+          "jornada": 2,
+          "minuto": 86,
+          "tipo": "goal",
+          "partido": "Albion FC vs CA Cerro"
+        },
+        {
+          "ev_id": 15907396,
+          "fecha": "2026-03-31",
+          "jornada": 9,
+          "minuto": 28,
+          "tipo": "goal",
+          "partido": "Defensor Sporting vs Albion FC"
+        },
+        {
+          "ev_id": 16026949,
+          "fecha": "2026-04-25",
+          "jornada": 13,
+          "minuto": 42,
+          "tipo": "goal",
+          "partido": "Deportivo Maldonado vs Albion FC"
+        },
+        {
+          "ev_id": 16026952,
+          "fecha": "2026-05-03",
+          "jornada": 14,
+          "minuto": 17,
+          "tipo": "goal",
+          "partido": "Albion FC vs Nacional"
+        }
+      ]
+    },
+    {
+      "player_id": 877402,
+      "nombre": "Federico Martínez",
+      "goles_corregidos": 4,
+      "goles_sofascore_incidents": 4,
+      "goles_sofascore_lineups": 4,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15523832,
+          "fecha": "2026-02-20",
+          "jornada": 3,
+          "minuto": 80,
+          "tipo": "goal",
+          "partido": "CA Cerro vs Liverpool UY"
+        },
+        {
+          "ev_id": 15907398,
+          "fecha": "2026-03-31",
+          "jornada": 9,
+          "minuto": 67,
+          "tipo": "goal",
+          "partido": "Progreso vs Liverpool UY"
+        },
+        {
+          "ev_id": 15907398,
+          "fecha": "2026-03-31",
+          "jornada": 9,
+          "minuto": 10,
+          "tipo": "goal",
+          "partido": "Progreso vs Liverpool UY"
+        },
+        {
+          "ev_id": 16026950,
+          "fecha": "2026-05-02",
+          "jornada": 14,
+          "minuto": 58,
+          "tipo": "goal",
+          "partido": "Liverpool UY vs Danubio"
+        }
+      ]
+    },
+    {
+      "player_id": 1113346,
+      "nombre": "Luis Miguel Angulo",
+      "goles_corregidos": 4,
+      "goles_sofascore_incidents": 4,
+      "goles_sofascore_lineups": 4,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15634215,
+          "fecha": "2026-03-07",
+          "jornada": 5,
+          "minuto": 77,
+          "tipo": "goal",
+          "partido": "Peñarol vs Danubio"
+        },
+        {
+          "ev_id": 15713292,
+          "fecha": "2026-03-21",
+          "jornada": 7,
+          "minuto": 26,
+          "tipo": "goal",
+          "partido": "Peñarol vs CA Cerro"
+        },
+        {
+          "ev_id": 15873048,
+          "fecha": "2026-04-04",
+          "jornada": 10,
+          "minuto": 39,
+          "tipo": "goal",
+          "partido": "Progreso vs Peñarol"
+        },
+        {
+          "ev_id": 15873048,
+          "fecha": "2026-04-04",
+          "jornada": 10,
+          "minuto": 24,
+          "tipo": "goal",
+          "partido": "Progreso vs Peñarol"
+        }
+      ]
+    },
+    {
+      "player_id": 2446864,
+      "nombre": "Tomas Habib",
+      "goles_corregidos": 4,
+      "goles_sofascore_incidents": 4,
+      "goles_sofascore_lineups": 4,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15456568,
+          "fecha": "2026-02-08",
+          "jornada": 1,
+          "minuto": 75,
+          "tipo": "goal",
+          "partido": "Racing de Montevideo vs Deportivo Maldonado"
+        },
+        {
+          "ev_id": 15523839,
+          "fecha": "2026-02-21",
+          "jornada": 3,
+          "minuto": 28,
+          "tipo": "goal",
+          "partido": "Racing de Montevideo vs Danubio"
+        },
+        {
+          "ev_id": 15873065,
+          "fecha": "2026-04-12",
+          "jornada": 11,
+          "minuto": 69,
+          "tipo": "goal",
+          "partido": "Montevideo Wanderers vs Racing de Montevideo"
+        },
+        {
+          "ev_id": 15967905,
+          "fecha": "2026-04-18",
+          "jornada": 12,
+          "minuto": 39,
+          "tipo": "goal",
+          "partido": "Racing de Montevideo vs Defensor Sporting"
+        }
+      ]
+    },
+    {
+      "player_id": 802368,
+      "nombre": "Christian Tabó",
+      "goles_corregidos": 4,
+      "goles_sofascore_incidents": 4,
+      "goles_sofascore_lineups": 4,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15635515,
+          "fecha": "2026-03-15",
+          "jornada": 6,
+          "minuto": 90,
+          "tipo": "goal",
+          "partido": "Deportivo Maldonado vs Defensor Sporting"
+        },
+        {
+          "ev_id": 15873060,
+          "fecha": "2026-04-11",
+          "jornada": 11,
+          "minuto": 41,
+          "tipo": "goal",
+          "partido": "Deportivo Maldonado vs Nacional"
+        },
+        {
+          "ev_id": 15967897,
+          "fecha": "2026-04-19",
+          "jornada": 12,
+          "minuto": 51,
+          "tipo": "goal",
+          "partido": "Danubio vs Deportivo Maldonado"
+        },
+        {
+          "ev_id": 16026949,
+          "fecha": "2026-04-25",
+          "jornada": 13,
+          "minuto": 45,
+          "tipo": "goal",
+          "partido": "Deportivo Maldonado vs Albion FC"
+        }
+      ]
+    },
+    {
+      "player_id": 1802303,
+      "nombre": "Alejo Macelli",
+      "goles_corregidos": 3,
+      "goles_sofascore_incidents": 3,
+      "goles_sofascore_lineups": 3,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15523834,
+          "fecha": "2026-02-27",
+          "jornada": 4,
+          "minuto": 9,
+          "tipo": "goal",
+          "partido": "CA Cerro vs Boston River"
+        },
+        {
+          "ev_id": 15873055,
+          "fecha": "2026-04-10",
+          "jornada": 11,
+          "minuto": 90,
+          "tipo": "goal",
+          "partido": "Cerro Largo vs CA Cerro"
+        },
+        {
+          "ev_id": 15967911,
+          "fecha": "2026-04-19",
+          "jornada": 12,
+          "minuto": 87,
+          "tipo": "goal",
+          "partido": "CA Cerro vs Montevideo City Torque"
+        }
+      ]
+    },
+    {
+      "player_id": 248023,
+      "nombre": "Renato César",
+      "goles_corregidos": 3,
+      "goles_sofascore_incidents": 3,
+      "goles_sofascore_lineups": 3,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15456568,
+          "fecha": "2026-02-08",
+          "jornada": 1,
+          "minuto": 12,
+          "tipo": "goal",
+          "partido": "Racing de Montevideo vs Deportivo Maldonado"
+        },
+        {
+          "ev_id": 15523837,
+          "fecha": "2026-02-22",
+          "jornada": 3,
+          "minuto": 32,
+          "tipo": "goal",
+          "partido": "Peñarol vs Deportivo Maldonado"
+        },
+        {
+          "ev_id": 15713275,
+          "fecha": "2026-03-31",
+          "jornada": 9,
+          "minuto": 41,
+          "tipo": "goal",
+          "partido": "Central Español vs Deportivo Maldonado"
+        }
+      ]
+    },
+    {
+      "player_id": 971175,
+      "nombre": "Tomas Veron Lupi",
+      "goles_corregidos": 3,
+      "goles_sofascore_incidents": 3,
+      "goles_sofascore_lineups": 3,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15456567,
+          "fecha": "2026-02-08",
+          "jornada": 1,
+          "minuto": 85,
+          "tipo": "goal",
+          "partido": "Boston River vs Nacional"
+        },
+        {
+          "ev_id": 15635506,
+          "fecha": "2026-03-13",
+          "jornada": 6,
+          "minuto": 70,
+          "tipo": "goal",
+          "partido": "Nacional vs Montevideo Wanderers"
+        },
+        {
+          "ev_id": 15967902,
+          "fecha": "2026-04-19",
+          "jornada": 12,
+          "minuto": 90,
+          "tipo": "goal",
+          "partido": "Liverpool UY vs Nacional"
+        }
+      ]
+    },
+    {
+      "player_id": 1098273,
+      "nombre": "Diego Romero",
+      "goles_corregidos": 3,
+      "goles_sofascore_incidents": 3,
+      "goles_sofascore_lineups": 3,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15456565,
+          "fecha": "2026-02-06",
+          "jornada": 1,
+          "minuto": 38,
+          "tipo": "goal",
+          "partido": "Albion FC vs Liverpool UY"
+        },
+        {
+          "ev_id": 15471981,
+          "fecha": "2026-02-14",
+          "jornada": 2,
+          "minuto": 44,
+          "tipo": "goal",
+          "partido": "Liverpool UY vs Defensor Sporting"
+        },
+        {
+          "ev_id": 16026948,
+          "fecha": "2026-04-25",
+          "jornada": 13,
+          "minuto": 70,
+          "tipo": "goal",
+          "partido": "Juventud de Las Piedras vs Liverpool UY"
+        }
+      ]
+    },
+    {
+      "player_id": 1475465,
+      "nombre": "Mateo Peralta",
+      "goles_corregidos": 3,
+      "goles_sofascore_incidents": 3,
+      "goles_sofascore_lineups": 3,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15635517,
+          "fecha": "2026-03-16",
+          "jornada": 6,
+          "minuto": 74,
+          "tipo": "goal",
+          "partido": "Danubio vs Juventud de Las Piedras"
+        },
+        {
+          "ev_id": 15713285,
+          "fecha": "2026-03-21",
+          "jornada": 7,
+          "minuto": 24,
+          "tipo": "goal",
+          "partido": "Montevideo Wanderers vs Danubio"
+        },
+        {
+          "ev_id": 16026954,
+          "fecha": "2026-04-25",
+          "jornada": 13,
+          "minuto": 56,
+          "tipo": "goal",
+          "partido": "Nacional vs Danubio"
+        }
+      ]
+    },
+    {
+      "player_id": 1117098,
+      "nombre": "Ramiro Peralta",
+      "goles_corregidos": 3,
+      "goles_sofascore_incidents": 3,
+      "goles_sofascore_lineups": 2,
+      "correcciones": [
+        {
+          "tipo": "timing_artifact",
+          "nota": "Partido del 2026-05-09 o 2026-05-10. Stats de lineups no procesadas aún. Incidents es base correcta."
+        }
+      ],
+      "partidos": [
+        {
+          "ev_id": 15635517,
+          "fecha": "2026-03-16",
+          "jornada": 6,
+          "minuto": 58,
+          "tipo": "goal",
+          "partido": "Danubio vs Juventud de Las Piedras"
+        },
+        {
+          "ev_id": 16026948,
+          "fecha": "2026-04-25",
+          "jornada": 13,
+          "minuto": 44,
+          "tipo": "goal",
+          "partido": "Juventud de Las Piedras vs Liverpool UY"
+        },
+        {
+          "ev_id": 16131181,
+          "fecha": "2026-05-10",
+          "jornada": 15,
+          "minuto": 90,
+          "tipo": "goal",
+          "partido": "Defensor Sporting vs Juventud de Las Piedras"
+        }
+      ]
+    },
+    {
+      "player_id": 1651673,
+      "nombre": "Jonás Luna",
+      "goles_corregidos": 3,
+      "goles_sofascore_incidents": 3,
+      "goles_sofascore_lineups": 3,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15471980,
+          "fecha": "2026-02-13",
+          "jornada": 2,
+          "minuto": 14,
+          "tipo": "goal",
+          "partido": "Cerro Largo vs Montevideo Wanderers"
+        },
+        {
+          "ev_id": 15713285,
+          "fecha": "2026-03-21",
+          "jornada": 7,
+          "minuto": 58,
+          "tipo": "goal",
+          "partido": "Montevideo Wanderers vs Danubio"
+        },
+        {
+          "ev_id": 15967912,
+          "fecha": "2026-04-18",
+          "jornada": 12,
+          "minuto": 77,
+          "tipo": "goal",
+          "partido": "Progreso vs Montevideo Wanderers"
+        }
+      ]
+    },
+    {
+      "player_id": 1873237,
+      "nombre": "Nahuel Da Silva",
+      "goles_corregidos": 3,
+      "goles_sofascore_incidents": 3,
+      "goles_sofascore_lineups": 2,
+      "correcciones": [
+        {
+          "tipo": "timing_artifact",
+          "nota": "Partido del 2026-05-09 o 2026-05-10. Stats de lineups no procesadas aún. Incidents es base correcta."
+        }
+      ],
+      "partidos": [
+        {
+          "ev_id": 15523846,
+          "fecha": "2026-02-26",
+          "jornada": 4,
+          "minuto": 10,
+          "tipo": "goal",
+          "partido": "Montevideo City Torque vs Defensor Sporting"
+        },
+        {
+          "ev_id": 16026953,
+          "fecha": "2026-05-03",
+          "jornada": 14,
+          "minuto": 20,
+          "tipo": "goal",
+          "partido": "Racing de Montevideo vs Montevideo City Torque"
+        },
+        {
+          "ev_id": 16131178,
+          "fecha": "2026-05-10",
+          "jornada": 15,
+          "minuto": 45,
+          "tipo": "goal",
+          "partido": "Montevideo City Torque vs Progreso"
+        }
+      ]
+    },
+    {
+      "player_id": 1086964,
+      "nombre": "Esteban Obregón",
+      "goles_corregidos": 3,
+      "goles_sofascore_incidents": 3,
+      "goles_sofascore_lineups": 3,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15471986,
+          "fecha": "2026-02-17",
+          "jornada": 2,
+          "minuto": 65,
+          "tipo": "goal",
+          "partido": "Montevideo City Torque vs Juventud de Las Piedras"
+        },
+        {
+          "ev_id": 15523835,
+          "fecha": "2026-02-22",
+          "jornada": 3,
+          "minuto": 90,
+          "tipo": "goal",
+          "partido": "Montevideo Wanderers vs Montevideo City Torque"
+        },
+        {
+          "ev_id": 15967911,
+          "fecha": "2026-04-19",
+          "jornada": 12,
+          "minuto": 90,
+          "tipo": "goal",
+          "partido": "CA Cerro vs Montevideo City Torque"
+        }
+      ]
+    },
+    {
+      "player_id": 587694,
+      "nombre": "Rubén Bentancourt",
+      "goles_corregidos": 3,
+      "goles_sofascore_incidents": 3,
+      "goles_sofascore_lineups": 3,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15907398,
+          "fecha": "2026-03-31",
+          "jornada": 9,
+          "minuto": 6,
+          "tipo": "goal",
+          "partido": "Progreso vs Liverpool UY"
+        },
+        {
+          "ev_id": 15873066,
+          "fecha": "2026-04-13",
+          "jornada": 11,
+          "minuto": 5,
+          "tipo": "goal",
+          "partido": "Peñarol vs Liverpool UY"
+        },
+        {
+          "ev_id": 15967902,
+          "fecha": "2026-04-19",
+          "jornada": 12,
+          "minuto": 28,
+          "tipo": "goal",
+          "partido": "Liverpool UY vs Nacional"
+        }
+      ]
+    },
+    {
+      "player_id": 1214434,
+      "nombre": "Francisco Bonfiglio",
+      "goles_corregidos": 3,
+      "goles_sofascore_incidents": 3,
+      "goles_sofascore_lineups": 3,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15713276,
+          "fecha": "2026-03-30",
+          "jornada": 9,
+          "minuto": 90,
+          "tipo": "goal",
+          "partido": "Juventud de Las Piedras vs Boston River"
+        },
+        {
+          "ev_id": 15873050,
+          "fecha": "2026-04-03",
+          "jornada": 10,
+          "minuto": 78,
+          "tipo": "goal",
+          "partido": "Boston River vs Montevideo Wanderers"
+        },
+        {
+          "ev_id": 15967908,
+          "fecha": "2026-04-20",
+          "jornada": 12,
+          "minuto": 83,
+          "tipo": "goal",
+          "partido": "Boston River vs Cerro Largo"
+        }
+      ]
+    },
+    {
+      "player_id": 848010,
+      "nombre": "Facundo Barceló",
+      "goles_corregidos": 2,
+      "goles_sofascore_incidents": 2,
+      "goles_sofascore_lineups": 2,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15456565,
+          "fecha": "2026-02-06",
+          "jornada": 1,
+          "minuto": 29,
+          "tipo": "goal",
+          "partido": "Albion FC vs Liverpool UY"
+        },
+        {
+          "ev_id": 16026950,
+          "fecha": "2026-05-02",
+          "jornada": 14,
+          "minuto": 87,
+          "tipo": "goal",
+          "partido": "Liverpool UY vs Danubio"
+        }
+      ]
+    },
+    {
+      "player_id": 358640,
+      "nombre": "Franco Pizzichillo",
+      "goles_corregidos": 2,
+      "goles_sofascore_incidents": 2,
+      "goles_sofascore_lineups": 2,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 16026946,
+          "fecha": "2026-04-24",
+          "jornada": 13,
+          "minuto": 21,
+          "tipo": "goal",
+          "partido": "Montevideo City Torque vs Boston River"
+        },
+        {
+          "ev_id": 16026946,
+          "fecha": "2026-04-24",
+          "jornada": 13,
+          "minuto": 18,
+          "tipo": "goal",
+          "partido": "Montevideo City Torque vs Boston River"
+        }
+      ]
+    },
+    {
+      "player_id": 1018124,
+      "nombre": "Álex Vázquez",
+      "goles_corregidos": 2,
+      "goles_sofascore_incidents": 2,
+      "goles_sofascore_lineups": 2,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15523839,
+          "fecha": "2026-02-21",
+          "jornada": 3,
+          "minuto": 81,
+          "tipo": "goal",
+          "partido": "Racing de Montevideo vs Danubio"
+        },
+        {
+          "ev_id": 15713277,
+          "fecha": "2026-03-29",
+          "jornada": 9,
+          "minuto": 46,
+          "tipo": "goal",
+          "partido": "Peñarol vs Racing de Montevideo"
+        }
+      ]
+    },
+    {
+      "player_id": 1104158,
+      "nombre": "Ignacio Rodríguez",
+      "goles_corregidos": 2,
+      "goles_sofascore_incidents": 2,
+      "goles_sofascore_lineups": 1,
+      "correcciones": [
+        {
+          "tipo": "incidents_sobre_lineups",
+          "jornada": 13,
+          "partido": "Central Español vs CA Cerro",
+          "incidents": 1,
+          "lineups": 0,
+          "nota": "incidents corrige lineups (gol registrado en evento pero no propagado a stats)."
+        }
+      ],
+      "partidos": [
+        {
+          "ev_id": 15713275,
+          "fecha": "2026-03-31",
+          "jornada": 9,
+          "minuto": 40,
+          "tipo": "goal",
+          "partido": "Central Español vs Deportivo Maldonado"
+        },
+        {
+          "ev_id": 16026947,
+          "fecha": "2026-04-26",
+          "jornada": 13,
+          "minuto": 32,
+          "tipo": "goal",
+          "partido": "Central Español vs CA Cerro"
+        }
+      ]
+    },
+    {
+      "player_id": 590114,
+      "nombre": "Guillermo Cotugno",
+      "goles_corregidos": 2,
+      "goles_sofascore_incidents": 2,
+      "goles_sofascore_lineups": 2,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15523831,
+          "fecha": "2026-02-28",
+          "jornada": 4,
+          "minuto": 75,
+          "tipo": "goal",
+          "partido": "Albion FC vs Racing de Montevideo"
+        },
+        {
+          "ev_id": 16026951,
+          "fecha": "2026-04-26",
+          "jornada": 13,
+          "minuto": 42,
+          "tipo": "goal",
+          "partido": "Cerro Largo vs Racing de Montevideo"
+        }
+      ]
+    },
+    {
+      "player_id": 47418,
+      "nombre": "Sebastián Rodríguez",
+      "goles_corregidos": 2,
+      "goles_sofascore_incidents": 2,
+      "goles_sofascore_lineups": 2,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15873063,
+          "fecha": "2026-04-12",
+          "jornada": 11,
+          "minuto": 90,
+          "tipo": "goal",
+          "partido": "Central Español vs Danubio"
+        },
+        {
+          "ev_id": 15873063,
+          "fecha": "2026-04-12",
+          "jornada": 11,
+          "minuto": 4,
+          "tipo": "goal",
+          "partido": "Central Español vs Danubio"
+        }
+      ]
+    },
+    {
+      "player_id": 2117960,
+      "nombre": "Franco Martín Muñoz Rodríguez",
+      "goles_corregidos": 2,
+      "goles_sofascore_incidents": 2,
+      "goles_sofascore_lineups": 2,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15713286,
+          "fecha": "2026-03-21",
+          "jornada": 7,
+          "minuto": 31,
+          "tipo": "goal",
+          "partido": "Montevideo City Torque vs Central Español"
+        },
+        {
+          "ev_id": 15873054,
+          "fecha": "2026-04-03",
+          "jornada": 10,
+          "minuto": 54,
+          "tipo": "goal",
+          "partido": "Nacional vs Central Español"
+        }
+      ]
+    },
+    {
+      "player_id": 579914,
+      "nombre": "Facundo Castro",
+      "goles_corregidos": 2,
+      "goles_sofascore_incidents": 2,
+      "goles_sofascore_lineups": 2,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15456572,
+          "fecha": "2026-02-07",
+          "jornada": 1,
+          "minuto": 3,
+          "tipo": "goal",
+          "partido": "Montevideo Wanderers vs Defensor Sporting"
+        },
+        {
+          "ev_id": 15873059,
+          "fecha": "2026-04-11",
+          "jornada": 11,
+          "minuto": 63,
+          "tipo": "goal",
+          "partido": "Defensor Sporting vs Boston River"
+        }
+      ]
+    },
+    {
+      "player_id": 805241,
+      "nombre": "Martín Rabuñal",
+      "goles_corregidos": 2,
+      "goles_sofascore_incidents": 2,
+      "goles_sofascore_lineups": 2,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15523843,
+          "fecha": "2026-03-01",
+          "jornada": 4,
+          "minuto": 35,
+          "tipo": "goal",
+          "partido": "Liverpool UY vs Cerro Largo"
+        },
+        {
+          "ev_id": 15873066,
+          "fecha": "2026-04-13",
+          "jornada": 11,
+          "minuto": 41,
+          "tipo": "goal",
+          "partido": "Peñarol vs Liverpool UY"
+        }
+      ]
+    },
+    {
+      "player_id": 1190294,
+      "nombre": "Matías Espíndola",
+      "goles_corregidos": 2,
+      "goles_sofascore_incidents": 2,
+      "goles_sofascore_lineups": 2,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15456568,
+          "fecha": "2026-02-08",
+          "jornada": 1,
+          "minuto": 9,
+          "tipo": "goal",
+          "partido": "Racing de Montevideo vs Deportivo Maldonado"
+        },
+        {
+          "ev_id": 15523833,
+          "fecha": "2026-03-02",
+          "jornada": 4,
+          "minuto": 29,
+          "tipo": "goal",
+          "partido": "Deportivo Maldonado vs Juventud de Las Piedras"
+        }
+      ]
+    },
+    {
+      "player_id": 1475132,
+      "nombre": "Leandro Umpierrez",
+      "goles_corregidos": 2,
+      "goles_sofascore_incidents": 2,
+      "goles_sofascore_lineups": 2,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15967899,
+          "fecha": "2026-04-20",
+          "jornada": 12,
+          "minuto": 82,
+          "tipo": "goal",
+          "partido": "Peñarol vs Juventud de Las Piedras"
+        },
+        {
+          "ev_id": 16026957,
+          "fecha": "2026-05-04",
+          "jornada": 14,
+          "minuto": 18,
+          "tipo": "goal",
+          "partido": "Peñarol vs Defensor Sporting"
+        }
+      ]
+    },
+    {
+      "player_id": 1020520,
+      "nombre": "Yair González",
+      "goles_corregidos": 2,
+      "goles_sofascore_incidents": 2,
+      "goles_sofascore_lineups": 2,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15873050,
+          "fecha": "2026-04-03",
+          "jornada": 10,
+          "minuto": 82,
+          "tipo": "goal",
+          "partido": "Boston River vs Montevideo Wanderers"
+        },
+        {
+          "ev_id": 15873050,
+          "fecha": "2026-04-03",
+          "jornada": 10,
+          "minuto": 6,
+          "tipo": "goal",
+          "partido": "Boston River vs Montevideo Wanderers"
+        }
+      ]
+    },
+    {
+      "player_id": 584420,
+      "nombre": "Diego Vera",
+      "goles_corregidos": 2,
+      "goles_sofascore_incidents": 2,
+      "goles_sofascore_lineups": 1,
+      "correcciones": [
+        {
+          "tipo": "timing_artifact",
+          "nota": "Partido del 2026-05-09 o 2026-05-10. Stats de lineups no procesadas aún. Incidents es base correcta."
+        }
+      ],
+      "partidos": [
+        {
+          "ev_id": 16026947,
+          "fecha": "2026-04-26",
+          "jornada": 13,
+          "minuto": 78,
+          "tipo": "goal",
+          "partido": "Central Español vs CA Cerro"
+        },
+        {
+          "ev_id": 16131179,
+          "fecha": "2026-05-09",
+          "jornada": 15,
+          "minuto": 67,
+          "tipo": "goal",
+          "partido": "Central Español vs Racing de Montevideo"
+        }
+      ]
+    },
+    {
+      "player_id": 2441977,
+      "nombre": "Gonzalo Gomez",
+      "goles_corregidos": 2,
+      "goles_sofascore_incidents": 2,
+      "goles_sofascore_lineups": 2,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15471986,
+          "fecha": "2026-02-17",
+          "jornada": 2,
+          "minuto": 79,
+          "tipo": "goal",
+          "partido": "Montevideo City Torque vs Juventud de Las Piedras"
+        },
+        {
+          "ev_id": 15634212,
+          "fecha": "2026-03-08",
+          "jornada": 5,
+          "minuto": 32,
+          "tipo": "goal",
+          "partido": "Juventud de Las Piedras vs Nacional"
+        }
+      ]
+    },
+    {
+      "player_id": 1467136,
+      "nombre": "Renzo Machado",
+      "goles_corregidos": 2,
+      "goles_sofascore_incidents": 2,
+      "goles_sofascore_lineups": 2,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15523843,
+          "fecha": "2026-03-01",
+          "jornada": 4,
+          "minuto": 70,
+          "tipo": "goal",
+          "partido": "Liverpool UY vs Cerro Largo"
+        },
+        {
+          "ev_id": 15634214,
+          "fecha": "2026-03-10",
+          "jornada": 5,
+          "minuto": 44,
+          "tipo": "goal",
+          "partido": "Boston River vs Liverpool UY"
+        }
+      ]
+    },
+    {
+      "player_id": 875275,
+      "nombre": "Facundo Labandeira",
+      "goles_corregidos": 2,
+      "goles_sofascore_incidents": 2,
+      "goles_sofascore_lineups": 2,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15873050,
+          "fecha": "2026-04-03",
+          "jornada": 10,
+          "minuto": 72,
+          "tipo": "goal",
+          "partido": "Boston River vs Montevideo Wanderers"
+        },
+        {
+          "ev_id": 16026955,
+          "fecha": "2026-04-26",
+          "jornada": 13,
+          "minuto": 58,
+          "tipo": "goal",
+          "partido": "Montevideo Wanderers vs Peñarol"
+        }
+      ]
+    },
+    {
+      "player_id": 875293,
+      "nombre": "Agustín Rogel",
+      "goles_corregidos": 2,
+      "goles_sofascore_incidents": 2,
+      "goles_sofascore_lineups": 2,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 16026954,
+          "fecha": "2026-04-25",
+          "jornada": 13,
+          "minuto": 68,
+          "tipo": "goal",
+          "partido": "Nacional vs Danubio"
+        },
+        {
+          "ev_id": 16026952,
+          "fecha": "2026-05-03",
+          "jornada": 14,
+          "minuto": 79,
+          "tipo": "goal",
+          "partido": "Albion FC vs Nacional"
+        }
+      ]
+    },
+    {
+      "player_id": 158621,
+      "nombre": "Maximiliano Olivera",
+      "goles_corregidos": 2,
+      "goles_sofascore_incidents": 2,
+      "goles_sofascore_lineups": 2,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15635507,
+          "fecha": "2026-03-14",
+          "jornada": 6,
+          "minuto": 24,
+          "tipo": "goal",
+          "partido": "Albion FC vs Peñarol"
+        },
+        {
+          "ev_id": 15713277,
+          "fecha": "2026-03-29",
+          "jornada": 9,
+          "minuto": 90,
+          "tipo": "goal",
+          "partido": "Peñarol vs Racing de Montevideo"
+        }
+      ]
+    },
+    {
+      "player_id": 1098847,
+      "nombre": "Santiago Ramírez",
+      "goles_corregidos": 2,
+      "goles_sofascore_incidents": 2,
+      "goles_sofascore_lineups": 2,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15713295,
+          "fecha": "2026-03-24",
+          "jornada": 8,
+          "minuto": 44,
+          "tipo": "goal",
+          "partido": "Deportivo Maldonado vs Montevideo City Torque"
+        },
+        {
+          "ev_id": 15873060,
+          "fecha": "2026-04-11",
+          "jornada": 11,
+          "minuto": 17,
+          "tipo": "goal",
+          "partido": "Deportivo Maldonado vs Nacional"
+        }
+      ]
+    },
+    {
+      "player_id": 976180,
+      "nombre": "Leandro Suhr",
+      "goles_corregidos": 2,
+      "goles_sofascore_incidents": 2,
+      "goles_sofascore_lineups": 2,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15523834,
+          "fecha": "2026-02-27",
+          "jornada": 4,
+          "minuto": 38,
+          "tipo": "goal",
+          "partido": "CA Cerro vs Boston River"
+        },
+        {
+          "ev_id": 15713276,
+          "fecha": "2026-03-30",
+          "jornada": 9,
+          "minuto": 81,
+          "tipo": "goal",
+          "partido": "Juventud de Las Piedras vs Boston River"
+        }
+      ]
+    },
+    {
+      "player_id": 922999,
+      "nombre": "Francisco Ginella",
+      "goles_corregidos": 2,
+      "goles_sofascore_incidents": 2,
+      "goles_sofascore_lineups": 2,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15471982,
+          "fecha": "2026-02-16",
+          "jornada": 2,
+          "minuto": 10,
+          "tipo": "goal",
+          "partido": "Albion FC vs CA Cerro"
+        },
+        {
+          "ev_id": 15873057,
+          "fecha": "2026-04-11",
+          "jornada": 11,
+          "minuto": 18,
+          "tipo": "goal",
+          "partido": "Montevideo City Torque vs Albion FC"
+        }
+      ]
+    },
+    {
+      "player_id": 2217344,
+      "nombre": "Felipe Alvarez",
+      "goles_corregidos": 2,
+      "goles_sofascore_incidents": 2,
+      "goles_sofascore_lineups": 2,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15713288,
+          "fecha": "2026-03-21",
+          "jornada": 7,
+          "minuto": 89,
+          "tipo": "goal",
+          "partido": "Racing de Montevideo vs Liverpool UY"
+        },
+        {
+          "ev_id": 15873061,
+          "fecha": "2026-04-04",
+          "jornada": 10,
+          "minuto": 21,
+          "tipo": "goal",
+          "partido": "Racing de Montevideo vs Juventud de Las Piedras"
+        }
+      ]
+    },
+    {
+      "player_id": 1086925,
+      "nombre": "Alejo Cruz",
+      "goles_corregidos": 2,
+      "goles_sofascore_incidents": 2,
+      "goles_sofascore_lineups": 1,
+      "correcciones": [
+        {
+          "tipo": "timing_artifact",
+          "nota": "Partido del 2026-05-09 o 2026-05-10. Stats de lineups no procesadas aún. Incidents es base correcta."
+        }
+      ],
+      "partidos": [
+        {
+          "ev_id": 15634212,
+          "fecha": "2026-03-08",
+          "jornada": 5,
+          "minuto": 19,
+          "tipo": "goal",
+          "partido": "Juventud de Las Piedras vs Nacional"
+        },
+        {
+          "ev_id": 16131181,
+          "fecha": "2026-05-10",
+          "jornada": 15,
+          "minuto": 13,
+          "tipo": "goal",
+          "partido": "Defensor Sporting vs Juventud de Las Piedras"
+        }
+      ]
+    },
+    {
+      "player_id": 1424852,
+      "nombre": "Lucas Pino",
+      "goles_corregidos": 2,
+      "goles_sofascore_incidents": 2,
+      "goles_sofascore_lineups": 2,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15471984,
+          "fecha": "2026-02-15",
+          "jornada": 2,
+          "minuto": 71,
+          "tipo": "goal",
+          "partido": "Central Español vs Peñarol"
+        },
+        {
+          "ev_id": 16026961,
+          "fecha": "2026-05-03",
+          "jornada": 14,
+          "minuto": 68,
+          "tipo": "goal",
+          "partido": "Boston River vs Central Español"
+        }
+      ]
+    },
+    {
+      "player_id": 1465883,
+      "nombre": "Facundo Muñoa",
+      "goles_corregidos": 2,
+      "goles_sofascore_incidents": 2,
+      "goles_sofascore_lineups": 2,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 16026961,
+          "fecha": "2026-05-03",
+          "jornada": 14,
+          "minuto": 51,
+          "tipo": "goal",
+          "partido": "Boston River vs Central Español"
+        },
+        {
+          "ev_id": 16026961,
+          "fecha": "2026-05-03",
+          "jornada": 14,
+          "minuto": 12,
+          "tipo": "goal",
+          "partido": "Boston River vs Central Español"
+        }
+      ]
+    },
+    {
+      "player_id": 982647,
+      "nombre": "Alexander Machado",
+      "goles_corregidos": 2,
+      "goles_sofascore_incidents": 2,
+      "goles_sofascore_lineups": 2,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15713284,
+          "fecha": "2026-03-21",
+          "jornada": 7,
+          "minuto": 44,
+          "tipo": "goal",
+          "partido": "Defensor Sporting vs Nacional"
+        },
+        {
+          "ev_id": 15873059,
+          "fecha": "2026-04-11",
+          "jornada": 11,
+          "minuto": 35,
+          "tipo": "goal",
+          "partido": "Defensor Sporting vs Boston River"
+        }
+      ]
+    },
+    {
+      "player_id": 1857180,
+      "nombre": "Nahuel López",
+      "goles_corregidos": 2,
+      "goles_sofascore_incidents": 2,
+      "goles_sofascore_lineups": 1,
+      "correcciones": [
+        {
+          "tipo": "timing_artifact",
+          "nota": "Partido del 2026-05-09 o 2026-05-10. Stats de lineups no procesadas aún. Incidents es base correcta."
+        }
+      ],
+      "partidos": [
+        {
+          "ev_id": 15967912,
+          "fecha": "2026-04-18",
+          "jornada": 12,
+          "minuto": 9,
+          "tipo": "goal",
+          "partido": "Progreso vs Montevideo Wanderers"
+        },
+        {
+          "ev_id": 16131178,
+          "fecha": "2026-05-10",
+          "jornada": 15,
+          "minuto": 12,
+          "tipo": "goal",
+          "partido": "Montevideo City Torque vs Progreso"
+        }
+      ]
+    },
+    {
+      "player_id": 1382058,
+      "nombre": "Luciano Cosentino",
+      "goles_corregidos": 2,
+      "goles_sofascore_incidents": 2,
+      "goles_sofascore_lineups": 2,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15456572,
+          "fecha": "2026-02-07",
+          "jornada": 1,
+          "minuto": 42,
+          "tipo": "goal",
+          "partido": "Montevideo Wanderers vs Defensor Sporting"
+        },
+        {
+          "ev_id": 15471980,
+          "fecha": "2026-02-13",
+          "jornada": 2,
+          "minuto": 1,
+          "tipo": "goal",
+          "partido": "Cerro Largo vs Montevideo Wanderers"
+        }
+      ]
+    },
+    {
+      "player_id": 2060111,
+      "nombre": "Yury Oyarzo",
+      "goles_corregidos": 2,
+      "goles_sofascore_incidents": 2,
+      "goles_sofascore_lineups": 2,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15523839,
+          "fecha": "2026-02-21",
+          "jornada": 3,
+          "minuto": 76,
+          "tipo": "goal",
+          "partido": "Racing de Montevideo vs Danubio"
+        },
+        {
+          "ev_id": 15713277,
+          "fecha": "2026-03-29",
+          "jornada": 9,
+          "minuto": 42,
+          "tipo": "goal",
+          "partido": "Peñarol vs Racing de Montevideo"
+        }
+      ]
+    },
+    {
+      "player_id": 255881,
+      "nombre": "Nico López",
+      "goles_corregidos": 2,
+      "goles_sofascore_incidents": 2,
+      "goles_sofascore_lineups": 2,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15873060,
+          "fecha": "2026-04-11",
+          "jornada": 11,
+          "minuto": 40,
+          "tipo": "goal",
+          "partido": "Deportivo Maldonado vs Nacional"
+        },
+        {
+          "ev_id": 15873060,
+          "fecha": "2026-04-11",
+          "jornada": 11,
+          "minuto": 28,
+          "tipo": "goal",
+          "partido": "Deportivo Maldonado vs Nacional"
+        }
+      ]
+    },
+    {
+      "player_id": 974796,
+      "nombre": "Maicol Ferreira",
+      "goles_corregidos": 2,
+      "goles_sofascore_incidents": 2,
+      "goles_sofascore_lineups": 2,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15456566,
+          "fecha": "2026-02-09",
+          "jornada": 1,
+          "minuto": 66,
+          "tipo": "goal",
+          "partido": "CA Cerro vs Danubio"
+        },
+        {
+          "ev_id": 15471987,
+          "fecha": "2026-02-15",
+          "jornada": 2,
+          "minuto": 53,
+          "tipo": "goal",
+          "partido": "Danubio vs Boston River"
+        }
+      ]
+    },
+    {
+      "player_id": 1643434,
+      "nombre": "Matteo Copelotti",
+      "goles_corregidos": 2,
+      "goles_sofascore_incidents": 1,
+      "goles_sofascore_lineups": 1,
+      "correcciones": [
+        {
+          "tipo": "manual",
+          "delta": 1,
+          "nota": "Gol min 40 no registrado en incidents. SofaScore solo registró min 21.",
+          "fuente": "ESPN Uruguay — Progreso vs Liverpool UY (2026-03-31)"
+        }
+      ],
+      "partidos": [
+        {
+          "ev_id": 15907398,
+          "fecha": "2026-03-31",
+          "jornada": 9,
+          "minuto": 21,
+          "tipo": "goal",
+          "partido": "Progreso vs Liverpool UY"
+        },
+        {
+          "ev_id": 15907398,
+          "fecha": "2026-03-31",
+          "jornada": 9,
+          "minuto": 40,
+          "tipo": "goal",
+          "partido": "Progreso vs Liverpool UY"
+        }
+      ]
+    },
+    {
+      "player_id": 868361,
+      "nombre": "Gastón Togni",
+      "goles_corregidos": 1,
+      "goles_sofascore_incidents": 1,
+      "goles_sofascore_lineups": 1,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15456570,
+          "fecha": "2026-02-07",
+          "jornada": 1,
+          "minuto": 33,
+          "tipo": "goal",
+          "partido": "Peñarol vs Montevideo City Torque"
+        }
+      ]
+    },
+    {
+      "player_id": 1902622,
+      "nombre": "Diego Sánchez Richieri",
+      "goles_corregidos": 1,
+      "goles_sofascore_incidents": 1,
+      "goles_sofascore_lineups": 1,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15967912,
+          "fecha": "2026-04-18",
+          "jornada": 12,
+          "minuto": 90,
+          "tipo": "goal",
+          "partido": "Progreso vs Montevideo Wanderers"
+        }
+      ]
+    },
+    {
+      "player_id": 122912,
+      "nombre": "Brahian Alemán",
+      "goles_corregidos": 1,
+      "goles_sofascore_incidents": 1,
+      "goles_sofascore_lineups": 1,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15873056,
+          "fecha": "2026-04-05",
+          "jornada": 10,
+          "minuto": 83,
+          "tipo": "goal",
+          "partido": "CA Cerro vs Defensor Sporting"
+        }
+      ]
+    },
+    {
+      "player_id": 2447396,
+      "nombre": "Diego Daguerre",
+      "goles_corregidos": 1,
+      "goles_sofascore_incidents": 1,
+      "goles_sofascore_lineups": 1,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15635513,
+          "fecha": "2026-03-15",
+          "jornada": 6,
+          "minuto": 82,
+          "tipo": "goal",
+          "partido": "Central Español vs Cerro Largo"
+        }
+      ]
+    },
+    {
+      "player_id": 1177665,
+      "nombre": "Eduardo Agüero",
+      "goles_corregidos": 1,
+      "goles_sofascore_incidents": 1,
+      "goles_sofascore_lineups": 1,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15873053,
+          "fecha": "2026-04-04",
+          "jornada": 10,
+          "minuto": 89,
+          "tipo": "goal",
+          "partido": "Danubio vs Montevideo City Torque"
+        }
+      ]
+    },
+    {
+      "player_id": 2039896,
+      "nombre": "Mateo Izaguirre",
+      "goles_corregidos": 1,
+      "goles_sofascore_incidents": 1,
+      "goles_sofascore_lineups": 1,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15634212,
+          "fecha": "2026-03-08",
+          "jornada": 5,
+          "minuto": 53,
+          "tipo": "goal",
+          "partido": "Juventud de Las Piedras vs Nacional"
+        }
+      ]
+    },
+    {
+      "player_id": 1020052,
+      "nombre": "Lucas Rodríguez",
+      "goles_corregidos": 1,
+      "goles_sofascore_incidents": 1,
+      "goles_sofascore_lineups": 1,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15967900,
+          "fecha": "2026-04-17",
+          "jornada": 12,
+          "minuto": 75,
+          "tipo": "goal",
+          "partido": "Albion FC vs Central Español"
+        }
+      ]
+    },
+    {
+      "player_id": 1108122,
+      "nombre": "Ivo Costantino",
+      "goles_corregidos": 1,
+      "goles_sofascore_incidents": 1,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [
+        {
+          "tipo": "incidents_sobre_lineups",
+          "jornada": 4,
+          "partido": "Danubio vs Progreso",
+          "incidents": 1,
+          "lineups": 0,
+          "nota": "incidents corrige lineups (gol registrado en evento pero no propagado a stats)."
+        }
+      ],
+      "partidos": [
+        {
+          "ev_id": 15523841,
+          "fecha": "2026-02-28",
+          "jornada": 4,
+          "minuto": 90,
+          "tipo": "goal",
+          "partido": "Danubio vs Progreso"
+        }
+      ]
+    },
+    {
+      "player_id": 2175158,
+      "nombre": "Mariano Fernando Aguilera",
+      "goles_corregidos": 1,
+      "goles_sofascore_incidents": 1,
+      "goles_sofascore_lineups": 1,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15967900,
+          "fecha": "2026-04-17",
+          "jornada": 12,
+          "minuto": 43,
+          "tipo": "goal",
+          "partido": "Albion FC vs Central Español"
+        }
+      ]
+    },
+    {
+      "player_id": 166151,
+      "nombre": "Leandro Zazpe",
+      "goles_corregidos": 1,
+      "goles_sofascore_incidents": 1,
+      "goles_sofascore_lineups": 1,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15713285,
+          "fecha": "2026-03-21",
+          "jornada": 7,
+          "minuto": 45,
+          "tipo": "goal",
+          "partido": "Montevideo Wanderers vs Danubio"
+        }
+      ]
+    },
+    {
+      "player_id": 835862,
+      "nombre": "Fabricio Fernandez",
+      "goles_corregidos": 1,
+      "goles_sofascore_incidents": 1,
+      "goles_sofascore_lineups": 1,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15635508,
+          "fecha": "2026-03-14",
+          "jornada": 6,
+          "minuto": 84,
+          "tipo": "goal",
+          "partido": "CA Cerro vs Progreso"
+        }
+      ]
+    },
+    {
+      "player_id": 1020190,
+      "nombre": "Franco Pérez",
+      "goles_corregidos": 1,
+      "goles_sofascore_incidents": 1,
+      "goles_sofascore_lineups": 1,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 16026946,
+          "fecha": "2026-04-24",
+          "jornada": 13,
+          "minuto": 74,
+          "tipo": "goal",
+          "partido": "Montevideo City Torque vs Boston River"
+        }
+      ]
+    },
+    {
+      "player_id": 1409316,
+      "nombre": "Xavier Biscayzacu",
+      "goles_corregidos": 1,
+      "goles_sofascore_incidents": 1,
+      "goles_sofascore_lineups": 1,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15471981,
+          "fecha": "2026-02-14",
+          "jornada": 2,
+          "minuto": 62,
+          "tipo": "goal",
+          "partido": "Liverpool UY vs Defensor Sporting"
+        }
+      ]
+    },
+    {
+      "player_id": 1048868,
+      "nombre": "Alexander González",
+      "goles_corregidos": 1,
+      "goles_sofascore_incidents": 1,
+      "goles_sofascore_lineups": 1,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15873050,
+          "fecha": "2026-04-03",
+          "jornada": 10,
+          "minuto": 53,
+          "tipo": "goal",
+          "partido": "Boston River vs Montevideo Wanderers"
+        }
+      ]
+    },
+    {
+      "player_id": 1190221,
+      "nombre": "Bruno Hernandez",
+      "goles_corregidos": 1,
+      "goles_sofascore_incidents": 1,
+      "goles_sofascore_lineups": 1,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15635513,
+          "fecha": "2026-03-15",
+          "jornada": 6,
+          "minuto": 86,
+          "tipo": "goal",
+          "partido": "Central Español vs Cerro Largo"
+        }
+      ]
+    },
+    {
+      "player_id": 2117968,
+      "nombre": "Facundo Sosa",
+      "goles_corregidos": 1,
+      "goles_sofascore_incidents": 1,
+      "goles_sofascore_lineups": 1,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15873063,
+          "fecha": "2026-04-12",
+          "jornada": 11,
+          "minuto": 65,
+          "tipo": "goal",
+          "partido": "Central Español vs Danubio"
+        }
+      ]
+    },
+    {
+      "player_id": 2009425,
+      "nombre": "Nicolas Azambuja",
+      "goles_corregidos": 1,
+      "goles_sofascore_incidents": 1,
+      "goles_sofascore_lineups": 1,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15635517,
+          "fecha": "2026-03-16",
+          "jornada": 6,
+          "minuto": 25,
+          "tipo": "goal",
+          "partido": "Danubio vs Juventud de Las Piedras"
+        }
+      ]
+    },
+    {
+      "player_id": 805239,
+      "nombre": "Gonzalo Carneiro",
+      "goles_corregidos": 1,
+      "goles_sofascore_incidents": 1,
+      "goles_sofascore_lineups": 1,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15713281,
+          "fecha": "2026-03-28",
+          "jornada": 9,
+          "minuto": 41,
+          "tipo": "goal",
+          "partido": "Montevideo City Torque vs Nacional"
+        }
+      ]
+    },
+    {
+      "player_id": 1468836,
+      "nombre": "Fernando Camarda",
+      "goles_corregidos": 1,
+      "goles_sofascore_incidents": 1,
+      "goles_sofascore_lineups": 1,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15456569,
+          "fecha": "2026-02-07",
+          "jornada": 1,
+          "minuto": 61,
+          "tipo": "goal",
+          "partido": "Progreso vs Central Español"
+        }
+      ]
+    },
+    {
+      "player_id": 135590,
+      "nombre": "Gastón Ramírez",
+      "goles_corregidos": 1,
+      "goles_sofascore_incidents": 1,
+      "goles_sofascore_lineups": 1,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15456567,
+          "fecha": "2026-02-08",
+          "jornada": 1,
+          "minuto": 81,
+          "tipo": "goal",
+          "partido": "Boston River vs Nacional"
+        }
+      ]
+    },
+    {
+      "player_id": 1116607,
+      "nombre": "Guillermo López",
+      "goles_corregidos": 1,
+      "goles_sofascore_incidents": 1,
+      "goles_sofascore_lineups": 1,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15873060,
+          "fecha": "2026-04-11",
+          "jornada": 11,
+          "minuto": 80,
+          "tipo": "goal",
+          "partido": "Deportivo Maldonado vs Nacional"
+        }
+      ]
+    },
+    {
+      "player_id": 2001418,
+      "nombre": "Lucas Duré",
+      "goles_corregidos": 1,
+      "goles_sofascore_incidents": 1,
+      "goles_sofascore_lineups": 1,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15456570,
+          "fecha": "2026-02-07",
+          "jornada": 1,
+          "minuto": 54,
+          "tipo": "goal",
+          "partido": "Peñarol vs Montevideo City Torque"
+        }
+      ]
+    },
+    {
+      "player_id": 1462822,
+      "nombre": "Guillermo Gandolfo",
+      "goles_corregidos": 1,
+      "goles_sofascore_incidents": 1,
+      "goles_sofascore_lineups": 1,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15471984,
+          "fecha": "2026-02-15",
+          "jornada": 2,
+          "minuto": 57,
+          "tipo": "goal",
+          "partido": "Central Español vs Peñarol"
+        }
+      ]
+    },
+    {
+      "player_id": 1067570,
+      "nombre": "Fredy Martínez",
+      "goles_corregidos": 1,
+      "goles_sofascore_incidents": 1,
+      "goles_sofascore_lineups": 1,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15713290,
+          "fecha": "2026-03-22",
+          "jornada": 7,
+          "minuto": 49,
+          "tipo": "goal",
+          "partido": "Progreso vs Boston River"
+        }
+      ]
+    },
+    {
+      "player_id": 987703,
+      "nombre": "Martín Ferreira",
+      "goles_corregidos": 1,
+      "goles_sofascore_incidents": 1,
+      "goles_sofascore_lineups": 1,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 16026953,
+          "fecha": "2026-05-03",
+          "jornada": 14,
+          "minuto": 16,
+          "tipo": "goal",
+          "partido": "Racing de Montevideo vs Montevideo City Torque"
+        }
+      ]
+    },
+    {
+      "player_id": 1131065,
+      "nombre": "Bautista Tomatis",
+      "goles_corregidos": 1,
+      "goles_sofascore_incidents": 1,
+      "goles_sofascore_lineups": 1,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15634209,
+          "fecha": "2026-03-08",
+          "jornada": 5,
+          "minuto": 90,
+          "tipo": "goal",
+          "partido": "Racing de Montevideo vs CA Cerro"
+        }
+      ]
+    },
+    {
+      "player_id": 1161796,
+      "nombre": "Nicolás Fuica",
+      "goles_corregidos": 1,
+      "goles_sofascore_incidents": 1,
+      "goles_sofascore_lineups": 1,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 16026958,
+          "fecha": "2026-05-02",
+          "jornada": 14,
+          "minuto": 76,
+          "tipo": "goal",
+          "partido": "CA Cerro vs Deportivo Maldonado"
+        }
+      ]
+    },
+    {
+      "player_id": 846411,
+      "nombre": "Leonardo Fernández",
+      "goles_corregidos": 1,
+      "goles_sofascore_incidents": 1,
+      "goles_sofascore_lineups": 1,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15523837,
+          "fecha": "2026-02-22",
+          "jornada": 3,
+          "minuto": 79,
+          "tipo": "goal",
+          "partido": "Peñarol vs Deportivo Maldonado"
+        }
+      ]
+    },
+    {
+      "player_id": 846419,
+      "nombre": "Nicolás Fernández",
+      "goles_corregidos": 1,
+      "goles_sofascore_incidents": 1,
+      "goles_sofascore_lineups": 1,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15713292,
+          "fecha": "2026-03-21",
+          "jornada": 7,
+          "minuto": 90,
+          "tipo": "goal",
+          "partido": "Peñarol vs CA Cerro"
+        }
+      ]
+    },
+    {
+      "player_id": 889504,
+      "nombre": "Matías Fracchia",
+      "goles_corregidos": 1,
+      "goles_sofascore_incidents": 1,
+      "goles_sofascore_lineups": 1,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15713283,
+          "fecha": "2026-03-30",
+          "jornada": 9,
+          "minuto": 39,
+          "tipo": "goal",
+          "partido": "Cerro Largo vs Danubio"
+        }
+      ]
+    },
+    {
+      "player_id": 846545,
+      "nombre": "Rodrigo Rivero",
+      "goles_corregidos": 1,
+      "goles_sofascore_incidents": 1,
+      "goles_sofascore_lineups": 1,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15523844,
+          "fecha": "2026-02-28",
+          "jornada": 4,
+          "minuto": 71,
+          "tipo": "goal",
+          "partido": "Central Español vs Montevideo Wanderers"
+        }
+      ]
+    },
+    {
+      "player_id": 1471202,
+      "nombre": "Nicolás Wunsch",
+      "goles_corregidos": 1,
+      "goles_sofascore_incidents": 1,
+      "goles_sofascore_lineups": 1,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 16026956,
+          "fecha": "2026-04-27",
+          "jornada": 13,
+          "minuto": 90,
+          "tipo": "goal",
+          "partido": "Defensor Sporting vs Progreso"
+        }
+      ]
+    },
+    {
+      "player_id": 936685,
+      "nombre": "Alan Garcia",
+      "goles_corregidos": 1,
+      "goles_sofascore_incidents": 1,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [
+        {
+          "tipo": "incidents_sobre_lineups",
+          "jornada": 3,
+          "partido": "Montevideo Wanderers vs M. City",
+          "incidents": 1,
+          "lineups": 0,
+          "nota": "incidents corrige lineups (gol registrado en evento pero no propagado a stats)."
+        }
+      ],
+      "partidos": [
+        {
+          "ev_id": 15523835,
+          "fecha": "2026-02-22",
+          "jornada": 3,
+          "minuto": 28,
+          "tipo": "goal",
+          "partido": "Montevideo Wanderers vs Montevideo City Torque"
+        }
+      ]
+    },
+    {
+      "player_id": 162579,
+      "nombre": "Gonzalo Freitas",
+      "goles_corregidos": 1,
+      "goles_sofascore_incidents": 1,
+      "goles_sofascore_lineups": 1,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15873065,
+          "fecha": "2026-04-12",
+          "jornada": 11,
+          "minuto": 19,
+          "tipo": "goal",
+          "partido": "Montevideo Wanderers vs Racing de Montevideo"
+        }
+      ]
+    },
+    {
+      "player_id": 1112860,
+      "nombre": "Santiago Franca",
+      "goles_corregidos": 1,
+      "goles_sofascore_incidents": 1,
+      "goles_sofascore_lineups": 1,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15713287,
+          "fecha": "2026-03-20",
+          "jornada": 7,
+          "minuto": 89,
+          "tipo": "goal",
+          "partido": "Cerro Largo vs Deportivo Maldonado"
+        }
+      ]
+    },
+    {
+      "player_id": 1112881,
+      "nombre": "Luciano Fernández",
+      "goles_corregidos": 1,
+      "goles_sofascore_incidents": 1,
+      "goles_sofascore_lineups": 1,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15523838,
+          "fecha": "2026-02-22",
+          "jornada": 3,
+          "minuto": 56,
+          "tipo": "goal",
+          "partido": "Juventud de Las Piedras vs Central Español"
+        }
+      ]
+    },
+    {
+      "player_id": 1022776,
+      "nombre": "Mateo Levato",
+      "goles_corregidos": 1,
+      "goles_sofascore_incidents": 1,
+      "goles_sofascore_lineups": 1,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15713274,
+          "fecha": "2026-03-28",
+          "jornada": 9,
+          "minuto": 42,
+          "tipo": "goal",
+          "partido": "Montevideo Wanderers vs CA Cerro"
+        }
+      ]
+    },
+    {
+      "player_id": 1086288,
+      "nombre": "Patricio Pernicone",
+      "goles_corregidos": 1,
+      "goles_sofascore_incidents": 1,
+      "goles_sofascore_lineups": 1,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 16026960,
+          "fecha": "2026-05-02",
+          "jornada": 14,
+          "minuto": 59,
+          "tipo": "goal",
+          "partido": "Juventud de Las Piedras vs Montevideo Wanderers"
+        }
+      ]
+    },
+    {
+      "player_id": 37792,
+      "nombre": "Jonathan Urretaviscaya",
+      "goles_corregidos": 1,
+      "goles_sofascore_incidents": 1,
+      "goles_sofascore_lineups": 1,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15713274,
+          "fecha": "2026-03-28",
+          "jornada": 9,
+          "minuto": 47,
+          "tipo": "goal",
+          "partido": "Montevideo Wanderers vs CA Cerro"
+        }
+      ]
+    },
+    {
+      "player_id": 846771,
+      "nombre": "Facundo Kidd",
+      "goles_corregidos": 1,
+      "goles_sofascore_incidents": 1,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [
+        {
+          "tipo": "incidents_sobre_lineups",
+          "jornada": 4,
+          "partido": "Danubio vs Progreso",
+          "incidents": 1,
+          "lineups": 0,
+          "nota": "incidents corrige lineups (gol registrado en evento pero no propagado a stats)."
+        }
+      ],
+      "partidos": [
+        {
+          "ev_id": 15523841,
+          "fecha": "2026-02-28",
+          "jornada": 4,
+          "minuto": 15,
+          "tipo": "goal",
+          "partido": "Danubio vs Progreso"
+        }
+      ]
+    },
+    {
+      "player_id": 990143,
+      "nombre": "Cristian Barros",
+      "goles_corregidos": 1,
+      "goles_sofascore_incidents": 1,
+      "goles_sofascore_lineups": 1,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15713292,
+          "fecha": "2026-03-21",
+          "jornada": 7,
+          "minuto": 45,
+          "tipo": "goal",
+          "partido": "Peñarol vs CA Cerro"
+        }
+      ]
+    },
+    {
+      "player_id": 877509,
+      "nombre": "Santiago Viera",
+      "goles_corregidos": 1,
+      "goles_sofascore_incidents": 1,
+      "goles_sofascore_lineups": 1,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15523841,
+          "fecha": "2026-02-28",
+          "jornada": 4,
+          "minuto": 36,
+          "tipo": "goal",
+          "partido": "Danubio vs Progreso"
+        }
+      ]
+    },
+    {
+      "player_id": 975815,
+      "nombre": "Joaquín Fernández",
+      "goles_corregidos": 1,
+      "goles_sofascore_incidents": 1,
+      "goles_sofascore_lineups": 1,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15456568,
+          "fecha": "2026-02-08",
+          "jornada": 1,
+          "minuto": 88,
+          "tipo": "goal",
+          "partido": "Racing de Montevideo vs Deportivo Maldonado"
+        }
+      ]
+    },
+    {
+      "player_id": 975819,
+      "nombre": "Marcos Montiel",
+      "goles_corregidos": 1,
+      "goles_sofascore_incidents": 1,
+      "goles_sofascore_lineups": 1,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15456569,
+          "fecha": "2026-02-07",
+          "jornada": 1,
+          "minuto": 18,
+          "tipo": "goal",
+          "partido": "Progreso vs Central Español"
+        }
+      ]
+    },
+    {
+      "player_id": 1514460,
+      "nombre": "Alejandro Severo",
+      "goles_corregidos": 1,
+      "goles_sofascore_incidents": 1,
+      "goles_sofascore_lineups": 1,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15523832,
+          "fecha": "2026-02-20",
+          "jornada": 3,
+          "minuto": 76,
+          "tipo": "goal",
+          "partido": "CA Cerro vs Liverpool UY"
+        }
+      ]
+    },
+    {
+      "player_id": 1065961,
+      "nombre": "Felipe Cairus",
+      "goles_corregidos": 1,
+      "goles_sofascore_incidents": 1,
+      "goles_sofascore_lineups": 1,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15635516,
+          "fecha": "2026-03-14",
+          "jornada": 6,
+          "minuto": 68,
+          "tipo": "goal",
+          "partido": "Boston River vs Racing de Montevideo"
+        }
+      ]
+    },
+    {
+      "player_id": 1065969,
+      "nombre": "Máximo Alonso",
+      "goles_corregidos": 1,
+      "goles_sofascore_incidents": 1,
+      "goles_sofascore_lineups": 1,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 16026947,
+          "fecha": "2026-04-26",
+          "jornada": 13,
+          "minuto": 31,
+          "tipo": "goal",
+          "partido": "Central Español vs CA Cerro"
+        }
+      ]
+    },
+    {
+      "player_id": 1512462,
+      "nombre": "Facundo de León",
+      "goles_corregidos": 1,
+      "goles_sofascore_incidents": 1,
+      "goles_sofascore_lineups": 1,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15713280,
+          "fecha": "2026-03-26",
+          "jornada": 8,
+          "minuto": 52,
+          "tipo": "goal",
+          "partido": "Racing de Montevideo vs Progreso"
+        }
+      ]
+    },
+    {
+      "player_id": 1489956,
+      "nombre": "Ramiro Matias Degregorio",
+      "goles_corregidos": 1,
+      "goles_sofascore_incidents": 1,
+      "goles_sofascore_lineups": 1,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 16026950,
+          "fecha": "2026-05-02",
+          "jornada": 14,
+          "minuto": 70,
+          "tipo": "goal",
+          "partido": "Liverpool UY vs Danubio"
+        }
+      ]
+    },
+    {
+      "player_id": 924737,
+      "nombre": "Facundo Silvera",
+      "goles_corregidos": 1,
+      "goles_sofascore_incidents": 1,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [
+        {
+          "tipo": "timing_artifact",
+          "nota": "Partido del 2026-05-09 o 2026-05-10. Stats de lineups no procesadas aún. Incidents es base correcta."
+        }
+      ],
+      "partidos": [
+        {
+          "ev_id": 16131178,
+          "fecha": "2026-05-10",
+          "jornada": 15,
+          "minuto": 35,
+          "tipo": "goal",
+          "partido": "Montevideo City Torque vs Progreso"
+        }
+      ]
+    },
+    {
+      "player_id": 1199265,
+      "nombre": "Franco Suárez",
+      "goles_corregidos": 1,
+      "goles_sofascore_incidents": 1,
+      "goles_sofascore_lineups": 1,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15523831,
+          "fecha": "2026-02-28",
+          "jornada": 4,
+          "minuto": 2,
+          "tipo": "goal",
+          "partido": "Albion FC vs Racing de Montevideo"
+        }
+      ]
+    },
+    {
+      "player_id": 1846454,
+      "nombre": "Mauro Martín",
+      "goles_corregidos": 1,
+      "goles_sofascore_incidents": 1,
+      "goles_sofascore_lineups": 1,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15634213,
+          "fecha": "2026-03-07",
+          "jornada": 5,
+          "minuto": 78,
+          "tipo": "goal",
+          "partido": "Progreso vs Albion FC"
+        }
+      ]
+    },
+    {
+      "player_id": 924860,
+      "nombre": "Franco Romero",
+      "goles_corregidos": 1,
+      "goles_sofascore_incidents": 1,
+      "goles_sofascore_lineups": 1,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15523835,
+          "fecha": "2026-02-22",
+          "jornada": 3,
+          "minuto": 54,
+          "tipo": "goal",
+          "partido": "Montevideo Wanderers vs Montevideo City Torque"
+        }
+      ]
+    },
+    {
+      "player_id": 814280,
+      "nombre": "Hernán Toledo",
+      "goles_corregidos": 1,
+      "goles_sofascore_incidents": 1,
+      "goles_sofascore_lineups": 1,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15523831,
+          "fecha": "2026-02-28",
+          "jornada": 4,
+          "minuto": 37,
+          "tipo": "goal",
+          "partido": "Albion FC vs Racing de Montevideo"
+        }
+      ]
+    },
+    {
+      "player_id": 1121489,
+      "nombre": "Maximiliano Silvera",
+      "goles_corregidos": 1,
+      "goles_sofascore_incidents": 1,
+      "goles_sofascore_lineups": 1,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15635506,
+          "fecha": "2026-03-13",
+          "jornada": 6,
+          "minuto": 45,
+          "tipo": "goal",
+          "partido": "Nacional vs Montevideo Wanderers"
+        }
+      ]
+    },
+    {
+      "player_id": 1121490,
+      "nombre": "Esteban Da Silva",
+      "goles_corregidos": 1,
+      "goles_sofascore_incidents": 1,
+      "goles_sofascore_lineups": 1,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15523831,
+          "fecha": "2026-02-28",
+          "jornada": 4,
+          "minuto": 67,
+          "tipo": "goal",
+          "partido": "Albion FC vs Racing de Montevideo"
+        }
+      ]
+    },
+    {
+      "player_id": 980190,
+      "nombre": "Luciano Boggio",
+      "goles_corregidos": 1,
+      "goles_sofascore_incidents": 1,
+      "goles_sofascore_lineups": 1,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15713284,
+          "fecha": "2026-03-21",
+          "jornada": 7,
+          "minuto": 9,
+          "tipo": "goal",
+          "partido": "Defensor Sporting vs Nacional"
+        }
+      ]
+    },
+    {
+      "player_id": 976102,
+      "nombre": "José Alberti",
+      "goles_corregidos": 1,
+      "goles_sofascore_incidents": 1,
+      "goles_sofascore_lineups": 1,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 16026960,
+          "fecha": "2026-05-02",
+          "jornada": 14,
+          "minuto": 42,
+          "tipo": "goal",
+          "partido": "Juventud de Las Piedras vs Montevideo Wanderers"
+        }
+      ]
+    },
+    {
+      "player_id": 976105,
+      "nombre": "Joaquín Zeballos",
+      "goles_corregidos": 1,
+      "goles_sofascore_incidents": 1,
+      "goles_sofascore_lineups": 1,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 16131055,
+          "fecha": "2026-05-08",
+          "jornada": 15,
+          "minuto": 45,
+          "tipo": "goal",
+          "partido": "Montevideo Wanderers vs Liverpool UY"
+        }
+      ]
+    },
+    {
+      "player_id": 924943,
+      "nombre": "Nicolás Sosa",
+      "goles_corregidos": 1,
+      "goles_sofascore_incidents": 1,
+      "goles_sofascore_lineups": 1,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15873065,
+          "fecha": "2026-04-12",
+          "jornada": 11,
+          "minuto": 90,
+          "tipo": "goal",
+          "partido": "Montevideo Wanderers vs Racing de Montevideo"
+        }
+      ]
+    },
+    {
+      "player_id": 1066256,
+      "nombre": "Eduardo Darias",
+      "goles_corregidos": 1,
+      "goles_sofascore_incidents": 1,
+      "goles_sofascore_lineups": 1,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15713273,
+          "fecha": "2026-03-25",
+          "jornada": 8,
+          "minuto": 7,
+          "tipo": "goal",
+          "partido": "Boston River vs Peñarol"
+        }
+      ]
+    },
+    {
+      "player_id": 2082089,
+      "nombre": "Pablo Alcoba",
+      "goles_corregidos": 1,
+      "goles_sofascore_incidents": 1,
+      "goles_sofascore_lineups": 1,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15967900,
+          "fecha": "2026-04-17",
+          "jornada": 12,
+          "minuto": 78,
+          "tipo": "goal",
+          "partido": "Albion FC vs Central Español"
+        }
+      ]
+    },
+    {
+      "player_id": 1885488,
+      "nombre": "Hernan Carroso",
+      "goles_corregidos": 1,
+      "goles_sofascore_incidents": 1,
+      "goles_sofascore_lineups": 1,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15907398,
+          "fecha": "2026-03-31",
+          "jornada": 9,
+          "minuto": 76,
+          "tipo": "goal",
+          "partido": "Progreso vs Liverpool UY"
+        }
+      ]
+    },
+    {
+      "player_id": 1201519,
+      "nombre": "Juan Martin Ginzo",
+      "goles_corregidos": 1,
+      "goles_sofascore_incidents": 1,
+      "goles_sofascore_lineups": 1,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15873052,
+          "fecha": "2026-04-05",
+          "jornada": 10,
+          "minuto": 56,
+          "tipo": "goal",
+          "partido": "Liverpool UY vs Deportivo Maldonado"
+        }
+      ]
+    },
+    {
+      "player_id": 925076,
+      "nombre": "Renzo Rabino",
+      "goles_corregidos": 1,
+      "goles_sofascore_incidents": 1,
+      "goles_sofascore_lineups": 1,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15967899,
+          "fecha": "2026-04-20",
+          "jornada": 12,
+          "minuto": 45,
+          "tipo": "goal",
+          "partido": "Peñarol vs Juventud de Las Piedras"
+        }
+      ]
+    },
+    {
+      "player_id": 48547,
+      "nombre": "Abel Hernández",
+      "goles_corregidos": 1,
+      "goles_sofascore_incidents": 1,
+      "goles_sofascore_lineups": 1,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15967899,
+          "fecha": "2026-04-20",
+          "jornada": 12,
+          "minuto": 53,
+          "tipo": "goal",
+          "partido": "Peñarol vs Juventud de Las Piedras"
+        }
+      ]
+    },
+    {
+      "player_id": 839085,
+      "nombre": "Julián Millán",
+      "goles_corregidos": 1,
+      "goles_sofascore_incidents": 1,
+      "goles_sofascore_lineups": 1,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15523836,
+          "fecha": "2026-02-21",
+          "jornada": 3,
+          "minuto": 45,
+          "tipo": "goal",
+          "partido": "Progreso vs Nacional"
+        }
+      ]
+    },
+    {
+      "player_id": 1938871,
+      "nombre": "Sebastian Tormo",
+      "goles_corregidos": 1,
+      "goles_sofascore_incidents": 1,
+      "goles_sofascore_lineups": 1,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15456568,
+          "fecha": "2026-02-08",
+          "jornada": 1,
+          "minuto": 90,
+          "tipo": "goal",
+          "partido": "Racing de Montevideo vs Deportivo Maldonado"
+        }
+      ]
+    },
+    {
+      "player_id": 1086935,
+      "nombre": "Bautista Kociubinski",
+      "goles_corregidos": 1,
+      "goles_sofascore_incidents": 1,
+      "goles_sofascore_lineups": 1,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15713286,
+          "fecha": "2026-03-21",
+          "jornada": 7,
+          "minuto": 55,
+          "tipo": "goal",
+          "partido": "Montevideo City Torque vs Central Español"
+        }
+      ]
+    },
+    {
+      "player_id": 2059740,
+      "nombre": "Nicolás Agustín Paz",
+      "goles_corregidos": 1,
+      "goles_sofascore_incidents": 1,
+      "goles_sofascore_lineups": 1,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15907398,
+          "fecha": "2026-03-31",
+          "jornada": 9,
+          "minuto": 41,
+          "tipo": "goal",
+          "partido": "Progreso vs Liverpool UY"
+        }
+      ]
+    },
+    {
+      "player_id": 1385948,
+      "nombre": "Santiago Costa",
+      "goles_corregidos": 1,
+      "goles_sofascore_incidents": 1,
+      "goles_sofascore_lineups": 1,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15967900,
+          "fecha": "2026-04-17",
+          "jornada": 12,
+          "minuto": 49,
+          "tipo": "goal",
+          "partido": "Albion FC vs Central Español"
+        }
+      ]
+    },
+    {
+      "player_id": 1639908,
+      "nombre": "Ariel Lima",
+      "goles_corregidos": 1,
+      "goles_sofascore_incidents": 1,
+      "goles_sofascore_lineups": 1,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15713272,
+          "fecha": "2026-03-25",
+          "jornada": 8,
+          "minuto": 74,
+          "tipo": "goal",
+          "partido": "CA Cerro vs Juventud de Las Piedras"
+        }
+      ]
+    },
+    {
+      "player_id": 1125887,
+      "nombre": "Juan Boselli",
+      "goles_corregidos": 1,
+      "goles_sofascore_incidents": 1,
+      "goles_sofascore_lineups": 1,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15471986,
+          "fecha": "2026-02-17",
+          "jornada": 2,
+          "minuto": 31,
+          "tipo": "goal",
+          "partido": "Montevideo City Torque vs Juventud de Las Piedras"
+        }
+      ]
+    },
+    {
+      "player_id": 925198,
+      "nombre": "Gonzalo Montes",
+      "goles_corregidos": 1,
+      "goles_sofascore_incidents": 1,
+      "goles_sofascore_lineups": 1,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 16026946,
+          "fecha": "2026-04-24",
+          "jornada": 13,
+          "minuto": 64,
+          "tipo": "goal",
+          "partido": "Montevideo City Torque vs Boston River"
+        }
+      ]
+    },
+    {
+      "player_id": 925291,
+      "nombre": "José Álvarez",
+      "goles_corregidos": 1,
+      "goles_sofascore_incidents": 1,
+      "goles_sofascore_lineups": 1,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15967900,
+          "fecha": "2026-04-17",
+          "jornada": 12,
+          "minuto": 56,
+          "tipo": "goal",
+          "partido": "Albion FC vs Central Español"
+        }
+      ]
+    },
+    {
+      "player_id": 1511060,
+      "nombre": "Agustín Vera",
+      "goles_corregidos": 1,
+      "goles_sofascore_incidents": 1,
+      "goles_sofascore_lineups": 1,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15967900,
+          "fecha": "2026-04-17",
+          "jornada": 12,
+          "minuto": 65,
+          "tipo": "goal",
+          "partido": "Albion FC vs Central Español"
+        }
+      ]
+    },
+    {
+      "player_id": 1187501,
+      "nombre": "Juan De los Santos",
+      "goles_corregidos": 1,
+      "goles_sofascore_incidents": 1,
+      "goles_sofascore_lineups": 1,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 16026952,
+          "fecha": "2026-05-03",
+          "jornada": 14,
+          "minuto": 31,
+          "tipo": "goal",
+          "partido": "Albion FC vs Nacional"
+        }
+      ]
+    },
+    {
+      "player_id": 1482417,
+      "nombre": "Rodrigo Dudok",
+      "goles_corregidos": 1,
+      "goles_sofascore_incidents": 1,
+      "goles_sofascore_lineups": 1,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15713280,
+          "fecha": "2026-03-26",
+          "jornada": 8,
+          "minuto": 17,
+          "tipo": "goal",
+          "partido": "Racing de Montevideo vs Progreso"
+        }
+      ]
+    },
+    {
+      "player_id": 1099489,
+      "nombre": "Nicolas Fernandez",
+      "goles_corregidos": 1,
+      "goles_sofascore_incidents": 1,
+      "goles_sofascore_lineups": 1,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15634213,
+          "fecha": "2026-03-07",
+          "jornada": 5,
+          "minuto": 9,
+          "tipo": "goal",
+          "partido": "Progreso vs Albion FC"
+        }
+      ]
+    },
+    {
+      "player_id": 2209506,
+      "nombre": "Ivan Manzur",
+      "goles_corregidos": 1,
+      "goles_sofascore_incidents": 1,
+      "goles_sofascore_lineups": 1,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15523839,
+          "fecha": "2026-02-21",
+          "jornada": 3,
+          "minuto": 78,
+          "tipo": "goal",
+          "partido": "Racing de Montevideo vs Danubio"
+        }
+      ]
+    },
+    {
+      "player_id": 896749,
+      "nombre": "Nicolás Olivera",
+      "goles_corregidos": 1,
+      "goles_sofascore_incidents": 1,
+      "goles_sofascore_lineups": 1,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15713274,
+          "fecha": "2026-03-28",
+          "jornada": 9,
+          "minuto": 73,
+          "tipo": "goal",
+          "partido": "Montevideo Wanderers vs CA Cerro"
+        }
+      ]
+    },
+    {
+      "player_id": 1091378,
+      "nombre": "Ramiro Brazionis",
+      "goles_corregidos": 1,
+      "goles_sofascore_incidents": 1,
+      "goles_sofascore_lineups": 1,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15471985,
+          "fecha": "2026-02-14",
+          "jornada": 2,
+          "minuto": 5,
+          "tipo": "goal",
+          "partido": "Nacional vs Racing de Montevideo"
+        }
+      ]
+    },
+    {
+      "player_id": 55133,
+      "nombre": "Gary Kagelmacher",
+      "goles_corregidos": 1,
+      "goles_sofascore_incidents": 1,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [
+        {
+          "tipo": "incidents_sobre_lineups",
+          "jornada": 1,
+          "partido": "Peñarol vs Montevideo City Torque",
+          "incidents": 1,
+          "lineups": 0,
+          "nota": "incidents corrige lineups (gol registrado en evento pero no propagado a stats)."
+        }
+      ],
+      "partidos": [
+        {
+          "ev_id": 15456570,
+          "fecha": "2026-02-07",
+          "jornada": 1,
+          "minuto": 8,
+          "tipo": "goal",
+          "partido": "Peñarol vs Montevideo City Torque"
+        }
+      ]
+    },
+    {
+      "player_id": 1464176,
+      "nombre": "Lucas Agazzi",
+      "goles_corregidos": 1,
+      "goles_sofascore_incidents": 1,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [
+        {
+          "tipo": "timing_artifact",
+          "nota": "Partido del 2026-05-09 o 2026-05-10. Stats de lineups no procesadas aún. Incidents es base correcta."
+        }
+      ],
+      "partidos": [
+        {
+          "ev_id": 16131181,
+          "fecha": "2026-05-10",
+          "jornada": 15,
+          "minuto": 49,
+          "tipo": "goal",
+          "partido": "Defensor Sporting vs Juventud de Las Piedras"
+        }
+      ]
+    },
+    {
+      "player_id": 931721,
+      "nombre": "Lucas Correa",
+      "goles_corregidos": 1,
+      "goles_sofascore_incidents": 1,
+      "goles_sofascore_lineups": 1,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15873055,
+          "fecha": "2026-04-10",
+          "jornada": 11,
+          "minuto": 11,
+          "tipo": "goal",
+          "partido": "Cerro Largo vs CA Cerro"
+        }
+      ]
+    },
+    {
+      "player_id": 1083276,
+      "nombre": "Sebastián Cáceres",
+      "goles_corregidos": 1,
+      "goles_sofascore_incidents": 1,
+      "goles_sofascore_lineups": 1,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 16026946,
+          "fecha": "2026-04-24",
+          "jornada": 13,
+          "minuto": 75,
+          "tipo": "goal",
+          "partido": "Montevideo City Torque vs Boston River"
+        }
+      ]
+    },
+    {
+      "player_id": 1466260,
+      "nombre": "Sebastián da Silva",
+      "goles_corregidos": 1,
+      "goles_sofascore_incidents": 1,
+      "goles_sofascore_lineups": 1,
+      "correcciones": [],
+      "partidos": [
+        {
+          "ev_id": 15456568,
+          "fecha": "2026-02-08",
+          "jornada": 1,
+          "minuto": 25,
+          "tipo": "goal",
+          "partido": "Racing de Montevideo vs Deportivo Maldonado"
+        }
+      ]
+    },
+    {
+      "player_id": 2140162,
+      "nombre": "Juan Ignacio Garcia",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 993293,
+      "nombre": "Ignacio Suárez",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 2035734,
+      "nombre": "Lautaro Navarro",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1837083,
+      "nombre": "German Barbas",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1837086,
+      "nombre": "Lorenzo Couture",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1837088,
+      "nombre": "Luis Díaz",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1468449,
+      "nombre": "Emiliano Marquez",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 587824,
+      "nombre": "Juan Ramos",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1099837,
+      "nombre": "Sebastian Guerrero",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1177672,
+      "nombre": "Julián Pou",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1177674,
+      "nombre": "Lucas Acosta",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 874570,
+      "nombre": "Gustavo Viera",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 874574,
+      "nombre": "Facundo Parada",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 874581,
+      "nombre": "Facundo Milán",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 2041941,
+      "nombre": "Pável Núñez",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 2039899,
+      "nombre": "David Morosini",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1409116,
+      "nombre": "Nicolás Campos",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 2039901,
+      "nombre": "Nicolas Ruotola",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 2039903,
+      "nombre": "Federico Varese",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 581728,
+      "nombre": "Iván Rossi",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 2039906,
+      "nombre": "Bruno Larregui",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 311396,
+      "nombre": "Gastón Pereiro",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 2039910,
+      "nombre": "Alan Torterolo",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 340071,
+      "nombre": "Adrián Colombino",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 311402,
+      "nombre": "Washington Aguerre",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 36982,
+      "nombre": "Damián Suárez",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 2500737,
+      "nombre": "Federico Pedrouzo",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1091719,
+      "nombre": "Emiliano Sosa",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 893067,
+      "nombre": "Marco Saravia",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1020044,
+      "nombre": "Facundo Tealde",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 129165,
+      "nombre": "Sebastián Sosa",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1020043,
+      "nombre": "Sebastián González",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 923803,
+      "nombre": "Christian Oliva",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 2142364,
+      "nombre": "Federico García",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1640617,
+      "nombre": "Santiago Benítez",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 344245,
+      "nombre": "Hernán Menosse",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1472709,
+      "nombre": "Ernesto Aramburu",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1177801,
+      "nombre": "Rafael Haller",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1837272,
+      "nombre": "Jorge Castillo",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 2087135,
+      "nombre": "Kevin Rodríguez",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1808618,
+      "nombre": "Alfonso de Luca",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1007854,
+      "nombre": "Agustín Buffa",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 2040047,
+      "nombre": "Agustin Perez",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 2040048,
+      "nombre": "Agustin Pinheiro",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 962802,
+      "nombre": "Tomás Moschión",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 2042095,
+      "nombre": "Juan Bosca Fraquelli",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 2040051,
+      "nombre": "Gary Silva",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1470710,
+      "nombre": "Mateo Argüello",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 2552072,
+      "nombre": "Valentín Barrios",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 155924,
+      "nombre": "Emiliano Velázquez",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1190168,
+      "nombre": "Pablo González",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1980705,
+      "nombre": "Ezequiel Burdin",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1020192,
+      "nombre": "Nicolás Rossi",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1214756,
+      "nombre": "Federico Sellecchia",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1980707,
+      "nombre": "Roman Gutierrez",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1048869,
+      "nombre": "Lucas Núñez",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 155952,
+      "nombre": "Gastón Silva",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 2079028,
+      "nombre": "Lucca Loprete Araújo",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 831803,
+      "nombre": "Hernán Petrik",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1018172,
+      "nombre": "Fernando Souza",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 155966,
+      "nombre": "Leonardo Pais",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1190213,
+      "nombre": "Francisco Bregante",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1190214,
+      "nombre": "Lucas Wasilewsky",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 2117958,
+      "nombre": "Ignacio Andrés Gonella Hernández",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 47443,
+      "nombre": "Sebastián Coates",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 2306395,
+      "nombre": "Felipe Barrenechea Acuña",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1870177,
+      "nombre": "Juan Ignacio Rodriguez Sevilla",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 2292071,
+      "nombre": "Benjamin Azambuja Vargas",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 246121,
+      "nombre": "Matías de los Santos",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 246129,
+      "nombre": "Fabricio Formiliano",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1952119,
+      "nombre": "Jairo Amaro",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 805240,
+      "nombre": "Brian Lozano",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 2484608,
+      "nombre": "Nahuel Munoz",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 2441606,
+      "nombre": "Joaquin Silva",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 246153,
+      "nombre": "Jose Varela",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 795018,
+      "nombre": "Bruno Mendes",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 246155,
+      "nombre": "Franco Torgnascioli",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 913809,
+      "nombre": "Agustín Requena",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 2222486,
+      "nombre": "Brandon Alvarez",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1485208,
+      "nombre": "Emiliano Jourdan",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 246167,
+      "nombre": "Leandro Sosa",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 924073,
+      "nombre": "Camilo Cándido",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1116590,
+      "nombre": "Baltasar Barcia",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1485231,
+      "nombre": "Juan Bianchi",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1116594,
+      "nombre": "Mathias Bernatene",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1485243,
+      "nombre": "Mateo Rivero",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1485251,
+      "nombre": "Nicolás Ramos",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1485258,
+      "nombre": "Tiago Rijo",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1128907,
+      "nombre": "Rodrigo Chagas",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1128906,
+      "nombre": "Renzo Sánchez",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1116625,
+      "nombre": "Facundo Machado",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 805330,
+      "nombre": "Juan Pintado",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1116630,
+      "nombre": "Franco Risso",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 2044382,
+      "nombre": "Santiago Strasorier",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 846307,
+      "nombre": "Adriano Freitas",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 2216426,
+      "nombre": "Lautaro Vazquez",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1116675,
+      "nombre": "Santiago Milano",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 2001417,
+      "nombre": "José Tarán",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 2001419,
+      "nombre": "Lautaro Gandulfo",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1411597,
+      "nombre": "Sebastián Jaume",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1901078,
+      "nombre": "Agustín Codagnone",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 2464291,
+      "nombre": "Mauricio  Rodríguez",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 221738,
+      "nombre": "Sebastián Cristóforo",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 2232879,
+      "nombre": "Juan Pirota",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1485373,
+      "nombre": "Axel Atum",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1475133,
+      "nombre": "Pablo Nongoy",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1475134,
+      "nombre": "Tomas Olase",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 846424,
+      "nombre": "Emiliano Mozzone",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 2058846,
+      "nombre": "Felipe Cabrera",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1526367,
+      "nombre": "Luis Femia",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 905832,
+      "nombre": "Borys Barone",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1804906,
+      "nombre": "Alexis Piegas",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 944751,
+      "nombre": "Diego Abella",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1843826,
+      "nombre": "Facundo Martinez",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1049207,
+      "nombre": "Rodrigo Muníz",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 942711,
+      "nombre": "César Nunes",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1845882,
+      "nombre": "Thiago Espinosa",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1049222,
+      "nombre": "Matías Ocampo",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 932490,
+      "nombre": "Emiliano Ancheta",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 895648,
+      "nombre": "Facundo Perdomo",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1471137,
+      "nombre": "Agustín Pereira",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 2552490,
+      "nombre": "Douglas Damián García Ferreira",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 2558637,
+      "nombre": "Valentin Barrios Figueredo",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 2464431,
+      "nombre": "Facundo Maximiliano Alvez",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 2239159,
+      "nombre": "Rodolfo Nahuel Sena Aguirre",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1018568,
+      "nombre": "Fabrizio Correa",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 846544,
+      "nombre": "Emanuel Gularte",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 846552,
+      "nombre": "Kevin Dawson",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 2050778,
+      "nombre": "Diego Simões",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1907425,
+      "nombre": "Facundo Yocco",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1907434,
+      "nombre": "Juber Pereira",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1907437,
+      "nombre": "Facundo Sosa",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1102602,
+      "nombre": "Franco González",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 2040586,
+      "nombre": "Gonzalo de Mello",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 2163471,
+      "nombre": "Manuel Alexander Idiarte Álvez",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 2583314,
+      "nombre": "Facundo Manuel Álvez Videla",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1903383,
+      "nombre": "Mateo Monserrat",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1112865,
+      "nombre": "Octavio Perdomo",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 2489123,
+      "nombre": "Andrés Muñoz",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1112871,
+      "nombre": "Matías Mir",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1112872,
+      "nombre": "Matías González",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1086249,
+      "nombre": "Martín Jourdan",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1112875,
+      "nombre": "Mateo Urrutia",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1112895,
+      "nombre": "Ignacio Gonella",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1112897,
+      "nombre": "Jairo O'Neil",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 992067,
+      "nombre": "Facundo Butti",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1086278,
+      "nombre": "Tomás Cavanagh",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1022801,
+      "nombre": "Mauricio Vera",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1125203,
+      "nombre": "Mateo Cantera",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 869208,
+      "nombre": "Lucas Hernández",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1117018,
+      "nombre": "Diego Segovia",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 385886,
+      "nombre": "Gastón Rodríguez",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1475426,
+      "nombre": "José Rio",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1964904,
+      "nombre": "Mateo Acosta",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1141612,
+      "nombre": "Mariano Nichele",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1913717,
+      "nombre": "Felipe Ortiz",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1201015,
+      "nombre": "Juan Pablo Goicochea",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 385916,
+      "nombre": "Mauricio Lemos",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1948546,
+      "nombre": "Pablo Suarez",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1475463,
+      "nombre": "Kevin Martínez",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1117067,
+      "nombre": "Kevin Silva",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 158611,
+      "nombre": "Guillermo De los Santos",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 2040724,
+      "nombre": "Alexander Velazquez",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 2208666,
+      "nombre": "Martin Farias",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 846754,
+      "nombre": "Juan Ignacio González",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1141671,
+      "nombre": "Emanuel Carlos",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1801132,
+      "nombre": "Facundo González",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 846765,
+      "nombre": "Alejandro Villoldo",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 158635,
+      "nombre": "Camilo Mayada",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 586672,
+      "nombre": "Lucas Rodríguez",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1123249,
+      "nombre": "Agustín Cayetano",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1643441,
+      "nombre": "Bruno Arady",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 973747,
+      "nombre": "Marco Mancebo",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1510328,
+      "nombre": "Erico Cuello Gutiérrez",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1510330,
+      "nombre": "Mauricio Amaro",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 2169799,
+      "nombre": "Emiliano Figueroa",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 975818,
+      "nombre": "Lucas Machado",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1127372,
+      "nombre": "Agustín Amado",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 332773,
+      "nombre": "Andrés Mehring",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1633258,
+      "nombre": "Isaac Méndez",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1102827,
+      "nombre": "Santiago Laquidaín",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 2206703,
+      "nombre": "Ignacio Melian",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 2206710,
+      "nombre": "Nicolás Scotti",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1065975,
+      "nombre": "Valentín Rodríguez",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 2051079,
+      "nombre": "Kevin Sotto",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1512465,
+      "nombre": "Santiago Marcel",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1512475,
+      "nombre": "Sander Navarro",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 877598,
+      "nombre": "Jonathan Dos Santos",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1872958,
+      "nombre": "Franco Marino",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1023053,
+      "nombre": "Lucas Ferreira",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 33879,
+      "nombre": "Mauro Goicoechea",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1469541,
+      "nombre": "Alexander Hernandez",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 924778,
+      "nombre": "Mario García",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 2032808,
+      "nombre": "Luka Andrade",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 924846,
+      "nombre": "Sebastian Cardozo",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1647795,
+      "nombre": "Germán Barrios",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1199283,
+      "nombre": "Nahuel Herrera",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 924854,
+      "nombre": "Pablo Lacoste",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 928951,
+      "nombre": "Kevin Lewis",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 924855,
+      "nombre": "Jesús Trindade",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 928952,
+      "nombre": "Erik de Los Santos",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 2176192,
+      "nombre": "Ignacio Mujica",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 2057408,
+      "nombre": "Facundo Balatti",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 2288841,
+      "nombre": "Valentino Wurth",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 2456777,
+      "nombre": "Thiago Fernandez",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 924890,
+      "nombre": "Martín González",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 249067,
+      "nombre": "Tobías Figueroa",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 976110,
+      "nombre": "Gianfranco Trasante",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 873716,
+      "nombre": "Ayrton Cougo",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1201404,
+      "nombre": "Leonel Roldán",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 2082057,
+      "nombre": "Brian Barboza",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 2082065,
+      "nombre": "Federico Bais",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 922898,
+      "nombre": "Pedro Gonzalez",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 2266387,
+      "nombre": "Gonzalo Reyna",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1199380,
+      "nombre": "Bruno Centeno",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 2082075,
+      "nombre": "Francisco Sorondo",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 2082079,
+      "nombre": "Ignacio Fernandez",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 2082081,
+      "nombre": "Julio Daguer",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 328997,
+      "nombre": "Rodolfo",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 976166,
+      "nombre": "Juan Acosta",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 976167,
+      "nombre": "Sebastián Assis",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 2082085,
+      "nombre": "Luciano Gonzalez",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 937257,
+      "nombre": "Ezequiel Busquets",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 2082094,
+      "nombre": "Rodrigo Martínez",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 2489648,
+      "nombre": "Andy López",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 924981,
+      "nombre": "Santiago Paiva",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 976182,
+      "nombre": "Agustín Miranda",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 976185,
+      "nombre": "Nahuel Furtado",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 925014,
+      "nombre": "Facundo Batista",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 869723,
+      "nombre": "Gianni Rodríguez",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1217891,
+      "nombre": "Bruno Morales",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 595300,
+      "nombre": "Franco Escobar",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 243045,
+      "nombre": "Martín Campaña",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1654118,
+      "nombre": "Gonzalo Silva",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1969509,
+      "nombre": "Axel Mendez",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1199466,
+      "nombre": "Andrés Madruga",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1135985,
+      "nombre": "Nahuel Soria",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1899890,
+      "nombre": "Mateo Caballero",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1185150,
+      "nombre": "Andrés Romero",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 925059,
+      "nombre": "Federico Puente",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 925060,
+      "nombre": "Nahuel Roldán",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 914823,
+      "nombre": "Andrés Romero",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 34193,
+      "nombre": "Nicolás Lodeiro",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 247195,
+      "nombre": "Nicolás Rodríguez",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 144800,
+      "nombre": "Luis Mejía",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1654180,
+      "nombre": "Iván Gonzalo Valenzuela",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 2170279,
+      "nombre": "Juan Antonio Pérez",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1799599,
+      "nombre": "Diego Capdevila",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 249271,
+      "nombre": "Emmanuel Más",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 789945,
+      "nombre": "Federico Andueza",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 789946,
+      "nombre": "Federico Barrandeguy Martino",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1113533,
+      "nombre": "Joaquin Pereyra",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 796096,
+      "nombre": "Eric Remedi",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 2450880,
+      "nombre": "Marcelo Hornos",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 2465239,
+      "nombre": "Thiago Correa",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1015257,
+      "nombre": "Santiago Cartagena",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1469913,
+      "nombre": "Augusto Cambón",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1639897,
+      "nombre": "Diego Piriz",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1639909,
+      "nombre": "Francisco Couture",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1639911,
+      "nombre": "Matias Kusmanis",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 789996,
+      "nombre": "Nicolás Queiroz",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1218034,
+      "nombre": "Samuel Rodriguez",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 845306,
+      "nombre": "Nicolas Bertochi",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 2450939,
+      "nombre": "Ramiro Lecchini",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1617403,
+      "nombre": "Axel Montaña",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1924603,
+      "nombre": "Facundo Perez",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 957952,
+      "nombre": "Agustín Álvarez",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1150471,
+      "nombre": "Maximiliano González",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 925195,
+      "nombre": "Ignacio Lemmo",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 28186,
+      "nombre": "Martín Cáceres",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 2113058,
+      "nombre": "Mateo Rinaldi",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1482282,
+      "nombre": "Sebastián Sánchez",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1938988,
+      "nombre": "Paolo Calione",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1383981,
+      "nombre": "Darlin Mencía",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 2463279,
+      "nombre": "Jean Lopez",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1865267,
+      "nombre": "German Peralta Dominguez",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1087028,
+      "nombre": "Juan Cruz Guasone",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 2463285,
+      "nombre": "Santino Bruschi Díaz",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 2510392,
+      "nombre": "Federico López",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 2063946,
+      "nombre": "Juan Ignacio Dupont",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 2338387,
+      "nombre": "Alan Zamurio",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1017450,
+      "nombre": "Nicolás Garayalde",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 980586,
+      "nombre": "Marcelo Perez",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1654381,
+      "nombre": "Geanfranco Rodríguez",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1654379,
+      "nombre": "Daniel Martinez",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 2492021,
+      "nombre": "Roman Clematte",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 2111107,
+      "nombre": "Federico Bonilla Gonzalez",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1468045,
+      "nombre": "Agustín Alaniz",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1482382,
+      "nombre": "Ignacio Alegre",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1482386,
+      "nombre": "Luciano González",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1468051,
+      "nombre": "Juan Rivero",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 2309790,
+      "nombre": "Lisandro Bajú",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 2031265,
+      "nombre": "Agustín Dos Santos",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 2031266,
+      "nombre": "Rodrigo Mederos",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1609386,
+      "nombre": "Federico Dafonte",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1482414,
+      "nombre": "Stiven Muhlethaler",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1019570,
+      "nombre": "Juan Quintana",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 165563,
+      "nombre": "Danilo Lerda",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 2082512,
+      "nombre": "Juan Sorondo",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 2209505,
+      "nombre": "Diego Cheuquepal",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 2442987,
+      "nombre": "Nicolás Pérez",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1468141,
+      "nombre": "Ezequiel Olivera",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1210130,
+      "nombre": "Elías de León",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 333589,
+      "nombre": "Diego Laxalt",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1468187,
+      "nombre": "Enzo Castillo",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1468195,
+      "nombre": "Logan Ponce",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1468198,
+      "nombre": "Marcos Paolini ",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 886568,
+      "nombre": "Juan Moreno",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1836840,
+      "nombre": "Exequiel Mereles",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1627948,
+      "nombre": "Diogo Guzmán",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 931631,
+      "nombre": "Pablo Siles",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1091376,
+      "nombre": "Juan Millán",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 2477874,
+      "nombre": "Brian Quinteros",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1177400,
+      "nombre": "Francisco Barrios",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1177405,
+      "nombre": "Lucas De los Santos",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 40767,
+      "nombre": "Yonatan Irrazábal",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1214272,
+      "nombre": "Lukas González",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 2488153,
+      "nombre": "Roque Ricca",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 2477924,
+      "nombre": "Bautista del Castillo",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1464178,
+      "nombre": "Juan Manuel Jorge",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1605509,
+      "nombre": "Nicolás Medina",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 161675,
+      "nombre": "Sebastián Britos",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1808269,
+      "nombre": "Axel Frugone",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1808271,
+      "nombre": "Tomás Viera",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1466258,
+      "nombre": "Maximiliano Añasco",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1392533,
+      "nombre": "Kevin Amaro",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1466265,
+      "nombre": "Francisco Martinicorena",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 833435,
+      "nombre": "Diego Zabala",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 2580383,
+      "nombre": "Samuel Rodríguez",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 2054052,
+      "nombre": "Pablo Lago",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1652647,
+      "nombre": "Bruno Simone",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1103784,
+      "nombre": "Gabriel Chocobar",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1001392,
+      "nombre": "Axel Prado",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1808308,
+      "nombre": "Santiago Guzman",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1808310,
+      "nombre": "Esteban Crucci",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1808312,
+      "nombre": "Bautista Pereira",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 974793,
+      "nombre": "Briam Acosta",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1183697,
+      "nombre": "Bruno Antúnez",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 2072536,
+      "nombre": "Agustín Aguirre",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 1173481,
+      "nombre": "Adrián Vila",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    },
+    {
+      "player_id": 581618,
+      "nombre": "Emanuel Cecchini",
+      "goles_corregidos": 0,
+      "goles_sofascore_incidents": 0,
+      "goles_sofascore_lineups": 0,
+      "correcciones": [],
+      "partidos": []
+    }
+  ]
+}

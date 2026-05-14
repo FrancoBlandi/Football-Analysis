@@ -1,0 +1,197 @@
+{
+  "nota": "Rating corregido estimado via regresión Ridge sobre stats del Apertura 2026.",
+  "modelos_r2": {
+    "TODOS": 0.428,
+    "GK": 0.619,
+    "DEF": 0.345,
+    "MID": 0.439,
+    "FWD": 0.592
+  },
+  "correcciones": [
+    {
+      "event_id": 15456570,
+      "fecha": "2026-02-07",
+      "jornada": 1,
+      "partido": "Peñarol vs Montevideo City Torque",
+      "player_id": 55133,
+      "nombre": "Gary Kagelmacher",
+      "goles_faltantes": 1,
+      "grupo": "DEF",
+      "rating_orig": 6.1,
+      "rating_corr": 7.77,
+      "delta_rating": 1.67,
+      "stats_orig": {
+        "goals": 0,
+        "assists": 0,
+        "minutesPlayed": 90
+      },
+      "stats_corr": {
+        "goals": 1,
+        "assists": 0,
+        "minutesPlayed": 90
+      }
+    },
+    {
+      "event_id": 15523835,
+      "fecha": "2026-02-22",
+      "jornada": 3,
+      "partido": "Montevideo Wanderers vs Montevideo City Torque",
+      "player_id": 936685,
+      "nombre": "Alan Garcia",
+      "goles_faltantes": 1,
+      "grupo": "DEF",
+      "rating_orig": 5.9,
+      "rating_corr": 7.4,
+      "delta_rating": 1.5,
+      "stats_orig": {
+        "goals": 0,
+        "assists": 0,
+        "minutesPlayed": 61
+      },
+      "stats_corr": {
+        "goals": 1,
+        "assists": 0,
+        "minutesPlayed": 61
+      }
+    },
+    {
+      "event_id": 15523841,
+      "fecha": "2026-02-28",
+      "jornada": 4,
+      "partido": "Danubio vs Progreso",
+      "player_id": 1108122,
+      "nombre": "Ivo Costantino",
+      "goles_faltantes": 1,
+      "grupo": "FWD",
+      "rating_orig": 6.2,
+      "rating_corr": 7.06,
+      "delta_rating": 0.86,
+      "stats_orig": {
+        "goals": 0,
+        "assists": 0,
+        "minutesPlayed": 27
+      },
+      "stats_corr": {
+        "goals": 1,
+        "assists": 0,
+        "minutesPlayed": 27
+      }
+    },
+    {
+      "event_id": 15523841,
+      "fecha": "2026-02-28",
+      "jornada": 4,
+      "partido": "Danubio vs Progreso",
+      "player_id": 846771,
+      "nombre": "Facundo Kidd",
+      "goles_faltantes": 1,
+      "grupo": "DEF",
+      "rating_orig": 6.3,
+      "rating_corr": 7.68,
+      "delta_rating": 1.38,
+      "stats_orig": {
+        "goals": 0,
+        "assists": 0,
+        "minutesPlayed": 90
+      },
+      "stats_corr": {
+        "goals": 1,
+        "assists": 0,
+        "minutesPlayed": 90
+      }
+    },
+    {
+      "event_id": 15873061,
+      "fecha": "2026-04-04",
+      "jornada": 10,
+      "partido": "Racing de Montevideo vs Juventud de Las Piedras",
+      "player_id": 1472602,
+      "nombre": "Fernando Mimbacas",
+      "goles_faltantes": 1,
+      "grupo": "FWD",
+      "rating_orig": 7.3,
+      "rating_corr": 8.02,
+      "delta_rating": 0.72,
+      "stats_orig": {
+        "goals": 1,
+        "assists": 0,
+        "minutesPlayed": 90
+      },
+      "stats_corr": {
+        "goals": 2,
+        "assists": 0,
+        "minutesPlayed": 90
+      }
+    },
+    {
+      "event_id": 15873058,
+      "fecha": "2026-04-05",
+      "jornada": 10,
+      "partido": "Albion FC vs Cerro Largo",
+      "player_id": 1110287,
+      "nombre": "Álvaro López",
+      "goles_faltantes": 1,
+      "grupo": "FWD",
+      "rating_orig": 7.9,
+      "rating_corr": 8.79,
+      "delta_rating": 0.89,
+      "stats_orig": {
+        "goals": 2,
+        "assists": 0,
+        "minutesPlayed": 90
+      },
+      "stats_corr": {
+        "goals": 3,
+        "assists": 0,
+        "minutesPlayed": 90
+      }
+    },
+    {
+      "event_id": 16026947,
+      "fecha": "2026-04-26",
+      "jornada": 13,
+      "partido": "Central Español vs CA Cerro",
+      "player_id": 1104158,
+      "nombre": "Ignacio Rodríguez",
+      "goles_faltantes": 1,
+      "grupo": "DEF",
+      "rating_orig": 6.1,
+      "rating_corr": 7.32,
+      "delta_rating": 1.22,
+      "stats_orig": {
+        "goals": 0,
+        "assists": 0,
+        "minutesPlayed": 90
+      },
+      "stats_corr": {
+        "goals": 1,
+        "assists": 0,
+        "minutesPlayed": 90
+      }
+    },
+    {
+      "event_id": 15907398,
+      "fecha": "2026-03-31",
+      "jornada": 9,
+      "partido": "Progreso vs Liverpool UY",
+      "player_id": 1643434,
+      "nombre": "Matteo Copelotti",
+      "goles_faltantes": 1,
+      "fuente": "manual (ESPN Uruguay)",
+      "grupo": "FWD",
+      "rating_orig": 6.9,
+      "rating_corr": 7.95,
+      "delta_rating": 1.05,
+      "stats_orig": {
+        "goals": 1,
+        "assists": 0,
+        "minutesPlayed": 74
+      },
+      "stats_corr": {
+        "goals": 2,
+        "assists": 0,
+        "minutesPlayed": 74
+      }
+    }
+  ]
+}

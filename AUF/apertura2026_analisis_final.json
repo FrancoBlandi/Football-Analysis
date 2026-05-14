@@ -1,0 +1,149 @@
+{
+  "torneo": "Liga AUF Uruguaya — Torneo Apertura 2026",
+  "fecha_extraccion": "2026-05-10",
+  "nota": "Autogoles excluidos del conteo de incidents. Única corrección manual aplicada: gol de Copelotti min 40 atribuido erróneamente a Paz (J9). Verificado por ESPN Uruguay.",
+  "cross_check": {
+    "goles_subestimados": [
+      {
+        "player_id": 247219,
+        "nombre": "Raúl Andrés Tarragona Lemos",
+        "incidents": 1,
+        "lineups": 0,
+        "diferencia": 1,
+        "direccion": "subestimado",
+        "event_id": 16131179,
+        "jornada": 15,
+        "partido": "Central Español vs Racing de Montevideo"
+      },
+      {
+        "player_id": 584420,
+        "nombre": "Diego Vera",
+        "incidents": 1,
+        "lineups": 0,
+        "diferencia": 1,
+        "direccion": "subestimado",
+        "event_id": 16131179,
+        "jornada": 15,
+        "partido": "Central Español vs Racing de Montevideo"
+      },
+      {
+        "player_id": 1464176,
+        "nombre": "Lucas Agazzi",
+        "incidents": 1,
+        "lineups": 0,
+        "diferencia": 1,
+        "direccion": "subestimado",
+        "event_id": 16131181,
+        "jornada": 15,
+        "partido": "Defensor Sporting vs Juventud de Las Piedras"
+      },
+      {
+        "player_id": 1117098,
+        "nombre": "Ramiro Peralta",
+        "incidents": 1,
+        "lineups": 0,
+        "diferencia": 1,
+        "direccion": "subestimado",
+        "event_id": 16131181,
+        "jornada": 15,
+        "partido": "Defensor Sporting vs Juventud de Las Piedras"
+      },
+      {
+        "player_id": 1086925,
+        "nombre": "Alejo Cruz",
+        "incidents": 1,
+        "lineups": 0,
+        "diferencia": 1,
+        "direccion": "subestimado",
+        "event_id": 16131181,
+        "jornada": 15,
+        "partido": "Defensor Sporting vs Juventud de Las Piedras"
+      },
+      {
+        "player_id": 924737,
+        "nombre": "Facundo Silvera",
+        "incidents": 1,
+        "lineups": 0,
+        "diferencia": 1,
+        "direccion": "subestimado",
+        "event_id": 16131178,
+        "jornada": 15,
+        "partido": "Montevideo City Torque vs Progreso"
+      },
+      {
+        "player_id": 1857180,
+        "nombre": "Nahuel López",
+        "incidents": 1,
+        "lineups": 0,
+        "diferencia": 1,
+        "direccion": "subestimado",
+        "event_id": 16131178,
+        "jornada": 15,
+        "partido": "Montevideo City Torque vs Progreso"
+      },
+      {
+        "player_id": 1873237,
+        "nombre": "Nahuel Da Silva",
+        "incidents": 1,
+        "lineups": 0,
+        "diferencia": 1,
+        "direccion": "subestimado",
+        "event_id": 16131178,
+        "jornada": 15,
+        "partido": "Montevideo City Torque vs Progreso"
+      }
+    ],
+    "goles_sobreestimados": [],
+    "asist_subestimadas": [],
+    "asist_sobreestimadas": [
+      {
+        "player_id": 846411,
+        "nombre": "Leonardo Fernández",
+        "incidents": 0,
+        "lineups": 1,
+        "diferencia": -1,
+        "direccion": "sobreestimado",
+        "event_id": 15635507,
+        "jornada": 6,
+        "partido": "Albion FC vs Peñarol"
+      }
+    ]
+  },
+  "modelos_r2": {
+    "TODOS": 0.463,
+    "GK": 0.619,
+    "DEF": 0.352,
+    "MID": 0.504,
+    "FWD": 0.615
+  },
+  "correcciones_verificadas": [
+    {
+      "player_id": 1643434,
+      "nombre": "Matteo Copelotti",
+      "event_id": 15907398,
+      "jornada": 9,
+      "partido": "Progreso vs Liverpool UY",
+      "campo": "goals",
+      "delta": 1,
+      "fuente": "ESPN Uruguay — gol min 40 (SofaScore lo atribuyó a Nicolás Paz)",
+      "grupo": "FWD",
+      "rating_orig": 6.9,
+      "rating_corr": 7.95,
+      "delta_rating": 1.05
+    },
+    {
+      "player_id": 2059740,
+      "nombre": "Nicolás Agustín Paz",
+      "event_id": 15907398,
+      "jornada": 9,
+      "partido": "Progreso vs Liverpool UY",
+      "campo": "goals",
+      "delta": -1,
+      "fuente": "ESPN Uruguay — gol del min ~41 era de Copelotti, no de Paz",
+      "grupo": "MID",
+      "rating_orig": 7.2,
+      "rating_corr": 6.42,
+      "delta_rating": -0.78
+    }
+  ]
+}

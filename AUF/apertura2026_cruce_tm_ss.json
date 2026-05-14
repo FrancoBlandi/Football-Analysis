@@ -1,0 +1,202 @@
+{
+  "fecha": "2026-05-10",
+  "total_partidos_cruzados": 152,
+  "discrepancias_j1_j14": [
+    {
+      "jornada": 3,
+      "partido": "CA Peñarol vs Club Deportivo Maldonado",
+      "resultado": "2:1",
+      "lado": "away",
+      "en_tm_no_en_ss": [
+        "Juan Ramos"
+      ],
+      "en_ss_no_en_tm": [
+        "Renato César"
+      ],
+      "tm_goles": [
+        "Juan Ramos"
+      ],
+      "ss_goles": [
+        "Renato César"
+      ]
+    },
+    {
+      "jornada": 5,
+      "partido": "CA Progreso vs Albion FC",
+      "resultado": "2:2",
+      "lado": "away",
+      "en_tm_no_en_ss": [
+        "Francisco Ginella"
+      ],
+      "en_ss_no_en_tm": [],
+      "tm_goles": [
+        "Francisco Ginella",
+        "Álvaro López"
+      ],
+      "ss_goles": [
+        "Álvaro López"
+      ]
+    },
+    {
+      "jornada": 9,
+      "partido": "Cerro Largo FC vs Danubio FC",
+      "resultado": "2:0",
+      "lado": "home",
+      "en_tm_no_en_ss": [
+        "Santiago Marcel"
+      ],
+      "en_ss_no_en_tm": [
+        "Matías Fracchia"
+      ],
+      "tm_goles": [
+        "Santiago Marcel",
+        "Tiziano Correa"
+      ],
+      "ss_goles": [
+        "Tiziano Correa",
+        "Matías Fracchia"
+      ]
+    },
+    {
+      "jornada": 9,
+      "partido": "CA Progreso vs Liverpool FC Montevideo",
+      "resultado": "3:3",
+      "lado": "home",
+      "en_tm_no_en_ss": [],
+      "en_ss_no_en_tm": [
+        "Nicolás Agustín Paz"
+      ],
+      "tm_goles": [
+        "Matteo Copelotti",
+        "Matteo Copelotti",
+        "Hernán Carroso"
+      ],
+      "ss_goles": [
+        "Hernan Carroso",
+        "Nicolás Agustín Paz",
+        "Matteo Copelotti"
+      ]
+    },
+    {
+      "jornada": 11,
+      "partido": "Central Español FC vs Danubio FC",
+      "resultado": "2:2",
+      "lado": "away",
+      "en_tm_no_en_ss": [],
+      "en_ss_no_en_tm": [
+        "Sebastián Rodríguez"
+      ],
+      "tm_goles": [
+        "Sebastián Rodríguez"
+      ],
+      "ss_goles": [
+        "Sebastián Rodríguez",
+        "Sebastián Rodríguez"
+      ]
+    },
+    {
+      "jornada": 1,
+      "partido": "Racing Club de Montevideo vs Defensor Sporting Club",
+      "resultado": "1:1",
+      "lado": "home",
+      "en_tm_no_en_ss": [
+        "Tomás Habib"
+      ],
+      "en_ss_no_en_tm": [
+        "Luciano Cosentino"
+      ],
+      "tm_goles": [
+        "Tomás Habib"
+      ],
+      "ss_goles": [
+        "Luciano Cosentino"
+      ]
+    },
+    {
+      "jornada": 1,
+      "partido": "Racing Club de Montevideo vs Defensor Sporting Club",
+      "resultado": "1:1",
+      "lado": "away",
+      "en_tm_no_en_ss": [
+        "Brian Montenegro"
+      ],
+      "en_ss_no_en_tm": [
+        "Facundo Castro"
+      ],
+      "tm_goles": [
+        "Brian Montenegro"
+      ],
+      "ss_goles": [
+        "Facundo Castro"
+      ]
+    },
+    {
+      "jornada": 5,
+      "partido": "Cerro Largo FC vs Racing Club de Montevideo",
+      "resultado": "0:1",
+      "lado": "away",
+      "en_tm_no_en_ss": [
+        "Guillermo Cotugno"
+      ],
+      "en_ss_no_en_tm": [
+        "Salomón Rodríguez"
+      ],
+      "tm_goles": [
+        "Guillermo Cotugno"
+      ],
+      "ss_goles": [
+        "Salomón Rodríguez"
+      ]
+    },
+    {
+      "jornada": 7,
+      "partido": "Montevideo Wanderers vs Liverpool FC Montevideo",
+      "resultado": "1:0",
+      "lado": "home",
+      "en_tm_no_en_ss": [
+        "Joaquín Zeballos"
+      ],
+      "en_ss_no_en_tm": [
+        "Felipe Alvarez"
+      ],
+      "tm_goles": [
+        "Joaquín Zeballos"
+      ],
+      "ss_goles": [
+        "Felipe Alvarez"
+      ]
+    }
+  ],
+  "discrepancias_j15": [
+    {
+      "jornada": 15,
+      "partido": "Montevideo City Torque vs CA Progreso",
+      "resultado": "2:1",
+      "lado": "home",
+      "en_tm_no_en_ss": [],
+      "en_ss_no_en_tm": [
+        "Nahuel Da Silva",
+        "Facundo Silvera"
+      ],
+      "tm_goles": [],
+      "ss_goles": [
+        "Nahuel Da Silva",
+        "Facundo Silvera"
+      ]
+    },
+    {
+      "jornada": 15,
+      "partido": "Montevideo City Torque vs CA Progreso",
+      "resultado": "2:1",
+      "lado": "away",
+      "en_tm_no_en_ss": [],
+      "en_ss_no_en_tm": [
+        "Nahuel López"
+      ],
+      "tm_goles": [],
+      "ss_goles": [
+        "Nahuel López"
+      ]
+    }
+  ]
+}

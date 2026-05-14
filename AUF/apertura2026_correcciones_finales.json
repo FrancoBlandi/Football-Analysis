@@ -1,0 +1,108 @@
+{
+  "fecha": "2026-05-11",
+  "modelos_r2": {
+    "TODOS": 0.428,
+    "GK": 0.619,
+    "DEF": 0.345,
+    "MID": 0.439,
+    "FWD": 0.592
+  },
+  "correcciones": [
+    {
+      "nombre": "Renato César",
+      "player_id": 248023,
+      "event_id": 15523837,
+      "grupo": "FWD",
+      "delta_goals": -1,
+      "goals_orig": 1,
+      "goals_corr": 0,
+      "rating_orig": 7.4,
+      "rating_corr": 6.66,
+      "delta_rating": -0.74,
+      "fuente": "ESPN Uruguay / La Diaria — no anotó (anotó Juan Ramos)"
+    },
+    {
+      "nombre": "Juan Ramos",
+      "player_id": 587824,
+      "event_id": 15523837,
+      "grupo": "DEF",
+      "delta_goals": 1,
+      "goals_orig": 0,
+      "goals_corr": 1,
+      "rating_orig": 7,
+      "rating_corr": 7.53,
+      "delta_rating": 0.53,
+      "fuente": "ESPN Uruguay / La Diaria — gol min ~32"
+    },
+    {
+      "nombre": "Francisco Ginella",
+      "player_id": 922999,
+      "event_id": 15634213,
+      "grupo": "MID",
+      "delta_goals": 1,
+      "goals_orig": 0,
+      "goals_corr": 1,
+      "rating_orig": 6.9,
+      "rating_corr": 7.72,
+      "delta_rating": 0.82,
+      "fuente": "Tenfield / Montevideo Portal — gol min 54, tiro libre"
+    },
+    {
+      "nombre": "Matías Fracchia",
+      "player_id": 889504,
+      "event_id": 15713283,
+      "grupo": "DEF",
+      "delta_goals": -1,
+      "goals_orig": 1,
+      "goals_corr": 0,
+      "rating_orig": 8.4,
+      "rating_corr": 6.81,
+      "delta_rating": -1.59,
+      "fuente": "Montevideo Portal / AUF TV — no anotó; gol atribuido al equipo equivocado"
+    },
+    {
+      "nombre": "Santiago Marcel",
+      "player_id": 1512465,
+      "event_id": 15713283,
+      "grupo": "MID",
+      "delta_goals": 1,
+      "goals_orig": 0,
+      "goals_corr": 1,
+      "rating_orig": 6.8,
+      "rating_corr": 7.51,
+      "delta_rating": 0.71,
+      "fuente": "Montevideo Portal / AUF TV — gol min ~38"
+    },
+    {
+      "nombre": "Nicolás Agustín Paz",
+      "player_id": 2059740,
+      "event_id": 15907398,
+      "grupo": "MID",
+      "delta_goals": -1,
+      "goals_orig": 1,
+      "goals_corr": 0,
+      "rating_orig": 7.2,
+      "rating_corr": 6.46,
+      "delta_rating": -0.74,
+      "fuente": "ESPN Uruguay — gol del min 40 era de Copelotti, no de Paz"
+    },
+    {
+      "nombre": "Matteo Copelotti",
+      "player_id": 1643434,
+      "event_id": 15907398,
+      "grupo": "FWD",
+      "delta_goals": 1,
+      "goals_orig": 1,
+      "goals_corr": 2,
+      "rating_orig": 6.9,
+      "rating_corr": 7.95,
+      "delta_rating": 1.05,
+      "fuente": "ESPN Uruguay — gol min 21 + gol min 40"
+    }
+  ],
+  "sin_impacto_rating": [
+    "J12 Racing 1-1 Defensor: Habib=1 gol y Montenegro=1 gol ya en lineups (solo incidents estaba mal)",
+    "J13 Cerro Largo 0-1 Racing: Cotugno=1 gol ya en lineups",
+    "J15 Wanderers 1-0 Liverpool: Zeballos=1 gol ya en lineups"
+  ]
+}
