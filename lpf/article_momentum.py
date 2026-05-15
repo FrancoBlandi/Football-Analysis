@@ -368,13 +368,11 @@ footer{{text-align:center;color:var(--muted);font-size:.73rem;padding:2rem}}
 
 <!-- INTRO + COMO SE MIDE -->
 <div class="article-section">
-  <p>El momentum en el fútbol tiene mala reputación entre los analistas. Los relatores lo invocan
-  constantemente: <em>"el partido cambió cuando llegó la roja"</em>, <em>"ahí el equipo perdió
-  el hilo"</em>. Pero durante años fue imposible medirlo con precisión. ¿Cuándo domina realmente
-  un equipo? ¿Cuánto tiempo sostiene ese dominio? ¿Hay algo que lo rompa más que otra cosa?</p>
+  <p>La jugada que más cambia un partido no es el gol. Es la tarjeta roja. Y no es ni cerca.</p>
 
-  <p>Con los datos de {glob["n_matches"]} partidos del Apertura 2026 y el índice de presión de
-  SofaScore, podemos responder esas preguntas.</p>
+  <p>Medí el momentum en {glob["n_matches"]} partidos del Apertura 2026 usando el índice de presión
+  minuto a minuto de SofaScore. Una roja genera casi tres veces más impulso que un gol y se sostiene
+  varios minutos. El gol pica y cae en dos minutos. Pero hay más.</p>
 
   <section class="article-section" id="como-se-mide">
     <div class="section-num">Como se mide</div>
