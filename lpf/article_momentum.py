@@ -92,7 +92,7 @@ def build_article(r):
     ctx_def = {
         "go_ahead":      ("Gol que adelanta (empate -> ventaja)", "#3dde7a"),
         "extend_lead":   ("Gol que amplia ventaja",               "#4e9eff"),
-        "pull_one_back": ("Gol de descuento (sigue perdiendo)",    "#ff6b4e"),
+        "pull_one_back": ("Gol que acorta la diferencia (sigue perdiendo)",    "#ff6b4e"),
     }
     score_traces = []
     for ctx, (label, color) in ctx_def.items():
@@ -203,7 +203,7 @@ def build_article(r):
 
   <p>El gráfico de barras es quizás el más intuitivo del análisis: cuando un equipo tuvo un índice de presión muy alto en los 5 minutos previos (barras de la derecha), sus goles representan el 65% o más del total. Cuando la presión fue baja o negativa (barras de la izquierda), esa proporción cae al 35-40%.</p>
 
-  <p>El modelo no es lo suficientemente preciso para predecir el partido en tiempo real, pero confirma algo importante: el dominio territorial no es decorativo. Precede a los goles con una frecuencia que no es azarosa.</p>
+  <p>El modelo no es lo suficientemente preciso para predecir el partido en tiempo real, pero confirma algo importante: el dominio territorial no es decorativo. Precede a los goles con una frecuencia que no es aleatoria.</p>
 
   <div class="chart-duo">
     <div class="chart-wrap small">
@@ -459,7 +459,7 @@ footer{{text-align:center;color:var(--muted);font-size:.73rem;padding:2rem}}
 <!-- ─── HALLAZGO 2: TRIGGERS ──────────────────────── -->
 <section class="article-section" id="triggers">
   <div class="section-num">Hallazgo 02</div>
-  <h2>La tarjeta roja genera cuatro veces más momentum que un gol</h2>
+  <h2>La tarjeta roja genera casi tres veces más momentum que un gol</h2>
 
   <p>Para cada tipo de evento registramos la presión en los 5 minutos previos y en los 10 minutos
   posteriores. La diferencia entre ambas ventanas, <em>desde la perspectiva del equipo que
@@ -477,9 +477,9 @@ footer{{text-align:center;color:var(--muted);font-size:.73rem;padding:2rem}}
     <span class="pq-desc">sube el dominio del equipo que recibe la roja como ventaja (en una escala de -100 a +100)</span>
   </div>
 
-  <p>La <strong>tarjeta roja</strong> es el evento más disruptivo con diferencia: genera un salto
+  <p>La <strong>tarjeta roja</strong> es el evento más disruptivo por lejos: genera un salto
   de {red_delta:.0f} puntos para el equipo beneficiado y una caída equivalente para el que queda
-  con diez jugadores. Eso es <strong>{red_ratio} veces más</strong> que el impacto de convertir
+  con diez jugadores. Eso es <strong>{red_ratio} veces más</strong> que el impacto de meter
   un gol ({goal_delta:.1f} puntos).</p>
 
   <p>La <strong>sustitución</strong> aparece como dato inesperado: tiene el efecto más pequeño,
@@ -511,7 +511,7 @@ footer{{text-align:center;color:var(--muted);font-size:.73rem;padding:2rem}}
   <div class="section-num">Hallazgo 03</div>
   <h2>Un gol genera impulso, pero el rival lo neutraliza en dos minutos</h2>
 
-  <p>Después de convertir un gol, el equipo que anotó recibe un impulso de presión. Pero ¿cuánto
+  <p>Después de meter un gol, el equipo que anotó recibe un impulso de presión. Pero ¿cuánto
   dura ese impulso antes de que el partido vuelva al equilibrio previo?</p>
 
   <div class="explainer">
@@ -539,7 +539,7 @@ footer{{text-align:center;color:var(--muted);font-size:.73rem;padding:2rem}}
 
   <p>Este resultado es más extremo que lo que se observa en otros contextos deportivos, donde el
   efecto post-gol puede durar 8-15 minutos. Una posible explicación para la LPF: los equipos
-  que reciben un gol generan presión reactiva muy rápido, y el equipo que acaba de convertir
+  que reciben un gol generan presión reactiva muy rápido, y el equipo que acaba de meter
   tiende a replegarse casi de inmediato.</p>
 </section>
 
@@ -574,7 +574,7 @@ footer{{text-align:center;color:var(--muted);font-size:.73rem;padding:2rem}}
   genera el pico más bajo de todos: el equipo que ya ganaba no necesita seguir presionando,
   y a menudo se repliega para administrar el resultado.</p>
 
-  <p>El <strong>gol de descuento</strong> cuando se sigue perdiendo
+  <p>El <strong>gol que acorta la diferencia</strong> cuando se sigue perdiendo
   (n={score.get("pull_one_back",{}).get("n",0)}) muestra un pico momentáneo (la reacción
   de quien acortó), pero se aplana rápido, quizás porque el rival refuerza la presión
   defensiva para no perder la ventaja.</p>

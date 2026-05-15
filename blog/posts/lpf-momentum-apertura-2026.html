@@ -234,7 +234,7 @@ footer{text-align:center;color:var(--muted);font-size:.73rem;padding:2rem}
 <!-- ─── HALLAZGO 2: TRIGGERS ──────────────────────── -->
 <section class="article-section" id="triggers">
   <div class="section-num">Hallazgo 02</div>
-  <h2>La tarjeta roja genera cuatro veces más momentum que un gol</h2>
+  <h2>La tarjeta roja genera casi tres veces más momentum que un gol</h2>
 
   <p>Para cada tipo de evento registramos la presión en los 5 minutos previos y en los 10 minutos
   posteriores. La diferencia entre ambas ventanas, <em>desde la perspectiva del equipo que
@@ -252,9 +252,9 @@ footer{text-align:center;color:var(--muted);font-size:.73rem;padding:2rem}
     <span class="pq-desc">sube el dominio del equipo que recibe la roja como ventaja (en una escala de -100 a +100)</span>
   </div>
 
-  <p>La <strong>tarjeta roja</strong> es el evento más disruptivo con diferencia: genera un salto
+  <p>La <strong>tarjeta roja</strong> es el evento más disruptivo por lejos: genera un salto
   de 10 puntos para el equipo beneficiado y una caída equivalente para el que queda
-  con diez jugadores. Eso es <strong>2.7 veces más</strong> que el impacto de convertir
+  con diez jugadores. Eso es <strong>2.7 veces más</strong> que el impacto de meter
   un gol (3.6 puntos).</p>
 
   <p>La <strong>sustitución</strong> aparece como dato inesperado: tiene el efecto más pequeño,
@@ -286,7 +286,7 @@ footer{text-align:center;color:var(--muted);font-size:.73rem;padding:2rem}
   <div class="section-num">Hallazgo 03</div>
   <h2>Un gol genera impulso, pero el rival lo neutraliza en dos minutos</h2>
 
-  <p>Después de convertir un gol, el equipo que anotó recibe un impulso de presión. Pero ¿cuánto
+  <p>Después de meter un gol, el equipo que anotó recibe un impulso de presión. Pero ¿cuánto
   dura ese impulso antes de que el partido vuelva al equilibrio previo?</p>
 
   <div class="explainer">
@@ -314,7 +314,7 @@ footer{text-align:center;color:var(--muted);font-size:.73rem;padding:2rem}
 
   <p>Este resultado es más extremo que lo que se observa en otros contextos deportivos, donde el
   efecto post-gol puede durar 8-15 minutos. Una posible explicación para la LPF: los equipos
-  que reciben un gol generan presión reactiva muy rápido, y el equipo que acaba de convertir
+  que reciben un gol generan presión reactiva muy rápido, y el equipo que acaba de meter
   tiende a replegarse casi de inmediato.</p>
 </section>
 
@@ -349,7 +349,7 @@ footer{text-align:center;color:var(--muted);font-size:.73rem;padding:2rem}
   genera el pico más bajo de todos: el equipo que ya ganaba no necesita seguir presionando,
   y a menudo se repliega para administrar el resultado.</p>
 
-  <p>El <strong>gol de descuento</strong> cuando se sigue perdiendo
+  <p>El <strong>gol que acorta la diferencia</strong> cuando se sigue perdiendo
   (n=31) muestra un pico momentáneo (la reacción
   de quien acortó), pero se aplana rápido, quizás porque el rival refuerza la presión
   defensiva para no perder la ventaja.</p>
@@ -418,7 +418,7 @@ footer{text-align:center;color:var(--muted);font-size:.73rem;padding:2rem}
 
   <p>El gráfico de barras es quizás el más intuitivo del análisis: cuando un equipo tuvo un índice de presión muy alto en los 5 minutos previos (barras de la derecha), sus goles representan el 65% o más del total. Cuando la presión fue baja o negativa (barras de la izquierda), esa proporción cae al 35-40%.</p>
 
-  <p>El modelo no es lo suficientemente preciso para predecir el partido en tiempo real, pero confirma algo importante: el dominio territorial no es decorativo. Precede a los goles con una frecuencia que no es azarosa.</p>
+  <p>El modelo no es lo suficientemente preciso para predecir el partido en tiempo real, pero confirma algo importante: el dominio territorial no es decorativo. Precede a los goles con una frecuencia que no es aleatoria.</p>
 
   <div class="chart-duo">
     <div class="chart-wrap small">
@@ -584,7 +584,7 @@ const BL='#4e9eff',OR='#ff6b4e',GR='#3dde7a',YE='#f5c542',PU='#b44eff',RE='#ff4e
 // ── Score state ──────────────────────────────────────
 (function(){
   const offs = [-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-  const data = [{"name": "Gol que adelanta (empate -> ventaja) (n=240)", "color": "#3dde7a", "y": [2.854, 3.259, 4.256, 3.762, 5.017, 20.254, 29.304, 12.287, 13.696, 14.175, 6.916, 1.748, -1.403, -2.403, -3.996, -3.768]}, {"name": "Gol que amplia ventaja (n=101)", "color": "#4e9eff", "y": [-0.317, -2.079, -1.495, -0.099, 1.248, 13.545, 24.109, 8.525, 7.941, 10.426, 4.306, 1.337, 2.191, -4.284, -6.466, -4.524]}, {"name": "Gol de descuento (sigue perdiendo) (n=31)", "color": "#ff6b4e", "y": [18.194, 16.806, 8.387, 4.581, 9.839, 28.355, 26.806, 16.871, 18.935, 21.129, 14.933, 12.586, 10.214, 0.63, 2.481, 7.269]}, {"name": "Empate anunciado (n=45)", "color": "#f5c542", "y": [18.333, 24.067, 24.889, 21.089, 24.4, 32.667, 37.733, 25.667, 19.578, 22.356, 22.455, 15.091, 5.767, -0.6, 3.95, 5.718], "dash": "solid"}, {"name": "Empate a contragolpe (n=25)", "color": "#f5c542", "y": [-22.92, -22.68, -23.88, -13.72, -11.88, 6.2, 19.96, 5.96, 0.56, 8.08, -1.64, 2.52, 0.6, -2.72, -8.52, -6.417], "dash": "dot"}];
+  const data = [{"name": "Gol que adelanta (empate -> ventaja) (n=240)", "color": "#3dde7a", "y": [2.854, 3.259, 4.256, 3.762, 5.017, 20.254, 29.304, 12.287, 13.696, 14.175, 6.916, 1.748, -1.403, -2.403, -3.996, -3.768]}, {"name": "Gol que amplia ventaja (n=101)", "color": "#4e9eff", "y": [-0.317, -2.079, -1.495, -0.099, 1.248, 13.545, 24.109, 8.525, 7.941, 10.426, 4.306, 1.337, 2.191, -4.284, -6.466, -4.524]}, {"name": "Gol que acorta la diferencia (sigue perdiendo) (n=31)", "color": "#ff6b4e", "y": [18.194, 16.806, 8.387, 4.581, 9.839, 28.355, 26.806, 16.871, 18.935, 21.129, 14.933, 12.586, 10.214, 0.63, 2.481, 7.269]}, {"name": "Empate anunciado (n=45)", "color": "#f5c542", "y": [18.333, 24.067, 24.889, 21.089, 24.4, 32.667, 37.733, 25.667, 19.578, 22.356, 22.455, 15.091, 5.767, -0.6, 3.95, 5.718], "dash": "solid"}, {"name": "Empate a contragolpe (n=25)", "color": "#f5c542", "y": [-22.92, -22.68, -23.88, -13.72, -11.88, 6.2, 19.96, 5.96, 0.56, 8.08, -1.64, 2.52, 0.6, -2.72, -8.52, -6.417], "dash": "dot"}];
   const trs  = data.map(t=>
     ({x:offs,y:t.y,type:'scatter',mode:'lines',name:t.name,line:{color:t.color,width:2,dash:t.dash||'solid'}}));
   trs.push({x:[0,0],y:[-25,40],type:'scatter',mode:'lines',
