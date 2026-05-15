@@ -663,26 +663,7 @@ footer{{text-align:center;color:var(--muted);font-size:.73rem;padding:2rem}}
     </li>
   </ul>
 
-  <div class="hbox" style="margin-top:2rem">
-    <strong>Proximo paso:</strong> Comparar estos patrones con Apertura y Clausura 2025.
-    ¿Cambiaron los perfiles con el recambio de entrenadores? ¿Hay equipos que evolucionaron
-    su eficiencia entre ciclos?
-  </div>
 </section>
-
-<!-- METODOLOGÍA -->
-<div class="metodologia">
-  <h4>Metodologia y limitaciones</h4>
-  <p><strong>Fuente:</strong> API pública de SofaScore. Endpoints: <code>/event/{{id}}/graph</code>
-  (índice de presión) y <code>/event/{{id}}/incidents</code> (eventos con minuto).</p>
-  <p><strong>Muestra:</strong> {glob["n_matches"]} partidos del Apertura LPF 2026 (enero a mayo 2026).
-  Análisis restringido a 90 minutos regulares.</p>
-  <p><strong>Metodos estadisticos:</strong> Autocorrelación: test t contra 0.
-  Impacto de eventos: test t pareado (pre vs post). Modelo predictivo: regresión logística.</p>
-  <p><strong>Limitacion principal:</strong> El índice de presión es una métrica propietaria de
-  SofaScore. No conocemos su fórmula exacta ni la ponderación de sus componentes. Los resultados
-  son válidos para este índice específico.</p>
-</div>
 
 </div><!-- /article-body -->
 
