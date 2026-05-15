@@ -368,7 +368,7 @@ footer{{text-align:center;color:var(--muted);font-size:.73rem;padding:2rem}}
 
 <!-- INTRO + COMO SE MIDE -->
 <div class="article-section">
-  <p>La jugada que más cambia un partido no es el gol. Es la tarjeta roja. Y no es ni cerca.</p>
+  <p>La jugada que más cambia un partido no es el gol. Es la tarjeta roja. Y no es nada parejo.</p>
 
   <p>Medí el momentum en {glob["n_matches"]} partidos del Apertura 2026 usando el índice de presión
   minuto a minuto de SofaScore. Una roja genera casi tres veces más impulso que un gol y se sostiene
