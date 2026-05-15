@@ -372,7 +372,7 @@ footer{{text-align:center;color:var(--muted);font-size:.73rem;padding:2rem}}
 
   <p>Medí el momentum en {glob["n_matches"]} partidos del Apertura 2026 usando el índice de presión
   minuto a minuto de SofaScore. Una roja genera casi tres veces más impulso que un gol y se sostiene
-  varios minutos. El gol pica y cae en dos minutos. Pero hay más.</p>
+  varios minutos. El gol tiene un pico de dos minutos y cae. Pero hay más.</p>
 
   <section class="article-section" id="como-se-mide">
     <div class="section-num">Como se mide</div>
