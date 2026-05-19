@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chelsea have the third most expensive squad in the Premier League. The table gave them 10th. | Franco Analytics</title>
+<script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#0c0e13; --surface:#13161e; --surface2:#1a1f2a; --border:#252b38;
+  --accent:#4e9eff; --green:#3dde7a; --orange:#ff6b4e; --yellow:#f5c542; --purple:#b44eff;
+  --text:#dde1ea; --muted:#6b7585; --faint:#3a4252;
+  --serif:'Georgia','Times New Roman',serif;
+  --sans:'Segoe UI',system-ui,-apple-system,sans-serif;
+  --w:720px; --ww:940px;
+}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:var(--sans);line-height:1.75;font-size:16px}
+
+/* NAV */
+nav{position:sticky;top:0;z-index:100;background:rgba(12,14,19,.96);
+  backdrop-filter:blur(10px);border-bottom:1px solid var(--border);
+  padding:0 2rem;display:flex;align-items:center;height:48px;gap:0}
+.nav-brand{color:var(--accent);font-size:.76rem;font-weight:700;
+  padding-right:1.2rem;border-right:1px solid var(--border);margin-right:.8rem;letter-spacing:.04em}
+nav a{color:var(--muted);text-decoration:none;font-size:.76rem;padding:0 .65rem;white-space:nowrap;transition:color .15s}
+nav a:hover{color:var(--text)}
+
+/* HERO */
+.hero{max-width:var(--ww);margin:0 auto;padding:5rem 2rem 4rem}
+.hero-tag{display:inline-block;background:var(--accent);color:#000;
+  font-size:.68rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;
+  padding:.18rem .5rem;border-radius:3px;margin-bottom:1.2rem}
+.hero h1{font-family:var(--serif);font-size:clamp(1.9rem,5vw,2.9rem);
+  font-weight:700;line-height:1.12;color:#fff;max-width:720px}
+.hero-deck{font-size:1rem;color:var(--muted);margin-top:1.1rem;max-width:620px;line-height:1.6}
+.hero-meta{margin-top:2rem;display:flex;gap:2rem;flex-wrap:wrap;
+  border-top:1px solid var(--border);padding-top:1.5rem}
+.hero-meta .stat .val{font-size:1.6rem;font-weight:800;color:var(--accent);display:block}
+.hero-meta .stat .lbl{font-size:.7rem;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+
+/* ARTICLE */
+.article-body{max-width:var(--w);margin:0 auto;padding:0 2rem 5rem}
+.article-section{margin-bottom:4.5rem}
+.section-num{font-size:.67rem;font-weight:800;letter-spacing:.1em;
+  color:var(--accent);text-transform:uppercase;margin-bottom:.45rem;opacity:.8}
+.article-section h2{font-family:var(--serif);font-size:1.6rem;font-weight:700;
+  line-height:1.18;color:#fff;margin-bottom:1.2rem}
+.article-section p{margin-bottom:1.1rem;color:var(--text);font-size:.96rem}
+.article-section p strong{color:#fff}
+
+/* PULL QUOTE */
+.pull-quote{margin:2rem 0;padding:1.4rem 1.8rem;
+  border-left:3px solid var(--accent);background:var(--surface);
+  border-radius:0 8px 8px 0;display:flex;align-items:baseline;gap:1rem;flex-wrap:wrap}
+.pq-num{font-size:2.3rem;font-weight:800;color:var(--accent);line-height:1;font-family:var(--serif)}
+.pq-desc{font-size:.88rem;color:var(--muted)}
+.pull-quote.green  {border-color:var(--green)}  .pull-quote.green  .pq-num{color:var(--green)}
+.pull-quote.yellow {border-color:var(--yellow)} .pull-quote.yellow .pq-num{color:var(--yellow)}
+.pull-quote.orange {border-color:var(--orange)} .pull-quote.orange .pq-num{color:var(--orange)}
+
+/* EXPLAINER BOX */
+.explainer{
+  margin:1.5rem 0;padding:1rem 1.3rem;
+  background:var(--surface2);border:1px solid var(--border);
+  border-radius:8px;font-size:.87rem;color:var(--muted);line-height:1.65;
+}
+.explainer strong{color:var(--text)}
+
+/* CHARTS */
+.chart-full{
+  margin:2rem -2rem;padding:1.4rem 2rem;
+  background:var(--surface);border-top:1px solid var(--border);border-bottom:1px solid var(--border);
+}
+.chart-full .ct{font-size:.75rem;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-bottom:.7rem}
+.chart-full .cc{font-size:.77rem;color:var(--muted);margin-top:.55rem;font-style:italic}
+@media(max-width:680px){.chart-full{margin:2rem 0}}
+
+/* FICHA */
+.ficha{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:1.3rem 1.6rem;margin:2.2rem 0}
+.ficha h4{font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:var(--accent);margin-bottom:.8rem}
+.ficha-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:.7rem}
+@media(max-width:560px){.ficha-grid{grid-template-columns:repeat(2,1fr)}}
+.ficha-item .val{font-size:1.35rem;font-weight:800;color:var(--text)}
+.ficha-item .lbl{font-size:.7rem;color:var(--muted)}
+
+/* DATA TABLE */
+.data-table{width:100%;border-collapse:collapse;margin:2rem 0;font-size:.84rem}
+.data-table th{text-align:left;color:var(--accent);font-size:.68rem;text-transform:uppercase;
+  letter-spacing:.08em;padding:.5rem .75rem;border-bottom:1px solid var(--border)}
+.data-table td{padding:.5rem .75rem;border-bottom:1px solid var(--faint);color:var(--text)}
+.data-table tr:last-child td{border-bottom:none}
+.data-table .over{color:var(--green);font-weight:700}
+.data-table .under{color:var(--orange);font-weight:700}
+.data-table .neutral{color:var(--muted)}
+.data-table .rel{color:var(--muted);font-size:.78rem}
+
+/* CONCLUSIONS */
+.conclusion-list{list-style:none;margin:1.5rem 0}
+.conclusion-list li{display:flex;gap:1rem;margin-bottom:1rem;
+  padding:.9rem 1.2rem;background:var(--surface);border:1px solid var(--border);border-radius:8px}
+.cl-num{color:var(--accent);font-weight:800;font-size:1.1rem;flex-shrink:0}
+.cl-text{font-size:.88rem} .cl-text strong{color:#fff}
+
+/* METHODOLOGY */
+.metodologia{border-top:1px solid var(--border);padding-top:2rem;margin-top:3rem;
+  font-size:.79rem;color:var(--muted);line-height:1.6}
+.metodologia h4{color:var(--text);font-size:.8rem;margin-bottom:.5rem;text-transform:uppercase;letter-spacing:.06em}
+.metodologia p{margin-bottom:.8rem}
+footer{text-align:center;color:var(--muted);font-size:.73rem;padding:2rem}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-brand">Franco Analytics · Premier League 2026</div>
+  <a href="#the-data">The Data</a>
+  <a href="#the-chart">The Chart</a>
+  <a href="#the-gap">The Gap</a>
+  <a href="#the-stories">The Stories</a>
+  <a href="#conclusions">Conclusions</a>
+  <a href="/blog/index.html" style="margin-left:auto">← Blog</a>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-tag">Premier League 2025/26 · All 20 clubs · Transfermarkt</div>
+  <h1>Chelsea have the third most expensive squad in the Premier League. The table gave them 10th.</h1>
+  <p class="hero-deck">Matching Transfermarkt squad values against 2025/26 points for all 20 clubs
+  reveals four clubs sitting more than 15 points below expectation, and two clubs sitting more
+  than 14 above it. The gaps are not random.</p>
+  <div class="hero-meta">
+    <div class="stat"><span class="val">20</span><span class="lbl">Clubs analysed</span></div>
+    <div class="stat"><span class="val">€12.6bn</span><span class="lbl">Combined squad value</span></div>
+    <div class="stat"><span class="val">-18.4</span><span class="lbl">Chelsea pts gap</span></div>
+    <div class="stat"><span class="val">+14.6</span><span class="lbl">Aston Villa surplus</span></div>
+    <div class="stat"><span class="val">GW37</span><span class="lbl">Standings snapshot</span></div>
+  </div>
+</div>
+
+<div class="article-body">
+
+<!-- INTRO -->
+<div class="article-section">
+  <p>The Premier League's 20 clubs are not spending the same. Transfermarkt's squad valuations
+  show a range that runs from €1.31 billion (Manchester City) to €252 million (Burnley). That
+  difference reflects years of investment, player development, and wage commitments built
+  into each squad.</p>
+
+  <p>But squad value and points are not the same thing. Plotting one against the other for all 20
+  clubs in 2025/26 reveals which clubs are getting value from their investment and which are
+  wasting it. Two clubs sit more than 15 points below what their squad would predict. Two others
+  sit more than 14 points above. The gaps are large enough that they cannot be explained by
+  variance alone.</p>
+</div>
+
+<!-- SECTION 01: THE DATA -->
+<section class="article-section" id="the-data">
+  <div class="section-num">The Data</div>
+  <h2>Squad value vs. points: all 20 clubs</h2>
+
+  <p>Squad market values come from Transfermarkt, the standard public reference for player
+  valuations. The figures reflect the combined estimated market value of each club's registered
+  squad as of May 2026. Points are from the Premier League standings at GW37, with one or two
+  rounds remaining.</p>
+
+  <div class="explainer">
+    <strong>How the expected points are calculated:</strong> A linear regression is fitted through
+    all 20 clubs, using squad value as the predictor and points as the outcome. The resulting
+    trend line is the expected relationship between investment and results. A club above the line
+    earned more points than their squad value predicts. A club below it earned fewer.
+    <br><br>
+    The delta is the gap between actual and expected points. A delta of +15 means a club
+    outperformed their squad value by 15 points. A delta of -18 means the opposite.
+  </div>
+
+  <div class="ficha">
+    <h4>Dataset</h4>
+    <div class="ficha-grid">
+      <div class="ficha-item"><div class="val">20</div><div class="lbl">Clubs in sample</div></div>
+      <div class="ficha-item"><div class="val">Transfermarkt</div><div class="lbl">Value source</div></div>
+      <div class="ficha-item"><div class="val">May 2026</div><div class="lbl">Valuation date</div></div>
+      <div class="ficha-item"><div class="val">GW37</div><div class="lbl">Standings snapshot</div></div>
+    </div>
+  </div>
+
+  <table class="data-table">
+    <thead>
+      <tr>
+        <th>Club</th>
+        <th>Squad Value (€M)</th>
+        <th>2025/26 Pts</th>
+        <th>Expected</th>
+        <th>Delta</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Manchester City</td><td>1,310</td><td>77</td><td>72.4</td><td class="over">+4.6</td></tr>
+      <tr><td>Arsenal</td><td>1,230</td><td>79</td><td>69.7</td><td class="over">+9.3</td></tr>
+      <tr><td>Chelsea</td><td>1,160</td><td>49</td><td>67.4</td><td class="under">-18.4</td></tr>
+      <tr><td>Liverpool</td><td>1,020</td><td>59</td><td>62.9</td><td class="under">-3.9</td></tr>
+      <tr><td>Tottenham</td><td>803</td><td>38</td><td>55.8</td><td class="under">-17.8</td></tr>
+      <tr><td>Manchester United</td><td>747</td><td>68</td><td>53.9</td><td class="over">+14.1</td></tr>
+      <tr><td>Newcastle United</td><td>708</td><td>49</td><td>52.7</td><td class="under">-3.7</td></tr>
+      <tr><td>Nottingham Forest</td><td>568</td><td>43</td><td>48.1</td><td class="under">-5.1</td></tr>
+      <tr><td>Aston Villa</td><td>548</td><td>62</td><td>47.4</td><td class="over">+14.6</td></tr>
+      <tr><td>Crystal Palace</td><td>541</td><td>45</td><td>47.2</td><td class="under">-2.2</td></tr>
+      <tr><td>Bournemouth</td><td>507</td><td>55</td><td>46.1</td><td class="over">+8.9</td></tr>
+      <tr><td>Brighton</td><td>494</td><td>53</td><td>45.7</td><td class="over">+7.3</td></tr>
+      <tr><td>Brentford</td><td>470</td><td>52</td><td>44.9</td><td class="over">+7.1</td></tr>
+      <tr><td>Everton</td><td>450</td><td>49</td><td>44.2</td><td class="over">+4.8</td></tr>
+      <tr><td>Fulham</td><td>387</td><td>49</td><td>42.2</td><td class="over">+6.8</td></tr>
+      <tr><td>Sunderland</td><td>382</td><td>51</td><td>42.0</td><td class="over">+9.0</td></tr>
+      <tr><td>West Ham</td><td>363</td><td>36</td><td>41.4</td><td class="under">-5.4</td></tr>
+      <tr><td>Leeds United</td><td>346</td><td>47</td><td>40.8</td><td class="over">+6.2</td></tr>
+      <tr><td>Wolverhampton</td><td>277</td><td>19</td><td>38.6</td><td class="under">-19.6</td></tr>
+      <tr><td>Burnley</td><td>253</td><td>21</td><td>37.8</td><td class="under">-16.8</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- SECTION 02: THE CHART -->
+<section class="article-section" id="the-chart">
+  <div class="section-num">The Chart</div>
+  <h2>Where every club stands relative to their investment</h2>
+
+  <p>The scatter plot maps all 20 clubs. The dotted line is the expected trend. Green clubs sit
+  above it, earning more points than their squad value predicts. Orange clubs sit below, earning fewer.</p>
+
+  <div class="chart-full">
+    <div class="ct">Squad value (€M, Transfermarkt May 2026) vs. Points (2025/26, GW37)</div>
+    <div id="ch-scatter" style="height:520px"></div>
+    <div class="cc">Dotted line = expected relationship from linear regression across all 20 clubs (R² = 0.48). Green = outperforming squad value. Orange = underperforming. Source: Transfermarkt; Premier League GW37 standings.</div>
+  </div>
+
+  <p>The four clubs with the highest squad values (City, Arsenal, Chelsea, Liverpool) sit within
+  €290m of each other. But they span 30 points in the table, from Arsenal's 79 down to
+  Chelsea's 49. The gap between Chelsea and Arsenal is 30 points. Their squad values differ
+  by only €70m. Something beyond budget is at work.</p>
+</section>
+
+<!-- SECTION 03: THE GAP -->
+<section class="article-section" id="the-gap">
+  <div class="section-num">The Gap</div>
+  <h2>How far each club is from what their squad is worth</h2>
+
+  <div class="pull-quote orange">
+    <span class="pq-num">-18.4</span>
+    <span class="pq-desc">points: Chelsea's deficit below expectation. The third most expensive squad in the league, earning points at a mid-table rate.</span>
+  </div>
+
+  <div class="chart-full">
+    <div class="ct">Points above or below expected, all 20 clubs (sorted)</div>
+    <div id="ch-gap" style="height:580px"></div>
+    <div class="cc">Positive = outperforming squad value. Negative = underperforming. Wolves and Burnley are relegated. Source: Transfermarkt, Premier League GW37 2025/26.</div>
+  </div>
+
+  <p>Three of the four biggest underperformers have expensive squads: Chelsea (-18.4), Tottenham
+  (-17.8), and Wolves (-19.6). The fourth, Burnley (-16.8), is relegated alongside Wolves, which
+  partly explains their deficit. But Chelsea and Tottenham are not relegated. They simply failed
+  to convert their investment into results.</p>
+
+  <p>At the other end, the positive outliers are more spread across the table. Aston Villa (+14.6)
+  and Manchester United (+14.1) both outperform significantly. Below them, Sunderland (+9.0),
+  Arsenal (+9.3), and Bournemouth (+8.9) form a second tier of clubs getting clear value from
+  their squads.</p>
+</section>
+
+<!-- SECTION 04: THE STORIES -->
+<section class="article-section" id="the-stories">
+  <div class="section-num">The Stories</div>
+  <h2>Six clubs, six different relationships with their investment</h2>
+
+  <p><strong>Chelsea: the most expensive mid-table finish in Premier League history.</strong>
+  Chelsea's squad is valued at €1.16 billion by Transfermarkt, the third highest in England.
+  That number reflects years of aggressive transfer activity since 2022, including dozens of
+  signings and substantial wage commitments. The return on that investment in 2025/26: 49 points,
+  10th place, and a deficit of 18.4 points below what a squad of that value would normally
+  produce. No other established club in the sample comes close to that gap. Tottenham, at -17.8,
+  is the nearest comparison, and Tottenham are 17th.</p>
+
+  <div class="pull-quote orange">
+    <span class="pq-num">€1.16bn</span>
+    <span class="pq-desc">Chelsea's squad value: the third highest in the Premier League. Their league position: 10th. Their delta: -18.4 points.</span>
+  </div>
+
+  <p><strong>Tottenham: two years, same problem.</strong>
+  Tottenham's €802.5m squad places them 5th by investment among all 20 clubs. Their 38 points
+  at GW37 put them 17th, within sight of a relegation battle they had no business being near.
+  That is a deficit of 17.8 points below expectation. The infrastructure of a top-6 club, the
+  results of a side fighting to stay up. The story is not new, but the data makes it
+  impossible to attribute to bad luck.</p>
+
+  <p><strong>Manchester United: the clearest turnaround in the data.</strong>
+  United's squad value of €747m ranks 6th among all 20 clubs. Their 68 points and 3rd place
+  finish represents a surplus of 14.1 points above expectation, the second highest overperformance
+  in the sample. At the start of the INEOS era, United were a cautionary tale of mismanagement.
+  These numbers suggest the project is producing results that go beyond what the squad investment
+  alone would predict. It is the most unambiguous positive story in the top half of the table.</p>
+
+  <div class="pull-quote green">
+    <span class="pq-num">+14.1</span>
+    <span class="pq-desc">points above expected for Manchester United: 6th most valuable squad, 3rd in the table.</span>
+  </div>
+
+  <p><strong>Aston Villa: the best return on investment in the league.</strong>
+  Villa's €547.5m squad ranks 9th by value among the 20 clubs. Their 62 points and 4th place
+  finish represents a surplus of 14.6 points above expectation, the highest in the sample.
+  Villa are above Liverpool (€1.02bn squad, 5th), above Newcastle (€708m, 11th), and within
+  reach of City and Arsenal despite spending a fraction of what those clubs have committed.
+  Their squad value is less than half of Chelsea's. Their table position is six places higher.</p>
+
+  <div class="pull-quote green">
+    <span class="pq-num">+14.6</span>
+    <span class="pq-desc">points above expected for Aston Villa: the highest efficiency rating in the league, with the 9th most valuable squad.</span>
+  </div>
+
+  <p><strong>Sunderland: the promoted side that should not be 9th.</strong>
+  Sunderland have the 16th most valuable squad in the division at €381.9m, reflecting their
+  recent promotion from the Championship. They sit 9th with 51 points, a surplus of 9.0 points
+  above expectation. For a newly promoted club operating on a fraction of the budgets around
+  them, that result is significant. Sunderland is the data's clearest story of sporting results
+  running ahead of financial scale.</p>
+
+  <p><strong>Bournemouth, Brighton, Brentford: the mid-table efficiency cluster.</strong>
+  Three clubs with squad values between €470m and €507m all sit 7 to 9 points above expectation.
+  Bournemouth (€507m, 55 pts, +8.9), Brighton (€494m, 53 pts, +7.3), and Brentford (€470m,
+  52 pts, +7.1) are doing something similar: converting modest squad investment into points
+  at a rate that consistently beats the trend. None of the three have the financial muscle of
+  the top six, but all three have built structures that outperform what their squads are worth.</p>
+</section>
+
+<!-- CONCLUSIONS -->
+<section class="article-section" id="conclusions">
+  <div class="section-num">Conclusions</div>
+  <h2>What the data shows</h2>
+
+  <ul class="conclusion-list">
+    <li>
+      <span class="cl-num">01</span>
+      <span class="cl-text"><strong>Squad value predicts about half the outcome.</strong>
+      The regression explains 48% of the variance in points (R² = 0.48). That is a meaningful
+      relationship: bigger squads do tend to earn more points. But the other 52% reflects
+      factors that money cannot buy: coaching quality, squad cohesion, injury management,
+      and the intangibles of a competitive season.</span>
+    </li>
+    <li>
+      <span class="cl-num">02</span>
+      <span class="cl-text"><strong>Chelsea's problem is structural, not statistical.</strong>
+      A -18.4 point deficit on a €1.16bn squad is not bad luck. It is the result of years of
+      fragmented squad building, high turnover, and a lack of coherent identity on the pitch.
+      The squad is expensive. The system to make it work has not arrived.</span>
+    </li>
+    <li>
+      <span class="cl-num">03</span>
+      <span class="cl-text"><strong>Aston Villa are the model.</strong>
+      The highest efficiency rating in the league (+14.6) with the 9th most valuable squad.
+      Not the biggest budget, not the most famous club. Just the best points-per-euro
+      conversion in the Premier League this season.</span>
+    </li>
+    <li>
+      <span class="cl-num">04</span>
+      <span class="cl-text"><strong>Mid-table efficiency is clustered and real.</strong>
+      Bournemouth, Brighton, Brentford, Fulham, Sunderland, and Leeds all sit 6 to 9 points
+      above expectation. That grouping is not random. All six have clear identities, stable
+      coaching, and squads built with purpose rather than prestige. The table reflects it.</span>
+    </li>
+    <li>
+      <span class="cl-num">05</span>
+      <span class="cl-text"><strong>Spending more does not protect you.</strong>
+      Three of the four biggest underperformers (Chelsea, Tottenham, Wolves) are among the
+      top eight most expensive squads in the league. Large squad values create expectations.
+      When the results do not follow, the gap is proportionally larger.</span>
+    </li>
+  </ul>
+</section>
+
+<!-- METHODOLOGY -->
+<div class="metodologia">
+  <h4>Methodology and sources</h4>
+  <p><strong>Squad values:</strong> Transfermarkt, May 2026. Total squad market value per club,
+  combining all registered first-team players at their current estimated market value.
+  Transfermarkt values reflect player age, form, contract length, and market conditions.
+  They are an estimate of resale value, not a measure of what clubs paid or what they earn.
+  That said, they are the most comprehensive public proxy available for all 20 clubs.</p>
+  <p><strong>Limitation:</strong> Transfermarkt values are updated throughout the season and
+  therefore reflect developments (injuries, form changes, transfers) that occurred during
+  2025/26 itself. A more rigorous analysis would use pre-season valuations as the predictor.
+  The directional findings are robust either way, but specific delta values should be treated
+  as indicative rather than precise.</p>
+  <p><strong>Table data:</strong> Premier League 2025/26 standings at GW37, mid-May 2026,
+  with one to two rounds remaining. Not all clubs had played the same number of matches at
+  the snapshot date (some clubs at GW36, most at GW37).</p>
+  <p><strong>Trend line:</strong> Ordinary least squares linear regression, 20 observations.
+  Squad value as predictor, points as outcome. Slope: 0.033 points per €1m in squad value.
+  Intercept: 29.5 points. R² = 0.48.</p>
+</div>
+
+</div>
+
+<footer>Franco Analytics · Squad values: Transfermarkt May 2026 · Table: Premier League GW37 2025/26</footer>
+
+<script>
+const surface = '#13161e', border = '#252b38';
+const accent  = '#4e9eff', green = '#3dde7a', orange = '#ff6b4e';
+const muted   = '#6b7585', textColor = '#dde1ea';
+
+/* shared layout defaults */
+function baseLayout(extra) {
+  return Object.assign({
+    paper_bgcolor: surface,
+    plot_bgcolor:  surface,
+    font: { family: "'Segoe UI',system-ui,sans-serif", color: textColor, size: 12 },
+    showlegend: false
+  }, extra);
+}
+
+/* ── SCATTER: squad value vs points ── */
+(function() {
+  const clubs = [
+    'Man City','Arsenal','Chelsea','Liverpool',
+    'Tottenham','Man Utd','Newcastle','Nott\'m Forest',
+    'Aston Villa','Crystal Palace','Bournemouth','Brighton',
+    'Brentford','Everton','Fulham','Sunderland',
+    'West Ham','Leeds','Wolves','Burnley'
+  ];
+  const vals = [1310,1230,1160,1020,803,747,708,568,548,541,507,494,470,450,387,382,363,346,277,253];
+  const pts  = [77,79,49,59,38,68,49,43,62,45,55,53,52,49,49,51,36,47,19,21];
+  const delta = [4.6,9.3,-18.4,-3.9,-17.8,14.1,-3.7,-5.1,14.6,-2.2,8.9,7.3,7.1,4.8,6.8,9.0,-5.4,6.2,-19.6,-16.8];
+  const clrs  = delta.map(d => d >= 0 ? green : orange);
+
+  /* hand-tuned label positions */
+  const tpos = [
+    'top left',      /* Man City */
+    'top right',     /* Arsenal */
+    'bottom center', /* Chelsea */
+    'middle left',   /* Liverpool */
+    'bottom center', /* Tottenham */
+    'top right',     /* Man Utd */
+    'top right',     /* Newcastle */
+    'bottom left',   /* Forest */
+    'top right',     /* Aston Villa */
+    'bottom left',   /* Crystal Palace */
+    'top right',     /* Bournemouth */
+    'bottom right',  /* Brighton */
+    'top left',      /* Brentford */
+    'bottom right',  /* Everton */
+    'top left',      /* Fulham */
+    'top right',     /* Sunderland */
+    'bottom left',   /* West Ham */
+    'top left',      /* Leeds */
+    'top right',     /* Wolves */
+    'bottom left'    /* Burnley */
+  ];
+
+  /* trend line: pts = 29.51 + 0.0327 * val */
+  const tlX = [230, 1350];
+  const tlY = tlX.map(x => 29.51 + 0.0327 * x);
+
+  const traces = [
+    {
+      x: tlX, y: tlY,
+      mode: 'lines', type: 'scatter',
+      line: { color: accent, width: 1.5, dash: 'dot' },
+      hoverinfo: 'skip'
+    },
+    {
+      x: vals, y: pts,
+      mode: 'markers+text', type: 'scatter',
+      text: clubs,
+      textposition: tpos,
+      textfont: { color: clrs, size: 10 },
+      marker: { color: clrs, size: 11, line: { color: surface, width: 2 } },
+      hovertemplate: '<b>%{text}</b><br>Squad value: €%{x}M<br>Points: %{y}<extra></extra>'
+    }
+  ];
+
+  const layout = baseLayout({
+    xaxis: {
+      title: 'Squad value (€M)',
+      range: [200, 1400],
+      gridcolor: border, zerolinecolor: border,
+      tickfont: { color: muted }, titlefont: { color: muted }
+    },
+    yaxis: {
+      title: 'Points 2025/26',
+      range: [10, 92],
+      gridcolor: border, zerolinecolor: border,
+      tickfont: { color: muted }, titlefont: { color: muted }
+    },
+    margin: { t: 30, r: 30, b: 65, l: 70 }
+  });
+
+  Plotly.newPlot('ch-scatter', traces, layout, { responsive: true, displayModeBar: false });
+})();
+
+/* ── BAR: delta from expected, all 20 clubs ── */
+(function() {
+  /* sorted high to low so the best club appears at the top */
+  const clubs = [
+    'Aston Villa','Man Utd','Arsenal','Sunderland','Bournemouth',
+    'Brighton','Brentford','Fulham','Leeds','Everton',
+    'Man City','Crystal Palace','Newcastle','Liverpool',
+    'Nott\'m Forest','West Ham','Burnley','Tottenham','Chelsea','Wolves'
+  ];
+  const delta = [
+    14.6,14.1,9.3,9.0,8.9,
+    7.3,7.1,6.8,6.2,4.8,
+    4.6,-2.2,-3.7,-3.9,
+    -5.1,-5.4,-16.8,-17.8,-18.4,-19.6
+  ];
+  const clrs  = delta.map(d => d >= 0 ? green : orange);
+  const labels = delta.map(d => (d >= 0 ? '+' : '') + d.toFixed(1));
+
+  const trace = {
+    x: delta,
+    y: clubs,
+    type: 'bar',
+    orientation: 'h',
+    marker: { color: clrs, opacity: 0.88 },
+    text: labels,
+    textposition: 'outside',
+    textfont: { color: clrs, size: 10.5 },
+    hovertemplate: '<b>%{y}</b><br>%{x:+.1f} pts vs expected<extra></extra>',
+    cliponaxis: false
+  };
+
+  const layout = baseLayout({
+    xaxis: {
+      title: 'Points vs. expected',
+      range: [-26, 22],
+      zeroline: true, zerolinecolor: muted, zerolinewidth: 1.5,
+      gridcolor: border,
+      tickfont: { color: muted }, titlefont: { color: muted }
+    },
+    yaxis: {
+      gridcolor: border,
+      tickfont: { color: textColor, size: 11 },
+      titlefont: { color: muted },
+      automargin: true
+    },
+    margin: { t: 20, r: 65, b: 60, l: 130 },
+    bargap: 0.32
+  });
+
+  Plotly.newPlot('ch-gap', [trace], layout, { responsive: true, displayModeBar: false });
+})();
+</script>
+
+</body>
+</html>
