@@ -38,6 +38,7 @@ nav a:hover { color: #c3f400; }
 .card-top { height: 4px; }
 .card-top.liga { background: linear-gradient(90deg, #c3f400, #abd600); }
 .card-top.club  { background: linear-gradient(90deg, #f59e0b, #d97706); }
+.card-top.mundial { background: linear-gradient(90deg, #3b82f6, #8b5cf6); }
 .card-body { padding: 20px; flex: 1; }
 .card-tag { display: inline-block; font-family: 'JetBrains Mono', monospace; font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: .6px; color: #c3f400; background: rgba(195,244,0,.1); border-radius: 2px; padding: 2px 8px; margin-bottom: 12px; }
 .card-title { font-family: 'Anton', sans-serif; font-size: 20px; color: #e2e2e2; line-height: 1.15; margin-bottom: 10px; }
