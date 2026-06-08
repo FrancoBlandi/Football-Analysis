@@ -237,28 +237,32 @@
           </div>
         </div>
 
-        <!-- 3 variables clave -->
+        <!-- Ajustes -->
         <div>
           <div style="font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--gold);font-weight:700;margin-bottom:10px">
-            Las 3 variables que más mueven el xPts
+            Ajustes del modelo
           </div>
-          <div style="display:flex;flex-direction:column;gap:14px;font-size:11.5px">
-
-            <div style="background:var(--bg);border-radius:8px;padding:10px 12px;border-left:3px solid var(--accent)">
-              <div style="color:var(--accent);font-weight:700;font-size:12px;margin-bottom:4px">1. p_juega — Probabilidad de jugar 60+ min</div>
-              <div style="color:var(--muted);line-height:1.6">Es el <strong style="color:var(--text)">multiplicador global</strong>: todo el xPts se multiplica por este valor al final. Un jugador con xPts base de 5.0 y p_juega=0.95 genera 4.75 esperados; el mismo con p_juega=0.40 genera solo 2.0. Es la variable con mayor rango de impacto. Se calcula con minutos internacionales recientes y, cuando existen, con el lineup confirmado del partido.</div>
+          <div style="display:flex;flex-direction:column;gap:8px;font-size:11.5px">
+            <div>
+              <div style="color:var(--text);font-weight:600;margin-bottom:2px">Calidad del rival (FDR)</div>
+              <div style="color:var(--muted)">Beta del modelo Dixon-Coles: equipos con beta bajo son difíciles de atacar (FDR 1 = rojo).</div>
             </div>
-
-            <div style="background:var(--bg);border-radius:8px;padding:10px 12px;border-left:3px solid var(--pos-f)">
-              <div style="color:var(--pos-f);font-weight:700;font-size:12px;margin-bottom:4px">2. Fixture (FDR) — Dificultad del rival</div>
-              <div style="color:var(--muted);line-height:1.6">El rival determina simultáneamente <strong style="color:var(--text)">p_goal, p_assist y p_cs</strong>. Un FDR 5 (rival muy débil) puede multiplicar la probabilidad de gol por ~1.5× respecto a un FDR 1. En fase de grupos esto explica diferencias grandes entre jugadores similares: Wirtz vs Curaçao (FDR 5) vs Mbappé vs un rival más fuerte. El FDR viene del parámetro beta del modelo Dixon-Coles ajustado con datos reales de eliminatorias.</div>
+            <div>
+              <div style="color:var(--text);font-weight:600;margin-bottom:2px">Localía</div>
+              <div style="color:var(--muted)">+15% para EE.UU./Canadá/México (sedes reales). +3% local, −3% visitante para el resto.</div>
             </div>
-
-            <div style="background:var(--bg);border-radius:8px;padding:10px 12px;border-left:3px solid var(--gold)">
-              <div style="color:var(--gold);font-weight:700;font-size:12px;margin-bottom:4px">3. xG/90 + xA/90 de club — La calidad del jugador</div>
-              <div style="color:var(--muted);line-height:1.6">Son el <strong style="color:var(--text)">input base</strong> del modelo: las estadísticas de club ajustadas por coeficiente de liga (Champions League ≈ 1.0, MLS ≈ 0.65) y luego ponderadas con el rendimiento internacional real del jugador (blend club/selección). Un xG/90 alto en una liga top es la señal más confiable de potencial de puntos, especialmente para delanteros y mediocampistas atacantes.</div>
+            <div>
+              <div style="color:var(--text);font-weight:600;margin-bottom:2px">Arquetipo de jugador</div>
+              <div style="color:var(--muted)">Se ajusta xG/xA según el tipo (rematador, enganche, extremo, etc.) y la zona vulnerable del rival (box vs wide).</div>
             </div>
-
+            <div>
+              <div style="color:var(--text);font-weight:600;margin-bottom:2px">Capitán</div>
+              <div style="color:var(--muted)">cap_score = xPts × 2 (si sale titular). La recomendación combina xPts alto con alta probabilidad de jugar.</div>
+            </div>
+            <div>
+              <div style="color:var(--text);font-weight:600;margin-bottom:2px">Posiciones</div>
+              <div style="color:var(--muted)">Según Fantasy Manager AR. Algunos jugadores tienen override manual (ej: Kimmich → DEF, Neymar → MED).</div>
+            </div>
           </div>
         </div>
 
