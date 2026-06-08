@@ -237,32 +237,28 @@
           </div>
         </div>
 
-        <!-- Ajustes -->
+        <!-- 3 variables clave -->
         <div>
           <div style="font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--gold);font-weight:700;margin-bottom:10px">
-            Ajustes del modelo
+            Las 3 variables que más mueven el xPts
           </div>
-          <div style="display:flex;flex-direction:column;gap:8px;font-size:11.5px">
-            <div>
-              <div style="color:var(--text);font-weight:600;margin-bottom:2px">Calidad del rival (FDR)</div>
-              <div style="color:var(--muted)">Beta del modelo Dixon-Coles: equipos con beta bajo son difíciles de atacar (FDR 1 = rojo).</div>
+          <div style="display:flex;flex-direction:column;gap:14px;font-size:11.5px">
+
+            <div style="background:var(--bg);border-radius:8px;padding:10px 12px;border-left:3px solid var(--accent)">
+              <div style="color:var(--accent);font-weight:700;font-size:12px;margin-bottom:4px">1. p_juega — Probabilidad de jugar 60+ min</div>
+              <div style="color:var(--muted);line-height:1.6">Es el <strong style="color:var(--text)">multiplicador global</strong>: todo el xPts se multiplica por este valor al final. Un jugador con xPts base de 5.0 y p_juega=0.95 genera 4.75 esperados; el mismo con p_juega=0.40 genera solo 2.0. Es la variable con mayor rango de impacto. Se calcula con minutos internacionales recientes y, cuando existen, con el lineup confirmado del partido.</div>
             </div>
-            <div>
-              <div style="color:var(--text);font-weight:600;margin-bottom:2px">Localía</div>
-              <div style="color:var(--muted)">+15% para EE.UU./Canadá/México (sedes reales). +3% local, −3% visitante para el resto.</div>
+
+            <div style="background:var(--bg);border-radius:8px;padding:10px 12px;border-left:3px solid var(--pos-f)">
+              <div style="color:var(--pos-f);font-weight:700;font-size:12px;margin-bottom:4px">2. Fixture (FDR) — Dificultad del rival</div>
+              <div style="color:var(--muted);line-height:1.6">El rival determina simultáneamente <strong style="color:var(--text)">p_goal, p_assist y p_cs</strong>. Un FDR 5 (rival muy débil) puede multiplicar la probabilidad de gol por ~1.5× respecto a un FDR 1. En fase de grupos esto explica diferencias grandes entre jugadores similares: Wirtz vs Curaçao (FDR 5) vs Mbappé vs un rival más fuerte. El FDR viene del parámetro beta del modelo Dixon-Coles ajustado con datos reales de eliminatorias.</div>
             </div>
-            <div>
-              <div style="color:var(--text);font-weight:600;margin-bottom:2px">Arquetipo de jugador</div>
-              <div style="color:var(--muted)">Se ajusta xG/xA según el tipo (rematador, enganche, extremo, etc.) y la zona vulnerable del rival (box vs wide).</div>
+
+            <div style="background:var(--bg);border-radius:8px;padding:10px 12px;border-left:3px solid var(--gold)">
+              <div style="color:var(--gold);font-weight:700;font-size:12px;margin-bottom:4px">3. xG/90 + xA/90 de club — La calidad del jugador</div>
+              <div style="color:var(--muted);line-height:1.6">Son el <strong style="color:var(--text)">input base</strong> del modelo: las estadísticas de club ajustadas por coeficiente de liga (Champions League ≈ 1.0, MLS ≈ 0.65) y luego ponderadas con el rendimiento internacional real del jugador (blend club/selección). Un xG/90 alto en una liga top es la señal más confiable de potencial de puntos, especialmente para delanteros y mediocampistas atacantes.</div>
             </div>
-            <div>
-              <div style="color:var(--text);font-weight:600;margin-bottom:2px">Capitán</div>
-              <div style="color:var(--muted)">cap_score = xPts × 2 (si sale titular). La recomendación combina xPts alto con alta probabilidad de jugar.</div>
-            </div>
-            <div>
-              <div style="color:var(--text);font-weight:600;margin-bottom:2px">Posiciones</div>
-              <div style="color:var(--muted)">Según Fantasy Manager AR. Algunos jugadores tienen override manual (ej: Kimmich → DEF, Neymar → MED).</div>
-            </div>
+
           </div>
         </div>
 
@@ -513,24 +509,32 @@ function filterPos(pos, btn) {
 
 // ── Captain recommendations ───────────────────────────────────────────────────
 function renderCaptains() {
-  // Top 5 by xPts for current fecha (all positions, deduplicated by player+team)
+  // Top 1 por posición (GK, DEF, MED, FWD) para la fecha activa
   let pool = D.players;
   if (activeFecha) pool = pool.filter(p => p.round_num === activeFecha);
-  pool = [...pool].sort((a,b) => (b.xpts||0) - (a.xpts||0));
-  // Deduplicate: one entry per player_id (same player can appear in multiple fechas)
-  const seen = new Set();
-  const top = [];
+  pool = [...pool].sort((a,b) => (b.cap_score||0) - (a.cap_score||0));
+
+  const POS_ORDER = ["G","D","M","F"];
+  const POS_LABEL = { G:"GK", D:"DEF", M:"MED", F:"DEL" };
+  const POS_EMOJI = { G:"🧤", D:"🛡️", M:"⚙️", F:"⚡" };
+  const best = {};
+  const seenPlayer = new Set();
   for (const p of pool) {
     const key = p.player_id + "_" + p.team;
-    if (!seen.has(key)) { seen.add(key); top.push(p); }
-    if (top.length >= 5) break;
+    if (seenPlayer.has(key)) continue;
+    seenPlayer.add(key);
+    if (!best[p.pos]) best[p.pos] = p;
+    if (POS_ORDER.every(pos => best[pos])) break;
   }
-  const medals = ["🥇","🥈","🥉","4°","5°"];
+
   const el = document.getElementById("cap-list");
-  el.innerHTML = top.map((p, i) => {
+  el.innerHTML = POS_ORDER.map(pos => {
+    const p = best[pos];
+    if (!p) return "";
     const loc = p.is_home ? "vs" : "@";
     return `<div class="cap-card">
-      <div class="cap-rank">${medals[i]}</div>
+      <div class="cap-rank">${POS_EMOJI[pos]}</div>
+      <div style="font-size:10px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px">${POS_LABEL[pos]}</div>
       <div class="cap-name"><span class="cap-badge">C</span>${p.name}</div>
       <div class="cap-meta"><span class="pos pos-${p.pos}" style="font-size:10px;padding:1px 5px">${p.pos}</span> ${p.team}</div>
       <div class="cap-meta" style="margin-top:2px">${loc} ${p.opp} · Gr ${p.group}</div>
