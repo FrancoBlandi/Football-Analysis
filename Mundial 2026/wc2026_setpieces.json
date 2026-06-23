@@ -1,0 +1,596 @@
+{
+  "Algeria": {
+    "pk": [
+      "Mahrez"
+    ],
+    "fk": [
+      "Mahrez",
+      "Chaibi"
+    ],
+    "ck": [
+      "Chaibi",
+      "Mahrez"
+    ]
+  },
+  "Argentina": {
+    "pk": [
+      "Messi"
+    ],
+    "fk": [
+      "Messi"
+    ],
+    "ck": [
+      "Almada",
+      "Messi"
+    ]
+  },
+  "Australia": {
+    "pk": [
+      "Boyle"
+    ],
+    "fk": [
+      "Hrustic"
+    ],
+    "ck": [
+      "Hrustic",
+      "Boyle"
+    ]
+  },
+  "Austria": {
+    "pk": [
+      "Arnautovic",
+      "Sabitzer"
+    ],
+    "fk": [
+      "Sabitzer",
+      "Alaba"
+    ],
+    "ck": [
+      "Alaba",
+      "Sabitzer"
+    ]
+  },
+  "Belgium": {
+    "pk": [
+      "Lukaku",
+      "De Bruyne"
+    ],
+    "fk": [
+      "De Bruyne"
+    ],
+    "ck": [
+      "De Bruyne"
+    ]
+  },
+  "Bosnia & Herzegovina": {
+    "pk": [
+      "Dzeko",
+      "Demirovic"
+    ],
+    "fk": [
+      "Bajraktarevic"
+    ],
+    "ck": [
+      "Bajraktarevic",
+      "Alajbegovic"
+    ]
+  },
+  "Brazil": {
+    "pk": [
+      "Raphinha"
+    ],
+    "fk": [
+      "Raphinha"
+    ],
+    "ck": [
+      "Raphinha"
+    ]
+  },
+  "Cabo Verde": {
+    "pk": [
+      "Mendes",
+      "Livramento"
+    ],
+    "fk": [
+      "Monteiro"
+    ],
+    "ck": [
+      "Semedo",
+      "Cabral"
+    ]
+  },
+  "Canada": {
+    "pk": [
+      "David"
+    ],
+    "fk": [
+      "Davies"
+    ],
+    "ck": [
+      "Davies",
+      "Choiniere"
+    ]
+  },
+  "Colombia": {
+    "pk": [
+      "J.Rodriguez"
+    ],
+    "fk": [
+      "J.Rodriguez",
+      "Arias"
+    ],
+    "ck": [
+      "J.Rodriguez"
+    ]
+  },
+  "DR Congo": {
+    "pk": [
+      "Wissa"
+    ],
+    "fk": [
+      "Bongonda",
+      "Wissa"
+    ],
+    "ck": [
+      "Masuaku",
+      "Bongonda"
+    ]
+  },
+  "Croatia": {
+    "pk": [
+      "Modric"
+    ],
+    "fk": [
+      "Modric"
+    ],
+    "ck": [
+      "Modric",
+      "Pasalic"
+    ]
+  },
+  "Curaçao": {
+    "pk": [
+      "L.Bacuna"
+    ],
+    "fk": [
+      "J.Bacuna"
+    ],
+    "ck": [
+      "J.Bacuna",
+      "L.Bacuna"
+    ]
+  },
+  "Czechia": {
+    "pk": [
+      "Schick",
+      "Soucek"
+    ],
+    "fk": [
+      "Sulc"
+    ],
+    "ck": [
+      "Coufal"
+    ]
+  },
+  "Côte d'Ivoire": {
+    "pk": [
+      "Kessie"
+    ],
+    "fk": [
+      "Amad"
+    ],
+    "ck": [
+      "Amad",
+      "Diomande"
+    ]
+  },
+  "Ecuador": {
+    "pk": [
+      "Valencia",
+      "Alcivar"
+    ],
+    "fk": [
+      "Valencia",
+      "Estupinan"
+    ],
+    "ck": [
+      "Alcivar",
+      "Caicedo"
+    ]
+  },
+  "Egypt": {
+    "pk": [
+      "Salah"
+    ],
+    "fk": [
+      "Salah",
+      "Marmoush"
+    ],
+    "ck": [
+      "Salah"
+    ]
+  },
+  "England": {
+    "pk": [
+      "Kane"
+    ],
+    "fk": [
+      "Rice"
+    ],
+    "ck": [
+      "Rice",
+      "Saka"
+    ]
+  },
+  "France": {
+    "pk": [
+      "Mbappe"
+    ],
+    "fk": [
+      "Olise"
+    ],
+    "ck": [
+      "Olise"
+    ]
+  },
+  "Germany": {
+    "pk": [
+      "Havertz",
+      "Kimmich"
+    ],
+    "fk": [
+      "Kimmich",
+      "Wirtz"
+    ],
+    "ck": [
+      "Kimmich",
+      "Wirtz"
+    ]
+  },
+  "Ghana": {
+    "pk": [
+      "Ayew"
+    ],
+    "fk": [
+      "Ayew",
+      "Semenyo"
+    ],
+    "ck": [
+      "Ayew"
+    ]
+  },
+  "Haiti": {
+    "pk": [
+      "Nazon",
+      "Isidor"
+    ],
+    "fk": [
+      "Bellegarde"
+    ],
+    "ck": [
+      "Bellegarde"
+    ]
+  },
+  "Iran": {
+    "pk": [
+      "Taremi"
+    ],
+    "fk": [
+      "Ghoddos",
+      "Taremi"
+    ],
+    "ck": [
+      "Ghoddos"
+    ]
+  },
+  "Iraq": {
+    "pk": [
+      "Al-Ammari",
+      "Hussein"
+    ],
+    "fk": [
+      "Al-Ammari"
+    ],
+    "ck": [
+      "Al-Ammari"
+    ]
+  },
+  "Japan": {
+    "pk": [
+      "Ueda",
+      "Doan"
+    ],
+    "fk": [
+      "Kubo",
+      "Ito"
+    ],
+    "ck": [
+      "Ito"
+    ]
+  },
+  "Jordan": {
+    "pk": [
+      "Olwan"
+    ],
+    "fk": [
+      "Tamari"
+    ],
+    "ck": [
+      "Tamari"
+    ]
+  },
+  "South Korea": {
+    "pk": [
+      "Son"
+    ],
+    "fk": [
+      "Son"
+    ],
+    "ck": [
+      "Kang-in Lee",
+      "Son"
+    ]
+  },
+  "Mexico": {
+    "pk": [
+      "Jimenez"
+    ],
+    "fk": [
+      "Chavez",
+      "Jimenez"
+    ],
+    "ck": [
+      "Gutierrez"
+    ]
+  },
+  "Morocco": {
+    "pk": [
+      "Diaz"
+    ],
+    "fk": [
+      "Hakimi",
+      "Diaz"
+    ],
+    "ck": [
+      "Hakimi"
+    ]
+  },
+  "Netherlands": {
+    "pk": [
+      "Gakpo",
+      "Depay"
+    ],
+    "fk": [
+      "Depay"
+    ],
+    "ck": [
+      "Depay",
+      "Gakpo"
+    ]
+  },
+  "New Zealand": {
+    "pk": [
+      "Wood"
+    ],
+    "fk": [
+      "Singh"
+    ],
+    "ck": [
+      "Singh"
+    ]
+  },
+  "Norway": {
+    "pk": [
+      "Haaland"
+    ],
+    "fk": [
+      "Odegaard"
+    ],
+    "ck": [
+      "Odegaard",
+      "Ryerson"
+    ]
+  },
+  "Panama": {
+    "pk": [
+      "Davis",
+      "Diaz"
+    ],
+    "fk": [
+      "Carrasquilla",
+      "Murillo"
+    ],
+    "ck": [
+      "Carrasquilla",
+      "Davis"
+    ]
+  },
+  "Paraguay": {
+    "pk": [
+      "Enciso"
+    ],
+    "fk": [
+      "Gomez",
+      "Enciso"
+    ],
+    "ck": [
+      "Gomez",
+      "Enciso"
+    ]
+  },
+  "Portugal": {
+    "pk": [
+      "Ronaldo",
+      "Fernandes"
+    ],
+    "fk": [
+      "Fernandes"
+    ],
+    "ck": [
+      "Fernandes"
+    ]
+  },
+  "Qatar": {
+    "pk": [
+      "Afif"
+    ],
+    "fk": [
+      "Afif"
+    ],
+    "ck": [
+      "Afif"
+    ]
+  },
+  "Saudi Arabia": {
+    "pk": [
+      "Salem Al-Dawsari"
+    ],
+    "fk": [
+      "Salem Al-Dawsari"
+    ],
+    "ck": [
+      "Salem Al-Dawsari",
+      "Al-Shehri"
+    ]
+  },
+  "Scotland": {
+    "pk": [
+      "McTominay",
+      "McGinn"
+    ],
+    "fk": [
+      "McGinn"
+    ],
+    "ck": [
+      "McGinn",
+      "Ferguson"
+    ]
+  },
+  "Senegal": {
+    "pk": [
+      "Mane"
+    ],
+    "fk": [
+      "Mane"
+    ],
+    "ck": [
+      "M.Diouf",
+      "Diatta"
+    ]
+  },
+  "South Africa": {
+    "pk": [
+      "Foster",
+      "Appollis"
+    ],
+    "fk": [
+      "Modiba",
+      "Appollis"
+    ],
+    "ck": [
+      "Appollis",
+      "Mokoena"
+    ]
+  },
+  "Spain": {
+    "pk": [
+      "Oyarzabal",
+      "Yamal"
+    ],
+    "fk": [
+      "Yamal"
+    ],
+    "ck": [
+      "Yamal",
+      "Pedri"
+    ]
+  },
+  "Sweden": {
+    "pk": [
+      "Gyokeres",
+      "Isak"
+    ],
+    "fk": [
+      "Elanga",
+      "Svanberg"
+    ],
+    "ck": [
+      "Nygren",
+      "Elanga"
+    ]
+  },
+  "Switzerland": {
+    "pk": [
+      "Xhaka"
+    ],
+    "fk": [
+      "Xhaka"
+    ],
+    "ck": [
+      "Vargas",
+      "Rieder"
+    ]
+  },
+  "Tunisia": {
+    "pk": [
+      "Abdi"
+    ],
+    "fk": [
+      "Hannibal"
+    ],
+    "ck": [
+      "Hannibal",
+      "Abdi"
+    ]
+  },
+  "USA": {
+    "pk": [
+      "Balogun",
+      "Pulisic"
+    ],
+    "fk": [
+      "Tillman",
+      "Pulisic"
+    ],
+    "ck": [
+      "Tillman",
+      "Pulisic"
+    ]
+  },
+  "Uruguay": {
+    "pk": [
+      "Valverde"
+    ],
+    "fk": [
+      "Valverde"
+    ],
+    "ck": [
+      "De Arrascaeta",
+      "Valverde"
+    ]
+  },
+  "Uzbekistan": {
+    "pk": [
+      "Shukurov"
+    ],
+    "fk": [
+      "Fayzullayev"
+    ],
+    "ck": [
+      "Fayzullayev",
+      "Shukurov"
+    ]
+  },
+  "Türkiye": {
+    "pk": [
+      "Calhanoglu"
+    ],
+    "fk": [
+      "Calhanoglu"
+    ],
+    "ck": [
+      "Calhanoglu",
+      "Guler"
+    ]
+  }
+}

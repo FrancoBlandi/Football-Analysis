@@ -1,0 +1,702 @@
+{
+  "groups": {
+    "A": [
+      {
+        "id": 4781,
+        "name": "Mexico",
+        "shortName": "Mexico",
+        "country": "",
+        "group": "A"
+      },
+      {
+        "id": 4736,
+        "name": "South Africa",
+        "shortName": "South Africa",
+        "country": "",
+        "group": "A"
+      },
+      {
+        "id": 4735,
+        "name": "South Korea",
+        "shortName": "South Korea",
+        "country": "",
+        "group": "A"
+      },
+      {
+        "id": 4714,
+        "name": "Czechia",
+        "shortName": "Czechia",
+        "country": "",
+        "group": "A"
+      }
+    ],
+    "B": [
+      {
+        "id": 4752,
+        "name": "Canada",
+        "shortName": "Canada",
+        "country": "",
+        "group": "B"
+      },
+      {
+        "id": 4479,
+        "name": "Bosnia & Herzegovina",
+        "shortName": "BiH",
+        "country": "",
+        "group": "B"
+      },
+      {
+        "id": 4792,
+        "name": "Qatar",
+        "shortName": "Qatar",
+        "country": "",
+        "group": "B"
+      },
+      {
+        "id": 4699,
+        "name": "Switzerland",
+        "shortName": "Switzerland",
+        "country": "",
+        "group": "B"
+      }
+    ],
+    "C": [
+      {
+        "id": 4748,
+        "name": "Brazil",
+        "shortName": "Brazil",
+        "country": "",
+        "group": "C"
+      },
+      {
+        "id": 4778,
+        "name": "Morocco",
+        "shortName": "Morocco",
+        "country": "",
+        "group": "C"
+      },
+      {
+        "id": 7229,
+        "name": "Haiti",
+        "shortName": "Haiti",
+        "country": "",
+        "group": "C"
+      },
+      {
+        "id": 4695,
+        "name": "Scotland",
+        "shortName": "Scotland",
+        "country": "",
+        "group": "C"
+      }
+    ],
+    "D": [
+      {
+        "id": 4724,
+        "name": "USA",
+        "shortName": "USA",
+        "country": "",
+        "group": "D"
+      },
+      {
+        "id": 4789,
+        "name": "Paraguay",
+        "shortName": "Paraguay",
+        "country": "",
+        "group": "D"
+      },
+      {
+        "id": 4741,
+        "name": "Australia",
+        "shortName": "Australia",
+        "country": "",
+        "group": "D"
+      },
+      {
+        "id": 4700,
+        "name": "Türkiye",
+        "shortName": "Türkiye",
+        "country": "",
+        "group": "D"
+      }
+    ],
+    "E": [
+      {
+        "id": 4711,
+        "name": "Germany",
+        "shortName": "Germany",
+        "country": "",
+        "group": "E"
+      },
+      {
+        "id": 55827,
+        "name": "Curaçao",
+        "shortName": "Curaçao",
+        "country": "",
+        "group": "E"
+      },
+      {
+        "id": 4768,
+        "name": "Côte d'Ivoire",
+        "shortName": "Côte d'Ivoire",
+        "country": "",
+        "group": "E"
+      },
+      {
+        "id": 4757,
+        "name": "Ecuador",
+        "shortName": "Ecuador",
+        "country": "",
+        "group": "E"
+      }
+    ],
+    "F": [
+      {
+        "id": 4705,
+        "name": "Netherlands",
+        "shortName": "Netherlands",
+        "country": "",
+        "group": "F"
+      },
+      {
+        "id": 4770,
+        "name": "Japan",
+        "shortName": "Japan",
+        "country": "",
+        "group": "F"
+      },
+      {
+        "id": 4688,
+        "name": "Sweden",
+        "shortName": "Sweden",
+        "country": "",
+        "group": "F"
+      },
+      {
+        "id": 4729,
+        "name": "Tunisia",
+        "shortName": "Tunisia",
+        "country": "",
+        "group": "F"
+      }
+    ],
+    "G": [
+      {
+        "id": 4717,
+        "name": "Belgium",
+        "shortName": "Belgium",
+        "country": "",
+        "group": "G"
+      },
+      {
+        "id": 4758,
+        "name": "Egypt",
+        "shortName": "Egypt",
+        "country": "",
+        "group": "G"
+      },
+      {
+        "id": 4766,
+        "name": "Iran",
+        "shortName": "Iran",
+        "country": "",
+        "group": "G"
+      },
+      {
+        "id": 4784,
+        "name": "New Zealand",
+        "shortName": "New Zealand",
+        "country": "",
+        "group": "G"
+      }
+    ],
+    "H": [
+      {
+        "id": 4698,
+        "name": "Spain",
+        "shortName": "Spain",
+        "country": "",
+        "group": "H"
+      },
+      {
+        "id": 4753,
+        "name": "Cabo Verde",
+        "shortName": "Cabo Verde",
+        "country": "",
+        "group": "H"
+      },
+      {
+        "id": 4834,
+        "name": "Saudi Arabia",
+        "shortName": "Saudi Arabia",
+        "country": "",
+        "group": "H"
+      },
+      {
+        "id": 4725,
+        "name": "Uruguay",
+        "shortName": "Uruguay",
+        "country": "",
+        "group": "H"
+      }
+    ],
+    "I": [
+      {
+        "id": 4481,
+        "name": "France",
+        "shortName": "France",
+        "country": "",
+        "group": "I"
+      },
+      {
+        "id": 4739,
+        "name": "Senegal",
+        "shortName": "Senegal",
+        "country": "",
+        "group": "I"
+      },
+      {
+        "id": 4767,
+        "name": "Iraq",
+        "shortName": "Iraq",
+        "country": "",
+        "group": "I"
+      },
+      {
+        "id": 4475,
+        "name": "Norway",
+        "shortName": "Norway",
+        "country": "",
+        "group": "I"
+      }
+    ],
+    "J": [
+      {
+        "id": 4819,
+        "name": "Argentina",
+        "shortName": "Argentina",
+        "country": "",
+        "group": "J"
+      },
+      {
+        "id": 4691,
+        "name": "Algeria",
+        "shortName": "Algeria",
+        "country": "",
+        "group": "J"
+      },
+      {
+        "id": 4718,
+        "name": "Austria",
+        "shortName": "Austria",
+        "country": "",
+        "group": "J"
+      },
+      {
+        "id": 4771,
+        "name": "Jordan",
+        "shortName": "Jordan",
+        "country": "",
+        "group": "J"
+      }
+    ],
+    "K": [
+      {
+        "id": 4704,
+        "name": "Portugal",
+        "shortName": "Portugal",
+        "country": "",
+        "group": "K"
+      },
+      {
+        "id": 4823,
+        "name": "DR Congo",
+        "shortName": "DR Congo",
+        "country": "",
+        "group": "K"
+      },
+      {
+        "id": 4723,
+        "name": "Uzbekistan",
+        "shortName": "Uzbekistan",
+        "country": "",
+        "group": "K"
+      },
+      {
+        "id": 4820,
+        "name": "Colombia",
+        "shortName": "Colombia",
+        "country": "",
+        "group": "K"
+      }
+    ],
+    "L": [
+      {
+        "id": 4713,
+        "name": "England",
+        "shortName": "England",
+        "country": "",
+        "group": "L"
+      },
+      {
+        "id": 4715,
+        "name": "Croatia",
+        "shortName": "Croatia",
+        "country": "",
+        "group": "L"
+      },
+      {
+        "id": 4764,
+        "name": "Ghana",
+        "shortName": "Ghana",
+        "country": "",
+        "group": "L"
+      },
+      {
+        "id": 5164,
+        "name": "Panama",
+        "shortName": "Panama",
+        "country": "",
+        "group": "L"
+      }
+    ]
+  },
+  "teams": [
+    {
+      "id": 4781,
+      "name": "Mexico",
+      "shortName": "Mexico",
+      "country": "",
+      "group": "A"
+    },
+    {
+      "id": 4736,
+      "name": "South Africa",
+      "shortName": "South Africa",
+      "country": "",
+      "group": "A"
+    },
+    {
+      "id": 4735,
+      "name": "South Korea",
+      "shortName": "South Korea",
+      "country": "",
+      "group": "A"
+    },
+    {
+      "id": 4714,
+      "name": "Czechia",
+      "shortName": "Czechia",
+      "country": "",
+      "group": "A"
+    },
+    {
+      "id": 4752,
+      "name": "Canada",
+      "shortName": "Canada",
+      "country": "",
+      "group": "B"
+    },
+    {
+      "id": 4479,
+      "name": "Bosnia & Herzegovina",
+      "shortName": "BiH",
+      "country": "",
+      "group": "B"
+    },
+    {
+      "id": 4792,
+      "name": "Qatar",
+      "shortName": "Qatar",
+      "country": "",
+      "group": "B"
+    },
+    {
+      "id": 4699,
+      "name": "Switzerland",
+      "shortName": "Switzerland",
+      "country": "",
+      "group": "B"
+    },
+    {
+      "id": 4748,
+      "name": "Brazil",
+      "shortName": "Brazil",
+      "country": "",
+      "group": "C"
+    },
+    {
+      "id": 4778,
+      "name": "Morocco",
+      "shortName": "Morocco",
+      "country": "",
+      "group": "C"
+    },
+    {
+      "id": 7229,
+      "name": "Haiti",
+      "shortName": "Haiti",
+      "country": "",
+      "group": "C"
+    },
+    {
+      "id": 4695,
+      "name": "Scotland",
+      "shortName": "Scotland",
+      "country": "",
+      "group": "C"
+    },
+    {
+      "id": 4724,
+      "name": "USA",
+      "shortName": "USA",
+      "country": "",
+      "group": "D"
+    },
+    {
+      "id": 4789,
+      "name": "Paraguay",
+      "shortName": "Paraguay",
+      "country": "",
+      "group": "D"
+    },
+    {
+      "id": 4741,
+      "name": "Australia",
+      "shortName": "Australia",
+      "country": "",
+      "group": "D"
+    },
+    {
+      "id": 4700,
+      "name": "Türkiye",
+      "shortName": "Türkiye",
+      "country": "",
+      "group": "D"
+    },
+    {
+      "id": 4711,
+      "name": "Germany",
+      "shortName": "Germany",
+      "country": "",
+      "group": "E"
+    },
+    {
+      "id": 55827,
+      "name": "Curaçao",
+      "shortName": "Curaçao",
+      "country": "",
+      "group": "E"
+    },
+    {
+      "id": 4768,
+      "name": "Côte d'Ivoire",
+      "shortName": "Côte d'Ivoire",
+      "country": "",
+      "group": "E"
+    },
+    {
+      "id": 4757,
+      "name": "Ecuador",
+      "shortName": "Ecuador",
+      "country": "",
+      "group": "E"
+    },
+    {
+      "id": 4705,
+      "name": "Netherlands",
+      "shortName": "Netherlands",
+      "country": "",
+      "group": "F"
+    },
+    {
+      "id": 4770,
+      "name": "Japan",
+      "shortName": "Japan",
+      "country": "",
+      "group": "F"
+    },
+    {
+      "id": 4688,
+      "name": "Sweden",
+      "shortName": "Sweden",
+      "country": "",
+      "group": "F"
+    },
+    {
+      "id": 4729,
+      "name": "Tunisia",
+      "shortName": "Tunisia",
+      "country": "",
+      "group": "F"
+    },
+    {
+      "id": 4717,
+      "name": "Belgium",
+      "shortName": "Belgium",
+      "country": "",
+      "group": "G"
+    },
+    {
+      "id": 4758,
+      "name": "Egypt",
+      "shortName": "Egypt",
+      "country": "",
+      "group": "G"
+    },
+    {
+      "id": 4766,
+      "name": "Iran",
+      "shortName": "Iran",
+      "country": "",
+      "group": "G"
+    },
+    {
+      "id": 4784,
+      "name": "New Zealand",
+      "shortName": "New Zealand",
+      "country": "",
+      "group": "G"
+    },
+    {
+      "id": 4698,
+      "name": "Spain",
+      "shortName": "Spain",
+      "country": "",
+      "group": "H"
+    },
+    {
+      "id": 4753,
+      "name": "Cabo Verde",
+      "shortName": "Cabo Verde",
+      "country": "",
+      "group": "H"
+    },
+    {
+      "id": 4834,
+      "name": "Saudi Arabia",
+      "shortName": "Saudi Arabia",
+      "country": "",
+      "group": "H"
+    },
+    {
+      "id": 4725,
+      "name": "Uruguay",
+      "shortName": "Uruguay",
+      "country": "",
+      "group": "H"
+    },
+    {
+      "id": 4481,
+      "name": "France",
+      "shortName": "France",
+      "country": "",
+      "group": "I"
+    },
+    {
+      "id": 4739,
+      "name": "Senegal",
+      "shortName": "Senegal",
+      "country": "",
+      "group": "I"
+    },
+    {
+      "id": 4767,
+      "name": "Iraq",
+      "shortName": "Iraq",
+      "country": "",
+      "group": "I"
+    },
+    {
+      "id": 4475,
+      "name": "Norway",
+      "shortName": "Norway",
+      "country": "",
+      "group": "I"
+    },
+    {
+      "id": 4819,
+      "name": "Argentina",
+      "shortName": "Argentina",
+      "country": "",
+      "group": "J"
+    },
+    {
+      "id": 4691,
+      "name": "Algeria",
+      "shortName": "Algeria",
+      "country": "",
+      "group": "J"
+    },
+    {
+      "id": 4718,
+      "name": "Austria",
+      "shortName": "Austria",
+      "country": "",
+      "group": "J"
+    },
+    {
+      "id": 4771,
+      "name": "Jordan",
+      "shortName": "Jordan",
+      "country": "",
+      "group": "J"
+    },
+    {
+      "id": 4704,
+      "name": "Portugal",
+      "shortName": "Portugal",
+      "country": "",
+      "group": "K"
+    },
+    {
+      "id": 4823,
+      "name": "DR Congo",
+      "shortName": "DR Congo",
+      "country": "",
+      "group": "K"
+    },
+    {
+      "id": 4723,
+      "name": "Uzbekistan",
+      "shortName": "Uzbekistan",
+      "country": "",
+      "group": "K"
+    },
+    {
+      "id": 4820,
+      "name": "Colombia",
+      "shortName": "Colombia",
+      "country": "",
+      "group": "K"
+    },
+    {
+      "id": 4713,
+      "name": "England",
+      "shortName": "England",
+      "country": "",
+      "group": "L"
+    },
+    {
+      "id": 4715,
+      "name": "Croatia",
+      "shortName": "Croatia",
+      "country": "",
+      "group": "L"
+    },
+    {
+      "id": 4764,
+      "name": "Ghana",
+      "shortName": "Ghana",
+      "country": "",
+      "group": "L"
+    },
+    {
+      "id": 5164,
+      "name": "Panama",
+      "shortName": "Panama",
+      "country": "",
+      "group": "L"
+    }
+  ]
+}

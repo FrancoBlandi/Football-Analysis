@@ -1,0 +1,290 @@
+{
+  "Algeria": {
+    "name": "Vladimir Petković",
+    "id": 52898,
+    "group": "J",
+    "team_id": 4691
+  },
+  "Argentina": {
+    "name": "Lionel Scaloni",
+    "id": 790728,
+    "group": "B",
+    "team_id": 4819
+  },
+  "Australia": {
+    "name": "Tony Popovic",
+    "id": 635,
+    "group": "D",
+    "team_id": 4741
+  },
+  "Austria": {
+    "name": "Ralf Rangnick",
+    "id": 785379,
+    "group": "J",
+    "team_id": 4718
+  },
+  "Belgium": {
+    "name": "Rudi Garcia",
+    "id": 53059,
+    "group": "G",
+    "team_id": 4717
+  },
+  "Bosnia & Herzegovina": {
+    "name": "Sergej Barbarez",
+    "id": 804862,
+    "group": "B",
+    "team_id": 4479
+  },
+  "Brazil": {
+    "name": "Carlo Ancelotti",
+    "id": 52965,
+    "group": "C",
+    "team_id": 4748
+  },
+  "Cabo Verde": {
+    "name": "Bubista",
+    "id": 794980,
+    "group": "H",
+    "team_id": 4753
+  },
+  "Canada": {
+    "name": "Jesse Marsch",
+    "id": 784568,
+    "group": "B",
+    "team_id": 4752
+  },
+  "Colombia": {
+    "name": "Nestor Lorenzo",
+    "id": 795312,
+    "group": "K",
+    "team_id": 4820
+  },
+  "Croatia": {
+    "name": "Zlatko Dalić",
+    "id": 784902,
+    "group": "L",
+    "team_id": 4715
+  },
+  "Curaçao": {
+    "name": "Dick Advocaat",
+    "id": 53298,
+    "group": "E",
+    "team_id": 55827
+  },
+  "Czechia": {
+    "name": "Miroslav Koubek",
+    "id": 68799,
+    "group": "A",
+    "team_id": 4714
+  },
+  "Côte d'Ivoire": {
+    "name": "Emerse Faé",
+    "id": 803796,
+    "group": "E",
+    "team_id": 4768
+  },
+  "DR Congo": {
+    "name": "Sebastien Desabre",
+    "id": 789575,
+    "group": "K",
+    "team_id": 4823
+  },
+  "Ecuador": {
+    "name": "Sebastian Beccacece",
+    "id": 786550,
+    "group": "E",
+    "team_id": 4757
+  },
+  "Egypt": {
+    "name": "Hossam Hassan",
+    "id": 790139,
+    "group": "G",
+    "team_id": 4758
+  },
+  "England": {
+    "name": "Thomas Tuchel",
+    "id": 785186,
+    "group": "L",
+    "team_id": 4713
+  },
+  "France": {
+    "name": "Didier Deschamps",
+    "id": 69075,
+    "group": "I",
+    "team_id": 4481
+  },
+  "Germany": {
+    "name": "Julian Nagelsmann",
+    "id": 786670,
+    "group": "E",
+    "team_id": 4711
+  },
+  "Ghana": {
+    "name": "Carlos Queiroz",
+    "id": 53636,
+    "group": "L",
+    "team_id": 4764
+  },
+  "Haiti": {
+    "name": "Sébastien Migné",
+    "id": 790200,
+    "group": "C",
+    "team_id": 7229
+  },
+  "Iran": {
+    "name": "Amir Ghalenoei",
+    "id": 785362,
+    "group": "G",
+    "team_id": 4766
+  },
+  "Iraq": {
+    "name": "Graham Arnold",
+    "id": 53524,
+    "group": "I",
+    "team_id": 4767
+  },
+  "Japan": {
+    "name": "Hajime Moriyasu",
+    "id": 156178,
+    "group": "F",
+    "team_id": 4770
+  },
+  "Jordan": {
+    "name": "Jamal Sellami",
+    "id": 793874,
+    "group": "J",
+    "team_id": 4771
+  },
+  "Mexico": {
+    "name": "Javier Aguirre",
+    "id": 784504,
+    "group": "A",
+    "team_id": 4781
+  },
+  "Morocco": {
+    "name": "Mohamed Ouahbi",
+    "id": 807706,
+    "group": "C",
+    "team_id": 4778
+  },
+  "Netherlands": {
+    "name": "Ronald Koeman",
+    "id": 52985,
+    "group": "F",
+    "team_id": 4705
+  },
+  "New Zealand": {
+    "name": "Darren Bazeley",
+    "id": 784912,
+    "group": "G",
+    "team_id": 4784
+  },
+  "Norway": {
+    "name": "Ståle Solbakken",
+    "id": 53102,
+    "group": "I",
+    "team_id": 4475
+  },
+  "Panama": {
+    "name": "Thomas Christiansen",
+    "id": 396,
+    "group": "L",
+    "team_id": 5164
+  },
+  "Paraguay": {
+    "name": "Gustavo Alfaro",
+    "id": 53366,
+    "group": "D",
+    "team_id": 4789
+  },
+  "Portugal": {
+    "name": "Roberto Martínez",
+    "id": 19518,
+    "group": "K",
+    "team_id": 4704
+  },
+  "Qatar": {
+    "name": "Julen Lopetegui",
+    "id": 138570,
+    "group": "B",
+    "team_id": 4792
+  },
+  "Saudi Arabia": {
+    "name": "Georgios Donis",
+    "id": 53300,
+    "group": "H",
+    "team_id": 4834
+  },
+  "Scotland": {
+    "name": "Steve Clarke",
+    "id": 784471,
+    "group": "C",
+    "team_id": 4695
+  },
+  "Senegal": {
+    "name": "Pape Thiaw",
+    "id": 798718,
+    "group": "I",
+    "team_id": 4739
+  },
+  "South Africa": {
+    "name": "Hugo Broos",
+    "id": 786568,
+    "group": "A",
+    "team_id": 4736
+  },
+  "South Korea": {
+    "name": "Myung Bo Hong",
+    "id": 786586,
+    "group": "A",
+    "team_id": 4735
+  },
+  "Spain": {
+    "name": "Luis De La Fuente",
+    "id": 331371,
+    "group": "H",
+    "team_id": 4698
+  },
+  "Sweden": {
+    "name": "Graham Potter",
+    "id": 309534,
+    "group": "F",
+    "team_id": 4688
+  },
+  "Switzerland": {
+    "name": "Murat Yakin",
+    "id": 67424,
+    "group": "B",
+    "team_id": 4699
+  },
+  "Tunisia": {
+    "name": "Sabri Lamouchi",
+    "id": 9062,
+    "group": "F",
+    "team_id": 4729
+  },
+  "Türkiye": {
+    "name": "Vincenzo Montella",
+    "id": 1774,
+    "group": "D",
+    "team_id": 4700
+  },
+  "USA": {
+    "name": "Mauricio Pochettino",
+    "id": 3377,
+    "group": "D",
+    "team_id": 4724
+  },
+  "Uruguay": {
+    "name": "Marcelo Bielsa",
+    "id": 53560,
+    "group": "H",
+    "team_id": 4725
+  },
+  "Uzbekistan": {
+    "name": "Fabio Cannavaro",
+    "id": 784893,
+    "group": "K",
+    "team_id": 4723
+  }
+}
