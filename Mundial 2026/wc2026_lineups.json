@@ -425,25 +425,7 @@
         "from_f2": true,
         "f2_mins": 12
       },
-      "280601": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "1030711": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "824139": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "1144329": {
+      "188307": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
@@ -461,13 +443,7 @@
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
-      "963744": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "188307": {
+      "824139": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
@@ -479,7 +455,31 @@
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
+      "963744": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
       "1931626": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "1030711": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "280601": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "1144329": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
@@ -581,30 +581,6 @@
         "from_f2": true,
         "f2_mins": 10
       },
-      "1914576": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "840519": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "815637": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "1638685": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
       "757770": {
         "status": "rotacional",
         "name": "",
@@ -612,12 +588,6 @@
         "reason": "no_jugó_f2"
       },
       "1595162": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "838629": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
@@ -636,6 +606,36 @@
         "reason": "no_jugó_f2"
       },
       "15497": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "840519": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "1914576": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "838629": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "1638685": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "815637": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
@@ -1057,55 +1057,25 @@
         "from_f2": true,
         "f2_mins": 14
       },
-      "1470073": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "901907": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "1101745": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "559504": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "903610": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
       "1085536": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
+      "1470073": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "1910804": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
       "822684": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "966059": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "1415019": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
@@ -1123,7 +1093,37 @@
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
-      "1910804": {
+      "559504": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "966059": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "901907": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "1415019": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "903610": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "1101745": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
@@ -1225,31 +1225,7 @@
         "from_f2": true,
         "f2_mins": 13
       },
-      "1154613": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "940057": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "1026069": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "1185869": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "932316": {
+      "976203": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
@@ -1261,13 +1237,7 @@
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
-      "976203": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "1019312": {
+      "1185869": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
@@ -1279,7 +1249,37 @@
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
+      "1026069": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "1019312": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "1154613": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "932316": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
       "1002355": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "940057": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
@@ -1719,31 +1719,13 @@
         "from_f2": true,
         "f2_mins": 9
       },
-      "1034082": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
       "814023": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
-      "865523": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "798303": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "1005744": {
+      "1034082": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
@@ -1755,13 +1737,7 @@
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
-      "990550": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "999276": {
+      "865523": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
@@ -1773,7 +1749,31 @@
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
+      "999276": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "990550": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "1005744": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
       "787422": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "798303": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
@@ -1875,43 +1875,7 @@
         "from_f2": true,
         "f2_mins": 17
       },
-      "1020472": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "273031": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "1119328": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
       "973286": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "1087790": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "845426": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "843665": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
@@ -1923,13 +1887,49 @@
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
-      "937255": {
+      "1020472": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "845426": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
       "1002489": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "273031": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "843665": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "1087790": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "1119328": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "937255": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
@@ -2369,31 +2369,13 @@
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
-      "885719": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "259803": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "858004": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
       "844447": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
-      "1587186": {
+      "885719": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
@@ -2405,19 +2387,37 @@
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
+      "1587186": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
       "988893": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
-      "1500291": {
+      "843746": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
-      "843746": {
+      "858004": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "259803": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "1500291": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
@@ -2519,49 +2519,7 @@
         "from_f2": true,
         "f2_mins": 13
       },
-      "229278": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "796501": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "897882": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
       "985171": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "1474258": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "303826": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "891157": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "93953": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
@@ -2573,13 +2531,55 @@
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
+      "1501518": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "897882": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "796501": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "229278": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "1474258": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
       "326185": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
-      "1501518": {
+      "303826": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "93953": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "891157": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
@@ -3013,18 +3013,6 @@
         "from_f2": true,
         "f2_mins": 1
       },
-      "868843": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "1024293": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
       "790108": {
         "status": "rotacional",
         "name": "",
@@ -3037,25 +3025,19 @@
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
-      "973431": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
       "1471659": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
-      "855810": {
+      "973431": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
-      "817957": {
+      "833943": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
@@ -3067,7 +3049,25 @@
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
-      "833943": {
+      "868843": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "817957": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "1024293": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "855810": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
@@ -3181,13 +3181,31 @@
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
-      "857740": {
+      "999396": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
       "815890": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "138152": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "39573": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "758608": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
@@ -3205,25 +3223,7 @@
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
-      "138152": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "758608": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "999396": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "39573": {
+      "857740": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
@@ -3657,19 +3657,7 @@
         "from_f2": true,
         "f2_mins": 12
       },
-      "155961": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "1096517": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "576220": {
+      "134029": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
@@ -3681,25 +3669,13 @@
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
-      "155925": {
+      "576220": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
-      "944054": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "788284": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "134029": {
+      "155961": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
@@ -3712,6 +3688,30 @@
         "reason": "no_jugó_f2"
       },
       "991364": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "944054": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "155925": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "788284": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "1096517": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
@@ -3819,31 +3819,7 @@
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
-      "339447": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
       "840027": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "788936": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "883206": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "988656": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
@@ -3855,7 +3831,7 @@
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
-      "986233": {
+      "988656": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
@@ -3867,7 +3843,31 @@
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
+      "986233": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "788936": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
       "1167312": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "339447": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "883206": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
@@ -4307,49 +4307,7 @@
         "from_f2": true,
         "f2_mins": 8
       },
-      "966869": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "237098": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "1489210": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "358108": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "287555": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "287563": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
       "1402850": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "9370": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
@@ -4361,7 +4319,49 @@
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
+      "358108": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "9370": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "287563": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "237098": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "966869": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
       "802719": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "1489210": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "287555": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
@@ -4463,43 +4463,7 @@
         "from_f2": true,
         "f2_mins": 9
       },
-      "124712": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "1016907": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
       "243529": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "888949": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "358548": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "243585": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "885197": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
@@ -4511,13 +4475,49 @@
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
-      "1035995": {
+      "124712": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
       "254491": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "888949": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "243585": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "1035995": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "358548": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "1016907": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "885197": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
@@ -4951,7 +4951,7 @@
         "from_f2": true,
         "f2_mins": 1
       },
-      "141967": {
+      "919793": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
@@ -4963,19 +4963,19 @@
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
+      "141967": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "359280": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
       "359272": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "1638338": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "961684": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
@@ -4993,25 +4993,25 @@
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
+      "847714": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "961684": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
       "919484": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
-      "919793": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "359280": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "847714": {
+      "1638338": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
@@ -5113,31 +5113,7 @@
         "from_f2": true,
         "f2_mins": 9
       },
-      "1404526": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "912050": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "1002387": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "796023": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "826211": {
+      "1544387": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
@@ -5149,7 +5125,13 @@
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
-      "1091596": {
+      "796023": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "912050": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
@@ -5161,13 +5143,31 @@
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
-      "1544387": {
+      "1002387": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "1404526": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
       "936558": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "1091596": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "826211": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
@@ -5601,13 +5601,7 @@
         "from_f2": true,
         "f2_mins": 13
       },
-      "856076": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "980623": {
+      "40244": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
@@ -5619,13 +5613,7 @@
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
-      "980628": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "48480": {
+      "856076": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
@@ -5637,7 +5625,19 @@
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
+      "980628": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
       "799046": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "980623": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
@@ -5649,7 +5649,7 @@
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
-      "40244": {
+      "48480": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
@@ -5751,19 +5751,19 @@
         "from_f2": true,
         "f2_mins": 1
       },
-      "923237": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
       "1145126": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
-      "881848": {
+      "1020197": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "1187275": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
@@ -5775,13 +5775,7 @@
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
-      "1122552": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "1187275": {
+      "1106546": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
@@ -5799,19 +5793,25 @@
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
+      "1122552": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "881848": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
       "1464642": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
-      "1106546": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "1020197": {
+      "923237": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
@@ -6251,19 +6251,7 @@
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
-      "1131009": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "826201": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "1568123": {
+      "979315": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
@@ -6281,13 +6269,7 @@
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
-      "858977": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "305282": {
+      "826201": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
@@ -6299,7 +6281,25 @@
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
-      "979315": {
+      "1568123": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "858977": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "1131009": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "305282": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
@@ -6401,37 +6401,7 @@
         "from_f2": true,
         "f2_mins": 12
       },
-      "896215": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "1199057": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "1004277": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "1092638": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "1469336": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "252885": {
+      "1049270": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
@@ -6449,13 +6419,43 @@
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
-      "1049270": {
+      "1092638": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
       "895013": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "896215": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "252885": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "1469336": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "1199057": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "1004277": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
@@ -6889,13 +6889,7 @@
         "from_f2": true,
         "f2_mins": 1
       },
-      "851596": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "149663": {
+      "171919": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
@@ -6907,7 +6901,19 @@
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
-      "959628": {
+      "959805": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "149663": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "851596": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
@@ -6919,25 +6925,19 @@
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
-      "1012928": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
       "100389": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
-      "171919": {
+      "1012928": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
-      "959805": {
+      "959628": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
@@ -7045,7 +7045,7 @@
         "from_f2": true,
         "f2_mins": 1
       },
-      "1991585": {
+      "1008597": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
@@ -7057,31 +7057,13 @@
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
-      "1606568": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "1008597": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "1391526": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
       "1872950": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
-      "2018238": {
+      "919225": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
@@ -7093,13 +7075,31 @@
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
+      "1991585": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "2018238": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "1391526": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
       "2018130": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
-      "919225": {
+      "1606568": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
@@ -7539,13 +7539,7 @@
         "from_f2": true,
         "f2_mins": 1
       },
-      "875360": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "360718": {
+      "796987": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
@@ -7557,19 +7551,13 @@
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
-      "319847": {
+      "1099794": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
-      "796987": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "542038": {
+      "360718": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
@@ -7581,19 +7569,31 @@
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
+      "978728": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
       "1021272": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
-      "1099794": {
+      "319847": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
-      "978728": {
+      "875360": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "542038": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
@@ -7695,7 +7695,13 @@
         "from_f2": true,
         "f2_mins": 11
       },
-      "831923": {
+      "831860": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "1499696": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
@@ -7719,6 +7725,12 @@
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
+      "386958": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
       "880218": {
         "status": "rotacional",
         "name": "",
@@ -7731,19 +7743,7 @@
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
-      "1499696": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "831860": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "386958": {
+      "831923": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
@@ -8177,7 +8177,7 @@
         "from_f2": true,
         "f2_mins": 20
       },
-      "1094106": {
+      "785989": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
@@ -8195,7 +8195,25 @@
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
+      "966837": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
       "876214": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "1094106": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "1103693": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
@@ -8207,31 +8225,13 @@
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
-      "966837": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
       "353138": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
-      "785989": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
       "581310": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "1103693": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
@@ -8327,25 +8327,19 @@
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
-      "325355": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "846308": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "333587": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
       "155974": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "925097": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "989803": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
@@ -8363,19 +8357,25 @@
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
-      "989803": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "925097": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
       "581060": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "333587": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "966575": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "846308": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
@@ -8387,7 +8387,7 @@
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
-      "966575": {
+      "325355": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
@@ -8821,19 +8821,19 @@
         "from_f2": true,
         "f2_mins": 9
       },
+      "917035": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "1130539": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
       "818779": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "847235": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "1048372": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
@@ -8845,25 +8845,7 @@
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
-      "1014518": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "986400": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
       "818749": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "917035": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
@@ -8875,7 +8857,25 @@
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
-      "1130539": {
+      "847235": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "986400": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "1014518": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "1048372": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
@@ -8977,25 +8977,7 @@
         "from_f2": true,
         "f2_mins": 10
       },
-      "911853": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "59609": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "1513625": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "1155358": {
+      "1001675": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
@@ -9007,7 +8989,37 @@
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
-      "1001675": {
+      "911853": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "1513625": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "889052": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "1155358": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "59609": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "892133": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
@@ -9020,18 +9032,6 @@
         "reason": "no_jugó_f2"
       },
       "845802": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "892133": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "889052": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
@@ -9477,25 +9477,7 @@
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
-      "1001828": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "1126512": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "1395881": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "923973": {
+      "1142233": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
@@ -9507,13 +9489,13 @@
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
-      "934386": {
+      "1126512": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
-      "964753": {
+      "1001828": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
@@ -9525,7 +9507,25 @@
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
-      "1142233": {
+      "923973": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "964753": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "934386": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "1395881": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
@@ -9627,37 +9627,7 @@
         "from_f2": true,
         "f2_mins": 14
       },
-      "1000379": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "356256": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "822737": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "31857": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "959750": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "1002607": {
+      "982371": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
@@ -9669,7 +9639,25 @@
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
-      "982371": {
+      "822737": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "944481": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "31857": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "1000379": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
@@ -9681,7 +9669,19 @@
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
-      "944481": {
+      "1002607": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "356256": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "959750": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
@@ -10115,31 +10115,19 @@
         "from_f2": true,
         "f2_mins": 11
       },
-      "1500737": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "791368": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "881182": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "812797": {
+      "828230": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
       "1464876": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "791368": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
@@ -10157,19 +10145,31 @@
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
-      "932221": {
+      "881182": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
-      "828230": {
+      "1500737": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "812797": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
       "1171024": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "932221": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
@@ -10277,37 +10277,19 @@
         "from_f2": true,
         "f2_mins": 1
       },
-      "918505": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "1480544": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "1008171": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "942836": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "577736": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
       "871735": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "918547": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "918505": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
@@ -10319,13 +10301,31 @@
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
+      "577736": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "942836": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
       "1980828": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
-      "918547": {
+      "1008171": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "1480544": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
@@ -10771,19 +10771,13 @@
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
-      "826215": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
       "352370": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
-      "848276": {
+      "879674": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
@@ -10801,7 +10795,7 @@
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
-      "859025": {
+      "826215": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
@@ -10813,13 +10807,19 @@
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
-      "879674": {
+      "1387161": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
-      "1387161": {
+      "859025": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "848276": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
@@ -10921,13 +10921,43 @@
         "from_f2": true,
         "f2_mins": 13
       },
+      "798176": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
       "838805": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
+      "795154": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "1065989": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
       "280991": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "1026541": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "1022374": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
@@ -10940,36 +10970,6 @@
         "reason": "no_jugó_f2"
       },
       "876599": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "1022374": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "1065989": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "795154": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "798176": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "1026541": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
@@ -11415,43 +11415,7 @@
         "from_f2": true,
         "f2_mins": 21
       },
-      "1066729": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "951859": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "1500435": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "1176558": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "196454": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "1381227": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "834492": {
+      "884092": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
@@ -11463,13 +11427,49 @@
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
-      "884092": {
+      "196454": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "1500435": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
       "851676": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "1176558": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "1066729": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "1381227": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "951859": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "834492": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
@@ -11571,7 +11571,7 @@
         "from_f2": true,
         "f2_mins": 18
       },
-      "1120615": {
+      "583896": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
@@ -11583,25 +11583,7 @@
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
-      "1154657": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "583896": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "868268": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "1493689": {
+      "1102503": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
@@ -11613,7 +11595,7 @@
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
-      "914309": {
+      "1493689": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
@@ -11625,7 +11607,25 @@
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
-      "1102503": {
+      "868268": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "914309": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "1154657": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "1120615": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
@@ -12065,13 +12065,7 @@
         "from_f2": true,
         "f2_mins": 8
       },
-      "1171451": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "128383": {
+      "1094179": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
@@ -12083,13 +12077,31 @@
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
-      "798835": {
+      "263651": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
-      "1094179": {
+      "1099352": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "128383": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "822600": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "798835": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
@@ -12107,19 +12119,7 @@
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
-      "263651": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "822600": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "1099352": {
+      "1171451": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
@@ -12199,7 +12199,7 @@
       },
       "1457997": {
         "status": "sub_in",
-        "name": "Ali Al Azaizah",
+        "name": "Ali Al Azaizeh",
         "from_f2": true,
         "f2_mins": 14
       },
@@ -12221,19 +12221,19 @@
         "from_f2": true,
         "f2_mins": 1
       },
-      "2048339": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "786030": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
       "1158813": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "828259": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "2048339": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
@@ -12251,6 +12251,18 @@
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
+      "974747": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "2239188": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
       "997817": {
         "status": "rotacional",
         "name": "",
@@ -12263,19 +12275,7 @@
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
-      "2239188": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "828259": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "974747": {
+      "786030": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
@@ -12715,43 +12715,7 @@
         "from_f2": true,
         "f2_mins": 12
       },
-      "576266": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "138126": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "870038": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "988672": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "888340": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "186719": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "869476": {
+      "147776": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
@@ -12763,13 +12727,49 @@
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
+      "888340": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "576266": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "186719": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "988672": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "870038": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
       "788319": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
-      "147776": {
+      "138126": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "869476": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
@@ -12871,36 +12871,6 @@
         "from_f2": true,
         "f2_mins": 12
       },
-      "1018018": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "1503088": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "1007589": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "1094482": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
-      "1118193": {
-        "status": "rotacional",
-        "name": "",
-        "from_f2": true,
-        "reason": "no_jugó_f2"
-      },
       "981168": {
         "status": "rotacional",
         "name": "",
@@ -12913,13 +12883,43 @@
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
+      "1118193": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
       "1107591": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
         "reason": "no_jugó_f2"
       },
+      "1018018": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "1503088": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "1094482": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
       "1445228": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "1007589": {
         "status": "rotacional",
         "name": "",
         "from_f2": true,
@@ -13272,314 +13272,314 @@
       "843115": {
         "status": "starter",
         "name": "Diogo Costa",
-        "from_f1": true,
-        "f1_mins": 1089
+        "from_f2": true,
+        "f2_mins": 90
       },
-      "138892": {
+      "318941": {
         "status": "starter",
-        "name": "João Cancelo",
-        "from_f1": true,
-        "f1_mins": 1089
-      },
-      "983542": {
-        "status": "starter",
-        "name": "Tomás Araújo",
-        "from_f1": true,
-        "f1_mins": 1089
+        "name": "Rúben Dias",
+        "from_f2": true,
+        "f2_mins": 90
       },
       "1087359": {
         "status": "starter",
         "name": "Renato Veiga",
-        "from_f1": true,
-        "f1_mins": 1089
+        "from_f2": true,
+        "f2_mins": 90
       },
       "989768": {
         "status": "starter",
         "name": "Nuno Mendes",
-        "from_f1": true,
-        "f1_mins": 72
-      },
-      "1190933": {
-        "status": "starter",
-        "name": "João Neves",
-        "from_f1": true,
-        "f1_mins": 1089
-      },
-      "902029": {
-        "status": "starter",
-        "name": "Vitinha",
-        "from_f1": true,
-        "f1_mins": 83
-      },
-      "331209": {
-        "status": "starter",
-        "name": "Bernardo Silva",
-        "from_f1": true,
-        "f1_mins": 46
+        "from_f2": true,
+        "f2_mins": 90
       },
       "288205": {
         "status": "starter",
         "name": "Bruno Fernandes",
-        "from_f1": true,
-        "f1_mins": 1089
-      },
-      "879349": {
-        "status": "starter",
-        "name": "Pedro Neto",
-        "from_f1": true,
-        "f1_mins": 71
+        "from_f2": true,
+        "f2_mins": 90
       },
       "750": {
         "status": "starter",
         "name": "Cristiano Ronaldo",
-        "from_f1": true,
-        "f1_mins": 1089
+        "from_f2": true,
+        "f2_mins": 90
       },
-      "979222": {
-        "status": "rotacional",
-        "name": "Francisco Conceição",
-        "from_f1": true,
-        "f1_mins": 1089
+      "902029": {
+        "status": "starter",
+        "name": "Vitinha",
+        "from_f2": true,
+        "f2_mins": 83
       },
-      "851284": {
-        "status": "substitute",
-        "name": "Rafael Leão",
-        "from_f1": true,
-        "f1_mins": 1089
+      "1190933": {
+        "status": "starter",
+        "name": "João Neves",
+        "from_f2": true,
+        "f2_mins": 76
+      },
+      "851671": {
+        "status": "starter",
+        "name": "João Félix",
+        "from_f2": true,
+        "f2_mins": 63
+      },
+      "138892": {
+        "status": "starter",
+        "name": "João Cancelo",
+        "from_f2": true,
+        "f2_mins": 45
+      },
+      "879349": {
+        "status": "starter",
+        "name": "Pedro Neto",
+        "from_f2": true,
+        "f2_mins": 45
       },
       "252821": {
-        "status": "substitute",
+        "status": "sub_in",
         "name": "Nélson Semedo",
-        "from_f1": true,
-        "f1_mins": 1089
+        "from_f2": true,
+        "f2_mins": 45
       },
-      "934510": {
-        "status": "substitute",
-        "name": "Gonçalo Ramos",
-        "from_f1": true,
-        "f1_mins": 1089
+      "979222": {
+        "status": "sub_in",
+        "name": "Francisco Conceição",
+        "from_f2": true,
+        "f2_mins": 45
+      },
+      "830431": {
+        "status": "sub_in",
+        "name": "Francisco Trincão",
+        "from_f2": true,
+        "f2_mins": 27
+      },
+      "331209": {
+        "status": "sub_in",
+        "name": "Bernardo Silva",
+        "from_f2": true,
+        "f2_mins": 14
+      },
+      "851284": {
+        "status": "sub_in",
+        "name": "Rafael Leão",
+        "from_f2": true,
+        "f2_mins": 13
       },
       "252669": {
         "status": "rotacional",
-        "name": "José Sá",
-        "from_f1": true,
-        "f1_mins": 1089
-      },
-      "253809": {
-        "status": "rotacional",
-        "name": "Rui Silva",
-        "from_f1": true,
-        "f1_mins": 1089
-      },
-      "318941": {
-        "status": "rotacional",
-        "name": "Rúben Dias",
-        "from_f1": true,
-        "f1_mins": 1089
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
       },
       "843200": {
         "status": "rotacional",
-        "name": "Diogo Dalot",
-        "from_f1": true,
-        "f1_mins": 1089
-      },
-      "1001196": {
-        "status": "rotacional",
-        "name": "Gonçalo Inácio",
-        "from_f1": true,
-        "f1_mins": 1089
-      },
-      "945122": {
-        "status": "rotacional",
-        "name": "Matheus Nunes",
-        "from_f1": true,
-        "f1_mins": 1089
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
       },
       "988351": {
         "status": "rotacional",
-        "name": "Samú Costa",
-        "from_f1": true,
-        "f1_mins": 1089
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
       },
       "280955": {
         "status": "rotacional",
-        "name": "Rúben Neves",
-        "from_f1": true,
-        "f1_mins": 1089
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
       },
-      "830431": {
+      "934510": {
         "status": "rotacional",
-        "name": "Francisco Trincão",
-        "from_f1": true,
-        "f1_mins": 1089
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "1001196": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "983542": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
       },
       "280979": {
         "status": "rotacional",
-        "name": "Gonçalo Guedes",
-        "from_f1": true,
-        "f1_mins": 1089
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
       },
-      "851671": {
+      "945122": {
         "status": "rotacional",
-        "name": "João Félix",
-        "from_f1": true,
-        "f1_mins": 1089
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "253809": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
       },
       "125787": {
         "status": "starter",
         "name": "Camilo Vargas",
-        "from_f1": true,
-        "f1_mins": 1089
+        "from_f2": true,
+        "f2_mins": 90
       },
       "870360": {
         "status": "starter",
         "name": "Daniel Muñoz",
-        "from_f1": true,
-        "f1_mins": 1089
+        "from_f2": true,
+        "f2_mins": 90
       },
       "566102": {
         "status": "starter",
         "name": "Davinson Sánchez",
-        "from_f1": true,
-        "f1_mins": 1089
+        "from_f2": true,
+        "f2_mins": 90
       },
       "818481": {
         "status": "starter",
         "name": "Jhon Lucumí",
-        "from_f1": true,
-        "f1_mins": 1089
+        "from_f2": true,
+        "f2_mins": 90
       },
       "344847": {
         "status": "starter",
         "name": "Johan Mojica",
-        "from_f1": true,
-        "f1_mins": 1089
+        "from_f2": true,
+        "f2_mins": 90
       },
       "1174889": {
         "status": "starter",
         "name": "Gustavo Puerta",
-        "from_f1": true,
-        "f1_mins": 80
+        "from_f2": true,
+        "f2_mins": 90
       },
       "355796": {
         "status": "starter",
         "name": "Jefferson Lerma",
-        "from_f1": true,
-        "f1_mins": 1089
-      },
-      "844096": {
-        "status": "starter",
-        "name": "Jhon Arias",
-        "from_f1": true,
-        "f1_mins": 92
-      },
-      "107414": {
-        "status": "starter",
-        "name": "James Rodríguez",
-        "from_f1": true,
-        "f1_mins": 72
-      },
-      "914213": {
-        "status": "starter",
-        "name": "Luis Javier Suárez",
-        "from_f1": true,
-        "f1_mins": 80
+        "from_f2": true,
+        "f2_mins": 90
       },
       "883537": {
         "status": "starter",
         "name": "Luis Díaz",
-        "from_f1": true,
-        "f1_mins": 92
+        "from_f2": true,
+        "f2_mins": 90
       },
-      "877299": {
-        "status": "substitute",
-        "name": "Jaminton Campaz",
-        "from_f1": true,
-        "f1_mins": 1089
+      "844096": {
+        "status": "starter",
+        "name": "Jhon Arias",
+        "from_f2": true,
+        "f2_mins": 77
+      },
+      "107414": {
+        "status": "starter",
+        "name": "James Rodríguez",
+        "from_f2": true,
+        "f2_mins": 58
+      },
+      "914213": {
+        "status": "starter",
+        "name": "Luis Javier Suárez",
+        "from_f2": true,
+        "f2_mins": 58
+      },
+      "221162": {
+        "status": "sub_in",
+        "name": "Juan Fernando Quintero",
+        "from_f2": true,
+        "f2_mins": 32
+      },
+      "281253": {
+        "status": "sub_in",
+        "name": "Jhon Córdoba",
+        "from_f2": true,
+        "f2_mins": 32
       },
       "1015292": {
-        "status": "substitute",
+        "status": "sub_in",
         "name": "Richard Ríos",
-        "from_f1": true,
-        "f1_mins": 1089
-      },
-      "887055": {
-        "status": "substitute",
-        "name": "Cucho Hernández",
-        "from_f1": true,
-        "f1_mins": 1089
-      },
-      "1066915": {
-        "status": "substitute",
-        "name": "Kevin Castaño",
-        "from_f1": true,
-        "f1_mins": 1089
-      },
-      "1160386": {
-        "status": "substitute",
-        "name": "Andrés Gómez",
-        "from_f1": true,
-        "f1_mins": 1089
-      },
-      "926238": {
-        "status": "rotacional",
-        "name": "Álvaro Montero",
-        "from_f1": true,
-        "f1_mins": 1089
+        "from_f2": true,
+        "f2_mins": 13
       },
       "33596": {
         "status": "rotacional",
-        "name": "David Ospina",
-        "from_f1": true,
-        "f1_mins": 1089
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
       },
-      "822110": {
+      "1160386": {
         "status": "rotacional",
-        "name": "Deiver Machado",
-        "from_f1": true,
-        "f1_mins": 1089
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
       },
       "158583": {
         "status": "rotacional",
-        "name": "Santiago Arias",
-        "from_f1": true,
-        "f1_mins": 1089
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
       },
-      "931705": {
+      "822110": {
         "status": "rotacional",
-        "name": "Willer Ditta",
-        "from_f1": true,
-        "f1_mins": 1089
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
       },
-      "360396": {
+      "877299": {
         "status": "rotacional",
-        "name": "Yerry Mina",
-        "from_f1": true,
-        "f1_mins": 1089
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
       },
       "590392": {
         "status": "rotacional",
-        "name": "Jorge Carrascal",
-        "from_f1": true,
-        "f1_mins": 1089
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "1066915": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
       },
       "980580": {
         "status": "rotacional",
-        "name": "Juan Portilla",
-        "from_f1": true,
-        "f1_mins": 1089
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
       },
-      "221162": {
+      "360396": {
         "status": "rotacional",
-        "name": "Juan Fernando Quintero",
-        "from_f1": true,
-        "f1_mins": 1089
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
       },
-      "281253": {
+      "926238": {
         "status": "rotacional",
-        "name": "Jhon Córdoba",
-        "from_f1": true,
-        "f1_mins": 1089
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "887055": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "931705": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
       }
     }
   },
@@ -13913,323 +13913,323 @@
     "round_num": 3,
     "confirmed": false,
     "players": {
-      "599192": {
+      "1000465": {
         "status": "starter",
-        "name": "Lionel Mpasi Nzau",
-        "from_f1": true,
-        "f1_mins": 1089
-      },
-      "863653": {
-        "status": "starter",
-        "name": "Aaron Wan-Bissaka",
-        "from_f1": true,
-        "f1_mins": 85
-      },
-      "238612": {
-        "status": "starter",
-        "name": "Chancel Mbemba",
-        "from_f1": true,
-        "f1_mins": 1089
-      },
-      "817979": {
-        "status": "starter",
-        "name": "Axel Tuanzebe",
-        "from_f1": true,
-        "f1_mins": 1089
-      },
-      "1019957": {
-        "status": "starter",
-        "name": "Steve Kapuadi",
-        "from_f1": true,
-        "f1_mins": 1089
-      },
-      "174975": {
-        "status": "starter",
-        "name": "Arthur Masuaku",
-        "from_f1": true,
-        "f1_mins": 74
-      },
-      "1391541": {
-        "status": "starter",
-        "name": "Ngal'ayel Mukau",
-        "from_f1": true,
-        "f1_mins": 57
-      },
-      "892624": {
-        "status": "starter",
-        "name": "Samuel Moutoussamy",
-        "from_f1": true,
-        "f1_mins": 1089
-      },
-      "917305": {
-        "status": "starter",
-        "name": "Edo Kayembe",
-        "from_f1": true,
-        "f1_mins": 74
-      },
-      "805123": {
-        "status": "starter",
-        "name": "Yoane Wissa",
-        "from_f1": true,
-        "f1_mins": 1089
-      },
-      "115665": {
-        "status": "starter",
-        "name": "Cédric Bakambu",
-        "from_f1": true,
-        "f1_mins": 85
-      },
-      "1171539": {
-        "status": "rotacional",
-        "name": "Noah Sadiki",
-        "from_f1": true,
-        "f1_mins": 1089
-      },
-      "354046": {
-        "status": "substitute",
-        "name": "Joris Kayembe",
-        "from_f1": true,
-        "f1_mins": 1089
-      },
-      "758664": {
-        "status": "substitute",
-        "name": "Charles Pickel",
-        "from_f1": true,
-        "f1_mins": 1089
-      },
-      "991200": {
-        "status": "substitute",
-        "name": "Gedeon Kalulu",
-        "from_f1": true,
-        "f1_mins": 1089
-      },
-      "825945": {
-        "status": "substitute",
-        "name": "Simon Banza",
-        "from_f1": true,
-        "f1_mins": 1089
-      },
-      "927616": {
-        "status": "rotacional",
-        "name": "Timothy Fayulu",
-        "from_f1": true,
-        "f1_mins": 1089
-      },
-      "1121943": {
-        "status": "rotacional",
-        "name": "Matthieu Epolo",
-        "from_f1": true,
-        "f1_mins": 1089
-      },
-      "352912": {
-        "status": "rotacional",
-        "name": "Dylan Batubinsika",
-        "from_f1": true,
-        "f1_mins": 1089
-      },
-      "963399": {
-        "status": "rotacional",
-        "name": "Nathanaël Mbuku",
-        "from_f1": true,
-        "f1_mins": 1089
-      },
-      "344953": {
-        "status": "rotacional",
-        "name": "Théo Bongonda",
-        "from_f1": true,
-        "f1_mins": 1089
-      },
-      "353602": {
-        "status": "rotacional",
-        "name": "Aaron Tshibola",
-        "from_f1": true,
-        "f1_mins": 1089
-      },
-      "1160969": {
-        "status": "rotacional",
-        "name": "Brian Cipenga",
-        "from_f1": true,
-        "f1_mins": 1089
-      },
-      "46387": {
-        "status": "rotacional",
-        "name": "Gaël Kakuta",
-        "from_f1": true,
-        "f1_mins": 1089
-      },
-      "862078": {
-        "status": "rotacional",
-        "name": "Meschak Elia",
-        "from_f1": true,
-        "f1_mins": 1089
-      },
-      "1007556": {
-        "status": "rotacional",
-        "name": "Fiston Mayele",
-        "from_f1": true,
-        "f1_mins": 1089
-      },
-      "791592": {
-        "status": "starter",
-        "name": "Utkir Yusupov",
-        "from_f1": true,
-        "f1_mins": 1089
+        "name": "Abduvokhid Nematov",
+        "from_f2": true,
+        "f2_mins": 90
       },
       "1194333": {
         "status": "starter",
         "name": "Abdukodir Khusanov",
-        "from_f1": true,
-        "f1_mins": 1089
+        "from_f2": true,
+        "f2_mins": 90
       },
       "954524": {
         "status": "starter",
         "name": "Abdulla Abdullaev",
-        "from_f1": true,
-        "f1_mins": 1089
+        "from_f2": true,
+        "f2_mins": 90
       },
       "358822": {
         "status": "starter",
         "name": "Rustam Ashurmatov",
-        "from_f1": true,
-        "f1_mins": 77
+        "from_f2": true,
+        "f2_mins": 90
       },
-      "1597255": {
+      "793857": {
         "status": "starter",
-        "name": "Bekhruz Karimov",
-        "from_f1": true,
-        "f1_mins": 1089
-      },
-      "926479": {
-        "status": "starter",
-        "name": "Akmal Mozgovoy",
-        "from_f1": true,
-        "f1_mins": 1089
-      },
-      "358890": {
-        "status": "starter",
-        "name": "Otabek Shukurov",
-        "from_f1": true,
-        "f1_mins": 1089
-      },
-      "1014276": {
-        "status": "starter",
-        "name": "Sherzod Nasrullaev",
-        "from_f1": true,
-        "f1_mins": 46
-      },
-      "1118429": {
-        "status": "starter",
-        "name": "Abbosbek Fayzullaev",
-        "from_f1": true,
-        "f1_mins": 77
-      },
-      "985882": {
-        "status": "starter",
-        "name": "Oston Urunov",
-        "from_f1": true,
-        "f1_mins": 46
+        "name": "Azizjon Ganiev",
+        "from_f2": true,
+        "f2_mins": 90
       },
       "791355": {
         "status": "starter",
         "name": "Eldor Shomurodov",
-        "from_f1": true,
-        "f1_mins": 92
+        "from_f2": true,
+        "f2_mins": 90
       },
-      "792386": {
-        "status": "rotacional",
-        "name": "Farrukh Sayfiev",
-        "from_f1": true,
-        "f1_mins": 1089
+      "1597255": {
+        "status": "starter",
+        "name": "Bekhruz Karimov",
+        "from_f2": true,
+        "f2_mins": 89
+      },
+      "358890": {
+        "status": "starter",
+        "name": "Otabek Shukurov",
+        "from_f2": true,
+        "f2_mins": 89
+      },
+      "1118429": {
+        "status": "starter",
+        "name": "Abbosbek Fayzullaev",
+        "from_f2": true,
+        "f2_mins": 73
+      },
+      "823992": {
+        "status": "starter",
+        "name": "Odiljon Khamrobekov",
+        "from_f2": true,
+        "f2_mins": 45
+      },
+      "1014276": {
+        "status": "starter",
+        "name": "Sherzod Nasrullaev",
+        "from_f2": true,
+        "f2_mins": 45
+      },
+      "888187": {
+        "status": "sub_in",
+        "name": "Khozhiakbar Alizhonov",
+        "from_f2": true,
+        "f2_mins": 45
+      },
+      "926479": {
+        "status": "sub_in",
+        "name": "Akmal Mozgovoy",
+        "from_f2": true,
+        "f2_mins": 45
+      },
+      "333625": {
+        "status": "sub_in",
+        "name": "Igor Sergeev",
+        "from_f2": true,
+        "f2_mins": 17
+      },
+      "1165681": {
+        "status": "sub_in",
+        "name": "Ruslanbek Jiyanov",
+        "from_f2": true,
+        "f2_mins": 1
+      },
+      "1403410": {
+        "status": "sub_in",
+        "name": "Sherzod Esanov",
+        "from_f2": true,
+        "f2_mins": 1
       },
       "358880": {
         "status": "rotacional",
-        "name": "Dostonbek Khamdamov",
-        "from_f1": true,
-        "f1_mins": 1089
-      },
-      "1403414": {
-        "status": "substitute",
-        "name": "Jakhongir Urozov",
-        "from_f1": true,
-        "f1_mins": 1089
-      },
-      "871965": {
-        "status": "substitute",
-        "name": "Azizbek Amanov",
-        "from_f1": true,
-        "f1_mins": 1089
-      },
-      "333625": {
-        "status": "substitute",
-        "name": "Igor Sergeev",
-        "from_f1": true,
-        "f1_mins": 1089
-      },
-      "1000465": {
-        "status": "rotacional",
-        "name": "Abduvokhid Nematov",
-        "from_f1": true,
-        "f1_mins": 1089
-      },
-      "796361": {
-        "status": "rotacional",
-        "name": "Botirali Ergashev",
-        "from_f1": true,
-        "f1_mins": 1089
-      },
-      "888187": {
-        "status": "rotacional",
-        "name": "Khozhiakbar Alizhonov",
-        "from_f1": true,
-        "f1_mins": 1089
-      },
-      "893000": {
-        "status": "rotacional",
-        "name": "Umarbek Eshmuradov",
-        "from_f1": true,
-        "f1_mins": 1089
-      },
-      "978392": {
-        "status": "rotacional",
-        "name": "Avazbek Ulmasaliyev",
-        "from_f1": true,
-        "f1_mins": 1089
-      },
-      "785512": {
-        "status": "rotacional",
-        "name": "Jamshid Iskandarov",
-        "from_f1": true,
-        "f1_mins": 1089
-      },
-      "823992": {
-        "status": "rotacional",
-        "name": "Odiljon Khamrobekov",
-        "from_f1": true,
-        "f1_mins": 1089
-      },
-      "1165681": {
-        "status": "rotacional",
-        "name": "Ruslanbek Jiyanov",
-        "from_f1": true,
-        "f1_mins": 1089
-      },
-      "793857": {
-        "status": "rotacional",
-        "name": "Azizjon Ganiev",
-        "from_f1": true,
-        "f1_mins": 1089
-      },
-      "1403410": {
-        "status": "rotacional",
-        "name": "Sherzod Esanov",
-        "from_f1": true,
-        "f1_mins": 1089
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
       },
       "333611": {
         "status": "rotacional",
         "name": "",
-        "from_f1": true,
-        "reason": "no_en_wc_results"
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "871965": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "1403414": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "978392": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "796361": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "893000": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "985882": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "791592": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "785512": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "792386": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "599192": {
+        "status": "starter",
+        "name": "Lionel Mpasi Nzau",
+        "from_f2": true,
+        "f2_mins": 90
+      },
+      "863653": {
+        "status": "starter",
+        "name": "Aaron Wan-Bissaka",
+        "from_f2": true,
+        "f2_mins": 90
+      },
+      "238612": {
+        "status": "starter",
+        "name": "Chancel Mbemba",
+        "from_f2": true,
+        "f2_mins": 90
+      },
+      "817979": {
+        "status": "starter",
+        "name": "Axel Tuanzebe",
+        "from_f2": true,
+        "f2_mins": 90
+      },
+      "1019957": {
+        "status": "starter",
+        "name": "Steve Kapuadi",
+        "from_f2": true,
+        "f2_mins": 90
+      },
+      "805123": {
+        "status": "starter",
+        "name": "Yoane Wissa",
+        "from_f2": true,
+        "f2_mins": 90
+      },
+      "892624": {
+        "status": "starter",
+        "name": "Samuel Moutoussamy",
+        "from_f2": true,
+        "f2_mins": 82
+      },
+      "174975": {
+        "status": "starter",
+        "name": "Arthur Masuaku",
+        "from_f2": true,
+        "f2_mins": 72
+      },
+      "917305": {
+        "status": "starter",
+        "name": "Edo Kayembe",
+        "from_f2": true,
+        "f2_mins": 72
+      },
+      "115665": {
+        "status": "starter",
+        "name": "Cédric Bakambu",
+        "from_f2": true,
+        "f2_mins": 57
+      },
+      "1391541": {
+        "status": "starter",
+        "name": "Ngal'ayel Mukau",
+        "from_f2": true,
+        "f2_mins": 45
+      },
+      "1171539": {
+        "status": "sub_in",
+        "name": "Noah Sadiki",
+        "from_f2": true,
+        "f2_mins": 45
+      },
+      "825945": {
+        "status": "sub_in",
+        "name": "Simon Banza",
+        "from_f2": true,
+        "f2_mins": 33
+      },
+      "354046": {
+        "status": "sub_in",
+        "name": "Joris Kayembe",
+        "from_f2": true,
+        "f2_mins": 18
+      },
+      "758664": {
+        "status": "sub_in",
+        "name": "Charles Pickel",
+        "from_f2": true,
+        "f2_mins": 18
+      },
+      "963399": {
+        "status": "sub_in",
+        "name": "Nathanaël Mbuku",
+        "from_f2": true,
+        "f2_mins": 8
+      },
+      "46387": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "991200": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "353602": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "1007556": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "927616": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "352912": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "1160969": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "862078": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "344953": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "1121943": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
       }
     }
   },
@@ -14566,314 +14566,314 @@
       "138530": {
         "status": "starter",
         "name": "Jordan Pickford",
-        "from_f1": true,
-        "f1_mins": 1089
+        "from_f2": true,
+        "f2_mins": 90
       },
       "885908": {
         "status": "starter",
         "name": "Reece James",
-        "from_f1": true,
-        "f1_mins": 1089
+        "from_f2": true,
+        "f2_mins": 90
       },
       "827679": {
         "status": "starter",
         "name": "Ezri Konsa",
-        "from_f1": true,
-        "f1_mins": 1089
+        "from_f2": true,
+        "f2_mins": 90
       },
-      "152077": {
+      "877994": {
         "status": "starter",
-        "name": "John Stones",
-        "from_f1": true,
-        "f1_mins": 87
-      },
-      "1142703": {
-        "status": "starter",
-        "name": "Nico O'Reilly",
-        "from_f1": true,
-        "f1_mins": 1089
-      },
-      "994546": {
-        "status": "starter",
-        "name": "Elliot Anderson",
-        "from_f1": true,
-        "f1_mins": 1089
+        "name": "Marc Guéhi",
+        "from_f2": true,
+        "f2_mins": 90
       },
       "856714": {
         "status": "starter",
         "name": "Declan Rice",
-        "from_f1": true,
-        "f1_mins": 72
-      },
-      "966547": {
-        "status": "starter",
-        "name": "Noni Madueke",
-        "from_f1": true,
-        "f1_mins": 72
-      },
-      "991011": {
-        "status": "starter",
-        "name": "Jude Bellingham",
-        "from_f1": true,
-        "f1_mins": 80
-      },
-      "914902": {
-        "status": "starter",
-        "name": "Anthony Gordon",
-        "from_f1": true,
-        "f1_mins": 72
+        "from_f2": true,
+        "f2_mins": 90
       },
       "108579": {
         "status": "starter",
         "name": "Harry Kane",
-        "from_f1": true,
-        "f1_mins": 1089
+        "from_f2": true,
+        "f2_mins": 90
       },
-      "948261": {
-        "status": "substitute",
-        "name": "Morgan Rogers",
-        "from_f1": true,
-        "f1_mins": 1089
+      "966547": {
+        "status": "starter",
+        "name": "Noni Madueke",
+        "from_f2": true,
+        "f2_mins": 83
       },
-      "934235": {
-        "status": "substitute",
-        "name": "Bukayo Saka",
-        "from_f1": true,
-        "f1_mins": 1089
+      "994546": {
+        "status": "starter",
+        "name": "Elliot Anderson",
+        "from_f2": true,
+        "f2_mins": 74
       },
-      "814590": {
-        "status": "substitute",
-        "name": "Marcus Rashford",
-        "from_f1": true,
-        "f1_mins": 1089
+      "991011": {
+        "status": "starter",
+        "name": "Jude Bellingham",
+        "from_f2": true,
+        "f2_mins": 73
       },
       "945798": {
-        "status": "substitute",
+        "status": "starter",
         "name": "Djed Spence",
-        "from_f1": true,
-        "f1_mins": 1089
+        "from_f2": true,
+        "f2_mins": 66
       },
-      "877994": {
-        "status": "substitute",
-        "name": "Marc Guéhi",
-        "from_f1": true,
-        "f1_mins": 1089
+      "914902": {
+        "status": "starter",
+        "name": "Anthony Gordon",
+        "from_f2": true,
+        "f2_mins": 65
+      },
+      "934235": {
+        "status": "sub_in",
+        "name": "Bukayo Saka",
+        "from_f2": true,
+        "f2_mins": 25
+      },
+      "1142703": {
+        "status": "sub_in",
+        "name": "Nico O'Reilly",
+        "from_f2": true,
+        "f2_mins": 24
+      },
+      "948261": {
+        "status": "sub_in",
+        "name": "Morgan Rogers",
+        "from_f2": true,
+        "f2_mins": 17
+      },
+      "864921": {
+        "status": "sub_in",
+        "name": "Eberechi Eze",
+        "from_f2": true,
+        "f2_mins": 16
+      },
+      "814590": {
+        "status": "sub_in",
+        "name": "Marcus Rashford",
+        "from_f2": true,
+        "f2_mins": 14
       },
       "788134": {
         "status": "rotacional",
-        "name": "Dean Henderson",
-        "from_f1": true,
-        "f1_mins": 1089
-      },
-      "980643": {
-        "status": "rotacional",
-        "name": "James Trafford",
-        "from_f1": true,
-        "f1_mins": 1089
-      },
-      "99090": {
-        "status": "rotacional",
-        "name": "Dan Burn",
-        "from_f1": true,
-        "f1_mins": 1089
-      },
-      "1003339": {
-        "status": "rotacional",
-        "name": "Jarell Quansah",
-        "from_f1": true,
-        "f1_mins": 1089
-      },
-      "864921": {
-        "status": "rotacional",
-        "name": "Eberechi Eze",
-        "from_f1": true,
-        "f1_mins": 1089
-      },
-      "42694": {
-        "status": "rotacional",
-        "name": "Jordan Henderson",
-        "from_f1": true,
-        "f1_mins": 1089
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
       },
       "1142175": {
         "status": "rotacional",
-        "name": "Kobbie Mainoo",
-        "from_f1": true,
-        "f1_mins": 1089
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "99090": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "152077": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
       },
       "290927": {
         "status": "rotacional",
-        "name": "Ivan Toney",
-        "from_f1": true,
-        "f1_mins": 1089
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
       },
-      "555386": {
+      "1003339": {
         "status": "rotacional",
-        "name": "Ollie Watkins",
-        "from_f1": true,
-        "f1_mins": 1089
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
       },
       "980634": {
         "status": "rotacional",
         "name": "",
-        "from_f1": true,
-        "reason": "no_en_wc_results"
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "980643": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "42694": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "555386": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
       },
       "886041": {
         "status": "starter",
         "name": "Orlando Mosquera",
-        "from_f1": true,
-        "f1_mins": 1089
-      },
-      "1006509": {
-        "status": "starter",
-        "name": "Jiovany Ramos",
-        "from_f1": true,
-        "f1_mins": 1089
-      },
-      "1105688": {
-        "status": "starter",
-        "name": "José Córdoba",
-        "from_f1": true,
-        "f1_mins": 1089
-      },
-      "841802": {
-        "status": "starter",
-        "name": "Andrés Andrade",
-        "from_f1": true,
-        "f1_mins": 1089
+        "from_f2": true,
+        "f2_mins": 90
       },
       "839493": {
         "status": "starter",
         "name": "Amir Murillo",
-        "from_f1": true,
-        "f1_mins": 1089
+        "from_f2": true,
+        "f2_mins": 90
       },
-      "985131": {
+      "1105688": {
         "status": "starter",
-        "name": "Carlos Harvey",
-        "from_f1": true,
-        "f1_mins": 1089
+        "name": "José Córdoba",
+        "from_f2": true,
+        "f2_mins": 90
       },
-      "833352": {
+      "841802": {
         "status": "starter",
-        "name": "Yoel Bárcenas",
-        "from_f1": true,
-        "f1_mins": 1089
-      },
-      "841793": {
-        "status": "starter",
-        "name": "César Blackman",
-        "from_f1": true,
-        "f1_mins": 90
+        "name": "Andrés Andrade",
+        "from_f2": true,
+        "f2_mins": 90
       },
       "841006": {
         "status": "starter",
         "name": "Cristian Martínez",
-        "from_f1": true,
-        "f1_mins": 63
+        "from_f2": true,
+        "f2_mins": 90
       },
-      "159931": {
+      "985131": {
         "status": "starter",
-        "name": "Cecilio Waterman",
-        "from_f1": true,
-        "f1_mins": 63
+        "name": "Carlos Harvey",
+        "from_f2": true,
+        "f2_mins": 90
       },
       "842253": {
         "status": "starter",
         "name": "José Luis Rodríguez",
-        "from_f1": true,
-        "f1_mins": 74
+        "from_f2": true,
+        "f2_mins": 90
       },
-      "1217929": {
-        "status": "substitute",
-        "name": "Azarias Londoño",
-        "from_f1": true,
-        "f1_mins": 1089
+      "841793": {
+        "status": "starter",
+        "name": "César Blackman",
+        "from_f2": true,
+        "f2_mins": 89
+      },
+      "833352": {
+        "status": "starter",
+        "name": "Yoel Bárcenas",
+        "from_f2": true,
+        "f2_mins": 89
       },
       "936184": {
-        "status": "substitute",
+        "status": "starter",
         "name": "José Fajardo",
-        "from_f1": true,
-        "f1_mins": 1089
+        "from_f2": true,
+        "f2_mins": 83
       },
-      "796328": {
-        "status": "substitute",
-        "name": "Ismael Díaz",
-        "from_f1": true,
-        "f1_mins": 1089
+      "1006509": {
+        "status": "starter",
+        "name": "Jiovany Ramos",
+        "from_f2": true,
+        "f2_mins": 77
       },
-      "156102": {
-        "status": "substitute",
-        "name": "Aníbal Godoy",
-        "from_f1": true,
-        "f1_mins": 1089
+      "159931": {
+        "status": "sub_in",
+        "name": "Cecilio Waterman",
+        "from_f2": true,
+        "f2_mins": 13
       },
-      "1172599": {
-        "status": "rotacional",
-        "name": "César Samudio",
-        "from_f1": true,
-        "f1_mins": 1089
-      },
-      "144800": {
-        "status": "rotacional",
-        "name": "Luis Mejía",
-        "from_f1": true,
-        "f1_mins": 1089
-      },
-      "796326": {
-        "status": "rotacional",
-        "name": "Fidel Escobar",
-        "from_f1": true,
-        "f1_mins": 1089
-      },
-      "1217937": {
-        "status": "rotacional",
-        "name": "Edgardo Fariña",
-        "from_f1": true,
-        "f1_mins": 1089
+      "1217929": {
+        "status": "sub_in",
+        "name": "Azarias Londoño",
+        "from_f2": true,
+        "f2_mins": 13
       },
       "159935": {
-        "status": "rotacional",
+        "status": "sub_in",
         "name": "Éric Davis",
-        "from_f1": true,
-        "f1_mins": 1089
+        "from_f2": true,
+        "f2_mins": 1
+      },
+      "985161": {
+        "status": "sub_in",
+        "name": "Tomás Rodríguez",
+        "from_f2": true,
+        "f2_mins": 1
       },
       "159939": {
         "status": "rotacional",
-        "name": "Roderick Miller",
-        "from_f1": true,
-        "f1_mins": 1089
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
       },
-      "928021": {
+      "1172599": {
         "status": "rotacional",
-        "name": "Jorge Gutiérrez",
-        "from_f1": true,
-        "f1_mins": 1089
-      },
-      "796330": {
-        "status": "rotacional",
-        "name": "Adalberto Carrasquilla",
-        "from_f1": true,
-        "f1_mins": 1089
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
       },
       "83951": {
         "status": "rotacional",
-        "name": "Alberto Quintero",
-        "from_f1": true,
-        "f1_mins": 1089
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "796326": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "144800": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "928021": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "156102": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "1217937": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "796328": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "796330": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
       },
       "1021117": {
         "status": "rotacional",
-        "name": "César Yanis",
-        "from_f1": true,
-        "f1_mins": 1089
-      },
-      "985161": {
-        "status": "rotacional",
-        "name": "Tomás Rodríguez",
-        "from_f1": true,
-        "f1_mins": 1089
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
       }
     }
   },
@@ -15207,317 +15207,317 @@
     "round_num": 3,
     "confirmed": false,
     "players": {
-      "190419": {
+      "1457083": {
         "status": "starter",
-        "name": "Dominik Livaković",
-        "from_f1": true,
-        "f1_mins": 1089
-      },
-      "954836": {
-        "status": "starter",
-        "name": "Josip Šutalo",
-        "from_f1": true,
-        "f1_mins": 1089
-      },
-      "1405212": {
-        "status": "starter",
-        "name": "Luka Vušković",
-        "from_f1": true,
-        "f1_mins": 66
-      },
-      "964994": {
-        "status": "starter",
-        "name": "Joško Gvardiol",
-        "from_f1": true,
-        "f1_mins": 1089
-      },
-      "927407": {
-        "status": "starter",
-        "name": "Josip Stanišić",
-        "from_f1": true,
-        "f1_mins": 1089
-      },
-      "15466": {
-        "status": "starter",
-        "name": "Luka Modrić",
-        "from_f1": true,
-        "f1_mins": 58
-      },
-      "190437": {
-        "status": "starter",
-        "name": "Mario Pašalić",
-        "from_f1": true,
-        "f1_mins": 78
-      },
-      "38710": {
-        "status": "starter",
-        "name": "Ivan Perišić",
-        "from_f1": true,
-        "f1_mins": 1089
-      },
-      "1091303": {
-        "status": "starter",
-        "name": "Petar Sučić",
-        "from_f1": true,
-        "f1_mins": 1089
-      },
-      "1090019": {
-        "status": "starter",
-        "name": "Martin Baturina",
-        "from_f1": true,
-        "f1_mins": 78
-      },
-      "827668": {
-        "status": "starter",
-        "name": "Petar Musa",
-        "from_f1": true,
-        "f1_mins": 66
-      },
-      "136710": {
-        "status": "rotacional",
-        "name": "Mateo Kovačić",
-        "from_f1": true,
-        "f1_mins": 1089
-      },
-      "1066802": {
-        "status": "substitute",
-        "name": "Marco Pašalić",
-        "from_f1": true,
-        "f1_mins": 1089
-      },
-      "1019321": {
-        "status": "substitute",
-        "name": "Igor Matanović",
-        "from_f1": true,
-        "f1_mins": 1089
-      },
-      "357596": {
-        "status": "substitute",
-        "name": "Nikola Vlašić",
-        "from_f1": true,
-        "f1_mins": 1089
-      },
-      "67647": {
-        "status": "substitute",
-        "name": "Andrej Kramarić",
-        "from_f1": true,
-        "f1_mins": 1089
-      },
-      "835678": {
-        "status": "rotacional",
-        "name": "Dominik Kotarski",
-        "from_f1": true,
-        "f1_mins": 1089
-      },
-      "943212": {
-        "status": "rotacional",
-        "name": "Ivor Pandur",
-        "from_f1": true,
-        "f1_mins": 1089
-      },
-      "257091": {
-        "status": "rotacional",
-        "name": "Duje Ćaleta-Car",
-        "from_f1": true,
-        "f1_mins": 1089
-      },
-      "847467": {
-        "status": "rotacional",
-        "name": "Marin Pongračić",
-        "from_f1": true,
-        "f1_mins": 1089
-      },
-      "789234": {
-        "status": "rotacional",
-        "name": "Martin Erlić",
-        "from_f1": true,
-        "f1_mins": 1089
-      },
-      "796206": {
-        "status": "rotacional",
-        "name": "Kristijan Jakić",
-        "from_f1": true,
-        "f1_mins": 1089
-      },
-      "949156": {
-        "status": "rotacional",
-        "name": "Luka Sučić",
-        "from_f1": true,
-        "f1_mins": 1089
-      },
-      "814882": {
-        "status": "rotacional",
-        "name": "Nikola Moro",
-        "from_f1": true,
-        "f1_mins": 1089
-      },
-      "916183": {
-        "status": "rotacional",
-        "name": "Toni Fruk",
-        "from_f1": true,
-        "f1_mins": 1089
-      },
-      "37318": {
-        "status": "rotacional",
-        "name": "Ante Budimir",
-        "from_f1": true,
-        "f1_mins": 1089
-      },
-      "791092": {
-        "status": "starter",
-        "name": "Lawrence Ati Zigi",
-        "from_f1": true,
-        "f1_mins": 46
-      },
-      "1087805": {
-        "status": "starter",
-        "name": "Marvin Senaya",
-        "from_f1": true,
-        "f1_mins": 1089
+        "name": "Benjamin Asare",
+        "from_f2": true,
+        "f2_mins": 90
       },
       "1218056": {
         "status": "starter",
         "name": "Jonas Adjei Adjetey",
-        "from_f1": true,
-        "f1_mins": 1089
+        "from_f2": true,
+        "f2_mins": 90
       },
       "920514": {
         "status": "starter",
         "name": "Jerome Opoku",
-        "from_f1": true,
-        "f1_mins": 1089
+        "from_f2": true,
+        "f2_mins": 90
       },
       "844942": {
         "status": "starter",
         "name": "Gideon Mensah",
-        "from_f1": true,
-        "f1_mins": 1089
+        "from_f2": true,
+        "f2_mins": 90
       },
-      "1202024": {
+      "316148": {
         "status": "starter",
-        "name": "Ernest Nuamah",
-        "from_f1": true,
-        "f1_mins": 58
+        "name": "Thomas Partey",
+        "from_f2": true,
+        "f2_mins": 90
       },
       "1986794": {
         "status": "starter",
         "name": "Caleb Yirenkyi",
-        "from_f1": true,
-        "f1_mins": 1089
+        "from_f2": true,
+        "f2_mins": 90
       },
-      "904424": {
+      "905639": {
         "status": "starter",
-        "name": "Elisha Owusu",
-        "from_f1": true,
-        "f1_mins": 78
+        "name": "Kwasi Sibo",
+        "from_f2": true,
+        "f2_mins": 90
       },
       "934354": {
         "status": "starter",
         "name": "Antoine Semenyo",
-        "from_f1": true,
-        "f1_mins": 1089
+        "from_f2": true,
+        "f2_mins": 90
       },
-      "1019442": {
+      "1087805": {
         "status": "starter",
-        "name": "Kamaldeen Sulemana",
-        "from_f1": true,
-        "f1_mins": 58
+        "name": "Marvin Senaya",
+        "from_f2": true,
+        "f2_mins": 87
       },
       "103045": {
         "status": "starter",
         "name": "Jordan Ayew",
-        "from_f1": true,
-        "f1_mins": 87
+        "from_f2": true,
+        "f2_mins": 67
       },
-      "1457083": {
-        "status": "rotacional",
-        "name": "Benjamin Asare",
-        "from_f1": true,
-        "f1_mins": 1089
+      "783374": {
+        "status": "starter",
+        "name": "Iñaki Williams",
+        "from_f2": true,
+        "f2_mins": 66
       },
       "1103589": {
-        "status": "rotacional",
+        "status": "sub_in",
         "name": "Abdul Fatawu Issahaku",
-        "from_f1": true,
-        "f1_mins": 1089
-      },
-      "846061": {
-        "status": "rotacional",
-        "name": "Brandon Thomas-Asante",
-        "from_f1": true,
-        "f1_mins": 1089
-      },
-      "905639": {
-        "status": "substitute",
-        "name": "Kwasi Sibo",
-        "from_f1": true,
-        "f1_mins": 1089
+        "from_f2": true,
+        "f2_mins": 24
       },
       "1472288": {
-        "status": "substitute",
+        "status": "sub_in",
         "name": "Prince Kwabena Adu",
-        "from_f1": true,
-        "f1_mins": 1089
+        "from_f2": true,
+        "f2_mins": 22
+      },
+      "1473092": {
+        "status": "sub_in",
+        "name": "Kojo Peprah Oppong",
+        "from_f2": true,
+        "f2_mins": 10
+      },
+      "239632": {
+        "status": "sub_in",
+        "name": "Rahman Baba",
+        "from_f2": true,
+        "f2_mins": 1
       },
       "970370": {
         "status": "rotacional",
-        "name": "Joseph Anang",
-        "from_f1": true,
-        "f1_mins": 1089
-      },
-      "1049515": {
-        "status": "rotacional",
-        "name": "Alidu Seidu",
-        "from_f1": true,
-        "f1_mins": 1089
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
       },
       "846147": {
         "status": "rotacional",
-        "name": "Abdul Mumin",
-        "from_f1": true,
-        "f1_mins": 1089
-      },
-      "239632": {
-        "status": "rotacional",
-        "name": "Rahman Baba",
-        "from_f1": true,
-        "f1_mins": 1089
-      },
-      "1473092": {
-        "status": "rotacional",
-        "name": "Kojo Peprah Oppong",
-        "from_f1": true,
-        "f1_mins": 1089
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
       },
       "363782": {
         "status": "rotacional",
-        "name": "Derrick Luckassen",
-        "from_f1": true,
-        "f1_mins": 1089
-      },
-      "1477662": {
-        "status": "rotacional",
-        "name": "Christopher Baah",
-        "from_f1": true,
-        "f1_mins": 1089
-      },
-      "783374": {
-        "status": "rotacional",
-        "name": "Iñaki Williams",
-        "from_f1": true,
-        "f1_mins": 1089
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
       },
       "1138352": {
         "status": "rotacional",
-        "name": "Augustine Boakye",
-        "from_f1": true,
-        "f1_mins": 1089
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
       },
-      "316148": {
+      "904424": {
         "status": "rotacional",
         "name": "",
-        "from_f1": true,
-        "reason": "no_en_wc_results"
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "1202024": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "1477662": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "1049515": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "846061": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "791092": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "1019442": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "190419": {
+        "status": "starter",
+        "name": "Dominik Livaković",
+        "from_f2": true,
+        "f2_mins": 90
+      },
+      "927407": {
+        "status": "starter",
+        "name": "Josip Stanišić",
+        "from_f2": true,
+        "f2_mins": 90
+      },
+      "954836": {
+        "status": "starter",
+        "name": "Josip Šutalo",
+        "from_f2": true,
+        "f2_mins": 90
+      },
+      "847467": {
+        "status": "starter",
+        "name": "Marin Pongračić",
+        "from_f2": true,
+        "f2_mins": 90
+      },
+      "1090019": {
+        "status": "starter",
+        "name": "Martin Baturina",
+        "from_f2": true,
+        "f2_mins": 90
+      },
+      "38710": {
+        "status": "starter",
+        "name": "Ivan Perišić",
+        "from_f2": true,
+        "f2_mins": 90
+      },
+      "15466": {
+        "status": "starter",
+        "name": "Luka Modrić",
+        "from_f2": true,
+        "f2_mins": 81
+      },
+      "136710": {
+        "status": "starter",
+        "name": "Mateo Kovačić",
+        "from_f2": true,
+        "f2_mins": 72
+      },
+      "1066802": {
+        "status": "starter",
+        "name": "Marco Pašalić",
+        "from_f2": true,
+        "f2_mins": 72
+      },
+      "964994": {
+        "status": "starter",
+        "name": "Joško Gvardiol",
+        "from_f2": true,
+        "f2_mins": 45
+      },
+      "827668": {
+        "status": "starter",
+        "name": "Petar Musa",
+        "from_f2": true,
+        "f2_mins": 45
+      },
+      "67647": {
+        "status": "sub_in",
+        "name": "Andrej Kramarić",
+        "from_f2": true,
+        "f2_mins": 45
+      },
+      "37318": {
+        "status": "sub_in",
+        "name": "Ante Budimir",
+        "from_f2": true,
+        "f2_mins": 45
+      },
+      "1091303": {
+        "status": "sub_in",
+        "name": "Petar Sučić",
+        "from_f2": true,
+        "f2_mins": 18
+      },
+      "949156": {
+        "status": "sub_in",
+        "name": "Luka Sučić",
+        "from_f2": true,
+        "f2_mins": 18
+      },
+      "190437": {
+        "status": "sub_in",
+        "name": "Mario Pašalić",
+        "from_f2": true,
+        "f2_mins": 9
+      },
+      "814882": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "1405212": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "796206": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "789234": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "357596": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "1019321": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "916183": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "835678": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "257091": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
+      },
+      "943212": {
+        "status": "rotacional",
+        "name": "",
+        "from_f2": true,
+        "reason": "no_jugó_f2"
       }
     }
   }

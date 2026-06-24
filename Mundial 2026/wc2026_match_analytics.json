@@ -109524,6 +109524,425 @@
     "group": "K",
     "matches": [
       {
+        "event_id": 15186858,
+        "is_home": true,
+        "opponent": "Uzbekistan",
+        "opponent_fifa": 32,
+        "date": 1782310381,
+        "score_ft": [
+          3.086,
+          0.195
+        ],
+        "score_ht": null,
+        "stats": {
+          "ALL": {
+            "Total shots": {
+              "home": 10,
+              "away": 10
+            },
+            "Ball possession": {
+              "home": null,
+              "away": null
+            },
+            "Shots on target": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        "odds_1x2": null,
+        "odds_ou": null,
+        "odds_btts": null,
+        "_wc_match": true,
+        "_round_num": 2,
+        "_weight": 12,
+        "_weight_copy": true
+      },
+      {
+        "event_id": 15186858,
+        "is_home": true,
+        "opponent": "Uzbekistan",
+        "opponent_fifa": 32,
+        "date": 1782310381,
+        "score_ft": [
+          3.086,
+          0.195
+        ],
+        "score_ht": null,
+        "stats": {
+          "ALL": {
+            "Total shots": {
+              "home": 10,
+              "away": 10
+            },
+            "Ball possession": {
+              "home": null,
+              "away": null
+            },
+            "Shots on target": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        "odds_1x2": null,
+        "odds_ou": null,
+        "odds_btts": null,
+        "_wc_match": true,
+        "_round_num": 2,
+        "_weight": 12,
+        "_weight_copy": true
+      },
+      {
+        "event_id": 15186858,
+        "is_home": true,
+        "opponent": "Uzbekistan",
+        "opponent_fifa": 32,
+        "date": 1782310381,
+        "score_ft": [
+          3.086,
+          0.195
+        ],
+        "score_ht": null,
+        "stats": {
+          "ALL": {
+            "Total shots": {
+              "home": 10,
+              "away": 10
+            },
+            "Ball possession": {
+              "home": null,
+              "away": null
+            },
+            "Shots on target": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        "odds_1x2": null,
+        "odds_ou": null,
+        "odds_btts": null,
+        "_wc_match": true,
+        "_round_num": 2,
+        "_weight": 12,
+        "_weight_copy": true
+      },
+      {
+        "event_id": 15186858,
+        "is_home": true,
+        "opponent": "Uzbekistan",
+        "opponent_fifa": 32,
+        "date": 1782310381,
+        "score_ft": [
+          3.086,
+          0.195
+        ],
+        "score_ht": null,
+        "stats": {
+          "ALL": {
+            "Total shots": {
+              "home": 10,
+              "away": 10
+            },
+            "Ball possession": {
+              "home": null,
+              "away": null
+            },
+            "Shots on target": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        "odds_1x2": null,
+        "odds_ou": null,
+        "odds_btts": null,
+        "_wc_match": true,
+        "_round_num": 2,
+        "_weight": 12,
+        "_weight_copy": true
+      },
+      {
+        "event_id": 15186858,
+        "is_home": true,
+        "opponent": "Uzbekistan",
+        "opponent_fifa": 32,
+        "date": 1782310381,
+        "score_ft": [
+          3.086,
+          0.195
+        ],
+        "score_ht": null,
+        "stats": {
+          "ALL": {
+            "Total shots": {
+              "home": 10,
+              "away": 10
+            },
+            "Ball possession": {
+              "home": null,
+              "away": null
+            },
+            "Shots on target": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        "odds_1x2": null,
+        "odds_ou": null,
+        "odds_btts": null,
+        "_wc_match": true,
+        "_round_num": 2,
+        "_weight": 12,
+        "_weight_copy": true
+      },
+      {
+        "event_id": 15186858,
+        "is_home": true,
+        "opponent": "Uzbekistan",
+        "opponent_fifa": 32,
+        "date": 1782310381,
+        "score_ft": [
+          3.086,
+          0.195
+        ],
+        "score_ht": null,
+        "stats": {
+          "ALL": {
+            "Total shots": {
+              "home": 10,
+              "away": 10
+            },
+            "Ball possession": {
+              "home": null,
+              "away": null
+            },
+            "Shots on target": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        "odds_1x2": null,
+        "odds_ou": null,
+        "odds_btts": null,
+        "_wc_match": true,
+        "_round_num": 2,
+        "_weight": 12,
+        "_weight_copy": true
+      },
+      {
+        "event_id": 15186858,
+        "is_home": true,
+        "opponent": "Uzbekistan",
+        "opponent_fifa": 32,
+        "date": 1782310381,
+        "score_ft": [
+          3.086,
+          0.195
+        ],
+        "score_ht": null,
+        "stats": {
+          "ALL": {
+            "Total shots": {
+              "home": 10,
+              "away": 10
+            },
+            "Ball possession": {
+              "home": null,
+              "away": null
+            },
+            "Shots on target": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        "odds_1x2": null,
+        "odds_ou": null,
+        "odds_btts": null,
+        "_wc_match": true,
+        "_round_num": 2,
+        "_weight": 12,
+        "_weight_copy": true
+      },
+      {
+        "event_id": 15186858,
+        "is_home": true,
+        "opponent": "Uzbekistan",
+        "opponent_fifa": 32,
+        "date": 1782310381,
+        "score_ft": [
+          3.086,
+          0.195
+        ],
+        "score_ht": null,
+        "stats": {
+          "ALL": {
+            "Total shots": {
+              "home": 10,
+              "away": 10
+            },
+            "Ball possession": {
+              "home": null,
+              "away": null
+            },
+            "Shots on target": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        "odds_1x2": null,
+        "odds_ou": null,
+        "odds_btts": null,
+        "_wc_match": true,
+        "_round_num": 2,
+        "_weight": 12,
+        "_weight_copy": true
+      },
+      {
+        "event_id": 15186858,
+        "is_home": true,
+        "opponent": "Uzbekistan",
+        "opponent_fifa": 32,
+        "date": 1782310381,
+        "score_ft": [
+          3.086,
+          0.195
+        ],
+        "score_ht": null,
+        "stats": {
+          "ALL": {
+            "Total shots": {
+              "home": 10,
+              "away": 10
+            },
+            "Ball possession": {
+              "home": null,
+              "away": null
+            },
+            "Shots on target": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        "odds_1x2": null,
+        "odds_ou": null,
+        "odds_btts": null,
+        "_wc_match": true,
+        "_round_num": 2,
+        "_weight": 12,
+        "_weight_copy": true
+      },
+      {
+        "event_id": 15186858,
+        "is_home": true,
+        "opponent": "Uzbekistan",
+        "opponent_fifa": 32,
+        "date": 1782310381,
+        "score_ft": [
+          3.086,
+          0.195
+        ],
+        "score_ht": null,
+        "stats": {
+          "ALL": {
+            "Total shots": {
+              "home": 10,
+              "away": 10
+            },
+            "Ball possession": {
+              "home": null,
+              "away": null
+            },
+            "Shots on target": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        "odds_1x2": null,
+        "odds_ou": null,
+        "odds_btts": null,
+        "_wc_match": true,
+        "_round_num": 2,
+        "_weight": 12,
+        "_weight_copy": true
+      },
+      {
+        "event_id": 15186858,
+        "is_home": true,
+        "opponent": "Uzbekistan",
+        "opponent_fifa": 32,
+        "date": 1782310381,
+        "score_ft": [
+          3.086,
+          0.195
+        ],
+        "score_ht": null,
+        "stats": {
+          "ALL": {
+            "Total shots": {
+              "home": 10,
+              "away": 10
+            },
+            "Ball possession": {
+              "home": null,
+              "away": null
+            },
+            "Shots on target": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        "odds_1x2": null,
+        "odds_ou": null,
+        "odds_btts": null,
+        "_wc_match": true,
+        "_round_num": 2,
+        "_weight": 12,
+        "_weight_copy": true
+      },
+      {
+        "event_id": 15186858,
+        "is_home": true,
+        "opponent": "Uzbekistan",
+        "opponent_fifa": 32,
+        "date": 1782310381,
+        "score_ft": [
+          3.086,
+          0.195
+        ],
+        "score_ht": null,
+        "stats": {
+          "ALL": {
+            "Total shots": {
+              "home": 10,
+              "away": 10
+            },
+            "Ball possession": {
+              "home": null,
+              "away": null
+            },
+            "Shots on target": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        "odds_1x2": null,
+        "odds_ou": null,
+        "odds_btts": null,
+        "_wc_match": true,
+        "_round_num": 2,
+        "_weight": 12
+      },
+      {
         "event_id": 15186709,
         "is_home": true,
         "opponent": "DR Congo",
@@ -112827,6 +113246,425 @@
     "group": "K",
     "matches": [
       {
+        "event_id": 15186713,
+        "is_home": false,
+        "opponent": "Colombia",
+        "opponent_fifa": 68,
+        "date": 1782310381,
+        "score_ft": [
+          0.294,
+          0.997
+        ],
+        "score_ht": null,
+        "stats": {
+          "ALL": {
+            "Total shots": {
+              "home": 10,
+              "away": 10
+            },
+            "Ball possession": {
+              "home": null,
+              "away": null
+            },
+            "Shots on target": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        "odds_1x2": null,
+        "odds_ou": null,
+        "odds_btts": null,
+        "_wc_match": true,
+        "_round_num": 2,
+        "_weight": 12,
+        "_weight_copy": true
+      },
+      {
+        "event_id": 15186713,
+        "is_home": false,
+        "opponent": "Colombia",
+        "opponent_fifa": 68,
+        "date": 1782310381,
+        "score_ft": [
+          0.294,
+          0.997
+        ],
+        "score_ht": null,
+        "stats": {
+          "ALL": {
+            "Total shots": {
+              "home": 10,
+              "away": 10
+            },
+            "Ball possession": {
+              "home": null,
+              "away": null
+            },
+            "Shots on target": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        "odds_1x2": null,
+        "odds_ou": null,
+        "odds_btts": null,
+        "_wc_match": true,
+        "_round_num": 2,
+        "_weight": 12,
+        "_weight_copy": true
+      },
+      {
+        "event_id": 15186713,
+        "is_home": false,
+        "opponent": "Colombia",
+        "opponent_fifa": 68,
+        "date": 1782310381,
+        "score_ft": [
+          0.294,
+          0.997
+        ],
+        "score_ht": null,
+        "stats": {
+          "ALL": {
+            "Total shots": {
+              "home": 10,
+              "away": 10
+            },
+            "Ball possession": {
+              "home": null,
+              "away": null
+            },
+            "Shots on target": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        "odds_1x2": null,
+        "odds_ou": null,
+        "odds_btts": null,
+        "_wc_match": true,
+        "_round_num": 2,
+        "_weight": 12,
+        "_weight_copy": true
+      },
+      {
+        "event_id": 15186713,
+        "is_home": false,
+        "opponent": "Colombia",
+        "opponent_fifa": 68,
+        "date": 1782310381,
+        "score_ft": [
+          0.294,
+          0.997
+        ],
+        "score_ht": null,
+        "stats": {
+          "ALL": {
+            "Total shots": {
+              "home": 10,
+              "away": 10
+            },
+            "Ball possession": {
+              "home": null,
+              "away": null
+            },
+            "Shots on target": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        "odds_1x2": null,
+        "odds_ou": null,
+        "odds_btts": null,
+        "_wc_match": true,
+        "_round_num": 2,
+        "_weight": 12,
+        "_weight_copy": true
+      },
+      {
+        "event_id": 15186713,
+        "is_home": false,
+        "opponent": "Colombia",
+        "opponent_fifa": 68,
+        "date": 1782310381,
+        "score_ft": [
+          0.294,
+          0.997
+        ],
+        "score_ht": null,
+        "stats": {
+          "ALL": {
+            "Total shots": {
+              "home": 10,
+              "away": 10
+            },
+            "Ball possession": {
+              "home": null,
+              "away": null
+            },
+            "Shots on target": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        "odds_1x2": null,
+        "odds_ou": null,
+        "odds_btts": null,
+        "_wc_match": true,
+        "_round_num": 2,
+        "_weight": 12,
+        "_weight_copy": true
+      },
+      {
+        "event_id": 15186713,
+        "is_home": false,
+        "opponent": "Colombia",
+        "opponent_fifa": 68,
+        "date": 1782310381,
+        "score_ft": [
+          0.294,
+          0.997
+        ],
+        "score_ht": null,
+        "stats": {
+          "ALL": {
+            "Total shots": {
+              "home": 10,
+              "away": 10
+            },
+            "Ball possession": {
+              "home": null,
+              "away": null
+            },
+            "Shots on target": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        "odds_1x2": null,
+        "odds_ou": null,
+        "odds_btts": null,
+        "_wc_match": true,
+        "_round_num": 2,
+        "_weight": 12,
+        "_weight_copy": true
+      },
+      {
+        "event_id": 15186713,
+        "is_home": false,
+        "opponent": "Colombia",
+        "opponent_fifa": 68,
+        "date": 1782310381,
+        "score_ft": [
+          0.294,
+          0.997
+        ],
+        "score_ht": null,
+        "stats": {
+          "ALL": {
+            "Total shots": {
+              "home": 10,
+              "away": 10
+            },
+            "Ball possession": {
+              "home": null,
+              "away": null
+            },
+            "Shots on target": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        "odds_1x2": null,
+        "odds_ou": null,
+        "odds_btts": null,
+        "_wc_match": true,
+        "_round_num": 2,
+        "_weight": 12,
+        "_weight_copy": true
+      },
+      {
+        "event_id": 15186713,
+        "is_home": false,
+        "opponent": "Colombia",
+        "opponent_fifa": 68,
+        "date": 1782310381,
+        "score_ft": [
+          0.294,
+          0.997
+        ],
+        "score_ht": null,
+        "stats": {
+          "ALL": {
+            "Total shots": {
+              "home": 10,
+              "away": 10
+            },
+            "Ball possession": {
+              "home": null,
+              "away": null
+            },
+            "Shots on target": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        "odds_1x2": null,
+        "odds_ou": null,
+        "odds_btts": null,
+        "_wc_match": true,
+        "_round_num": 2,
+        "_weight": 12,
+        "_weight_copy": true
+      },
+      {
+        "event_id": 15186713,
+        "is_home": false,
+        "opponent": "Colombia",
+        "opponent_fifa": 68,
+        "date": 1782310381,
+        "score_ft": [
+          0.294,
+          0.997
+        ],
+        "score_ht": null,
+        "stats": {
+          "ALL": {
+            "Total shots": {
+              "home": 10,
+              "away": 10
+            },
+            "Ball possession": {
+              "home": null,
+              "away": null
+            },
+            "Shots on target": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        "odds_1x2": null,
+        "odds_ou": null,
+        "odds_btts": null,
+        "_wc_match": true,
+        "_round_num": 2,
+        "_weight": 12,
+        "_weight_copy": true
+      },
+      {
+        "event_id": 15186713,
+        "is_home": false,
+        "opponent": "Colombia",
+        "opponent_fifa": 68,
+        "date": 1782310381,
+        "score_ft": [
+          0.294,
+          0.997
+        ],
+        "score_ht": null,
+        "stats": {
+          "ALL": {
+            "Total shots": {
+              "home": 10,
+              "away": 10
+            },
+            "Ball possession": {
+              "home": null,
+              "away": null
+            },
+            "Shots on target": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        "odds_1x2": null,
+        "odds_ou": null,
+        "odds_btts": null,
+        "_wc_match": true,
+        "_round_num": 2,
+        "_weight": 12,
+        "_weight_copy": true
+      },
+      {
+        "event_id": 15186713,
+        "is_home": false,
+        "opponent": "Colombia",
+        "opponent_fifa": 68,
+        "date": 1782310381,
+        "score_ft": [
+          0.294,
+          0.997
+        ],
+        "score_ht": null,
+        "stats": {
+          "ALL": {
+            "Total shots": {
+              "home": 10,
+              "away": 10
+            },
+            "Ball possession": {
+              "home": null,
+              "away": null
+            },
+            "Shots on target": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        "odds_1x2": null,
+        "odds_ou": null,
+        "odds_btts": null,
+        "_wc_match": true,
+        "_round_num": 2,
+        "_weight": 12,
+        "_weight_copy": true
+      },
+      {
+        "event_id": 15186713,
+        "is_home": false,
+        "opponent": "Colombia",
+        "opponent_fifa": 68,
+        "date": 1782310381,
+        "score_ft": [
+          0.294,
+          0.997
+        ],
+        "score_ht": null,
+        "stats": {
+          "ALL": {
+            "Total shots": {
+              "home": 10,
+              "away": 10
+            },
+            "Ball possession": {
+              "home": null,
+              "away": null
+            },
+            "Shots on target": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        "odds_1x2": null,
+        "odds_ou": null,
+        "odds_btts": null,
+        "_wc_match": true,
+        "_round_num": 2,
+        "_weight": 12
+      },
+      {
         "event_id": 15186709,
         "is_home": false,
         "opponent": "Portugal",
@@ -114907,6 +115745,425 @@
     "team_id": 4820,
     "group": "K",
     "matches": [
+      {
+        "event_id": 15186713,
+        "is_home": true,
+        "opponent": "DR Congo",
+        "opponent_fifa": 30,
+        "date": 1782310381,
+        "score_ft": [
+          0.997,
+          0.294
+        ],
+        "score_ht": null,
+        "stats": {
+          "ALL": {
+            "Total shots": {
+              "home": 10,
+              "away": 10
+            },
+            "Ball possession": {
+              "home": null,
+              "away": null
+            },
+            "Shots on target": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        "odds_1x2": null,
+        "odds_ou": null,
+        "odds_btts": null,
+        "_wc_match": true,
+        "_round_num": 2,
+        "_weight": 12,
+        "_weight_copy": true
+      },
+      {
+        "event_id": 15186713,
+        "is_home": true,
+        "opponent": "DR Congo",
+        "opponent_fifa": 30,
+        "date": 1782310381,
+        "score_ft": [
+          0.997,
+          0.294
+        ],
+        "score_ht": null,
+        "stats": {
+          "ALL": {
+            "Total shots": {
+              "home": 10,
+              "away": 10
+            },
+            "Ball possession": {
+              "home": null,
+              "away": null
+            },
+            "Shots on target": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        "odds_1x2": null,
+        "odds_ou": null,
+        "odds_btts": null,
+        "_wc_match": true,
+        "_round_num": 2,
+        "_weight": 12,
+        "_weight_copy": true
+      },
+      {
+        "event_id": 15186713,
+        "is_home": true,
+        "opponent": "DR Congo",
+        "opponent_fifa": 30,
+        "date": 1782310381,
+        "score_ft": [
+          0.997,
+          0.294
+        ],
+        "score_ht": null,
+        "stats": {
+          "ALL": {
+            "Total shots": {
+              "home": 10,
+              "away": 10
+            },
+            "Ball possession": {
+              "home": null,
+              "away": null
+            },
+            "Shots on target": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        "odds_1x2": null,
+        "odds_ou": null,
+        "odds_btts": null,
+        "_wc_match": true,
+        "_round_num": 2,
+        "_weight": 12,
+        "_weight_copy": true
+      },
+      {
+        "event_id": 15186713,
+        "is_home": true,
+        "opponent": "DR Congo",
+        "opponent_fifa": 30,
+        "date": 1782310381,
+        "score_ft": [
+          0.997,
+          0.294
+        ],
+        "score_ht": null,
+        "stats": {
+          "ALL": {
+            "Total shots": {
+              "home": 10,
+              "away": 10
+            },
+            "Ball possession": {
+              "home": null,
+              "away": null
+            },
+            "Shots on target": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        "odds_1x2": null,
+        "odds_ou": null,
+        "odds_btts": null,
+        "_wc_match": true,
+        "_round_num": 2,
+        "_weight": 12,
+        "_weight_copy": true
+      },
+      {
+        "event_id": 15186713,
+        "is_home": true,
+        "opponent": "DR Congo",
+        "opponent_fifa": 30,
+        "date": 1782310381,
+        "score_ft": [
+          0.997,
+          0.294
+        ],
+        "score_ht": null,
+        "stats": {
+          "ALL": {
+            "Total shots": {
+              "home": 10,
+              "away": 10
+            },
+            "Ball possession": {
+              "home": null,
+              "away": null
+            },
+            "Shots on target": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        "odds_1x2": null,
+        "odds_ou": null,
+        "odds_btts": null,
+        "_wc_match": true,
+        "_round_num": 2,
+        "_weight": 12,
+        "_weight_copy": true
+      },
+      {
+        "event_id": 15186713,
+        "is_home": true,
+        "opponent": "DR Congo",
+        "opponent_fifa": 30,
+        "date": 1782310381,
+        "score_ft": [
+          0.997,
+          0.294
+        ],
+        "score_ht": null,
+        "stats": {
+          "ALL": {
+            "Total shots": {
+              "home": 10,
+              "away": 10
+            },
+            "Ball possession": {
+              "home": null,
+              "away": null
+            },
+            "Shots on target": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        "odds_1x2": null,
+        "odds_ou": null,
+        "odds_btts": null,
+        "_wc_match": true,
+        "_round_num": 2,
+        "_weight": 12,
+        "_weight_copy": true
+      },
+      {
+        "event_id": 15186713,
+        "is_home": true,
+        "opponent": "DR Congo",
+        "opponent_fifa": 30,
+        "date": 1782310381,
+        "score_ft": [
+          0.997,
+          0.294
+        ],
+        "score_ht": null,
+        "stats": {
+          "ALL": {
+            "Total shots": {
+              "home": 10,
+              "away": 10
+            },
+            "Ball possession": {
+              "home": null,
+              "away": null
+            },
+            "Shots on target": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        "odds_1x2": null,
+        "odds_ou": null,
+        "odds_btts": null,
+        "_wc_match": true,
+        "_round_num": 2,
+        "_weight": 12,
+        "_weight_copy": true
+      },
+      {
+        "event_id": 15186713,
+        "is_home": true,
+        "opponent": "DR Congo",
+        "opponent_fifa": 30,
+        "date": 1782310381,
+        "score_ft": [
+          0.997,
+          0.294
+        ],
+        "score_ht": null,
+        "stats": {
+          "ALL": {
+            "Total shots": {
+              "home": 10,
+              "away": 10
+            },
+            "Ball possession": {
+              "home": null,
+              "away": null
+            },
+            "Shots on target": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        "odds_1x2": null,
+        "odds_ou": null,
+        "odds_btts": null,
+        "_wc_match": true,
+        "_round_num": 2,
+        "_weight": 12,
+        "_weight_copy": true
+      },
+      {
+        "event_id": 15186713,
+        "is_home": true,
+        "opponent": "DR Congo",
+        "opponent_fifa": 30,
+        "date": 1782310381,
+        "score_ft": [
+          0.997,
+          0.294
+        ],
+        "score_ht": null,
+        "stats": {
+          "ALL": {
+            "Total shots": {
+              "home": 10,
+              "away": 10
+            },
+            "Ball possession": {
+              "home": null,
+              "away": null
+            },
+            "Shots on target": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        "odds_1x2": null,
+        "odds_ou": null,
+        "odds_btts": null,
+        "_wc_match": true,
+        "_round_num": 2,
+        "_weight": 12,
+        "_weight_copy": true
+      },
+      {
+        "event_id": 15186713,
+        "is_home": true,
+        "opponent": "DR Congo",
+        "opponent_fifa": 30,
+        "date": 1782310381,
+        "score_ft": [
+          0.997,
+          0.294
+        ],
+        "score_ht": null,
+        "stats": {
+          "ALL": {
+            "Total shots": {
+              "home": 10,
+              "away": 10
+            },
+            "Ball possession": {
+              "home": null,
+              "away": null
+            },
+            "Shots on target": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        "odds_1x2": null,
+        "odds_ou": null,
+        "odds_btts": null,
+        "_wc_match": true,
+        "_round_num": 2,
+        "_weight": 12,
+        "_weight_copy": true
+      },
+      {
+        "event_id": 15186713,
+        "is_home": true,
+        "opponent": "DR Congo",
+        "opponent_fifa": 30,
+        "date": 1782310381,
+        "score_ft": [
+          0.997,
+          0.294
+        ],
+        "score_ht": null,
+        "stats": {
+          "ALL": {
+            "Total shots": {
+              "home": 10,
+              "away": 10
+            },
+            "Ball possession": {
+              "home": null,
+              "away": null
+            },
+            "Shots on target": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        "odds_1x2": null,
+        "odds_ou": null,
+        "odds_btts": null,
+        "_wc_match": true,
+        "_round_num": 2,
+        "_weight": 12,
+        "_weight_copy": true
+      },
+      {
+        "event_id": 15186713,
+        "is_home": true,
+        "opponent": "DR Congo",
+        "opponent_fifa": 30,
+        "date": 1782310381,
+        "score_ft": [
+          0.997,
+          0.294
+        ],
+        "score_ht": null,
+        "stats": {
+          "ALL": {
+            "Total shots": {
+              "home": 10,
+              "away": 10
+            },
+            "Ball possession": {
+              "home": null,
+              "away": null
+            },
+            "Shots on target": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        "odds_1x2": null,
+        "odds_ou": null,
+        "odds_btts": null,
+        "_wc_match": true,
+        "_round_num": 2,
+        "_weight": 12
+      },
       {
         "event_id": 15186722,
         "is_home": false,
@@ -118041,6 +119298,425 @@
     "group": "L",
     "matches": [
       {
+        "event_id": 15186672,
+        "is_home": true,
+        "opponent": "Ghana",
+        "opponent_fifa": 27,
+        "date": 1782310381,
+        "score_ft": [
+          1.116,
+          0.14
+        ],
+        "score_ht": null,
+        "stats": {
+          "ALL": {
+            "Total shots": {
+              "home": 10,
+              "away": 10
+            },
+            "Ball possession": {
+              "home": null,
+              "away": null
+            },
+            "Shots on target": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        "odds_1x2": null,
+        "odds_ou": null,
+        "odds_btts": null,
+        "_wc_match": true,
+        "_round_num": 2,
+        "_weight": 12,
+        "_weight_copy": true
+      },
+      {
+        "event_id": 15186672,
+        "is_home": true,
+        "opponent": "Ghana",
+        "opponent_fifa": 27,
+        "date": 1782310381,
+        "score_ft": [
+          1.116,
+          0.14
+        ],
+        "score_ht": null,
+        "stats": {
+          "ALL": {
+            "Total shots": {
+              "home": 10,
+              "away": 10
+            },
+            "Ball possession": {
+              "home": null,
+              "away": null
+            },
+            "Shots on target": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        "odds_1x2": null,
+        "odds_ou": null,
+        "odds_btts": null,
+        "_wc_match": true,
+        "_round_num": 2,
+        "_weight": 12,
+        "_weight_copy": true
+      },
+      {
+        "event_id": 15186672,
+        "is_home": true,
+        "opponent": "Ghana",
+        "opponent_fifa": 27,
+        "date": 1782310381,
+        "score_ft": [
+          1.116,
+          0.14
+        ],
+        "score_ht": null,
+        "stats": {
+          "ALL": {
+            "Total shots": {
+              "home": 10,
+              "away": 10
+            },
+            "Ball possession": {
+              "home": null,
+              "away": null
+            },
+            "Shots on target": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        "odds_1x2": null,
+        "odds_ou": null,
+        "odds_btts": null,
+        "_wc_match": true,
+        "_round_num": 2,
+        "_weight": 12,
+        "_weight_copy": true
+      },
+      {
+        "event_id": 15186672,
+        "is_home": true,
+        "opponent": "Ghana",
+        "opponent_fifa": 27,
+        "date": 1782310381,
+        "score_ft": [
+          1.116,
+          0.14
+        ],
+        "score_ht": null,
+        "stats": {
+          "ALL": {
+            "Total shots": {
+              "home": 10,
+              "away": 10
+            },
+            "Ball possession": {
+              "home": null,
+              "away": null
+            },
+            "Shots on target": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        "odds_1x2": null,
+        "odds_ou": null,
+        "odds_btts": null,
+        "_wc_match": true,
+        "_round_num": 2,
+        "_weight": 12,
+        "_weight_copy": true
+      },
+      {
+        "event_id": 15186672,
+        "is_home": true,
+        "opponent": "Ghana",
+        "opponent_fifa": 27,
+        "date": 1782310381,
+        "score_ft": [
+          1.116,
+          0.14
+        ],
+        "score_ht": null,
+        "stats": {
+          "ALL": {
+            "Total shots": {
+              "home": 10,
+              "away": 10
+            },
+            "Ball possession": {
+              "home": null,
+              "away": null
+            },
+            "Shots on target": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        "odds_1x2": null,
+        "odds_ou": null,
+        "odds_btts": null,
+        "_wc_match": true,
+        "_round_num": 2,
+        "_weight": 12,
+        "_weight_copy": true
+      },
+      {
+        "event_id": 15186672,
+        "is_home": true,
+        "opponent": "Ghana",
+        "opponent_fifa": 27,
+        "date": 1782310381,
+        "score_ft": [
+          1.116,
+          0.14
+        ],
+        "score_ht": null,
+        "stats": {
+          "ALL": {
+            "Total shots": {
+              "home": 10,
+              "away": 10
+            },
+            "Ball possession": {
+              "home": null,
+              "away": null
+            },
+            "Shots on target": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        "odds_1x2": null,
+        "odds_ou": null,
+        "odds_btts": null,
+        "_wc_match": true,
+        "_round_num": 2,
+        "_weight": 12,
+        "_weight_copy": true
+      },
+      {
+        "event_id": 15186672,
+        "is_home": true,
+        "opponent": "Ghana",
+        "opponent_fifa": 27,
+        "date": 1782310381,
+        "score_ft": [
+          1.116,
+          0.14
+        ],
+        "score_ht": null,
+        "stats": {
+          "ALL": {
+            "Total shots": {
+              "home": 10,
+              "away": 10
+            },
+            "Ball possession": {
+              "home": null,
+              "away": null
+            },
+            "Shots on target": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        "odds_1x2": null,
+        "odds_ou": null,
+        "odds_btts": null,
+        "_wc_match": true,
+        "_round_num": 2,
+        "_weight": 12,
+        "_weight_copy": true
+      },
+      {
+        "event_id": 15186672,
+        "is_home": true,
+        "opponent": "Ghana",
+        "opponent_fifa": 27,
+        "date": 1782310381,
+        "score_ft": [
+          1.116,
+          0.14
+        ],
+        "score_ht": null,
+        "stats": {
+          "ALL": {
+            "Total shots": {
+              "home": 10,
+              "away": 10
+            },
+            "Ball possession": {
+              "home": null,
+              "away": null
+            },
+            "Shots on target": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        "odds_1x2": null,
+        "odds_ou": null,
+        "odds_btts": null,
+        "_wc_match": true,
+        "_round_num": 2,
+        "_weight": 12,
+        "_weight_copy": true
+      },
+      {
+        "event_id": 15186672,
+        "is_home": true,
+        "opponent": "Ghana",
+        "opponent_fifa": 27,
+        "date": 1782310381,
+        "score_ft": [
+          1.116,
+          0.14
+        ],
+        "score_ht": null,
+        "stats": {
+          "ALL": {
+            "Total shots": {
+              "home": 10,
+              "away": 10
+            },
+            "Ball possession": {
+              "home": null,
+              "away": null
+            },
+            "Shots on target": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        "odds_1x2": null,
+        "odds_ou": null,
+        "odds_btts": null,
+        "_wc_match": true,
+        "_round_num": 2,
+        "_weight": 12,
+        "_weight_copy": true
+      },
+      {
+        "event_id": 15186672,
+        "is_home": true,
+        "opponent": "Ghana",
+        "opponent_fifa": 27,
+        "date": 1782310381,
+        "score_ft": [
+          1.116,
+          0.14
+        ],
+        "score_ht": null,
+        "stats": {
+          "ALL": {
+            "Total shots": {
+              "home": 10,
+              "away": 10
+            },
+            "Ball possession": {
+              "home": null,
+              "away": null
+            },
+            "Shots on target": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        "odds_1x2": null,
+        "odds_ou": null,
+        "odds_btts": null,
+        "_wc_match": true,
+        "_round_num": 2,
+        "_weight": 12,
+        "_weight_copy": true
+      },
+      {
+        "event_id": 15186672,
+        "is_home": true,
+        "opponent": "Ghana",
+        "opponent_fifa": 27,
+        "date": 1782310381,
+        "score_ft": [
+          1.116,
+          0.14
+        ],
+        "score_ht": null,
+        "stats": {
+          "ALL": {
+            "Total shots": {
+              "home": 10,
+              "away": 10
+            },
+            "Ball possession": {
+              "home": null,
+              "away": null
+            },
+            "Shots on target": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        "odds_1x2": null,
+        "odds_ou": null,
+        "odds_btts": null,
+        "_wc_match": true,
+        "_round_num": 2,
+        "_weight": 12,
+        "_weight_copy": true
+      },
+      {
+        "event_id": 15186672,
+        "is_home": true,
+        "opponent": "Ghana",
+        "opponent_fifa": 27,
+        "date": 1782310381,
+        "score_ft": [
+          1.116,
+          0.14
+        ],
+        "score_ht": null,
+        "stats": {
+          "ALL": {
+            "Total shots": {
+              "home": 10,
+              "away": 10
+            },
+            "Ball possession": {
+              "home": null,
+              "away": null
+            },
+            "Shots on target": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        "odds_1x2": null,
+        "odds_ou": null,
+        "odds_btts": null,
+        "_wc_match": true,
+        "_round_num": 2,
+        "_weight": 12
+      },
+      {
         "event_id": 15186504,
         "is_home": true,
         "opponent": "Croatia",
@@ -121085,6 +122761,425 @@
     "team_id": 4715,
     "group": "L",
     "matches": [
+      {
+        "event_id": 15186520,
+        "is_home": false,
+        "opponent": "Panama",
+        "opponent_fifa": 24,
+        "date": 1782310381,
+        "score_ft": [
+          1.518,
+          0.443
+        ],
+        "score_ht": null,
+        "stats": {
+          "ALL": {
+            "Total shots": {
+              "home": 10,
+              "away": 10
+            },
+            "Ball possession": {
+              "home": null,
+              "away": null
+            },
+            "Shots on target": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        "odds_1x2": null,
+        "odds_ou": null,
+        "odds_btts": null,
+        "_wc_match": true,
+        "_round_num": 2,
+        "_weight": 12,
+        "_weight_copy": true
+      },
+      {
+        "event_id": 15186520,
+        "is_home": false,
+        "opponent": "Panama",
+        "opponent_fifa": 24,
+        "date": 1782310381,
+        "score_ft": [
+          1.518,
+          0.443
+        ],
+        "score_ht": null,
+        "stats": {
+          "ALL": {
+            "Total shots": {
+              "home": 10,
+              "away": 10
+            },
+            "Ball possession": {
+              "home": null,
+              "away": null
+            },
+            "Shots on target": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        "odds_1x2": null,
+        "odds_ou": null,
+        "odds_btts": null,
+        "_wc_match": true,
+        "_round_num": 2,
+        "_weight": 12,
+        "_weight_copy": true
+      },
+      {
+        "event_id": 15186520,
+        "is_home": false,
+        "opponent": "Panama",
+        "opponent_fifa": 24,
+        "date": 1782310381,
+        "score_ft": [
+          1.518,
+          0.443
+        ],
+        "score_ht": null,
+        "stats": {
+          "ALL": {
+            "Total shots": {
+              "home": 10,
+              "away": 10
+            },
+            "Ball possession": {
+              "home": null,
+              "away": null
+            },
+            "Shots on target": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        "odds_1x2": null,
+        "odds_ou": null,
+        "odds_btts": null,
+        "_wc_match": true,
+        "_round_num": 2,
+        "_weight": 12,
+        "_weight_copy": true
+      },
+      {
+        "event_id": 15186520,
+        "is_home": false,
+        "opponent": "Panama",
+        "opponent_fifa": 24,
+        "date": 1782310381,
+        "score_ft": [
+          1.518,
+          0.443
+        ],
+        "score_ht": null,
+        "stats": {
+          "ALL": {
+            "Total shots": {
+              "home": 10,
+              "away": 10
+            },
+            "Ball possession": {
+              "home": null,
+              "away": null
+            },
+            "Shots on target": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        "odds_1x2": null,
+        "odds_ou": null,
+        "odds_btts": null,
+        "_wc_match": true,
+        "_round_num": 2,
+        "_weight": 12,
+        "_weight_copy": true
+      },
+      {
+        "event_id": 15186520,
+        "is_home": false,
+        "opponent": "Panama",
+        "opponent_fifa": 24,
+        "date": 1782310381,
+        "score_ft": [
+          1.518,
+          0.443
+        ],
+        "score_ht": null,
+        "stats": {
+          "ALL": {
+            "Total shots": {
+              "home": 10,
+              "away": 10
+            },
+            "Ball possession": {
+              "home": null,
+              "away": null
+            },
+            "Shots on target": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        "odds_1x2": null,
+        "odds_ou": null,
+        "odds_btts": null,
+        "_wc_match": true,
+        "_round_num": 2,
+        "_weight": 12,
+        "_weight_copy": true
+      },
+      {
+        "event_id": 15186520,
+        "is_home": false,
+        "opponent": "Panama",
+        "opponent_fifa": 24,
+        "date": 1782310381,
+        "score_ft": [
+          1.518,
+          0.443
+        ],
+        "score_ht": null,
+        "stats": {
+          "ALL": {
+            "Total shots": {
+              "home": 10,
+              "away": 10
+            },
+            "Ball possession": {
+              "home": null,
+              "away": null
+            },
+            "Shots on target": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        "odds_1x2": null,
+        "odds_ou": null,
+        "odds_btts": null,
+        "_wc_match": true,
+        "_round_num": 2,
+        "_weight": 12,
+        "_weight_copy": true
+      },
+      {
+        "event_id": 15186520,
+        "is_home": false,
+        "opponent": "Panama",
+        "opponent_fifa": 24,
+        "date": 1782310381,
+        "score_ft": [
+          1.518,
+          0.443
+        ],
+        "score_ht": null,
+        "stats": {
+          "ALL": {
+            "Total shots": {
+              "home": 10,
+              "away": 10
+            },
+            "Ball possession": {
+              "home": null,
+              "away": null
+            },
+            "Shots on target": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        "odds_1x2": null,
+        "odds_ou": null,
+        "odds_btts": null,
+        "_wc_match": true,
+        "_round_num": 2,
+        "_weight": 12,
+        "_weight_copy": true
+      },
+      {
+        "event_id": 15186520,
+        "is_home": false,
+        "opponent": "Panama",
+        "opponent_fifa": 24,
+        "date": 1782310381,
+        "score_ft": [
+          1.518,
+          0.443
+        ],
+        "score_ht": null,
+        "stats": {
+          "ALL": {
+            "Total shots": {
+              "home": 10,
+              "away": 10
+            },
+            "Ball possession": {
+              "home": null,
+              "away": null
+            },
+            "Shots on target": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        "odds_1x2": null,
+        "odds_ou": null,
+        "odds_btts": null,
+        "_wc_match": true,
+        "_round_num": 2,
+        "_weight": 12,
+        "_weight_copy": true
+      },
+      {
+        "event_id": 15186520,
+        "is_home": false,
+        "opponent": "Panama",
+        "opponent_fifa": 24,
+        "date": 1782310381,
+        "score_ft": [
+          1.518,
+          0.443
+        ],
+        "score_ht": null,
+        "stats": {
+          "ALL": {
+            "Total shots": {
+              "home": 10,
+              "away": 10
+            },
+            "Ball possession": {
+              "home": null,
+              "away": null
+            },
+            "Shots on target": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        "odds_1x2": null,
+        "odds_ou": null,
+        "odds_btts": null,
+        "_wc_match": true,
+        "_round_num": 2,
+        "_weight": 12,
+        "_weight_copy": true
+      },
+      {
+        "event_id": 15186520,
+        "is_home": false,
+        "opponent": "Panama",
+        "opponent_fifa": 24,
+        "date": 1782310381,
+        "score_ft": [
+          1.518,
+          0.443
+        ],
+        "score_ht": null,
+        "stats": {
+          "ALL": {
+            "Total shots": {
+              "home": 10,
+              "away": 10
+            },
+            "Ball possession": {
+              "home": null,
+              "away": null
+            },
+            "Shots on target": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        "odds_1x2": null,
+        "odds_ou": null,
+        "odds_btts": null,
+        "_wc_match": true,
+        "_round_num": 2,
+        "_weight": 12,
+        "_weight_copy": true
+      },
+      {
+        "event_id": 15186520,
+        "is_home": false,
+        "opponent": "Panama",
+        "opponent_fifa": 24,
+        "date": 1782310381,
+        "score_ft": [
+          1.518,
+          0.443
+        ],
+        "score_ht": null,
+        "stats": {
+          "ALL": {
+            "Total shots": {
+              "home": 10,
+              "away": 10
+            },
+            "Ball possession": {
+              "home": null,
+              "away": null
+            },
+            "Shots on target": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        "odds_1x2": null,
+        "odds_ou": null,
+        "odds_btts": null,
+        "_wc_match": true,
+        "_round_num": 2,
+        "_weight": 12,
+        "_weight_copy": true
+      },
+      {
+        "event_id": 15186520,
+        "is_home": false,
+        "opponent": "Panama",
+        "opponent_fifa": 24,
+        "date": 1782310381,
+        "score_ft": [
+          1.518,
+          0.443
+        ],
+        "score_ht": null,
+        "stats": {
+          "ALL": {
+            "Total shots": {
+              "home": 10,
+              "away": 10
+            },
+            "Ball possession": {
+              "home": null,
+              "away": null
+            },
+            "Shots on target": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        "odds_1x2": null,
+        "odds_ou": null,
+        "odds_btts": null,
+        "_wc_match": true,
+        "_round_num": 2,
+        "_weight": 12
+      },
       {
         "event_id": 15186504,
         "is_home": false,
@@ -124186,6 +126281,425 @@
     "team_id": 5164,
     "group": "L",
     "matches": [
+      {
+        "event_id": 15186520,
+        "is_home": true,
+        "opponent": "Croatia",
+        "opponent_fifa": 60,
+        "date": 1782310381,
+        "score_ft": [
+          0.443,
+          1.518
+        ],
+        "score_ht": null,
+        "stats": {
+          "ALL": {
+            "Total shots": {
+              "home": 10,
+              "away": 10
+            },
+            "Ball possession": {
+              "home": null,
+              "away": null
+            },
+            "Shots on target": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        "odds_1x2": null,
+        "odds_ou": null,
+        "odds_btts": null,
+        "_wc_match": true,
+        "_round_num": 2,
+        "_weight": 12,
+        "_weight_copy": true
+      },
+      {
+        "event_id": 15186520,
+        "is_home": true,
+        "opponent": "Croatia",
+        "opponent_fifa": 60,
+        "date": 1782310381,
+        "score_ft": [
+          0.443,
+          1.518
+        ],
+        "score_ht": null,
+        "stats": {
+          "ALL": {
+            "Total shots": {
+              "home": 10,
+              "away": 10
+            },
+            "Ball possession": {
+              "home": null,
+              "away": null
+            },
+            "Shots on target": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        "odds_1x2": null,
+        "odds_ou": null,
+        "odds_btts": null,
+        "_wc_match": true,
+        "_round_num": 2,
+        "_weight": 12,
+        "_weight_copy": true
+      },
+      {
+        "event_id": 15186520,
+        "is_home": true,
+        "opponent": "Croatia",
+        "opponent_fifa": 60,
+        "date": 1782310381,
+        "score_ft": [
+          0.443,
+          1.518
+        ],
+        "score_ht": null,
+        "stats": {
+          "ALL": {
+            "Total shots": {
+              "home": 10,
+              "away": 10
+            },
+            "Ball possession": {
+              "home": null,
+              "away": null
+            },
+            "Shots on target": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        "odds_1x2": null,
+        "odds_ou": null,
+        "odds_btts": null,
+        "_wc_match": true,
+        "_round_num": 2,
+        "_weight": 12,
+        "_weight_copy": true
+      },
+      {
+        "event_id": 15186520,
+        "is_home": true,
+        "opponent": "Croatia",
+        "opponent_fifa": 60,
+        "date": 1782310381,
+        "score_ft": [
+          0.443,
+          1.518
+        ],
+        "score_ht": null,
+        "stats": {
+          "ALL": {
+            "Total shots": {
+              "home": 10,
+              "away": 10
+            },
+            "Ball possession": {
+              "home": null,
+              "away": null
+            },
+            "Shots on target": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        "odds_1x2": null,
+        "odds_ou": null,
+        "odds_btts": null,
+        "_wc_match": true,
+        "_round_num": 2,
+        "_weight": 12,
+        "_weight_copy": true
+      },
+      {
+        "event_id": 15186520,
+        "is_home": true,
+        "opponent": "Croatia",
+        "opponent_fifa": 60,
+        "date": 1782310381,
+        "score_ft": [
+          0.443,
+          1.518
+        ],
+        "score_ht": null,
+        "stats": {
+          "ALL": {
+            "Total shots": {
+              "home": 10,
+              "away": 10
+            },
+            "Ball possession": {
+              "home": null,
+              "away": null
+            },
+            "Shots on target": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        "odds_1x2": null,
+        "odds_ou": null,
+        "odds_btts": null,
+        "_wc_match": true,
+        "_round_num": 2,
+        "_weight": 12,
+        "_weight_copy": true
+      },
+      {
+        "event_id": 15186520,
+        "is_home": true,
+        "opponent": "Croatia",
+        "opponent_fifa": 60,
+        "date": 1782310381,
+        "score_ft": [
+          0.443,
+          1.518
+        ],
+        "score_ht": null,
+        "stats": {
+          "ALL": {
+            "Total shots": {
+              "home": 10,
+              "away": 10
+            },
+            "Ball possession": {
+              "home": null,
+              "away": null
+            },
+            "Shots on target": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        "odds_1x2": null,
+        "odds_ou": null,
+        "odds_btts": null,
+        "_wc_match": true,
+        "_round_num": 2,
+        "_weight": 12,
+        "_weight_copy": true
+      },
+      {
+        "event_id": 15186520,
+        "is_home": true,
+        "opponent": "Croatia",
+        "opponent_fifa": 60,
+        "date": 1782310381,
+        "score_ft": [
+          0.443,
+          1.518
+        ],
+        "score_ht": null,
+        "stats": {
+          "ALL": {
+            "Total shots": {
+              "home": 10,
+              "away": 10
+            },
+            "Ball possession": {
+              "home": null,
+              "away": null
+            },
+            "Shots on target": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        "odds_1x2": null,
+        "odds_ou": null,
+        "odds_btts": null,
+        "_wc_match": true,
+        "_round_num": 2,
+        "_weight": 12,
+        "_weight_copy": true
+      },
+      {
+        "event_id": 15186520,
+        "is_home": true,
+        "opponent": "Croatia",
+        "opponent_fifa": 60,
+        "date": 1782310381,
+        "score_ft": [
+          0.443,
+          1.518
+        ],
+        "score_ht": null,
+        "stats": {
+          "ALL": {
+            "Total shots": {
+              "home": 10,
+              "away": 10
+            },
+            "Ball possession": {
+              "home": null,
+              "away": null
+            },
+            "Shots on target": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        "odds_1x2": null,
+        "odds_ou": null,
+        "odds_btts": null,
+        "_wc_match": true,
+        "_round_num": 2,
+        "_weight": 12,
+        "_weight_copy": true
+      },
+      {
+        "event_id": 15186520,
+        "is_home": true,
+        "opponent": "Croatia",
+        "opponent_fifa": 60,
+        "date": 1782310381,
+        "score_ft": [
+          0.443,
+          1.518
+        ],
+        "score_ht": null,
+        "stats": {
+          "ALL": {
+            "Total shots": {
+              "home": 10,
+              "away": 10
+            },
+            "Ball possession": {
+              "home": null,
+              "away": null
+            },
+            "Shots on target": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        "odds_1x2": null,
+        "odds_ou": null,
+        "odds_btts": null,
+        "_wc_match": true,
+        "_round_num": 2,
+        "_weight": 12,
+        "_weight_copy": true
+      },
+      {
+        "event_id": 15186520,
+        "is_home": true,
+        "opponent": "Croatia",
+        "opponent_fifa": 60,
+        "date": 1782310381,
+        "score_ft": [
+          0.443,
+          1.518
+        ],
+        "score_ht": null,
+        "stats": {
+          "ALL": {
+            "Total shots": {
+              "home": 10,
+              "away": 10
+            },
+            "Ball possession": {
+              "home": null,
+              "away": null
+            },
+            "Shots on target": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        "odds_1x2": null,
+        "odds_ou": null,
+        "odds_btts": null,
+        "_wc_match": true,
+        "_round_num": 2,
+        "_weight": 12,
+        "_weight_copy": true
+      },
+      {
+        "event_id": 15186520,
+        "is_home": true,
+        "opponent": "Croatia",
+        "opponent_fifa": 60,
+        "date": 1782310381,
+        "score_ft": [
+          0.443,
+          1.518
+        ],
+        "score_ht": null,
+        "stats": {
+          "ALL": {
+            "Total shots": {
+              "home": 10,
+              "away": 10
+            },
+            "Ball possession": {
+              "home": null,
+              "away": null
+            },
+            "Shots on target": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        "odds_1x2": null,
+        "odds_ou": null,
+        "odds_btts": null,
+        "_wc_match": true,
+        "_round_num": 2,
+        "_weight": 12,
+        "_weight_copy": true
+      },
+      {
+        "event_id": 15186520,
+        "is_home": true,
+        "opponent": "Croatia",
+        "opponent_fifa": 60,
+        "date": 1782310381,
+        "score_ft": [
+          0.443,
+          1.518
+        ],
+        "score_ht": null,
+        "stats": {
+          "ALL": {
+            "Total shots": {
+              "home": 10,
+              "away": 10
+            },
+            "Ball possession": {
+              "home": null,
+              "away": null
+            },
+            "Shots on target": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        "odds_1x2": null,
+        "odds_ou": null,
+        "odds_btts": null,
+        "_wc_match": true,
+        "_round_num": 2,
+        "_weight": 12
+      },
       {
         "event_id": 15186687,
         "is_home": false,
@@ -145077,6 +147591,425 @@
     "group": "K",
     "matches": [
       {
+        "event_id": 15186858,
+        "is_home": false,
+        "opponent": "Portugal",
+        "opponent_fifa": 82,
+        "date": 1782310381,
+        "score_ft": [
+          0.195,
+          3.086
+        ],
+        "score_ht": null,
+        "stats": {
+          "ALL": {
+            "Total shots": {
+              "home": 10,
+              "away": 10
+            },
+            "Ball possession": {
+              "home": null,
+              "away": null
+            },
+            "Shots on target": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        "odds_1x2": null,
+        "odds_ou": null,
+        "odds_btts": null,
+        "_wc_match": true,
+        "_round_num": 2,
+        "_weight": 12,
+        "_weight_copy": true
+      },
+      {
+        "event_id": 15186858,
+        "is_home": false,
+        "opponent": "Portugal",
+        "opponent_fifa": 82,
+        "date": 1782310381,
+        "score_ft": [
+          0.195,
+          3.086
+        ],
+        "score_ht": null,
+        "stats": {
+          "ALL": {
+            "Total shots": {
+              "home": 10,
+              "away": 10
+            },
+            "Ball possession": {
+              "home": null,
+              "away": null
+            },
+            "Shots on target": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        "odds_1x2": null,
+        "odds_ou": null,
+        "odds_btts": null,
+        "_wc_match": true,
+        "_round_num": 2,
+        "_weight": 12,
+        "_weight_copy": true
+      },
+      {
+        "event_id": 15186858,
+        "is_home": false,
+        "opponent": "Portugal",
+        "opponent_fifa": 82,
+        "date": 1782310381,
+        "score_ft": [
+          0.195,
+          3.086
+        ],
+        "score_ht": null,
+        "stats": {
+          "ALL": {
+            "Total shots": {
+              "home": 10,
+              "away": 10
+            },
+            "Ball possession": {
+              "home": null,
+              "away": null
+            },
+            "Shots on target": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        "odds_1x2": null,
+        "odds_ou": null,
+        "odds_btts": null,
+        "_wc_match": true,
+        "_round_num": 2,
+        "_weight": 12,
+        "_weight_copy": true
+      },
+      {
+        "event_id": 15186858,
+        "is_home": false,
+        "opponent": "Portugal",
+        "opponent_fifa": 82,
+        "date": 1782310381,
+        "score_ft": [
+          0.195,
+          3.086
+        ],
+        "score_ht": null,
+        "stats": {
+          "ALL": {
+            "Total shots": {
+              "home": 10,
+              "away": 10
+            },
+            "Ball possession": {
+              "home": null,
+              "away": null
+            },
+            "Shots on target": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        "odds_1x2": null,
+        "odds_ou": null,
+        "odds_btts": null,
+        "_wc_match": true,
+        "_round_num": 2,
+        "_weight": 12,
+        "_weight_copy": true
+      },
+      {
+        "event_id": 15186858,
+        "is_home": false,
+        "opponent": "Portugal",
+        "opponent_fifa": 82,
+        "date": 1782310381,
+        "score_ft": [
+          0.195,
+          3.086
+        ],
+        "score_ht": null,
+        "stats": {
+          "ALL": {
+            "Total shots": {
+              "home": 10,
+              "away": 10
+            },
+            "Ball possession": {
+              "home": null,
+              "away": null
+            },
+            "Shots on target": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        "odds_1x2": null,
+        "odds_ou": null,
+        "odds_btts": null,
+        "_wc_match": true,
+        "_round_num": 2,
+        "_weight": 12,
+        "_weight_copy": true
+      },
+      {
+        "event_id": 15186858,
+        "is_home": false,
+        "opponent": "Portugal",
+        "opponent_fifa": 82,
+        "date": 1782310381,
+        "score_ft": [
+          0.195,
+          3.086
+        ],
+        "score_ht": null,
+        "stats": {
+          "ALL": {
+            "Total shots": {
+              "home": 10,
+              "away": 10
+            },
+            "Ball possession": {
+              "home": null,
+              "away": null
+            },
+            "Shots on target": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        "odds_1x2": null,
+        "odds_ou": null,
+        "odds_btts": null,
+        "_wc_match": true,
+        "_round_num": 2,
+        "_weight": 12,
+        "_weight_copy": true
+      },
+      {
+        "event_id": 15186858,
+        "is_home": false,
+        "opponent": "Portugal",
+        "opponent_fifa": 82,
+        "date": 1782310381,
+        "score_ft": [
+          0.195,
+          3.086
+        ],
+        "score_ht": null,
+        "stats": {
+          "ALL": {
+            "Total shots": {
+              "home": 10,
+              "away": 10
+            },
+            "Ball possession": {
+              "home": null,
+              "away": null
+            },
+            "Shots on target": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        "odds_1x2": null,
+        "odds_ou": null,
+        "odds_btts": null,
+        "_wc_match": true,
+        "_round_num": 2,
+        "_weight": 12,
+        "_weight_copy": true
+      },
+      {
+        "event_id": 15186858,
+        "is_home": false,
+        "opponent": "Portugal",
+        "opponent_fifa": 82,
+        "date": 1782310381,
+        "score_ft": [
+          0.195,
+          3.086
+        ],
+        "score_ht": null,
+        "stats": {
+          "ALL": {
+            "Total shots": {
+              "home": 10,
+              "away": 10
+            },
+            "Ball possession": {
+              "home": null,
+              "away": null
+            },
+            "Shots on target": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        "odds_1x2": null,
+        "odds_ou": null,
+        "odds_btts": null,
+        "_wc_match": true,
+        "_round_num": 2,
+        "_weight": 12,
+        "_weight_copy": true
+      },
+      {
+        "event_id": 15186858,
+        "is_home": false,
+        "opponent": "Portugal",
+        "opponent_fifa": 82,
+        "date": 1782310381,
+        "score_ft": [
+          0.195,
+          3.086
+        ],
+        "score_ht": null,
+        "stats": {
+          "ALL": {
+            "Total shots": {
+              "home": 10,
+              "away": 10
+            },
+            "Ball possession": {
+              "home": null,
+              "away": null
+            },
+            "Shots on target": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        "odds_1x2": null,
+        "odds_ou": null,
+        "odds_btts": null,
+        "_wc_match": true,
+        "_round_num": 2,
+        "_weight": 12,
+        "_weight_copy": true
+      },
+      {
+        "event_id": 15186858,
+        "is_home": false,
+        "opponent": "Portugal",
+        "opponent_fifa": 82,
+        "date": 1782310381,
+        "score_ft": [
+          0.195,
+          3.086
+        ],
+        "score_ht": null,
+        "stats": {
+          "ALL": {
+            "Total shots": {
+              "home": 10,
+              "away": 10
+            },
+            "Ball possession": {
+              "home": null,
+              "away": null
+            },
+            "Shots on target": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        "odds_1x2": null,
+        "odds_ou": null,
+        "odds_btts": null,
+        "_wc_match": true,
+        "_round_num": 2,
+        "_weight": 12,
+        "_weight_copy": true
+      },
+      {
+        "event_id": 15186858,
+        "is_home": false,
+        "opponent": "Portugal",
+        "opponent_fifa": 82,
+        "date": 1782310381,
+        "score_ft": [
+          0.195,
+          3.086
+        ],
+        "score_ht": null,
+        "stats": {
+          "ALL": {
+            "Total shots": {
+              "home": 10,
+              "away": 10
+            },
+            "Ball possession": {
+              "home": null,
+              "away": null
+            },
+            "Shots on target": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        "odds_1x2": null,
+        "odds_ou": null,
+        "odds_btts": null,
+        "_wc_match": true,
+        "_round_num": 2,
+        "_weight": 12,
+        "_weight_copy": true
+      },
+      {
+        "event_id": 15186858,
+        "is_home": false,
+        "opponent": "Portugal",
+        "opponent_fifa": 82,
+        "date": 1782310381,
+        "score_ft": [
+          0.195,
+          3.086
+        ],
+        "score_ht": null,
+        "stats": {
+          "ALL": {
+            "Total shots": {
+              "home": 10,
+              "away": 10
+            },
+            "Ball possession": {
+              "home": null,
+              "away": null
+            },
+            "Shots on target": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        "odds_1x2": null,
+        "odds_ou": null,
+        "odds_btts": null,
+        "_wc_match": true,
+        "_round_num": 2,
+        "_weight": 12
+      },
+      {
         "event_id": 15186722,
         "is_home": true,
         "opponent": "Colombia",
@@ -147245,6 +150178,425 @@
     "team_id": 4764,
     "group": "L",
     "matches": [
+      {
+        "event_id": 15186672,
+        "is_home": false,
+        "opponent": "England",
+        "opponent_fifa": 88,
+        "date": 1782310381,
+        "score_ft": [
+          0.14,
+          1.116
+        ],
+        "score_ht": null,
+        "stats": {
+          "ALL": {
+            "Total shots": {
+              "home": 10,
+              "away": 10
+            },
+            "Ball possession": {
+              "home": null,
+              "away": null
+            },
+            "Shots on target": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        "odds_1x2": null,
+        "odds_ou": null,
+        "odds_btts": null,
+        "_wc_match": true,
+        "_round_num": 2,
+        "_weight": 12,
+        "_weight_copy": true
+      },
+      {
+        "event_id": 15186672,
+        "is_home": false,
+        "opponent": "England",
+        "opponent_fifa": 88,
+        "date": 1782310381,
+        "score_ft": [
+          0.14,
+          1.116
+        ],
+        "score_ht": null,
+        "stats": {
+          "ALL": {
+            "Total shots": {
+              "home": 10,
+              "away": 10
+            },
+            "Ball possession": {
+              "home": null,
+              "away": null
+            },
+            "Shots on target": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        "odds_1x2": null,
+        "odds_ou": null,
+        "odds_btts": null,
+        "_wc_match": true,
+        "_round_num": 2,
+        "_weight": 12,
+        "_weight_copy": true
+      },
+      {
+        "event_id": 15186672,
+        "is_home": false,
+        "opponent": "England",
+        "opponent_fifa": 88,
+        "date": 1782310381,
+        "score_ft": [
+          0.14,
+          1.116
+        ],
+        "score_ht": null,
+        "stats": {
+          "ALL": {
+            "Total shots": {
+              "home": 10,
+              "away": 10
+            },
+            "Ball possession": {
+              "home": null,
+              "away": null
+            },
+            "Shots on target": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        "odds_1x2": null,
+        "odds_ou": null,
+        "odds_btts": null,
+        "_wc_match": true,
+        "_round_num": 2,
+        "_weight": 12,
+        "_weight_copy": true
+      },
+      {
+        "event_id": 15186672,
+        "is_home": false,
+        "opponent": "England",
+        "opponent_fifa": 88,
+        "date": 1782310381,
+        "score_ft": [
+          0.14,
+          1.116
+        ],
+        "score_ht": null,
+        "stats": {
+          "ALL": {
+            "Total shots": {
+              "home": 10,
+              "away": 10
+            },
+            "Ball possession": {
+              "home": null,
+              "away": null
+            },
+            "Shots on target": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        "odds_1x2": null,
+        "odds_ou": null,
+        "odds_btts": null,
+        "_wc_match": true,
+        "_round_num": 2,
+        "_weight": 12,
+        "_weight_copy": true
+      },
+      {
+        "event_id": 15186672,
+        "is_home": false,
+        "opponent": "England",
+        "opponent_fifa": 88,
+        "date": 1782310381,
+        "score_ft": [
+          0.14,
+          1.116
+        ],
+        "score_ht": null,
+        "stats": {
+          "ALL": {
+            "Total shots": {
+              "home": 10,
+              "away": 10
+            },
+            "Ball possession": {
+              "home": null,
+              "away": null
+            },
+            "Shots on target": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        "odds_1x2": null,
+        "odds_ou": null,
+        "odds_btts": null,
+        "_wc_match": true,
+        "_round_num": 2,
+        "_weight": 12,
+        "_weight_copy": true
+      },
+      {
+        "event_id": 15186672,
+        "is_home": false,
+        "opponent": "England",
+        "opponent_fifa": 88,
+        "date": 1782310381,
+        "score_ft": [
+          0.14,
+          1.116
+        ],
+        "score_ht": null,
+        "stats": {
+          "ALL": {
+            "Total shots": {
+              "home": 10,
+              "away": 10
+            },
+            "Ball possession": {
+              "home": null,
+              "away": null
+            },
+            "Shots on target": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        "odds_1x2": null,
+        "odds_ou": null,
+        "odds_btts": null,
+        "_wc_match": true,
+        "_round_num": 2,
+        "_weight": 12,
+        "_weight_copy": true
+      },
+      {
+        "event_id": 15186672,
+        "is_home": false,
+        "opponent": "England",
+        "opponent_fifa": 88,
+        "date": 1782310381,
+        "score_ft": [
+          0.14,
+          1.116
+        ],
+        "score_ht": null,
+        "stats": {
+          "ALL": {
+            "Total shots": {
+              "home": 10,
+              "away": 10
+            },
+            "Ball possession": {
+              "home": null,
+              "away": null
+            },
+            "Shots on target": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        "odds_1x2": null,
+        "odds_ou": null,
+        "odds_btts": null,
+        "_wc_match": true,
+        "_round_num": 2,
+        "_weight": 12,
+        "_weight_copy": true
+      },
+      {
+        "event_id": 15186672,
+        "is_home": false,
+        "opponent": "England",
+        "opponent_fifa": 88,
+        "date": 1782310381,
+        "score_ft": [
+          0.14,
+          1.116
+        ],
+        "score_ht": null,
+        "stats": {
+          "ALL": {
+            "Total shots": {
+              "home": 10,
+              "away": 10
+            },
+            "Ball possession": {
+              "home": null,
+              "away": null
+            },
+            "Shots on target": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        "odds_1x2": null,
+        "odds_ou": null,
+        "odds_btts": null,
+        "_wc_match": true,
+        "_round_num": 2,
+        "_weight": 12,
+        "_weight_copy": true
+      },
+      {
+        "event_id": 15186672,
+        "is_home": false,
+        "opponent": "England",
+        "opponent_fifa": 88,
+        "date": 1782310381,
+        "score_ft": [
+          0.14,
+          1.116
+        ],
+        "score_ht": null,
+        "stats": {
+          "ALL": {
+            "Total shots": {
+              "home": 10,
+              "away": 10
+            },
+            "Ball possession": {
+              "home": null,
+              "away": null
+            },
+            "Shots on target": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        "odds_1x2": null,
+        "odds_ou": null,
+        "odds_btts": null,
+        "_wc_match": true,
+        "_round_num": 2,
+        "_weight": 12,
+        "_weight_copy": true
+      },
+      {
+        "event_id": 15186672,
+        "is_home": false,
+        "opponent": "England",
+        "opponent_fifa": 88,
+        "date": 1782310381,
+        "score_ft": [
+          0.14,
+          1.116
+        ],
+        "score_ht": null,
+        "stats": {
+          "ALL": {
+            "Total shots": {
+              "home": 10,
+              "away": 10
+            },
+            "Ball possession": {
+              "home": null,
+              "away": null
+            },
+            "Shots on target": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        "odds_1x2": null,
+        "odds_ou": null,
+        "odds_btts": null,
+        "_wc_match": true,
+        "_round_num": 2,
+        "_weight": 12,
+        "_weight_copy": true
+      },
+      {
+        "event_id": 15186672,
+        "is_home": false,
+        "opponent": "England",
+        "opponent_fifa": 88,
+        "date": 1782310381,
+        "score_ft": [
+          0.14,
+          1.116
+        ],
+        "score_ht": null,
+        "stats": {
+          "ALL": {
+            "Total shots": {
+              "home": 10,
+              "away": 10
+            },
+            "Ball possession": {
+              "home": null,
+              "away": null
+            },
+            "Shots on target": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        "odds_1x2": null,
+        "odds_ou": null,
+        "odds_btts": null,
+        "_wc_match": true,
+        "_round_num": 2,
+        "_weight": 12,
+        "_weight_copy": true
+      },
+      {
+        "event_id": 15186672,
+        "is_home": false,
+        "opponent": "England",
+        "opponent_fifa": 88,
+        "date": 1782310381,
+        "score_ft": [
+          0.14,
+          1.116
+        ],
+        "score_ht": null,
+        "stats": {
+          "ALL": {
+            "Total shots": {
+              "home": 10,
+              "away": 10
+            },
+            "Ball possession": {
+              "home": null,
+              "away": null
+            },
+            "Shots on target": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        "odds_1x2": null,
+        "odds_ou": null,
+        "odds_btts": null,
+        "_wc_match": true,
+        "_round_num": 2,
+        "_weight": 12
+      },
       {
         "event_id": 15186687,
         "is_home": true,
