@@ -677,6 +677,23 @@ POSITION_OVERRIDES = {
     # 561430 Viktor Johansson → G por raw position, sin override
 }
 
+# Auto-cargar wide_mid desde detección por cruces reales del Mundial
+# infer_wide_players.py genera este archivo analizando totalCross en los lineups F1/F2/F3.
+# Solo se aplica si:
+#   a) avg_crosses >= 2.5 (señal suficiente de juego por banda)
+#   b) el jugador NO tiene POSITION_OVERRIDES "F" o "D" (ya tiene posición correcta)
+#   c) no existe ya un entry manual en PLAYER_TYPE_OVERRIDES
+_wide_det_path = BASE_DIR / "wide_players_detected.json"
+if _wide_det_path.exists():
+    import json as _json
+    _wd = _json.load(open(_wide_det_path, encoding="utf-8"))
+    for _cand in _wd.get("wide_mid_candidates", []):
+        _pid = _cand["pid"]
+        if (_cand["avg_crosses"] >= 2.5
+                and _pid not in PLAYER_TYPE_OVERRIDES
+                and POSITION_OVERRIDES.get(_pid) not in ("F", "D")):
+            PLAYER_TYPE_OVERRIDES[_pid] = "wide_mid"
+
 # BPR: 3 pts al mejor rating, 2 al segundo, 1 al tercero (por partido, según SofaScore)
 BPR_POINTS  = [3, 2, 1]
 BPR_SIGMA   = 0.40   # dispersión de ratings SofaScore (~0.4 pts de std entre partidos)
