@@ -447,6 +447,13 @@ FM = {
 
 LEAGUE_AVG_GC_PG = 0.90   # promedio global goles contra / partido en selecciones
 
+# Override de arquetipo táctico (no cambia la posición, cambia cómo se proyecta vs rival)
+# Usar cuando el jugador tiene un rol táctico distinto al que sugieren sus stats históricas.
+# Los tipos "wide_mid" / "shadow_striker" etc. ajustan qué vulnerabilidad del rival se activa.
+PLAYER_TYPE_OVERRIDES = {
+    1019322: "wide_mid",   # Florian Wirtz (Germany) — volante/extremo izquierdo en WC
+}
+
 # Override de posición según Fantasy Manager AR (fuente de verdad para scoring)
 POSITION_OVERRIDES = {
     259117: "M",   # Joshua Kimmich (Germany) — FM=VOL
@@ -887,6 +894,8 @@ def get_type_mult(player_type, opp_profile):
         "attacking_def":    (bv * 0.03, wv * 0.06),
         "defender":         (0.0, 0.0),
         "other":            (0.0, 0.0),
+        # Mediocentro con rol de extremo: proyectar por wide_vuln del rival
+        "wide_mid":         (wv * 0.05, wv * 0.12),
     }
     adj = weights.get(player_type, (0.0, 0.0))
     return (
@@ -1112,6 +1121,8 @@ def project_player(p_meta, cs, intl_s, form_entry, opp_ts, own_ts, is_home, pos_
     _shots90  = ((cs or {}).get("Remates Totales") or 0) / _mins_base * 90
     _kp90     = ((cs or {}).get("Pases Clave") or 0)     / _mins_base * 90
     player_type       = classify_player_type(pos, xg90_reg, xa90_reg, _shots90, _kp90)
+    if player_id_int in PLAYER_TYPE_OVERRIDES:
+        player_type = PLAYER_TYPE_OVERRIDES[player_id_int]
     opp_profile       = (def_profiles or {}).get(opp_name, {})
     g_type_m, a_type_m = get_type_mult(player_type, opp_profile)
 
