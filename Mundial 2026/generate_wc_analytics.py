@@ -1241,6 +1241,15 @@ def main():
             fixture_map[h].append((a, True,  fx["event_id"], fx.get("round_num")))
             fixture_map[a].append((h, False, fx["event_id"], fx.get("round_num")))
 
+    # Para octavos (round_num=4) usar el lineup de F3 del mismo equipo como base.
+    # Grimaldo fix: sin este fallback, jugadores con buen historial pero sin minutos en el
+    # Mundial aparecen como titulares porque el evento ficticio no tiene datos de lineup.
+    team_f3_eid = {}  # team_name → event_id de su partido F3
+    for fx in fixtures:
+        if fx.get("round_num") == 3:
+            if fx.get("home_name"): team_f3_eid[fx["home_name"]] = fx["event_id"]
+            if fx.get("away_name"): team_f3_eid[fx["away_name"]] = fx["event_id"]
+
     pos_avgs = compute_positional_averages(players_raw)
 
     # Perfiles defensivos por selección (box/wide vulnerability)
@@ -1479,8 +1488,15 @@ def main():
             lam_opp = lam_idx.get(team)   # lambda del rival atacando → define p_cs del GK local
             lam_own = lam_idx.get(opp_name)
 
+            # Para octavos, usar el event_id de F3 del mismo equipo para el lookup de lineup.
+            # Los event_ids 9000000X no existen en lineups.json → sin este fallback cualquier
+            # jugador con buen historial aparece como "Titular" aunque no haya jugado en el WC.
+            lineup_event_id = event_id
+            if round_num == 4:
+                lineup_event_id = team_f3_eid.get(team, event_id)
+
             proj = project_player(p_meta, cs, intl_s, fe, opp_ts, own_ts, is_home, pos_avgs,
-                                  opp_name=opp_name, lineups=lineups, event_id=event_id,
+                                  opp_name=opp_name, lineups=lineups, event_id=lineup_event_id,
                                   setpieces=setpieces, gk_starters=gk_starters,
                                   lam_opp=lam_opp, lam_own=lam_own,
                                   def_profiles=def_profiles,
