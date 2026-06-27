@@ -1349,6 +1349,26 @@ def main():
                 fx["away"]: fx["lambda_home"],  # lambda que enfrenta el GK del equipo away
             }
 
+    # Cargar fixtures de Octavos de Final (wc2026_knockout.json)
+    _knockout_path = BASE_DIR / "wc2026_knockout.json"
+    if _knockout_path.exists():
+        _ko = json.load(open(_knockout_path, encoding="utf-8"))
+        _ko_added = 0
+        for fx in _ko.get("fixtures", []):
+            h = fx.get("home_name", "TBD")
+            a = fx.get("away_name", "TBD")
+            eid = fx.get("event_id")
+            lam_h = fx.get("lambda_home")
+            lam_a = fx.get("lambda_away")
+            if h == "TBD" or a == "TBD" or not eid:
+                continue
+            fixture_map[h].append((a, True,  eid, 4))
+            fixture_map[a].append((h, False, eid, 4))
+            if lam_h and lam_a:
+                lambda_index[eid] = {h: lam_a, a: lam_h}
+            _ko_added += 1
+        print(f"[knockout] {_ko_added} matchups de octavos cargados en fixture_map")
+
     # ── BPR: rating promedio ponderado por calidad del rival ─────────────────
     # Lookup event_id → opponent_fifa_score usando nombre del rival (como compute_intl_schedules)
     _fifa_all: dict = {}
@@ -1769,8 +1789,9 @@ def build_html(data_json, fecha, missing_teams=None):
   <!-- Fecha tabs + info panel -->
   <div style="display:flex;align-items:center;gap:8px;margin-bottom:16px;flex-wrap:wrap">
     <button class="filter-btn" id="tab-1" onclick="setFecha(1,this)">Fecha 1</button>
-    <button class="filter-btn active" id="tab-2" onclick="setFecha(2,this)">Fecha 2</button>
+    <button class="filter-btn" id="tab-2" onclick="setFecha(2,this)">Fecha 2</button>
     <button class="filter-btn" id="tab-3" onclick="setFecha(3,this)">Fecha 3</button>
+    <button class="filter-btn active" id="tab-4" onclick="setFecha(4,this)" style="border-color:#f59e0b;color:#f59e0b">Octavos</button>
     <button class="filter-btn" id="tab-0" onclick="setFecha(0,this)">Todas</button>
     <span style="width:1px;height:24px;background:var(--border);margin:0 4px"></span>
     <button class="filter-btn" id="tab-res1" onclick="showResultsF1(this)"
@@ -1986,7 +2007,7 @@ def build_html(data_json, fecha, missing_teams=None):
 const D = {data_json};
 let activePos   = null;
 let activeGroup = null;
-let activeFecha = 2;
+let activeFecha = 4;
 let sortCol     = 7;
 let sortDir     = 1;
 

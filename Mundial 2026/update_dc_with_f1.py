@@ -19,9 +19,10 @@ MATCH_ANALYTICS_PATH = BASE_DIR / "wc2026_match_analytics.json"
 TEAM_STATS_PATH     = BASE_DIR / "wc2026_team_stats.json"
 FIXTURES_PATH       = BASE_DIR / "wc2026_fixtures.json"
 
-WORLD_CUP_WEIGHT_F1 = 8   # F1: más reciente y de máxima presión, pero aún sample chico
-WORLD_CUP_WEIGHT_F2 = 12  # F2: más info acumulada sobre el torneo, actualiza más fuerte
-WORLD_CUP_WEIGHT    = WORLD_CUP_WEIGHT_F1  # compat (no usado directamente abajo)
+WORLD_CUP_WEIGHT_F1 = 8    # F1: muestra pequeña
+WORLD_CUP_WEIGHT_F2 = 12   # F2: más señal acumulada
+WORLD_CUP_WEIGHT_F3 = 14   # F3: el indicador más fresco para octavos
+WORLD_CUP_WEIGHT    = WORLD_CUP_WEIGHT_F1  # compat
 
 
 def main():
@@ -40,7 +41,7 @@ def main():
     wc_eids_added = set()  # evitar duplicados
 
     for eid_str, md in wc_results.get("matches", {}).items():
-        if md.get("round_num") not in (1, 2):
+        if md.get("round_num") not in (1, 2, 3):
             continue
 
         eid     = int(eid_str)
@@ -53,7 +54,12 @@ def main():
             continue
 
         round_num = md.get("round_num", 1)
-        wc_weight = WORLD_CUP_WEIGHT_F2 if round_num == 2 else WORLD_CUP_WEIGHT_F1
+        if round_num == 3:
+            wc_weight = WORLD_CUP_WEIGHT_F3
+        elif round_num == 2:
+            wc_weight = WORLD_CUP_WEIGHT_F2
+        else:
+            wc_weight = WORLD_CUP_WEIGHT_F1
 
         # ── xG de equipo sumando stats de jugadores ───────────────────────────
         xg_h, xg_a = 0.0, 0.0
@@ -181,7 +187,7 @@ def main():
     wc_adj_gf_count = {}
     wc_adj_gf       = {}
     for eid_str, md in wc_results.get("matches", {}).items():
-        if md.get("round_num") not in (1, 2):
+        if md.get("round_num") not in (1, 2, 3):
             continue
         for team_nm, is_h in [(md["home"], True), (md["away"], False)]:
             opp_nm  = md["away"] if is_h else md["home"]
@@ -194,8 +200,9 @@ def main():
             sc     = md.get("score_home" if is_h else "score_away") or 0
             eff    = 0.8 * xg_team + 0.2 * sc
             adj_gf = min(eff * opp_str, 5.0)
-            # Promedio ponderado: F2 pesa 2.0x vs F1 (más datos, más señal)
-            rnd_w  = 2.0 if md.get("round_num") == 2 else 1.0
+            # F3 pesa 3.0x (más reciente y decisivo), F2 2.0x, F1 1.0x
+            rnd_num = md.get("round_num", 1)
+            rnd_w   = 3.0 if rnd_num == 3 else (2.0 if rnd_num == 2 else 1.0)
             wc_adj_gf_sum[team_nm]   = wc_adj_gf_sum.get(team_nm, 0) + adj_gf * rnd_w
             wc_adj_gf_count[team_nm] = wc_adj_gf_count.get(team_nm, 0) + rnd_w
 

@@ -1,0 +1,833 @@
+{
+  "round": "Octavos de Final",
+  "fixtures": [
+    {
+      "event_id": 90000001,
+      "round": "Octavos de Final",
+      "round_num": 4,
+      "home_pos": "1A",
+      "away_pos": "2B",
+      "home_id": 4781,
+      "home_name": "Mexico",
+      "away_id": 4752,
+      "away_name": "Canada",
+      "timestamp": 1783198800,
+      "date": "2026-07-04",
+      "confirmed": true,
+      "lambda_home": 0.8113,
+      "lambda_away": 0.497,
+      "p_home_win": 0.401,
+      "p_draw": 0.391,
+      "p_away_win": 0.208
+    },
+    {
+      "event_id": 90000002,
+      "round": "Octavos de Final",
+      "round_num": 4,
+      "home_pos": "1C",
+      "away_pos": "2D",
+      "home_id": 4748,
+      "home_name": "Brazil",
+      "away_id": 4741,
+      "away_name": "Australia",
+      "timestamp": 1783198800,
+      "date": "2026-07-04",
+      "confirmed": true,
+      "lambda_home": 1.1449,
+      "lambda_away": 0.4788,
+      "p_home_win": 0.525,
+      "p_draw": 0.321,
+      "p_away_win": 0.154
+    },
+    {
+      "event_id": 90000003,
+      "round": "Octavos de Final",
+      "round_num": 4,
+      "home_pos": "1E",
+      "away_pos": "2F",
+      "home_id": 4711,
+      "home_name": "Germany",
+      "away_id": 4770,
+      "away_name": "Japan",
+      "timestamp": 1783285200,
+      "date": "2026-07-05",
+      "confirmed": true,
+      "lambda_home": 0.7026,
+      "lambda_away": 1.1813,
+      "p_home_win": 0.22,
+      "p_draw": 0.307,
+      "p_away_win": 0.474
+    },
+    {
+      "event_id": 90000004,
+      "round": "Octavos de Final",
+      "round_num": 4,
+      "home_pos": "1G",
+      "away_pos": "2H",
+      "home_id": 4717,
+      "home_name": "Belgium",
+      "away_id": 4753,
+      "away_name": "Cabo Verde",
+      "timestamp": 1783285200,
+      "date": "2026-07-05",
+      "confirmed": true,
+      "lambda_home": 1.3632,
+      "lambda_away": 0.529,
+      "p_home_win": 0.575,
+      "p_draw": 0.281,
+      "p_away_win": 0.144
+    },
+    {
+      "event_id": 90000005,
+      "round": "Octavos de Final",
+      "round_num": 4,
+      "home_pos": "1I",
+      "away_pos": "2J",
+      "home_id": 4481,
+      "home_name": "France",
+      "away_id": 4718,
+      "away_name": "Austria",
+      "timestamp": 1783371600,
+      "date": "2026-07-06",
+      "confirmed": false,
+      "lambda_home": 1.8581,
+      "lambda_away": 0.879,
+      "p_home_win": 0.604,
+      "p_draw": 0.222,
+      "p_away_win": 0.173
+    },
+    {
+      "event_id": 90000006,
+      "round": "Octavos de Final",
+      "round_num": 4,
+      "home_pos": "1K",
+      "away_pos": "2L",
+      "home_id": 4820,
+      "home_name": "Colombia",
+      "away_id": 4764,
+      "away_name": "Ghana",
+      "timestamp": 1783371600,
+      "date": "2026-07-06",
+      "confirmed": false,
+      "lambda_home": 0.8354,
+      "lambda_away": 0.3774,
+      "p_home_win": 0.444,
+      "p_draw": 0.399,
+      "p_away_win": 0.158
+    },
+    {
+      "event_id": 90000007,
+      "round": "Octavos de Final",
+      "round_num": 4,
+      "home_pos": "1B",
+      "away_pos": "2A",
+      "home_id": 4699,
+      "home_name": "Switzerland",
+      "away_id": 4736,
+      "away_name": "South Africa",
+      "timestamp": 1783458000,
+      "date": "2026-07-07",
+      "confirmed": true,
+      "lambda_home": 1.1782,
+      "lambda_away": 0.7998,
+      "p_home_win": 0.447,
+      "p_draw": 0.303,
+      "p_away_win": 0.25
+    },
+    {
+      "event_id": 90000008,
+      "round": "Octavos de Final",
+      "round_num": 4,
+      "home_pos": "1D",
+      "away_pos": "2C",
+      "home_id": 4724,
+      "home_name": "USA",
+      "away_id": 4778,
+      "away_name": "Morocco",
+      "timestamp": 1783458000,
+      "date": "2026-07-07",
+      "confirmed": true,
+      "lambda_home": 1.0137,
+      "lambda_away": 2.1981,
+      "p_home_win": 0.163,
+      "p_draw": 0.194,
+      "p_away_win": 0.641
+    },
+    {
+      "event_id": 90000009,
+      "round": "Octavos de Final",
+      "round_num": 4,
+      "home_pos": "1F",
+      "away_pos": "2E",
+      "home_id": 4705,
+      "home_name": "Netherlands",
+      "away_id": 4768,
+      "away_name": "Côte d'Ivoire",
+      "timestamp": 1783544400,
+      "date": "2026-07-08",
+      "confirmed": true,
+      "lambda_home": 1.2984,
+      "lambda_away": 0.9214,
+      "p_home_win": 0.452,
+      "p_draw": 0.283,
+      "p_away_win": 0.265
+    },
+    {
+      "event_id": 90000010,
+      "round": "Octavos de Final",
+      "round_num": 4,
+      "home_pos": "1H",
+      "away_pos": "2G",
+      "home_id": 4698,
+      "home_name": "Spain",
+      "away_id": 4758,
+      "away_name": "Egypt",
+      "timestamp": 1783544400,
+      "date": "2026-07-08",
+      "confirmed": true,
+      "lambda_home": 2.0501,
+      "lambda_away": 0.2053,
+      "p_home_win": 0.816,
+      "p_draw": 0.154,
+      "p_away_win": 0.029
+    },
+    {
+      "event_id": 90000011,
+      "round": "Octavos de Final",
+      "round_num": 4,
+      "home_pos": "1J",
+      "away_pos": "2I",
+      "home_id": 4819,
+      "home_name": "Argentina",
+      "away_id": 4475,
+      "away_name": "Norway",
+      "timestamp": 1783630800,
+      "date": "2026-07-09",
+      "confirmed": false,
+      "lambda_home": 1.8267,
+      "lambda_away": 0.5438,
+      "p_home_win": 0.684,
+      "p_draw": 0.212,
+      "p_away_win": 0.103
+    },
+    {
+      "event_id": 90000012,
+      "round": "Octavos de Final",
+      "round_num": 4,
+      "home_pos": "1L",
+      "away_pos": "2K",
+      "home_id": 4713,
+      "home_name": "England",
+      "away_id": 4704,
+      "away_name": "Portugal",
+      "timestamp": 1783630800,
+      "date": "2026-07-09",
+      "confirmed": false,
+      "lambda_home": 1.0736,
+      "lambda_away": 0.6144,
+      "p_home_win": 0.463,
+      "p_draw": 0.328,
+      "p_away_win": 0.208
+    },
+    {
+      "event_id": 90000013,
+      "round": "Octavos de Final",
+      "round_num": 4,
+      "home_pos": "3rd_1",
+      "away_pos": "3rd_2",
+      "home_id": 4688,
+      "home_name": "Sweden",
+      "away_id": 4757,
+      "away_name": "Ecuador",
+      "timestamp": 1783717200,
+      "date": "2026-07-10",
+      "confirmed": true,
+      "lambda_home": 0.6186,
+      "lambda_away": 1.1657,
+      "p_home_win": 0.196,
+      "p_draw": 0.313,
+      "p_away_win": 0.491
+    },
+    {
+      "event_id": 90000014,
+      "round": "Octavos de Final",
+      "round_num": 4,
+      "home_pos": "3rd_3",
+      "away_pos": "3rd_4",
+      "home_id": 4479,
+      "home_name": "Bosnia & Herzegovina",
+      "away_id": 4789,
+      "away_name": "Paraguay",
+      "timestamp": 1783717200,
+      "date": "2026-07-10",
+      "confirmed": true,
+      "lambda_home": 0.644,
+      "lambda_away": 0.5699,
+      "p_home_win": 0.315,
+      "p_draw": 0.416,
+      "p_away_win": 0.268
+    },
+    {
+      "event_id": 90000015,
+      "round": "Octavos de Final",
+      "round_num": 4,
+      "home_pos": "3rd_5",
+      "away_pos": "3rd_6",
+      "home_id": 4739,
+      "home_name": "Senegal",
+      "away_id": 4766,
+      "away_name": "Iran",
+      "timestamp": 1783803600,
+      "date": "2026-07-11",
+      "confirmed": true,
+      "lambda_home": 1.5063,
+      "lambda_away": 1.1456,
+      "p_home_win": 0.455,
+      "p_draw": 0.256,
+      "p_away_win": 0.289
+    },
+    {
+      "event_id": 90000016,
+      "round": "Octavos de Final",
+      "round_num": 4,
+      "home_pos": "3rd_7",
+      "away_pos": "3rd_8",
+      "home_id": 4715,
+      "home_name": "Croatia",
+      "away_id": 4735,
+      "away_name": "South Korea",
+      "timestamp": 1783803600,
+      "date": "2026-07-11",
+      "confirmed": false,
+      "lambda_home": 1.0006,
+      "lambda_away": 1.1426,
+      "p_home_win": 0.316,
+      "p_draw": 0.295,
+      "p_away_win": 0.389
+    }
+  ],
+  "positions": {
+    "1A": {
+      "team": "Mexico",
+      "team_id": 4781,
+      "confirmed": true,
+      "pts": 9,
+      "gd": 6,
+      "gf": 6
+    },
+    "2A": {
+      "team": "South Africa",
+      "team_id": 4736,
+      "confirmed": true,
+      "pts": 4,
+      "gd": -1,
+      "gf": 2
+    },
+    "3A": {
+      "team": "South Korea",
+      "team_id": 4735,
+      "confirmed": true,
+      "pts": 3,
+      "gd": -1,
+      "gf": 2
+    },
+    "4A": {
+      "team": "Czechia",
+      "team_id": 4714,
+      "confirmed": true,
+      "pts": 1,
+      "gd": -4,
+      "gf": 2
+    },
+    "1B": {
+      "team": "Switzerland",
+      "team_id": 4699,
+      "confirmed": true,
+      "pts": 7,
+      "gd": 4,
+      "gf": 7
+    },
+    "2B": {
+      "team": "Canada",
+      "team_id": 4752,
+      "confirmed": true,
+      "pts": 4,
+      "gd": 5,
+      "gf": 8
+    },
+    "3B": {
+      "team": "Bosnia & Herzegovina",
+      "team_id": 4479,
+      "confirmed": true,
+      "pts": 4,
+      "gd": -1,
+      "gf": 5
+    },
+    "4B": {
+      "team": "Qatar",
+      "team_id": 4792,
+      "confirmed": true,
+      "pts": 1,
+      "gd": -8,
+      "gf": 2
+    },
+    "1C": {
+      "team": "Brazil",
+      "team_id": 4748,
+      "confirmed": true,
+      "pts": 7,
+      "gd": 6,
+      "gf": 7
+    },
+    "2C": {
+      "team": "Morocco",
+      "team_id": 4778,
+      "confirmed": true,
+      "pts": 7,
+      "gd": 3,
+      "gf": 6
+    },
+    "3C": {
+      "team": "Scotland",
+      "team_id": 4695,
+      "confirmed": true,
+      "pts": 3,
+      "gd": -3,
+      "gf": 1
+    },
+    "4C": {
+      "team": "Haiti",
+      "team_id": 7229,
+      "confirmed": true,
+      "pts": 0,
+      "gd": -6,
+      "gf": 2
+    },
+    "1D": {
+      "team": "USA",
+      "team_id": 4724,
+      "confirmed": true,
+      "pts": 6,
+      "gd": 4,
+      "gf": 8
+    },
+    "2D": {
+      "team": "Australia",
+      "team_id": 4741,
+      "confirmed": true,
+      "pts": 4,
+      "gd": 0,
+      "gf": 2
+    },
+    "3D": {
+      "team": "Paraguay",
+      "team_id": 4789,
+      "confirmed": true,
+      "pts": 4,
+      "gd": -2,
+      "gf": 2
+    },
+    "4D": {
+      "team": "Türkiye",
+      "team_id": 4700,
+      "confirmed": true,
+      "pts": 3,
+      "gd": -2,
+      "gf": 3
+    },
+    "1E": {
+      "team": "Germany",
+      "team_id": 4711,
+      "confirmed": true,
+      "pts": 6,
+      "gd": 6,
+      "gf": 10
+    },
+    "2E": {
+      "team": "Côte d'Ivoire",
+      "team_id": 4768,
+      "confirmed": true,
+      "pts": 6,
+      "gd": 2,
+      "gf": 4
+    },
+    "3E": {
+      "team": "Ecuador",
+      "team_id": 4757,
+      "confirmed": true,
+      "pts": 4,
+      "gd": 0,
+      "gf": 2
+    },
+    "4E": {
+      "team": "Curaçao",
+      "team_id": 55827,
+      "confirmed": true,
+      "pts": 1,
+      "gd": -8,
+      "gf": 1
+    },
+    "1F": {
+      "team": "Netherlands",
+      "team_id": 4705,
+      "confirmed": true,
+      "pts": 7,
+      "gd": 6,
+      "gf": 10
+    },
+    "2F": {
+      "team": "Japan",
+      "team_id": 4770,
+      "confirmed": true,
+      "pts": 5,
+      "gd": 4,
+      "gf": 7
+    },
+    "3F": {
+      "team": "Sweden",
+      "team_id": 4688,
+      "confirmed": true,
+      "pts": 4,
+      "gd": 0,
+      "gf": 7
+    },
+    "4F": {
+      "team": "Tunisia",
+      "team_id": 4729,
+      "confirmed": true,
+      "pts": 0,
+      "gd": -10,
+      "gf": 2
+    },
+    "1G": {
+      "team": "Belgium",
+      "team_id": 4717,
+      "confirmed": true,
+      "pts": 5,
+      "gd": 4,
+      "gf": 6
+    },
+    "2G": {
+      "team": "Egypt",
+      "team_id": 4758,
+      "confirmed": true,
+      "pts": 5,
+      "gd": 2,
+      "gf": 5
+    },
+    "3G": {
+      "team": "Iran",
+      "team_id": 4766,
+      "confirmed": true,
+      "pts": 3,
+      "gd": 0,
+      "gf": 3
+    },
+    "4G": {
+      "team": "New Zealand",
+      "team_id": 4784,
+      "confirmed": true,
+      "pts": 1,
+      "gd": -6,
+      "gf": 4
+    },
+    "1H": {
+      "team": "Spain",
+      "team_id": 4698,
+      "confirmed": true,
+      "pts": 7,
+      "gd": 5,
+      "gf": 5
+    },
+    "2H": {
+      "team": "Cabo Verde",
+      "team_id": 4753,
+      "confirmed": true,
+      "pts": 3,
+      "gd": 0,
+      "gf": 2
+    },
+    "3H": {
+      "team": "Uruguay",
+      "team_id": 4725,
+      "confirmed": true,
+      "pts": 2,
+      "gd": -1,
+      "gf": 3
+    },
+    "4H": {
+      "team": "Saudi Arabia",
+      "team_id": 4834,
+      "confirmed": true,
+      "pts": 2,
+      "gd": -4,
+      "gf": 1
+    },
+    "1I": {
+      "team": "France",
+      "team_id": 4481,
+      "confirmed": true,
+      "pts": 9,
+      "gd": 8,
+      "gf": 10
+    },
+    "2I": {
+      "team": "Norway",
+      "team_id": 4475,
+      "confirmed": true,
+      "pts": 6,
+      "gd": 1,
+      "gf": 8
+    },
+    "3I": {
+      "team": "Senegal",
+      "team_id": 4739,
+      "confirmed": true,
+      "pts": 3,
+      "gd": 2,
+      "gf": 8
+    },
+    "4I": {
+      "team": "Iraq",
+      "team_id": 4767,
+      "confirmed": true,
+      "pts": 0,
+      "gd": -11,
+      "gf": 1
+    },
+    "1J": {
+      "team": "Argentina",
+      "team_id": 4819,
+      "confirmed": false,
+      "pts": 6,
+      "gd": 5,
+      "gf": 5
+    },
+    "2J": {
+      "team": "Austria",
+      "team_id": 4718,
+      "confirmed": false,
+      "pts": 3,
+      "gd": 0,
+      "gf": 3
+    },
+    "3J": {
+      "team": "Algeria",
+      "team_id": 4691,
+      "confirmed": false,
+      "pts": 3,
+      "gd": -2,
+      "gf": 2
+    },
+    "4J": {
+      "team": "Jordan",
+      "team_id": 4771,
+      "confirmed": false,
+      "pts": 0,
+      "gd": -3,
+      "gf": 2
+    },
+    "1K": {
+      "team": "Colombia",
+      "team_id": 4820,
+      "confirmed": false,
+      "pts": 6,
+      "gd": 3,
+      "gf": 4
+    },
+    "2K": {
+      "team": "Portugal",
+      "team_id": 4704,
+      "confirmed": false,
+      "pts": 4,
+      "gd": 5,
+      "gf": 6
+    },
+    "3K": {
+      "team": "DR Congo",
+      "team_id": 4823,
+      "confirmed": false,
+      "pts": 1,
+      "gd": -1,
+      "gf": 1
+    },
+    "4K": {
+      "team": "Uzbekistan",
+      "team_id": 4723,
+      "confirmed": false,
+      "pts": 0,
+      "gd": -7,
+      "gf": 1
+    },
+    "1L": {
+      "team": "England",
+      "team_id": 4713,
+      "confirmed": false,
+      "pts": 4,
+      "gd": 2,
+      "gf": 4
+    },
+    "2L": {
+      "team": "Ghana",
+      "team_id": 4764,
+      "confirmed": false,
+      "pts": 4,
+      "gd": 1,
+      "gf": 1
+    },
+    "3L": {
+      "team": "Croatia",
+      "team_id": 4715,
+      "confirmed": false,
+      "pts": 3,
+      "gd": -1,
+      "gf": 3
+    },
+    "4L": {
+      "team": "Panama",
+      "team_id": 5164,
+      "confirmed": false,
+      "pts": 0,
+      "gd": -2,
+      "gf": 0
+    },
+    "3rd_1": {
+      "team": "Sweden",
+      "team_id": 4688,
+      "confirmed": true,
+      "pts": 4,
+      "gd": 0,
+      "gf": 7
+    },
+    "3rd_2": {
+      "team": "Ecuador",
+      "team_id": 4757,
+      "confirmed": true,
+      "pts": 4,
+      "gd": 0,
+      "gf": 2
+    },
+    "3rd_3": {
+      "team": "Bosnia & Herzegovina",
+      "team_id": 4479,
+      "confirmed": true,
+      "pts": 4,
+      "gd": -1,
+      "gf": 5
+    },
+    "3rd_4": {
+      "team": "Paraguay",
+      "team_id": 4789,
+      "confirmed": true,
+      "pts": 4,
+      "gd": -2,
+      "gf": 2
+    },
+    "3rd_5": {
+      "team": "Senegal",
+      "team_id": 4739,
+      "confirmed": true,
+      "pts": 3,
+      "gd": 2,
+      "gf": 8
+    },
+    "3rd_6": {
+      "team": "Iran",
+      "team_id": 4766,
+      "confirmed": true,
+      "pts": 3,
+      "gd": 0,
+      "gf": 3
+    },
+    "3rd_7": {
+      "team": "Croatia",
+      "team_id": 4715,
+      "confirmed": false,
+      "pts": 3,
+      "gd": -1,
+      "gf": 3
+    },
+    "3rd_8": {
+      "team": "South Korea",
+      "team_id": 4735,
+      "confirmed": true,
+      "pts": 3,
+      "gd": -1,
+      "gf": 2
+    }
+  },
+  "qualified_thirds": [
+    {
+      "team": "Sweden",
+      "team_id": 4688,
+      "pts": 4,
+      "gd": 0,
+      "gf": 7,
+      "group": "F",
+      "confirmed": true
+    },
+    {
+      "team": "Ecuador",
+      "team_id": 4757,
+      "pts": 4,
+      "gd": 0,
+      "gf": 2,
+      "group": "E",
+      "confirmed": true
+    },
+    {
+      "team": "Bosnia & Herzegovina",
+      "team_id": 4479,
+      "pts": 4,
+      "gd": -1,
+      "gf": 5,
+      "group": "B",
+      "confirmed": true
+    },
+    {
+      "team": "Paraguay",
+      "team_id": 4789,
+      "pts": 4,
+      "gd": -2,
+      "gf": 2,
+      "group": "D",
+      "confirmed": true
+    },
+    {
+      "team": "Senegal",
+      "team_id": 4739,
+      "pts": 3,
+      "gd": 2,
+      "gf": 8,
+      "group": "I",
+      "confirmed": true
+    },
+    {
+      "team": "Iran",
+      "team_id": 4766,
+      "pts": 3,
+      "gd": 0,
+      "gf": 3,
+      "group": "G",
+      "confirmed": true
+    },
+    {
+      "team": "Croatia",
+      "team_id": 4715,
+      "pts": 3,
+      "gd": -1,
+      "gf": 3,
+      "group": "L",
+      "confirmed": false
+    },
+    {
+      "team": "South Korea",
+      "team_id": 4735,
+      "pts": 3,
+      "gd": -1,
+      "gf": 2,
+      "group": "A",
+      "confirmed": true
+    }
+  ]
+}
