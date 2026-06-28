@@ -1297,7 +1297,8 @@ def main():
                 wc_mins_by_round.setdefault(pid_str, {})[rnd] = mins
 
     # Promedio ponderado de minutos: refleja tendencia reciente más que la F3 de rotación
-    wc_avg_mins = {}
+    wc_avg_mins    = {}
+    wc_recent_mins = {}  # minutos en F2+F3 solamente — gate de disponibilidad reciente
     for pid_str, rnd_mins in wc_mins_by_round.items():
         total_w = total_wm = 0.0
         for rnd, mins in rnd_mins.items():
@@ -1306,6 +1307,11 @@ def main():
             total_w  += w
         if total_w > 0:
             wc_avg_mins[pid_str] = total_wm / total_w
+        # Minutos recientes (F2+F3): si es 0, el jugador no estuvo disponible en las
+        # últimas 2 fechas → muy poca probabilidad de jugar en Octavos.
+        recent = sum(mins for rnd, mins in rnd_mins.items() if rnd in (2, 3))
+        if recent > 0:
+            wc_recent_mins[pid_str] = recent
 
     # Patrón F2+F3: no se usa para sub_in detection — eliminado porque genera
     # demasiados falsos positivos (titulares que salen antes de 60min en ambos juegos).
@@ -1580,10 +1586,8 @@ def main():
             if proj is None:
                 continue
 
-            # Ajuste de minutos reales del Mundial (F2+F3) para Octavos.
-            # Reemplaza exp_mins/mins_fac/p_over60 calculados por historial de selección
-            # con el promedio real del torneo — más preciso para proyectar Octavos.
-            # xpts se escala proporcionalmente (mins_fac y p_play afectan linealmente la proj).
+            # 1) Ajuste de minutos reales del Mundial para Octavos.
+            # Usa el promedio ponderado de F1+F2+F3 para calibrar exp_mins/p_play.
             if round_num == 4 and _pid_str in wc_avg_mins:
                 avg_m        = wc_avg_mins[_pid_str]
                 old_mf       = proj.get("mins_fac", 1.0)
@@ -1591,15 +1595,12 @@ def main():
                 new_mf       = round(min(1.0, avg_m / 90), 3)
                 new_p_over60 = round(min(0.95, max(0.05, avg_m / 75)), 2)
                 if old_mf > 0 and old_pp > 0:
-                    scale           = (new_mf / old_mf) * (new_p_over60 / old_pp)
-                    proj["xpts"]    = round(proj["xpts"] * scale, 2)
-                proj["exp_mins"]  = round(avg_m)
-                proj["mins_fac"]  = new_mf
-                proj["p_over60"]  = new_p_over60
-                proj["p_play"]    = new_p_over60
-                # Sincronizar label de rol con los minutos reales ajustados.
-                # Sin esto, jugadores sin lineup data F3 quedan con "Rotacional"
-                # aunque su avg WC sea de titular (>75min).
+                    scale        = (new_mf / old_mf) * (new_p_over60 / old_pp)
+                    proj["xpts"] = round(proj["xpts"] * scale, 2)
+                proj["exp_mins"] = round(avg_m)
+                proj["mins_fac"] = new_mf
+                proj["p_over60"] = new_p_over60
+                proj["p_play"]   = new_p_over60
                 if proj.get("lineup_status") not in ("starter", "rotacional", "substitute", "missing"):
                     if new_p_over60 >= 0.80:
                         proj["role"] = "Titular"
@@ -1607,6 +1608,24 @@ def main():
                         proj["role"] = "Rotacional"
                     else:
                         proj["role"] = "Suplente"
+
+            # 2) Gate de disponibilidad reciente — aplicar DESPUÉS del ajuste de minutos.
+            # Si un jugador no jugó en F2 ni F3 (lesión, exclusión, rotación total)
+            # no debería proyectarse alto para Octavos, sin importar su F1 o stats de club.
+            # Solo se excluye del gate si el lineup de F3 lo confirma como "starter".
+            if round_num == 4:
+                _recent = wc_recent_mins.get(_pid_str, 0)
+                _ls     = proj.get("lineup_status")
+                if _recent < 30 and _ls not in ("starter",):
+                    old_pp = proj.get("p_play", 0.9)
+                    new_pp = 0.20
+                    if old_pp > new_pp:   # solo baja, nunca sube
+                        proj["xpts"] = round(proj["xpts"] * (new_pp / old_pp), 2)
+                    proj["p_play"]   = min(old_pp, new_pp)
+                    proj["p_over60"] = min(old_pp, new_pp)
+                    proj["exp_mins"] = 18
+                    proj["mins_fac"] = round(18 / 90, 3)
+                    proj["role"]     = "Suplente"
 
             xbpr = min(round(_bpr_ev(pid_str, event_id), 3), 0.80)  # cap: un partido no puede garantizar BPR
 
