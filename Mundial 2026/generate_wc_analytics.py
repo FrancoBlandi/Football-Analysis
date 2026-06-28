@@ -65,7 +65,7 @@ SUPLENTE_OVERRIDES = {
 }
 
 ROTACIONAL_OVERRIDES = {
-    # Auto-detectado desde lineups reales de fecha 1
+    138892,  # João Cancelo (Portugal) — cambiado al min 45 en F2 y F3, perdió el puesto
 }
 
 # Solo jugadores donde la auto-detección por minutos falla
@@ -720,30 +720,6 @@ def load_data(fecha_filter=None):
         confirmed_matches = sum(1 for v in lineups.values() if v.get("confirmed"))
         print(f"[lineups] {len(lineups)} partidos cargados  ({confirmed_matches} confirmados)")
 
-    # Corrección: sobrescribir status en lineups con minutos reales de wc_results.
-    # wc_results tiene el status post-sustitución (sub_in si jugó <60min aunque haya empezado).
-    # lineups solo refleja si arrancó de titular, sin importar si fue cambiado temprano.
-    # Esto afecta principalmente el fallback F3→Octavos (Cancelo, etc.).
-    _WC_RESULTS_EARLY = BASE_DIR / "wc2026_wc_results.json"
-    if _WC_RESULTS_EARLY.exists():
-        _wc_tmp = json.load(open(_WC_RESULTS_EARLY, encoding="utf-8"))
-        _patched = 0
-        for eid_str, md in _wc_tmp.get("matches", {}).items():
-            if eid_str not in lineups:
-                continue
-            lu_players = lineups[eid_str].get("players", {})
-            for pid_str, ps in md.get("player_stats", {}).items():
-                if pid_str not in lu_players:
-                    continue
-                real_mins   = ps.get("mins") or 0
-                real_status = ps.get("status", "")
-                prev_status = lu_players[pid_str].get("status")
-                # Si lineups dice "starter" pero en realidad jugó <60min → rotacional/sub
-                if prev_status == "starter" and real_status == "sub_in":
-                    lu_players[pid_str]["status"] = "rotacional" if real_mins >= 30 else "sub_in"
-                    _patched += 1
-        if _patched:
-            print(f"[lineups] {_patched} status corregidos con minutos reales de wc_results")
 
     setpieces = {}
     if SETPIECES_PATH.exists():
