@@ -689,8 +689,7 @@ if _wide_det_path.exists():
     _wd = _json.load(open(_wide_det_path, encoding="utf-8"))
     for _cand in _wd.get("wide_mid_candidates", []):
         _pid = _cand["pid"]
-        if (_cand["avg_crosses"] >= 2.5
-                and _pid not in PLAYER_TYPE_OVERRIDES
+        if (_pid not in PLAYER_TYPE_OVERRIDES
                 and POSITION_OVERRIDES.get(_pid) not in ("F", "D")):
             PLAYER_TYPE_OVERRIDES[_pid] = "wide_mid"
 

@@ -1,46 +1,29 @@
 {
-  "threshold": 1.5,
+  "threshold": 2.0,
+  "cross_shot_ratio": 2.0,
   "wide_mid_candidates": [
     {
       "pid": 856076,
       "name": "David Raum",
       "team": "Germany",
       "avg_crosses": 11.0,
+      "avg_shots": 0.0,
       "matches": 1
-    },
-    {
-      "pid": 856714,
-      "name": "Declan Rice",
-      "team": "England",
-      "avg_crosses": 10.5,
-      "matches": 2
     },
     {
       "pid": 886223,
       "name": "Stephen Eustaquio",
       "team": "Canada",
       "avg_crosses": 9.33,
+      "avg_shots": 0.67,
       "matches": 3
-    },
-    {
-      "pid": 133908,
-      "name": "Marcel Sabitzer",
-      "team": "Austria",
-      "avg_crosses": 9.0,
-      "matches": 2
     },
     {
       "pid": 842253,
       "name": "José Luis Rodríguez",
       "team": "Panama",
       "avg_crosses": 8.0,
-      "matches": 1
-    },
-    {
-      "pid": 1066802,
-      "name": "Marco Pašalić",
-      "team": "Croatia",
-      "avg_crosses": 8.0,
+      "avg_shots": 1.0,
       "matches": 1
     },
     {
@@ -48,6 +31,7 @@
       "name": "Barış Alper Yılmaz",
       "team": "Türkiye",
       "avg_crosses": 7.0,
+      "avg_shots": 0.0,
       "matches": 1
     },
     {
@@ -55,6 +39,7 @@
       "name": "Riyad Mahrez",
       "team": "Algeria",
       "avg_crosses": 7.0,
+      "avg_shots": 1.0,
       "matches": 1
     },
     {
@@ -62,6 +47,7 @@
       "name": "Cristian Martínez",
       "team": "Panama",
       "avg_crosses": 7.0,
+      "avg_shots": 0.0,
       "matches": 1
     },
     {
@@ -69,27 +55,7 @@
       "name": "Vladimír Coufal",
       "team": "Czechia",
       "avg_crosses": 6.67,
-      "matches": 3
-    },
-    {
-      "pid": 1091116,
-      "name": "Arda Güler",
-      "team": "Türkiye",
-      "avg_crosses": 6.5,
-      "matches": 2
-    },
-    {
-      "pid": 288205,
-      "name": "Bruno Fernandes",
-      "team": "Portugal",
-      "avg_crosses": 6.5,
-      "matches": 2
-    },
-    {
-      "pid": 70996,
-      "name": "Kevin De Bruyne",
-      "team": "Belgium",
-      "avg_crosses": 6.0,
+      "avg_shots": 0.33,
       "matches": 3
     },
     {
@@ -97,97 +63,47 @@
       "name": "Maximiliano Araújo",
       "team": "Uruguay",
       "avg_crosses": 6.0,
+      "avg_shots": 1.33,
       "matches": 3
-    },
-    {
-      "pid": 874568,
-      "name": "Juan Sanabria",
-      "team": "Uruguay",
-      "avg_crosses": 6.0,
-      "matches": 1
     },
     {
       "pid": 910031,
       "name": "Alex Baena",
       "team": "Spain",
       "avg_crosses": 6.0,
+      "avg_shots": 1.0,
       "matches": 1
-    },
-    {
-      "pid": 1036269,
-      "name": "Yasin Ayari",
-      "team": "Sweden",
-      "avg_crosses": 5.67,
-      "matches": 3
-    },
-    {
-      "pid": 1049701,
-      "name": "Ivan Bašić",
-      "team": "Bosnia & Herzegovina",
-      "avg_crosses": 5.0,
-      "matches": 2
-    },
-    {
-      "pid": 135700,
-      "name": "Hakan Çalhanoğlu",
-      "team": "Türkiye",
-      "avg_crosses": 5.0,
-      "matches": 2
     },
     {
       "pid": 893549,
       "name": "Tijjani Reijnders",
       "team": "Netherlands",
       "avg_crosses": 5.0,
+      "avg_shots": 1.33,
       "matches": 3
-    },
-    {
-      "pid": 825731,
-      "name": "Michal Sadílek",
-      "team": "Czechia",
-      "avg_crosses": 5.0,
-      "matches": 2
     },
     {
       "pid": 1425366,
       "name": "Kerim Alajbegović",
       "team": "Bosnia & Herzegovina",
       "avg_crosses": 5.0,
+      "avg_shots": 1.0,
       "matches": 2
-    },
-    {
-      "pid": 1063767,
-      "name": "Ismael Saibari",
-      "team": "Morocco",
-      "avg_crosses": 5.0,
-      "matches": 1
-    },
-    {
-      "pid": 891442,
-      "name": "David Douděra",
-      "team": "Czechia",
-      "avg_crosses": 5.0,
-      "matches": 1
     },
     {
       "pid": 973290,
       "name": "Tajon Buchanan",
       "team": "Canada",
       "avg_crosses": 4.67,
+      "avg_shots": 1.33,
       "matches": 3
-    },
-    {
-      "pid": 975798,
-      "name": "Malik Tillman",
-      "team": "USA",
-      "avg_crosses": 4.5,
-      "matches": 2
     },
     {
       "pid": 1014845,
       "name": "Sebastian Berhalter",
       "team": "USA",
       "avg_crosses": 4.5,
+      "avg_shots": 1.0,
       "matches": 2
     },
     {
@@ -195,6 +111,7 @@
       "name": "Hannibal Mejbri",
       "team": "Tunisia",
       "avg_crosses": 4.5,
+      "avg_shots": 1.0,
       "matches": 2
     },
     {
@@ -202,6 +119,7 @@
       "name": "Ivan Perišić",
       "team": "Croatia",
       "avg_crosses": 4.5,
+      "avg_shots": 0.0,
       "matches": 2
     },
     {
@@ -209,6 +127,7 @@
       "name": "Ali Ahmed",
       "team": "Canada",
       "avg_crosses": 4.5,
+      "avg_shots": 1.0,
       "matches": 2
     },
     {
@@ -216,6 +135,7 @@
       "name": "Roberto Alvarado",
       "team": "Mexico",
       "avg_crosses": 4.0,
+      "avg_shots": 0.0,
       "matches": 1
     },
     {
@@ -223,6 +143,7 @@
       "name": "Lee Tae-seok",
       "team": "South Korea",
       "avg_crosses": 4.0,
+      "avg_shots": 0.0,
       "matches": 2
     },
     {
@@ -230,13 +151,7 @@
       "name": "Liam Millar",
       "team": "Canada",
       "avg_crosses": 4.0,
-      "matches": 1
-    },
-    {
-      "pid": 831005,
-      "name": "Raphinha",
-      "team": "Brazil",
-      "avg_crosses": 4.0,
+      "avg_shots": 0.0,
       "matches": 1
     },
     {
@@ -244,55 +159,31 @@
       "name": "Pedri",
       "team": "Spain",
       "avg_crosses": 4.0,
+      "avg_shots": 1.0,
       "matches": 3
-    },
-    {
-      "pid": 1149011,
-      "name": "Kenan Yıldız",
-      "team": "Türkiye",
-      "avg_crosses": 4.0,
-      "matches": 1
     },
     {
       "pid": 937255,
       "name": "Mathieu Choinière",
       "team": "Canada",
       "avg_crosses": 4.0,
+      "avg_shots": 0.0,
       "matches": 1
-    },
-    {
-      "pid": 879802,
-      "name": "John Yeboah",
-      "team": "Ecuador",
-      "avg_crosses": 3.67,
-      "matches": 3
-    },
-    {
-      "pid": 831808,
-      "name": "Federico Valverde",
-      "team": "Uruguay",
-      "avg_crosses": 3.67,
-      "matches": 3
     },
     {
       "pid": 812997,
       "name": "Ehsan Haddad",
       "team": "Jordan",
       "avg_crosses": 3.5,
+      "avg_shots": 0.5,
       "matches": 2
-    },
-    {
-      "pid": 845273,
-      "name": "Jean-Ricner Bellegarde",
-      "team": "Haiti",
-      "avg_crosses": 3.33,
-      "matches": 3
     },
     {
       "pid": 250223,
       "name": "John McGinn",
       "team": "Scotland",
       "avg_crosses": 3.33,
+      "avg_shots": 1.0,
       "matches": 3
     },
     {
@@ -300,6 +191,7 @@
       "name": "Moisés Caicedo",
       "team": "Ecuador",
       "avg_crosses": 3.33,
+      "avg_shots": 1.0,
       "matches": 3
     },
     {
@@ -307,6 +199,7 @@
       "name": "Young-woo Seol",
       "team": "South Korea",
       "avg_crosses": 3.0,
+      "avg_shots": 0.67,
       "matches": 3
     },
     {
@@ -314,6 +207,7 @@
       "name": "Jaroslav Zelený",
       "team": "Czechia",
       "avg_crosses": 3.0,
+      "avg_shots": 0.0,
       "matches": 1
     },
     {
@@ -321,6 +215,7 @@
       "name": "Michel Aebischer",
       "team": "Switzerland",
       "avg_crosses": 3.0,
+      "avg_shots": 1.0,
       "matches": 2
     },
     {
@@ -328,6 +223,7 @@
       "name": "Vinícius Júnior",
       "team": "Brazil",
       "avg_crosses": 3.0,
+      "avg_shots": 1.0,
       "matches": 1
     },
     {
@@ -335,6 +231,7 @@
       "name": "Louicius Don Deedson",
       "team": "Haiti",
       "avg_crosses": 3.0,
+      "avg_shots": 1.0,
       "matches": 1
     },
     {
@@ -342,6 +239,7 @@
       "name": "Lewis Ferguson",
       "team": "Scotland",
       "avg_crosses": 3.0,
+      "avg_shots": 0.67,
       "matches": 3
     },
     {
@@ -349,41 +247,23 @@
       "name": "Connor Metcalfe",
       "team": "Australia",
       "avg_crosses": 3.0,
+      "avg_shots": 1.0,
       "matches": 2
-    },
-    {
-      "pid": 159665,
-      "name": "Mohamed Salah",
-      "team": "Egypt",
-      "avg_crosses": 3.0,
-      "matches": 3
-    },
-    {
-      "pid": 818244,
-      "name": "Ousmane Dembélé",
-      "team": "France",
-      "avg_crosses": 3.0,
-      "matches": 3
     },
     {
       "pid": 1121923,
       "name": "Antonio Nusa",
       "team": "Norway",
       "avg_crosses": 3.0,
+      "avg_shots": 0.0,
       "matches": 1
-    },
-    {
-      "pid": 966547,
-      "name": "Noni Madueke",
-      "team": "England",
-      "avg_crosses": 3.0,
-      "matches": 2
     },
     {
       "pid": 839493,
       "name": "Amir Murillo",
       "team": "Panama",
       "avg_crosses": 3.0,
+      "avg_shots": 0.0,
       "matches": 1
     },
     {
@@ -391,6 +271,7 @@
       "name": "Antonee Robinson",
       "team": "USA",
       "avg_crosses": 3.0,
+      "avg_shots": 0.0,
       "matches": 1
     },
     {
@@ -398,6 +279,7 @@
       "name": "Anis Ben Slimane",
       "team": "Tunisia",
       "avg_crosses": 3.0,
+      "avg_shots": 0.5,
       "matches": 2
     },
     {
@@ -405,13 +287,7 @@
       "name": "Ramin Rezaeian",
       "team": "Iran",
       "avg_crosses": 3.0,
-      "matches": 1
-    },
-    {
-      "pid": 1192318,
-      "name": "Farès Chaïbi",
-      "team": "Algeria",
-      "avg_crosses": 3.0,
+      "avg_shots": 0.0,
       "matches": 1
     },
     {
@@ -419,6 +295,7 @@
       "name": "Martin Baturina",
       "team": "Croatia",
       "avg_crosses": 3.0,
+      "avg_shots": 1.0,
       "matches": 1
     },
     {
@@ -426,6 +303,7 @@
       "name": "Lukáš Provod",
       "team": "Czechia",
       "avg_crosses": 3.0,
+      "avg_shots": 0.0,
       "matches": 1
     },
     {
@@ -433,6 +311,7 @@
       "name": "Jens Castrop",
       "team": "South Korea",
       "avg_crosses": 3.0,
+      "avg_shots": 0.0,
       "matches": 1
     },
     {
@@ -440,13 +319,7 @@
       "name": "Oğuz Aydın",
       "team": "Türkiye",
       "avg_crosses": 3.0,
-      "matches": 1
-    },
-    {
-      "pid": 1144138,
-      "name": "Jordan Bos",
-      "team": "Australia",
-      "avg_crosses": 3.0,
+      "avg_shots": 0.0,
       "matches": 1
     },
     {
@@ -454,20 +327,15 @@
       "name": "Lamine Yamal",
       "team": "Spain",
       "avg_crosses": 3.0,
+      "avg_shots": 1.0,
       "matches": 1
-    },
-    {
-      "pid": 331737,
-      "name": "Youri Tielemans",
-      "team": "Belgium",
-      "avg_crosses": 2.67,
-      "matches": 3
     },
     {
       "pid": 915325,
       "name": "Amir Al-Ammari",
       "team": "Iraq",
       "avg_crosses": 2.67,
+      "avg_shots": 0.0,
       "matches": 3
     },
     {
@@ -475,6 +343,7 @@
       "name": "Alexandr Sojka",
       "team": "Czechia",
       "avg_crosses": 2.5,
+      "avg_shots": 0.0,
       "matches": 2
     },
     {
@@ -482,13 +351,7 @@
       "name": "Esmir Bajraktarević",
       "team": "Bosnia & Herzegovina",
       "avg_crosses": 2.5,
-      "matches": 2
-    },
-    {
-      "pid": 907461,
-      "name": "Orkun Kökçü",
-      "team": "Türkiye",
-      "avg_crosses": 2.5,
+      "avg_shots": 1.0,
       "matches": 2
     },
     {
@@ -496,13 +359,7 @@
       "name": "Sadio Mané",
       "team": "Senegal",
       "avg_crosses": 2.5,
-      "matches": 2
-    },
-    {
-      "pid": 547410,
-      "name": "Martin Ødegaard",
-      "team": "Norway",
-      "avg_crosses": 2.5,
+      "avg_shots": 0.5,
       "matches": 2
     },
     {
@@ -510,6 +367,7 @@
       "name": "Mohannad Abu Taha",
       "team": "Jordan",
       "avg_crosses": 2.5,
+      "avg_shots": 0.0,
       "matches": 2
     },
     {
@@ -517,6 +375,7 @@
       "name": "Pedro Neto",
       "team": "Portugal",
       "avg_crosses": 2.5,
+      "avg_shots": 0.0,
       "matches": 2
     },
     {
@@ -524,6 +383,7 @@
       "name": "Yoel Bárcenas",
       "team": "Panama",
       "avg_crosses": 2.5,
+      "avg_shots": 1.0,
       "matches": 2
     },
     {
@@ -531,69 +391,23 @@
       "name": "Patrick Berg",
       "team": "Norway",
       "avg_crosses": 2.5,
+      "avg_shots": 0.5,
       "matches": 2
-    },
-    {
-      "pid": 881931,
-      "name": "Weston McKennie",
-      "team": "USA",
-      "avg_crosses": 2.33,
-      "matches": 3
-    },
-    {
-      "pid": 905352,
-      "name": "Keito Nakamura",
-      "team": "Japan",
-      "avg_crosses": 2.33,
-      "matches": 3
     },
     {
       "pid": 2087085,
       "name": "Yan Diomande",
       "team": "Côte d'Ivoire",
       "avg_crosses": 2.33,
+      "avg_shots": 1.0,
       "matches": 3
-    },
-    {
-      "pid": 822743,
-      "name": "Sarpreet Singh",
-      "team": "New Zealand",
-      "avg_crosses": 2.33,
-      "matches": 3
-    },
-    {
-      "pid": 881117,
-      "name": "Teboho Mokoena",
-      "team": "South Africa",
-      "avg_crosses": 2.0,
-      "matches": 2
     },
     {
       "pid": 866469,
       "name": "Bruno Guimarães",
       "team": "Brazil",
       "avg_crosses": 2.0,
-      "matches": 3
-    },
-    {
-      "pid": 835485,
-      "name": "Brahim Díaz",
-      "team": "Morocco",
-      "avg_crosses": 2.0,
-      "matches": 3
-    },
-    {
-      "pid": 1126569,
-      "name": "Bilal El Khannouss",
-      "team": "Morocco",
-      "avg_crosses": 2.0,
-      "matches": 3
-    },
-    {
-      "pid": 954066,
-      "name": "Ruben Providence",
-      "team": "Haiti",
-      "avg_crosses": 2.0,
+      "avg_shots": 0.67,
       "matches": 3
     },
     {
@@ -601,20 +415,15 @@
       "name": "Daichi Kamada",
       "team": "Japan",
       "avg_crosses": 2.0,
+      "avg_shots": 0.5,
       "matches": 2
-    },
-    {
-      "pid": 1122552,
-      "name": "Alan Minda",
-      "team": "Ecuador",
-      "avg_crosses": 2.0,
-      "matches": 1
     },
     {
       "pid": 918517,
       "name": "Benjamin Nygren",
       "team": "Sweden",
       "avg_crosses": 2.0,
+      "avg_shots": 0.5,
       "matches": 2
     },
     {
@@ -622,6 +431,7 @@
       "name": "Gabriel Gudmundsson",
       "team": "Sweden",
       "avg_crosses": 2.0,
+      "avg_shots": 0.0,
       "matches": 2
     },
     {
@@ -629,48 +439,15 @@
       "name": "Marwan Attia",
       "team": "Egypt",
       "avg_crosses": 2.0,
+      "avg_shots": 0.33,
       "matches": 3
-    },
-    {
-      "pid": 1389846,
-      "name": "Lamine Camara",
-      "team": "Senegal",
-      "avg_crosses": 2.0,
-      "matches": 3
-    },
-    {
-      "pid": 1066729,
-      "name": "Ali Jasim",
-      "team": "Iraq",
-      "avg_crosses": 2.0,
-      "matches": 2
     },
     {
       "pid": 904424,
       "name": "Elisha Owusu",
       "team": "Ghana",
       "avg_crosses": 2.0,
-      "matches": 1
-    },
-    {
-      "pid": 358880,
-      "name": "Dostonbek Khamdamov",
-      "team": "Uzbekistan",
-      "avg_crosses": 2.0,
-      "matches": 1
-    },
-    {
-      "pid": 844096,
-      "name": "Jhon Arias",
-      "team": "Colombia",
-      "avg_crosses": 2.0,
-      "matches": 2
-    },
-    {
-      "pid": 366592,
-      "name": "Kieran Tierney",
-      "team": "Scotland",
-      "avg_crosses": 2.0,
+      "avg_shots": 0.0,
       "matches": 1
     },
     {
@@ -678,13 +455,7 @@
       "name": "Yunus Akgün",
       "team": "Türkiye",
       "avg_crosses": 2.0,
-      "matches": 1
-    },
-    {
-      "pid": 327755,
-      "name": "Nadiem Amiri",
-      "team": "Germany",
-      "avg_crosses": 2.0,
+      "avg_shots": 0.0,
       "matches": 1
     },
     {
@@ -692,6 +463,7 @@
       "name": "Pervis Estupiñán",
       "team": "Ecuador",
       "avg_crosses": 2.0,
+      "avg_shots": 0.0,
       "matches": 1
     },
     {
@@ -699,6 +471,7 @@
       "name": "Ali Abdi",
       "team": "Tunisia",
       "avg_crosses": 2.0,
+      "avg_shots": 0.0,
       "matches": 1
     },
     {
@@ -706,48 +479,15 @@
       "name": "Musab Al Juwayr",
       "team": "Saudi Arabia",
       "avg_crosses": 2.0,
+      "avg_shots": 0.0,
       "matches": 2
-    },
-    {
-      "pid": 846413,
-      "name": "Agustín Canobbio",
-      "team": "Uruguay",
-      "avg_crosses": 2.0,
-      "matches": 2
-    },
-    {
-      "pid": 221162,
-      "name": "Juan Fernando Quintero",
-      "team": "Colombia",
-      "avg_crosses": 2.0,
-      "matches": 1
-    },
-    {
-      "pid": 872919,
-      "name": "Rubén Vargas",
-      "team": "Switzerland",
-      "avg_crosses": 2.0,
-      "matches": 1
-    },
-    {
-      "pid": 984505,
-      "name": "Oswin Appollis",
-      "team": "South Africa",
-      "avg_crosses": 2.0,
-      "matches": 1
-    },
-    {
-      "pid": 905347,
-      "name": "Yukinari Sugawara",
-      "team": "Japan",
-      "avg_crosses": 2.0,
-      "matches": 1
     },
     {
       "pid": 1383695,
       "name": "Elliot Stroud",
       "team": "Sweden",
       "avg_crosses": 2.0,
+      "avg_shots": 0.0,
       "matches": 1
     },
     {
@@ -755,6 +495,7 @@
       "name": "Salih Özcan",
       "team": "Türkiye",
       "avg_crosses": 2.0,
+      "avg_shots": 0.0,
       "matches": 1
     },
     {
@@ -762,77 +503,8 @@
       "name": "Aziz Behich",
       "team": "Australia",
       "avg_crosses": 2.0,
+      "avg_shots": 0.0,
       "matches": 1
-    },
-    {
-      "pid": 847938,
-      "name": "Aiden O'Neill",
-      "team": "Australia",
-      "avg_crosses": 1.67,
-      "matches": 3
-    },
-    {
-      "pid": 788971,
-      "name": "Juninho Bacuna",
-      "team": "Curaçao",
-      "avg_crosses": 1.67,
-      "matches": 3
-    },
-    {
-      "pid": 815080,
-      "name": "Jamiro Monteiro",
-      "team": "Cabo Verde",
-      "avg_crosses": 1.67,
-      "matches": 3
-    },
-    {
-      "pid": 1134351,
-      "name": "Ismael Koné",
-      "team": "Canada",
-      "avg_crosses": 1.5,
-      "matches": 2
-    },
-    {
-      "pid": 906021,
-      "name": "Sergiño Dest",
-      "team": "USA",
-      "avg_crosses": 1.5,
-      "matches": 2
-    },
-    {
-      "pid": 1154861,
-      "name": "Ben Gannon-Doak",
-      "team": "Scotland",
-      "avg_crosses": 1.5,
-      "matches": 2
-    },
-    {
-      "pid": 790965,
-      "name": "Ritsu Doan",
-      "team": "Japan",
-      "avg_crosses": 1.5,
-      "matches": 2
-    },
-    {
-      "pid": 1804369,
-      "name": "Mohammed Abu Al-Shamat",
-      "team": "Saudi Arabia",
-      "avg_crosses": 1.5,
-      "matches": 2
-    },
-    {
-      "pid": 249399,
-      "name": "Rodrigo De Paul",
-      "team": "Argentina",
-      "avg_crosses": 1.5,
-      "matches": 2
-    },
-    {
-      "pid": 1105836,
-      "name": "Matías Galarza",
-      "team": "Paraguay",
-      "avg_crosses": 1.5,
-      "matches": 2
     }
   ]
 }
