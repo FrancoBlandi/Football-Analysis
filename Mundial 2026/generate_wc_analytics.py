@@ -40,6 +40,7 @@ HOST_NATIONS = {"USA", "Canada", "Mexico"}
 # Jugadores que se espera que sean suplentes (reducen p_over60 significativamente)
 BAJA_OVERRIDES = {
     # Confirmados fuera del squad (SofaScore oficial)
+    885908,   # Reece James (England) — lesión, se pierde todo el torneo
     928236,   # Leonardo Balerdi (Argentina)
     124712,   # Neymar (Brazil) — no convocado al Mundial 2026
     1134351,  # Ismael Koné (Canada) — lesión confirmada F2, no juega F3
@@ -1490,6 +1491,35 @@ def main():
             fixture_map[a].append((h, False, eid, 4))
             if lam_h and lam_a:
                 lambda_index[eid] = {h: lam_a, a: lam_h}
+                # Calcular ev_home_dt y score_dist para Panel DT de Octavos
+                _ev_h = _ev_a = 0.0
+                _score_dist: dict = {}
+                _MAX_G = 9
+                for _i in range(_MAX_G):
+                    for _j in range(_MAX_G):
+                        _p = (math.exp(-lam_h)*lam_h**_i/math.factorial(_i) *
+                              math.exp(-lam_a)*lam_a**_j/math.factorial(_j))
+                        _ev_h += _p * (_i - _j)
+                        _ev_a += _p * (_j - _i)
+                        _score_dist[f"{_i}-{_j}"] = round(_p, 4)
+                # Agregar a predictions["fixtures"] con round=4 para Panel DT
+                predictions.setdefault("fixtures", []).append({
+                    "event_id":    eid,
+                    "round":       4,
+                    "group":       "KO",
+                    "home":        h,
+                    "away":        a,
+                    "lambda_home": lam_h,
+                    "lambda_away": lam_a,
+                    "p_home_win":  fx.get("p_home_win"),
+                    "p_draw":      fx.get("p_draw"),
+                    "p_away_win":  fx.get("p_away_win"),
+                    "ev_home_dt":  round(_ev_h, 3),
+                    "ev_away_dt":  round(_ev_a, 3),
+                    "score_dist":  _score_dist,
+                    "home_form":   None,
+                    "away_form":   None,
+                })
             _ko_added += 1
         print(f"[knockout] {_ko_added} matchups de octavos cargados en fixture_map")
 
