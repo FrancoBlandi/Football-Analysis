@@ -1296,39 +1296,68 @@ def main():
             if 0 < mins < 200:   # excluye 0 (no jugó) y bugs residuales
                 wc_mins_by_round.setdefault(pid_str, {})[rnd] = mins
 
-    # Proyección de minutos para Octavos basada en partidos donde fue titular (>=60min).
-    # Si jugó como sub en alguna fecha, esa fecha NO pesa en los minutos proyectados.
-    # Esto evita que un titular que descansó en F3 (9min) baje su proyección.
-    WC_STARTER_THRESHOLD = 60   # minutos mínimos para considerar que "fue titular"
-    wc_starter_mins = {}        # pid → promedio ponderado de fechas donde fue titular
-    wc_f1f2_mins    = {}        # pid → minutos totales F1+F2 (gate de titularidad)
-    wc_starter_f1   = set()     # jugadores titulares en F1
-    wc_starter_f2   = set()     # jugadores titulares en F2
-    wc_starter_f3   = set()     # jugadores titulares en F3
+    # Proyección de minutos y status para Octavos.
+    #
+    # Lógica de titularidad (avg F1+F2 cuenta 0 si no jugó, nunca nulo):
+    #   avg_f1f2 >= 60 → titular claro
+    #   avg_f1f2 >= 30 → revisar F3: si fue titular en F3 → titular; si no → rotacional
+    #   avg_f1f2 <  30 → gate → Suplente directo
+    #
+    # Minutos proyectados: promedio ponderado solo de fechas donde fue titular (≥60min),
+    # no mezclar partidos como sub (evita que un descanso en F3 baje la proyección).
+    WC_STARTER_THRESHOLD = 60
+
+    wc_starter_f1   = set()   # jugó ≥60min en F1
+    wc_starter_f2   = set()   # jugó ≥60min en F2
+    wc_starter_f3   = set()   # jugó ≥60min en F3
+    wc_avg_f1f2     = {}      # pid → promedio (F1+F2)/2 usando 0 para partidos no jugados
+    wc_starter_mins = {}      # pid → promedio ponderado de fechas como titular
+
+    # Para calcular avg_f1f2 necesitamos saber qué equipos jugaron F1 y F2 ya que un
+    # jugador podría simplemente no tener datos porque el match no fue scrapeado aún.
+    teams_with_f1 = {md["home"] for md in wc_results["matches"].values() if md.get("round_num") == 1} | \
+                    {md["away"] for md in wc_results["matches"].values() if md.get("round_num") == 1}
+    teams_with_f2 = {md["home"] for md in wc_results["matches"].values() if md.get("round_num") == 2} | \
+                    {md["away"] for md in wc_results["matches"].values() if md.get("round_num") == 2}
+
+    # pid → equipo (para saber si su selección jugó F1/F2)
+    pid_to_team: dict[str, str] = {}
+    for md in wc_results["matches"].values():
+        for pid_str, ps in md.get("player_stats", {}).items():
+            if pid_str not in pid_to_team:
+                tid = ps.get("team_id")
+                home_id = md.get("home_id")
+                pid_to_team[pid_str] = md["home"] if tid == home_id else md["away"]
 
     for pid_str, rnd_mins in wc_mins_by_round.items():
-        # Clasificar como titular por fecha
-        if rnd_mins.get(1, 0) >= WC_STARTER_THRESHOLD: wc_starter_f1.add(pid_str)
-        if rnd_mins.get(2, 0) >= WC_STARTER_THRESHOLD: wc_starter_f2.add(pid_str)
-        if rnd_mins.get(3, 0) >= WC_STARTER_THRESHOLD: wc_starter_f3.add(pid_str)
+        m1 = rnd_mins.get(1, 0)
+        m2 = rnd_mins.get(2, 0)
+        m3 = rnd_mins.get(3, 0)
 
-        # Promedio ponderado solo de fechas donde fue titular
+        if m1 >= WC_STARTER_THRESHOLD: wc_starter_f1.add(pid_str)
+        if m2 >= WC_STARTER_THRESHOLD: wc_starter_f2.add(pid_str)
+        if m3 >= WC_STARTER_THRESHOLD: wc_starter_f3.add(pid_str)
+
+        # Promedio F1+F2 con 0 para partidos no jugados (nunca nulo)
+        team = pid_to_team.get(pid_str, "")
+        games = 0
+        if team in teams_with_f1: games += 1
+        if team in teams_with_f2: games += 1
+        if games > 0:
+            wc_avg_f1f2[pid_str] = (m1 + m2) / games
+
+        # Minutos proyectados: solo de fechas donde fue titular
         total_w = total_wm = 0.0
         for rnd, mins in rnd_mins.items():
             if mins < WC_STARTER_THRESHOLD:
-                continue  # sub_in — no cuenta para proyección de minutos
+                continue
             w = WC_ROUND_WEIGHTS.get(rnd, 1.0)
             total_wm += mins * w
             total_w  += w
         if total_w > 0:
             wc_starter_mins[pid_str] = total_wm / total_w
 
-        # F1+F2 totales (para gate: si no jugó en F1 ni F2, no es titular del equipo)
-        f1f2 = sum(rnd_mins.get(rnd, 0) for rnd in (1, 2))
-        if f1f2 > 0:
-            wc_f1f2_mins[pid_str] = f1f2
-
-    # wc_avg_mins = alias de wc_starter_mins (compatibilidad con código downstream)
+    # wc_avg_mins alias para compatibilidad con el bloque de ajuste de minutos downstream
     wc_avg_mins = wc_starter_mins
 
     # Patrón F2+F3: no se usa para sub_in detection — eliminado porque genera
@@ -1587,21 +1616,19 @@ def main():
             _pid_int  = int(pid_str)     # int para STARTER/ROTACIONAL/BAJA_OVERRIDES
 
             # Para Octavos: determinar lineup status desde historial WC real.
-            # Lógica:
-            #   1. Titular en F1 Y F2 → starter directo (señal clara)
-            #   2. Titular en uno solo de F1/F2 → F3 desempata:
-            #      si también fue titular en F3 → starter; si no → dejar sin forzar
-            #   3. Sin minutos de titular en F1 ni F2 → gate lo baja a Suplente
+            # avg_f1f2 = (mins_F1 + mins_F2) / 2  usando 0 si no jugó (nunca nulo)
+            #   avg >= 60 → titular claro → forzar starter
+            #   avg >= 30 → desempatar con F3: si fue titular en F3 → starter
+            #   avg <  30 → gate lo baja a Suplente (ver bloque post-wc_avg_mins)
             if round_num == 4 and _pid_int not in STARTER_OVERRIDES and _pid_int not in ROTACIONAL_OVERRIDES:
-                _in_f1 = _pid_str in wc_starter_f1
-                _in_f2 = _pid_str in wc_starter_f2
-                _in_f3 = _pid_str in wc_starter_f3
+                _avg_f1f2 = wc_avg_f1f2.get(_pid_str, 0.0)
+                _in_f3    = _pid_str in wc_starter_f3
                 _force_starter = False
-                if _in_f1 and _in_f2:
-                    _force_starter = True          # caso 1: titular en ambas
-                elif _in_f1 or _in_f2:
-                    _force_starter = _in_f3        # caso 2: F3 desempata
-                # caso 3: ninguna → gate lo filtra más abajo, no forzamos nada
+                if _avg_f1f2 >= 80:
+                    _force_starter = True          # 80+ min avg → titular claro, sin necesitar F3
+                elif _avg_f1f2 >= 30:
+                    _force_starter = _in_f3        # 30-80 min avg → F3 desempata
+                # avg < 30 → no forzar, gate lo filtra
                 if _force_starter:
                     _lu = lineups.setdefault(str(lineup_event_id), {}).setdefault("players", {})
                     _cur = _lu.get(_pid_str, {})
@@ -1640,22 +1667,35 @@ def main():
                     else:
                         proj["role"] = "Suplente"
 
-            # 2) Gate de F1+F2 — aplicar DESPUÉS del ajuste de minutos.
-            # Si un jugador no jugó en F1 ni F2, no es un titular del equipo.
-            # El F3 de rotación no cuenta: muchos equipos descansan titulares en F3.
-            # No se aplica a jugadores con STARTER_OVERRIDE o BAJA_OVERRIDE.
+            # 2) Gate — aplicar DESPUÉS del ajuste de minutos.
+            # avg_f1f2 < 30 → Suplente directo
+            # avg_f1f2 >= 30 pero no forzado a starter (ambiguo sin F3) → Rotacional cap
+            # No aplica a jugadores con override.
             if round_num == 4 and _pid_int not in STARTER_OVERRIDES and _pid_int not in BAJA_OVERRIDES:
-                _f1f2 = wc_f1f2_mins.get(_pid_str, 0)
-                if _f1f2 < 30:   # no jugó en F1 ni F2 → probable suplente/rotación F3
+                _avg_f1f2 = wc_avg_f1f2.get(_pid_str, 0.0)
+                _in_f3    = _pid_str in wc_starter_f3
+                if _avg_f1f2 < 30:
+                    # Directamente Suplente: no jugó en el Mundial o solo un par de minutos
                     old_pp = proj.get("p_play", 0.9)
                     new_pp = 0.20
-                    if old_pp > new_pp:   # solo baja, nunca sube
+                    if old_pp > new_pp:
                         proj["xpts"] = round(proj["xpts"] * (new_pp / old_pp), 2)
                     proj["p_play"]   = min(old_pp, new_pp)
                     proj["p_over60"] = min(old_pp, new_pp)
                     proj["exp_mins"] = 18
                     proj["mins_fac"] = round(18 / 90, 3)
                     proj["role"]     = "Suplente"
+                elif _avg_f1f2 < 80 and not _in_f3:
+                    # Jugó algo en F1/F2 pero no es titular claro y no confirma F3
+                    old_pp = proj.get("p_play", 0.9)
+                    new_pp = 0.45
+                    if old_pp > new_pp:
+                        proj["xpts"] = round(proj["xpts"] * (new_pp / old_pp), 2)
+                    proj["p_play"]   = min(old_pp, new_pp)
+                    proj["p_over60"] = min(old_pp, new_pp)
+                    proj["exp_mins"] = min(proj.get("exp_mins", 40), 40)
+                    proj["mins_fac"] = round(proj["exp_mins"] / 90, 3)
+                    proj["role"]     = "Rotacional"
 
             xbpr = min(round(_bpr_ev(pid_str, event_id), 3), 0.80)  # cap: un partido no puede garantizar BPR
 
