@@ -1,0 +1,1405 @@
+{
+  "player_id": 942156,
+  "fuente": "SofaScore",
+  "fecha_extraccion": "2026-05-20",
+  "perfil": {
+    "nombre": "Marco Collao",
+    "posicion": "M",
+    "edad": null,
+    "altura": 173,
+    "pie": "Right",
+    "pais": "Chile",
+    "club": "Audax Italiano",
+    "valor_eur": 760000
+  },
+  "estadisticas_temporada": [
+    {
+      "competicion": "Liga de Primera",
+      "temporada": "Primera División 2019",
+      "tournament_id": "11653",
+      "season_id": "22328",
+      "rating": 6.675,
+      "appearances": 16,
+      "minutesPlayed": 1137,
+      "goals": 0,
+      "assists": 2,
+      "yellowCards": 5,
+      "redCards": 0,
+      "tackles": 24,
+      "interceptions": 12,
+      "clearances": 3,
+      "aerialDuelsWon": 11,
+      "groundDuelsWon": 64,
+      "successfulDribbles": 16,
+      "keyPasses": 7,
+      "accuratePasses": 336,
+      "totalPasses": 432,
+      "accurateLongBalls": 19,
+      "totalLongBalls": 45,
+      "bigChancesCreated": 1,
+      "shotsOnTarget": 3,
+      "shotsOffTarget": 4
+    },
+    {
+      "competicion": "Liga de Primera",
+      "temporada": "Primera División 2023",
+      "tournament_id": "11653",
+      "season_id": "48017",
+      "rating": 6.752380952381,
+      "appearances": 21,
+      "minutesPlayed": 1131,
+      "goals": 2,
+      "assists": 1,
+      "yellowCards": 4,
+      "redCards": 0,
+      "tackles": 31,
+      "interceptions": 17,
+      "clearances": 17,
+      "aerialDuelsWon": 13,
+      "groundDuelsWon": 54,
+      "successfulDribbles": 10,
+      "keyPasses": 12,
+      "accuratePasses": 373,
+      "totalPasses": 492,
+      "accurateLongBalls": 31,
+      "totalLongBalls": 80,
+      "bigChancesCreated": 0,
+      "shotsOnTarget": 2,
+      "shotsOffTarget": 12
+    },
+    {
+      "competicion": "CONMEBOL Sudamericana",
+      "temporada": "Copa Sudamericana 2019",
+      "tournament_id": "480",
+      "season_id": "19990",
+      "rating": 6.15,
+      "appearances": 2,
+      "minutesPlayed": 142,
+      "goals": 0,
+      "assists": 0,
+      "yellowCards": 0,
+      "redCards": 0,
+      "tackles": 1,
+      "interceptions": 1,
+      "clearances": 1,
+      "aerialDuelsWon": 0,
+      "groundDuelsWon": 6,
+      "successfulDribbles": 3,
+      "keyPasses": 0,
+      "accuratePasses": 24,
+      "totalPasses": 32,
+      "accurateLongBalls": 1,
+      "totalLongBalls": 3,
+      "bigChancesCreated": 0,
+      "shotsOnTarget": 1,
+      "shotsOffTarget": 0
+    },
+    {
+      "competicion": "CONMEBOL Sudamericana",
+      "temporada": "Copa Sudamericana 2023",
+      "tournament_id": "480",
+      "season_id": "47968",
+      "rating": 6.45,
+      "appearances": 2,
+      "minutesPlayed": 31,
+      "goals": 0,
+      "assists": 0,
+      "yellowCards": 0,
+      "redCards": 0,
+      "tackles": 1,
+      "interceptions": 2,
+      "clearances": 0,
+      "aerialDuelsWon": 0,
+      "groundDuelsWon": 3,
+      "successfulDribbles": 1,
+      "keyPasses": 0,
+      "accuratePasses": 5,
+      "totalPasses": 8,
+      "accurateLongBalls": 1,
+      "totalLongBalls": 2,
+      "bigChancesCreated": 0,
+      "shotsOnTarget": 0,
+      "shotsOffTarget": 0
+    },
+    {
+      "competicion": "Copa Chile",
+      "temporada": "Copa Chile 2025",
+      "tournament_id": "1221",
+      "season_id": "71100",
+      "appearances": 11,
+      "minutesPlayed": 785,
+      "goals": 0,
+      "assists": 1,
+      "yellowCards": 3,
+      "redCards": 0
+    },
+    {
+      "competicion": "Copa de la Liga ",
+      "temporada": "2026 ",
+      "tournament_id": "32734",
+      "season_id": "90922",
+      "appearances": 5,
+      "minutesPlayed": 386,
+      "goals": 0,
+      "assists": 0,
+      "yellowCards": 0,
+      "redCards": 0
+    }
+  ],
+  "_raw_keys": [
+    "perfil",
+    "statistics_seasons",
+    "unique-tournament_11653_season_22328_statistics_overall",
+    "unique-tournament_11653_season_48017_statistics_overall",
+    "unique-tournament_480_season_19990_statistics_overall",
+    "unique-tournament_480_season_47968_statistics_overall",
+    "unique-tournament_1221_season_71100_statistics_overall",
+    "unique-tournament_32734_season_90922_statistics_overall"
+  ],
+  "_raw": {
+    "perfil": {
+      "player": {
+        "name": "Marco Collao",
+        "slug": "marco-collao",
+        "shortName": "M. Collao",
+        "team": {
+          "name": "Audax Italiano",
+          "slug": "audax-italiano",
+          "shortName": "Audax Italiano",
+          "gender": "M",
+          "sport": {
+            "name": "Football",
+            "slug": "football",
+            "id": 1
+          },
+          "tournament": {
+            "name": "Liga de Primera",
+            "slug": "primera-division",
+            "category": {
+              "name": "Chile",
+              "slug": "chile",
+              "sport": {
+                "name": "Football",
+                "slug": "football",
+                "id": 1
+              },
+              "priority": 0,
+              "country": {
+                "alpha2": "CL",
+                "alpha3": "CHL",
+                "name": "Chile",
+                "slug": "chile"
+              },
+              "id": 49,
+              "flag": "chile",
+              "alpha2": "CL",
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "ar": "تشيلي",
+                  "ru": "Чили"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "uniqueTournament": {
+              "name": "Liga de Primera",
+              "slug": "primera-division",
+              "primaryColorHex": "#ed1b2d",
+              "secondaryColorHex": "#006bc4",
+              "category": {
+                "name": "Chile",
+                "slug": "chile",
+                "sport": {
+                  "name": "Football",
+                  "slug": "football",
+                  "id": 1
+                },
+                "priority": 0,
+                "country": {
+                  "alpha2": "CL",
+                  "alpha3": "CHL",
+                  "name": "Chile",
+                  "slug": "chile"
+                },
+                "id": 49,
+                "flag": "chile",
+                "alpha2": "CL",
+                "fieldTranslations": {
+                  "nameTranslation": {
+                    "ar": "تشيلي",
+                    "ru": "Чили"
+                  },
+                  "shortNameTranslation": {}
+                }
+              },
+              "userCount": 19996,
+              "country": {},
+              "id": 11653,
+              "displayInverseHomeAwayTeams": false,
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "ar": "دوري الدرجة الأولى",
+                  "bn": "লীগা ডে প্রাইমার",
+                  "hi": "लीगा डे प्राइमेरा"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "priority": 300,
+            "isLive": false,
+            "id": 64475,
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "دوري الدرجة الأولى",
+                "bn": "লিগা ডি প্রাইমার",
+                "hi": "लीगा डे प्राइमेरा"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "primaryUniqueTournament": {
+            "name": "Liga de Primera",
+            "slug": "primera-division",
+            "primaryColorHex": "#ed1b2d",
+            "secondaryColorHex": "#006bc4",
+            "category": {
+              "name": "Chile",
+              "slug": "chile",
+              "sport": {
+                "name": "Football",
+                "slug": "football",
+                "id": 1
+              },
+              "priority": 0,
+              "country": {
+                "alpha2": "CL",
+                "alpha3": "CHL",
+                "name": "Chile",
+                "slug": "chile"
+              },
+              "id": 49,
+              "flag": "chile",
+              "alpha2": "CL",
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "ar": "تشيلي",
+                  "ru": "Чили"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "userCount": 19996,
+            "country": {},
+            "id": 11653,
+            "displayInverseHomeAwayTeams": false,
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "دوري الدرجة الأولى",
+                "bn": "লীগা ডে প্রাইমার",
+                "hi": "लीगा डे प्राइमेरा"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "userCount": 14073,
+          "nameCode": "AUD",
+          "disabled": false,
+          "national": false,
+          "type": 0,
+          "country": {
+            "alpha2": "CL",
+            "alpha3": "CHL",
+            "name": "Chile",
+            "slug": "chile"
+          },
+          "id": 3162,
+          "teamColors": {
+            "primary": "#00cc99",
+            "secondary": "#00cc99",
+            "text": "#00cc99"
+          },
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "أوداكس إيتاليانو",
+              "hi": "अउडक्स ईटालियानो",
+              "ru": "Аудакс Италиано"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "position": "M",
+        "positionsDetailed": [
+          "MC",
+          "DM"
+        ],
+        "jerseyNumber": "8",
+        "height": 173,
+        "dateOfBirth": "1998-04-11T00:00:00+00:00",
+        "preferredFoot": "Right",
+        "userCount": 39,
+        "gender": "M",
+        "country": {
+          "alpha2": "CL",
+          "alpha3": "CHL",
+          "name": "Chile",
+          "slug": "chile"
+        },
+        "id": 942156,
+        "shirtNumber": 8,
+        "dateOfBirthTimestamp": 892252800,
+        "contractUntilTimestamp": 1798675200,
+        "proposedMarketValue": 760000,
+        "proposedMarketValueRaw": {
+          "value": 760000,
+          "currency": "EUR"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "ماركو كوللاو"
+          },
+          "shortNameTranslation": {
+            "ar": "م. كوللاو"
+          }
+        }
+      }
+    },
+    "statistics_seasons": {
+      "uniqueTournamentSeasons": [
+        {
+          "uniqueTournament": {
+            "name": "CONMEBOL Sudamericana",
+            "slug": "conmebol-sudamericana",
+            "primaryColorHex": "#e3c000",
+            "secondaryColorHex": "#13489c",
+            "category": {
+              "name": "South America",
+              "slug": "south-america",
+              "sport": {
+                "name": "Football",
+                "slug": "football",
+                "id": 1
+              },
+              "priority": 18,
+              "id": 1470,
+              "flag": "south-america",
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "ar": "أمريكا الجنوبية",
+                  "ru": "Южная Америка"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "userCount": 122252,
+            "id": 480,
+            "displayInverseHomeAwayTeams": false,
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "كأس أمريكا الجنوبية لكرة القدم",
+                "bn": "কনমেবল সুদাআমেরিকানা",
+                "hi": "कॉनमेबोल सुदामेरिकाना"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "seasons": [
+            {
+              "name": "CONMEBOL Sudamericana 2026",
+              "year": "2026",
+              "editor": false,
+              "id": 87770
+            },
+            {
+              "name": "Copa Sudamericana 2023",
+              "year": "2023",
+              "editor": false,
+              "seasonCoverageInfo": {},
+              "id": 47968
+            },
+            {
+              "name": "Copa Sudamericana 2022",
+              "year": "2022",
+              "editor": false,
+              "id": 40175
+            },
+            {
+              "name": "Copa Sudamericana 2021",
+              "year": "2021",
+              "editor": false,
+              "id": 35645
+            },
+            {
+              "name": "Copa Sudamericana 2019",
+              "year": "2019",
+              "editor": false,
+              "id": 19990
+            }
+          ]
+        },
+        {
+          "uniqueTournament": {
+            "name": "Copa de la Liga ",
+            "slug": "copa-de-la-liga",
+            "category": {
+              "name": "Chile",
+              "slug": "chile",
+              "sport": {
+                "name": "Football",
+                "slug": "football",
+                "id": 1
+              },
+              "priority": 0,
+              "id": 49,
+              "flag": "chile",
+              "alpha2": "CL",
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "ar": "تشيلي",
+                  "ru": "Чили"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "userCount": 3725,
+            "id": 32734,
+            "displayInverseHomeAwayTeams": false,
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "كأس الدوري"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "seasons": [
+            {
+              "name": "2026 ",
+              "year": "2026 ",
+              "editor": false,
+              "seasonCoverageInfo": {
+                "editorCoverageLevel": 1
+              },
+              "id": 90922
+            }
+          ]
+        },
+        {
+          "uniqueTournament": {
+            "name": "Liga de Primera",
+            "slug": "primera-division",
+            "primaryColorHex": "#ed1b2d",
+            "secondaryColorHex": "#006bc4",
+            "category": {
+              "name": "Chile",
+              "slug": "chile",
+              "sport": {
+                "name": "Football",
+                "slug": "football",
+                "id": 1
+              },
+              "priority": 0,
+              "id": 49,
+              "flag": "chile",
+              "alpha2": "CL",
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "ar": "تشيلي",
+                  "ru": "Чили"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "userCount": 19996,
+            "id": 11653,
+            "displayInverseHomeAwayTeams": false,
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "دوري الدرجة الأولى",
+                "bn": "লীগা ডে প্রাইমার",
+                "hi": "लीगा डे प्राइमेरा"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "seasons": [
+            {
+              "name": "Primera Division 2026",
+              "year": "2026",
+              "editor": false,
+              "id": 88493
+            },
+            {
+              "name": "Liga de Primera 2025",
+              "year": "2025",
+              "editor": false,
+              "id": 71131
+            },
+            {
+              "name": "Primera División 2024",
+              "year": "2024",
+              "editor": false,
+              "id": 57883
+            },
+            {
+              "name": "Primera División 2023",
+              "year": "2023",
+              "editor": false,
+              "seasonCoverageInfo": {},
+              "id": 48017
+            },
+            {
+              "name": "Primera División 2022",
+              "year": "2022",
+              "editor": false,
+              "id": 40515
+            },
+            {
+              "name": "Primera División 2021",
+              "year": "2021",
+              "editor": false,
+              "id": 36048
+            },
+            {
+              "name": "Primera División 2020",
+              "year": "2020",
+              "editor": false,
+              "id": 26951
+            },
+            {
+              "name": "Primera División 2019",
+              "year": "2019",
+              "editor": false,
+              "id": 22328
+            },
+            {
+              "name": "Primera División 2018",
+              "year": "2018",
+              "editor": false,
+              "id": 15995
+            }
+          ]
+        },
+        {
+          "uniqueTournament": {
+            "name": "Copa Chile",
+            "slug": "copa-chile",
+            "primaryColorHex": "#004f91",
+            "secondaryColorHex": "#ce1329",
+            "category": {
+              "name": "Chile",
+              "slug": "chile",
+              "sport": {
+                "name": "Football",
+                "slug": "football",
+                "id": 1
+              },
+              "priority": 0,
+              "id": 49,
+              "flag": "chile",
+              "alpha2": "CL",
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "ar": "تشيلي",
+                  "ru": "Чили"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "userCount": 6400,
+            "id": 1221,
+            "displayInverseHomeAwayTeams": false,
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "كأس تشيلي",
+                "bn": "কোপা চিলি",
+                "hi": "कोपा चिली"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "seasons": [
+            {
+              "name": "Copa Chile 2025",
+              "year": "2025",
+              "editor": false,
+              "seasonCoverageInfo": {
+                "editorCoverageLevel": 1
+              },
+              "id": 71100
+            }
+          ]
+        }
+      ],
+      "typesMap": {
+        "11653": {
+          "22328": [
+            "overall",
+            "home",
+            "away"
+          ],
+          "48017": [
+            "overall",
+            "home",
+            "away"
+          ],
+          "71131": [
+            "overall",
+            "home",
+            "away"
+          ],
+          "36048": [
+            "overall",
+            "home",
+            "away"
+          ],
+          "40515": [
+            "overall",
+            "home",
+            "away"
+          ],
+          "88493": [
+            "overall",
+            "home",
+            "away"
+          ],
+          "26951": [
+            "overall",
+            "home",
+            "away"
+          ],
+          "15995": [
+            "overall",
+            "home",
+            "away"
+          ],
+          "57883": [
+            "overall",
+            "home",
+            "away"
+          ]
+        },
+        "480": {
+          "19990": [
+            "overall",
+            "home",
+            "away"
+          ],
+          "47968": [
+            "overall",
+            "home",
+            "away"
+          ],
+          "87770": [
+            "overall",
+            "home",
+            "away"
+          ],
+          "40175": [
+            "overall",
+            "home",
+            "away"
+          ],
+          "35645": [
+            "overall",
+            "home"
+          ]
+        },
+        "1221": {
+          "71100": [
+            "overall"
+          ]
+        },
+        "32734": {
+          "90922": [
+            "overall"
+          ]
+        }
+      }
+    },
+    "unique-tournament_11653_season_22328_statistics_overall": {
+      "statistics": {
+        "rating": 6.675,
+        "totalRating": 106.8,
+        "countRating": 16,
+        "goals": 0,
+        "bigChancesCreated": 1,
+        "bigChancesMissed": 1,
+        "assists": 2,
+        "goalsAssistsSum": 2,
+        "accuratePasses": 336,
+        "inaccuratePasses": 96,
+        "totalPasses": 432,
+        "accuratePassesPercentage": 77.777777777778,
+        "accurateOwnHalfPasses": 142,
+        "accurateOppositionHalfPasses": 200,
+        "accurateFinalThirdPasses": 102,
+        "keyPasses": 7,
+        "successfulDribbles": 16,
+        "successfulDribblesPercentage": 57.142857142857,
+        "tackles": 24,
+        "interceptions": 12,
+        "yellowCards": 5,
+        "directRedCards": 0,
+        "redCards": 0,
+        "accurateCrosses": 6,
+        "accurateCrossesPercentage": 26.086956521739,
+        "totalShots": 12,
+        "shotsOnTarget": 3,
+        "shotsOffTarget": 4,
+        "groundDuelsWon": 64,
+        "groundDuelsWonPercentage": 52.459016393443,
+        "aerialDuelsWon": 11,
+        "aerialDuelsWonPercentage": 44,
+        "totalDuelsWon": 75,
+        "totalDuelsWonPercentage": 51.020408163265,
+        "minutesPlayed": 1137,
+        "goalConversionPercentage": 0,
+        "penaltiesTaken": 0,
+        "penaltyGoals": 0,
+        "penaltyWon": 0,
+        "penaltyConceded": 0,
+        "shotFromSetPiece": 0,
+        "freeKickGoal": 0,
+        "goalsFromInsideTheBox": 0,
+        "goalsFromOutsideTheBox": 0,
+        "shotsFromInsideTheBox": 4,
+        "shotsFromOutsideTheBox": 8,
+        "headedGoals": 0,
+        "leftFootGoals": 0,
+        "rightFootGoals": 0,
+        "accurateLongBalls": 19,
+        "accurateLongBallsPercentage": 42.222222222222,
+        "clearances": 3,
+        "errorLeadToGoal": 0,
+        "errorLeadToShot": 0,
+        "dispossessed": 12,
+        "possessionLost": 169,
+        "possessionWonAttThird": 5,
+        "totalChippedPasses": 39,
+        "accurateChippedPasses": 17,
+        "touches": 663,
+        "wasFouled": 24,
+        "fouls": 16,
+        "hitWoodwork": 0,
+        "ownGoals": 0,
+        "dribbledPast": 18,
+        "offsides": 1,
+        "blockedShots": 5,
+        "passToAssist": 0,
+        "saves": 0,
+        "cleanSheet": 1,
+        "penaltyFaced": 0,
+        "penaltySave": 0,
+        "savedShotsFromInsideTheBox": 0,
+        "savedShotsFromOutsideTheBox": 0,
+        "goalsConcededInsideTheBox": 18,
+        "goalsConcededOutsideTheBox": 2,
+        "punches": 0,
+        "runsOut": 0,
+        "successfulRunsOut": 0,
+        "highClaims": 0,
+        "crossesNotClaimed": 0,
+        "matchesStarted": 15,
+        "penaltyConversion": 0,
+        "setPieceConversion": 0,
+        "totalAttemptAssist": 7,
+        "totalContest": 28,
+        "totalCross": 23,
+        "duelLost": 72,
+        "aerialLost": 14,
+        "attemptPenaltyMiss": 0,
+        "attemptPenaltyPost": 0,
+        "attemptPenaltyTarget": 0,
+        "totalLongBalls": 45,
+        "goalsConceded": 20,
+        "tacklesWon": 16,
+        "tacklesWonPercentage": 66.666666666667,
+        "scoringFrequency": 0,
+        "yellowRedCards": 0,
+        "savesCaught": 0,
+        "savesParried": 0,
+        "totalOwnHalfPasses": 165,
+        "totalOppositionHalfPasses": 290,
+        "totwAppearances": 0,
+        "id": 192345,
+        "type": "overall",
+        "appearances": 16,
+        "statisticsType": {
+          "sportSlug": "football",
+          "statisticsType": "player"
+        }
+      },
+      "team": {
+        "name": "Club Deportes Antofagasta",
+        "slug": "antofagasta",
+        "shortName": "Antofagasta",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "userCount": 3671,
+        "nameCode": "ANT",
+        "disabled": false,
+        "national": false,
+        "type": 0,
+        "id": 5601,
+        "teamColors": {
+          "primary": "#153ac5",
+          "secondary": "#ffffff",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "أنتوفاغاستا",
+            "ru": "Антофагаста"
+          },
+          "shortNameTranslation": {
+            "ar": "أنتوفاغاستا"
+          }
+        }
+      }
+    },
+    "unique-tournament_11653_season_48017_statistics_overall": {
+      "statistics": {
+        "rating": 6.752380952381,
+        "totalRating": 141.8,
+        "countRating": 21,
+        "goals": 2,
+        "bigChancesCreated": 0,
+        "bigChancesMissed": 0,
+        "assists": 1,
+        "goalsAssistsSum": 3,
+        "accuratePasses": 373,
+        "inaccuratePasses": 119,
+        "totalPasses": 492,
+        "accuratePassesPercentage": 75.813008130081,
+        "accurateOwnHalfPasses": 184,
+        "accurateOppositionHalfPasses": 192,
+        "accurateFinalThirdPasses": 84,
+        "keyPasses": 12,
+        "successfulDribbles": 10,
+        "successfulDribblesPercentage": 58.823529411765,
+        "tackles": 31,
+        "interceptions": 17,
+        "yellowCards": 4,
+        "directRedCards": 0,
+        "redCards": 0,
+        "accurateCrosses": 3,
+        "accurateCrossesPercentage": 20,
+        "totalShots": 16,
+        "shotsOnTarget": 2,
+        "shotsOffTarget": 12,
+        "groundDuelsWon": 54,
+        "groundDuelsWonPercentage": 54.545454545455,
+        "aerialDuelsWon": 13,
+        "aerialDuelsWonPercentage": 54.166666666667,
+        "totalDuelsWon": 67,
+        "totalDuelsWonPercentage": 54.471544715447,
+        "minutesPlayed": 1131,
+        "goalConversionPercentage": 12.5,
+        "penaltiesTaken": 0,
+        "penaltyGoals": 0,
+        "penaltyWon": 0,
+        "penaltyConceded": 0,
+        "shotFromSetPiece": 0,
+        "freeKickGoal": 0,
+        "goalsFromInsideTheBox": 1,
+        "goalsFromOutsideTheBox": 1,
+        "shotsFromInsideTheBox": 3,
+        "shotsFromOutsideTheBox": 13,
+        "headedGoals": 0,
+        "leftFootGoals": 0,
+        "rightFootGoals": 2,
+        "accurateLongBalls": 31,
+        "accurateLongBallsPercentage": 38.75,
+        "clearances": 17,
+        "errorLeadToGoal": 0,
+        "errorLeadToShot": 0,
+        "dispossessed": 11,
+        "possessionLost": 160,
+        "possessionWonAttThird": 3,
+        "totalChippedPasses": 65,
+        "accurateChippedPasses": 34,
+        "touches": 670,
+        "wasFouled": 13,
+        "fouls": 20,
+        "hitWoodwork": 0,
+        "ownGoals": 0,
+        "dribbledPast": 8,
+        "offsides": 1,
+        "blockedShots": 2,
+        "passToAssist": 0,
+        "saves": 0,
+        "cleanSheet": 2,
+        "penaltyFaced": 0,
+        "penaltySave": 0,
+        "savedShotsFromInsideTheBox": 0,
+        "savedShotsFromOutsideTheBox": 0,
+        "goalsConcededInsideTheBox": 18,
+        "goalsConcededOutsideTheBox": 2,
+        "punches": 0,
+        "runsOut": 0,
+        "successfulRunsOut": 0,
+        "highClaims": 0,
+        "crossesNotClaimed": 0,
+        "matchesStarted": 11,
+        "penaltyConversion": 0,
+        "setPieceConversion": 0,
+        "totalAttemptAssist": 12,
+        "totalContest": 17,
+        "totalCross": 15,
+        "duelLost": 56,
+        "aerialLost": 11,
+        "attemptPenaltyMiss": 0,
+        "attemptPenaltyPost": 0,
+        "attemptPenaltyTarget": 0,
+        "totalLongBalls": 80,
+        "goalsConceded": 20,
+        "tacklesWon": 26,
+        "tacklesWonPercentage": 83.870967741935,
+        "scoringFrequency": 565.5,
+        "yellowRedCards": 0,
+        "savesCaught": 0,
+        "savesParried": 0,
+        "totalOwnHalfPasses": 221,
+        "totalOppositionHalfPasses": 286,
+        "totwAppearances": 0,
+        "goalKicks": 0,
+        "ballRecovery": 98,
+        "id": 933235,
+        "type": "overall",
+        "appearances": 21,
+        "statisticsType": {
+          "sportSlug": "football",
+          "statisticsType": "player"
+        }
+      },
+      "team": {
+        "name": "Audax Italiano",
+        "slug": "audax-italiano",
+        "shortName": "Audax Italiano",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "userCount": 14073,
+        "nameCode": "AUD",
+        "disabled": false,
+        "national": false,
+        "type": 0,
+        "id": 3162,
+        "teamColors": {
+          "primary": "#00cc99",
+          "secondary": "#00cc99",
+          "text": "#00cc99"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "أوداكس إيتاليانو",
+            "hi": "अउडक्स ईटालियानो",
+            "ru": "Аудакс Италиано"
+          },
+          "shortNameTranslation": {}
+        }
+      }
+    },
+    "unique-tournament_480_season_19990_statistics_overall": {
+      "statistics": {
+        "rating": 6.15,
+        "totalRating": 12.3,
+        "countRating": 2,
+        "goals": 0,
+        "bigChancesCreated": 0,
+        "bigChancesMissed": 0,
+        "assists": 0,
+        "goalsAssistsSum": 0,
+        "accuratePasses": 24,
+        "inaccuratePasses": 8,
+        "totalPasses": 32,
+        "accuratePassesPercentage": 75,
+        "accurateOwnHalfPasses": 12,
+        "accurateOppositionHalfPasses": 12,
+        "accurateFinalThirdPasses": 5,
+        "keyPasses": 0,
+        "successfulDribbles": 3,
+        "successfulDribblesPercentage": 60,
+        "tackles": 1,
+        "interceptions": 1,
+        "yellowCards": 0,
+        "directRedCards": 0,
+        "redCards": 0,
+        "accurateCrosses": 0,
+        "accurateCrossesPercentage": 0,
+        "totalShots": 2,
+        "shotsOnTarget": 1,
+        "shotsOffTarget": 0,
+        "groundDuelsWon": 6,
+        "groundDuelsWonPercentage": 37.5,
+        "aerialDuelsWon": 0,
+        "aerialDuelsWonPercentage": 0,
+        "totalDuelsWon": 6,
+        "totalDuelsWonPercentage": 37.5,
+        "minutesPlayed": 142,
+        "goalConversionPercentage": 0,
+        "penaltiesTaken": 0,
+        "penaltyGoals": 0,
+        "penaltyWon": 0,
+        "penaltyConceded": 0,
+        "shotFromSetPiece": 0,
+        "freeKickGoal": 0,
+        "goalsFromInsideTheBox": 0,
+        "goalsFromOutsideTheBox": 0,
+        "shotsFromInsideTheBox": 0,
+        "shotsFromOutsideTheBox": 2,
+        "headedGoals": 0,
+        "leftFootGoals": 0,
+        "rightFootGoals": 0,
+        "accurateLongBalls": 1,
+        "accurateLongBallsPercentage": 33.333333333333,
+        "clearances": 1,
+        "errorLeadToGoal": 0,
+        "errorLeadToShot": 0,
+        "dispossessed": 4,
+        "possessionLost": 17,
+        "possessionWonAttThird": 1,
+        "totalChippedPasses": 4,
+        "accurateChippedPasses": 2,
+        "touches": 54,
+        "wasFouled": 2,
+        "fouls": 2,
+        "hitWoodwork": 0,
+        "ownGoals": 0,
+        "dribbledPast": 3,
+        "offsides": 0,
+        "blockedShots": 1,
+        "passToAssist": 0,
+        "saves": 0,
+        "cleanSheet": 0,
+        "penaltyFaced": 0,
+        "penaltySave": 0,
+        "savedShotsFromInsideTheBox": 0,
+        "savedShotsFromOutsideTheBox": 0,
+        "goalsConcededInsideTheBox": 1,
+        "goalsConcededOutsideTheBox": 0,
+        "punches": 0,
+        "runsOut": 0,
+        "successfulRunsOut": 0,
+        "highClaims": 0,
+        "crossesNotClaimed": 0,
+        "matchesStarted": 2,
+        "penaltyConversion": 0,
+        "setPieceConversion": 0,
+        "totalAttemptAssist": 0,
+        "totalContest": 5,
+        "totalCross": 1,
+        "duelLost": 10,
+        "aerialLost": 0,
+        "attemptPenaltyMiss": 0,
+        "attemptPenaltyPost": 0,
+        "attemptPenaltyTarget": 0,
+        "totalLongBalls": 3,
+        "goalsConceded": 1,
+        "tacklesWon": 1,
+        "tacklesWonPercentage": 100,
+        "scoringFrequency": 0,
+        "yellowRedCards": 0,
+        "savesCaught": 0,
+        "savesParried": 0,
+        "totalOwnHalfPasses": 13,
+        "totalOppositionHalfPasses": 20,
+        "totwAppearances": 0,
+        "id": 227908,
+        "type": "overall",
+        "appearances": 2,
+        "statisticsType": {
+          "sportSlug": "football",
+          "statisticsType": "player"
+        }
+      },
+      "team": {
+        "name": "Club Deportes Antofagasta",
+        "slug": "antofagasta",
+        "shortName": "Antofagasta",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "userCount": 3671,
+        "nameCode": "ANT",
+        "disabled": false,
+        "national": false,
+        "type": 0,
+        "id": 5601,
+        "teamColors": {
+          "primary": "#153ac5",
+          "secondary": "#ffffff",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "أنتوفاغاستا",
+            "ru": "Антофагаста"
+          },
+          "shortNameTranslation": {
+            "ar": "أنتوفاغاستا"
+          }
+        }
+      }
+    },
+    "unique-tournament_480_season_47968_statistics_overall": {
+      "statistics": {
+        "rating": 6.45,
+        "totalRating": 12.9,
+        "countRating": 2,
+        "goals": 0,
+        "bigChancesCreated": 0,
+        "bigChancesMissed": 0,
+        "assists": 0,
+        "goalsAssistsSum": 0,
+        "accuratePasses": 5,
+        "inaccuratePasses": 3,
+        "totalPasses": 8,
+        "accuratePassesPercentage": 62.5,
+        "accurateOwnHalfPasses": 2,
+        "accurateOppositionHalfPasses": 3,
+        "accurateFinalThirdPasses": 0,
+        "keyPasses": 0,
+        "successfulDribbles": 1,
+        "successfulDribblesPercentage": 100,
+        "tackles": 1,
+        "interceptions": 2,
+        "yellowCards": 0,
+        "directRedCards": 0,
+        "redCards": 0,
+        "accurateCrosses": 0,
+        "accurateCrossesPercentage": 0,
+        "totalShots": 0,
+        "shotsOnTarget": 0,
+        "shotsOffTarget": 0,
+        "groundDuelsWon": 3,
+        "groundDuelsWonPercentage": 50,
+        "aerialDuelsWon": 0,
+        "aerialDuelsWonPercentage": 0,
+        "totalDuelsWon": 3,
+        "totalDuelsWonPercentage": 50,
+        "minutesPlayed": 31,
+        "goalConversionPercentage": 0,
+        "penaltiesTaken": 0,
+        "penaltyGoals": 0,
+        "penaltyWon": 0,
+        "penaltyConceded": 0,
+        "shotFromSetPiece": 0,
+        "freeKickGoal": 0,
+        "goalsFromInsideTheBox": 0,
+        "goalsFromOutsideTheBox": 0,
+        "shotsFromInsideTheBox": 0,
+        "shotsFromOutsideTheBox": 0,
+        "headedGoals": 0,
+        "leftFootGoals": 0,
+        "rightFootGoals": 0,
+        "accurateLongBalls": 1,
+        "accurateLongBallsPercentage": 50,
+        "clearances": 0,
+        "errorLeadToGoal": 0,
+        "errorLeadToShot": 0,
+        "dispossessed": 0,
+        "possessionLost": 4,
+        "possessionWonAttThird": 0,
+        "totalChippedPasses": 2,
+        "accurateChippedPasses": 0,
+        "touches": 16,
+        "wasFouled": 1,
+        "fouls": 1,
+        "hitWoodwork": 0,
+        "ownGoals": 0,
+        "dribbledPast": 2,
+        "offsides": 0,
+        "blockedShots": 0,
+        "passToAssist": 0,
+        "saves": 0,
+        "cleanSheet": 0,
+        "penaltyFaced": 0,
+        "penaltySave": 0,
+        "savedShotsFromInsideTheBox": 0,
+        "savedShotsFromOutsideTheBox": 0,
+        "goalsConcededInsideTheBox": 2,
+        "goalsConcededOutsideTheBox": 0,
+        "punches": 0,
+        "runsOut": 0,
+        "successfulRunsOut": 0,
+        "highClaims": 0,
+        "crossesNotClaimed": 0,
+        "matchesStarted": 0,
+        "penaltyConversion": 0,
+        "setPieceConversion": 0,
+        "totalAttemptAssist": 0,
+        "totalContest": 1,
+        "totalCross": 0,
+        "duelLost": 3,
+        "aerialLost": 0,
+        "attemptPenaltyMiss": 0,
+        "attemptPenaltyPost": 0,
+        "attemptPenaltyTarget": 0,
+        "totalLongBalls": 2,
+        "goalsConceded": 2,
+        "tacklesWon": 1,
+        "tacklesWonPercentage": 100,
+        "scoringFrequency": 0,
+        "yellowRedCards": 0,
+        "savesCaught": 0,
+        "savesParried": 0,
+        "totalOwnHalfPasses": 3,
+        "totalOppositionHalfPasses": 5,
+        "totwAppearances": 0,
+        "goalKicks": 0,
+        "ballRecovery": 3,
+        "id": 964608,
+        "type": "overall",
+        "appearances": 2,
+        "statisticsType": {
+          "sportSlug": "football",
+          "statisticsType": "player"
+        }
+      },
+      "team": {
+        "name": "Audax Italiano",
+        "slug": "audax-italiano",
+        "shortName": "Audax Italiano",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "userCount": 14073,
+        "nameCode": "AUD",
+        "disabled": false,
+        "national": false,
+        "type": 0,
+        "id": 3162,
+        "teamColors": {
+          "primary": "#00cc99",
+          "secondary": "#00cc99",
+          "text": "#00cc99"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "أوداكس إيتاليانو",
+            "hi": "अउडक्स ईटालियानो",
+            "ru": "Аудакс Италиано"
+          },
+          "shortNameTranslation": {}
+        }
+      }
+    },
+    "unique-tournament_1221_season_71100_statistics_overall": {
+      "statistics": {
+        "goals": 0,
+        "assists": 1,
+        "yellowCards": 3,
+        "redCards": 0,
+        "minutesPlayed": 785,
+        "penaltiesTaken": 0,
+        "penaltyGoals": 0,
+        "ownGoals": 0,
+        "cleanSheet": 3,
+        "matchesStarted": 9,
+        "goalsConceded": 3,
+        "yellowRedCards": 0,
+        "id": 2046527,
+        "type": "overall",
+        "appearances": 11,
+        "statisticsType": {
+          "sportSlug": "football",
+          "statisticsType": "player"
+        }
+      },
+      "team": {
+        "name": "Audax Italiano",
+        "slug": "audax-italiano",
+        "shortName": "Audax Italiano",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "userCount": 14073,
+        "nameCode": "AUD",
+        "disabled": false,
+        "national": false,
+        "type": 0,
+        "id": 3162,
+        "teamColors": {
+          "primary": "#00cc99",
+          "secondary": "#00cc99",
+          "text": "#00cc99"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "أوداكس إيتاليانو",
+            "hi": "अउडक्स ईटालियानो",
+            "ru": "Аудакс Италиано"
+          },
+          "shortNameTranslation": {}
+        }
+      }
+    },
+    "unique-tournament_32734_season_90922_statistics_overall": {
+      "statistics": {
+        "goals": 0,
+        "assists": 0,
+        "yellowCards": 0,
+        "redCards": 0,
+        "minutesPlayed": 386,
+        "penaltiesTaken": 0,
+        "penaltyGoals": 0,
+        "ownGoals": 0,
+        "matchesStarted": 5,
+        "yellowRedCards": 0,
+        "id": 2748640,
+        "type": "overall",
+        "appearances": 5,
+        "statisticsType": {
+          "sportSlug": "football",
+          "statisticsType": "player"
+        }
+      },
+      "team": {
+        "name": "Audax Italiano",
+        "slug": "audax-italiano",
+        "shortName": "Audax Italiano",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "userCount": 14073,
+        "nameCode": "AUD",
+        "disabled": false,
+        "national": false,
+        "type": 0,
+        "id": 3162,
+        "teamColors": {
+          "primary": "#00cc99",
+          "secondary": "#00cc99",
+          "text": "#00cc99"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "أوداكس إيتاليانو",
+            "hi": "अउडक्स ईटालियानो",
+            "ru": "Аудакс Италиано"
+          },
+          "shortNameTranslation": {}
+        }
+      }
+    }
+  }
+}

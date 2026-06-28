@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agencias de Representación — Argentina</title>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#0d1117;--bg2:#161b22;--bg3:#21262d;--border:#30363d;
+  --text:#e6edf3;--text2:#8b949e;--accent:#58a6ff;
+  --green:#3fb950;--yellow:#d29922;--red:#f85149;--radius:8px;
+}
+body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:14px;line-height:1.5;min-height:100vh;}
+.container{max-width:1400px;margin:0 auto;padding:24px 20px;}
+.header{border-bottom:1px solid var(--border);padding-bottom:24px;margin-bottom:32px;}
+.header-title{font-size:26px;font-weight:700;letter-spacing:-0.3px;}
+.header-subtitle{margin-top:6px;color:var(--text2);font-size:14px;}
+.header-pills{display:flex;gap:10px;margin-top:14px;flex-wrap:wrap;}
+.pill{background:var(--bg3);border:1px solid var(--border);border-radius:20px;padding:4px 12px;font-size:12px;color:var(--text2);}
+.pill strong{color:var(--text);}
+.section{margin-bottom:40px;}
+.section-title{font-size:16px;font-weight:600;margin-bottom:16px;padding-bottom:8px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:8px;}
+.section-title .badge{font-size:11px;font-weight:500;background:var(--bg3);border:1px solid var(--border);border-radius:4px;padding:2px 7px;color:var(--text2);}
+.cards-row{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:20px;}
+.card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:16px 20px;flex:1;min-width:160px;}
+.card-label{font-size:11px;text-transform:uppercase;letter-spacing:0.5px;color:var(--text2);margin-bottom:6px;}
+.card-value{font-size:22px;font-weight:700;}
+.card-value.green{color:var(--green);}
+.card-value.blue{color:var(--accent);}
+.card-value.yellow{color:var(--yellow);}
+.card-sub{font-size:11px;color:var(--text2);margin-top:3px;}
+.chart-wrap{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:20px;overflow-x:auto;}
+.bar-chart{min-width:600px;}
+.bar-row{display:flex;align-items:center;gap:10px;margin-bottom:10px;cursor:pointer;padding:4px 0;border-radius:4px;transition:background 0.15s;}
+.bar-row:hover{background:var(--bg3);}
+.bar-row.selected{background:var(--bg3);border-left:3px solid var(--accent);padding-left:6px;}
+.bar-label{width:190px;flex-shrink:0;font-size:12px;color:var(--text);text-align:right;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.global-badge{font-size:9px;background:#1c2a3a;border:1px solid #2d4a6a;border-radius:3px;padding:1px 4px;color:#58a6ff;margin-left:4px;vertical-align:middle;}
+.bar-tracks{flex:1;display:flex;flex-direction:column;gap:3px;}
+.bar-track{height:10px;border-radius:3px;transition:width 0.5s ease;min-width:2px;}
+.bar-value{font-size:11px;color:var(--text2);width:72px;flex-shrink:0;white-space:nowrap;}
+.bar-legend{display:flex;gap:20px;margin-bottom:14px;font-size:12px;color:var(--text2);}
+.bar-legend span{display:flex;align-items:center;gap:6px;}
+.legend-dot{width:12px;height:10px;border-radius:2px;display:inline-block;}
+.table-wrap{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);overflow:auto;}
+table{width:100%;border-collapse:collapse;font-size:13px;}
+th{background:var(--bg3);color:var(--text2);font-weight:500;text-align:left;padding:10px 14px;font-size:11px;text-transform:uppercase;letter-spacing:0.4px;border-bottom:1px solid var(--border);position:sticky;top:0;z-index:1;cursor:pointer;white-space:nowrap;user-select:none;}
+th:hover{color:var(--text);}
+th.sorted .sort-icon{opacity:1!important;color:var(--accent);}
+.sort-icon{margin-left:3px;opacity:0.35;}
+td{padding:9px 14px;border-bottom:1px solid var(--border);color:var(--text);vertical-align:middle;}
+tr:last-child td{border-bottom:none;}
+tr:hover td{background:var(--bg3);}
+tr.selected-row td{background:rgba(88,166,255,0.08);}
+tr.clickable{cursor:pointer;}
+.num{text-align:right;font-variant-numeric:tabular-nums;}
+.pct-bar-bg{background:var(--bg3);border-radius:3px;height:6px;width:80px;display:inline-block;vertical-align:middle;margin-right:5px;}
+.pct-bar-fill{height:100%;border-radius:3px;background:var(--green);display:block;}
+.badge-global{background:#1c2a3a;border:1px solid #2d4a6a;color:#58a6ff;border-radius:4px;padding:2px 6px;font-size:10px;font-weight:500;white-space:nowrap;}
+.badge-pos{background:var(--bg3);border:1px solid var(--border);color:var(--text2);border-radius:4px;padding:2px 6px;font-size:11px;white-space:nowrap;}
+.detail-panel{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:20px;}
+.detail-header{font-size:18px;font-weight:700;margin-bottom:16px;display:flex;align-items:center;gap:10px;flex-wrap:wrap;}
+.agency-dot{width:14px;height:14px;border-radius:50%;display:inline-block;flex-shrink:0;}
+.stat-note{font-size:11px;color:var(--text2);margin-top:10px;font-style:italic;}
+.scatter-wrap{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:20px;position:relative;}
+#scatter-canvas{width:100%;cursor:crosshair;display:block;}
+.scatter-legend{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px;}
+.sl-item{display:flex;align-items:center;gap:6px;font-size:11px;color:var(--text2);cursor:pointer;padding:2px 4px;border-radius:4px;transition:background 0.1s;}
+.sl-item:hover{background:var(--bg3);color:var(--text);}
+.sl-item.hidden{opacity:0.3;}
+.sl-dot{width:10px;height:10px;border-radius:50%;flex-shrink:0;}
+#tt{position:fixed;background:var(--bg3);border:1px solid var(--border);border-radius:6px;padding:10px 14px;font-size:12px;color:var(--text);pointer-events:none;display:none;z-index:100;max-width:250px;box-shadow:0 4px 16px rgba(0,0,0,0.5);line-height:1.7;}
+#tt .tt-n{font-weight:600;font-size:13px;margin-bottom:3px;}
+#tt .tt-r{color:var(--text2);}
+#tt .tt-r b{color:var(--text);}
+.footer{border-top:1px solid var(--border);padding-top:20px;margin-top:40px;color:var(--text2);font-size:12px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;}
+.search-wrap{margin-bottom:10px;}
+.search-input{background:var(--bg3);border:1px solid var(--border);border-radius:6px;padding:7px 12px;color:var(--text);font-size:13px;font-family:inherit;width:280px;max-width:100%;outline:none;transition:border-color 0.15s;}
+.search-input:focus{border-color:var(--accent);}
+.search-input::placeholder{color:var(--text2);}
+@media(max-width:768px){.bar-label{width:130px;}.cards-row{flex-direction:column;}}
+</style>
+</head>
+<body>
+<div id="tt"></div>
+<div class="container">
+
+<div class="header">
+  <div class="header-title">Agencias de Representación — Argentina</div>
+  <div class="header-subtitle">Mercado de representación de jugadores argentinos y agencias con actividad en Argentina</div>
+  <div class="header-pills">
+    <div class="pill"><strong>13</strong> agencias</div>
+    <div class="pill"><strong>273</strong> jugadores</div>
+    <div class="pill"><strong>€ 636M</strong> valor total de plantel</div>
+    <div class="pill"><strong>€ 830M</strong> fees generados históricos</div>
+    <div class="pill">Fuente: <strong>Transfermarkt</strong></div>
+    <div class="pill">Mayo 2026</div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">
+    Ranking por Valor de Mercado
+    <span class="badge">click para seleccionar agencia</span>
+  </div>
+  <div class="chart-wrap">
+    <div class="bar-legend">
+      <span><span class="legend-dot" style="background:#58a6ff;opacity:0.85;"></span>Valor de mercado total</span>
+      <span><span class="legend-dot" style="background:#3fb950;opacity:0.65;"></span>Fees generados</span>
+    </div>
+    <div class="bar-chart" id="bar-chart"></div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">
+    Tabla Comparativa
+    <span class="badge">click en columna para ordenar · click en fila para ver detalle</span>
+  </div>
+  <div class="table-wrap" style="max-height:480px;overflow-y:auto;">
+    <table id="ag-table">
+      <thead><tr>
+        <th data-col="rank">#<span class="sort-icon">↑</span></th>
+        <th data-col="name">Agencia<span class="sort-icon"></span></th>
+        <th data-col="n_players" class="num">Jugadores<span class="sort-icon"></span></th>
+        <th data-col="n_exported" class="num">Exportados<span class="sort-icon"></span></th>
+        <th data-col="pct_exported">% Exp.<span class="sort-icon"></span></th>
+        <th data-col="total_mv" class="num">MV Total<span class="sort-icon"></span></th>
+        <th data-col="total_fees" class="num">Fees<span class="sort-icon"></span></th>
+        <th data-col="avg_mv" class="num">Avg MV<span class="sort-icon"></span></th>
+        <th data-col="top_player">Jugador Top<span class="sort-icon"></span></th>
+      </tr></thead>
+      <tbody id="ag-tbody"></tbody>
+    </table>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">Detalle por Agencia</div>
+  <div class="detail-panel">
+    <div class="detail-header" id="detail-header">
+      <span class="agency-dot" id="detail-dot"></span>
+      <span id="detail-name"></span>
+    </div>
+    <div class="cards-row" id="detail-cards"></div>
+    <div class="search-wrap">
+      <input type="text" class="search-input" id="p-search" placeholder="Buscar jugador, club o posición...">
+    </div>
+    <div class="table-wrap">
+      <table id="p-table">
+        <thead><tr>
+          <th data-col="name">Nombre<span class="sort-icon"></span></th>
+          <th data-col="club">Club<span class="sort-icon"></span></th>
+          <th data-col="position">Posición<span class="sort-icon"></span></th>
+          <th data-col="market_value" class="num sorted">Valor<span class="sort-icon">↓</span></th>
+          <th data-col="total_fees_received" class="num">Fees<span class="sort-icon"></span></th>
+          <th data-col="agency_since_approx">Último pase<span class="sort-icon"></span></th>
+          <th data-col="was_exported">Exportado<span class="sort-icon"></span></th>
+        </tr></thead>
+        <tbody id="p-tbody"></tbody>
+      </table>
+    </div>
+    <div class="stat-note">* "Último pase" es el año aproximado de ingreso a la agencia, inferido a partir de la última transferencia paga registrada en Transfermarkt.</div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">
+    Valor de Mercado vs. Fees Generados — por jugador
+    <span class="badge">escala logarítmica · solo jugadores con ambos valores > 0 · click en leyenda para filtrar</span>
+  </div>
+  <div class="scatter-wrap">
+    <canvas id="scatter-canvas" height="500"></canvas>
+    <div class="scatter-legend" id="scatter-legend"></div>
+  </div>
+</div>
+
+<div class="footer">
+  <span>Fuente: Transfermarkt — datos extraídos mayo 2026 · valores en euros (€)</span>
+  <span>273 jugadores · 13 agencias · fees = transferencias pagas históricas</span>
+</div>
+
+</div>
+
+<script>
+const AGENCIES = [
+  {rank:1,   name:"Footfeel ISM",          n_players:25,  n_exported:5,  pct_exported:20.0, total_mv:264800000,  total_fees:193690000,  avg_mv:10592000,  top_player:"Lautaro Martínez",  top_mv:85000000,  is_global:false},
+  {rank:1,    name:"Interplayers",          n_players:25,  n_exported:19, pct_exported:76.0, total_mv:106500000,  total_fees:171912605,  avg_mv:4260000,   top_player:"Nicolás Domínguez", top_mv:16000000,  is_global:false},
+  {rank:1,     name:"Score Futbol",          n_players:25,  n_exported:17, pct_exported:68.0, total_mv:89600000,   total_fees:144657367,  avg_mv:3584000,   top_player:"Lisandro Martínez", top_mv:40000000,  is_global:false},
+  {rank:1,      name:"Star Makers Agency",    n_players:4,   n_exported:3,  pct_exported:75.0, total_mv:47500000,   total_fees:151350000,  avg_mv:11875000,  top_player:"Thiago Almada",     top_mv:20000000,  is_global:false},
+  {rank:1,       name:"Proyecta Players",      n_players:25,  n_exported:17, pct_exported:68.0, total_mv:49800000,   total_fees:42660544,   avg_mv:1992000,   top_player:"José Manuel López", top_mv:22000000,  is_global:false},
+  {rank:1,        name:"INSUA GROUP",           n_players:25,  n_exported:17, pct_exported:68.0, total_mv:27925000,   total_fees:30011676,   avg_mv:1117000,   top_player:"Tiago Palacios",    top_mv:4500000,   is_global:false},
+  {rank:1,         name:"Dodici Sports",         n_players:25,  n_exported:6,  pct_exported:24.0, total_mv:18975000,   total_fees:42651270,   avg_mv:759000,    top_player:"Tomás Cuello",      top_mv:6000000,   is_global:false},
+  {rank:1,          name:"Luis Grillo",           n_players:25,  n_exported:20, pct_exported:80.0, total_mv:12810000,   total_fees:13414500,   avg_mv:610000,    top_player:"Damián Puebla",     top_mv:2500000,   is_global:false},
+  {rank:1,          name:"MVP Group",             n_players:21,  n_exported:13, pct_exported:61.9, total_mv:8500000,    total_fees:30301595,   avg_mv:566667,    top_player:"Claudio Spinelli",  top_mv:2000000,   is_global:false},
+  {rank:1,           name:"Sports360",             n_players:25,  n_exported:24, pct_exported:96.0, total_mv:4445000,    total_fees:1135218,    avg_mv:246944,    top_player:"Renzo Tesuri",      top_mv:1000000,   is_global:false},
+  {rank:1,            name:"PROSPORTS Argentina",   n_players:7,   n_exported:6,  pct_exported:85.7, total_mv:3100000,    total_fees:7700000,    avg_mv:1550000,   top_player:"Enzo Díaz",         top_mv:3000000,   is_global:false},
+  {rank:1,             name:"JEP Sports",            n_players:25,  n_exported:3,  pct_exported:12.0, total_mv:1300000,    total_fees:0,          avg_mv:185714,    top_player:"Óscar Millán",      top_mv:450000,    is_global:false},
+  {rank:1,              name:"Agencia Continental",   n_players:16,  n_exported:6,  pct_exported:37.5, total_mv:700000,     total_fees:0,          avg_mv:140000,    top_player:"Francisco López",   top_mv:300000,    is_global:false},
+];
+
+const PLAYERS = [{"name": "Lautaro Martínez", "agency": "Footfeel ISM", "club": "Inter Milan", "position": "Centre-Forward", "market_value": 85000000, "total_fees_received": 25000000, "agency_since_approx": "2018-07-04", "was_exported": true, "first_export_club": "Inter Milan", "first_export_date": "2018-07-04"}, {"name": "Achraf Hakimi", "agency": "Footfeel ISM", "club": "Paris Saint-Germain", "position": "Right-Back", "market_value": 80000000, "total_fees_received": 111000000, "agency_since_approx": "2021-07-06", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Lisandro Martínez", "agency": "Score Futbol", "club": "Manchester United", "position": "Centre-Back", "market_value": 40000000, "total_fees_received": 65095000, "agency_since_approx": "2022-07-27", "was_exported": true, "first_export_club": "Ajax Amsterdam", "first_export_date": "2019-07-01"}, {"name": "Mario Gila", "agency": "Footfeel ISM", "club": "SS Lazio", "position": "Centre-Back", "market_value": 30000000, "total_fees_received": 6000000, "agency_since_approx": "2022-07-12", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "José Manuel López", "agency": "Proyecta Players", "club": "Sociedade Esportiva Palmeiras", "position": "Centre-Forward", "market_value": 22000000, "total_fees_received": 9500000, "agency_since_approx": "2022-07-18", "was_exported": true, "first_export_club": "CA Lanús U20", "first_export_date": "2017-01-01"}, {"name": "Thiago Almada", "agency": "Star Makers Agency", "club": "Atlético de Madrid", "position": "Left Winger", "market_value": 20000000, "total_fees_received": 59650000, "agency_since_approx": "2025-07-17", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Nicolás Domínguez", "agency": "Interplayers", "club": "Nottingham Forest", "position": "Central Midfield", "market_value": 16000000, "total_fees_received": 17625000, "agency_since_approx": "2023-09-01", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Rodrigo De Paul", "agency": "Star Makers Agency", "club": "Inter Miami CF", "position": "Central Midfield", "market_value": 15000000, "total_fees_received": 66550000, "agency_since_approx": "2026-01-26", "was_exported": true, "first_export_club": "Valencia CF", "first_export_date": "2014-07-01"}, {"name": "Mateo Pellegrino", "agency": "Interplayers", "club": "Parma Calcio 1913", "position": "Centre-Forward", "market_value": 15000000, "total_fees_received": 1640000, "agency_since_approx": "2025-02-03", "was_exported": true, "first_export_club": "CA Vélez Sarsfield", "first_export_date": "2023-08-14"}, {"name": "Sergio Arribas", "agency": "Footfeel ISM", "club": "UD Almería", "position": "Attacking Midfield", "market_value": 15000000, "total_fees_received": 6000000, "agency_since_approx": "2023-08-09", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Hugo Bueno", "agency": "Footfeel ISM", "club": "Wolverhampton Wanderers", "position": "Left-Back", "market_value": 12000000, "total_fees_received": 0, "agency_since_approx": "2025-06-30", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Benja Domínguez", "agency": "Interplayers", "club": "Bologna FC 1909", "position": "Left Winger", "market_value": 10000000, "total_fees_received": 5220000, "agency_since_approx": "2024-08-28", "was_exported": true, "first_export_club": "Bologna FC 1909", "first_export_date": "2024-08-28"}, {"name": "Ángel Correa", "agency": "Star Makers Agency", "club": "Tigres UANL", "position": "Second Striker", "market_value": 9000000, "total_fees_received": 18500000, "agency_since_approx": "2025-07-09", "was_exported": true, "first_export_club": "Atlético de Madrid", "first_export_date": "2015-01-01"}, {"name": "Alan Lescano", "agency": "Proyecta Players", "club": "AA Argentinos Juniors", "position": "Attacking Midfield", "market_value": 7500000, "total_fees_received": 1738000, "agency_since_approx": "2023-07-31", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Borja Mayoral", "agency": "Footfeel ISM", "club": "Getafe CF", "position": "Centre-Forward", "market_value": 7500000, "total_fees_received": 20000000, "agency_since_approx": "2022-08-01", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Adam Aznou", "agency": "Footfeel ISM", "club": "Everton FC", "position": "Left-Back", "market_value": 7000000, "total_fees_received": 9000000, "agency_since_approx": "2025-07-29", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Christian Ordóñez", "agency": "Interplayers", "club": "Parma Calcio 1913", "position": "Central Midfield", "market_value": 6500000, "total_fees_received": 9750000, "agency_since_approx": "2025-07-01", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Tomás Cuello", "agency": "Dodici Sports", "club": "Clube Atlético Mineiro", "position": "Left Winger", "market_value": 6000000, "total_fees_received": 8000000, "agency_since_approx": "2025-01-30", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Juan Pablo Freytes", "agency": "Score Futbol", "club": "Fluminense Football Club", "position": "Centre-Back", "market_value": 5000000, "total_fees_received": 3901000, "agency_since_approx": "2025-01-02", "was_exported": true, "first_export_club": "Unión La Calera", "first_export_date": "2023-01-01"}, {"name": "Guido Rodríguez", "agency": "Interplayers", "club": "Valencia CF", "position": "Defensive Midfield", "market_value": 5000000, "total_fees_received": 12025000, "agency_since_approx": "2020-01-14", "was_exported": true, "first_export_club": "Club Tijuana", "first_export_date": "2016-07-01"}, {"name": "Nicolás Capaldo", "agency": "Interplayers", "club": "Hamburger SV", "position": "Centre-Back", "market_value": 5000000, "total_fees_received": 6600000, "agency_since_approx": "2025-07-10", "was_exported": true, "first_export_club": "Red Bull Salzburg", "first_export_date": "2021-07-01"}, {"name": "Víctor Valdepeñas", "agency": "Footfeel ISM", "club": "Real Madrid Castilla", "position": "Centre-Back", "market_value": 5000000, "total_fees_received": 0, "agency_since_approx": "2025-01-01", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Álvaro Rodríguez", "agency": "Footfeel ISM", "club": "Elche CF", "position": "Centre-Forward", "market_value": 5000000, "total_fees_received": 2000000, "agency_since_approx": "2025-07-22", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Santiago Simón", "agency": "Score Futbol", "club": "Deportivo Toluca", "position": "Right-Back", "market_value": 4500000, "total_fees_received": 3000000, "agency_since_approx": "2025-08-16", "was_exported": true, "first_export_club": "Deportivo Toluca", "first_export_date": "2025-08-16"}, {"name": "Tiago Palacios", "agency": "INSUA GROUP", "club": "Club Estudiantes de La Plata", "position": "Right Winger", "market_value": 4500000, "total_fees_received": 3111873, "agency_since_approx": "2024-02-09", "was_exported": true, "first_export_club": "Montevideo City Torque", "first_export_date": "2021-02-22"}, {"name": "Mateo Del Blanco", "agency": "INSUA GROUP", "club": "CA Unión (Santa Fe)", "position": "Left-Back", "market_value": 4500000, "total_fees_received": 0, "agency_since_approx": "2023-07-01", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Lucas Ocampos", "agency": "Interplayers", "club": "CF Monterrey", "position": "Left Winger", "market_value": 4500000, "total_fees_received": 47250000, "agency_since_approx": "2024-09-03", "was_exported": true, "first_export_club": "AS Monaco", "first_export_date": "2012-08-16"}, {"name": "Gonzalo Montiel", "agency": "Interplayers", "club": "CA River Plate", "position": "Right-Back", "market_value": 4500000, "total_fees_received": 15500000, "agency_since_approx": "2025-01-20", "was_exported": true, "first_export_club": "Sevilla FC", "first_export_date": "2021-08-13"}, {"name": "Agustín Palavecino", "agency": "Interplayers", "club": "CD Cruz Azul", "position": "Central Midfield", "market_value": 4500000, "total_fees_received": 9382544, "agency_since_approx": "2026-01-06", "was_exported": true, "first_export_club": "Deportivo Cali", "first_export_date": "2019-02-08"}, {"name": "Ignacio Russo", "agency": "Score Futbol", "club": "Club Atlético Tigre", "position": "Centre-Forward", "market_value": 4000000, "total_fees_received": 595000, "agency_since_approx": "2026-01-14", "was_exported": true, "first_export_club": "CA Chacarita Juniors", "first_export_date": "2022-01-11"}, {"name": "Ramiro Enrique", "agency": "INSUA GROUP", "club": "Al-Kholood Club", "position": "Centre-Forward", "market_value": 4000000, "total_fees_received": 4653662, "agency_since_approx": "2025-09-08", "was_exported": true, "first_export_club": "Orlando City SC", "first_export_date": "2023-01-31"}, {"name": "Agustín Ojeda", "agency": "Interplayers", "club": "New York City FC", "position": "Left Winger", "market_value": 4000000, "total_fees_received": 7000000, "agency_since_approx": "2024-02-02", "was_exported": true, "first_export_club": "New York City FC", "first_export_date": "2024-02-02"}, {"name": "Francisco Álvarez", "agency": "Interplayers", "club": "AA Argentinos Juniors", "position": "Centre-Back", "market_value": 4000000, "total_fees_received": 264795, "agency_since_approx": "2022-01-18", "was_exported": true, "first_export_club": "CA Barracas Central", "first_export_date": "2023-02-01"}, {"name": "Gastón Hernández", "agency": "Interplayers", "club": "CA San Lorenzo de Almagro", "position": "Centre-Back", "market_value": 3700000, "total_fees_received": 0, "agency_since_approx": "2022-01-01", "was_exported": true, "first_export_club": "CA San Martín (San Juan)", "first_export_date": "2020-09-14"}, {"name": "Nicolás Fernández", "agency": "Score Futbol", "club": "Club Atlético Belgrano", "position": "Centre-Forward", "market_value": 3500000, "total_fees_received": 3989362, "agency_since_approx": "2024-07-15", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Federico Redondo", "agency": "Score Futbol", "club": "Elche CF", "position": "Defensive Midfield", "market_value": 3500000, "total_fees_received": 9600000, "agency_since_approx": "2025-08-14", "was_exported": true, "first_export_club": "Inter Miami CF", "first_export_date": "2024-02-23"}, {"name": "Matías Zaracho", "agency": "Star Makers Agency", "club": "Racing Club", "position": "Attacking Midfield", "market_value": 3500000, "total_fees_received": 6650000, "agency_since_approx": "2025-01-17", "was_exported": true, "first_export_club": "Clube Atlético Mineiro", "first_export_date": "2020-10-21"}, {"name": "Juan Carlos Portillo", "agency": "Interplayers", "club": "CA River Plate", "position": "Centre-Back", "market_value": 3500000, "total_fees_received": 5814563, "agency_since_approx": "2025-07-24", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Benjamín Garré", "agency": "Footfeel ISM", "club": "Aris Thessaloniki", "position": "Right Winger", "market_value": 3500000, "total_fees_received": 6950000, "agency_since_approx": "2025-02-20", "was_exported": true, "first_export_club": "CA Huracán", "first_export_date": "2022-06-10"}, {"name": "Eros Mancuso", "agency": "Interplayers", "club": "Club Estudiantes de La Plata", "position": "Right-Back", "market_value": 3200000, "total_fees_received": 1965552, "agency_since_approx": "2024-08-08", "was_exported": true, "first_export_club": "Fortaleza Esporte Clube", "first_export_date": "2024-08-08"}, {"name": "Adonis Frías", "agency": "Score Futbol", "club": "Santos FC", "position": "Centre-Back", "market_value": 3000000, "total_fees_received": 7200000, "agency_since_approx": "2025-09-02", "was_exported": true, "first_export_club": "CA Los Andes", "first_export_date": "2018-08-03"}, {"name": "Enzo Díaz", "agency": "PROSPORTS Argentina", "club": "São Paulo Futebol Clube", "position": "Left-Back", "market_value": 3000000, "total_fees_received": 4300000, "agency_since_approx": "2026-01-01", "was_exported": true, "first_export_club": "CA Agropecuario", "first_export_date": "2017-07-01"}, {"name": "Lautaro Vargas", "agency": "Interplayers", "club": "CA Unión (Santa Fe)", "position": "Right-Back", "market_value": 3000000, "total_fees_received": 0, "agency_since_approx": "2024-07-01", "was_exported": true, "first_export_club": "CA Unión (Santa Fe) II", "first_export_date": "2024-05-02"}, {"name": "Maycon Cardozo", "agency": "Footfeel ISM", "club": "FC Bayern Munich II", "position": "Left Winger", "market_value": 3000000, "total_fees_received": 0, "agency_since_approx": "2026-01-01", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Lucas Romero", "agency": "Score Futbol", "club": "Cruzeiro Esporte Clube", "position": "Defensive Midfield", "market_value": 2800000, "total_fees_received": 5463946, "agency_since_approx": "2024-01-09", "was_exported": true, "first_export_club": "Club León FC", "first_export_date": "2023-01-01"}, {"name": "Tomás Marchiori", "agency": "Score Futbol", "club": "CA Vélez Sarsfield", "position": "Goalkeeper", "market_value": 2500000, "total_fees_received": 1242200, "agency_since_approx": "2024-01-15", "was_exported": true, "first_export_club": "Club Atlético Tucumán", "first_export_date": "2020-10-02"}, {"name": "Martín Río", "agency": "Score Futbol", "club": "CA Talleres", "position": "Central Midfield", "market_value": 2500000, "total_fees_received": 2164972, "agency_since_approx": "2026-01-24", "was_exported": true, "first_export_club": "Haro Deportivo", "first_export_date": "2020-09-23"}, {"name": "Almoez Ali", "agency": "Dodici Sports", "club": "Al-Duhail SC", "position": "Centre-Forward", "market_value": 2500000, "total_fees_received": 0, "agency_since_approx": "2016-07-01", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Malcom Braida", "agency": "Proyecta Players", "club": "CA Boca Juniors", "position": "Left-Back", "market_value": 2500000, "total_fees_received": 1879794, "agency_since_approx": "2025-06-10", "was_exported": true, "first_export_club": "Instituto ACC", "first_export_date": "2021-12-31"}, {"name": "Damián Puebla", "agency": "Luis Grillo", "club": "FC Orenburg", "position": "Attacking Midfield", "market_value": 2500000, "total_fees_received": 860000, "agency_since_approx": "2026-01-14", "was_exported": true, "first_export_club": "Instituto ACC II", "first_export_date": "2023-01-02"}, {"name": "Gastón Benavídez", "agency": "Luis Grillo", "club": "Club Athletico Paranaense", "position": "Right-Back", "market_value": 2500000, "total_fees_received": 2352000, "agency_since_approx": "2026-01-01", "was_exported": true, "first_export_club": "Club Athletico Paranaense", "first_export_date": "2025-07-15"}, {"name": "José Herrera", "agency": "Interplayers", "club": "Red Bull Bragantino", "position": "Right Winger", "market_value": 2500000, "total_fees_received": 2000000, "agency_since_approx": "2025-07-01", "was_exported": true, "first_export_club": "Fortaleza Esporte Clube", "first_export_date": "2025-07-01"}, {"name": "Maximiliano Romero", "agency": "Score Futbol", "club": "CSD Colo-Colo", "position": "Centre-Forward", "market_value": 2200000, "total_fees_received": 12474415, "agency_since_approx": "2024-01-01", "was_exported": true, "first_export_club": "PSV Eindhoven", "first_export_date": "2023-12-31"}, {"name": "Gonzalo Piovi", "agency": "Dodici Sports", "club": "CD Cruz Azul", "position": "Centre-Back", "market_value": 2200000, "total_fees_received": 3016270, "agency_since_approx": "2024-01-01", "was_exported": true, "first_export_club": "CA Colón", "first_export_date": "2020-09-17"}, {"name": "Alfredo Morelos", "agency": "Footfeel ISM", "club": "Atlético Nacional", "position": "Centre-Forward", "market_value": 2200000, "total_fees_received": 1700000, "agency_since_approx": "2017-07-01", "was_exported": true, "first_export_club": "HJK Helsinki", "first_export_date": "2016-02-05"}, {"name": "Ulises Sánchez", "agency": "Score Futbol", "club": "Gimnasia y Esgrima de Mendoza", "position": "Right Winger", "market_value": 2000000, "total_fees_received": 0, "agency_since_approx": "2026-12-31", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Julián Vignolo", "agency": "Dodici Sports", "club": "FC Toulouse", "position": "Centre-Forward", "market_value": 2000000, "total_fees_received": 1500000, "agency_since_approx": "2025-08-20", "was_exported": true, "first_export_club": "FC Toulouse", "first_export_date": "2025-08-20"}, {"name": "Joaquín Gho", "agency": "Proyecta Players", "club": "AA Argentinos Juniors", "position": "Right Midfield", "market_value": 2000000, "total_fees_received": 870000, "agency_since_approx": "2025-07-06", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Facundo Mura", "agency": "INSUA GROUP", "club": "Inter Miami CF", "position": "Right-Back", "market_value": 2000000, "total_fees_received": 900000, "agency_since_approx": "2022-01-13", "was_exported": true, "first_export_club": "CA Colón", "first_export_date": "2021-02-13"}, {"name": "Claudio Spinelli", "agency": "MVP Group", "club": "Clube de Regatas Vasco da Gama", "position": "Centre-Forward", "market_value": 2000000, "total_fees_received": 5663178, "agency_since_approx": "2026-02-09", "was_exported": true, "first_export_club": "CA San Martín (San Juan)", "first_export_date": "2017-08-16"}, {"name": "Ezequiel Bullaude", "agency": "MVP Group", "club": "Santos Laguna", "position": "Attacking Midfield", "market_value": 2000000, "total_fees_received": 2000000, "agency_since_approx": "2022-08-30", "was_exported": true, "first_export_club": "Feyenoord Rotterdam", "first_export_date": "2022-08-30"}, {"name": "Ignacio Pussetto", "agency": "MVP Group", "club": "CA Independiente", "position": "Centre-Forward", "market_value": 1800000, "total_fees_received": 19128417, "agency_since_approx": "2024-07-19", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Jalil Elías", "agency": "Interplayers", "club": "Club Atlético Tigre", "position": "Defensive Midfield", "market_value": 1800000, "total_fees_received": 520000, "agency_since_approx": "2019-01-01", "was_exported": true, "first_export_club": "CA Unión (Santa Fe)", "first_export_date": "2019-07-15"}, {"name": "Felipe Peña Biafore", "agency": "Score Futbol", "club": "CA Lanús", "position": "Defensive Midfield", "market_value": 1700000, "total_fees_received": 1145206, "agency_since_approx": "2024-08-22", "was_exported": true, "first_export_club": "CA Lanús", "first_export_date": "2023-08-08"}, {"name": "Guido Herrera", "agency": "Luis Grillo", "club": "CA Talleres", "position": "Goalkeeper", "market_value": 1700000, "total_fees_received": 222500, "agency_since_approx": "2020-09-01", "was_exported": true, "first_export_club": "Yeni Malatyaspor", "first_export_date": "2020-09-01"}, {"name": "Valentino Acuña", "agency": "Interplayers", "club": "CA Newell's Old Boys", "position": "Defensive Midfield", "market_value": 1700000, "total_fees_received": 0, "agency_since_approx": "2025-01-01", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Ignacio Rivero", "agency": "Score Futbol", "club": "Club Tijuana", "position": "Central Midfield", "market_value": 1500000, "total_fees_received": 4185000, "agency_since_approx": "2021-07-01", "was_exported": true, "first_export_club": "Club Tijuana", "first_export_date": "2018-01-01"}, {"name": "Alexis Soto", "agency": "Score Futbol", "club": "CA Rosario Central", "position": "Left-Back", "market_value": 1500000, "total_fees_received": 1834022, "agency_since_approx": "2023-01-01", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Rafael Profini", "agency": "Score Futbol", "club": "CA Unión (Santa Fe)", "position": "Defensive Midfield", "market_value": 1500000, "total_fees_received": 0, "agency_since_approx": "2024-01-01", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Lorenzo Faravelli", "agency": "Proyecta Players", "club": "Club Necaxa", "position": "Attacking Midfield", "market_value": 1500000, "total_fees_received": 3400000, "agency_since_approx": "2024-01-01", "was_exported": true, "first_export_club": "Unión Española", "first_export_date": "2013-07-08"}, {"name": "Fabrizio Sartori", "agency": "Proyecta Players", "club": "CS Independiente Rivadavia", "position": "Right Winger", "market_value": 1500000, "total_fees_received": 0, "agency_since_approx": "2025-01-01", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Nahuel Estévez", "agency": "Proyecta Players", "club": "Parma Calcio 1913", "position": "Defensive Midfield", "market_value": 1500000, "total_fees_received": 3245000, "agency_since_approx": "2022-07-02", "was_exported": true, "first_export_club": "CA Sarmiento (Junin)", "first_export_date": "2017-08-01"}, {"name": "Juan Bisanz", "agency": "INSUA GROUP", "club": "CA Huracán", "position": "Right Winger", "market_value": 1500000, "total_fees_received": 550000, "agency_since_approx": "2023-02-02", "was_exported": true, "first_export_club": "CA Huracán", "first_export_date": "2025-07-01"}, {"name": "Marcos Peano", "agency": "INSUA GROUP", "club": "RAAL La Louvière", "position": "Goalkeeper", "market_value": 1500000, "total_fees_received": 0, "agency_since_approx": "2024-07-01", "was_exported": true, "first_export_club": "CA Unión (Santa Fe)", "first_export_date": "2021-12-31"}, {"name": "Nicolás Dubersarsky", "agency": "Luis Grillo", "club": "Austin FC", "position": "Central Midfield", "market_value": 1500000, "total_fees_received": 2900000, "agency_since_approx": "2025-01-31", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Juan Sforza", "agency": "Interplayers", "club": "CA Talleres", "position": "Defensive Midfield", "market_value": 1500000, "total_fees_received": 4600000, "agency_since_approx": "2024-02-19", "was_exported": true, "first_export_club": "Clube de Regatas Vasco da Gama", "first_export_date": "2024-02-19"}, {"name": "Joaquín Mosqueira", "agency": "Interplayers", "club": "Club Atlético Tigre", "position": "Defensive Midfield", "market_value": 1500000, "total_fees_received": 2580151, "agency_since_approx": "2025-01-20", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Ignacio Miramón", "agency": "Proyecta Players", "club": "Club de Gimnasia y Esgrima La Plata", "position": "Defensive Midfield", "market_value": 1200000, "total_fees_received": 4000000, "agency_since_approx": "2023-08-10", "was_exported": true, "first_export_club": "LOSC Lille", "first_export_date": "2023-08-10"}, {"name": "Rodrigo Rey", "agency": "Proyecta Players", "club": "CA Independiente", "position": "Goalkeeper", "market_value": 1200000, "total_fees_received": 1500000, "agency_since_approx": "2017-07-12", "was_exported": true, "first_export_club": "PAOK Thessaloniki", "first_export_date": "2017-07-12"}, {"name": "Mateo García", "agency": "Luis Grillo", "club": "Atlas Guadalajara", "position": "Right Winger", "market_value": 1200000, "total_fees_received": 4900000, "agency_since_approx": "2023-07-01", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Lucas Blondel", "agency": "Interplayers", "club": "CA Huracán", "position": "Right-Back", "market_value": 1200000, "total_fees_received": 2025000, "agency_since_approx": "2026-03-06", "was_exported": true, "first_export_club": "CA Huracán", "first_export_date": "2026-03-06"}, {"name": "Guille Bueno", "agency": "Footfeel ISM", "club": "Real Valladolid CF", "position": "Left-Back", "market_value": 1200000, "total_fees_received": 200000, "agency_since_approx": "2025-07-20", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Sergio López", "agency": "Footfeel ISM", "club": "SV Darmstadt 98", "position": "Right-Back", "market_value": 1200000, "total_fees_received": 0, "agency_since_approx": "2024-07-01", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Raúl Guti", "agency": "Score Futbol", "club": "Real Zaragoza", "position": "Central Midfield", "market_value": 1000000, "total_fees_received": 5000000, "agency_since_approx": "2020-09-20", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Walter Bou", "agency": "Score Futbol", "club": "CA Lanús", "position": "Centre-Forward", "market_value": 1000000, "total_fees_received": 5191203, "agency_since_approx": "2024-01-19", "was_exported": true, "first_export_club": "Esporte Clube Vitória", "first_export_date": "2018-07-16"}, {"name": "Nicolás Demartini", "agency": "Score Futbol", "club": "CA Barracas Central", "position": "Centre-Back", "market_value": 1000000, "total_fees_received": 87364, "agency_since_approx": "2022-01-07", "was_exported": true, "first_export_club": "CA Temperley", "first_export_date": "2022-12-31"}, {"name": "Matías Palavecino", "agency": "Score Futbol", "club": "CD Universidad Católica", "position": "Attacking Midfield", "market_value": 1000000, "total_fees_received": 73000, "agency_since_approx": "2023-08-31", "was_exported": true, "first_export_club": "ASIL Lysi", "first_export_date": "2019-07-01"}, {"name": "Gino Santilli", "agency": "Score Futbol", "club": "CA Banfield", "position": "Goalkeeper", "market_value": 1000000, "total_fees_received": 0, "agency_since_approx": "2025-12-31", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Tomás O'Connor", "agency": "Score Futbol", "club": "Gimnasia y Esgrima de Mendoza", "position": "Central Midfield", "market_value": 1000000, "total_fees_received": 0, "agency_since_approx": "2026-12-31", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Thaiel Peralta", "agency": "Dodici Sports", "club": "CA Huracán", "position": "Attacking Midfield", "market_value": 1000000, "total_fees_received": 0, "agency_since_approx": "2026-01-01", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Facundo Perdomo", "agency": "Dodici Sports", "club": "Liverpool FC Montevideo", "position": "Right-Back", "market_value": 1000000, "total_fees_received": 110000, "agency_since_approx": "2017-08-22", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Agustín Urzi", "agency": "INSUA GROUP", "club": "Universidad de Concepción", "position": "Left Winger", "market_value": 1000000, "total_fees_received": 3204425, "agency_since_approx": "2023-02-02", "was_exported": true, "first_export_club": "FC Juárez", "first_export_date": "2023-02-02"}, {"name": "Mariano Gómez", "agency": "INSUA GROUP", "club": "Ferencvárosi TC", "position": "Centre-Back", "market_value": 1000000, "total_fees_received": 600000, "agency_since_approx": "2026-01-15", "was_exported": true, "first_export_club": "Atlético Madrileño", "first_export_date": "2021-06-30"}, {"name": "Carlos González", "agency": "INSUA GROUP", "club": "Independiente del Valle", "position": "Centre-Forward", "market_value": 1000000, "total_fees_received": 7780000, "agency_since_approx": "2022-07-01", "was_exported": true, "first_export_club": "Deportivo Toluca", "first_export_date": "2022-07-01"}, {"name": "Eric Remedi", "agency": "INSUA GROUP", "club": "CA Peñarol", "position": "Defensive Midfield", "market_value": 1000000, "total_fees_received": 2204545, "agency_since_approx": "2021-02-15", "was_exported": true, "first_export_club": "Atlanta United FC", "first_export_date": "2018-07-10"}, {"name": "Renzo Tesuri", "agency": "Sports360", "club": "Club Atlético Tucumán", "position": "Right Midfield", "market_value": 1000000, "total_fees_received": 0, "agency_since_approx": "2021-07-01", "was_exported": true, "first_export_club": "Club Ferro Carril Oeste", "first_export_date": "2018-07-01"}, {"name": "Gonzalo Morales", "agency": "Interplayers", "club": "CA Barracas Central", "position": "Centre-Forward", "market_value": 1000000, "total_fees_received": 0, "agency_since_approx": "2026-12-31", "was_exported": true, "first_export_club": "CA Unión (Santa Fe)", "first_export_date": "2023-08-12"}, {"name": "Guillermo Enrique", "agency": "Interplayers", "club": "CA Aldosivi", "position": "Right-Back", "market_value": 1000000, "total_fees_received": 0, "agency_since_approx": "2026-01-21", "was_exported": true, "first_export_club": "Club Alianza Lima", "first_export_date": "2025-01-03"}, {"name": "Emiliano Rigoni", "agency": "Interplayers", "club": "Club Atlético Belgrano", "position": "Right Winger", "market_value": 1000000, "total_fees_received": 19600000, "agency_since_approx": "2022-07-29", "was_exported": true, "first_export_club": "Zenit St. Petersburg", "first_export_date": "2017-08-23"}, {"name": "Yago Santiago", "agency": "Footfeel ISM", "club": "Elche CF", "position": "Left Winger", "market_value": 1000000, "total_fees_received": 0, "agency_since_approx": "2024-07-30", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Kobe Corbanie", "agency": "Footfeel ISM", "club": "Royal Antwerp FC", "position": "Right-Back", "market_value": 1000000, "total_fees_received": 0, "agency_since_approx": "2026-07-01", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Carlos Dotor", "agency": "Footfeel ISM", "club": "Málaga CF", "position": "Central Midfield", "market_value": 1000000, "total_fees_received": 3000000, "agency_since_approx": "2023-07-20", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Franco Zapiola", "agency": "Interplayers", "club": "Club Atlético Platense", "position": "Attacking Midfield", "market_value": 900000, "total_fees_received": 550000, "agency_since_approx": "2024-07-19", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Zan Karnicnik", "agency": "Dodici Sports", "club": "NK Celje", "position": "Right-Back", "market_value": 800000, "total_fees_received": 1000000, "agency_since_approx": "2024-01-01", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Juan Dinenno", "agency": "Proyecta Players", "club": "Deportivo Cali", "position": "Centre-Forward", "market_value": 800000, "total_fees_received": 5605000, "agency_since_approx": "2024-01-11", "was_exported": true, "first_export_club": "CA Temperley", "first_export_date": "2014-07-11"}, {"name": "Agustín Gómez", "agency": "Proyecta Players", "club": "Deportivo Garcilaso", "position": "Centre-Back", "market_value": 800000, "total_fees_received": 0, "agency_since_approx": "2026-01-01", "was_exported": true, "first_export_club": "AIK", "first_export_date": "2017-07-26"}, {"name": "Kialy Abdoul Kone", "agency": "INSUA GROUP", "club": "AD Ceuta FC", "position": "Left Winger", "market_value": 800000, "total_fees_received": 0, "agency_since_approx": "2025-01-09", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Jaime Seoane", "agency": "Footfeel ISM", "club": "SD Huesca", "position": "Central Midfield", "market_value": 800000, "total_fees_received": 2500000, "agency_since_approx": "2023-08-04", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Alan Cantero", "agency": "Sports360", "club": "Club Alianza Lima", "position": "Left Winger", "market_value": 750000, "total_fees_received": 510000, "agency_since_approx": "2026-01-04", "was_exported": true, "first_export_club": "CA Barracas Central", "first_export_date": "2023-01-03"}, {"name": "Braian Romero", "agency": "Score Futbol", "club": "CA Vélez Sarsfield", "position": "Centre-Forward", "market_value": 700000, "total_fees_received": 9433830, "agency_since_approx": "2023-08-08", "was_exported": true, "first_export_club": "Club Athletico Paranaense", "first_export_date": "2019-02-08"}, {"name": "Rafael Monti", "agency": "Proyecta Players", "club": "Clube do Remo (PA)", "position": "Centre-Forward", "market_value": 700000, "total_fees_received": 300000, "agency_since_approx": "2026-01-21", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Augusto Schott", "agency": "Proyecta Players", "club": "CA Talleres", "position": "Right-Back", "market_value": 700000, "total_fees_received": 0, "agency_since_approx": "2024-12-31", "was_exported": true, "first_export_club": "CA Colón", "first_export_date": "2022-06-03"}, {"name": "Cristian Zabala", "agency": "Proyecta Players", "club": "CA Sarmiento (Junin)", "position": "Central Midfield", "market_value": 700000, "total_fees_received": 410000, "agency_since_approx": "2020-10-26", "was_exported": true, "first_export_club": "CA Sarmiento (Junin)", "first_export_date": "2026-01-14"}, {"name": "Lionel Verde", "agency": "INSUA GROUP", "club": "FC Baniyas", "position": "Central Midfield", "market_value": 700000, "total_fees_received": 0, "agency_since_approx": "2026-06-30", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Claudio Aquino", "agency": "MVP Group", "club": "CSD Colo-Colo", "position": "Attacking Midfield", "market_value": 700000, "total_fees_received": 370000, "agency_since_approx": "2020-01-01", "was_exported": true, "first_export_club": "Fluminense Football Club", "first_export_date": "2016-07-20"}, {"name": "Daniel Barrea", "agency": "Luis Grillo", "club": "Universidad de Concepción", "position": "Centre-Forward", "market_value": 700000, "total_fees_received": 480000, "agency_since_approx": "2024-01-01", "was_exported": true, "first_export_club": "Universidad de Concepción", "first_export_date": "2026-02-19"}, {"name": "Iván Calero", "agency": "Footfeel ISM", "club": "Cultural Leonesa", "position": "Right-Back", "market_value": 700000, "total_fees_received": 300000, "agency_since_approx": "2024-07-16", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Tomás Martínez", "agency": "Score Futbol", "club": "Barcelona SC Guayaquil", "position": "Attacking Midfield", "market_value": 600000, "total_fees_received": 2907651, "agency_since_approx": "2017-07-17", "was_exported": true, "first_export_club": "CD Tenerife", "first_export_date": "2015-08-18"}, {"name": "Miguel Brizuela", "agency": "Score Futbol", "club": "CD O'Higgins", "position": "Centre-Back", "market_value": 600000, "total_fees_received": 74196, "agency_since_approx": "2024-01-10", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Éver Banega", "agency": "Dodici Sports", "club": "Defensa y Justicia", "position": "Central Midfield", "market_value": 600000, "total_fees_received": 29000000, "agency_since_approx": "2017-07-03", "was_exported": true, "first_export_club": "Valencia CF", "first_export_date": "2008-01-05"}, {"name": "Alan Forneris", "agency": "Proyecta Players", "club": "Racing Club", "position": "Defensive Midfield", "market_value": 600000, "total_fees_received": 1050000, "agency_since_approx": "2025-07-01", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Mateo Burdisso", "agency": "Proyecta Players", "club": "Delfín SC", "position": "Centre-Back", "market_value": 600000, "total_fees_received": 0, "agency_since_approx": "2026-01-05", "was_exported": true, "first_export_club": "Delfín SC", "first_export_date": "2025-01-20"}, {"name": "Gabriel Díaz", "agency": "INSUA GROUP", "club": "CA Sarmiento (Junin)", "position": "Left-Back", "market_value": 600000, "total_fees_received": 0, "agency_since_approx": "2023-01-01", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Alex Vigo", "agency": "INSUA GROUP", "club": "CA Talleres", "position": "Right-Back", "market_value": 600000, "total_fees_received": 2632880, "agency_since_approx": "2024-01-09", "was_exported": true, "first_export_club": "Red Star Belgrade", "first_export_date": "2023-01-21"}, {"name": "Javi Villar", "agency": "Footfeel ISM", "club": "Albacete Balompié", "position": "Central Midfield", "market_value": 600000, "total_fees_received": 40000, "agency_since_approx": "2021-07-07", "was_exported": true, "first_export_club": "Real Madrid Castilla", "first_export_date": "2024-06-30"}, {"name": "Francisco Maidana", "agency": "Proyecta Players", "club": "Club Atlético Gimnasia y Esgrima (Jujuy)", "position": "Central Midfield", "market_value": 550000, "total_fees_received": 0, "agency_since_approx": "2024-06-30", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Carlos Villalba", "agency": "Luis Grillo", "club": "CA Sarmiento (Junin)", "position": "Defensive Midfield", "market_value": 550000, "total_fees_received": 0, "agency_since_approx": "2026-12-31", "was_exported": true, "first_export_club": "CA Rentistas", "first_export_date": "2020-01-17"}, {"name": "Francesco Donati", "agency": "Dodici Sports", "club": "Ternana Calcio", "position": "Right-Back", "market_value": 500000, "total_fees_received": 25000, "agency_since_approx": "2024-08-29", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Ignacio Guerrico", "agency": "Proyecta Players", "club": "CS Emelec", "position": "Left-Back", "market_value": 500000, "total_fees_received": 0, "agency_since_approx": "2026-02-12", "was_exported": true, "first_export_club": "CA Villa San Carlos", "first_export_date": "2018-08-23"}, {"name": "Luciano Giménez", "agency": "Proyecta Players", "club": "CA Huracán", "position": "Centre-Forward", "market_value": 500000, "total_fees_received": 3195000, "agency_since_approx": "2024-07-19", "was_exported": true, "first_export_club": "CA Central Norte", "first_export_date": "2020-01-02"}, {"name": "Aitor Buñuel", "agency": "Footfeel ISM", "club": "Burgos CF", "position": "Right-Back", "market_value": 500000, "total_fees_received": 0, "agency_since_approx": "2025-09-12", "was_exported": true, "first_export_club": "UD Almería", "first_export_date": "2020-09-15"}, {"name": "Bil Nsongo", "agency": "Footfeel ISM", "club": "RC Deportivo Fabril", "position": "Centre-Forward", "market_value": 500000, "total_fees_received": 0, "agency_since_approx": "2024-08-16", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Williams Riveros", "agency": "Proyecta Players", "club": "Universitario de Deportes", "position": "Centre-Back", "market_value": 450000, "total_fees_received": 27350, "agency_since_approx": "2022-01-06", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Rogelio Funes Mori", "agency": "Proyecta Players", "club": "Club León FC", "position": "Centre-Forward", "market_value": 450000, "total_fees_received": 5600000, "agency_since_approx": "2015-07-01", "was_exported": true, "first_export_club": "SL Benfica", "first_export_date": "2013-08-19"}, {"name": "Gerónimo Heredia", "agency": "Proyecta Players", "club": "Delfín SC", "position": "Defensive Midfield", "market_value": 450000, "total_fees_received": 0, "agency_since_approx": "2026-12-31", "was_exported": true, "first_export_club": "Delfín SC", "first_export_date": "2026-02-06"}, {"name": "Mauricio Martínez", "agency": "INSUA GROUP", "club": "CA Sarmiento (Junin)", "position": "Defensive Midfield", "market_value": 450000, "total_fees_received": 4374291, "agency_since_approx": "2025-01-09", "was_exported": true, "first_export_club": "LDU Quito", "first_export_date": "2023-01-03"}, {"name": "Germán Ferreyra", "agency": "INSUA GROUP", "club": "Melbourne City FC", "position": "Centre-Back", "market_value": 450000, "total_fees_received": 0, "agency_since_approx": "2026-07-01", "was_exported": true, "first_export_club": "CA Vélez Sarsfield", "first_export_date": "2016-06-30"}, {"name": "Óscar Millán", "agency": "JEP Sports", "club": "Atlético La Paz", "position": "Centre-Forward", "market_value": 450000, "total_fees_received": 0, "agency_since_approx": "2025-07-01", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Matías Ramírez", "agency": "Sports360", "club": "CD Godoy Cruz Antonio Tomba", "position": "Left Winger", "market_value": 450000, "total_fees_received": 121243, "agency_since_approx": "2024-01-09", "was_exported": true, "first_export_club": "Club Ferro Carril Oeste", "first_export_date": "2021-12-31"}, {"name": "Kevin Londoño", "agency": "Dodici Sports", "club": "Cúcuta Deportivo", "position": "Central Midfield", "market_value": 400000, "total_fees_received": 0, "agency_since_approx": "2026-02-02", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Tomás Verón Lupi", "agency": "Proyecta Players", "club": "Club Nacional", "position": "Right Winger", "market_value": 400000, "total_fees_received": 90400, "agency_since_approx": "2023-01-01", "was_exported": true, "first_export_club": "Quilmes AC", "first_export_date": "2022-12-31"}, {"name": "Nicolás Orsini", "agency": "MVP Group", "club": "CA Boca Juniors", "position": "Centre-Forward", "market_value": 400000, "total_fees_received": 1440000, "agency_since_approx": "2021-07-01", "was_exported": true, "first_export_club": "CA Unión (Santa Fe)", "first_export_date": "2023-08-28"}, {"name": "Lautaro Gordillo", "agency": "MVP Group", "club": "Club de Gimnasia y Tiro", "position": "Centre-Forward", "market_value": 400000, "total_fees_received": 0, "agency_since_approx": "2026-12-31", "was_exported": true, "first_export_club": "Club Ferro Carril Oeste", "first_export_date": "2024-12-31"}, {"name": "Franco Frías", "agency": "MVP Group", "club": "CD Cobresal", "position": "Centre-Forward", "market_value": 400000, "total_fees_received": 0, "agency_since_approx": "2026-12-31", "was_exported": true, "first_export_club": "CA Barracas Central", "first_export_date": "2023-02-10"}, {"name": "Martín Pino", "agency": "Luis Grillo", "club": "CD Godoy Cruz Antonio Tomba", "position": "Centre-Forward", "market_value": 400000, "total_fees_received": 0, "agency_since_approx": "2025-12-31", "was_exported": true, "first_export_club": "Instituto ACC", "first_export_date": "2022-12-31"}, {"name": "Gerónimo Poblete", "agency": "Sports360", "club": "Sharjah FC", "position": "Defensive Midfield", "market_value": 400000, "total_fees_received": 190000, "agency_since_approx": "2018-08-08", "was_exported": true, "first_export_club": "FC Metz", "first_export_date": "2020-06-30"}, {"name": "Álvaro Martín", "agency": "Footfeel ISM", "club": "FC Andorra", "position": "Left Winger", "market_value": 400000, "total_fees_received": 0, "agency_since_approx": "2023-08-01", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Adrián Guerrero", "agency": "Footfeel ISM", "club": "Debreceni VSC", "position": "Left-Back", "market_value": 400000, "total_fees_received": 0, "agency_since_approx": "2025-07-18", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Nicolás Previtali", "agency": "Proyecta Players", "club": "CA Atlanta", "position": "Defensive Midfield", "market_value": 350000, "total_fees_received": 250000, "agency_since_approx": "2021-01-28", "was_exported": true, "first_export_club": "Montevideo City Torque", "first_export_date": "2023-07-25"}, {"name": "Richard Schunke", "agency": "Proyecta Players", "club": "Independiente del Valle", "position": "Centre-Back", "market_value": 350000, "total_fees_received": 0, "agency_since_approx": "2018-01-22", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Alan Sosa", "agency": "INSUA GROUP", "club": "CA Aldosivi", "position": "Left Winger", "market_value": 350000, "total_fees_received": 0, "agency_since_approx": "2026-12-31", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Valentín Aguiñagalde", "agency": "INSUA GROUP", "club": "CA Temperley", "position": "Centre-Back", "market_value": 325000, "total_fees_received": 0, "agency_since_approx": "2025-01-01", "was_exported": true, "first_export_club": "Club Atlético Temperley II", "first_export_date": "2024-12-31"}, {"name": "Lautaro Godoy", "agency": "Sports360", "club": "Club Atlético Tucumán", "position": "Attacking Midfield", "market_value": 325000, "total_fees_received": 0, "agency_since_approx": "2024-07-18", "was_exported": true, "first_export_club": "Athletico Paranaense U20", "first_export_date": "2022-08-10"}, {"name": "Alejandro Cichero", "agency": "Dodici Sports", "club": "Frosinone Primavera", "position": "Centre-Forward", "market_value": 300000, "total_fees_received": 0, "agency_since_approx": "2023-08-01", "was_exported": true, "first_export_club": "Frosinone Primavera", "first_export_date": "2023-08-01"}, {"name": "Agustín Ladstatter", "agency": "Dodici Sports", "club": "CA San Lorenzo de Almagro", "position": "Right Winger", "market_value": 300000, "total_fees_received": 0, "agency_since_approx": "2025-01-01", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Nassourou Ben Hamed", "agency": "INSUA GROUP", "club": "Hércules CF", "position": "Central Midfield", "market_value": 300000, "total_fees_received": 0, "agency_since_approx": "2025-07-01", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Alan Soñora", "agency": "INSUA GROUP", "club": "Club Cerro Porteño", "position": "Attacking Midfield", "market_value": 300000, "total_fees_received": 0, "agency_since_approx": "2025-01-14", "was_exported": true, "first_export_club": "FC Juárez", "first_export_date": "2023-02-06"}, {"name": "Gastón Arturia", "agency": "Luis Grillo", "club": "CA Sarmiento (Junin)", "position": "Centre-Back", "market_value": 300000, "total_fees_received": 0, "agency_since_approx": "2026-12-31", "was_exported": true, "first_export_club": "Club Ferro Carril Oeste (Gral. Pico)", "first_export_date": "2021-03-01"}, {"name": "Maximiliano Comba", "agency": "Luis Grillo", "club": "Volos NFC", "position": "Right Winger", "market_value": 300000, "total_fees_received": 200000, "agency_since_approx": "2019-07-17", "was_exported": true, "first_export_club": "Volos NFC", "first_export_date": "2023-07-20"}, {"name": "Delio Ramírez", "agency": "JEP Sports", "club": "Boyacá Chicó FC", "position": "Central Midfield", "market_value": 300000, "total_fees_received": 0, "agency_since_approx": "2025-01-15", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Ariel Muñoz", "agency": "Sports360", "club": "Alianza Atlético Sullana", "position": "Central Midfield", "market_value": 300000, "total_fees_received": 0, "agency_since_approx": "2026-01-09", "was_exported": true, "first_export_club": "CA Vélez Sarsfield II", "first_export_date": "2022-06-30"}, {"name": "Francisco López", "agency": "Agencia Continental", "club": "Venados FC Yucatán", "position": "Defensive Midfield", "market_value": 300000, "total_fees_received": 0, "agency_since_approx": "2024-07-01", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "João Costa", "agency": "Footfeel ISM", "club": "Real Murcia Imperial", "position": "Central Midfield", "market_value": 300000, "total_fees_received": 0, "agency_since_approx": "2026-06-30", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Gastón Gil Romero", "agency": "INSUA GROUP", "club": "CD Godoy Cruz Antonio Tomba", "position": "Defensive Midfield", "market_value": 275000, "total_fees_received": 0, "agency_since_approx": "2026-02-24", "was_exported": true, "first_export_club": "CD Universidad Católica", "first_export_date": "2017-02-21"}, {"name": "Federico Bisanz", "agency": "INSUA GROUP", "club": "CA Atlanta", "position": "Attacking Midfield", "market_value": 250000, "total_fees_received": 0, "agency_since_approx": "2021-08-15", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Leonel González", "agency": "Sports360", "club": "Universidad de Concepción", "position": "Centre-Back", "market_value": 250000, "total_fees_received": 189975, "agency_since_approx": "2022-01-01", "was_exported": true, "first_export_club": "FBC Melgar", "first_export_date": "2024-01-09"}, {"name": "Emiliano Endrizzi", "agency": "Luis Grillo", "club": "Club Atlético Gimnasia y Esgrima (Jujuy)", "position": "Left-Back", "market_value": 225000, "total_fees_received": 0, "agency_since_approx": "2023-01-10", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Octavio Ontivero", "agency": "Dodici Sports", "club": "CA Lanús", "position": "Left-Back", "market_value": 200000, "total_fees_received": 0, "agency_since_approx": "2024-07-01", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Nicolás Caro Torres", "agency": "INSUA GROUP", "club": "CA Estudiantes", "position": "Centre-Back", "market_value": 200000, "total_fees_received": 0, "agency_since_approx": "2026-12-31", "was_exported": true, "first_export_club": "Club Cerro Porteño U20", "first_export_date": "2019-06-30"}, {"name": "Marc Van de Bovenkamp", "agency": "JEP Sports", "club": "Gzira United FC", "position": "Centre-Back", "market_value": 200000, "total_fees_received": 0, "agency_since_approx": "2025-07-01", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Brian Andrada", "agency": "Agencia Continental", "club": "Gimnasia y Esgrima de Mendoza", "position": "Left Winger", "market_value": 200000, "total_fees_received": 0, "agency_since_approx": "2024-12-31", "was_exported": true, "first_export_club": "Club Ferro Carril Oeste (Gral. Pico)", "first_export_date": "2018-01-04"}, {"name": "Manuel de Iriondo", "agency": "INSUA GROUP", "club": "Krasava ENY", "position": "Defensive Midfield", "market_value": 175000, "total_fees_received": 0, "agency_since_approx": "2025-07-01", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Leandro Navarro", "agency": "MVP Group", "club": "Santiago Wanderers", "position": "Defensive Midfield", "market_value": 175000, "total_fees_received": 0, "agency_since_approx": "2025-01-01", "was_exported": true, "first_export_club": "Venados FC Yucatán", "first_export_date": "2016-07-01"}, {"name": "Rodrigo Moreira", "agency": "MVP Group", "club": "CA Atlanta", "position": "Centre-Back", "market_value": 175000, "total_fees_received": 0, "agency_since_approx": "2025-01-01", "was_exported": true, "first_export_club": "Club Atlético San Martín (Tucumán)", "first_export_date": "2016-08-10"}, {"name": "Juan Argüello", "agency": "Luis Grillo", "club": "CD Real Tomayapo", "position": "Right-Back", "market_value": 175000, "total_fees_received": 0, "agency_since_approx": "2026-01-01", "was_exported": true, "first_export_club": "Instituto ACC II", "first_export_date": "2024-12-31"}, {"name": "Gustavo Canto", "agency": "Luis Grillo", "club": "Club Ferro Carril Oeste", "position": "Centre-Back", "market_value": 175000, "total_fees_received": 0, "agency_since_approx": "2026-01-01", "was_exported": true, "first_export_club": "CA Sarmiento (Junin)", "first_export_date": "2015-01-01"}, {"name": "Patricio Boolsen", "agency": "Sports360", "club": "Deportivo Cuenca", "position": "Centre-Back", "market_value": 175000, "total_fees_received": 0, "agency_since_approx": "2026-01-09", "was_exported": true, "first_export_club": "CB Ramón Santamarina", "first_export_date": "2019-07-01"}, {"name": "Matías Olguín", "agency": "Sports360", "club": "Club Tristán Suárez", "position": "Right-Back", "market_value": 175000, "total_fees_received": 0, "agency_since_approx": "2025-06-19", "was_exported": true, "first_export_club": "AMSD Atlético de Rafaela", "first_export_date": "2023-02-08"}, {"name": "Lucio Castillo", "agency": "Dodici Sports", "club": "CA Colegiales", "position": "Second Striker", "market_value": 150000, "total_fees_received": 0, "agency_since_approx": "2026-01-01", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Brian Blasi", "agency": "INSUA GROUP", "club": "Club Rubio Ñú (Asunción)", "position": "Centre-Back", "market_value": 150000, "total_fees_received": 0, "agency_since_approx": "2026-01-01", "was_exported": true, "first_export_club": "CA Alvarado", "first_export_date": "2025-01-17"}, {"name": "Marcos Arturia", "agency": "Luis Grillo", "club": "Deportes Limache", "position": "Centre-Forward", "market_value": 150000, "total_fees_received": 0, "agency_since_approx": "2026-01-06", "was_exported": true, "first_export_club": "Club Villa Dálmine", "first_export_date": "2019-07-02"}, {"name": "Deivid Andreas", "agency": "JEP Sports", "club": "FC Kuressaare", "position": "Central Midfield", "market_value": 150000, "total_fees_received": 0, "agency_since_approx": "2026-12-31", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Tomás Rossi", "agency": "Sports360", "club": "CD Godoy Cruz Antonio Tomba", "position": "Centre-Back", "market_value": 150000, "total_fees_received": 0, "agency_since_approx": "2025-01-03", "was_exported": true, "first_export_club": "CA Nueva Chicago", "first_export_date": "2024-01-01"}, {"name": "Pier Barrios", "agency": "Sports360", "club": "CA Colón", "position": "Centre-Back", "market_value": 150000, "total_fees_received": 0, "agency_since_approx": "2026-01-03", "was_exported": true, "first_export_club": "RSC Anderlecht", "first_export_date": "2010-07-01"}, {"name": "Matteo Malasomma", "agency": "Dodici Sports", "club": "FC Dordrecht", "position": "Attacking Midfield", "market_value": 125000, "total_fees_received": 0, "agency_since_approx": "2026-06-30", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Vladyslav Nagrudnyi", "agency": "Dodici Sports", "club": "AC Leon", "position": "Left Winger", "market_value": 125000, "total_fees_received": 0, "agency_since_approx": "2026-06-30", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Tomás Escalante", "agency": "Dodici Sports", "club": "Defensa y Justicia", "position": "Central Midfield", "market_value": 125000, "total_fees_received": 0, "agency_since_approx": "2025-12-31", "was_exported": true, "first_export_club": "Club Atlético San Martín (Tucumán)", "first_export_date": "2022-02-16"}, {"name": "Mauro Pérez", "agency": "Dodici Sports", "club": "CA Nueva Chicago", "position": "Centre-Forward", "market_value": 125000, "total_fees_received": 0, "agency_since_approx": "2026-12-31", "was_exported": true, "first_export_club": "Alianza Atlético Sullana", "first_export_date": "2025-02-24"}, {"name": "Nahuel Cainelli", "agency": "Luis Grillo", "club": "AMSD Atlético de Rafaela", "position": "Right Winger", "market_value": 125000, "total_fees_received": 0, "agency_since_approx": "2026-01-05", "was_exported": true, "first_export_club": "Club Atlético San Martín (Tucumán)", "first_export_date": "2025-01-17"}, {"name": "Néstor Vidrio", "agency": "JEP Sports", "club": "Without Club", "position": "Centre-Back", "market_value": 125000, "total_fees_received": 0, "agency_since_approx": "2026-01-01", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Walter Juárez", "agency": "Agencia Continental", "club": "CA Güemes", "position": "Centre-Back", "market_value": 125000, "total_fees_received": 0, "agency_since_approx": "2024-01-01", "was_exported": true, "first_export_club": "CA Güemes", "first_export_date": "2024-01-01"}, {"name": "Kristjan Kozar", "agency": "Dodici Sports", "club": "ND Bilje", "position": "Centre-Forward", "market_value": 100000, "total_fees_received": 0, "agency_since_approx": "2025-07-01", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Rodrigo Dudok", "agency": "Dodici Sports", "club": "Racing Club de Montevideo", "position": "Left Winger", "market_value": 100000, "total_fees_received": 0, "agency_since_approx": "2026-01-17", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Marino Skelin", "agency": "Dodici Sports", "club": "HNK Hajduk Split", "position": "Centre-Back", "market_value": 100000, "total_fees_received": 0, "agency_since_approx": "2025-01-03", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Juan Garro", "agency": "MVP Group", "club": "Without Club", "position": "Right Winger", "market_value": 100000, "total_fees_received": 1550000, "agency_since_approx": "2018-07-16", "was_exported": true, "first_export_club": "CA Huracán", "first_export_date": "2018-07-16"}, {"name": "Gabriel Esparza", "agency": "MVP Group", "club": "CA Temperley", "position": "Left Winger", "market_value": 100000, "total_fees_received": 150000, "agency_since_approx": "2017-01-01", "was_exported": true, "first_export_club": "CA Temperley", "first_export_date": "2015-01-21"}, {"name": "Mario Galeano", "agency": "MVP Group", "club": "CA Los Andes", "position": "Centre-Forward", "market_value": 100000, "total_fees_received": 0, "agency_since_approx": "2026-01-26", "was_exported": true, "first_export_club": "Club Almagro", "first_export_date": "2023-01-01"}, {"name": "Favio Álvarez", "agency": "Luis Grillo", "club": "CA Banfield", "position": "Attacking Midfield", "market_value": 100000, "total_fees_received": 1500000, "agency_since_approx": "2021-01-01", "was_exported": true, "first_export_club": "CA Sarmiento (Junin)", "first_export_date": "2016-01-18"}, {"name": "Felipe Cadenazzi", "agency": "PROSPORTS Argentina", "club": "PSMS Medan", "position": "Centre-Forward", "market_value": 100000, "total_fees_received": 0, "agency_since_approx": "2025-08-30", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Nahuel De Armas", "agency": "Dodici Sports", "club": "CA Fénix", "position": "Central Midfield", "market_value": 75000, "total_fees_received": 0, "agency_since_approx": "2025-01-16", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Valentín Chocobar", "agency": "MVP Group", "club": "Club Deportivo Armenio", "position": "Attacking Midfield", "market_value": 75000, "total_fees_received": 0, "agency_since_approx": "2026-12-31", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Bruno Juncos", "agency": "Luis Grillo", "club": "CA San Martín (San Juan)", "position": "Left Winger", "market_value": 75000, "total_fees_received": 0, "agency_since_approx": "2026-12-31", "was_exported": true, "first_export_club": "CA Colón", "first_export_date": "2024-01-13"}, {"name": "Javier Martínez", "agency": "Sports360", "club": "Club Almirante Brown", "position": "Centre-Forward", "market_value": 75000, "total_fees_received": 0, "agency_since_approx": "2026-01-03", "was_exported": true, "first_export_club": "Deportivo Camioneros U20", "first_export_date": "2018-01-01"}, {"name": "Maximiliano Padilla", "agency": "Sports360", "club": "CA Central Norte", "position": "Centre-Back", "market_value": 75000, "total_fees_received": 0, "agency_since_approx": "2026-12-31", "was_exported": true, "first_export_club": "CA Central Norte", "first_export_date": "2016-11-01"}, {"name": "Jeremías Perales", "agency": "Sports360", "club": "CA Ferrocarril Midland", "position": "Centre-Forward", "market_value": 75000, "total_fees_received": 0, "agency_since_approx": "2025-12-31", "was_exported": true, "first_export_club": "CA Ferrocarril Midland", "first_export_date": "2024-03-23"}, {"name": "Divine Nwachukwu", "agency": "Dodici Sports", "club": "Ethiopia Bunna SC", "position": "Attacking Midfield", "market_value": 50000, "total_fees_received": 0, "agency_since_approx": "2024-09-11", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Filippo Dodde", "agency": "Dodici Sports", "club": "AC Perugia Calcio", "position": "Central Midfield", "market_value": 50000, "total_fees_received": 0, "agency_since_approx": "2026-02-02", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Lorenzo Schietroma", "agency": "Dodici Sports", "club": "Frosinone Primavera", "position": "Attacking Midfield", "market_value": 50000, "total_fees_received": 0, "agency_since_approx": "2024-07-01", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Gino Barbieri", "agency": "MVP Group", "club": "Club Almagro", "position": "Centre-Back", "market_value": 50000, "total_fees_received": 0, "agency_since_approx": "2026-01-03", "was_exported": true, "first_export_club": "CSD Flandria", "first_export_date": "2022-01-03"}, {"name": "Jonathan Bay", "agency": "Luis Grillo", "club": "CA Racing (Córdoba)", "position": "Left-Back", "market_value": 50000, "total_fees_received": 0, "agency_since_approx": "2026-01-01", "was_exported": true, "first_export_club": "Club Ferro Carril Oeste", "first_export_date": "2016-07-12"}, {"name": "Lautaro Carrera", "agency": "Luis Grillo", "club": "Gimnasia y Esgrima de Mendoza", "position": "Centre-Back", "market_value": 50000, "total_fees_received": 0, "agency_since_approx": "2026-06-30", "was_exported": true, "first_export_club": "Instituto ACC", "first_export_date": "2026-06-30"}, {"name": "Renske Adipi", "agency": "JEP Sports", "club": "SV Robinhood", "position": "Central Midfield", "market_value": 50000, "total_fees_received": 0, "agency_since_approx": "2024-12-31", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Luciano Pascual", "agency": "Sports360", "club": "Club Almirante Brown", "position": "Attacking Midfield", "market_value": 50000, "total_fees_received": 0, "agency_since_approx": "2026-12-31", "was_exported": true, "first_export_club": "Club Almirante Brown", "first_export_date": "2026-05-14"}, {"name": "Juan Pablo Morales", "agency": "Agencia Continental", "club": "Kendal Tornado FC", "position": "Centre-Back", "market_value": 50000, "total_fees_received": 0, "agency_since_approx": "2025-07-20", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Juan Strumia", "agency": "MVP Group", "club": "CD Godoy Cruz Antonio Tomba", "position": "Goalkeeper", "market_value": 25000, "total_fees_received": 0, "agency_since_approx": "2026-12-31", "was_exported": true, "first_export_club": "CA Chacarita Juniors", "first_export_date": "2025-01-16"}, {"name": "Guillermo Cosaro", "agency": "Luis Grillo", "club": "Club Atlético Gimnasia y Esgrima (Jujuy)", "position": "Centre-Back", "market_value": 25000, "total_fees_received": 0, "agency_since_approx": "2020-11-18", "was_exported": true, "first_export_club": "CA Unión (Santa Fe)", "first_export_date": "2012-07-01"}, {"name": "Álex Ribeiro", "agency": "JEP Sports", "club": "Atlético Astorga", "position": "Right Winger", "market_value": 25000, "total_fees_received": 0, "agency_since_approx": "2024-07-01", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Bruno Barrionuevo", "agency": "Sports360", "club": "CD Godoy Cruz Antonio Tomba", "position": "Centre-Forward", "market_value": 25000, "total_fees_received": 0, "agency_since_approx": "2025-01-01", "was_exported": true, "first_export_club": "CA Huracán Las Heras", "first_export_date": "2023-02-09"}, {"name": "César Urpín", "agency": "Agencia Continental", "club": "Portuguesa FC", "position": "Right-Back", "market_value": 25000, "total_fees_received": 0, "agency_since_approx": "2026-01-12", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Santiago Chamorro", "agency": "Luis Grillo", "club": "Club Almagro", "position": "Centre-Back", "market_value": 10000, "total_fees_received": 0, "agency_since_approx": "2026-02-05", "was_exported": true, "first_export_club": "Comisión de Actividades Infantiles", "first_export_date": "2024-10-10"}, {"name": "Manuel Sánchez de León", "agency": "Sports360", "club": "CA Estudiantes", "position": "Defensive Midfield", "market_value": 10000, "total_fees_received": 0, "agency_since_approx": "2026-01-24", "was_exported": true, "first_export_club": "Real Pilar FC", "first_export_date": "2020-12-02"}, {"name": "Nicolás Stepanovitch", "agency": "Sports360", "club": "CA Acassuso", "position": "Left-Back", "market_value": 10000, "total_fees_received": 0, "agency_since_approx": "2026-01-03", "was_exported": true, "first_export_club": "CA Acassuso", "first_export_date": "2026-01-03"}, {"name": "Laureano Troncoso", "agency": "MVP Group", "club": "CA 9 de Julio (Rafaela)", "position": "Attacking Midfield", "market_value": 0, "total_fees_received": 0, "agency_since_approx": "2026-02-12", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Dante Cardozo", "agency": "MVP Group", "club": "CA Brown (Adrogué)", "position": "Centre-Back", "market_value": 0, "total_fees_received": 0, "agency_since_approx": "2026-01-05", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Matías Calegari", "agency": "MVP Group", "club": "CA Boca Juniors II", "position": "Defensive Midfield", "market_value": 0, "total_fees_received": 0, "agency_since_approx": "2024-07-01", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Dante González", "agency": "MVP Group", "club": "CA Boca Juniors II", "position": "Right Midfield", "market_value": 0, "total_fees_received": 0, "agency_since_approx": "2025-01-01", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Agustín Colmegna", "agency": "MVP Group", "club": "CA Boca Juniors II", "position": "Centre-Back", "market_value": 0, "total_fees_received": 0, "agency_since_approx": "2025-01-01", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Jeremías Acosta", "agency": "MVP Group", "club": "Club Atlético Banfield U20", "position": "Centre-Forward", "market_value": 0, "total_fees_received": 0, "agency_since_approx": "", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Nery Leyes", "agency": "Luis Grillo", "club": "Club Atletico Alumni", "position": "Defensive Midfield", "market_value": 0, "total_fees_received": 0, "agency_since_approx": "2025-07-30", "was_exported": true, "first_export_club": "Club Atlético Tucumán", "first_export_date": "2016-01-15"}, {"name": "Sebastián Navarro", "agency": "Luis Grillo", "club": "Without Club", "position": "Central Midfield", "market_value": 0, "total_fees_received": 0, "agency_since_approx": "2026-01-01", "was_exported": true, "first_export_club": "Club Ferro Carril Oeste", "first_export_date": "2011-07-01"}, {"name": "Lautaro Ojeda", "agency": "Luis Grillo", "club": "CA Douglas Haig", "position": "Defensive Midfield", "market_value": 0, "total_fees_received": 0, "agency_since_approx": "2025-01-14", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Moisés Richards", "agency": "Luis Grillo", "club": "Sporting San Miguelito II", "position": "Left Winger", "market_value": 0, "total_fees_received": 0, "agency_since_approx": "", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Kevin Alarcón", "agency": "JEP Sports", "club": "Without Club", "position": "Attacking Midfield", "market_value": 0, "total_fees_received": 0, "agency_since_approx": "2025-07-01", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Rubén Jiménez", "agency": "JEP Sports", "club": "Unknown", "position": "Midfield", "market_value": 0, "total_fees_received": 0, "agency_since_approx": "2018-01-01", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Óscar García", "agency": "JEP Sports", "club": "Retired", "position": "Central Midfield", "market_value": 0, "total_fees_received": 0, "agency_since_approx": "2024-07-01", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Jhon Labastidas", "agency": "JEP Sports", "club": "Universitario de Pando", "position": "Central Midfield", "market_value": 0, "total_fees_received": 0, "agency_since_approx": "2023-07-01", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Luis Ramírez", "agency": "JEP Sports", "club": "Without Club", "position": "Centre-Back", "market_value": 0, "total_fees_received": 0, "agency_since_approx": "2021-07-01", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "David Rodríguez", "agency": "JEP Sports", "club": "Las Rozas CF", "position": "Attacking Midfield", "market_value": 0, "total_fees_received": 0, "agency_since_approx": "2025-07-01", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Sergio Vázquez", "agency": "JEP Sports", "club": "Saltillo FC", "position": "Centre-Back", "market_value": 0, "total_fees_received": 0, "agency_since_approx": "2022-07-01", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Sebastian Serediuc", "agency": "JEP Sports", "club": "Lleida CF", "position": "Centre-Forward", "market_value": 0, "total_fees_received": 0, "agency_since_approx": "2025-08-11", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Eric Cañete", "agency": "JEP Sports", "club": "FC Vilafranca", "position": "Central Midfield", "market_value": 0, "total_fees_received": 0, "agency_since_approx": "2025-07-05", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Emmanuel Cerda", "agency": "JEP Sports", "club": "Retired", "position": "Centre-Forward", "market_value": 0, "total_fees_received": 0, "agency_since_approx": "2021-07-01", "was_exported": true, "first_export_club": "Universitario de Deportes", "first_export_date": "2009-09-10"}, {"name": "Jordi Manzano", "agency": "JEP Sports", "club": "UE Tona", "position": "Central Midfield", "market_value": 0, "total_fees_received": 0, "agency_since_approx": "2026-01-29", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Ivan Garcia", "agency": "JEP Sports", "club": "Without Club", "position": "Goalkeeper", "market_value": 0, "total_fees_received": 0, "agency_since_approx": "2024-07-01", "was_exported": true, "first_export_club": "US Arce 1932", "first_export_date": "2018-07-01"}, {"name": "Víctor García", "agency": "JEP Sports", "club": "UE Viladecans", "position": "Central Midfield", "market_value": 0, "total_fees_received": 0, "agency_since_approx": "2023-07-01", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Jordi Avilés", "agency": "JEP Sports", "club": "Without Club", "position": "Central Midfield", "market_value": 0, "total_fees_received": 0, "agency_since_approx": "2025-07-01", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Marvin Brozi", "agency": "JEP Sports", "club": "FC Vushtrria", "position": "Goalkeeper", "market_value": 0, "total_fees_received": 0, "agency_since_approx": "2026-01-18", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Luis Iturbide", "agency": "JEP Sports", "club": "Cañoneros FC", "position": "Centre-Back", "market_value": 0, "total_fees_received": 0, "agency_since_approx": "2025-01-01", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Juan Sosa", "agency": "JEP Sports", "club": "FC Martinenc", "position": "Left Winger", "market_value": 0, "total_fees_received": 0, "agency_since_approx": "2023-07-01", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Pablo Goñi", "agency": "JEP Sports", "club": "CD Revilla", "position": "Centre-Forward", "market_value": 0, "total_fees_received": 0, "agency_since_approx": "2025-07-01", "was_exported": true, "first_export_club": "Rayo Cantabria", "first_export_date": "2016-07-01"}, {"name": "Emilio Zelaya", "agency": "PROSPORTS Argentina", "club": "Retired", "position": "Centre-Forward", "market_value": 0, "total_fees_received": 400000, "agency_since_approx": "2020-01-17", "was_exported": true, "first_export_club": "CD O'Higgins", "first_export_date": "2015-07-01"}, {"name": "Hernán Bernardello", "agency": "PROSPORTS Argentina", "club": "Retired", "position": "Defensive Midfield", "market_value": 0, "total_fees_received": 3000000, "agency_since_approx": "2009-07-20", "was_exported": true, "first_export_club": "UD Almería", "first_export_date": "2009-07-20"}, {"name": "Facundo Britos", "agency": "PROSPORTS Argentina", "club": "AC San Martín (Mendoza)", "position": "Central Midfield", "market_value": 0, "total_fees_received": 0, "agency_since_approx": "2026-02-18", "was_exported": true, "first_export_club": "AC San Martín (Mendoza)", "first_export_date": "2022-01-01"}, {"name": "Milton Treppo", "agency": "PROSPORTS Argentina", "club": "Alianza de Arteaga", "position": "Centre-Forward", "market_value": 0, "total_fees_received": 0, "agency_since_approx": "2025-01-01", "was_exported": true, "first_export_club": "Without Club", "first_export_date": "2019-07-01"}, {"name": "Rodrigo Scagliarini", "agency": "PROSPORTS Argentina", "club": "Club Atlético Lambert (MM)", "position": "Centre-Back", "market_value": 0, "total_fees_received": 0, "agency_since_approx": "2024-02-18", "was_exported": true, "first_export_club": "Unknown", "first_export_date": "2021-01-01"}, {"name": "Facundo Lando", "agency": "Sports360", "club": "CA Argentino de Quilmes", "position": "Right-Back", "market_value": 0, "total_fees_received": 0, "agency_since_approx": "2023-01-07", "was_exported": true, "first_export_club": "Club Villa Dálmine", "first_export_date": "2020-10-15"}, {"name": "Nicolás Sánchez", "agency": "Sports360", "club": "Club de Gimnasia y Esgrima La Plata II", "position": "Central Midfield", "market_value": 0, "total_fees_received": 0, "agency_since_approx": "2025-12-31", "was_exported": true, "first_export_club": "Club Social y Atlético Guillermo Brown", "first_export_date": "2025-06-26"}, {"name": "Francisco Gualtieri", "agency": "Sports360", "club": "AA Estudiantes (Río Cuarto)", "position": "Goalkeeper", "market_value": 0, "total_fees_received": 0, "agency_since_approx": "2025-01-22", "was_exported": true, "first_export_club": "CA Atenas de San Carlos", "first_export_date": "2022-03-07"}, {"name": "Iván Smith", "agency": "Sports360", "club": "Without Club", "position": "Central Midfield", "market_value": 0, "total_fees_received": 124000, "agency_since_approx": "2019-01-21", "was_exported": true, "first_export_club": "CD Cobresal", "first_export_date": "2021-03-02"}, {"name": "Esteban Orfano", "agency": "Sports360", "club": "Club Universitario de Sucre", "position": "Right Midfield", "market_value": 0, "total_fees_received": 0, "agency_since_approx": "2026-03-20", "was_exported": true, "first_export_club": "Villarreal CF B", "first_export_date": "2012-01-02"}, {"name": "Natan Navarro", "agency": "Sports360", "club": "Luján Sport Club", "position": "Defensive Midfield", "market_value": 0, "total_fees_received": 0, "agency_since_approx": "2026-02-01", "was_exported": true, "first_export_club": "Luján Sport Club", "first_export_date": "2026-02-01"}, {"name": "Emanuel Barreiro", "agency": "Sports360", "club": "Sacachispas FC", "position": "Central Midfield", "market_value": 0, "total_fees_received": 0, "agency_since_approx": "2023-01-01", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Aín Acosta Luna", "agency": "Agencia Continental", "club": "Without Club", "position": "Goalkeeper", "market_value": 0, "total_fees_received": 0, "agency_since_approx": "2025-01-01", "was_exported": true, "first_export_club": "CA Lanús II", "first_export_date": "2017-06-30"}, {"name": "Iván Paz", "agency": "Agencia Continental", "club": "CS Estudiantes (San Luis)", "position": "Central Midfield", "market_value": 0, "total_fees_received": 0, "agency_since_approx": "2025-11-08", "was_exported": true, "first_export_club": "St. Andrews FC", "first_export_date": "2016-07-14"}, {"name": "Brando Castillo", "agency": "Agencia Continental", "club": "Without Club", "position": "Left Winger", "market_value": 0, "total_fees_received": 0, "agency_since_approx": "2023-07-01", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Mario Ramírez", "agency": "Agencia Continental", "club": "Club Sport Sébaco", "position": "Attacking Midfield", "market_value": 0, "total_fees_received": 0, "agency_since_approx": "2024-07-01", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Franco González", "agency": "Agencia Continental", "club": "CA Jorge Newbery (Venado Tuerto)", "position": "Central Midfield", "market_value": 0, "total_fees_received": 0, "agency_since_approx": "2023-10-08", "was_exported": true, "first_export_club": "CS Deportivo Merlo", "first_export_date": "2022-01-11"}, {"name": "Leandro Omar Vita", "agency": "Agencia Continental", "club": "ASD Buccino Volcei", "position": "Centre-Forward", "market_value": 0, "total_fees_received": 0, "agency_since_approx": "2025-01-16", "was_exported": true, "first_export_club": "CA Acassuso", "first_export_date": "2017-07-01"}, {"name": "Franco Gandini", "agency": "Agencia Continental", "club": "FC Dietikon", "position": "Central Midfield", "market_value": 0, "total_fees_received": 0, "agency_since_approx": "2026-01-31", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Calvin Castagnino", "agency": "Agencia Continental", "club": "CA 3 de Febrero", "position": "Second Striker", "market_value": 0, "total_fees_received": 0, "agency_since_approx": "2024-01-01", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Zakaria El Hayani El Mourabi", "agency": "Agencia Continental", "club": "Li Punti Calcio", "position": "Centre-Forward", "market_value": 0, "total_fees_received": 0, "agency_since_approx": "2025-01-01", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Federico Carcamo", "agency": "Agencia Continental", "club": "Club Social y Deportivo Juan José Moreno", "position": "Centre-Forward", "market_value": 0, "total_fees_received": 0, "agency_since_approx": "2025-10-15", "was_exported": false, "first_export_club": "", "first_export_date": ""}, {"name": "Khelifa Mahieddine", "agency": "Agencia Continental", "club": "Without Club", "position": "Centre-Back", "market_value": 0, "total_fees_received": 0, "agency_since_approx": "2024-07-01", "was_exported": false, "first_export_club": "", "first_export_date": ""}];
+
+const COLORS = {
+  "Footfeel ISM":"#3fb950","Interplayers":"#f0883e",
+  "Score Futbol":"#bc8cff","Star Makers Agency":"#ff7b72","Proyecta Players":"#ffa657",
+  "INSUA GROUP":"#39d353","Dodici Sports":"#79c0ff","Luis Grillo":"#d2a8ff",
+  "MVP Group":"#56d364","Sports360":"#e3b341","PROSPORTS Argentina":"#f778ba",
+  "JEP Sports":"#a5d6ff","Agencia Continental":"#7ee787"
+};
+
+function color(name){return COLORS[name]||"#8b949e";}
+
+function fmtM(v,d=1){
+  if(!v)return"–";
+  if(v>=1e9)return"€"+(v/1e9).toFixed(d)+"B";
+  if(v>=1e6)return"€"+(v/1e6).toFixed(d)+"M";
+  if(v>=1e3)return"€"+(v/1e3).toFixed(0)+"K";
+  return"€"+v.toLocaleString("es-AR");
+}
+function fmtP(v){return v.toFixed(1)+"%";}
+
+// ---- State ----
+let selAgency = "Score Futbol";
+let agSort = {col:"rank", dir:1};
+let pSort  = {col:"market_value", dir:-1};
+let pSearch = "";
+let hiddenAgencies = new Set();
+let hoveredPlayer = null;
+
+// ---- BAR CHART ----
+function renderBar(){
+  const el = document.getElementById("bar-chart");
+  const maxV = Math.max(...AGENCIES.map(a=>Math.max(a.total_mv,a.total_fees)));
+  el.innerHTML = "";
+  AGENCIES.forEach(a=>{
+    const sel = a.name===selAgency;
+    const c = color(a.name);
+    const mvP = (a.total_mv/maxV*100).toFixed(2);
+    const feP = (a.total_fees/maxV*100).toFixed(2);
+    const gb = a.is_global?'<span class="global-badge" title="Agencia global — sede en Londres">GLOBAL</span>':'';
+    const div = document.createElement("div");
+    div.className = "bar-row"+(sel?" selected":"");
+    div.innerHTML = `
+      <div class="bar-label">${a.name}${gb}</div>
+      <div class="bar-tracks">
+        <div class="bar-track" style="width:${mvP}%;background:${c};opacity:0.85;"></div>
+        <div class="bar-track" style="width:${feP}%;background:${c};opacity:0.5;"></div>
+      </div>
+      <div class="bar-value">${fmtM(a.total_mv)}</div>`;
+    div.addEventListener("click",()=>selectAgency(a.name));
+    el.appendChild(div);
+  });
+}
+
+// ---- AGENCY TABLE ----
+function renderAgTable(){
+  const sorted = [...AGENCIES].sort((a,b)=>{
+    let av=a[agSort.col],bv=b[agSort.col];
+    if(typeof av==="string") return agSort.dir*av.localeCompare(bv);
+    return agSort.dir*((av||0)-(bv||0));
+  });
+  const tb = document.getElementById("ag-tbody");
+  tb.innerHTML="";
+  sorted.forEach(a=>{
+    const sel = a.name===selAgency;
+    const c = color(a.name);
+    const gb = a.is_global?'<span class="badge-global" title="Agencia global — sede en Londres">GLOBAL</span>':'';
+    const pw = Math.min(a.pct_exported,100);
+    const tr = document.createElement("tr");
+    tr.className = "clickable"+(sel?" selected-row":"");
+    tr.innerHTML = `
+      <td>${a.rank}</td>
+      <td style="white-space:nowrap;">
+        <span style="display:inline-flex;align-items:center;gap:7px;">
+          <span style="width:10px;height:10px;border-radius:50%;background:${c};display:inline-block;flex-shrink:0;"></span>
+          ${a.name} ${gb}
+        </span>
+      </td>
+      <td class="num">${a.n_players}</td>
+      <td class="num">${a.n_exported}</td>
+      <td>
+        <span style="display:inline-flex;align-items:center;">
+          <span class="pct-bar-bg"><span class="pct-bar-fill" style="width:${pw}%;"></span></span>
+          ${fmtP(a.pct_exported)}
+        </span>
+      </td>
+      <td class="num">${fmtM(a.total_mv)}</td>
+      <td class="num">${a.total_fees>0?fmtM(a.total_fees):"–"}</td>
+      <td class="num">${fmtM(a.avg_mv)}</td>
+      <td style="max-width:160px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;" title="${a.top_player} (${fmtM(a.top_mv)})">
+        ${a.top_player} <span style="color:var(--text2);font-size:11px;">${fmtM(a.top_mv)}</span>
+      </td>`;
+    tr.addEventListener("click",()=>selectAgency(a.name));
+    tb.appendChild(tr);
+  });
+}
+
+document.getElementById("ag-table").querySelectorAll("th[data-col]").forEach(th=>{
+  th.addEventListener("click",()=>{
+    const col=th.dataset.col;
+    if(agSort.col===col){agSort.dir*=-1;}
+    else{agSort.col=col;agSort.dir=(col==="rank"||col==="name")?1:-1;}
+    document.querySelectorAll("#ag-table th").forEach(t=>{
+      t.classList.remove("sorted");
+      const ic=t.querySelector(".sort-icon");if(ic)ic.textContent="";
+    });
+    th.classList.add("sorted");
+    const ic=th.querySelector(".sort-icon");if(ic)ic.textContent=agSort.dir===1?"↑":"↓";
+    renderAgTable();
+  });
+});
+
+// ---- DETAIL CARDS ----
+function renderDetailCards(name){
+  const a = AGENCIES.find(x=>x.name===name);
+  const c = color(name);
+  document.getElementById("detail-name").textContent = name;
+  document.getElementById("detail-dot").style.background = c;
+
+  const gn = document.getElementById("detail-global-note");
+  if(a.is_global){
+    if(!gn){
+      const sp=document.createElement("span");
+      sp.id="detail-global-note";sp.className="badge-global";
+      sp.textContent="Agencia global — sede en Londres";
+      sp.title="Agencia global — opera fuera de Argentina.";
+      document.getElementById("detail-header").appendChild(sp);
+    }
+  } else {
+    if(gn)gn.remove();
+  }
+
+  const defs = [
+    {label:"Jugadores",       value:a.n_players,                             cls:"",       sub:""},
+    {label:"Valor de Mercado",value:fmtM(a.total_mv),                        cls:"blue",   sub:"avg "+fmtM(a.avg_mv)},
+    {label:"Fees Generados",  value:a.total_fees>0?fmtM(a.total_fees):"–",   cls:"green",  sub:""},
+    {label:"% Exportados",    value:fmtP(a.pct_exported),                    cls:"yellow", sub:a.n_exported+" de "+a.n_players},
+    {label:"Jugador Top",     value:a.top_player,                            cls:"",       sub:fmtM(a.top_mv)},
+  ];
+  const cont = document.getElementById("detail-cards");
+  cont.innerHTML="";
+  defs.forEach(d=>{
+    const card=document.createElement("div");card.className="card";
+    const fs = d.label==="Jugador Top"?"15px":"22px";
+    card.innerHTML=`<div class="card-label">${d.label}</div><div class="card-value ${d.cls}" style="font-size:${fs}">${d.value}</div>${d.sub?'<div class="card-sub">'+d.sub+'</div>':""}`;
+    cont.appendChild(card);
+  });
+}
+
+// ---- PLAYER TABLE ----
+function renderPlayers(name){
+  const search = pSearch.toLowerCase();
+  let list = PLAYERS.filter(p=>p.agency===name);
+  if(search) list=list.filter(p=>
+    p.name.toLowerCase().includes(search)||
+    p.club.toLowerCase().includes(search)||
+    p.position.toLowerCase().includes(search)
+  );
+  list = [...list].sort((a,b)=>{
+    let av=a[pSort.col],bv=b[pSort.col];
+    if(typeof av==="boolean") return pSort.dir*((av?1:0)-(bv?1:0));
+    if(typeof av==="string") return pSort.dir*av.localeCompare(bv);
+    return pSort.dir*((av||0)-(bv||0));
+  });
+
+  const tb=document.getElementById("p-tbody");tb.innerHTML="";
+  if(!list.length){
+    const tr=document.createElement("tr");
+    tr.innerHTML='<td colspan="7" style="text-align:center;color:var(--text2);padding:24px;">Sin resultados</td>';
+    tb.appendChild(tr);return;
+  }
+  list.forEach(p=>{
+    const yr = p.agency_since_approx?p.agency_since_approx.substring(0,4):"–";
+    const exp = p.was_exported
+      ?`<span style="color:var(--green);">✓</span> <span style="color:var(--text2);font-size:11px;">${p.first_export_club||""}</span>`
+      :'<span style="color:var(--text2);">–</span>';
+    const tr=document.createElement("tr");
+    tr.innerHTML=`
+      <td style="font-weight:500;">${p.name}</td>
+      <td style="color:var(--text2);">${p.club||"–"}</td>
+      <td><span class="badge-pos">${p.position||"–"}</span></td>
+      <td class="num">${p.market_value>0?fmtM(p.market_value):"–"}</td>
+      <td class="num">${p.total_fees_received>0?fmtM(p.total_fees_received):"–"}</td>
+      <td style="color:var(--text2);">${yr!=="–"?"desde "+yr:"–"}</td>
+      <td>${exp}</td>`;
+    tb.appendChild(tr);
+  });
+}
+
+document.getElementById("p-table").querySelectorAll("th[data-col]").forEach(th=>{
+  th.addEventListener("click",()=>{
+    const col=th.dataset.col;
+    if(pSort.col===col){pSort.dir*=-1;}
+    else{pSort.col=col;pSort.dir=["market_value","total_fees_received"].includes(col)?-1:1;}
+    document.querySelectorAll("#p-table th").forEach(t=>{
+      t.classList.remove("sorted");const ic=t.querySelector(".sort-icon");if(ic)ic.textContent="";
+    });
+    th.classList.add("sorted");const ic=th.querySelector(".sort-icon");if(ic)ic.textContent=pSort.dir===1?"↑":"↓";
+    renderPlayers(selAgency);
+  });
+});
+
+document.getElementById("p-search").addEventListener("input",function(){
+  pSearch=this.value;renderPlayers(selAgency);
+});
+
+// ---- SCATTER ----
+const scatterData = PLAYERS.filter(p=>p.market_value>0&&p.total_fees_received>0);
+
+function renderScatterLegend(){
+  const cont=document.getElementById("scatter-legend");cont.innerHTML="";
+  const names=[...new Set(PLAYERS.map(p=>p.agency))].sort();
+  names.forEach(name=>{
+    const c=color(name);
+    const div=document.createElement("div");
+    div.className="sl-item"+(hiddenAgencies.has(name)?" hidden":"");
+    div.innerHTML=`<span class="sl-dot" style="background:${c};"></span>${name}`;
+    div.title="Click para mostrar/ocultar";
+    div.addEventListener("click",()=>{
+      if(hiddenAgencies.has(name))hiddenAgencies.delete(name);else hiddenAgencies.add(name);
+      renderScatterLegend();drawScatter();
+    });
+    cont.appendChild(div);
+  });
+}
+
+let dotPositions = [];
+
+function drawScatter(){
+  const canvas=document.getElementById("scatter-canvas");
+  const dpr=window.devicePixelRatio||1;
+  const W=canvas.parentElement.clientWidth-40;
+  const H=500;
+  canvas.style.width=W+"px";canvas.style.height=H+"px";
+  canvas.width=W*dpr;canvas.height=H*dpr;
+  const ctx=canvas.getContext("2d");ctx.scale(dpr,dpr);
+
+  const pad={top:24,right:32,bottom:54,left:78};
+  const pw=W-pad.left-pad.right;
+  const ph=H-pad.top-pad.bottom;
+
+  const vis=scatterData.filter(p=>!hiddenAgencies.has(p.agency));
+  if(!vis.length){
+    ctx.fillStyle="#8b949e";ctx.font="14px sans-serif";ctx.textAlign="center";
+    ctx.fillText("Sin datos visibles",W/2,H/2);return;
+  }
+
+  const xVals=vis.map(p=>p.market_value);
+  const yVals=vis.map(p=>p.total_fees_received);
+  const xMin=Math.log10(Math.min(...xVals)*0.6);
+  const xMax=Math.log10(Math.max(...xVals)*1.8);
+  const yMin=Math.log10(Math.min(...yVals)*0.6);
+  const yMax=Math.log10(Math.max(...yVals)*1.8);
+
+  function toX(v){return pad.left+(Math.log10(v)-xMin)/(xMax-xMin)*pw;}
+  function toY(v){return pad.top+ph-(Math.log10(v)-yMin)/(yMax-yMin)*ph;}
+
+  // Grid
+  ctx.strokeStyle="#30363d";ctx.lineWidth=0.5;
+  for(let e=Math.ceil(xMin);e<=Math.floor(xMax);e++){
+    const x=toX(Math.pow(10,e));
+    ctx.beginPath();ctx.moveTo(x,pad.top);ctx.lineTo(x,pad.top+ph);ctx.stroke();
+  }
+  for(let e=Math.ceil(yMin);e<=Math.floor(yMax);e++){
+    const y=toY(Math.pow(10,e));
+    ctx.beginPath();ctx.moveTo(pad.left,y);ctx.lineTo(pad.left+pw,y);ctx.stroke();
+  }
+
+  // Axis labels
+  ctx.fillStyle="#8b949e";ctx.font="11px -apple-system,BlinkMacSystemFont,Segoe UI,sans-serif";
+  ctx.textAlign="center";
+  for(let e=Math.ceil(xMin);e<=Math.floor(xMax);e++){
+    const x=toX(Math.pow(10,e));
+    const v=Math.pow(10,e);
+    const lbl=v>=1e6?"€"+(v/1e6).toFixed(0)+"M":v>=1e3?"€"+(v/1e3).toFixed(0)+"K":"€"+v;
+    ctx.fillText(lbl,x,pad.top+ph+18);
+  }
+  ctx.textAlign="right";
+  for(let e=Math.ceil(yMin);e<=Math.floor(yMax);e++){
+    const y=toY(Math.pow(10,e));
+    const v=Math.pow(10,e);
+    const lbl=v>=1e6?"€"+(v/1e6).toFixed(0)+"M":v>=1e3?"€"+(v/1e3).toFixed(0)+"K":"€"+v;
+    ctx.fillText(lbl,pad.left-8,y+4);
+  }
+
+  ctx.fillStyle="#8b949e";ctx.font="12px sans-serif";ctx.textAlign="center";
+  ctx.fillText("Valor de Mercado (€)",pad.left+pw/2,H-8);
+  ctx.save();ctx.translate(16,pad.top+ph/2);ctx.rotate(-Math.PI/2);
+  ctx.textAlign="center";ctx.fillText("Fees Generados (€)",0,0);ctx.restore();
+
+  // Dots
+  dotPositions=[];
+  scatterData.forEach(p=>{
+    if(hiddenAgencies.has(p.agency))return;
+    const x=toX(p.market_value);
+    const y=toY(p.total_fees_received);
+    const c=color(p.agency);
+    const hov=hoveredPlayer&&hoveredPlayer.name===p.name;
+    ctx.beginPath();ctx.arc(x,y,hov?8:5,0,Math.PI*2);
+    ctx.fillStyle=c;ctx.globalAlpha=hov?1:0.72;ctx.fill();
+    if(hov){ctx.strokeStyle="#fff";ctx.lineWidth=1.5;ctx.globalAlpha=1;ctx.stroke();}
+    ctx.globalAlpha=1;
+    dotPositions.push({x,y,p});
+  });
+}
+
+const sc=document.getElementById("scatter-canvas");
+const tt=document.getElementById("tt");
+
+sc.addEventListener("mousemove",function(e){
+  const rect=sc.getBoundingClientRect();
+  const dpr=window.devicePixelRatio||1;
+  const scX=rect.width/(sc.width/dpr);
+  const scY=rect.height/(sc.height/dpr);
+  const mx=e.clientX-rect.left;
+  const my=e.clientY-rect.top;
+  let closest=null,minD=16;
+  dotPositions.forEach(d=>{
+    const dx=d.x*scX-mx,dy=d.y*scY-my;
+    const dist=Math.sqrt(dx*dx+dy*dy);
+    if(dist<minD){minD=dist;closest=d;}
+  });
+  if(closest){
+    const p=closest.p;
+    if(!hoveredPlayer||hoveredPlayer.name!==p.name){
+      hoveredPlayer=p;drawScatter();
+    }
+    tt.style.display="block";
+    tt.style.left=(e.clientX+16)+"px";tt.style.top=(e.clientY-10)+"px";
+    tt.innerHTML=`<div class="tt-n">${p.name}</div>
+      <div class="tt-r"><b>Agencia:</b> ${p.agency}</div>
+      <div class="tt-r"><b>Club:</b> ${p.club||"–"}</div>
+      <div class="tt-r"><b>Valor:</b> ${fmtM(p.market_value)}</div>
+      <div class="tt-r"><b>Fees:</b> ${fmtM(p.total_fees_received)}</div>
+      ${p.position?'<div class="tt-r"><b>Posición:</b> '+p.position+'</div>':""}`;
+  } else if(hoveredPlayer){
+    hoveredPlayer=null;tt.style.display="none";drawScatter();
+  }
+});
+sc.addEventListener("mouseleave",()=>{hoveredPlayer=null;tt.style.display="none";drawScatter();});
+
+// ---- SELECT ----
+function selectAgency(name){
+  selAgency=name;
+  renderBar();renderAgTable();renderDetailCards(name);renderPlayers(name);
+}
+
+// ---- INIT ----
+renderBar();renderAgTable();
+renderDetailCards(selAgency);renderPlayers(selAgency);
+renderScatterLegend();
+window.addEventListener("resize",()=>drawScatter());
+requestAnimationFrame(()=>requestAnimationFrame(()=>drawScatter()));
+</script>
+</body>
+</html>

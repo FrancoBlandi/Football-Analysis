@@ -1,0 +1,6311 @@
+{
+  "search_world cup 2026": {
+    "results": [
+      {
+        "entity": {
+          "id": 26798,
+          "name": "Unity Cup 2025",
+          "slug": "unity-cup-2025",
+          "userCount": 1013,
+          "category": {
+            "id": 1468,
+            "name": "World",
+            "slug": "world",
+            "flag": "international",
+            "sport": {
+              "id": 1,
+              "slug": "football",
+              "name": "Football"
+            }
+          },
+          "displayInverseHomeAwayTeams": false,
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "كأس الوحدة 2025"
+            },
+            "shortNameTranslation": {}
+          },
+          "gender": "M"
+        },
+        "score": 16196.925,
+        "type": "uniqueTournament"
+      },
+      {
+        "entity": {
+          "id": 14154182,
+          "name": "ASWH - VV Capelle",
+          "tournament": {
+            "id": 154262,
+            "name": "Netherlands Friendly Games",
+            "slug": "netherlands-friendly-games",
+            "uniqueTournament": {
+              "id": 27115,
+              "name": "Netherlands Friendly Games",
+              "slug": "netherlands-friendly-games",
+              "category": {
+                "id": 1587,
+                "name": "Netherlands Amateur",
+                "slug": "netherlands-amateur",
+                "alpha2": "NL",
+                "flag": "netherlands",
+                "sport": {
+                  "id": 1,
+                  "slug": "football",
+                  "name": "Football"
+                },
+                "country": {
+                  "alpha2": "NL",
+                  "name": "Netherlands",
+                  "slug": "netherlands"
+                }
+              },
+              "displayInverseHomeAwayTeams": false,
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "ar": "مباريات ودية في هولندا"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "category": {
+              "id": 1587,
+              "name": "Netherlands Amateur",
+              "slug": "netherlands-amateur",
+              "alpha2": "NL",
+              "flag": "netherlands",
+              "sport": {
+                "id": 1,
+                "slug": "football",
+                "name": "Football"
+              },
+              "country": {
+                "alpha2": "NL",
+                "name": "Netherlands",
+                "slug": "netherlands"
+              }
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "مباريات ودية في هولندا"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "status": {
+            "type": "finished",
+            "description": ""
+          },
+          "homeTeam": {
+            "id": 6368,
+            "name": "ASWH",
+            "slug": "aswh",
+            "sport": {
+              "id": 1,
+              "slug": "football",
+              "name": "Football"
+            },
+            "userCount": 394,
+            "teamColors": {
+              "primary": "#53b38d",
+              "secondary": "#ece614",
+              "text": "#ece614"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "إيه إس دبليو إتش",
+                "ru": "ФК АСВХ"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "awayTeam": {
+            "id": 2989,
+            "name": "VV Capelle",
+            "slug": "vv-capelle",
+            "sport": {
+              "id": 1,
+              "slug": "football",
+              "name": "Football"
+            },
+            "userCount": 325,
+            "teamColors": {
+              "primary": "#009900",
+              "secondary": "#ffffff",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "كابيل"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "homeScore": {
+            "display": 4
+          },
+          "awayScore": {
+            "display": 1
+          },
+          "startTimestamp": 1754139600,
+          "customId": "OjbstCc",
+          "slug": "aswh-vv-capelle",
+          "finalResultOnly": false
+        },
+        "score": 191.24237,
+        "type": "event"
+      },
+      {
+        "entity": {
+          "id": 15818026,
+          "name": "Combivox Orsacuti Capurso - Volley World Napoli",
+          "tournament": {
+            "id": 161203,
+            "name": "Serie B2 Femminile, Girone I",
+            "slug": "serie-b2-femminile-girone-i",
+            "uniqueTournament": {
+              "id": 28833,
+              "name": "Serie B2 Femminile",
+              "slug": "serie-b2-femminile",
+              "category": {
+                "id": 126,
+                "name": "Italy",
+                "slug": "italy",
+                "alpha2": "IT",
+                "flag": "italy",
+                "sport": {
+                  "id": 23,
+                  "slug": "volleyball",
+                  "name": "Volleyball"
+                },
+                "country": {
+                  "alpha2": "IT",
+                  "name": "Italy",
+                  "slug": "italy"
+                }
+              },
+              "displayInverseHomeAwayTeams": false,
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "ar": "السيري B2 للسيدات"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "category": {
+              "id": 126,
+              "name": "Italy",
+              "slug": "italy",
+              "alpha2": "IT",
+              "flag": "italy",
+              "sport": {
+                "id": 23,
+                "slug": "volleyball",
+                "name": "Volleyball"
+              },
+              "country": {
+                "alpha2": "IT",
+                "name": "Italy",
+                "slug": "italy"
+              }
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "دوري الدرجة الثانية للسيدات، المجموعة I"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "status": {
+            "type": "finished",
+            "description": ""
+          },
+          "homeTeam": {
+            "id": 1120096,
+            "name": "Combivox Orsacuti Capurso",
+            "slug": "combivox-orsacuti-capurso",
+            "sport": {
+              "id": 23,
+              "slug": "volleyball",
+              "name": "Volleyball"
+            },
+            "userCount": 8,
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "ك. كابورسو"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "awayTeam": {
+            "id": 1120089,
+            "name": "Volley World Napoli",
+            "slug": "volley-world-napoli",
+            "sport": {
+              "id": 23,
+              "slug": "volleyball",
+              "name": "Volleyball"
+            },
+            "userCount": 5,
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "ف. نابولي"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "homeScore": {
+            "display": 3
+          },
+          "awayScore": {
+            "display": 2
+          },
+          "startTimestamp": 1774110600,
+          "customId": "ObYisWbYi",
+          "slug": "combivox-orsacuti-capurso-volley-world-napoli",
+          "finalResultOnly": false
+        },
+        "score": 178.24521,
+        "type": "event"
+      },
+      {
+        "entity": {
+          "id": 15115545,
+          "name": "Volley World Napoli - Combivox Orsacuti Capurso",
+          "tournament": {
+            "id": 161203,
+            "name": "Serie B2 Femminile, Girone I",
+            "slug": "serie-b2-femminile-girone-i",
+            "uniqueTournament": {
+              "id": 28833,
+              "name": "Serie B2 Femminile",
+              "slug": "serie-b2-femminile",
+              "category": {
+                "id": 126,
+                "name": "Italy",
+                "slug": "italy",
+                "alpha2": "IT",
+                "flag": "italy",
+                "sport": {
+                  "id": 23,
+                  "slug": "volleyball",
+                  "name": "Volleyball"
+                },
+                "country": {
+                  "alpha2": "IT",
+                  "name": "Italy",
+                  "slug": "italy"
+                }
+              },
+              "displayInverseHomeAwayTeams": false,
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "ar": "السيري B2 للسيدات"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "category": {
+              "id": 126,
+              "name": "Italy",
+              "slug": "italy",
+              "alpha2": "IT",
+              "flag": "italy",
+              "sport": {
+                "id": 23,
+                "slug": "volleyball",
+                "name": "Volleyball"
+              },
+              "country": {
+                "alpha2": "IT",
+                "name": "Italy",
+                "slug": "italy"
+              }
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "دوري الدرجة الثانية للسيدات، المجموعة I"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "status": {
+            "type": "finished",
+            "description": ""
+          },
+          "homeTeam": {
+            "id": 1120089,
+            "name": "Volley World Napoli",
+            "slug": "volley-world-napoli",
+            "sport": {
+              "id": 23,
+              "slug": "volleyball",
+              "name": "Volleyball"
+            },
+            "userCount": 5,
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "ف. نابولي"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "awayTeam": {
+            "id": 1120096,
+            "name": "Combivox Orsacuti Capurso",
+            "slug": "combivox-orsacuti-capurso",
+            "sport": {
+              "id": 23,
+              "slug": "volleyball",
+              "name": "Volleyball"
+            },
+            "userCount": 8,
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "ك. كابورسو"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "homeScore": {
+            "display": 2
+          },
+          "awayScore": {
+            "display": 3
+          },
+          "startTimestamp": 1763829000,
+          "customId": "ObYisWbYi",
+          "slug": "combivox-orsacuti-capurso-volley-world-napoli",
+          "finalResultOnly": false
+        },
+        "score": 135.339,
+        "type": "event"
+      },
+      {
+        "entity": {
+          "id": 12687619,
+          "name": "VV Capelle - ASWH",
+          "tournament": {
+            "id": 115724,
+            "name": "Vierde Divisie - Group B",
+            "slug": "vierde-divisie-zaterdag-b",
+            "uniqueTournament": {
+              "id": 20450,
+              "name": "Vierde Divisie",
+              "slug": "vierde-divisie",
+              "category": {
+                "id": 1587,
+                "name": "Netherlands Amateur",
+                "slug": "netherlands-amateur",
+                "alpha2": "NL",
+                "flag": "netherlands",
+                "sport": {
+                  "id": 1,
+                  "slug": "football",
+                  "name": "Football"
+                },
+                "country": {
+                  "alpha2": "NL",
+                  "name": "Netherlands",
+                  "slug": "netherlands"
+                }
+              },
+              "displayInverseHomeAwayTeams": false,
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "ar": "الدرجة الرابعة"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "category": {
+              "id": 1587,
+              "name": "Netherlands Amateur",
+              "slug": "netherlands-amateur",
+              "alpha2": "NL",
+              "flag": "netherlands",
+              "sport": {
+                "id": 1,
+                "slug": "football",
+                "name": "Football"
+              },
+              "country": {
+                "alpha2": "NL",
+                "name": "Netherlands",
+                "slug": "netherlands"
+              }
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "الدرجة الرابعة - المجموعة B"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "status": {
+            "type": "finished",
+            "description": ""
+          },
+          "homeTeam": {
+            "id": 2989,
+            "name": "VV Capelle",
+            "slug": "vv-capelle",
+            "sport": {
+              "id": 1,
+              "slug": "football",
+              "name": "Football"
+            },
+            "userCount": 325,
+            "teamColors": {
+              "primary": "#009900",
+              "secondary": "#ffffff",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "كابيل"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "awayTeam": {
+            "id": 6368,
+            "name": "ASWH",
+            "slug": "aswh",
+            "sport": {
+              "id": 1,
+              "slug": "football",
+              "name": "Football"
+            },
+            "userCount": 394,
+            "teamColors": {
+              "primary": "#53b38d",
+              "secondary": "#ece614",
+              "text": "#ece614"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "إيه إس دبليو إتش",
+                "ru": "ФК АСВХ"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "homeScore": {
+            "display": 0
+          },
+          "awayScore": {
+            "display": 0
+          },
+          "startTimestamp": 1706970600,
+          "customId": "OjbstCc",
+          "slug": "aswh-vv-capelle",
+          "finalResultOnly": false
+        },
+        "score": 120.03105,
+        "type": "event"
+      },
+      {
+        "entity": {
+          "id": 12677966,
+          "name": "ASWH - VV Capelle",
+          "tournament": {
+            "id": 115724,
+            "name": "Vierde Divisie - Group B",
+            "slug": "vierde-divisie-zaterdag-b",
+            "uniqueTournament": {
+              "id": 20450,
+              "name": "Vierde Divisie",
+              "slug": "vierde-divisie",
+              "category": {
+                "id": 1587,
+                "name": "Netherlands Amateur",
+                "slug": "netherlands-amateur",
+                "alpha2": "NL",
+                "flag": "netherlands",
+                "sport": {
+                  "id": 1,
+                  "slug": "football",
+                  "name": "Football"
+                },
+                "country": {
+                  "alpha2": "NL",
+                  "name": "Netherlands",
+                  "slug": "netherlands"
+                }
+              },
+              "displayInverseHomeAwayTeams": false,
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "ar": "الدرجة الرابعة"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "category": {
+              "id": 1587,
+              "name": "Netherlands Amateur",
+              "slug": "netherlands-amateur",
+              "alpha2": "NL",
+              "flag": "netherlands",
+              "sport": {
+                "id": 1,
+                "slug": "football",
+                "name": "Football"
+              },
+              "country": {
+                "alpha2": "NL",
+                "name": "Netherlands",
+                "slug": "netherlands"
+              }
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "الدرجة الرابعة - المجموعة B"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "status": {
+            "type": "finished",
+            "description": ""
+          },
+          "homeTeam": {
+            "id": 6368,
+            "name": "ASWH",
+            "slug": "aswh",
+            "sport": {
+              "id": 1,
+              "slug": "football",
+              "name": "Football"
+            },
+            "userCount": 394,
+            "teamColors": {
+              "primary": "#53b38d",
+              "secondary": "#ece614",
+              "text": "#ece614"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "إيه إس دبليو إتش",
+                "ru": "ФК АСВХ"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "awayTeam": {
+            "id": 2989,
+            "name": "VV Capelle",
+            "slug": "vv-capelle",
+            "sport": {
+              "id": 1,
+              "slug": "football",
+              "name": "Football"
+            },
+            "userCount": 325,
+            "teamColors": {
+              "primary": "#009900",
+              "secondary": "#ffffff",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "كابيل"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "homeScore": {
+            "display": 1
+          },
+          "awayScore": {
+            "display": 0
+          },
+          "startTimestamp": 1694266200,
+          "customId": "OjbstCc",
+          "slug": "aswh-vv-capelle",
+          "finalResultOnly": false
+        },
+        "score": 117.51601,
+        "type": "event"
+      }
+    ]
+  },
+  "search_fifa world cup": {
+    "results": [
+      {
+        "entity": {
+          "id": 16,
+          "name": "FIFA World Cup",
+          "slug": "world-championship",
+          "userCount": 799756,
+          "category": {
+            "id": 1468,
+            "name": "World",
+            "slug": "world",
+            "flag": "international",
+            "sport": {
+              "id": 1,
+              "slug": "football",
+              "name": "Football"
+            }
+          },
+          "displayInverseHomeAwayTeams": false,
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "كأس العالم",
+              "az": "FİFA Dünya Kuboku",
+              "bn": "ওয়ার্ল্ড চ্যাম্পিয়নশিপ",
+              "de": "Weltmeisterschaft",
+              "el": "Παγκόσμιο Κύπελλο",
+              "es": "Copa Mundial",
+              "fr": "Coupe du monde",
+              "hi": "वर्ल्ड चैंपियनशिप",
+              "hr": "FIFA Svjetsko prvenstvo",
+              "hu": "FIFA Világbajnokság",
+              "id": "Piala Dunia FIFA",
+              "it": "Coppa del Mondo FIFA",
+              "ja": "FIFAワールドカップ",
+              "ko": "FIFA 월드컵",
+              "nl": "Wereldkampioenschap",
+              "no": "Verdensmesterskapet",
+              "pl": "Mistrzostwa Świata",
+              "pt": "Copa do Mundo FIFA",
+              "ro": "Campionatul Mondial",
+              "ru": "Чемпионат мира",
+              "sv": "Världsmästerskapet",
+              "th": "ฟุตบอลโลก",
+              "tr": "FIFA Dünya Kupası",
+              "vi": "Giải Vô Địch Thế Giới",
+              "es-la": "Copa Mundial",
+              "pt-pt": "Mundial"
+            },
+            "shortNameTranslation": {}
+          },
+          "gender": "M"
+        },
+        "score": 1141651.2,
+        "type": "uniqueTournament"
+      },
+      {
+        "entity": {
+          "id": 357,
+          "name": "FIFA Club World Cup",
+          "slug": "club-world-championship",
+          "userCount": 576411,
+          "category": {
+            "id": 1468,
+            "name": "World",
+            "slug": "world",
+            "flag": "international",
+            "sport": {
+              "id": 1,
+              "slug": "football",
+              "name": "Football"
+            }
+          },
+          "displayInverseHomeAwayTeams": false,
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "بطولة العالم للأندية",
+              "bn": "ক্লাব ওয়ার্ল্ড চ্যাম্পিয়নশিপ",
+              "hi": "क्लब वर्ल्ड चैंपियनशिप"
+            },
+            "shortNameTranslation": {}
+          },
+          "gender": "M"
+        },
+        "score": 335880.2,
+        "type": "uniqueTournament"
+      },
+      {
+        "entity": {
+          "id": 290,
+          "name": "FIFA Women's World Cup",
+          "slug": "world-championship-women",
+          "userCount": 64223,
+          "category": {
+            "id": 1468,
+            "name": "World",
+            "slug": "world",
+            "flag": "international",
+            "sport": {
+              "id": 1,
+              "slug": "football",
+              "name": "Football"
+            }
+          },
+          "displayInverseHomeAwayTeams": false,
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "بطولة العالم للسيدات",
+              "bn": "ওয়ার্ল্ড চ্যাম্পিয়নশিপ উইমেন",
+              "hi": "वर्ल्ड चैंपियनशिप वूमेन"
+            },
+            "shortNameTranslation": {}
+          },
+          "gender": "F"
+        },
+        "score": 107465.12,
+        "type": "uniqueTournament"
+      },
+      {
+        "entity": {
+          "id": 23674,
+          "name": "FIFA Intercontinental Cup",
+          "slug": "fifa-intercontinental-cup",
+          "userCount": 45878,
+          "category": {
+            "id": 1468,
+            "name": "World",
+            "slug": "world",
+            "flag": "international",
+            "sport": {
+              "id": 1,
+              "slug": "football",
+              "name": "Football"
+            }
+          },
+          "displayInverseHomeAwayTeams": false,
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "كأس القارات لكرة القدم",
+              "bn": "ফিফা ইন্টারকন্টিনেন্টাল কাপ",
+              "hi": "फीफा इंटरकॉन्टिनेंटल कप"
+            },
+            "shortNameTranslation": {}
+          },
+          "gender": "M"
+        },
+        "score": 74848.695,
+        "type": "uniqueTournament"
+      },
+      {
+        "entity": {
+          "id": 32832,
+          "name": "FIFA Series",
+          "slug": "fifa-series",
+          "userCount": 4144,
+          "category": {
+            "id": 1468,
+            "name": "World",
+            "slug": "world",
+            "flag": "international",
+            "sport": {
+              "id": 1,
+              "slug": "football",
+              "name": "Football"
+            }
+          },
+          "displayInverseHomeAwayTeams": false,
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "سلسلة فيفا"
+            },
+            "shortNameTranslation": {}
+          },
+          "gender": "M"
+        },
+        "score": 23631.053,
+        "type": "uniqueTournament"
+      },
+      {
+        "entity": {
+          "id": 29788,
+          "name": "FIFA Futsal World Cup, Women",
+          "slug": "fifa-futsal-world-cup-women",
+          "userCount": 828,
+          "category": {
+            "id": 250,
+            "name": "International",
+            "slug": "international",
+            "flag": "international",
+            "sport": {
+              "id": 29,
+              "slug": "futsal",
+              "name": "Futsal"
+            }
+          },
+          "displayInverseHomeAwayTeams": false,
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "بطولة كأس العالم لكرة الصالات للسيدات (FIFA)"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "score": 13289.406,
+        "type": "uniqueTournament"
+      },
+      {
+        "entity": {
+          "id": 32833,
+          "name": "FIFA Series, Women",
+          "slug": "fifa-series-women",
+          "userCount": 628,
+          "category": {
+            "id": 1468,
+            "name": "World",
+            "slug": "world",
+            "flag": "international",
+            "sport": {
+              "id": 1,
+              "slug": "football",
+              "name": "Football"
+            }
+          },
+          "displayInverseHomeAwayTeams": false,
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "سلسلة فيفا، للسيدات"
+            },
+            "shortNameTranslation": {}
+          },
+          "gender": "F"
+        },
+        "score": 9642.233,
+        "type": "uniqueTournament"
+      }
+    ]
+  },
+  "search_mundial 2026": {
+    "results": [
+      {
+        "entity": {
+          "id": 16136606,
+          "name": "Super Mundial FC - Academia Blanco y Negro",
+          "tournament": {
+            "id": 153731,
+            "name": "Primera C, Grupo 14",
+            "slug": "primera-c-grupo-m",
+            "uniqueTournament": {
+              "id": 26947,
+              "name": "Primera C",
+              "slug": "primera-c",
+              "category": {
+                "id": 274,
+                "name": "Colombia",
+                "slug": "colombia",
+                "alpha2": "CO",
+                "flag": "colombia",
+                "sport": {
+                  "id": 1,
+                  "slug": "football",
+                  "name": "Football"
+                },
+                "country": {
+                  "alpha2": "CO",
+                  "name": "Colombia",
+                  "slug": "colombia"
+                }
+              },
+              "displayInverseHomeAwayTeams": false,
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "ar": "الدوري الثالث"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "category": {
+              "id": 274,
+              "name": "Colombia",
+              "slug": "colombia",
+              "alpha2": "CO",
+              "flag": "colombia",
+              "sport": {
+                "id": 1,
+                "slug": "football",
+                "name": "Football"
+              },
+              "country": {
+                "alpha2": "CO",
+                "name": "Colombia",
+                "slug": "colombia"
+              }
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "بطولة الدرجة الأولى C، المجموعة M"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "status": {
+            "type": "notstarted",
+            "description": ""
+          },
+          "homeTeam": {
+            "id": 1096326,
+            "name": "Super Mundial FC",
+            "slug": "super-mundial-fc",
+            "sport": {
+              "id": 1,
+              "slug": "football",
+              "name": "Football"
+            },
+            "userCount": 98,
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "سوبر موندial إف سي"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "awayTeam": {
+            "id": 1096331,
+            "name": "Academia Blanco y Negro",
+            "slug": "academia-blanco-y-negro",
+            "sport": {
+              "id": 1,
+              "slug": "football",
+              "name": "Football"
+            },
+            "userCount": 11,
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "أكاديمية بلانكو وي نيغرو"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "homeScore": {},
+          "awayScore": {},
+          "startTimestamp": 1778907658,
+          "customId": "BBNisGBNi",
+          "slug": "academia-blanco-y-negro-super-mundial-fc",
+          "finalResultOnly": true
+        },
+        "score": 622.6498,
+        "type": "event"
+      },
+      {
+        "entity": {
+          "id": 16136578,
+          "name": "Sabana Norte - Super Mundial FC",
+          "tournament": {
+            "id": 153731,
+            "name": "Primera C, Grupo 14",
+            "slug": "primera-c-grupo-m",
+            "uniqueTournament": {
+              "id": 26947,
+              "name": "Primera C",
+              "slug": "primera-c",
+              "category": {
+                "id": 274,
+                "name": "Colombia",
+                "slug": "colombia",
+                "alpha2": "CO",
+                "flag": "colombia",
+                "sport": {
+                  "id": 1,
+                  "slug": "football",
+                  "name": "Football"
+                },
+                "country": {
+                  "alpha2": "CO",
+                  "name": "Colombia",
+                  "slug": "colombia"
+                }
+              },
+              "displayInverseHomeAwayTeams": false,
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "ar": "الدوري الثالث"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "category": {
+              "id": 274,
+              "name": "Colombia",
+              "slug": "colombia",
+              "alpha2": "CO",
+              "flag": "colombia",
+              "sport": {
+                "id": 1,
+                "slug": "football",
+                "name": "Football"
+              },
+              "country": {
+                "alpha2": "CO",
+                "name": "Colombia",
+                "slug": "colombia"
+              }
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "بطولة الدرجة الأولى C، المجموعة M"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "status": {
+            "type": "notstarted",
+            "description": ""
+          },
+          "homeTeam": {
+            "id": 1096329,
+            "name": "Sabana Norte",
+            "slug": "sabana-norte",
+            "sport": {
+              "id": 1,
+              "slug": "football",
+              "name": "Football"
+            },
+            "userCount": 19,
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "سابانا نورتي"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "awayTeam": {
+            "id": 1096326,
+            "name": "Super Mundial FC",
+            "slug": "super-mundial-fc",
+            "sport": {
+              "id": 1,
+              "slug": "football",
+              "name": "Football"
+            },
+            "userCount": 98,
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "سوبر موندial إف سي"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "homeScore": {},
+          "awayScore": {},
+          "startTimestamp": 1778361609,
+          "customId": "BBNisEBNi",
+          "slug": "sabana-norte-super-mundial-fc",
+          "finalResultOnly": true
+        },
+        "score": 615.56866,
+        "type": "event"
+      }
+    ]
+  },
+  "tournament_16": {
+    "uniqueTournament": {
+      "name": "FIFA World Cup",
+      "slug": "world-championship",
+      "primaryColorHex": "#d20a11",
+      "secondaryColorHex": "#e8bb57",
+      "logo": {
+        "md5": "e637ac44051abdaeb0b41bc24c2381ca",
+        "id": 2890897
+      },
+      "darkLogo": {
+        "md5": "81938de1e60d4fb4bf6cbadb271b58ce",
+        "id": 2890894
+      },
+      "category": {
+        "name": "World",
+        "slug": "world",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "priority": 20,
+        "country": {},
+        "id": 1468,
+        "flag": "international",
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "العالم",
+            "bn": "বিশ্ব",
+            "hi": "विश्व",
+            "ru": "Мир"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      "userCount": 799756,
+      "titleHolder": {
+        "name": "Argentina",
+        "slug": "argentina",
+        "shortName": "Argentina",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "userCount": 1640403,
+        "nameCode": "ARG",
+        "ranking": 3,
+        "disabled": false,
+        "national": true,
+        "type": 0,
+        "country": {
+          "alpha2": "AR",
+          "name": "Argentina"
+        },
+        "id": 4819,
+        "teamColors": {
+          "primary": "#66ccff",
+          "secondary": "#ffffff",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "الأرجنتين",
+            "bn": "আর্জেন্টিনা",
+            "hi": "अर्जेंटीना",
+            "ru": "Аргентина"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      "titleHolderTitles": 3,
+      "mostTitles": 5,
+      "linkedUniqueTournaments": [
+        {
+          "name": "World Cup Qual. UEFA",
+          "slug": "world-championship-qual-uefa",
+          "primaryColorHex": "#9a1133",
+          "secondaryColorHex": "#c11541",
+          "logo": {
+            "md5": "1d25bf705a8d9c4386a4458c6365f0ee",
+            "id": 1493921
+          },
+          "category": {
+            "name": "Europe",
+            "slug": "europe",
+            "sport": {
+              "name": "Football",
+              "slug": "football",
+              "id": 1
+            },
+            "priority": 19,
+            "country": {},
+            "id": 1465,
+            "flag": "europe",
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "أوروبا",
+                "bn": "ইউরোপ",
+                "hi": "यूरोप",
+                "ru": "Европа"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "hasRounds": true,
+          "hasGroups": true,
+          "hasPlayoffSeries": false,
+          "hasPerformanceGraphFeature": false,
+          "periodLength": {},
+          "gender": "M",
+          "excludeFromCareerStats": false,
+          "country": {},
+          "id": 11,
+          "startDateTimestamp": 1742515200,
+          "endDateTimestamp": 1774915200,
+          "mostTitlesTeams": [],
+          "disabledHomeAwayStandings": false,
+          "displayInverseHomeAwayTeams": false,
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "تصفيات كأس العالم للاتحاد الأوروبي لكرة القدم",
+              "bn": "ওয়ার্ল্ড চ্যাম্পিয়নশিপ কোয়াল. উয়েফা",
+              "hi": "वर्ल्ड चैंपियनशिप क्वालीफाइंग यूईएफए"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        {
+          "name": "World Cup Qual. CAF ",
+          "slug": "world-championship-qual-caf",
+          "primaryColorHex": "#9a1133",
+          "secondaryColorHex": "#c11541",
+          "logo": {
+            "md5": "64da8317e15f9e2baf2fb9beca69761b",
+            "id": 1698393
+          },
+          "category": {
+            "name": "Africa",
+            "slug": "africa",
+            "sport": {
+              "name": "Football",
+              "slug": "football",
+              "id": 1
+            },
+            "priority": 16,
+            "country": {},
+            "id": 1466,
+            "flag": "africa",
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "أفريقيا",
+                "ru": "Африка"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "hasRounds": true,
+          "hasGroups": true,
+          "hasPlayoffSeries": false,
+          "hasPerformanceGraphFeature": false,
+          "periodLength": {},
+          "gender": "M",
+          "excludeFromCareerStats": false,
+          "country": {},
+          "id": 13,
+          "startDateTimestamp": 1700006400,
+          "endDateTimestamp": 1763251200,
+          "mostTitlesTeams": [],
+          "disabledHomeAwayStandings": false,
+          "displayInverseHomeAwayTeams": false,
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "تصفيات كأس العالم للاتحاد الإفريقي لكرة القدم",
+              "bn": "ওয়ার্ল্ড চ্যাম্পিয়নশিপ কোয়াল. সিএএফ",
+              "hi": "वर्ल्ड चैंपियनशिप क्वालीफिकेशन सीएएफ"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        {
+          "name": "World Cup Qual. CONCACAF",
+          "slug": "world-championship-qual-concacaf",
+          "primaryColorHex": "#9a1133",
+          "secondaryColorHex": "#c11541",
+          "logo": {
+            "md5": "686a5dca5f1a8c5b0b288bbd2a6fcd9d",
+            "id": 1674514
+          },
+          "darkLogo": {
+            "md5": "0a64f2d15bc8985cb8d79ad69f6471cd",
+            "id": 1674513
+          },
+          "category": {
+            "name": "North & Central America",
+            "slug": "north-central-america",
+            "sport": {
+              "name": "Football",
+              "slug": "football",
+              "id": 1
+            },
+            "priority": 15,
+            "country": {},
+            "id": 1469,
+            "flag": "north-and-central-america",
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "أمريكا الشمالية والوسطى",
+                "ru": "Северная и Центральная Америка"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "hasRounds": true,
+          "hasGroups": true,
+          "hasPlayoffSeries": false,
+          "hasPerformanceGraphFeature": false,
+          "periodLength": {},
+          "gender": "M",
+          "excludeFromCareerStats": false,
+          "country": {},
+          "id": 14,
+          "startDateTimestamp": 1711065600,
+          "endDateTimestamp": 1763510400,
+          "mostTitlesTeams": [],
+          "disabledHomeAwayStandings": false,
+          "displayInverseHomeAwayTeams": false,
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "تصفيات بطولة العالم الكونكاكاف",
+              "bn": "ওয়ার্ল্ড চ্যাম্পিয়নশিপ কোয়াল. কনকাকাফ",
+              "hi": "वर्ल्ड चैंपियनशिप क्वालीफिकेशन कोनकाकैफ़"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        {
+          "name": "World Cup Qual. CONMEBOL",
+          "slug": "world-championship-qual-conmebol",
+          "primaryColorHex": "#9a1133",
+          "secondaryColorHex": "#c11541",
+          "logo": {
+            "md5": "8ee6d9ab68a8222ef0976ab6d14c4191",
+            "id": 1493920
+          },
+          "darkLogo": {
+            "md5": "430c0c0cf50d5a898d2fe80c989009aa",
+            "id": 1473746
+          },
+          "category": {
+            "name": "South America",
+            "slug": "south-america",
+            "sport": {
+              "name": "Football",
+              "slug": "football",
+              "id": 1
+            },
+            "priority": 18,
+            "country": {},
+            "id": 1470,
+            "flag": "south-america",
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "أمريكا الجنوبية",
+                "ru": "Южная Америка"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "hasRounds": true,
+          "hasGroups": false,
+          "hasPlayoffSeries": false,
+          "hasPerformanceGraphFeature": false,
+          "periodLength": {},
+          "gender": "M",
+          "excludeFromCareerStats": false,
+          "country": {},
+          "id": 295,
+          "startDateTimestamp": 1694044800,
+          "endDateTimestamp": 1757376000,
+          "mostTitlesTeams": [],
+          "disabledHomeAwayStandings": false,
+          "displayInverseHomeAwayTeams": false,
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "تصفيات كأس العالم في أمريكا الجنوبية",
+              "bn": "ওয়ার্ল্ড চ্যাম্পিয়নশিপ কোয়াল. কনমেবল",
+              "hi": "वर्ल्ड चैंपियनशिप क्वालीफिकेशन कॉनमेबोल"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        {
+          "name": "World Cup Qual. AFC",
+          "slug": "world-championship-qual-afc",
+          "primaryColorHex": "#9a1133",
+          "secondaryColorHex": "#c11541",
+          "logo": {
+            "md5": "78356ec83a3ccb03fc7b7113e55eb200",
+            "id": 1698390
+          },
+          "category": {
+            "name": "Asia",
+            "slug": "asia",
+            "sport": {
+              "name": "Football",
+              "slug": "football",
+              "id": 1
+            },
+            "priority": 17,
+            "country": {},
+            "id": 1467,
+            "flag": "asia",
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "آسيا",
+                "ru": "Азия"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "hasRounds": true,
+          "hasGroups": true,
+          "hasPlayoffSeries": false,
+          "hasPerformanceGraphFeature": false,
+          "periodLength": {},
+          "gender": "M",
+          "excludeFromCareerStats": false,
+          "country": {},
+          "id": 308,
+          "startDateTimestamp": 1697068800,
+          "endDateTimestamp": 1763424000,
+          "mostTitlesTeams": [],
+          "disabledHomeAwayStandings": false,
+          "displayInverseHomeAwayTeams": false,
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "تصفيات كأس العالم للاتحاد الآسيوي لكرة القدم",
+              "bn": "ওয়ার্ল্ড চ্যাম্পিয়নশিপ  কোয়াল. এএফসি",
+              "hi": "वर्ल्ड चैंपियनशिप क्वालीफायर एएफसी"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        {
+          "name": "World Cup Qual. OFC",
+          "slug": "world-championship-qual-ofc",
+          "primaryColorHex": "#9a1133",
+          "secondaryColorHex": "#c11541",
+          "logo": {
+            "md5": "047d29d832dd03903fa0cc572378a1ff",
+            "id": 1493916
+          },
+          "category": {
+            "name": "Oceania",
+            "slug": "oceania",
+            "sport": {
+              "name": "Football",
+              "slug": "football",
+              "id": 1
+            },
+            "priority": 14,
+            "country": {},
+            "id": 1471,
+            "flag": "oceania",
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "أوقيانوسيا",
+                "ru": "Океания"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "hasRounds": true,
+          "hasGroups": true,
+          "hasPlayoffSeries": false,
+          "hasPerformanceGraphFeature": false,
+          "periodLength": {},
+          "gender": "M",
+          "excludeFromCareerStats": false,
+          "country": {},
+          "id": 309,
+          "startDateTimestamp": 1725494400,
+          "endDateTimestamp": 1742774400,
+          "mostTitlesTeams": [],
+          "disabledHomeAwayStandings": false,
+          "displayInverseHomeAwayTeams": false,
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "تصفيات كأس العالم لاتحاد أوقيانوسيا لكرة القدم",
+              "bn": "ওয়ার্ল্ড চ্যাম্পিয়নশিপ কোয়াল. ওএফসি",
+              "hi": "वर्ल्ड चैंपियनशिप क्वालीफायर ओएफसी"
+            },
+            "shortNameTranslation": {}
+          }
+        }
+      ],
+      "hasRounds": true,
+      "hasGroups": true,
+      "hasPlayoffSeries": false,
+      "upperDivisions": [],
+      "lowerDivisions": [],
+      "hasPerformanceGraphFeature": false,
+      "shortName": "World Cup",
+      "periodLength": {},
+      "gender": "M",
+      "playerOfTheTournament": true,
+      "excludeFromCareerStats": false,
+      "country": {},
+      "id": 16,
+      "startDateTimestamp": 1781204400,
+      "endDateTimestamp": 1784419200,
+      "mostTitlesTeams": [
+        {
+          "name": "Brazil",
+          "slug": "brazil",
+          "shortName": "Brazil",
+          "gender": "M",
+          "sport": {
+            "name": "Football",
+            "slug": "football",
+            "id": 1
+          },
+          "userCount": 2276286,
+          "nameCode": "BRA",
+          "ranking": 6,
+          "disabled": false,
+          "national": true,
+          "type": 0,
+          "country": {
+            "alpha2": "BR",
+            "name": "Brazil"
+          },
+          "id": 4748,
+          "teamColors": {
+            "primary": "#ffff00",
+            "secondary": "#009933",
+            "text": "#009933"
+          },
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "البرازيل",
+              "bn": "ব্রাজিল",
+              "hi": "ब्राजील",
+              "ru": "Бразилия"
+            },
+            "shortNameTranslation": {}
+          }
+        }
+      ],
+      "disabledHomeAwayStandings": true,
+      "displayInverseHomeAwayTeams": false,
+      "fieldTranslations": {
+        "nameTranslation": {
+          "pt-pt": "Mundial",
+          "ar": "كأس العالم",
+          "bn": "ওয়ার্ল্ড চ্যাম্পিয়নশিপ",
+          "hi": "वर्ल्ड चैंपियनशिप",
+          "hr": "FIFA Svjetsko prvenstvo",
+          "az": "FİFA Dünya Kuboku",
+          "nl": "Wereldkampioenschap",
+          "fr": "Coupe du monde",
+          "de": "Weltmeisterschaft",
+          "el": "Παγκόσμιο Κύπελλο",
+          "hu": "FIFA Világbajnokság",
+          "id": "Piala Dunia FIFA",
+          "it": "Coppa del Mondo FIFA",
+          "ja": "FIFAワールドカップ",
+          "ko": "FIFA 월드컵",
+          "no": "Verdensmesterskapet",
+          "pl": "Mistrzostwa Świata",
+          "pt": "Copa do Mundo FIFA",
+          "ro": "Campionatul Mondial",
+          "es": "Copa Mundial",
+          "es-la": "Copa Mundial",
+          "sv": "Världsmästerskapet",
+          "th": "ฟุตบอลโลก",
+          "tr": "FIFA Dünya Kupası",
+          "vi": "Giải Vô Địch Thế Giới",
+          "ru": "Чемпионат мира"
+        },
+        "shortNameTranslation": {}
+      }
+    }
+  },
+  "tournament_16_seasons": {
+    "seasons": [
+      {
+        "name": "World Cup 2026",
+        "year": "2026",
+        "editor": false,
+        "seasonCoverageInfo": {},
+        "id": 58210
+      },
+      {
+        "name": "World Cup 2022",
+        "year": "2022",
+        "editor": false,
+        "id": 41087
+      },
+      {
+        "name": "World Cup 2018",
+        "year": "2018",
+        "editor": false,
+        "id": 15586
+      },
+      {
+        "name": "World Cup 2014",
+        "year": "2014",
+        "editor": false,
+        "id": 7528
+      },
+      {
+        "name": "World Cup 2010",
+        "year": "2010",
+        "editor": false,
+        "id": 2531
+      },
+      {
+        "name": "World Cup 2006",
+        "year": "2006",
+        "editor": false,
+        "id": 16
+      },
+      {
+        "name": "World Cup 2002",
+        "year": "2002",
+        "editor": false,
+        "id": 2636
+      },
+      {
+        "name": "World Cup 1998",
+        "year": "1998",
+        "editor": false,
+        "id": 1151
+      },
+      {
+        "name": "World Cup 1994",
+        "year": "1994",
+        "editor": false,
+        "id": 17571
+      },
+      {
+        "name": "World Cup 1990",
+        "year": "1990",
+        "editor": false,
+        "id": 17570
+      },
+      {
+        "name": "World Cup 1986",
+        "year": "1986",
+        "editor": false,
+        "id": 17569
+      },
+      {
+        "name": "World Cup 1982",
+        "year": "1982",
+        "editor": false,
+        "id": 17568
+      },
+      {
+        "name": "World Cup 1978",
+        "year": "1978",
+        "editor": false,
+        "id": 17567
+      },
+      {
+        "name": "World Cup 1974",
+        "year": "1974",
+        "editor": false,
+        "id": 17566
+      },
+      {
+        "name": "World Cup 1970",
+        "year": "1970",
+        "editor": false,
+        "id": 17565
+      },
+      {
+        "name": "World Cup 1966",
+        "year": "1966",
+        "editor": false,
+        "id": 17564
+      },
+      {
+        "name": "World Cup 1962",
+        "year": "1962",
+        "editor": false,
+        "seasonCoverageInfo": {
+          "editorCoverageLevel": 5
+        },
+        "id": 17563
+      },
+      {
+        "name": "World Cup 1958",
+        "year": "1958",
+        "editor": false,
+        "seasonCoverageInfo": {
+          "editorCoverageLevel": 5
+        },
+        "id": 17562
+      },
+      {
+        "name": "World Cup 1954",
+        "year": "1954",
+        "editor": false,
+        "seasonCoverageInfo": {
+          "editorCoverageLevel": 5
+        },
+        "id": 17561
+      },
+      {
+        "name": "World Cup 1950",
+        "year": "1950",
+        "editor": false,
+        "seasonCoverageInfo": {
+          "editorCoverageLevel": 5
+        },
+        "id": 40714
+      },
+      {
+        "name": "World Cup 1938",
+        "year": "1938",
+        "editor": false,
+        "seasonCoverageInfo": {
+          "editorCoverageLevel": 5
+        },
+        "id": 17560
+      },
+      {
+        "name": "World Cup 1934",
+        "year": "1934",
+        "editor": false,
+        "seasonCoverageInfo": {
+          "editorCoverageLevel": 5
+        },
+        "id": 17559
+      },
+      {
+        "name": "World Cup 1930",
+        "year": "1930",
+        "editor": false,
+        "seasonCoverageInfo": {
+          "editorCoverageLevel": 5
+        },
+        "id": 40712
+      }
+    ]
+  },
+  "wc2026_groups": {
+    "groups": [
+      {
+        "tournamentId": 3954,
+        "groupName": "Group A"
+      },
+      {
+        "tournamentId": 3955,
+        "groupName": "Group B"
+      },
+      {
+        "tournamentId": 3956,
+        "groupName": "Group C"
+      },
+      {
+        "tournamentId": 3957,
+        "groupName": "Group D"
+      },
+      {
+        "tournamentId": 3958,
+        "groupName": "Group E"
+      },
+      {
+        "tournamentId": 3959,
+        "groupName": "Group F"
+      },
+      {
+        "tournamentId": 3960,
+        "groupName": "Group G"
+      },
+      {
+        "tournamentId": 3961,
+        "groupName": "Group H"
+      },
+      {
+        "tournamentId": 139403,
+        "groupName": "Group I"
+      },
+      {
+        "tournamentId": 139404,
+        "groupName": "Group J"
+      },
+      {
+        "tournamentId": 139405,
+        "groupName": "Group K"
+      },
+      {
+        "tournamentId": 139406,
+        "groupName": "Group L"
+      }
+    ]
+  },
+  "wc2026_teams": {
+    "teams": [
+      {
+        "name": "Egypt",
+        "slug": "egypt",
+        "shortName": "Egypt",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "category": {
+          "name": "World",
+          "slug": "world",
+          "sport": {
+            "name": "Football",
+            "slug": "football",
+            "id": 1
+          },
+          "priority": 20,
+          "country": {},
+          "id": 1468,
+          "flag": "international",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "العالم",
+              "hi": "विश्व",
+              "bn": "বিশ্ব",
+              "ru": "Мир"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "userCount": 592817,
+        "nameCode": "EGY",
+        "ranking": 29,
+        "disabled": false,
+        "national": true,
+        "type": 0,
+        "country": {
+          "alpha2": "EG",
+          "alpha3": "EGY",
+          "name": "Egypt",
+          "slug": "egypt"
+        },
+        "id": 4758,
+        "teamColors": {
+          "primary": "#f00000",
+          "secondary": "#ffffff",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "مصر",
+            "bn": "মিশর",
+            "hi": "इजिप्ट",
+            "ru": "Египет"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      {
+        "name": "Cabo Verde",
+        "slug": "cape-verde",
+        "shortName": "Cabo Verde",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "category": {
+          "name": "World",
+          "slug": "world",
+          "sport": {
+            "name": "Football",
+            "slug": "football",
+            "id": 1
+          },
+          "priority": 20,
+          "country": {},
+          "id": 1468,
+          "flag": "international",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "العالم",
+              "hi": "विश्व",
+              "bn": "বিশ্ব",
+              "ru": "Мир"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "userCount": 39488,
+        "nameCode": "CPV",
+        "ranking": 69,
+        "disabled": false,
+        "national": true,
+        "type": 0,
+        "country": {
+          "alpha2": "CV",
+          "alpha3": "CPV",
+          "name": "Cape Verde",
+          "slug": "cape-verde"
+        },
+        "id": 4753,
+        "teamColors": {
+          "primary": "#21418e",
+          "secondary": "#ff0000",
+          "text": "#ff0000"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "الرأس الأخضر",
+            "bn": "কেপ ভার্দে",
+            "hi": "केप वर्डे",
+            "ru": "Кабо-Верде"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      {
+        "name": "Belgium",
+        "slug": "belgium",
+        "shortName": "Belgium",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "category": {
+          "name": "International",
+          "slug": "international",
+          "sport": {
+            "name": "Football",
+            "slug": "football",
+            "id": 1
+          },
+          "priority": 12,
+          "country": {},
+          "id": 4,
+          "flag": "international",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "دولي",
+              "ru": "Международные"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "userCount": 392437,
+        "nameCode": "BEL",
+        "ranking": 9,
+        "disabled": false,
+        "national": true,
+        "type": 0,
+        "country": {
+          "alpha2": "BE",
+          "alpha3": "BEL",
+          "name": "Belgium",
+          "slug": "belgium"
+        },
+        "id": 4717,
+        "teamColors": {
+          "primary": "#ff0033",
+          "secondary": "#000000",
+          "text": "#000000"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "بلجيكا",
+            "bn": "বেলজিয়াম",
+            "hi": "बेल्जियम",
+            "ru": "Бельгия"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      {
+        "name": "Ecuador",
+        "slug": "ecuador",
+        "shortName": "Ecuador",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "category": {
+          "name": "World",
+          "slug": "world",
+          "sport": {
+            "name": "Football",
+            "slug": "football",
+            "id": 1
+          },
+          "priority": 20,
+          "country": {},
+          "id": 1468,
+          "flag": "international",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "العالم",
+              "hi": "विश्व",
+              "bn": "বিশ্ব",
+              "ru": "Мир"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "userCount": 174964,
+        "nameCode": "ECU",
+        "ranking": 23,
+        "disabled": false,
+        "national": true,
+        "type": 0,
+        "country": {
+          "alpha2": "EC",
+          "alpha3": "ECU",
+          "name": "Ecuador",
+          "slug": "ecuador"
+        },
+        "id": 4757,
+        "teamColors": {
+          "primary": "#ffff00",
+          "secondary": "#000063",
+          "text": "#000063"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "الاكوادور",
+            "bn": "ইকুয়েডর",
+            "hi": "इक्वाडोर",
+            "ru": "Эквадор"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      {
+        "name": "Morocco",
+        "slug": "morocco",
+        "shortName": "Morocco",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "category": {
+          "name": "World",
+          "slug": "world",
+          "sport": {
+            "name": "Football",
+            "slug": "football",
+            "id": 1
+          },
+          "priority": 20,
+          "country": {},
+          "id": 1468,
+          "flag": "international",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "العالم",
+              "hi": "विश्व",
+              "bn": "বিশ্ব",
+              "ru": "Мир"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "userCount": 744537,
+        "nameCode": "MOR",
+        "ranking": 8,
+        "disabled": false,
+        "national": true,
+        "type": 0,
+        "country": {
+          "alpha2": "MA",
+          "alpha3": "MAR",
+          "name": "Morocco",
+          "slug": "morocco"
+        },
+        "id": 4778,
+        "teamColors": {
+          "primary": "#ff0000",
+          "secondary": "#006600",
+          "text": "#006600"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "المغرب",
+            "bn": "মরক্কো",
+            "hi": "मोरक्को",
+            "ru": "Марокко"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      {
+        "name": "Paraguay",
+        "slug": "paraguay",
+        "shortName": "Paraguay",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "category": {
+          "name": "World",
+          "slug": "world",
+          "sport": {
+            "name": "Football",
+            "slug": "football",
+            "id": 1
+          },
+          "priority": 20,
+          "country": {},
+          "id": 1468,
+          "flag": "international",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "العالم",
+              "hi": "विश्व",
+              "bn": "বিশ্ব",
+              "ru": "Мир"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "userCount": 97083,
+        "nameCode": "PAR",
+        "ranking": 40,
+        "disabled": false,
+        "national": true,
+        "type": 0,
+        "country": {
+          "alpha2": "PY",
+          "alpha3": "PRY",
+          "name": "Paraguay",
+          "slug": "paraguay"
+        },
+        "id": 4789,
+        "teamColors": {
+          "primary": "#ff0000",
+          "secondary": "#045ca3",
+          "text": "#045ca3"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "باراغواي",
+            "bn": "প্যারাগুয়ে",
+            "hi": "पराग्वे",
+            "ru": "Парагвай"
+          },
+          "shortNameTranslation": {
+            "ar": "باراغواي"
+          }
+        }
+      },
+      {
+        "name": "Scotland",
+        "slug": "scotland",
+        "shortName": "Scotland",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "category": {
+          "name": "International",
+          "slug": "international",
+          "sport": {
+            "name": "Football",
+            "slug": "football",
+            "id": 1
+          },
+          "priority": 12,
+          "country": {},
+          "id": 4,
+          "flag": "international",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "دولي",
+              "ru": "Международные"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "userCount": 97771,
+        "nameCode": "SCO",
+        "ranking": 43,
+        "disabled": false,
+        "national": true,
+        "type": 0,
+        "country": {
+          "alpha2": "SX",
+          "alpha3": "SCO",
+          "name": "Scotland",
+          "slug": "scotland"
+        },
+        "id": 4695,
+        "teamColors": {
+          "primary": "#00005e",
+          "secondary": "#ffffff",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "اسكتلندا",
+            "bn": "স্কটল্যান্ড",
+            "hi": "स्कॉटलैंड",
+            "ru": "Шотландия"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      {
+        "name": "Senegal",
+        "slug": "senegal",
+        "shortName": "Senegal",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "category": {
+          "name": "World",
+          "slug": "world",
+          "sport": {
+            "name": "Football",
+            "slug": "football",
+            "id": 1
+          },
+          "priority": 20,
+          "country": {},
+          "id": 1468,
+          "flag": "international",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "العالم",
+              "hi": "विश्व",
+              "bn": "বিশ্ব",
+              "ru": "Мир"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "userCount": 451918,
+        "nameCode": "SEN",
+        "ranking": 14,
+        "disabled": false,
+        "national": true,
+        "type": 0,
+        "country": {
+          "alpha2": "SN",
+          "alpha3": "SEN",
+          "name": "Senegal",
+          "slug": "senegal"
+        },
+        "id": 4739,
+        "teamColors": {
+          "primary": "#ffffff",
+          "secondary": "#047151",
+          "text": "#047151"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "السنغال",
+            "bn": "সেনেগাল",
+            "hi": "सेनेगल",
+            "ru": "Сенегал"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      {
+        "name": "Norway",
+        "slug": "norway",
+        "shortName": "Norway",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "category": {
+          "name": "International",
+          "slug": "international",
+          "sport": {
+            "name": "Football",
+            "slug": "football",
+            "id": 1
+          },
+          "priority": 12,
+          "country": {},
+          "id": 4,
+          "flag": "international",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "دولي",
+              "ru": "Международные"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "userCount": 163055,
+        "nameCode": "NOR",
+        "ranking": 31,
+        "disabled": false,
+        "national": true,
+        "type": 0,
+        "country": {
+          "alpha2": "NO",
+          "alpha3": "NOR",
+          "name": "Norway",
+          "slug": "norway"
+        },
+        "id": 4475,
+        "teamColors": {
+          "primary": "#ef2b2d",
+          "secondary": "#001f5b",
+          "text": "#001f5b"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "النرويج",
+            "bn": "নরওয়ে",
+            "hi": "नॉर्वे",
+            "ru": "Норвегия"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      {
+        "name": "Ghana",
+        "slug": "ghana",
+        "shortName": "Ghana",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "category": {
+          "name": "World",
+          "slug": "world",
+          "sport": {
+            "name": "Football",
+            "slug": "football",
+            "id": 1
+          },
+          "priority": 20,
+          "country": {},
+          "id": 1468,
+          "flag": "international",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "العالم",
+              "hi": "विश्व",
+              "bn": "বিশ্ব",
+              "ru": "Мир"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "userCount": 222173,
+        "nameCode": "GHA",
+        "ranking": 74,
+        "disabled": false,
+        "national": true,
+        "type": 0,
+        "country": {
+          "alpha2": "GH",
+          "alpha3": "GHA",
+          "name": "Ghana",
+          "slug": "ghana"
+        },
+        "id": 4764,
+        "teamColors": {
+          "primary": "#ff0000",
+          "secondary": "#ffff00",
+          "text": "#ffff00"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "غانا",
+            "bn": "ঘানা",
+            "hi": "घाना",
+            "ru": "Гана"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      {
+        "name": "Spain",
+        "slug": "spain",
+        "shortName": "Spain",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "category": {
+          "name": "International",
+          "slug": "international",
+          "sport": {
+            "name": "Football",
+            "slug": "football",
+            "id": 1
+          },
+          "priority": 12,
+          "country": {},
+          "id": 4,
+          "flag": "international",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "دولي",
+              "ru": "Международные"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "userCount": 1683384,
+        "nameCode": "ESP",
+        "ranking": 2,
+        "disabled": false,
+        "national": true,
+        "type": 0,
+        "country": {
+          "alpha2": "ES",
+          "alpha3": "ESP",
+          "name": "Spain",
+          "slug": "spain"
+        },
+        "id": 4698,
+        "teamColors": {
+          "primary": "#cc0000",
+          "secondary": "#ffffff",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "إسبانيا",
+            "bn": "স্পেন",
+            "hi": "स्पेन",
+            "ru": "Испания"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      {
+        "name": "Australia",
+        "slug": "australia",
+        "shortName": "Australia",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "category": {
+          "name": "World",
+          "slug": "world",
+          "sport": {
+            "name": "Football",
+            "slug": "football",
+            "id": 1
+          },
+          "priority": 20,
+          "country": {},
+          "id": 1468,
+          "flag": "international",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "العالم",
+              "hi": "विश्व",
+              "bn": "বিশ্ব",
+              "ru": "Мир"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "userCount": 53948,
+        "nameCode": "AUS",
+        "ranking": 27,
+        "disabled": false,
+        "national": true,
+        "type": 0,
+        "country": {
+          "alpha2": "AU",
+          "alpha3": "AUS",
+          "name": "Australia",
+          "slug": "australia"
+        },
+        "id": 4741,
+        "teamColors": {
+          "primary": "#ffcc00",
+          "secondary": "#2d324b",
+          "text": "#2d324b"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "أستراليا",
+            "bn": "অস্ট্রেলিয়া",
+            "hi": "ऑस्ट्रेलिया",
+            "ru": "Австралия"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      {
+        "name": "South Africa",
+        "slug": "south-africa",
+        "shortName": "South Africa",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "category": {
+          "name": "World",
+          "slug": "world",
+          "sport": {
+            "name": "Football",
+            "slug": "football",
+            "id": 1
+          },
+          "priority": 20,
+          "country": {},
+          "id": 1468,
+          "flag": "international",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "العالم",
+              "hi": "विश्व",
+              "bn": "বিশ্ব",
+              "ru": "Мир"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "userCount": 151102,
+        "nameCode": "RSA",
+        "ranking": 60,
+        "disabled": false,
+        "national": true,
+        "type": 0,
+        "country": {
+          "alpha2": "ZA",
+          "alpha3": "ZAF",
+          "name": "South Africa",
+          "slug": "south-africa"
+        },
+        "id": 4736,
+        "teamColors": {
+          "primary": "#ffd800",
+          "secondary": "#008040",
+          "text": "#008040"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "جنوب أفريقيا",
+            "bn": "দক্ষিণ আফ্রিকা",
+            "hi": "साउथ अफ्रीका",
+            "ru": "Южная Африка"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      {
+        "name": "Türkiye",
+        "slug": "turkey",
+        "shortName": "Türkiye",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "category": {
+          "name": "International",
+          "slug": "international",
+          "sport": {
+            "name": "Football",
+            "slug": "football",
+            "id": 1
+          },
+          "priority": 12,
+          "country": {},
+          "id": 4,
+          "flag": "international",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "دولي",
+              "ru": "Международные"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "userCount": 410406,
+        "nameCode": "TUR",
+        "ranking": 22,
+        "disabled": false,
+        "national": true,
+        "type": 0,
+        "country": {
+          "alpha2": "TR",
+          "alpha3": "TUR",
+          "name": "Türkiye",
+          "slug": "turkiye"
+        },
+        "id": 4700,
+        "teamColors": {
+          "primary": "#ffffff",
+          "secondary": "#ff0000",
+          "text": "#ff0000"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "تركيا",
+            "bn": "তুর্কি",
+            "hi": "तुर्की",
+            "ru": "Турция"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      {
+        "name": "Uruguay",
+        "slug": "uruguay",
+        "shortName": "Uruguay",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "category": {
+          "name": "World",
+          "slug": "world",
+          "sport": {
+            "name": "Football",
+            "slug": "football",
+            "id": 1
+          },
+          "priority": 20,
+          "country": {},
+          "id": 1468,
+          "flag": "international",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "العالم",
+              "hi": "विश्व",
+              "bn": "বিশ্ব",
+              "ru": "Мир"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "userCount": 243545,
+        "nameCode": "URU",
+        "ranking": 17,
+        "disabled": false,
+        "national": true,
+        "type": 0,
+        "country": {
+          "alpha2": "UY",
+          "alpha3": "URY",
+          "name": "Uruguay",
+          "slug": "uruguay"
+        },
+        "id": 4725,
+        "teamColors": {
+          "primary": "#7eacfe",
+          "secondary": "#000000",
+          "text": "#000000"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "أوروغواي",
+            "bn": "উরুগুয়ে",
+            "hi": "उरुग्वे",
+            "ru": "Уругвай"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      {
+        "name": "Sweden",
+        "slug": "sweden",
+        "shortName": "Sweden",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "category": {
+          "name": "International",
+          "slug": "international",
+          "sport": {
+            "name": "Football",
+            "slug": "football",
+            "id": 1
+          },
+          "priority": 12,
+          "country": {},
+          "id": 4,
+          "flag": "international",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "دولي",
+              "ru": "Международные"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "userCount": 114046,
+        "nameCode": "SWE",
+        "ranking": 38,
+        "disabled": false,
+        "national": true,
+        "type": 0,
+        "country": {
+          "alpha2": "SE",
+          "alpha3": "SWE",
+          "name": "Sweden",
+          "slug": "sweden"
+        },
+        "id": 4688,
+        "teamColors": {
+          "primary": "#ffcc00",
+          "secondary": "#0000ff",
+          "text": "#0000ff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "السويد",
+            "bn": "সুইডেন",
+            "hi": "स्वीडन",
+            "ru": "Швеция"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      {
+        "name": "Saudi Arabia",
+        "slug": "saudi-arabia",
+        "shortName": "Saudi Arabia",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "category": {
+          "name": "World",
+          "slug": "world",
+          "sport": {
+            "name": "Football",
+            "slug": "football",
+            "id": 1
+          },
+          "priority": 20,
+          "country": {},
+          "id": 1468,
+          "flag": "international",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "العالم",
+              "hi": "विश्व",
+              "bn": "বিশ্ব",
+              "ru": "Мир"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "userCount": 149260,
+        "nameCode": "KSA",
+        "ranking": 61,
+        "disabled": false,
+        "national": true,
+        "type": 0,
+        "country": {
+          "alpha2": "SA",
+          "alpha3": "SAU",
+          "name": "Saudi Arabia",
+          "slug": "saudi-arabia"
+        },
+        "id": 4834,
+        "teamColors": {
+          "primary": "#ffffff",
+          "secondary": "#008000",
+          "text": "#008000"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "المملكة العربية السعودية",
+            "bn": "সৌদি আরব",
+            "hi": "सऊदी अरब",
+            "ru": "Саудовская Аравия"
+          },
+          "shortNameTranslation": {
+            "ar": "السعودية",
+            "ru": "Саудовская Аравия"
+          }
+        }
+      },
+      {
+        "name": "Argentina",
+        "slug": "argentina",
+        "shortName": "Argentina",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "category": {
+          "name": "World",
+          "slug": "world",
+          "sport": {
+            "name": "Football",
+            "slug": "football",
+            "id": 1
+          },
+          "priority": 20,
+          "country": {},
+          "id": 1468,
+          "flag": "international",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "العالم",
+              "hi": "विश्व",
+              "bn": "বিশ্ব",
+              "ru": "Мир"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "userCount": 1640403,
+        "nameCode": "ARG",
+        "ranking": 3,
+        "disabled": false,
+        "national": true,
+        "type": 0,
+        "country": {
+          "alpha2": "AR",
+          "alpha3": "ARG",
+          "name": "Argentina",
+          "slug": "argentina"
+        },
+        "id": 4819,
+        "teamColors": {
+          "primary": "#66ccff",
+          "secondary": "#ffffff",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "الأرجنتين",
+            "bn": "আর্জেন্টিনা",
+            "hi": "अर्जेंटीना",
+            "ru": "Аргентина"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      {
+        "name": "Portugal",
+        "slug": "portugal",
+        "shortName": "Portugal",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "category": {
+          "name": "International",
+          "slug": "international",
+          "sport": {
+            "name": "Football",
+            "slug": "football",
+            "id": 1
+          },
+          "priority": 12,
+          "country": {},
+          "id": 4,
+          "flag": "international",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "دولي",
+              "ru": "Международные"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "userCount": 1636268,
+        "nameCode": "POR",
+        "ranking": 5,
+        "disabled": false,
+        "national": true,
+        "type": 0,
+        "country": {
+          "alpha2": "PT",
+          "alpha3": "PRT",
+          "name": "Portugal",
+          "slug": "portugal"
+        },
+        "id": 4704,
+        "teamColors": {
+          "primary": "#cc0000",
+          "secondary": "#66cc66",
+          "text": "#66cc66"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "البرتغال",
+            "bn": "পর্তুগাল",
+            "hi": "पुर्तगाल",
+            "ru": "Португалия"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      {
+        "name": "Canada",
+        "slug": "canada",
+        "shortName": "Canada",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "category": {
+          "name": "World",
+          "slug": "world",
+          "sport": {
+            "name": "Football",
+            "slug": "football",
+            "id": 1
+          },
+          "priority": 20,
+          "country": {},
+          "id": 1468,
+          "flag": "international",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "العالم",
+              "hi": "विश्व",
+              "bn": "বিশ্ব",
+              "ru": "Мир"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "userCount": 95159,
+        "nameCode": "CAN",
+        "ranking": 30,
+        "disabled": false,
+        "national": true,
+        "type": 0,
+        "country": {
+          "alpha2": "CA",
+          "alpha3": "CAN",
+          "name": "Canada",
+          "slug": "canada"
+        },
+        "id": 4752,
+        "teamColors": {
+          "primary": "#ff0000",
+          "secondary": "#ffffff",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "كندا",
+            "bn": "কানাডা",
+            "hi": "कनाडा",
+            "ru": "Канада"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      {
+        "name": "Tunisia",
+        "slug": "tunisia",
+        "shortName": "Tunisia",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "category": {
+          "name": "World",
+          "slug": "world",
+          "sport": {
+            "name": "Football",
+            "slug": "football",
+            "id": 1
+          },
+          "priority": 20,
+          "country": {},
+          "id": 1468,
+          "flag": "international",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "العالم",
+              "hi": "विश्व",
+              "bn": "বিশ্ব",
+              "ru": "Мир"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "userCount": 192518,
+        "nameCode": "TUN",
+        "ranking": 44,
+        "disabled": false,
+        "national": true,
+        "type": 0,
+        "country": {
+          "alpha2": "TN",
+          "alpha3": "TUN",
+          "name": "Tunisia",
+          "slug": "tunisia"
+        },
+        "id": 4729,
+        "teamColors": {
+          "primary": "#ffffff",
+          "secondary": "#ffffff",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "تونس",
+            "bn": "তিউনিসিয়া",
+            "hi": "ट्यूनीशिया",
+            "ru": "Тунис"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      {
+        "name": "Bosnia & Herzegovina",
+        "slug": "bosnia-and-herzegovina",
+        "shortName": "BiH",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "category": {
+          "name": "International",
+          "slug": "international",
+          "sport": {
+            "name": "Football",
+            "slug": "football",
+            "id": 1
+          },
+          "priority": 12,
+          "country": {},
+          "id": 4,
+          "flag": "international",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "دولي",
+              "ru": "Международные"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "userCount": 107407,
+        "nameCode": "BIH",
+        "ranking": 65,
+        "disabled": false,
+        "national": true,
+        "type": 0,
+        "country": {
+          "alpha2": "BA",
+          "alpha3": "BIH",
+          "name": "Bosnia & Herzegovina",
+          "slug": "bosnia-and-herzegovina"
+        },
+        "id": 4479,
+        "teamColors": {
+          "primary": "#2d4a99",
+          "secondary": "#ffffff",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "البوسنة والهرسك",
+            "bn": "বসনিয়া ও হার্জেগোভিনা",
+            "hi": "बोस्निया और हर्जेगोविना",
+            "ru": "Босния и Герцеговина"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      {
+        "name": "Iran",
+        "slug": "iran",
+        "shortName": "Iran",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "category": {
+          "name": "World",
+          "slug": "world",
+          "sport": {
+            "name": "Football",
+            "slug": "football",
+            "id": 1
+          },
+          "priority": 20,
+          "country": {},
+          "id": 1468,
+          "flag": "international",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "العالم",
+              "hi": "विश्व",
+              "bn": "বিশ্ব",
+              "ru": "Мир"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "userCount": 72363,
+        "nameCode": "IRI",
+        "ranking": 21,
+        "disabled": false,
+        "national": true,
+        "type": 0,
+        "country": {
+          "alpha2": "IR",
+          "alpha3": "IRN",
+          "name": "Iran",
+          "slug": "iran"
+        },
+        "id": 4766,
+        "teamColors": {
+          "primary": "#ffffff",
+          "secondary": "#cc0000",
+          "text": "#cc0000"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "إيران",
+            "bn": "ইরান",
+            "hi": "ईरान",
+            "ru": "Иран"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      {
+        "name": "Netherlands",
+        "slug": "netherlands",
+        "shortName": "Netherlands",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "category": {
+          "name": "International",
+          "slug": "international",
+          "sport": {
+            "name": "Football",
+            "slug": "football",
+            "id": 1
+          },
+          "priority": 12,
+          "country": {},
+          "id": 4,
+          "flag": "international",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "دولي",
+              "ru": "Международные"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "userCount": 459849,
+        "nameCode": "NED",
+        "ranking": 7,
+        "disabled": false,
+        "national": true,
+        "type": 0,
+        "country": {
+          "alpha2": "NL",
+          "alpha3": "NLD",
+          "name": "Netherlands",
+          "slug": "netherlands"
+        },
+        "id": 4705,
+        "teamColors": {
+          "primary": "#ff6600",
+          "secondary": "#281fe0",
+          "text": "#281fe0"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "هولندا",
+            "bn": "নেদারল্যান্ডস",
+            "hi": "नीदरलैंड्स",
+            "ru": "Нидерланды"
+          },
+          "shortNameTranslation": {
+            "ru": "Нидерланды"
+          }
+        }
+      },
+      {
+        "name": "Qatar",
+        "slug": "qatar",
+        "shortName": "Qatar",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "category": {
+          "name": "World",
+          "slug": "world",
+          "sport": {
+            "name": "Football",
+            "slug": "football",
+            "id": 1
+          },
+          "priority": 20,
+          "country": {},
+          "id": 1468,
+          "flag": "international",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "العالم",
+              "hi": "विश्व",
+              "bn": "বিশ্ব",
+              "ru": "Мир"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "userCount": 48215,
+        "nameCode": "QAT",
+        "ranking": 55,
+        "disabled": false,
+        "national": true,
+        "type": 0,
+        "country": {
+          "alpha2": "QA",
+          "alpha3": "QAT",
+          "name": "Qatar",
+          "slug": "qatar"
+        },
+        "id": 4792,
+        "teamColors": {
+          "primary": "#660000",
+          "secondary": "#ffffff",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "قطر",
+            "bn": "কাতার",
+            "hi": "क़तर",
+            "ru": "Катар"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      {
+        "name": "Japan",
+        "slug": "japan",
+        "shortName": "Japan",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "category": {
+          "name": "World",
+          "slug": "world",
+          "sport": {
+            "name": "Football",
+            "slug": "football",
+            "id": 1
+          },
+          "priority": 20,
+          "country": {},
+          "id": 1468,
+          "flag": "international",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "العالم",
+              "hi": "विश्व",
+              "bn": "বিশ্ব",
+              "ru": "Мир"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "userCount": 127031,
+        "nameCode": "JPN",
+        "ranking": 18,
+        "disabled": false,
+        "national": true,
+        "type": 0,
+        "country": {
+          "alpha2": "JP",
+          "alpha3": "JPN",
+          "name": "Japan",
+          "slug": "japan"
+        },
+        "id": 4770,
+        "teamColors": {
+          "primary": "#000080",
+          "secondary": "#ed1b24",
+          "text": "#ed1b24"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "اليابان",
+            "bn": "জাপান",
+            "hi": "जापान",
+            "ru": "Япония"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      {
+        "name": "Panama",
+        "slug": "panama",
+        "shortName": "Panama",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "category": {
+          "name": "World",
+          "slug": "world",
+          "sport": {
+            "name": "Football",
+            "slug": "football",
+            "id": 1
+          },
+          "priority": 20,
+          "country": {},
+          "id": 1468,
+          "flag": "international",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "العالم",
+              "hi": "विश्व",
+              "bn": "বিশ্ব",
+              "ru": "Мир"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "userCount": 42646,
+        "nameCode": "PAN",
+        "ranking": 33,
+        "disabled": false,
+        "national": true,
+        "type": 0,
+        "country": {
+          "alpha2": "PA",
+          "alpha3": "PAN",
+          "name": "Panama",
+          "slug": "panama"
+        },
+        "id": 5164,
+        "teamColors": {
+          "primary": "#cc0000",
+          "secondary": "#005293",
+          "text": "#005293"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "بنما",
+            "bn": "পানামা",
+            "hi": "पनामा",
+            "ru": "Панама"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      {
+        "name": "Croatia",
+        "slug": "croatia",
+        "shortName": "Croatia",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "category": {
+          "name": "International",
+          "slug": "international",
+          "sport": {
+            "name": "Football",
+            "slug": "football",
+            "id": 1
+          },
+          "priority": 12,
+          "country": {},
+          "id": 4,
+          "flag": "international",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "دولي",
+              "ru": "Международные"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "userCount": 414550,
+        "nameCode": "CRO",
+        "ranking": 11,
+        "disabled": false,
+        "national": true,
+        "type": 0,
+        "country": {
+          "alpha2": "HR",
+          "alpha3": "HRV",
+          "name": "Croatia",
+          "slug": "croatia"
+        },
+        "id": 4715,
+        "teamColors": {
+          "primary": "#ff0000",
+          "secondary": "#ffffff",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "كرواتيا",
+            "bn": "ক্রোয়েশিয়া",
+            "hi": "क्रोएशिया",
+            "ru": "Хорватия"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      {
+        "name": "South Korea",
+        "slug": "south-korea",
+        "shortName": "South Korea",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "category": {
+          "name": "World",
+          "slug": "world",
+          "sport": {
+            "name": "Football",
+            "slug": "football",
+            "id": 1
+          },
+          "priority": 20,
+          "country": {},
+          "id": 1468,
+          "flag": "international",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "العالم",
+              "hi": "विश्व",
+              "bn": "বিশ্ব",
+              "ru": "Мир"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "userCount": 83547,
+        "nameCode": "KOR",
+        "ranking": 25,
+        "disabled": false,
+        "national": true,
+        "type": 0,
+        "country": {
+          "alpha2": "KR",
+          "alpha3": "KOR",
+          "name": "South Korea",
+          "slug": "south-korea"
+        },
+        "id": 4735,
+        "teamColors": {
+          "primary": "#ff0000",
+          "secondary": "#0000ff",
+          "text": "#0000ff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "كوريا الجنوبية",
+            "bn": "দক্ষিণ কোরিয়া",
+            "hi": "साउथ कोरिया",
+            "ru": "Южная Корея"
+          },
+          "shortNameTranslation": {
+            "ru": "Южная Корея"
+          }
+        }
+      },
+      {
+        "name": "Algeria",
+        "slug": "algeria",
+        "shortName": "Algeria",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "category": {
+          "name": "World",
+          "slug": "world",
+          "sport": {
+            "name": "Football",
+            "slug": "football",
+            "id": 1
+          },
+          "priority": 20,
+          "country": {},
+          "id": 1468,
+          "flag": "international",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "العالم",
+              "hi": "विश्व",
+              "bn": "বিশ্ব",
+              "ru": "Мир"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "userCount": 319021,
+        "nameCode": "DZA",
+        "ranking": 28,
+        "disabled": false,
+        "national": true,
+        "type": 0,
+        "country": {
+          "alpha2": "DZ",
+          "alpha3": "DZA",
+          "name": "Algeria",
+          "slug": "algeria"
+        },
+        "id": 4691,
+        "teamColors": {
+          "primary": "#ffffff",
+          "secondary": "#23bc55",
+          "text": "#23bc55"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "الجزائر",
+            "bn": "আলজেরিয়া",
+            "hi": "अल्जीरिया",
+            "ru": "Алжир"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      {
+        "name": "France",
+        "slug": "france",
+        "shortName": "France",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "category": {
+          "name": "International",
+          "slug": "international",
+          "sport": {
+            "name": "Football",
+            "slug": "football",
+            "id": 1
+          },
+          "priority": 12,
+          "country": {},
+          "id": 4,
+          "flag": "international",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "دولي",
+              "ru": "Международные"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "userCount": 1199821,
+        "nameCode": "FRA",
+        "ranking": 1,
+        "disabled": false,
+        "national": true,
+        "type": 0,
+        "country": {
+          "alpha2": "FR",
+          "alpha3": "FRA",
+          "name": "France",
+          "slug": "france"
+        },
+        "id": 4481,
+        "teamColors": {
+          "primary": "#01509e",
+          "secondary": "#e30613",
+          "text": "#e30613"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "فرنسا",
+            "bn": "ফ্রান্স",
+            "hi": "फ्रांस",
+            "ru": "Франция"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      {
+        "name": "USA",
+        "slug": "usa",
+        "shortName": "USA",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "category": {
+          "name": "World",
+          "slug": "world",
+          "sport": {
+            "name": "Football",
+            "slug": "football",
+            "id": 1
+          },
+          "priority": 20,
+          "country": {},
+          "id": 1468,
+          "flag": "international",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "العالم",
+              "hi": "विश्व",
+              "bn": "বিশ্ব",
+              "ru": "Мир"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "userCount": 138758,
+        "nameCode": "USA",
+        "ranking": 16,
+        "disabled": false,
+        "national": true,
+        "type": 0,
+        "country": {
+          "alpha2": "US",
+          "alpha3": "USA",
+          "name": "USA",
+          "slug": "usa"
+        },
+        "id": 4724,
+        "teamColors": {
+          "primary": "#ffffff",
+          "secondary": "#ff0000",
+          "text": "#ff0000"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "الولايات المتحدة",
+            "bn": "ইউএসএ",
+            "hi": "यूएसए",
+            "ru": "США"
+          },
+          "shortNameTranslation": {
+            "ar": "الولايات المتحدة"
+          }
+        }
+      },
+      {
+        "name": "Austria",
+        "slug": "austria",
+        "shortName": "Austria",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "category": {
+          "name": "International",
+          "slug": "international",
+          "sport": {
+            "name": "Football",
+            "slug": "football",
+            "id": 1
+          },
+          "priority": 12,
+          "country": {},
+          "id": 4,
+          "flag": "international",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "دولي",
+              "ru": "Международные"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "userCount": 109441,
+        "nameCode": "AUT",
+        "ranking": 24,
+        "disabled": false,
+        "national": true,
+        "type": 0,
+        "country": {
+          "alpha2": "AT",
+          "alpha3": "AUT",
+          "name": "Austria",
+          "slug": "austria"
+        },
+        "id": 4718,
+        "teamColors": {
+          "primary": "#ff0000",
+          "secondary": "#ffffff",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "النمسا",
+            "bn": "অস্ট্রিয়া",
+            "hi": "ऑस्ट्रिया",
+            "ru": "Австрия"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      {
+        "name": "Jordan",
+        "slug": "jordan",
+        "shortName": "Jordan",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "category": {
+          "name": "World",
+          "slug": "world",
+          "sport": {
+            "name": "Football",
+            "slug": "football",
+            "id": 1
+          },
+          "priority": 20,
+          "country": {},
+          "id": 1468,
+          "flag": "international",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "العالم",
+              "hi": "विश्व",
+              "bn": "বিশ্ব",
+              "ru": "Мир"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "userCount": 54677,
+        "nameCode": "JOR",
+        "ranking": 63,
+        "disabled": false,
+        "national": true,
+        "type": 0,
+        "country": {
+          "alpha2": "JO",
+          "alpha3": "JOR",
+          "name": "Jordan",
+          "slug": "jordan"
+        },
+        "id": 4771,
+        "teamColors": {
+          "primary": "#ffffff",
+          "secondary": "#ff0000",
+          "text": "#ff0000"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "الأردن",
+            "bn": "জর্ডান",
+            "hi": "जॉर्डन",
+            "ru": "Иордания"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      {
+        "name": "Iraq",
+        "slug": "iraq",
+        "shortName": "Iraq",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "category": {
+          "name": "World",
+          "slug": "world",
+          "sport": {
+            "name": "Football",
+            "slug": "football",
+            "id": 1
+          },
+          "priority": 20,
+          "country": {},
+          "id": 1468,
+          "flag": "international",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "العالم",
+              "hi": "विश्व",
+              "bn": "বিশ্ব",
+              "ru": "Мир"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "userCount": 91573,
+        "nameCode": "IRA",
+        "ranking": 57,
+        "disabled": false,
+        "national": true,
+        "type": 0,
+        "country": {
+          "alpha2": "IQ",
+          "alpha3": "IRQ",
+          "name": "Iraq",
+          "slug": "iraq"
+        },
+        "id": 4767,
+        "teamColors": {
+          "primary": "#ffffff",
+          "secondary": "#108f5b",
+          "text": "#108f5b"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "العراق",
+            "bn": "ইরাক",
+            "hi": "इराक",
+            "ru": "Ирак"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      {
+        "name": "Germany",
+        "slug": "germany",
+        "shortName": "Germany",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "category": {
+          "name": "International",
+          "slug": "international",
+          "sport": {
+            "name": "Football",
+            "slug": "football",
+            "id": 1
+          },
+          "priority": 12,
+          "country": {},
+          "id": 4,
+          "flag": "international",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "دولي",
+              "ru": "Международные"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "userCount": 797252,
+        "nameCode": "GER",
+        "ranking": 10,
+        "disabled": false,
+        "national": true,
+        "type": 0,
+        "country": {
+          "alpha2": "DE",
+          "alpha3": "DEU",
+          "name": "Germany",
+          "slug": "germany"
+        },
+        "id": 4711,
+        "teamColors": {
+          "primary": "#ffffff",
+          "secondary": "#000000",
+          "text": "#000000"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "ألمانيا",
+            "bn": "জার্মানি",
+            "hi": "जर्मनी",
+            "ru": "Германия"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      {
+        "name": "Uzbekistan",
+        "slug": "uzbekistan",
+        "shortName": "Uzbekistan",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "category": {
+          "name": "World",
+          "slug": "world",
+          "sport": {
+            "name": "Football",
+            "slug": "football",
+            "id": 1
+          },
+          "priority": 20,
+          "country": {},
+          "id": 1468,
+          "flag": "international",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "العالم",
+              "hi": "विश्व",
+              "bn": "বিশ্ব",
+              "ru": "Мир"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "userCount": 126284,
+        "nameCode": "UZB",
+        "ranking": 50,
+        "disabled": false,
+        "national": true,
+        "type": 0,
+        "country": {
+          "alpha2": "UZ",
+          "alpha3": "UZB",
+          "name": "Uzbekistan",
+          "slug": "uzbekistan"
+        },
+        "id": 4723,
+        "teamColors": {
+          "primary": "#0080ff",
+          "secondary": "#ffffff",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "أوزبكستان",
+            "bn": "উজবেকিস্তান",
+            "hi": "उज़्बेकिस्तान",
+            "ru": "Узбекистан"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      {
+        "name": "Curaçao",
+        "slug": "curacao",
+        "shortName": "Curaçao",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "category": {
+          "name": "World",
+          "slug": "world",
+          "sport": {
+            "name": "Football",
+            "slug": "football",
+            "id": 1
+          },
+          "priority": 20,
+          "country": {},
+          "id": 1468,
+          "flag": "international",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "العالم",
+              "hi": "विश्व",
+              "bn": "বিশ্ব",
+              "ru": "Мир"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "userCount": 14893,
+        "nameCode": "CUR",
+        "ranking": 82,
+        "disabled": false,
+        "national": true,
+        "type": 0,
+        "country": {
+          "alpha2": "CW",
+          "alpha3": "CUW",
+          "name": "Curacao",
+          "slug": "curacao"
+        },
+        "id": 55827,
+        "teamColors": {
+          "primary": "#004990",
+          "secondary": "#000fff",
+          "text": "#000fff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "كوراساو",
+            "bn": "কুরাকাও",
+            "hi": "क्यूराकाओ",
+            "ru": "Кюрасао"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      {
+        "name": "Haiti",
+        "slug": "haiti",
+        "shortName": "Haiti",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "category": {
+          "name": "World",
+          "slug": "world",
+          "sport": {
+            "name": "Football",
+            "slug": "football",
+            "id": 1
+          },
+          "priority": 20,
+          "country": {},
+          "id": 1468,
+          "flag": "international",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "العالم",
+              "hi": "विश्व",
+              "bn": "বিশ্ব",
+              "ru": "Мир"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "userCount": 225197,
+        "nameCode": "HAI",
+        "ranking": 83,
+        "disabled": false,
+        "national": true,
+        "type": 0,
+        "country": {
+          "alpha2": "HT",
+          "alpha3": "HTI",
+          "name": "Haiti",
+          "slug": "haiti"
+        },
+        "id": 7229,
+        "teamColors": {
+          "primary": "#3b5aa3",
+          "secondary": "#be0027",
+          "text": "#be0027"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "هايتي",
+            "bn": "হাইতি",
+            "hi": "हैती",
+            "ru": "Гаити"
+          },
+          "shortNameTranslation": {
+            "ar": "هايتي"
+          }
+        }
+      },
+      {
+        "name": "DR Congo",
+        "slug": "dr-congo",
+        "shortName": "DR Congo",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "category": {
+          "name": "World",
+          "slug": "world",
+          "sport": {
+            "name": "Football",
+            "slug": "football",
+            "id": 1
+          },
+          "priority": 20,
+          "country": {},
+          "id": 1468,
+          "flag": "international",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "العالم",
+              "hi": "विश्व",
+              "bn": "বিশ্ব",
+              "ru": "Мир"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "userCount": 299662,
+        "nameCode": "DCO",
+        "ranking": 46,
+        "disabled": false,
+        "national": true,
+        "type": 0,
+        "country": {
+          "alpha2": "CD",
+          "alpha3": "COD",
+          "name": "DR Congo",
+          "slug": "dr-congo"
+        },
+        "id": 4823,
+        "teamColors": {
+          "primary": "#007fff",
+          "secondary": "#f8181e",
+          "text": "#f8181e"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "الكونغو الديمقراطية",
+            "bn": "ডিআর কঙ্গো",
+            "hi": "डीआर कांगो",
+            "ru": "ДР Конго"
+          },
+          "shortNameTranslation": {
+            "ar": "الكونغو الديمقراطية",
+            "ru": "ДР Конго"
+          }
+        }
+      },
+      {
+        "name": "New Zealand",
+        "slug": "new-zealand",
+        "shortName": "New Zealand",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "category": {
+          "name": "Oceania",
+          "slug": "oceania",
+          "sport": {
+            "name": "Football",
+            "slug": "football",
+            "id": 1
+          },
+          "priority": 14,
+          "country": {},
+          "id": 1471,
+          "flag": "oceania",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "أوقيانوسيا",
+              "ru": "Океания"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "userCount": 15036,
+        "nameCode": "NZL",
+        "ranking": 85,
+        "disabled": false,
+        "national": true,
+        "type": 0,
+        "country": {
+          "alpha2": "NZ",
+          "alpha3": "NZL",
+          "name": "New Zealand",
+          "slug": "new-zealand"
+        },
+        "id": 4784,
+        "teamColors": {
+          "primary": "#ffffff",
+          "secondary": "#000000",
+          "text": "#000000"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "نيوزيلندا",
+            "bn": "নিউজিল্যান্ড",
+            "hi": "न्यूज़ीलैंड",
+            "ru": "Новая Зеландия"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      {
+        "name": "Switzerland",
+        "slug": "switzerland",
+        "shortName": "Switzerland",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "category": {
+          "name": "International",
+          "slug": "international",
+          "sport": {
+            "name": "Football",
+            "slug": "football",
+            "id": 1
+          },
+          "priority": 12,
+          "country": {},
+          "id": 4,
+          "flag": "international",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "دولي",
+              "ru": "Международные"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "userCount": 156537,
+        "nameCode": "SUI",
+        "ranking": 19,
+        "disabled": false,
+        "national": true,
+        "type": 0,
+        "country": {
+          "alpha2": "CH",
+          "alpha3": "CHE",
+          "name": "Switzerland",
+          "slug": "switzerland"
+        },
+        "id": 4699,
+        "teamColors": {
+          "primary": "#ff0000",
+          "secondary": "#ffffff",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "سويسرا",
+            "bn": "সুইজারল্যান্ড",
+            "hi": "स्विट्ज़रलैंड",
+            "ru": "Швейцария"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      {
+        "name": "Mexico",
+        "slug": "mexico",
+        "shortName": "Mexico",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "category": {
+          "name": "World",
+          "slug": "world",
+          "sport": {
+            "name": "Football",
+            "slug": "football",
+            "id": 1
+          },
+          "priority": 20,
+          "country": {},
+          "id": 1468,
+          "flag": "international",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "العالم",
+              "hi": "विश्व",
+              "bn": "বিশ্ব",
+              "ru": "Мир"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "userCount": 278745,
+        "nameCode": "MEX",
+        "ranking": 15,
+        "disabled": false,
+        "national": true,
+        "type": 0,
+        "country": {
+          "alpha2": "MX",
+          "alpha3": "MEX",
+          "name": "Mexico",
+          "slug": "mexico"
+        },
+        "id": 4781,
+        "teamColors": {
+          "primary": "#1a4d3e",
+          "secondary": "#960000",
+          "text": "#960000"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "المكسيك",
+            "bn": "মেক্সিকো",
+            "hi": "मेक्सिको",
+            "ru": "Мексика"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      {
+        "name": "Czechia",
+        "slug": "czech-republic",
+        "shortName": "Czechia",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "category": {
+          "name": "International",
+          "slug": "international",
+          "sport": {
+            "name": "Football",
+            "slug": "football",
+            "id": 1
+          },
+          "priority": 12,
+          "country": {},
+          "id": 4,
+          "flag": "international",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "دولي",
+              "ru": "Международные"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "userCount": 72677,
+        "nameCode": "CZE",
+        "ranking": 41,
+        "disabled": false,
+        "national": true,
+        "type": 0,
+        "country": {
+          "alpha2": "CZ",
+          "alpha3": "CZE",
+          "name": "Czechia",
+          "slug": "czechia"
+        },
+        "id": 4714,
+        "teamColors": {
+          "primary": "#cc0000",
+          "secondary": "#025095",
+          "text": "#025095"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "التشيك",
+            "bn": "চেক রিপাবলিক",
+            "hi": "चेक रिपब्लिक",
+            "ru": "Чехия"
+          },
+          "shortNameTranslation": {
+            "ar": "التشيك"
+          }
+        }
+      },
+      {
+        "name": "England",
+        "slug": "england",
+        "shortName": "England",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "category": {
+          "name": "International",
+          "slug": "international",
+          "sport": {
+            "name": "Football",
+            "slug": "football",
+            "id": 1
+          },
+          "priority": 12,
+          "country": {},
+          "id": 4,
+          "flag": "international",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "دولي",
+              "ru": "Международные"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "userCount": 1027942,
+        "nameCode": "ENG",
+        "ranking": 4,
+        "disabled": false,
+        "national": true,
+        "type": 0,
+        "country": {
+          "alpha2": "EN",
+          "alpha3": "ENG",
+          "name": "England",
+          "slug": "england"
+        },
+        "id": 4713,
+        "teamColors": {
+          "primary": "#ffffff",
+          "secondary": "#cc0000",
+          "text": "#cc0000"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "انجلترا",
+            "bn": "ইংল্যান্ড",
+            "hi": "इंग्लैंड",
+            "ru": "Англия"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      {
+        "name": "Côte d'Ivoire",
+        "slug": "cote-divoire",
+        "shortName": "Côte d'Ivoire",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "category": {
+          "name": "World",
+          "slug": "world",
+          "sport": {
+            "name": "Football",
+            "slug": "football",
+            "id": 1
+          },
+          "priority": 20,
+          "country": {},
+          "id": 1468,
+          "flag": "international",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "العالم",
+              "hi": "विश्व",
+              "bn": "বিশ্ব",
+              "ru": "Мир"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "userCount": 315372,
+        "nameCode": "CIV",
+        "ranking": 34,
+        "disabled": false,
+        "national": true,
+        "type": 0,
+        "country": {
+          "alpha2": "CI",
+          "alpha3": "CIV",
+          "name": "Côte d'Ivoire",
+          "slug": "cote-divoire"
+        },
+        "id": 4768,
+        "teamColors": {
+          "primary": "#f77f00",
+          "secondary": "#009e60",
+          "text": "#009e60"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "ساحل العاج",
+            "bn": "কোট ডি'আইভরি",
+            "hi": "कोट डी'आईवॉयर",
+            "ru": "Кот-д’Ивуар"
+          },
+          "shortNameTranslation": {
+            "ar": "ساحل العاج",
+            "ru": "Кот-д’Ивуар"
+          }
+        }
+      },
+      {
+        "name": "Brazil",
+        "slug": "brazil",
+        "shortName": "Brazil",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "category": {
+          "name": "World",
+          "slug": "world",
+          "sport": {
+            "name": "Football",
+            "slug": "football",
+            "id": 1
+          },
+          "priority": 20,
+          "country": {},
+          "id": 1468,
+          "flag": "international",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "العالم",
+              "hi": "विश्व",
+              "bn": "বিশ্ব",
+              "ru": "Мир"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "userCount": 2276286,
+        "nameCode": "BRA",
+        "ranking": 6,
+        "disabled": false,
+        "national": true,
+        "type": 0,
+        "country": {
+          "alpha2": "BR",
+          "alpha3": "BRA",
+          "name": "Brazil",
+          "slug": "brazil"
+        },
+        "id": 4748,
+        "teamColors": {
+          "primary": "#ffff00",
+          "secondary": "#009933",
+          "text": "#009933"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "البرازيل",
+            "bn": "ব্রাজিল",
+            "hi": "ब्राजील",
+            "ru": "Бразилия"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      {
+        "name": "Colombia",
+        "slug": "colombia",
+        "shortName": "Colombia",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "category": {
+          "name": "World",
+          "slug": "world",
+          "sport": {
+            "name": "Football",
+            "slug": "football",
+            "id": 1
+          },
+          "priority": 20,
+          "country": {},
+          "id": 1468,
+          "flag": "international",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "العالم",
+              "hi": "विश्व",
+              "bn": "বিশ্ব",
+              "ru": "Мир"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "userCount": 358565,
+        "nameCode": "COL",
+        "ranking": 13,
+        "disabled": false,
+        "national": true,
+        "type": 0,
+        "country": {
+          "alpha2": "CO",
+          "alpha3": "COL",
+          "name": "Colombia",
+          "slug": "colombia"
+        },
+        "id": 4820,
+        "teamColors": {
+          "primary": "#ffd808",
+          "secondary": "#000066",
+          "text": "#000066"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "كولومبيا",
+            "bn": "কলম্বিয়া",
+            "hi": "कोलंबिया",
+            "ru": "Колумбия"
+          },
+          "shortNameTranslation": {}
+        }
+      }
+    ]
+  },
+  "tournament_17": {
+    "uniqueTournament": {
+      "name": "Premier League",
+      "slug": "premier-league",
+      "primaryColorHex": "#3c1c5a",
+      "secondaryColorHex": "#f80158",
+      "logo": {
+        "md5": "36861710766b10701e2126a2d33021c4",
+        "id": 1418035
+      },
+      "darkLogo": {
+        "md5": "cac4c64c7f9e0878f33117bb29f7021a",
+        "id": 1418033
+      },
+      "category": {
+        "name": "England",
+        "slug": "england",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "priority": 10,
+        "country": {
+          "alpha2": "EN",
+          "name": "England"
+        },
+        "id": 1,
+        "flag": "england",
+        "alpha2": "EN",
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "إنجلترا",
+            "hi": "इंग्लैंड",
+            "bn": "ইংল্যান্ড",
+            "ru": "Англия"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      "userCount": 1225206,
+      "tier": 1,
+      "titleHolder": {
+        "name": "Arsenal",
+        "slug": "arsenal",
+        "shortName": "Arsenal",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "userCount": 3633184,
+        "nameCode": "ARS",
+        "disabled": false,
+        "national": false,
+        "type": 0,
+        "country": {
+          "alpha2": "EN",
+          "name": "England"
+        },
+        "id": 42,
+        "teamColors": {
+          "primary": "#cc0000",
+          "secondary": "#ffffff",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "ارسنال",
+            "bn": "আর্সেনাল",
+            "hi": "आर्सेनल",
+            "ru": "Арсенал"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      "titleHolderTitles": 14,
+      "mostTitles": 20,
+      "linkedUniqueTournaments": [],
+      "hasRounds": true,
+      "hasGroups": false,
+      "hasPlayoffSeries": false,
+      "upperDivisions": [],
+      "lowerDivisions": [
+        {
+          "name": "Championship",
+          "slug": "championship",
+          "primaryColorHex": "#20429a",
+          "secondaryColorHex": "#ac944a",
+          "logo": {
+            "md5": "29a945d83732f069f92fb0986738b57f",
+            "id": 294000
+          },
+          "category": {
+            "name": "England",
+            "slug": "england",
+            "sport": {
+              "name": "Football",
+              "slug": "football",
+              "id": 1
+            },
+            "priority": 10,
+            "country": {
+              "alpha2": "EN",
+              "name": "England"
+            },
+            "id": 1,
+            "flag": "england",
+            "alpha2": "EN",
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "إنجلترا",
+                "hi": "इंग्लैंड",
+                "bn": "ইংল্যান্ড",
+                "ru": "Англия"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "tier": 2,
+          "hasRounds": true,
+          "hasGroups": false,
+          "hasPlayoffSeries": false,
+          "hasPerformanceGraphFeature": true,
+          "periodLength": {},
+          "gender": "M",
+          "excludeFromCareerStats": false,
+          "country": {},
+          "id": 18,
+          "startDateTimestamp": 1754611200,
+          "endDateTimestamp": 1779494400,
+          "mostTitlesTeams": [
+            {
+              "name": "Leicester City",
+              "slug": "leicester-city",
+              "shortName": "Leicester",
+              "gender": "M",
+              "sport": {
+                "name": "Football",
+                "slug": "football",
+                "id": 1
+              },
+              "userCount": 321289,
+              "nameCode": "LEI",
+              "disabled": false,
+              "national": false,
+              "type": 0,
+              "country": {
+                "alpha2": "EN",
+                "name": "England"
+              },
+              "id": 31,
+              "teamColors": {
+                "primary": "#003090",
+                "secondary": "#ffffff",
+                "text": "#ffffff"
+              },
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "ar": "ليستر سيتي",
+                  "hi": "लैस्टर सिटी ऍफ़सी",
+                  "ru": "Лестер Сити"
+                },
+                "shortNameTranslation": {
+                  "ar": "ليستر",
+                  "bn": "লেস্টার",
+                  "hi": "लीसेस्टर"
+                }
+              }
+            }
+          ],
+          "disabledHomeAwayStandings": false,
+          "displayInverseHomeAwayTeams": false,
+          "fieldTranslations": {
+            "nameTranslation": {
+              "bn": "চ্যাম্পিয়নশিপ",
+              "hi": "चैंपियनशिप",
+              "ar": "دوري البطولة الإنجليزية"
+            },
+            "shortNameTranslation": {}
+          }
+        }
+      ],
+      "hasPerformanceGraphFeature": true,
+      "periodLength": {},
+      "gender": "M",
+      "excludeFromCareerStats": false,
+      "country": {},
+      "id": 17,
+      "startDateTimestamp": 1755216000,
+      "endDateTimestamp": 1779580800,
+      "mostTitlesTeams": [
+        {
+          "name": "Manchester United",
+          "slug": "manchester-united",
+          "shortName": "Man Utd",
+          "gender": "M",
+          "sport": {
+            "name": "Football",
+            "slug": "football",
+            "id": 1
+          },
+          "userCount": 3648248,
+          "nameCode": "MUN",
+          "disabled": false,
+          "national": false,
+          "type": 0,
+          "country": {
+            "alpha2": "EN",
+            "name": "England"
+          },
+          "id": 35,
+          "teamColors": {
+            "primary": "#ff0000",
+            "secondary": "#373737",
+            "text": "#373737"
+          },
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "مانتشستر يونايتد",
+              "hi": "मेनचेस्टर यूनाइटेड ऍफ़सी",
+              "ru": "Манчестер Юнайтед"
+            },
+            "shortNameTranslation": {
+              "ar": "مان يونايتد",
+              "bn": "ম্যান ইউনাইটেড",
+              "hi": "मैन यूनाइटेड"
+            }
+          }
+        },
+        {
+          "name": "Liverpool FC",
+          "slug": "liverpool",
+          "shortName": "Liverpool",
+          "gender": "M",
+          "sport": {
+            "name": "Football",
+            "slug": "football",
+            "id": 1
+          },
+          "userCount": 3826861,
+          "nameCode": "LIV",
+          "disabled": false,
+          "national": false,
+          "type": 0,
+          "country": {
+            "alpha2": "EN",
+            "name": "England"
+          },
+          "id": 44,
+          "teamColors": {
+            "primary": "#cc0000",
+            "secondary": "#ffffff",
+            "text": "#ffffff"
+          },
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "ليفربول",
+              "bn": "লিভারপুল",
+              "hi": "लिवरपूल",
+              "ru": "Ливерпуль"
+            },
+            "shortNameTranslation": {}
+          }
+        }
+      ],
+      "disabledHomeAwayStandings": false,
+      "displayInverseHomeAwayTeams": false,
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "الدوري الإنجليزي الممتاز",
+          "hi": "प्रिमियर लीग",
+          "bn": "প্রিমিয়ার লীগ"
+        },
+        "shortNameTranslation": {}
+      }
+    }
+  },
+  "tournament_336": {
+    "uniqueTournament": {
+      "name": "Taça de Portugal",
+      "slug": "taca-de-portugal",
+      "primaryColorHex": "#c70f14",
+      "secondaryColorHex": "#00a85c",
+      "logo": {
+        "md5": "b5985eb009156eb05e36ae67613b0bca",
+        "id": 307733
+      },
+      "category": {
+        "name": "Portugal",
+        "slug": "portugal",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "priority": 0,
+        "country": {
+          "alpha2": "PT",
+          "name": "Portugal"
+        },
+        "id": 44,
+        "flag": "portugal",
+        "alpha2": "PT",
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "البرتغال",
+            "ru": "Португалия"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      "userCount": 22392,
+      "titleHolder": {
+        "name": "Torreense",
+        "slug": "torreense",
+        "shortName": "Torreense",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "userCount": 10114,
+        "nameCode": "TOR",
+        "disabled": false,
+        "national": false,
+        "type": 0,
+        "country": {
+          "alpha2": "PT",
+          "name": "Portugal"
+        },
+        "id": 25787,
+        "teamColors": {
+          "primary": "#942438",
+          "secondary": "#1d2943",
+          "text": "#1d2943"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "توريينسي",
+            "ru": "Торренсе"
+          },
+          "shortNameTranslation": {
+            "ar": "توريينسي"
+          }
+        }
+      },
+      "titleHolderTitles": 1,
+      "mostTitles": 26,
+      "linkedUniqueTournaments": [],
+      "hasRounds": true,
+      "hasGroups": false,
+      "hasPlayoffSeries": false,
+      "upperDivisions": [],
+      "lowerDivisions": [],
+      "hasPerformanceGraphFeature": false,
+      "periodLength": {},
+      "gender": "M",
+      "excludeFromCareerStats": false,
+      "country": {},
+      "id": 336,
+      "startDateTimestamp": 1756512000,
+      "endDateTimestamp": 1779580800,
+      "mostTitlesTeams": [
+        {
+          "name": "Benfica",
+          "slug": "benfica",
+          "shortName": "Benfica",
+          "gender": "M",
+          "sport": {
+            "name": "Football",
+            "slug": "football",
+            "id": 1
+          },
+          "userCount": 879863,
+          "nameCode": "SLB",
+          "disabled": false,
+          "national": false,
+          "type": 0,
+          "country": {
+            "alpha2": "PT",
+            "name": "Portugal"
+          },
+          "id": 3006,
+          "teamColors": {
+            "primary": "#cc0000",
+            "secondary": "#ffffff",
+            "text": "#ffffff"
+          },
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "بنفيكا",
+              "bn": "বেনফিকা",
+              "hi": "बेनफिका",
+              "ru": "Бенфика"
+            },
+            "shortNameTranslation": {}
+          }
+        }
+      ],
+      "displayInverseHomeAwayTeams": false,
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "كأس البرتغال",
+          "bn": "পর্তুগিজ কাপ",
+          "hi": "टासा दे पुर्तगाल"
+        },
+        "shortNameTranslation": {}
+      }
+    }
+  },
+  "tournament_480": {
+    "uniqueTournament": {
+      "name": "CONMEBOL Sudamericana",
+      "slug": "conmebol-sudamericana",
+      "primaryColorHex": "#e3c000",
+      "secondaryColorHex": "#13489c",
+      "logo": {
+        "md5": "34adf9e6b9932aa3cb4b35a4f5cca10a",
+        "id": 241723
+      },
+      "category": {
+        "name": "South America",
+        "slug": "south-america",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "priority": 18,
+        "country": {},
+        "id": 1470,
+        "flag": "south-america",
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "أمريكا الجنوبية",
+            "ru": "Южная Америка"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      "userCount": 123768,
+      "titleHolder": {
+        "name": "CA Lanús",
+        "slug": "lanus",
+        "shortName": "Lanús",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "userCount": 43554,
+        "nameCode": "LAN",
+        "disabled": false,
+        "national": false,
+        "type": 0,
+        "country": {
+          "alpha2": "AR",
+          "name": "Argentina"
+        },
+        "id": 3218,
+        "teamColors": {
+          "primary": "#660033",
+          "secondary": "#ffffff",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "لانوس",
+            "ru": "Атлетико Ланус"
+          },
+          "shortNameTranslation": {
+            "ar": "لانوس"
+          }
+        }
+      },
+      "titleHolderTitles": 2,
+      "mostTitles": 2,
+      "linkedUniqueTournaments": [],
+      "hasRounds": true,
+      "hasGroups": true,
+      "hasPlayoffSeries": false,
+      "upperDivisions": [],
+      "lowerDivisions": [],
+      "hasPerformanceGraphFeature": false,
+      "periodLength": {},
+      "gender": "M",
+      "excludeFromCareerStats": false,
+      "country": {},
+      "id": 480,
+      "startDateTimestamp": 1772496000,
+      "endDateTimestamp": 1795305600,
+      "mostTitlesTeams": [
+        {
+          "name": "Athletico",
+          "slug": "athletico",
+          "shortName": "Athletico",
+          "gender": "M",
+          "sport": {
+            "name": "Football",
+            "slug": "football",
+            "id": 1
+          },
+          "userCount": 111351,
+          "nameCode": "CAP",
+          "disabled": false,
+          "national": false,
+          "type": 0,
+          "country": {
+            "alpha2": "BR",
+            "name": "Brazil"
+          },
+          "id": 1967,
+          "teamColors": {
+            "primary": "#000000",
+            "secondary": "#cc0000",
+            "text": "#cc0000"
+          },
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "أثليتيكو",
+              "ru": "Атлетико Паранаэнсе"
+            },
+            "shortNameTranslation": {
+              "ar": "أثليتيكو"
+            }
+          }
+        },
+        {
+          "name": "Boca Juniors",
+          "slug": "boca-juniors",
+          "shortName": "Boca Juniors",
+          "gender": "M",
+          "sport": {
+            "name": "Football",
+            "slug": "football",
+            "id": 1
+          },
+          "userCount": 307850,
+          "nameCode": "BOC",
+          "disabled": false,
+          "national": false,
+          "type": 0,
+          "country": {
+            "alpha2": "AR",
+            "name": "Argentina"
+          },
+          "id": 3202,
+          "teamColors": {
+            "primary": "#003399",
+            "secondary": "#ffcc66",
+            "text": "#ffcc66"
+          },
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "بوكا جونيورز",
+              "hi": "बोका जूनियर्स",
+              "ru": "Бока Хуниорс"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        {
+          "name": "CA Independiente",
+          "slug": "independiente",
+          "shortName": "Independiente",
+          "gender": "M",
+          "sport": {
+            "name": "Football",
+            "slug": "football",
+            "id": 1
+          },
+          "userCount": 43346,
+          "nameCode": "CAI",
+          "disabled": false,
+          "national": false,
+          "type": 0,
+          "country": {
+            "alpha2": "AR",
+            "name": "Argentina"
+          },
+          "id": 3209,
+          "teamColors": {
+            "primary": "#cc0000",
+            "secondary": "#cc0000",
+            "text": "#cc0000"
+          },
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "سي إيه إنديبندينتي",
+              "ru": "КА Индепендьенте"
+            },
+            "shortNameTranslation": {
+              "ar": "إنديبندينتي"
+            }
+          }
+        },
+        {
+          "name": "LDU",
+          "slug": "ldu",
+          "shortName": "LDU",
+          "gender": "M",
+          "sport": {
+            "name": "Football",
+            "slug": "football",
+            "id": 1
+          },
+          "userCount": 67583,
+          "nameCode": "LDU",
+          "disabled": false,
+          "national": false,
+          "type": 0,
+          "country": {
+            "alpha2": "EC",
+            "name": "Ecuador"
+          },
+          "id": 5257,
+          "teamColors": {
+            "primary": "#ffffff",
+            "secondary": "#ffffff",
+            "text": "#ffffff"
+          },
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "إل دي يو",
+              "ru": "ЛДУ Кито"
+            },
+            "shortNameTranslation": {
+              "ar": "إل دي يو"
+            }
+          }
+        },
+        {
+          "name": "CA Lanús",
+          "slug": "lanus",
+          "shortName": "Lanús",
+          "gender": "M",
+          "sport": {
+            "name": "Football",
+            "slug": "football",
+            "id": 1
+          },
+          "userCount": 43554,
+          "nameCode": "LAN",
+          "disabled": false,
+          "national": false,
+          "type": 0,
+          "country": {
+            "alpha2": "AR",
+            "name": "Argentina"
+          },
+          "id": 3218,
+          "teamColors": {
+            "primary": "#660033",
+            "secondary": "#ffffff",
+            "text": "#ffffff"
+          },
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "لانوس",
+              "ru": "Атлетико Ланус"
+            },
+            "shortNameTranslation": {
+              "ar": "لانوس"
+            }
+          }
+        }
+      ],
+      "disabledHomeAwayStandings": false,
+      "displayInverseHomeAwayTeams": false,
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "كأس أمريكا الجنوبية لكرة القدم",
+          "bn": "কনমেবল সুদাআমেরিকানা",
+          "hi": "कॉनमेबोल सुदामेरिकाना"
+        },
+        "shortNameTranslation": {}
+      }
+    }
+  },
+  "tournament_681": {
+    "uniqueTournament": {
+      "name": "FIBA AmeriCup",
+      "slug": "fiba-americup",
+      "primaryColorHex": "#147ac2",
+      "secondaryColorHex": "#ee8f00",
+      "logo": {
+        "md5": "ed9b1af544e9c331867e343ad46952ab",
+        "id": 1061461
+      },
+      "category": {
+        "name": "International",
+        "slug": "international",
+        "sport": {
+          "name": "Basketball",
+          "slug": "basketball",
+          "id": 2
+        },
+        "priority": 11,
+        "country": {},
+        "id": 103,
+        "flag": "international",
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "دولي",
+            "hi": "अंतर्राष्ट्रीय",
+            "bn": "আন্তর্জাতিক",
+            "ru": "Международные"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      "userCount": 1727,
+      "titleHolder": {
+        "name": "Brazil",
+        "slug": "brazil",
+        "shortName": "Brazil",
+        "gender": "M",
+        "sport": {
+          "name": "Basketball",
+          "slug": "basketball",
+          "id": 2
+        },
+        "userCount": 29690,
+        "nameCode": "BRA",
+        "disabled": false,
+        "national": true,
+        "type": 0,
+        "country": {
+          "alpha2": "BR",
+          "name": "Brazil"
+        },
+        "id": 6126,
+        "teamColors": {
+          "primary": "#ffff00",
+          "secondary": "#009933",
+          "text": "#009933"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "البرازيل",
+            "bn": "ব্রাজিল",
+            "hi": "ब्राजील",
+            "ru": "Бразилия"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      "titleHolderTitles": 5,
+      "mostTitles": 7,
+      "linkedUniqueTournaments": [],
+      "hasRounds": true,
+      "hasGroups": true,
+      "hasPlayoffSeries": false,
+      "upperDivisions": [],
+      "lowerDivisions": [],
+      "hasPerformanceGraphFeature": false,
+      "periodLength": {},
+      "gender": "M",
+      "excludeFromCareerStats": false,
+      "country": {},
+      "id": 681,
+      "startDateTimestamp": 1755820800,
+      "endDateTimestamp": 1756684800,
+      "mostTitlesTeams": [
+        {
+          "name": "USA",
+          "slug": "usa",
+          "shortName": "USA",
+          "gender": "M",
+          "sport": {
+            "name": "Basketball",
+            "slug": "basketball",
+            "id": 2
+          },
+          "userCount": 51761,
+          "nameCode": "USA",
+          "disabled": false,
+          "national": true,
+          "type": 0,
+          "country": {
+            "alpha2": "US",
+            "name": "USA"
+          },
+          "id": 6141,
+          "teamColors": {
+            "primary": "#ffffff",
+            "secondary": "#ff0000",
+            "text": "#ff0000"
+          },
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "الولايات المتحدة الأمريكية",
+              "bn": "ইউএস",
+              "hi": "यूएसए",
+              "ru": "США"
+            },
+            "shortNameTranslation": {}
+          }
+        }
+      ],
+      "disabledHomeAwayStandings": false,
+      "displayInverseHomeAwayTeams": false,
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "بطولة الأمريكيتين لكرة السلة (FIBA)"
+        },
+        "shortNameTranslation": {}
+      }
+    }
+  },
+  "tournament_681_seasons": {
+    "seasons": [
+      {
+        "name": "FIBA AmeriCup 2025",
+        "year": "2025",
+        "editor": false,
+        "id": 74672
+      },
+      {
+        "name": "American Championship 2022",
+        "year": "2022",
+        "editor": false,
+        "id": 41230
+      },
+      {
+        "name": "American Championship 2017",
+        "year": "2017",
+        "editor": false,
+        "id": 13763
+      },
+      {
+        "name": "American Championship 2015",
+        "year": "2015",
+        "editor": false,
+        "id": 10330
+      },
+      {
+        "name": "American Championship 2013",
+        "year": "2013",
+        "editor": false,
+        "id": 6046
+      },
+      {
+        "name": "American Championship 2011",
+        "year": "2011",
+        "editor": false,
+        "id": 3267
+      },
+      {
+        "name": "American Championship 2009 ",
+        "year": "2009",
+        "editor": false,
+        "id": 2167
+      }
+    ]
+  },
+  "national_3_tournaments": {
+    "uniqueTournaments": [
+      {
+        "name": "Premier League",
+        "slug": "premier-league",
+        "primaryColorHex": "#3c1c5a",
+        "secondaryColorHex": "#f80158",
+        "category": {
+          "name": "England",
+          "slug": "england",
+          "sport": {
+            "name": "Football",
+            "slug": "football",
+            "id": 1
+          },
+          "priority": 10,
+          "id": 1,
+          "flag": "england",
+          "alpha2": "EN",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "إنجلترا",
+              "bn": "ইংল্যান্ড",
+              "hi": "इंग्लैंड",
+              "ru": "Англия"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "userCount": 1225206,
+        "id": 17,
+        "displayInverseHomeAwayTeams": false,
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "الدوري الإنجليزي الممتاز",
+            "bn": "প্রিমিয়ার লীগ",
+            "hi": "प्रिमियर लीग"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      {
+        "name": "FA Cup",
+        "slug": "fa-cup",
+        "primaryColorHex": "#bc1821",
+        "secondaryColorHex": "#e60411",
+        "category": {
+          "name": "England",
+          "slug": "england",
+          "sport": {
+            "name": "Football",
+            "slug": "football",
+            "id": 1
+          },
+          "priority": 10,
+          "id": 1,
+          "flag": "england",
+          "alpha2": "EN",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "إنجلترا",
+              "bn": "ইংল্যান্ড",
+              "hi": "इंग्लैंड",
+              "ru": "Англия"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "userCount": 217079,
+        "id": 19,
+        "displayInverseHomeAwayTeams": false,
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "كأس الاتحاد الإنجليزي",
+            "bn": "এফএ কাপ",
+            "hi": "एफए कप"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      {
+        "name": "EFL Cup",
+        "slug": "efl-cup",
+        "primaryColorHex": "#203e93",
+        "secondaryColorHex": "#bc1723",
+        "category": {
+          "name": "England",
+          "slug": "england",
+          "sport": {
+            "name": "Football",
+            "slug": "football",
+            "id": 1
+          },
+          "priority": 10,
+          "id": 1,
+          "flag": "england",
+          "alpha2": "EN",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "إنجلترا",
+              "bn": "ইংল্যান্ড",
+              "hi": "इंग्लैंड",
+              "ru": "Англия"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "userCount": 159866,
+        "id": 21,
+        "displayInverseHomeAwayTeams": false,
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "كأس رابطة الدوري الإنجليزي",
+            "bn": "ইএফএল কাপ",
+            "hi": "ईएफएल कप"
+          },
+          "shortNameTranslation": {}
+        }
+      }
+    ]
+  },
+  "national_11_tournaments": {
+    "uniqueTournaments": [
+      {
+        "name": "Championship",
+        "slug": "championship",
+        "primaryColorHex": "#20429a",
+        "secondaryColorHex": "#ac944a",
+        "category": {
+          "name": "England",
+          "slug": "england",
+          "sport": {
+            "name": "Football",
+            "slug": "football",
+            "id": 1
+          },
+          "priority": 10,
+          "id": 1,
+          "flag": "england",
+          "alpha2": "EN",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "إنجلترا",
+              "bn": "ইংল্যান্ড",
+              "hi": "इंग्लैंड",
+              "ru": "Англия"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "userCount": 128698,
+        "id": 18,
+        "displayInverseHomeAwayTeams": false,
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "دوري البطولة الإنجليزية",
+            "bn": "চ্যাম্পিয়নশিপ",
+            "hi": "चैंपियनशिप"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      {
+        "name": "FA Cup",
+        "slug": "fa-cup",
+        "primaryColorHex": "#bc1821",
+        "secondaryColorHex": "#e60411",
+        "category": {
+          "name": "England",
+          "slug": "england",
+          "sport": {
+            "name": "Football",
+            "slug": "football",
+            "id": 1
+          },
+          "priority": 10,
+          "id": 1,
+          "flag": "england",
+          "alpha2": "EN",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "إنجلترا",
+              "bn": "ইংল্যান্ড",
+              "hi": "इंग्लैंड",
+              "ru": "Англия"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "userCount": 217079,
+        "id": 19,
+        "displayInverseHomeAwayTeams": false,
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "كأس الاتحاد الإنجليزي",
+            "bn": "এফএ কাপ",
+            "hi": "एफए कप"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      {
+        "name": "EFL Cup",
+        "slug": "efl-cup",
+        "primaryColorHex": "#203e93",
+        "secondaryColorHex": "#bc1723",
+        "category": {
+          "name": "England",
+          "slug": "england",
+          "sport": {
+            "name": "Football",
+            "slug": "football",
+            "id": 1
+          },
+          "priority": 10,
+          "id": 1,
+          "flag": "england",
+          "alpha2": "EN",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "إنجلترا",
+              "bn": "ইংল্যান্ড",
+              "hi": "इंग्लैंड",
+              "ru": "Англия"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "userCount": 159866,
+        "id": 21,
+        "displayInverseHomeAwayTeams": false,
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "كأس رابطة الدوري الإنجليزي",
+            "bn": "ইএফএল কাপ",
+            "hi": "ईएफएल कप"
+          },
+          "shortNameTranslation": {}
+        }
+      }
+    ]
+  },
+  "national_6_tournaments": {
+    "uniqueTournaments": [
+      {
+        "name": "Premier League",
+        "slug": "premier-league",
+        "primaryColorHex": "#3c1c5a",
+        "secondaryColorHex": "#f80158",
+        "category": {
+          "name": "England",
+          "slug": "england",
+          "sport": {
+            "name": "Football",
+            "slug": "football",
+            "id": 1
+          },
+          "priority": 10,
+          "id": 1,
+          "flag": "england",
+          "alpha2": "EN",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "إنجلترا",
+              "bn": "ইংল্যান্ড",
+              "hi": "इंग्लैंड",
+              "ru": "Англия"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "userCount": 1225206,
+        "id": 17,
+        "displayInverseHomeAwayTeams": false,
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "الدوري الإنجليزي الممتاز",
+            "bn": "প্রিমিয়ার লীগ",
+            "hi": "प्रिमियर लीग"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      {
+        "name": "FA Cup",
+        "slug": "fa-cup",
+        "primaryColorHex": "#bc1821",
+        "secondaryColorHex": "#e60411",
+        "category": {
+          "name": "England",
+          "slug": "england",
+          "sport": {
+            "name": "Football",
+            "slug": "football",
+            "id": 1
+          },
+          "priority": 10,
+          "id": 1,
+          "flag": "england",
+          "alpha2": "EN",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "إنجلترا",
+              "bn": "ইংল্যান্ড",
+              "hi": "इंग्लैंड",
+              "ru": "Англия"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "userCount": 217079,
+        "id": 19,
+        "displayInverseHomeAwayTeams": false,
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "كأس الاتحاد الإنجليزي",
+            "bn": "এফএ কাপ",
+            "hi": "एफए कप"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      {
+        "name": "EFL Cup",
+        "slug": "efl-cup",
+        "primaryColorHex": "#203e93",
+        "secondaryColorHex": "#bc1723",
+        "category": {
+          "name": "England",
+          "slug": "england",
+          "sport": {
+            "name": "Football",
+            "slug": "football",
+            "id": 1
+          },
+          "priority": 10,
+          "id": 1,
+          "flag": "england",
+          "alpha2": "EN",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "إنجلترا",
+              "bn": "ইংল্যান্ড",
+              "hi": "इंग्लैंड",
+              "ru": "Англия"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "userCount": 159866,
+        "id": 21,
+        "displayInverseHomeAwayTeams": false,
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "كأس رابطة الدوري الإنجليزي",
+            "bn": "ইএফএল কাপ",
+            "hi": "ईएफएल कप"
+          },
+          "shortNameTranslation": {}
+        }
+      }
+    ]
+  },
+  "national_9_tournaments": {
+    "uniqueTournaments": [
+      {
+        "name": "Championship",
+        "slug": "championship",
+        "primaryColorHex": "#20429a",
+        "secondaryColorHex": "#ac944a",
+        "category": {
+          "name": "England",
+          "slug": "england",
+          "sport": {
+            "name": "Football",
+            "slug": "football",
+            "id": 1
+          },
+          "priority": 10,
+          "id": 1,
+          "flag": "england",
+          "alpha2": "EN",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "إنجلترا",
+              "bn": "ইংল্যান্ড",
+              "hi": "इंग्लैंड",
+              "ru": "Англия"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "userCount": 128698,
+        "id": 18,
+        "displayInverseHomeAwayTeams": false,
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "دوري البطولة الإنجليزية",
+            "bn": "চ্যাম্পিয়নশিপ",
+            "hi": "चैंपियनशिप"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      {
+        "name": "FA Cup",
+        "slug": "fa-cup",
+        "primaryColorHex": "#bc1821",
+        "secondaryColorHex": "#e60411",
+        "category": {
+          "name": "England",
+          "slug": "england",
+          "sport": {
+            "name": "Football",
+            "slug": "football",
+            "id": 1
+          },
+          "priority": 10,
+          "id": 1,
+          "flag": "england",
+          "alpha2": "EN",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "إنجلترا",
+              "bn": "ইংল্যান্ড",
+              "hi": "इंग्लैंड",
+              "ru": "Англия"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "userCount": 217079,
+        "id": 19,
+        "displayInverseHomeAwayTeams": false,
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "كأس الاتحاد الإنجليزي",
+            "bn": "এফএ কাপ",
+            "hi": "एफए कप"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      {
+        "name": "EFL Cup",
+        "slug": "efl-cup",
+        "primaryColorHex": "#203e93",
+        "secondaryColorHex": "#bc1723",
+        "category": {
+          "name": "England",
+          "slug": "england",
+          "sport": {
+            "name": "Football",
+            "slug": "football",
+            "id": 1
+          },
+          "priority": 10,
+          "id": 1,
+          "flag": "england",
+          "alpha2": "EN",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "إنجلترا",
+              "bn": "ইংল্যান্ড",
+              "hi": "इंग्लैंड",
+              "ru": "Англия"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "userCount": 159866,
+        "id": 21,
+        "displayInverseHomeAwayTeams": false,
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "كأس رابطة الدوري الإنجليزي",
+            "bn": "ইএফএল কাপ",
+            "hi": "ईएफएल कप"
+          },
+          "shortNameTranslation": {}
+        }
+      }
+    ]
+  },
+  "national_4782_tournaments": {
+    "uniqueTournaments": [
+      {
+        "name": "World Cup Qual. UEFA",
+        "slug": "world-championship-qual-uefa",
+        "primaryColorHex": "#9a1133",
+        "secondaryColorHex": "#c11541",
+        "category": {
+          "name": "Europe",
+          "slug": "europe",
+          "sport": {
+            "name": "Football",
+            "slug": "football",
+            "id": 1
+          },
+          "priority": 19,
+          "id": 1465,
+          "flag": "europe",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "أوروبا",
+              "bn": "ইউরোপ",
+              "hi": "यूरोप",
+              "ru": "Европа"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "userCount": 208575,
+        "id": 11,
+        "displayInverseHomeAwayTeams": false,
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "تصفيات كأس العالم للاتحاد الأوروبي لكرة القدم",
+            "bn": "ওয়ার্ল্ড চ্যাম্পিয়নশিপ কোয়াল. উয়েফা",
+            "hi": "वर्ल्ड चैंपियनशिप क्वालीफाइंग यूईएफए"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      {
+        "name": "UEFA Nations League",
+        "slug": "uefa-nations-league",
+        "primaryColorHex": "#3a4179",
+        "secondaryColorHex": "#e5a422",
+        "category": {
+          "name": "Europe",
+          "slug": "europe",
+          "sport": {
+            "name": "Football",
+            "slug": "football",
+            "id": 1
+          },
+          "priority": 19,
+          "id": 1465,
+          "flag": "europe",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "أوروبا",
+              "bn": "ইউরোপ",
+              "hi": "यूरोप",
+              "ru": "Европа"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "userCount": 267389,
+        "id": 10783,
+        "displayInverseHomeAwayTeams": false,
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "دوري أمم أوروبا",
+            "bn": "উয়েফা নেশনস লিগ",
+            "hi": "यूईएफए नेशंस लीग"
+          },
+          "shortNameTranslation": {}
+        }
+      }
+    ]
+  },
+  "national_100_tournaments": {
+    "uniqueTournaments": [
+      {
+        "name": "FA Cup, Qualification",
+        "slug": "fa-cup-qualification",
+        "primaryColorHex": "#002b80",
+        "secondaryColorHex": "#e60414",
+        "category": {
+          "name": "England",
+          "slug": "england",
+          "sport": {
+            "name": "Football",
+            "slug": "football",
+            "id": 1
+          },
+          "priority": 10,
+          "id": 1,
+          "flag": "england",
+          "alpha2": "EN",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "إنجلترا",
+              "bn": "ইংল্যান্ড",
+              "hi": "इंग्लैंड",
+              "ru": "Англия"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "userCount": 7570,
+        "id": 1696,
+        "displayInverseHomeAwayTeams": false,
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "تصفيات كأس الاتحاد الإنجليزي",
+            "bn": "এফএ কাপ, কোয়ালিফিকেশন",
+            "hi": "एफए कप, क्वालीफिकेशन"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      {
+        "name": "FA Trophy, Qualification",
+        "slug": "fa-trophy-qualification",
+        "primaryColorHex": "#575556",
+        "secondaryColorHex": "#de1412",
+        "category": {
+          "name": "England Amateur",
+          "slug": "england-amateur",
+          "sport": {
+            "name": "Football",
+            "slug": "football",
+            "id": 1
+          },
+          "priority": 0,
+          "id": 252,
+          "flag": "england",
+          "alpha2": "EN",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "إنجلترا هواة",
+              "ru": "Англия Любители"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "userCount": 276,
+        "id": 1991,
+        "displayInverseHomeAwayTeams": false,
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "كأس الاتحاد الإنجليزي، التصفيات (FA)"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      {
+        "name": "Northern Premier League, Division One West",
+        "slug": "northern-premier-league-division-one-west",
+        "primaryColorHex": "#e61938",
+        "secondaryColorHex": "#e61938",
+        "category": {
+          "name": "England Amateur",
+          "slug": "england-amateur",
+          "sport": {
+            "name": "Football",
+            "slug": "football",
+            "id": 1
+          },
+          "priority": 0,
+          "id": 252,
+          "flag": "england",
+          "alpha2": "EN",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "إنجلترا هواة",
+              "ru": "Англия Любители"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "userCount": 442,
+        "id": 22931,
+        "displayInverseHomeAwayTeams": false,
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "دوري الشمال الممتاز، الدرجة الأولى الغربية"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      {
+        "name": "Manchester Premier Cup",
+        "slug": "manchester-premier-cup",
+        "category": {
+          "name": "England Amateur",
+          "slug": "england-amateur",
+          "sport": {
+            "name": "Football",
+            "slug": "football",
+            "id": 1
+          },
+          "priority": 0,
+          "id": 252,
+          "flag": "england",
+          "alpha2": "EN",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "إنجلترا هواة",
+              "ru": "Англия Любители"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "userCount": 38,
+        "id": 28879,
+        "displayInverseHomeAwayTeams": false,
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "كأس مانشستر الممتاز"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      {
+        "name": "Cheshire Senior Cup",
+        "slug": "cheshire-senior-cup",
+        "primaryColorHex": "#22703c",
+        "secondaryColorHex": "#22703c",
+        "category": {
+          "name": "England Amateur",
+          "slug": "england-amateur",
+          "sport": {
+            "name": "Football",
+            "slug": "football",
+            "id": 1
+          },
+          "priority": 0,
+          "id": 252,
+          "flag": "england",
+          "alpha2": "EN",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "إنجلترا هواة",
+              "ru": "Англия Любители"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "userCount": 37,
+        "id": 29013,
+        "displayInverseHomeAwayTeams": false,
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "كأس تشيشاير للسيدات"
+          },
+          "shortNameTranslation": {}
+        }
+      }
+    ]
+  }
+}

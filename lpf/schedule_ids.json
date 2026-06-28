@@ -1,0 +1,1682 @@
+{
+  "15269902": {
+    "round": 1,
+    "home": "Aldosivi",
+    "away": "Defensa y Justicia",
+    "home_score": 0,
+    "away_score": 0
+  },
+  "15270071": {
+    "round": 1,
+    "home": "Banfield",
+    "away": "Huracán",
+    "home_score": 1,
+    "away_score": 1
+  },
+  "15269913": {
+    "round": 1,
+    "home": "Club Atlético Unión de Santa Fe",
+    "away": "Club Atlético Platense",
+    "home_score": 0,
+    "away_score": 0
+  },
+  "15269917": {
+    "round": 1,
+    "home": "Central Córdoba",
+    "away": "Gimnasia y Esgrima Mendoza",
+    "home_score": 0,
+    "away_score": 1
+  },
+  "15269910": {
+    "round": 1,
+    "home": "Instituto De Córdoba",
+    "away": "Vélez Sarsfield",
+    "home_score": 0,
+    "away_score": 1
+  },
+  "15269915": {
+    "round": 1,
+    "home": "San Lorenzo",
+    "away": "CA Lanús",
+    "home_score": 2,
+    "away_score": 3
+  },
+  "15269906": {
+    "round": 1,
+    "home": "CA Independiente",
+    "away": "Estudiantes de La Plata",
+    "home_score": 1,
+    "away_score": 1
+  },
+  "15269908": {
+    "round": 1,
+    "home": "CA Talleres",
+    "away": "Newell's Old Boys",
+    "home_score": 2,
+    "away_score": 1
+  },
+  "15270072": {
+    "round": 1,
+    "home": "Independiente Rivadavia",
+    "away": "Atlético Tucumán",
+    "home_score": 2,
+    "away_score": 1
+  },
+  "15269918": {
+    "round": 1,
+    "home": "Barracas Central",
+    "away": "River Plate",
+    "home_score": 0,
+    "away_score": 1
+  },
+  "15270067": {
+    "round": 1,
+    "home": "Gimnasia y Esgrima",
+    "away": "Racing Club",
+    "home_score": 2,
+    "away_score": 1
+  },
+  "15270068": {
+    "round": 1,
+    "home": "Rosario Central",
+    "away": "Club Atlético Belgrano",
+    "home_score": 1,
+    "away_score": 2
+  },
+  "15269904": {
+    "round": 1,
+    "home": "Boca Juniors",
+    "away": "Deportivo Riestra",
+    "home_score": 1,
+    "away_score": 0
+  },
+  "15270070": {
+    "round": 1,
+    "home": "Argentinos Juniors",
+    "away": "Sarmiento",
+    "home_score": 1,
+    "away_score": 0
+  },
+  "15270069": {
+    "round": 1,
+    "home": "Tigre",
+    "away": "Estudiantes de Río Cuarto",
+    "home_score": 2,
+    "away_score": 0
+  },
+  "15269909": {
+    "round": 2,
+    "home": "Club Atlético Platense",
+    "away": "Instituto De Córdoba",
+    "home_score": 2,
+    "away_score": 1
+  },
+  "15269911": {
+    "round": 2,
+    "home": "Vélez Sarsfield",
+    "away": "CA Talleres",
+    "home_score": 2,
+    "away_score": 1
+  },
+  "15269905": {
+    "round": 2,
+    "home": "Gimnasia y Esgrima Mendoza",
+    "away": "San Lorenzo",
+    "home_score": 0,
+    "away_score": 1
+  },
+  "15269919": {
+    "round": 2,
+    "home": "Huracán",
+    "away": "Independiente Rivadavia",
+    "home_score": 1,
+    "away_score": 2
+  },
+  "15269903": {
+    "round": 2,
+    "home": "Atlético Tucumán",
+    "away": "Central Córdoba",
+    "home_score": 0,
+    "away_score": 0
+  },
+  "15269912": {
+    "round": 2,
+    "home": "Newell's Old Boys",
+    "away": "CA Independiente",
+    "home_score": 1,
+    "away_score": 1
+  },
+  "15269925": {
+    "round": 2,
+    "home": "Aldosivi",
+    "away": "Barracas Central",
+    "home_score": 0,
+    "away_score": 0
+  },
+  "15269923": {
+    "round": 2,
+    "home": "Racing Club",
+    "away": "Rosario Central",
+    "home_score": 1,
+    "away_score": 2
+  },
+  "15269924": {
+    "round": 2,
+    "home": "River Plate",
+    "away": "Gimnasia y Esgrima",
+    "home_score": 2,
+    "away_score": 0
+  },
+  "15269914": {
+    "round": 2,
+    "home": "Estudiantes de La Plata",
+    "away": "Boca Juniors",
+    "home_score": 2,
+    "away_score": 1
+  },
+  "15269916": {
+    "round": 2,
+    "home": "Deportivo Riestra",
+    "away": "Defensa y Justicia",
+    "home_score": 0,
+    "away_score": 1
+  },
+  "15269907": {
+    "round": 2,
+    "home": "CA Lanús",
+    "away": "Club Atlético Unión de Santa Fe",
+    "home_score": 2,
+    "away_score": 1
+  },
+  "15269922": {
+    "round": 2,
+    "home": "Club Atlético Belgrano",
+    "away": "Tigre",
+    "home_score": 1,
+    "away_score": 1
+  },
+  "15269921": {
+    "round": 2,
+    "home": "Estudiantes de Río Cuarto",
+    "away": "Argentinos Juniors",
+    "home_score": 0,
+    "away_score": 0
+  },
+  "15269920": {
+    "round": 2,
+    "home": "Sarmiento",
+    "away": "Banfield",
+    "home_score": 1,
+    "away_score": 0
+  },
+  "15270080": {
+    "round": 3,
+    "home": "San Lorenzo",
+    "away": "Central Córdoba",
+    "home_score": 1,
+    "away_score": 0
+  },
+  "15270076": {
+    "round": 3,
+    "home": "CA Independiente",
+    "away": "Vélez Sarsfield",
+    "home_score": 1,
+    "away_score": 1
+  },
+  "15270087": {
+    "round": 3,
+    "home": "Atlético Tucumán",
+    "away": "Huracán",
+    "home_score": 1,
+    "away_score": 1
+  },
+  "15270077": {
+    "round": 3,
+    "home": "CA Talleres",
+    "away": "Club Atlético Platense",
+    "home_score": 1,
+    "away_score": 2
+  },
+  "15270073": {
+    "round": 3,
+    "home": "Barracas Central",
+    "away": "Deportivo Riestra",
+    "home_score": 1,
+    "away_score": 1
+  },
+  "15270075": {
+    "round": 3,
+    "home": "Boca Juniors",
+    "away": "Newell's Old Boys",
+    "home_score": 2,
+    "away_score": 0
+  },
+  "15270082": {
+    "round": 3,
+    "home": "Rosario Central",
+    "away": "River Plate",
+    "home_score": 0,
+    "away_score": 0
+  },
+  "15270081": {
+    "round": 3,
+    "home": "Gimnasia y Esgrima",
+    "away": "Aldosivi",
+    "home_score": 3,
+    "away_score": 1
+  },
+  "15270074": {
+    "round": 3,
+    "home": "Defensa y Justicia",
+    "away": "Estudiantes de La Plata",
+    "home_score": 0,
+    "away_score": 0
+  },
+  "15270083": {
+    "round": 3,
+    "home": "Tigre",
+    "away": "Racing Club",
+    "home_score": 3,
+    "away_score": 1
+  },
+  "15270084": {
+    "round": 3,
+    "home": "Argentinos Juniors",
+    "away": "Club Atlético Belgrano",
+    "home_score": 0,
+    "away_score": 0
+  },
+  "15270079": {
+    "round": 3,
+    "home": "Club Atlético Unión de Santa Fe",
+    "away": "Gimnasia y Esgrima Mendoza",
+    "home_score": 4,
+    "away_score": 0
+  },
+  "15270085": {
+    "round": 3,
+    "home": "Banfield",
+    "away": "Estudiantes de Río Cuarto",
+    "home_score": 2,
+    "away_score": 1
+  },
+  "15270086": {
+    "round": 3,
+    "home": "Independiente Rivadavia",
+    "away": "Sarmiento",
+    "home_score": 2,
+    "away_score": 1
+  },
+  "15270078": {
+    "round": 3,
+    "home": "Instituto De Córdoba",
+    "away": "CA Lanús",
+    "home_score": 2,
+    "away_score": 2
+  },
+  "15270089": {
+    "round": 4,
+    "home": "Central Córdoba",
+    "away": "Club Atlético Unión de Santa Fe",
+    "home_score": 1,
+    "away_score": 0
+  },
+  "15270101": {
+    "round": 4,
+    "home": "Aldosivi",
+    "away": "Rosario Central",
+    "home_score": 1,
+    "away_score": 1
+  },
+  "15270099": {
+    "round": 4,
+    "home": "Racing Club",
+    "away": "Argentinos Juniors",
+    "home_score": 2,
+    "away_score": 1
+  },
+  "15323342": {
+    "round": 4,
+    "home": "River Plate",
+    "away": "Tigre",
+    "home_score": 1,
+    "away_score": 4
+  },
+  "15270098": {
+    "round": 4,
+    "home": "Club Atlético Belgrano",
+    "away": "Banfield",
+    "home_score": 1,
+    "away_score": 0
+  },
+  "15270094": {
+    "round": 4,
+    "home": "Newell's Old Boys",
+    "away": "Defensa y Justicia",
+    "home_score": 2,
+    "away_score": 3
+  },
+  "15270092": {
+    "round": 4,
+    "home": "Club Atlético Platense",
+    "away": "CA Independiente",
+    "home_score": 0,
+    "away_score": 1
+  },
+  "15270096": {
+    "round": 4,
+    "home": "Sarmiento",
+    "away": "Atlético Tucumán",
+    "home_score": 2,
+    "away_score": 1
+  },
+  "15270088": {
+    "round": 4,
+    "home": "Huracán",
+    "away": "San Lorenzo",
+    "home_score": 1,
+    "away_score": 0
+  },
+  "15270090": {
+    "round": 4,
+    "home": "Gimnasia y Esgrima Mendoza",
+    "away": "Instituto De Córdoba",
+    "home_score": 1,
+    "away_score": 0
+  },
+  "15270093": {
+    "round": 4,
+    "home": "Vélez Sarsfield",
+    "away": "Boca Juniors",
+    "home_score": 2,
+    "away_score": 1
+  },
+  "15270102": {
+    "round": 4,
+    "home": "Barracas Central",
+    "away": "Gimnasia y Esgrima",
+    "home_score": 2,
+    "away_score": 0
+  },
+  "15270091": {
+    "round": 4,
+    "home": "CA Lanús",
+    "away": "CA Talleres",
+    "home_score": 1,
+    "away_score": 1
+  },
+  "15270095": {
+    "round": 4,
+    "home": "Estudiantes de La Plata",
+    "away": "Deportivo Riestra",
+    "home_score": 1,
+    "away_score": 0
+  },
+  "15270097": {
+    "round": 4,
+    "home": "Estudiantes de Río Cuarto",
+    "away": "Independiente Rivadavia",
+    "home_score": 0,
+    "away_score": 1
+  },
+  "15270112": {
+    "round": 5,
+    "home": "Tigre",
+    "away": "Aldosivi",
+    "home_score": 1,
+    "away_score": 0
+  },
+  "15270113": {
+    "round": 5,
+    "home": "Argentinos Juniors",
+    "away": "River Plate",
+    "home_score": 1,
+    "away_score": 0
+  },
+  "15270107": {
+    "round": 5,
+    "home": "CA Independiente",
+    "away": "CA Lanús",
+    "home_score": 2,
+    "away_score": 0
+  },
+  "15270110": {
+    "round": 5,
+    "home": "Club Atlético Unión de Santa Fe",
+    "away": "San Lorenzo",
+    "home_score": 0,
+    "away_score": 0
+  },
+  "15270105": {
+    "round": 5,
+    "home": "Defensa y Justicia",
+    "away": "Vélez Sarsfield",
+    "home_score": 1,
+    "away_score": 1
+  },
+  "15270114": {
+    "round": 5,
+    "home": "Banfield",
+    "away": "Racing Club",
+    "home_score": 0,
+    "away_score": 2
+  },
+  "15270108": {
+    "round": 5,
+    "home": "CA Talleres",
+    "away": "Gimnasia y Esgrima Mendoza",
+    "home_score": 2,
+    "away_score": 1
+  },
+  "15270117": {
+    "round": 5,
+    "home": "Huracán",
+    "away": "Sarmiento",
+    "home_score": 1,
+    "away_score": 0
+  },
+  "15270116": {
+    "round": 5,
+    "home": "Atlético Tucumán",
+    "away": "Estudiantes de Río Cuarto",
+    "home_score": 4,
+    "away_score": 0
+  },
+  "15270115": {
+    "round": 5,
+    "home": "Independiente Rivadavia",
+    "away": "Club Atlético Belgrano",
+    "home_score": 0,
+    "away_score": 1
+  },
+  "15270103": {
+    "round": 5,
+    "home": "Gimnasia y Esgrima",
+    "away": "Estudiantes de La Plata",
+    "home_score": 0,
+    "away_score": 0
+  },
+  "15270106": {
+    "round": 5,
+    "home": "Boca Juniors",
+    "away": "Club Atlético Platense",
+    "home_score": 0,
+    "away_score": 0
+  },
+  "15270109": {
+    "round": 5,
+    "home": "Instituto De Córdoba",
+    "away": "Central Córdoba",
+    "home_score": 2,
+    "away_score": 0
+  },
+  "15270111": {
+    "round": 5,
+    "home": "Rosario Central",
+    "away": "Barracas Central",
+    "home_score": 2,
+    "away_score": 0
+  },
+  "15270104": {
+    "round": 5,
+    "home": "Deportivo Riestra",
+    "away": "Newell's Old Boys",
+    "home_score": 1,
+    "away_score": 1
+  },
+  "15270122": {
+    "round": 6,
+    "home": "Defensa y Justicia",
+    "away": "Club Atlético Belgrano",
+    "home_score": 1,
+    "away_score": 1
+  },
+  "15270121": {
+    "round": 6,
+    "home": "Estudiantes de La Plata",
+    "away": "Sarmiento",
+    "home_score": 1,
+    "away_score": 0
+  },
+  "15270124": {
+    "round": 6,
+    "home": "Boca Juniors",
+    "away": "Racing Club",
+    "home_score": 0,
+    "away_score": 0
+  },
+  "15270127": {
+    "round": 6,
+    "home": "Instituto De Córdoba",
+    "away": "Atlético Tucumán",
+    "home_score": 2,
+    "away_score": 1
+  },
+  "15270129": {
+    "round": 6,
+    "home": "Gimnasia y Esgrima Mendoza",
+    "away": "Gimnasia y Esgrima",
+    "home_score": 0,
+    "away_score": 1
+  },
+  "15270120": {
+    "round": 6,
+    "home": "Rosario Central",
+    "away": "CA Talleres",
+    "home_score": 0,
+    "away_score": 1
+  },
+  "15270119": {
+    "round": 6,
+    "home": "Club Atlético Platense",
+    "away": "Barracas Central",
+    "home_score": 1,
+    "away_score": 0
+  },
+  "15270125": {
+    "round": 6,
+    "home": "Independiente Rivadavia",
+    "away": "CA Independiente",
+    "home_score": 3,
+    "away_score": 2
+  },
+  "15270132": {
+    "round": 6,
+    "home": "Banfield",
+    "away": "Newell's Old Boys",
+    "home_score": 3,
+    "away_score": 0
+  },
+  "15270131": {
+    "round": 6,
+    "home": "Deportivo Riestra",
+    "away": "Huracán",
+    "home_score": 0,
+    "away_score": 0
+  },
+  "15270130": {
+    "round": 6,
+    "home": "Central Córdoba",
+    "away": "Tigre",
+    "home_score": 0,
+    "away_score": 0
+  },
+  "15571638": {
+    "round": 6,
+    "home": "San Lorenzo",
+    "away": "Estudiantes de Río Cuarto",
+    "home_score": 2,
+    "away_score": 0
+  },
+  "15270118": {
+    "round": 6,
+    "home": "Vélez Sarsfield",
+    "away": "River Plate",
+    "home_score": 1,
+    "away_score": 0
+  },
+  "15270126": {
+    "round": 6,
+    "home": "Club Atlético Unión de Santa Fe",
+    "away": "Aldosivi",
+    "home_score": 1,
+    "away_score": 0
+  },
+  "15844019": {
+    "round": 6,
+    "home": "Argentinos Juniors",
+    "away": "CA Lanús",
+    "home_score": 2,
+    "away_score": 1
+  },
+  "15270138": {
+    "round": 7,
+    "home": "Club Atlético Platense",
+    "away": "Defensa y Justicia",
+    "home_score": 0,
+    "away_score": 0
+  },
+  "15270134": {
+    "round": 7,
+    "home": "San Lorenzo",
+    "away": "Instituto De Córdoba",
+    "home_score": 1,
+    "away_score": 1
+  },
+  "15270135": {
+    "round": 7,
+    "home": "Central Córdoba",
+    "away": "CA Talleres",
+    "home_score": 2,
+    "away_score": 0
+  },
+  "15270142": {
+    "round": 7,
+    "home": "Club Atlético Belgrano",
+    "away": "Atlético Tucumán",
+    "home_score": 3,
+    "away_score": 1
+  },
+  "15270136": {
+    "round": 7,
+    "home": "Gimnasia y Esgrima Mendoza",
+    "away": "CA Independiente",
+    "home_score": 1,
+    "away_score": 1
+  },
+  "15269930": {
+    "round": 7,
+    "home": "Barracas Central",
+    "away": "Tigre",
+    "home_score": 2,
+    "away_score": 1
+  },
+  "15269931": {
+    "round": 7,
+    "home": "Gimnasia y Esgrima",
+    "away": "Rosario Central",
+    "home_score": 1,
+    "away_score": 2
+  },
+  "15270140": {
+    "round": 7,
+    "home": "Newell's Old Boys",
+    "away": "Estudiantes de La Plata",
+    "home_score": 0,
+    "away_score": 2
+  },
+  "15270139": {
+    "round": 7,
+    "home": "Vélez Sarsfield",
+    "away": "Deportivo Riestra",
+    "home_score": 0,
+    "away_score": 0
+  },
+  "15269926": {
+    "round": 7,
+    "home": "Racing Club",
+    "away": "Independiente Rivadavia",
+    "home_score": 1,
+    "away_score": 1
+  },
+  "15270133": {
+    "round": 7,
+    "home": "Sarmiento",
+    "away": "Club Atlético Unión de Santa Fe",
+    "home_score": 1,
+    "away_score": 3
+  },
+  "15270141": {
+    "round": 7,
+    "home": "Estudiantes de Río Cuarto",
+    "away": "Huracán",
+    "home_score": 2,
+    "away_score": 0
+  },
+  "15269927": {
+    "round": 7,
+    "home": "River Plate",
+    "away": "Banfield",
+    "home_score": 3,
+    "away_score": 1
+  },
+  "15270137": {
+    "round": 7,
+    "home": "CA Lanús",
+    "away": "Boca Juniors",
+    "home_score": 0,
+    "away_score": 3
+  },
+  "15844931": {
+    "round": 7,
+    "home": "Aldosivi",
+    "away": "Argentinos Juniors",
+    "home_score": 0,
+    "away_score": 2
+  },
+  "15269940": {
+    "round": 8,
+    "home": "Boca Juniors",
+    "away": "Gimnasia y Esgrima Mendoza",
+    "home_score": 1,
+    "away_score": 1
+  },
+  "15269942": {
+    "round": 8,
+    "home": "CA Independiente",
+    "away": "Central Córdoba",
+    "home_score": 2,
+    "away_score": 0
+  },
+  "15269944": {
+    "round": 8,
+    "home": "CA Talleres",
+    "away": "San Lorenzo",
+    "home_score": 0,
+    "away_score": 0
+  },
+  "15269932": {
+    "round": 8,
+    "home": "Newell's Old Boys",
+    "away": "Rosario Central",
+    "home_score": 0,
+    "away_score": 2
+  },
+  "15269950": {
+    "round": 8,
+    "home": "Argentinos Juniors",
+    "away": "Barracas Central",
+    "home_score": 1,
+    "away_score": 1
+  },
+  "15269946": {
+    "round": 8,
+    "home": "Instituto De Córdoba",
+    "away": "Club Atlético Unión de Santa Fe",
+    "home_score": 1,
+    "away_score": 2
+  },
+  "15269938": {
+    "round": 8,
+    "home": "Defensa y Justicia",
+    "away": "CA Lanús",
+    "home_score": 1,
+    "away_score": 1
+  },
+  "15269948": {
+    "round": 8,
+    "home": "Tigre",
+    "away": "Gimnasia y Esgrima",
+    "home_score": 2,
+    "away_score": 2
+  },
+  "15269936": {
+    "round": 8,
+    "home": "Deportivo Riestra",
+    "away": "Club Atlético Platense",
+    "home_score": 0,
+    "away_score": 0
+  },
+  "15269933": {
+    "round": 8,
+    "home": "Estudiantes de La Plata",
+    "away": "Vélez Sarsfield",
+    "home_score": 0,
+    "away_score": 1
+  },
+  "15269952": {
+    "round": 8,
+    "home": "Banfield",
+    "away": "Aldosivi",
+    "home_score": 2,
+    "away_score": 0
+  },
+  "15269954": {
+    "round": 8,
+    "home": "Independiente Rivadavia",
+    "away": "River Plate",
+    "home_score": 1,
+    "away_score": 1
+  },
+  "15269960": {
+    "round": 8,
+    "home": "Sarmiento",
+    "away": "Estudiantes de Río Cuarto",
+    "home_score": 1,
+    "away_score": 0
+  },
+  "15269958": {
+    "round": 8,
+    "home": "Huracán",
+    "away": "Club Atlético Belgrano",
+    "home_score": 3,
+    "away_score": 1
+  },
+  "15269956": {
+    "round": 8,
+    "home": "Atlético Tucumán",
+    "away": "Racing Club",
+    "home_score": 0,
+    "away_score": 3
+  },
+  "15725886": {
+    "round": 9,
+    "home": "Barracas Central",
+    "away": "Banfield",
+    "home_score": 1,
+    "away_score": 2
+  },
+  "15725887": {
+    "round": 9,
+    "home": "CA Lanús",
+    "away": "Deportivo Riestra",
+    "home_score": 0,
+    "away_score": 0
+  },
+  "15725888": {
+    "round": 9,
+    "home": "Central Córdoba",
+    "away": "Boca Juniors",
+    "home_score": 1,
+    "away_score": 2
+  },
+  "15718657": {
+    "round": 9,
+    "home": "Club Atlético Unión de Santa Fe",
+    "away": "CA Talleres",
+    "home_score": 1,
+    "away_score": 1
+  },
+  "15718694": {
+    "round": 9,
+    "home": "San Lorenzo",
+    "away": "CA Independiente",
+    "home_score": 1,
+    "away_score": 2
+  },
+  "15718696": {
+    "round": 9,
+    "home": "Club Atlético Platense",
+    "away": "Estudiantes de La Plata",
+    "home_score": 0,
+    "away_score": 2
+  },
+  "15718695": {
+    "round": 9,
+    "home": "Aldosivi",
+    "away": "Independiente Rivadavia",
+    "home_score": 1,
+    "away_score": 1
+  },
+  "15269978": {
+    "round": 9,
+    "home": "Club Atlético Belgrano",
+    "away": "Sarmiento",
+    "home_score": 4,
+    "away_score": 0
+  },
+  "15718662": {
+    "round": 9,
+    "home": "Gimnasia y Esgrima",
+    "away": "Argentinos Juniors",
+    "home_score": 2,
+    "away_score": 0
+  },
+  "15718661": {
+    "round": 9,
+    "home": "Racing Club",
+    "away": "Huracán",
+    "home_score": 0,
+    "away_score": 0
+  },
+  "15718697": {
+    "round": 9,
+    "home": "Rosario Central",
+    "away": "Tigre",
+    "home_score": 1,
+    "away_score": 1
+  },
+  "15725889": {
+    "round": 9,
+    "home": "River Plate",
+    "away": "Atlético Tucumán",
+    "home_score": 0,
+    "away_score": 1
+  },
+  "15718693": {
+    "round": 9,
+    "home": "Gimnasia y Esgrima Mendoza",
+    "away": "Defensa y Justicia",
+    "home_score": 2,
+    "away_score": 1
+  },
+  "15718656": {
+    "round": 9,
+    "home": "Vélez Sarsfield",
+    "away": "Newell's Old Boys",
+    "home_score": 1,
+    "away_score": 1
+  },
+  "15718663": {
+    "round": 9,
+    "home": "Estudiantes de Río Cuarto",
+    "away": "Instituto De Córdoba",
+    "home_score": 0,
+    "away_score": 2
+  },
+  "15270005": {
+    "round": 10,
+    "home": "CA Independiente",
+    "away": "Club Atlético Unión de Santa Fe",
+    "home_score": 4,
+    "away_score": 4
+  },
+  "15269992": {
+    "round": 10,
+    "home": "Tigre",
+    "away": "Vélez Sarsfield",
+    "home_score": 1,
+    "away_score": 1
+  },
+  "15269994": {
+    "round": 10,
+    "home": "Newell's Old Boys",
+    "away": "Club Atlético Platense",
+    "home_score": 1,
+    "away_score": 1
+  },
+  "15270014": {
+    "round": 10,
+    "home": "Sarmiento",
+    "away": "Racing Club",
+    "home_score": 0,
+    "away_score": 0
+  },
+  "15270009": {
+    "round": 10,
+    "home": "Argentinos Juniors",
+    "away": "Rosario Central",
+    "home_score": 0,
+    "away_score": 0
+  },
+  "15270010": {
+    "round": 10,
+    "home": "Banfield",
+    "away": "Gimnasia y Esgrima",
+    "home_score": 1,
+    "away_score": 2
+  },
+  "15270003": {
+    "round": 10,
+    "home": "Boca Juniors",
+    "away": "San Lorenzo",
+    "home_score": 1,
+    "away_score": 1
+  },
+  "15270012": {
+    "round": 10,
+    "home": "Atlético Tucumán",
+    "away": "Aldosivi",
+    "home_score": 1,
+    "away_score": 1
+  },
+  "15270011": {
+    "round": 10,
+    "home": "Independiente Rivadavia",
+    "away": "Barracas Central",
+    "home_score": 1,
+    "away_score": 2
+  },
+  "15270001": {
+    "round": 10,
+    "home": "Defensa y Justicia",
+    "away": "Central Córdoba",
+    "home_score": 1,
+    "away_score": 1
+  },
+  "15269999": {
+    "round": 10,
+    "home": "Deportivo Riestra",
+    "away": "Gimnasia y Esgrima Mendoza",
+    "home_score": 0,
+    "away_score": 0
+  },
+  "15270007": {
+    "round": 10,
+    "home": "CA Talleres",
+    "away": "Instituto De Córdoba",
+    "home_score": 2,
+    "away_score": 0
+  },
+  "15270015": {
+    "round": 10,
+    "home": "Estudiantes de Río Cuarto",
+    "away": "Club Atlético Belgrano",
+    "home_score": 0,
+    "away_score": 1
+  },
+  "15270013": {
+    "round": 10,
+    "home": "Huracán",
+    "away": "River Plate",
+    "home_score": 1,
+    "away_score": 2
+  },
+  "15269997": {
+    "round": 10,
+    "home": "Estudiantes de La Plata",
+    "away": "CA Lanús",
+    "home_score": 0,
+    "away_score": 1
+  },
+  "15270023": {
+    "round": 11,
+    "home": "Club Atlético Platense",
+    "away": "Vélez Sarsfield",
+    "home_score": 0,
+    "away_score": 2
+  },
+  "15270029": {
+    "round": 11,
+    "home": "Rosario Central",
+    "away": "Banfield",
+    "home_score": 2,
+    "away_score": 1
+  },
+  "15270028": {
+    "round": 11,
+    "home": "Gimnasia y Esgrima",
+    "away": "Independiente Rivadavia",
+    "home_score": 2,
+    "away_score": 3
+  },
+  "15270016": {
+    "round": 11,
+    "home": "Club Atlético Belgrano",
+    "away": "CA Talleres",
+    "home_score": 0,
+    "away_score": 0
+  },
+  "15270025": {
+    "round": 11,
+    "home": "River Plate",
+    "away": "Sarmiento",
+    "home_score": 2,
+    "away_score": 0
+  },
+  "15270018": {
+    "round": 11,
+    "home": "Club Atlético Unión de Santa Fe",
+    "away": "Boca Juniors",
+    "home_score": 1,
+    "away_score": 1
+  },
+  "15270030": {
+    "round": 11,
+    "home": "Tigre",
+    "away": "Argentinos Juniors",
+    "home_score": 1,
+    "away_score": 1
+  },
+  "15270026": {
+    "round": 11,
+    "home": "Aldosivi",
+    "away": "Huracán",
+    "home_score": 0,
+    "away_score": 0
+  },
+  "15270027": {
+    "round": 11,
+    "home": "Barracas Central",
+    "away": "Atlético Tucumán",
+    "home_score": 2,
+    "away_score": 1
+  },
+  "15270019": {
+    "round": 11,
+    "home": "San Lorenzo",
+    "away": "Defensa y Justicia",
+    "home_score": 2,
+    "away_score": 5
+  },
+  "15270024": {
+    "round": 11,
+    "home": "Racing Club",
+    "away": "Estudiantes de Río Cuarto",
+    "home_score": 2,
+    "away_score": 0
+  },
+  "15270017": {
+    "round": 11,
+    "home": "Instituto De Córdoba",
+    "away": "CA Independiente",
+    "home_score": 2,
+    "away_score": 1
+  },
+  "15270022": {
+    "round": 11,
+    "home": "CA Lanús",
+    "away": "Newell's Old Boys",
+    "home_score": 5,
+    "away_score": 0
+  },
+  "15270020": {
+    "round": 11,
+    "home": "Central Córdoba",
+    "away": "Deportivo Riestra",
+    "home_score": 1,
+    "away_score": 0
+  },
+  "15270021": {
+    "round": 11,
+    "home": "Gimnasia y Esgrima Mendoza",
+    "away": "Estudiantes de La Plata",
+    "home_score": 1,
+    "away_score": 2
+  },
+  "15270041": {
+    "round": 12,
+    "home": "Atlético Tucumán",
+    "away": "Gimnasia y Esgrima",
+    "home_score": 1,
+    "away_score": 0
+  },
+  "15270039": {
+    "round": 12,
+    "home": "Banfield",
+    "away": "Tigre",
+    "home_score": 1,
+    "away_score": 0
+  },
+  "15270032": {
+    "round": 12,
+    "home": "Vélez Sarsfield",
+    "away": "CA Lanús",
+    "home_score": 0,
+    "away_score": 1
+  },
+  "15270036": {
+    "round": 12,
+    "home": "Defensa y Justicia",
+    "away": "Club Atlético Unión de Santa Fe",
+    "home_score": 2,
+    "away_score": 0
+  },
+  "15270033": {
+    "round": 12,
+    "home": "Newell's Old Boys",
+    "away": "Gimnasia y Esgrima Mendoza",
+    "home_score": 1,
+    "away_score": 0
+  },
+  "15270038": {
+    "round": 12,
+    "home": "CA Independiente",
+    "away": "CA Talleres",
+    "home_score": 1,
+    "away_score": 2
+  },
+  "15270045": {
+    "round": 12,
+    "home": "Club Atlético Belgrano",
+    "away": "Racing Club",
+    "home_score": 1,
+    "away_score": 2
+  },
+  "15270043": {
+    "round": 12,
+    "home": "Sarmiento",
+    "away": "Aldosivi",
+    "home_score": 2,
+    "away_score": 0
+  },
+  "15270044": {
+    "round": 12,
+    "home": "Estudiantes de Río Cuarto",
+    "away": "River Plate",
+    "home_score": 0,
+    "away_score": 2
+  },
+  "15270037": {
+    "round": 12,
+    "home": "Boca Juniors",
+    "away": "Instituto De Córdoba",
+    "home_score": 2,
+    "away_score": 0
+  },
+  "15270031": {
+    "round": 12,
+    "home": "Argentinos Juniors",
+    "away": "Club Atlético Platense",
+    "home_score": 1,
+    "away_score": 0
+  },
+  "15270040": {
+    "round": 12,
+    "home": "Independiente Rivadavia",
+    "away": "Rosario Central",
+    "home_score": 2,
+    "away_score": 0
+  },
+  "15270034": {
+    "round": 12,
+    "home": "Estudiantes de La Plata",
+    "away": "Central Córdoba",
+    "home_score": 5,
+    "away_score": 0
+  },
+  "15270042": {
+    "round": 12,
+    "home": "Huracán",
+    "away": "Barracas Central",
+    "home_score": 0,
+    "away_score": 0
+  },
+  "15270035": {
+    "round": 12,
+    "home": "Deportivo Riestra",
+    "away": "San Lorenzo",
+    "home_score": 1,
+    "away_score": 1
+  },
+  "15270053": {
+    "round": 13,
+    "home": "CA Lanús",
+    "away": "Club Atlético Platense",
+    "home_score": 0,
+    "away_score": 0
+  },
+  "15270056": {
+    "round": 13,
+    "home": "Barracas Central",
+    "away": "Sarmiento",
+    "home_score": 1,
+    "away_score": 2
+  },
+  "15270059": {
+    "round": 13,
+    "home": "Tigre",
+    "away": "Independiente Rivadavia",
+    "home_score": 0,
+    "away_score": 2
+  },
+  "15270047": {
+    "round": 13,
+    "home": "CA Talleres",
+    "away": "Boca Juniors",
+    "home_score": 0,
+    "away_score": 1
+  },
+  "15270052": {
+    "round": 13,
+    "home": "Gimnasia y Esgrima Mendoza",
+    "away": "Vélez Sarsfield",
+    "home_score": 3,
+    "away_score": 2
+  },
+  "15270049": {
+    "round": 13,
+    "home": "Club Atlético Unión de Santa Fe",
+    "away": "Deportivo Riestra",
+    "home_score": 2,
+    "away_score": 0
+  },
+  "15270050": {
+    "round": 13,
+    "home": "San Lorenzo",
+    "away": "Estudiantes de La Plata",
+    "home_score": 1,
+    "away_score": 0
+  },
+  "15270055": {
+    "round": 13,
+    "home": "Aldosivi",
+    "away": "Estudiantes de Río Cuarto",
+    "home_score": 0,
+    "away_score": 0
+  },
+  "15270046": {
+    "round": 13,
+    "home": "CA Independiente",
+    "away": "Racing Club",
+    "home_score": 1,
+    "away_score": 0
+  },
+  "15270058": {
+    "round": 13,
+    "home": "Rosario Central",
+    "away": "Atlético Tucumán",
+    "home_score": 2,
+    "away_score": 1
+  },
+  "15270057": {
+    "round": 13,
+    "home": "Gimnasia y Esgrima",
+    "away": "Huracán",
+    "home_score": 0,
+    "away_score": 3
+  },
+  "15270054": {
+    "round": 13,
+    "home": "River Plate",
+    "away": "Club Atlético Belgrano",
+    "home_score": 3,
+    "away_score": 0
+  },
+  "15270051": {
+    "round": 13,
+    "home": "Central Córdoba",
+    "away": "Newell's Old Boys",
+    "home_score": 1,
+    "away_score": 3
+  },
+  "15270060": {
+    "round": 13,
+    "home": "Argentinos Juniors",
+    "away": "Banfield",
+    "home_score": 3,
+    "away_score": 2
+  },
+  "15270048": {
+    "round": 13,
+    "home": "Instituto De Córdoba",
+    "away": "Defensa y Justicia",
+    "home_score": 2,
+    "away_score": 0
+  },
+  "15269947": {
+    "round": 14,
+    "home": "Club Atlético Belgrano",
+    "away": "Aldosivi",
+    "home_score": 1,
+    "away_score": 0
+  },
+  "15269929": {
+    "round": 14,
+    "home": "Deportivo Riestra",
+    "away": "Instituto De Córdoba",
+    "home_score": 0,
+    "away_score": 1
+  },
+  "15269937": {
+    "round": 14,
+    "home": "Independiente Rivadavia",
+    "away": "Argentinos Juniors",
+    "home_score": 3,
+    "away_score": 1
+  },
+  "15270065": {
+    "round": 14,
+    "home": "Estudiantes de La Plata",
+    "away": "Club Atlético Unión de Santa Fe",
+    "home_score": 2,
+    "away_score": 1
+  },
+  "15269935": {
+    "round": 14,
+    "home": "Boca Juniors",
+    "away": "CA Independiente",
+    "home_score": 1,
+    "away_score": 1
+  },
+  "15269945": {
+    "round": 14,
+    "home": "Estudiantes de Río Cuarto",
+    "away": "Barracas Central",
+    "home_score": 1,
+    "away_score": 2
+  },
+  "15270062": {
+    "round": 14,
+    "home": "Club Atlético Platense",
+    "away": "Gimnasia y Esgrima Mendoza",
+    "home_score": 1,
+    "away_score": 1
+  },
+  "15270064": {
+    "round": 14,
+    "home": "Newell's Old Boys",
+    "away": "San Lorenzo",
+    "home_score": 0,
+    "away_score": 0
+  },
+  "15269939": {
+    "round": 14,
+    "home": "Atlético Tucumán",
+    "away": "Tigre",
+    "home_score": 0,
+    "away_score": 0
+  },
+  "15269941": {
+    "round": 14,
+    "home": "Huracán",
+    "away": "Rosario Central",
+    "home_score": 3,
+    "away_score": 1
+  },
+  "15269949": {
+    "round": 14,
+    "home": "Racing Club",
+    "away": "River Plate",
+    "home_score": 0,
+    "away_score": 2
+  },
+  "15269934": {
+    "round": 14,
+    "home": "Defensa y Justicia",
+    "away": "CA Talleres",
+    "home_score": 1,
+    "away_score": 2
+  },
+  "15269943": {
+    "round": 14,
+    "home": "Sarmiento",
+    "away": "Gimnasia y Esgrima",
+    "home_score": 1,
+    "away_score": 2
+  },
+  "15270061": {
+    "round": 14,
+    "home": "CA Lanús",
+    "away": "Banfield",
+    "home_score": 1,
+    "away_score": 0
+  },
+  "15270063": {
+    "round": 14,
+    "home": "Vélez Sarsfield",
+    "away": "Central Córdoba",
+    "home_score": 1,
+    "away_score": 0
+  },
+  "15269959": {
+    "round": 15,
+    "home": "Club Atlético Unión de Santa Fe",
+    "away": "Newell's Old Boys",
+    "home_score": 2,
+    "away_score": 3
+  },
+  "15269971": {
+    "round": 15,
+    "home": "Gimnasia y Esgrima",
+    "away": "Estudiantes de Río Cuarto",
+    "home_score": 1,
+    "away_score": 0
+  },
+  "15269957": {
+    "round": 15,
+    "home": "Instituto De Córdoba",
+    "away": "Estudiantes de La Plata",
+    "home_score": 0,
+    "away_score": 1
+  },
+  "15269953": {
+    "round": 15,
+    "home": "CA Independiente",
+    "away": "Defensa y Justicia",
+    "home_score": 3,
+    "away_score": 1
+  },
+  "15269977": {
+    "round": 15,
+    "home": "Argentinos Juniors",
+    "away": "Atlético Tucumán",
+    "home_score": 1,
+    "away_score": 0
+  },
+  "15269967": {
+    "round": 15,
+    "home": "Aldosivi",
+    "away": "Racing Club",
+    "home_score": 1,
+    "away_score": 1
+  },
+  "15269951": {
+    "round": 15,
+    "home": "River Plate",
+    "away": "Boca Juniors",
+    "home_score": 0,
+    "away_score": 1
+  },
+  "15269955": {
+    "round": 15,
+    "home": "CA Talleres",
+    "away": "Deportivo Riestra",
+    "home_score": 2,
+    "away_score": 0
+  },
+  "15269973": {
+    "round": 15,
+    "home": "Rosario Central",
+    "away": "Sarmiento",
+    "home_score": 2,
+    "away_score": 1
+  },
+  "15269969": {
+    "round": 15,
+    "home": "Barracas Central",
+    "away": "Club Atlético Belgrano",
+    "home_score": 0,
+    "away_score": 0
+  },
+  "15269979": {
+    "round": 15,
+    "home": "Banfield",
+    "away": "Independiente Rivadavia",
+    "home_score": 0,
+    "away_score": 0
+  },
+  "15269963": {
+    "round": 15,
+    "home": "Central Córdoba",
+    "away": "Club Atlético Platense",
+    "home_score": 4,
+    "away_score": 3
+  },
+  "15269961": {
+    "round": 15,
+    "home": "San Lorenzo",
+    "away": "Vélez Sarsfield",
+    "home_score": 0,
+    "away_score": 0
+  },
+  "15269965": {
+    "round": 15,
+    "home": "Gimnasia y Esgrima Mendoza",
+    "away": "CA Lanús",
+    "home_score": 1,
+    "away_score": 0
+  },
+  "15269975": {
+    "round": 15,
+    "home": "Tigre",
+    "away": "Huracán",
+    "home_score": 1,
+    "away_score": 1
+  },
+  "15269995": {
+    "round": 16,
+    "home": "Defensa y Justicia",
+    "away": "Boca Juniors",
+    "home_score": 0,
+    "away_score": 4
+  },
+  "15269993": {
+    "round": 16,
+    "home": "Deportivo Riestra",
+    "away": "CA Independiente",
+    "home_score": 2,
+    "away_score": 0
+  },
+  "15269983": {
+    "round": 16,
+    "home": "CA Lanús",
+    "away": "Central Córdoba",
+    "home_score": 0,
+    "away_score": 0
+  },
+  "15270002": {
+    "round": 16,
+    "home": "Estudiantes de Río Cuarto",
+    "away": "Rosario Central",
+    "home_score": 1,
+    "away_score": 2
+  },
+  "15269985": {
+    "round": 16,
+    "home": "Club Atlético Platense",
+    "away": "San Lorenzo",
+    "home_score": 0,
+    "away_score": 1
+  },
+  "15270006": {
+    "round": 16,
+    "home": "Racing Club",
+    "away": "Barracas Central",
+    "home_score": 1,
+    "away_score": 1
+  },
+  "15269991": {
+    "round": 16,
+    "home": "Estudiantes de La Plata",
+    "away": "CA Talleres",
+    "home_score": 0,
+    "away_score": 0
+  },
+  "15270000": {
+    "round": 16,
+    "home": "Sarmiento",
+    "away": "Tigre",
+    "home_score": 1,
+    "away_score": 0
+  },
+  "15270008": {
+    "round": 16,
+    "home": "River Plate",
+    "away": "Aldosivi",
+    "home_score": 3,
+    "away_score": 1
+  },
+  "15269981": {
+    "round": 16,
+    "home": "Independiente Rivadavia",
+    "away": "Gimnasia y Esgrima Mendoza",
+    "home_score": 5,
+    "away_score": 1
+  },
+  "15270004": {
+    "round": 16,
+    "home": "Club Atlético Belgrano",
+    "away": "Gimnasia y Esgrima",
+    "home_score": 0,
+    "away_score": 1
+  },
+  "15269989": {
+    "round": 16,
+    "home": "Newell's Old Boys",
+    "away": "Instituto De Córdoba",
+    "home_score": 1,
+    "away_score": 1
+  },
+  "15269996": {
+    "round": 16,
+    "home": "Atlético Tucumán",
+    "away": "Banfield",
+    "home_score": 1,
+    "away_score": 1
+  },
+  "15269987": {
+    "round": 16,
+    "home": "Vélez Sarsfield",
+    "away": "Club Atlético Unión de Santa Fe",
+    "home_score": 2,
+    "away_score": 2
+  },
+  "15269998": {
+    "round": 16,
+    "home": "Huracán",
+    "away": "Argentinos Juniors",
+    "home_score": 1,
+    "away_score": 2
+  }
+}

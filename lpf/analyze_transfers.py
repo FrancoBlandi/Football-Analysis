@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+﻿#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
 Optimización de transferencias FM — formación libre.
@@ -11,7 +11,7 @@ from itertools import combinations
 
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="replace")
 
-ANALYTICS_HTML   = Path("c:/Users/Franco/DashBoards Futbol/lpf/analytics.html")
+ANALYTICS_HTML   = Path("c:/Users/Franco/Franco Analytics/lpf/analytics.html")
 BUDGET_REMAINING = 3.98
 
 # Formaciones válidas: (DEF, MID, FWD) — GK siempre 1
@@ -266,3 +266,4 @@ for pos, name, price, xpts, is_new in final:
     print(f"  {name:<26} {pos:>4}  ${price:>5.2f}M  {xpts:>6.2f}  {xpm if xpm else '—':>8}{tag}")
 
 print(f"\n  TOTAL xPts: {best_xpts:.2f}")
+

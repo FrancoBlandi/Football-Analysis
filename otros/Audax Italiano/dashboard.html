@@ -1,0 +1,1404 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Audax Italiano · Análisis Ejecutivo 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300..900&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background: #F1F2EF;
+  color: #1A1A1A;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── HEADER ── */
+.header {
+  background: #031509;
+  color: white;
+  padding: 48px 60px 42px;
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 3px solid #007A3D;
+}
+
+.header::after {
+  content: '1910';
+  position: absolute;
+  right: 48px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 168px;
+  font-weight: 900;
+  color: rgba(255,255,255,0.035);
+  line-height: 1;
+  letter-spacing: -6px;
+  pointer-events: none;
+  user-select: none;
+}
+
+.crest {
+  width: 88px;
+  height: 88px;
+  flex-shrink: 0;
+  filter: drop-shadow(0 2px 8px rgba(0,0,0,0.5));
+  position: relative;
+  z-index: 1;
+}
+
+.header-text {
+  position: relative;
+  z-index: 1;
+}
+
+.header-text h1 {
+  font-size: 50px;
+  font-weight: 900;
+  letter-spacing: -2.5px;
+  line-height: 1;
+  color: white;
+}
+
+.header-eyebrow {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.4);
+  margin-bottom: 10px;
+}
+
+.header-divider {
+  width: 40px;
+  height: 2px;
+  background: #007A3D;
+  margin: 14px 0 12px;
+}
+
+.header-sub {
+  font-size: 12px;
+  color: rgba(255,255,255,0.45);
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+.header-badge { display: none; }
+
+/* ── PAGE WRAPPER ── */
+.page { max-width: 1280px; margin: 0 auto; padding: 40px 44px 60px; }
+
+/* ── KPI ROW ── */
+.kpi-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  margin-bottom: 36px;
+}
+
+.kpi-card {
+  background: white;
+  border-radius: 12px;
+  padding: 22px 24px 20px;
+  border-left: none;
+  border-top: 3px solid #007A3D;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05), 0 0 0 1px rgba(0,0,0,0.05);
+}
+
+.kpi-card.alert { border-top-color: #C62828; }
+.kpi-card.gold  { border-top-color: #E65100; }
+.kpi-card.suda  { border-top-color: #1565C0; }
+
+.kpi-label {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  color: #aaa;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.kpi-value {
+  font-size: 38px;
+  font-weight: 800;
+  color: #1A1A1A;
+  line-height: 1;
+  letter-spacing: -1.5px;
+}
+
+.kpi-value.red { color: #C62828; }
+.kpi-value.green { color: #007A3D; }
+.kpi-value.orange { color: #E65100; }
+.kpi-value.blue { color: #1565C0; }
+
+.kpi-sub {
+  font-size: 11.5px;
+  color: #aaa;
+  margin-top: 7px;
+  line-height: 1.4;
+}
+
+/* ── SECTION TITLE ── */
+.section-title {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #aaa;
+  padding-bottom: 0;
+  margin-bottom: 18px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.section-title::before {
+  content: '';
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: #007A3D;
+  flex-shrink: 0;
+}
+
+/* ── TWO-COL LAYOUT ── */
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin-bottom: 24px;
+}
+
+.two-col.wide-left  { grid-template-columns: 3fr 2fr; }
+.two-col.wide-right { grid-template-columns: 2fr 3fr; }
+
+/* ── CARD ── */
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 28px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05), 0 0 0 1px rgba(0,0,0,0.05);
+}
+
+.card-title {
+  font-size: 12px;
+  font-weight: 600;
+  color: #666;
+  margin-bottom: 18px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  letter-spacing: 0.2px;
+}
+
+.card-title .dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #007A3D;
+  flex-shrink: 0;
+}
+
+.card-title .dot.red   { background: #C62828; }
+.card-title .dot.blue  { background: #1565C0; }
+.card-title .dot.orange { background: #E65100; }
+
+/* ── CHART CONTAINER ── */
+.chart-wrap { position: relative; }
+
+/* ── TABLE ── */
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12.5px;
+}
+
+.data-table th {
+  text-align: left;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: #bbb;
+  padding: 0 8px 10px;
+  border-bottom: 1px solid #EBEBEB;
+}
+
+.data-table td {
+  padding: 7px 8px;
+  border-bottom: 1px solid #F4F4F4;
+  vertical-align: middle;
+}
+
+.data-table tr:last-child td { border-bottom: none; }
+.data-table tr:hover td { background: #FAFAFA; }
+
+.badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 10.5px;
+  font-weight: 600;
+}
+
+.badge-red    { background: #FFEBEE; color: #C62828; }
+.badge-green  { background: #E8F5E9; color: #2E7D32; }
+.badge-orange { background: #FFF3E0; color: #E65100; }
+.badge-gray   { background: #F5F5F5; color: #777; }
+
+/* ── ALERT BOX ── */
+.alert-box {
+  background: #FFF8F8;
+  border-left: 3px solid #C62828;
+  border-radius: 8px;
+  padding: 14px 16px;
+  margin-bottom: 10px;
+}
+
+.alert-box.orange {
+  background: #FFF9F4;
+  border-left-color: #E65100;
+}
+
+.alert-box.blue {
+  background: #F3F8FF;
+  border-left-color: #1565C0;
+}
+
+.alert-box.green {
+  background: #F3FAF4;
+  border-left-color: #2E7D32;
+}
+
+.alert-title {
+  font-weight: 700;
+  font-size: 12.5px;
+  margin-bottom: 4px;
+}
+
+.alert-body { font-size: 12.5px; color: #555; line-height: 1.55; }
+
+/* ── INSIGHT BOX ── */
+.insight {
+  background: #F6FAF7;
+  border-radius: 8px;
+  padding: 16px 18px;
+  margin-bottom: 10px;
+  border-left: 3px solid #007A3D;
+}
+
+.insight-label {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #007A3D;
+  margin-bottom: 6px;
+}
+
+.insight-text { font-size: 12.5px; color: #3A3A3A; line-height: 1.6; }
+.insight-text strong { color: #111; }
+
+/* ── PRIZE BREAKDOWN ── */
+.prize-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 9px 0;
+  border-bottom: 1px solid #F2F2F2;
+  font-size: 13px;
+}
+
+.prize-row:last-child { border-bottom: none; }
+.prize-row .prize-label { color: #555; }
+.prize-row .prize-amount { font-weight: 700; color: #1A1A1A; }
+.prize-row.earned .prize-label { color: #2E7D32; font-weight: 600; }
+.prize-row.earned .prize-amount { color: #2E7D32; }
+.prize-row.potential .prize-label { color: #aaa; }
+.prize-row.total-row { padding-top: 12px; margin-top: 4px; border-top: 2px solid #1A1A1A; border-bottom: none; }
+.prize-row.total-row .prize-label { font-weight: 700; font-size: 14px; }
+.prize-row.total-row .prize-amount { font-size: 16px; color: #007A3D; }
+
+/* ── GROUP TABLE ── */
+.group-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  margin-top: 8px;
+}
+
+.group-table th {
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: #bbb;
+  padding: 0 6px 10px;
+  border-bottom: 1px solid #EBEBEB;
+  text-align: center;
+}
+
+.group-table th:first-child { text-align: left; }
+
+.group-table td {
+  padding: 9px 6px;
+  text-align: center;
+  border-bottom: 1px solid #F4F4F4;
+  font-size: 13px;
+}
+
+.group-table td:first-child { text-align: left; font-weight: 600; }
+.group-table tr:last-child td { border-bottom: none; }
+
+.group-table .audax-row td { background: #F2FBF4; color: #1B5E20; }
+.group-table .audax-row td:first-child { color: #007A3D; font-weight: 700; }
+
+.pts-badge {
+  display: inline-block;
+  background: #1B5E20;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.pts-badge.gray { background: #9E9E9E; }
+
+/* ── STAT ROW ── */
+.stat-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 10px; }
+
+.stat-item {
+  background: #F8F8F7;
+  border-radius: 10px;
+  padding: 14px 16px;
+  border: 1px solid #EFEFED;
+}
+
+.stat-item .label { font-size: 10px; color: #bbb; text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 4px; font-weight: 600; }
+.stat-item .value { font-size: 24px; font-weight: 800; color: #1A1A1A; letter-spacing: -0.5px; }
+.stat-item .value.red { color: #C62828; }
+.stat-item .value.green { color: #007A3D; }
+.stat-item .sub { font-size: 11px; color: #bbb; margin-top: 3px; line-height: 1.4; }
+
+/* ── SCENARIO TABLE ── */
+.scenario-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.scenario-table th {
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: #bbb;
+  padding: 0 10px 10px;
+  border-bottom: 2px solid #EBEBEB;
+  text-align: right;
+}
+
+.scenario-table th:first-child { text-align: left; }
+
+.scenario-table td {
+  padding: 10px;
+  border-bottom: 1px solid #F4F4F4;
+  text-align: right;
+  vertical-align: middle;
+}
+
+.scenario-table td:first-child { text-align: left; }
+.scenario-table tr:last-child td { border-bottom: none; }
+
+.scenario-table .row-danger td { background: #FFF8F8; }
+.scenario-table .row-base td { background: #FAFAFA; }
+.scenario-table .row-good td { background: #F5FBF6; }
+.scenario-table .row-great td { background: #EDF8F1; }
+
+.delta-pos { color: #2E7D32; font-weight: 700; }
+.delta-neg { color: #C62828; font-weight: 700; }
+.delta-zero { color: #aaa; font-weight: 600; }
+
+.scenario-label { font-weight: 600; font-size: 13px; }
+.scenario-label small { display: block; font-size: 11px; color: #aaa; font-weight: 400; margin-top: 1px; }
+
+/* ── INCOME BAR ── */
+.income-bar-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.income-bar-label { width: 160px; font-size: 12px; color: #555; flex-shrink: 0; line-height: 1.3; }
+
+.income-bar-track {
+  flex: 1;
+  height: 20px;
+  background: #F0F0EE;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.income-bar-fill {
+  height: 100%;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  padding-left: 8px;
+  font-size: 11px;
+  font-weight: 700;
+  color: white;
+}
+
+.income-bar-amount { width: 90px; text-align: right; font-size: 12px; font-weight: 700; color: #1A1A1A; flex-shrink: 0; }
+
+/* ── FOOTER ── */
+.footer {
+  background: #0B1E10;
+  color: #6E9474;
+  padding: 28px 60px;
+  font-size: 11px;
+  line-height: 1.8;
+}
+
+.footer strong { color: #9EBF9F; }
+.footer a { color: #7AB57F; text-decoration: none; }
+</style>
+</head>
+<body>
+
+<!-- ── HEADER ── -->
+<div class="header">
+  <img class="crest" src="https://api.sofascore.com/api/v1/team/3162/image" alt="Audax Italiano" onerror="this.style.display='none'">
+
+  <div class="header-text">
+    <div class="header-eyebrow">Análisis Ejecutivo · Mayo 2026</div>
+    <h1>Audax Italiano</h1>
+    <div class="header-divider"></div>
+    <div class="header-sub">Liga de Primera &nbsp;·&nbsp; Copa Sudamericana 2026 &nbsp;·&nbsp; Plantel &amp; Posicionamiento Institucional</div>
+  </div>
+</div>
+
+<!-- ── PAGE ── -->
+<div class="page">
+
+  <!-- ── KPI ROW ── -->
+  <div class="kpi-row">
+    <div class="kpi-card">
+      <div class="kpi-label">Valor del plantel</div>
+      <div class="kpi-value green">€10.70M</div>
+      <div class="kpi-sub">6° más alto en Chile · 27 jugadores</div>
+    </div>
+    <div class="kpi-card alert">
+      <div class="kpi-label">Posición Liga de Primera</div>
+      <div class="kpi-value red">14° / 16</div>
+      <div class="kpi-sub">11 pts · 3V 2E 7D · <strong>18 fechas por jugar</strong></div>
+    </div>
+    <div class="kpi-card suda">
+      <div class="kpi-label">Copa Sudamericana</div>
+      <div class="kpi-value blue">7 pts</div>
+      <div class="kpi-sub">Grupo G · 3° igualado · 1 fecha por jugar</div>
+    </div>
+    <div class="kpi-card gold">
+      <div class="kpi-label">Ingresos Copa Suda</div>
+      <div class="kpi-value orange">USD 550K</div>
+      <div class="kpi-sub">Ganados · USD 1.05M si clasifica a 8vos</div>
+    </div>
+  </div>
+
+  <!-- ── SECTION 1: POSICIONAMIENTO ── -->
+  <div class="section-title">Posicionamiento Competitivo · Liga de Primera</div>
+  <div class="two-col wide-left" style="margin-bottom:32px;">
+
+    <div class="card">
+      <div class="card-title"><span class="dot"></span> Valor de plantel vs. todos los clubes chilenos</div>
+      <div class="chart-wrap"><canvas id="chartLiga" height="320"></canvas></div>
+      <div style="margin-top:10px; font-size:11.5px; color:#888; line-height:1.5;">
+        A pesar de ser el 6° plantel más valioso, la <strong style="color:#333;">distancia con los 5 primeros es enorme</strong>: Colo-Colo, U. de Chile y U. Católica duplican o triplican el valor de Audax. En términos relativos, Audax está <strong style="color:#C62828;">más cerca del fondo de la tabla que de los equipos de arriba</strong>.
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title"><span class="dot red"></span> ¿Por qué están 14°?</div>
+
+      <div class="insight" style="margin-bottom:14px;">
+        <div class="insight-label">La brecha</div>
+        <div class="insight-text">
+          6° plantel más valioso del país (€10.70M), pero 14° en la tabla. Arrancaron bien: <strong>7 puntos en las primeras 5 fechas</strong> (enero–febrero, antes de la Copa). El derrumbe llegó con el calendario de doble competencia. <strong>18 fechas por jugar</strong>, el 60% de la temporada está por delante.
+        </div>
+      </div>
+
+      <div class="stat-pair">
+        <div class="stat-item">
+          <div class="label">Abr–May en liga</div>
+          <div class="value red">0V 1E 4D</div>
+          <div class="sub">1 punto en 5 fechas desde Copa</div>
+        </div>
+        <div class="stat-item">
+          <div class="label">Abr–May en Copa</div>
+          <div class="value green">2V 1E 2D</div>
+          <div class="sub">7 puntos en 5 partidos mismo período</div>
+        </div>
+        <div class="stat-item">
+          <div class="label">Tarjetas rojas</div>
+          <div class="value red">4</div>
+          <div class="sub">2° más en la liga · 1 cada 3 partidos</div>
+        </div>
+        <div class="stat-item">
+          <div class="label">Penales concedidos</div>
+          <div class="value red">2</div>
+          <div class="sub">4° más en la liga · 12 partidos</div>
+        </div>
+      </div>
+
+      <div style="margin-top:12px;">
+        <div class="insight">
+          <div class="insight-label">El dato que define el argumento</div>
+          <div class="insight-text">
+            Audax <strong>arrancó la liga con 7 pts en 5 fechas</strong> (ene–feb). Con la Copa encima, cayeron a 1 punto en las últimas 5 fechas mientras sacaban 7 pts en Copa en el mismo lapso. Los números explican la caída: <strong>4 expulsiones (2° en la liga)</strong> y 2 penales concedidos (4°) destruyeron partidos desde adentro. A eso se suman <strong>5 remates al palo (2° más de la liga)</strong> y solo 2 penales a favor en toda la temporada (6° con menos): la mala fortuna amplificó los errores. Con todo, la posesión se mantiene 6° del torneo, pero la creación de chances es baja, como muestra el gráfico siguiente.
+          </div>
+        </div>
+        <div class="alert-box orange" style="margin-top:10px;">
+          <div class="alert-title">Riesgo de descenso: 1 punto sobre la zona</div>
+          <div class="alert-body">
+            Audax tiene 11 pts; La Calera (15°) tiene 10. Un arranque de 4-5 victorias en liga elimina el riesgo y libera foco al equipo para Copa. Ambos objetivos son compatibles con la plantilla actual.
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ── SECTION 1B: MODELO DE REGRESIÓN ── -->
+  <div class="section-title">Posición Esperada por Rendimiento · Modelo Estadístico</div>
+  <div class="two-col wide-left" style="margin-bottom:32px;">
+
+    <div class="card">
+      <div class="card-title"><span class="dot"></span> Puntos reales vs. esperados por diferencial de goles · Liga de Primera 2026</div>
+      <div class="chart-wrap"><canvas id="chartRegresion" height="300"></canvas></div>
+      <div style="font-size:10.5px;color:#aaa;margin-top:8px;">
+        Regresión lineal: Pts esperados = 15.9 + 0.52 × DG. R² = 0.67. Fuente: Cooperativa.cl (tabla Liga de Primera, fecha 12, mayo 2026).
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title"><span class="dot red"></span> Lo que dicen los datos sobre Audax</div>
+
+      <div class="stat-pair">
+        <div class="stat-item">
+          <div class="label">Puntos reales</div>
+          <div class="value red">11</div>
+          <div class="sub">14° · 3 pts bajo el modelo</div>
+        </div>
+        <div class="stat-item">
+          <div class="label">Puntos esperados (DG)</div>
+          <div class="value orange">~14</div>
+          <div class="sub">por su DG de -4</div>
+        </div>
+        <div class="stat-item">
+          <div class="label">Grandes oc. creadas</div>
+          <div class="value red">14</div>
+          <div class="sub">10° / 16 · bajo la media (16.7)</div>
+        </div>
+        <div class="stat-item">
+          <div class="label">Grandes oc. falladas</div>
+          <div class="value green">9</div>
+          <div class="sub">11° / 16 · eficiencia alta</div>
+        </div>
+      </div>
+
+      <div class="insight" style="margin-bottom:10px;">
+        <div class="insight-label">Doble diagnóstico</div>
+        <div class="insight-text">
+          Audax crea <strong>14 grandes ocasiones</strong> (promedio liga: 16.7) y solo falla 9, lo que implica alta eficiencia en las que genera. El problema es <strong>volumen de creación</strong>, no conversión. Combinado con los 3 pts por debajo del modelo estadístico, el cuadro es de un equipo con calidad para estar en tabla media, temporalmente afectado por los resultados ajustados de abril–mayo (priorización Copa).
+        </div>
+      </div>
+
+      <div class="insight">
+        <div class="insight-label">Implicancia hacia adelante</div>
+        <div class="insight-text">
+          Si Audax aumenta su creación de ocasiones (apuntando a 20+ en las 18 fechas restantes) y convierte con la misma eficiencia actual, la combinación de mejor DG y conversión lo proyecta <strong>claramente fuera de la zona de descenso</strong>.
+        </div>
+      </div>
+
+      <div style="margin-top:10px; padding:10px 12px; background:#F9F9F9; border-radius:6px; font-size:11px; color:#888;">
+        Fuentes: tabla Liga de Primera (Cooperativa.cl, mayo 2026) · grandes ocasiones creadas/falladas: SofaScore, agregadas por equipo sumando todos los jugadores del plantel (402 jugadores, 16 equipos). xG no disponible vía API de SofaScore para la Liga Chilena.
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Grandes Ocasiones full-width -->
+  <div class="card" style="margin-bottom:32px;">
+    <div class="card-title"><span class="dot orange"></span> Grandes Ocasiones: creadas vs. falladas · Liga de Primera 2026 (12 fechas)</div>
+    <div class="chart-wrap"><canvas id="chartGrandesOcasiones" height="200"></canvas></div>
+    <div style="font-size:10.5px;color:#aaa;margin-top:6px;">
+      BCC = grandes ocasiones creadas para compañeros (calidad ofensiva del equipo). BCM = grandes ocasiones propias falladas. Diferencia positiva = mayor eficiencia de conversión. Fuente: SofaScore, suma de todos los jugadores del plantel (mayo 2026).
+    </div>
+  </div>
+
+  <!-- ── SECTION 2: PLANTEL ── -->
+  <div class="section-title">Plantel Deportivo · Valor y Contratos</div>
+  <div class="two-col" style="margin-bottom:32px;">
+
+    <div class="card">
+      <div class="card-title"><span class="dot"></span> Top 10 jugadores por valor de mercado</div>
+      <div class="chart-wrap"><canvas id="chartPlantel" height="300"></canvas></div>
+      <div style="margin-top:14px; display:flex; gap:12px; flex-wrap:wrap;">
+        <div style="display:flex;align-items:center;gap:5px;font-size:11.5px;color:#555;">
+          <div style="width:10px;height:10px;border-radius:50%;background:#C62828;"></div> Contrato vence 2026
+        </div>
+        <div style="display:flex;align-items:center;gap:5px;font-size:11.5px;color:#555;">
+          <div style="width:10px;height:10px;border-radius:50%;background:#007A3D;"></div> Contrato 2027+
+        </div>
+        <div style="display:flex;align-items:center;gap:5px;font-size:11.5px;color:#555;">
+          <div style="width:10px;height:10px;border-radius:50%;background:#B0B0B0;"></div> Fecha no informada
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title"><span class="dot red"></span> Alerta Crítica: Contratos 2026</div>
+
+      <div class="alert-box" style="margin-bottom:16px;">
+        <div class="alert-title">12 jugadores vencen en diciembre 2026</div>
+        <div class="alert-body">
+          El 44% del plantel (12/27) tiene contrato hasta el 31/12/2026. Representan <strong>€5.33M</strong> de los €10.70M del valor total. El 50% del plantel puede irse libre en 7 meses.
+        </div>
+      </div>
+
+      <div class="card-title" style="margin-top:4px;"><span class="dot"></span> Distribución de vencimientos</div>
+      <div class="chart-wrap"><canvas id="chartContratos" height="180"></canvas></div>
+
+      <div style="margin-top:16px;">
+        <div style="font-size:11px;color:#888;margin-bottom:8px;">
+          Fuente: SofaScore (mayo 2026) · Orellana y Muñoz: bajas confirmadas por lesión toda la temporada
+        </div>
+        <table class="data-table">
+          <thead><tr>
+            <th>Jugador</th>
+            <th style="text-align:center">Edad</th>
+            <th style="text-align:right">Valor</th>
+            <th style="text-align:center">Liga<br><span style="font-weight:400;font-size:9.5px;">Rating · Min</span></th>
+            <th style="text-align:center">Copa Suda<br><span style="font-weight:400;font-size:9.5px;">Rating · Min</span></th>
+          </tr></thead>
+          <tbody id="tablaVencidos"></tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ── SECTION 3: COPA SUDAMERICANA ── -->
+  <div class="section-title">Copa Sudamericana 2026 · Grupo G</div>
+  <div class="two-col" style="margin-bottom:32px;">
+
+    <div class="card">
+      <div class="card-title"><span class="dot blue"></span> Posiciones Grupo G · Fecha 5/6</div>
+
+      <table class="group-table">
+        <thead><tr>
+          <th>Club</th><th>PJ</th><th>V</th><th>E</th><th>D</th><th>GF</th><th>GC</th><th>Pts</th>
+        </tr></thead>
+        <tbody>
+          <tr>
+            <td>Vasco da Gama <span style="font-size:11px;font-weight:400;color:#888;">(BRA)</span></td>
+            <td>4</td><td>2</td><td>1</td><td>1</td><td>6</td><td>3</td>
+            <td><span class="pts-badge">7</span></td>
+          </tr>
+          <tr>
+            <td>Olimpia <span style="font-size:11px;font-weight:400;color:#888;">(PAR)</span></td>
+            <td>4</td><td>2</td><td>1</td><td>1</td><td>4</td><td>4</td>
+            <td><span class="pts-badge">7</span></td>
+          </tr>
+          <tr class="audax-row">
+            <td>★ Audax Italiano <span style="font-size:11px;font-weight:400;color:#2E7D32;">(CHI)</span></td>
+            <td>5</td><td>2</td><td>1</td><td>2</td><td>6</td><td>6</td>
+            <td><span class="pts-badge">7</span></td>
+          </tr>
+          <tr>
+            <td>Barracas Central <span style="font-size:11px;font-weight:400;color:#888;">(ARG)</span></td>
+            <td>5</td><td>0</td><td>3</td><td>2</td><td>2</td><td>5</td>
+            <td><span class="pts-badge gray">3</span></td>
+          </tr>
+        </tbody>
+      </table>
+      <div style="font-size:10.5px;color:#aaa;margin-top:6px;margin-bottom:4px;">
+        Olimpia vs. Vasco (fecha 5) pendiente. Clasificación por puntos en partidos directos: Vasco 6, Olimpia 3, Audax 3. Fuente: Wikipedia / CONMEBOL (mayo 2026).
+      </div>
+
+      <div class="alert-box blue" style="margin-top:14px;">
+        <div class="alert-title">Último resultado: Audax 2-0 Barracas Central (19/05)</div>
+        <div class="alert-body">
+          Goles: Daniel Piña (44') · Diego Coelho (88'). Audax igualó en puntos con Vasco y Olimpia. Fecha 6 (final): Audax visita a Olimpia en Asunción; Barracas recibe a Vasco.
+        </div>
+      </div>
+
+      <div class="alert-box green" style="margin-top:10px;">
+        <div class="alert-title">Escenario de clasificación (fecha 6)</div>
+        <div class="alert-body">
+          <strong>Ganar en Asunción</strong> garantiza la clasificación sin depender de otros resultados. <strong>Empatar</strong> deja a Audax con 8 pts y clasifica salvo que Vasco gane sus dos partidos pendientes (fecha 5 vs. Olimpia y fecha 6 vs. Barracas), lo que lo llevaría a 13 pts y podría desplazar a Audax.
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title"><span class="dot orange"></span> Proyección de ingresos · Premios CONMEBOL</div>
+
+      <div style="margin-bottom:16px;">
+        <div class="prize-row earned">
+          <span class="prize-label">Participación Fase de Grupos</span>
+          <span class="prize-amount">USD 300,000</span>
+        </div>
+        <div class="prize-row earned">
+          <span class="prize-label">2 victorias en Fase de Grupos (× USD 125K)</span>
+          <span class="prize-amount">USD 250,000</span>
+        </div>
+        <div class="prize-row total-row earned" style="border-top:2px solid #2E7D32; margin-bottom:16px;">
+          <span class="prize-label" style="color:#2E7D32;">Total ya ganado</span>
+          <span class="prize-amount" style="color:#2E7D32;">USD 550,000</span>
+        </div>
+
+        <div style="font-size:11px;text-transform:uppercase;letter-spacing:0.7px;color:#888;margin:16px 0 8px;font-weight:700;">Potencial adicional</div>
+
+        <div class="prize-row potential">
+          <span class="prize-label">Clasificar a 8vos de final</span>
+          <span class="prize-amount">+ USD 500,000</span>
+        </div>
+        <div class="prize-row potential">
+          <span class="prize-label">Clasificar a Cuartos de final</span>
+          <span class="prize-amount">+ USD 600,000</span>
+        </div>
+        <div class="prize-row potential">
+          <span class="prize-label">Clasificar a Semifinal</span>
+          <span class="prize-amount">+ USD 700,000</span>
+        </div>
+        <div class="prize-row potential">
+          <span class="prize-label">Final (subcampeón)</span>
+          <span class="prize-amount">+ USD 2,500,000</span>
+        </div>
+
+        <div style="margin-top:16px; padding-top:12px; border-top:2px solid #1A1A1A;">
+          <div class="prize-row" style="padding:0; border:none; margin-bottom:8px;">
+            <span style="font-weight:700; font-size:13.5px;">Si clasifican a 8vos</span>
+            <span style="font-weight:700; font-size:15px; color:#E65100;">USD 1,050,000</span>
+          </div>
+          <div class="prize-row" style="padding:0; border:none;">
+            <span style="font-weight:700; font-size:13.5px;">Si llegan a Cuartos</span>
+            <span style="font-weight:700; font-size:15px; color:#E65100;">USD 1,650,000</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="chart-wrap" style="margin-top:8px;"><canvas id="chartPremios" height="200"></canvas></div>
+
+      <div class="insight" style="margin-top:14px;">
+        <div class="insight-label">Por qué importa</div>
+        <div class="insight-text">
+          USD 1M+ en premios de copa puede financiar <strong>1-2 renovaciones claves del plantel</strong> que vencen en diciembre. La Copa Sudamericana no es solo un objetivo deportivo, también es una fuente de capital para la planificación 2027.
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ── SECTION 4: FINANZAS Y ESCENARIOS ── -->
+  <div class="section-title">Finanzas & Escenarios de Temporada</div>
+
+  <div class="two-col wide-right" style="margin-bottom:16px;">
+
+    <div class="card">
+      <div class="card-title"><span class="dot orange"></span> Ingresos verificados 2025/26</div>
+
+      <div style="margin-bottom:20px;">
+        <div class="income-bar-row">
+          <div class="income-bar-label">Derechos TV<br><span style="font-size:10.5px;color:#aaa;">TNT Sports · tarifa 2026 estimada</span></div>
+          <div class="income-bar-track">
+            <div class="income-bar-fill" style="width:75%;background:#007A3D;">Principal</div>
+          </div>
+          <div class="income-bar-amount">~USD 3.28M</div>
+        </div>
+        <div class="income-bar-row">
+          <div class="income-bar-label">Copa Suda (premios)<br><span style="font-size:10.5px;color:#aaa;">participación + 2 victorias · CONMEBOL</span></div>
+          <div class="income-bar-track">
+            <div class="income-bar-fill" style="width:13%;background:#1565C0;">Copa</div>
+          </div>
+          <div class="income-bar-amount">USD 550K</div>
+        </div>
+        <div class="income-bar-row">
+          <div class="income-bar-label">Copa Suda (si clasif. 8vos)<br><span style="font-size:10.5px;color:#aaa;">premio adicional CONMEBOL</span></div>
+          <div class="income-bar-track">
+            <div class="income-bar-fill" style="width:22%;background:#E65100;opacity:0.7;">Potencial</div>
+          </div>
+          <div class="income-bar-amount" style="color:#E65100;">USD 1.05M</div>
+        </div>
+        <div class="income-bar-row">
+          <div class="income-bar-label">Recaudación + TV local<br><span style="font-size:10.5px;color:#aaa;">3 partidos de local Copa · sin datos públicos</span></div>
+          <div class="income-bar-track">
+            <div class="income-bar-fill" style="width:6%;background:#B0B0B0;">?</div>
+          </div>
+          <div class="income-bar-amount" style="color:#aaa;">no pub.</div>
+        </div>
+      </div>
+
+
+<div class="insight">
+        <div class="insight-label">Derechos TV 2026: nueva negociación ANFP-TNT</div>
+        <div class="insight-text">
+          En oct. 2025 la ANFP acordó con TNT aplicar descuentos mensuales para saldar una deuda de $34,000M CLP. Desde enero 2026, los clubes de franja media resignan <strong>$22M CLP/mes</strong> (estimado 2026: ~$3,120M CLP/año ≈ USD 3.28M). Los de Primera B: $9M/mes menos (~$1,320M/año ≈ USD 1.39M). <strong>Brecha 2026: ~USD 1.89M/año</strong>.
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title"><span class="dot red"></span> Matriz de Escenarios: Copa Sudamericana × Liga</div>
+
+      <div style="font-size:11.5px;color:#555;margin-bottom:12px;">
+        Total estimado (USD): Derechos TV + Premios Copa acumulados. TV: Descenso 1.39M · Permanencia 3.28M · Campeón Liga+Libertadores 6.28M.
+      </div>
+
+      <div style="overflow-x:auto;">
+        <table style="width:100%;border-collapse:collapse;font-size:12.5px;min-width:380px;">
+          <thead>
+            <tr>
+              <th style="text-align:left;font-size:10px;text-transform:uppercase;letter-spacing:0.5px;color:#888;padding:8px 10px;border-bottom:2px solid #E0E0E0;background:#FAFAFA;min-width:130px;">Copa Suda / Liga</th>
+              <th style="text-align:center;font-size:10px;text-transform:uppercase;color:#C62828;padding:8px 10px;border-bottom:2px solid #E0E0E0;background:#FFF8F8;">Descenso</th>
+              <th style="text-align:center;font-size:10px;text-transform:uppercase;color:#555;padding:8px 10px;border-bottom:2px solid #E0E0E0;background:#FAFAFA;">Permanencia</th>
+              <th style="text-align:center;font-size:10px;text-transform:uppercase;color:#2E7D32;padding:8px 10px;border-bottom:2px solid #E0E0E0;background:#F5FCF7;">Campeón Liga</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="padding:9px 10px;border-bottom:1px solid #F0F0F0;font-size:11.5px;color:#555;">Elim. grupos <span style="color:#aaa;font-size:10.5px;">(0.55M ganado)</span></td>
+              <td style="background:#FFEBEE;text-align:center;padding:9px 10px;border-bottom:1px solid #F0F0F0;"><span style="font-weight:700;color:#C62828;">1.94M</span></td>
+              <td style="background:#F9F9F9;text-align:center;padding:9px 10px;border-bottom:1px solid #F0F0F0;"><span style="font-weight:700;color:#666;">3.83M</span></td>
+              <td style="background:#EEF8F2;text-align:center;padding:9px 10px;border-bottom:1px solid #F0F0F0;"><span style="font-weight:700;color:#2E7D32;">6.83M</span></td>
+            </tr>
+            <tr>
+              <td style="padding:9px 10px;border-bottom:1px solid #F0F0F0;font-size:11.5px;color:#333;font-weight:600;">Clasificar 8vos <span style="color:#1565C0;font-size:10.5px;">(+0.50M)</span> ★</td>
+              <td style="background:#FFEBEE;text-align:center;padding:9px 10px;border-bottom:1px solid #F0F0F0;"><span style="font-weight:700;color:#C62828;">2.44M</span></td>
+              <td style="background:#E3F2FD;text-align:center;padding:9px 10px;border-bottom:1px solid #F0F0F0;outline:2px solid #1565C0;outline-offset:-2px;"><span style="font-weight:700;color:#1565C0;font-size:14px;">4.33M</span><span style="font-size:11px;color:#1565C0;display:block;">objetivo ahora</span></td>
+              <td style="background:#EEF8F2;text-align:center;padding:9px 10px;border-bottom:1px solid #F0F0F0;"><span style="font-weight:700;color:#2E7D32;">7.33M</span></td>
+            </tr>
+            <tr>
+              <td style="padding:9px 10px;border-bottom:1px solid #F0F0F0;font-size:11.5px;color:#555;">Clasificar Cuartos <span style="color:#aaa;font-size:10.5px;">(+0.60M)</span></td>
+              <td style="background:#FFEBEE;text-align:center;padding:9px 10px;border-bottom:1px solid #F0F0F0;"><span style="font-weight:700;color:#C62828;">3.04M</span></td>
+              <td style="background:#F5FCF7;text-align:center;padding:9px 10px;border-bottom:1px solid #F0F0F0;"><span style="font-weight:700;color:#2E7D32;">4.93M</span></td>
+              <td style="background:#EEF8F2;text-align:center;padding:9px 10px;border-bottom:1px solid #F0F0F0;"><span style="font-weight:700;color:#2E7D32;">7.93M</span></td>
+            </tr>
+            <tr>
+              <td style="padding:9px 10px;font-size:11.5px;color:#555;">Clasificar Semifinal <span style="color:#aaa;font-size:10.5px;">(+0.70M)</span></td>
+              <td style="background:#FFEBEE;text-align:center;padding:9px 10px;"><span style="font-weight:700;color:#C62828;">3.74M</span></td>
+              <td style="background:#F5FCF7;text-align:center;padding:9px 10px;"><span style="font-weight:700;color:#2E7D32;">5.63M</span></td>
+              <td style="background:#EEF8F2;text-align:center;padding:9px 10px;"><span style="font-weight:700;color:#2E7D32;">8.63M</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div style="font-size:10.5px;color:#aaa;margin-top:6px;">
+        ★ Escenario objetivo inmediato. Copa Libertadores 2027 en caso de Campeonato: mín. fase de grupos estimado ~USD 3M (CONMEBOL).
+      </div>
+
+      <div style="margin-top:14px;">
+        <div class="chart-wrap"><canvas id="chartEscenarios" height="160"></canvas></div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ── NOTA DE DESCENSO ── -->
+  <div class="insight" style="margin-bottom:32px; border:1px solid #FFE0B2; background:#FFF8F0;">
+    <div class="insight-label" style="color:#E65100;">Lectura de la matriz: Copa no reemplaza la permanencia</div>
+    <div class="insight-text">
+      El costo de descender bajo el acuerdo ANFP-TNT es <strong>~USD 1.89M por año en derechos TV</strong>, permanente. Incluso clasificando a cuartos de final de Copa (USD 1.65M en premios), descender sigue dejando al club en <strong>USD 3.04M</strong>, menos que simplemente permanecer en Primera sin copa alguna (USD 3.83M). Copa y Liga no son trade-off: son <strong>objetivos complementarios que se multiplican</strong>. Con 18 fechas restantes y un plantel que el modelo estadístico muestra 3 puntos por debajo de su rendimiento esperado, ambos objetivos son alcanzables.
+    </div>
+  </div>
+
+</div><!-- /page -->
+
+<!-- ── FOOTER ── -->
+<div class="footer">
+  <strong>Fuentes:</strong>
+  Transfermarkt (valores de mercado y contratos, mayo 2026) ·
+  ESPN Chile (tabla de posiciones, fecha 12 Liga de Primera 2026) ·
+  CONMEBOL (estructura de premios Copa Sudamericana 2026) ·
+  BioBioChile / Canal 9 (resultado Audax vs. Barracas Central, 19/05/2026) ·
+  La Tercera – El Deportivo (distribución TV TNT Sports 2024: franja media $3,380M CLP; Primera B $1,430M CLP) ·
+  Emol / BioBioChile (acuerdo ANFP-TNT oct. 2025: descuentos $22M/mes Primera; $9M/mes Primera B desde ene. 2026) ·
+  Ninfas.com / T13 (premios Liga de Primera y Copa de la Liga 2026) ·
+  Infobae Deportes (premios Sudamericana 2026)<br>
+  Wikipedia (Anexo Grupo G Copa Sudamericana 2026: tabla completa V/E/D) ·
+  Cooperativa.cl (tabla Liga de Primera 2026, puntos y diferencial de goles, mayo 2026) ·
+  FootyStats.org (xG estadísticas Chile Primera División 2026)<br>
+  <span style="opacity:0.6;">Los balances financieros del club no son públicos. Los ingresos por socios, taquilla y sponsorships no están disponibles en fuentes verificables. Este informe contiene exclusivamente datos públicos. · Franco Analytics · Mayo 2026</span>
+</div>
+
+<script>
+// ── DATA ──
+const VERDE = '#007A3D';
+const ROJO  = '#C62828';
+const GRIS  = '#B0B0B0';
+const AZUL  = '#1565C0';
+const NARANJA = '#E65100';
+
+const PLANTEL = [
+  {n:"Tomás Ahumada",     p:"Portero",       e:24, v:1200000, c:"31/12/2027"},
+  {n:"Esteban Matus",     p:"Lateral Izq.",  e:24, v:1200000, c:"31/12/2027"},
+  {n:"Marco Collao",      p:"Mediocampista", e:28, v:800000,  c:"31/12/2026"},
+  {n:"Enzo Ferrario",     p:"Def. Central",  e:26, v:800000,  c:"31/12/2026"},
+  {n:"Michael Vadulli",   p:"Extremo Izq.",  e:27, v:750000,  c:"31/12/2026"},
+  {n:"Diego Coelho",      p:"Delantero",     e:31, v:700000,  c:"31/12/2027"},
+  {n:"Oliver Rojas",      p:"Lateral Der.",  e:25, v:600000,  c:"31/12/2026"},
+  {n:"Rodrigo Cabral",    p:"Extremo Izq.",  e:25, v:550000,  c:"31/12/2026"},
+  {n:"Paolo Guajardo",    p:"Extremo Der.",  e:22, v:500000,  c:"31/12/2027"},
+  {n:"Nicolás Orellana",  p:"Mediocampista", e:30, v:450000,  c:"31/12/2026"},
+];
+
+// r=Liga rating · min=min liga · rc=Copa Suda rating · minc=min Copa Suda
+// nota = motivo de baja (lesión u otro) — se muestra en lugar de estadísticas
+// notaCopa = nota específica para columna Copa cuando Liga OK pero no juega Copa
+const TODOS_VENCEN_2026 = [
+  {n:"Enzo Ferrario",    p:"Def. Central",  e:26, v:800000, r:7.03, min:795,  rc:6.90, minc:355},
+  {n:"Marco Collao",     p:"Mediocampista", e:28, v:800000, r:6.67, min:777,  rc:6.78, minc:391},
+  {n:"Michael Vadulli",  p:"Extremo Izq.",  e:27, v:750000, r:6.84, min:501,  rc:6.42, minc:335},
+  {n:"Oliver Rojas",     p:"Lateral Der.",  e:25, v:600000, r:6.57, min:282,  rc:6.77, minc:153, notaLiga:"Suplente (dec. técnica)"},
+  {n:"Rodrigo Cabral",   p:"Extremo Izq.",  e:25, v:550000, r:6.66, min:494,  rc:6.46, minc:161},
+  {n:"Nicolás Orellana", p:"Mediocampista", e:30, v:450000, r:null, min:null, rc:null, minc:null, nota:"Rotura LCA ene. 2026, baja toda la temporada"},
+  {n:"G. Chiaverano",    p:"Extremo Der.",  e:20, v:350000, r:6.60, min:708,  rc:6.50, minc:385},
+  {n:"Cristóbal Muñoz",  p:"Def. Central",  e:26, v:350000, r:null, min:0,    rc:null, minc:0,    nota:"Tendón Aquiles ago. 2025, baja toda la temporada"},
+  {n:"Marcelo Ortiz",    p:"Def. Central",  e:32, v:250000, r:6.65, min:978,  rc:6.25, minc:332},
+  {n:"Daniel Piña",      p:"Def. Central",  e:24, v:250000, r:6.76, min:1056, rc:7.04, minc:450},
+  {n:"Nicolás Aedo",     p:"M. Ofensivo",   e:25, v:100000, r:6.76, min:576,  rc:null, minc:null, notaCopa:"No convocado Copa"},
+  {n:"Diego Monreal",    p:"Def. Central",  e:23, v:75000,  r:null, min:null, rc:null, minc:null, nota:"Sin apariciones, ex préstamo La Calera"},
+];
+
+const LIGA = {
+  labels: ['U. de Chile','U. Católica','Colo-Colo',"O'Higgins",'Coquimbo','Audax','U. Concepción','Palestino','Everton','La Serena','Huachipato','Limache','Ñublense','La Calera','Cobresal','D. Concepción'],
+  values: [20.53, 15.68, 13.08, 12.78, 12.43, 10.70, 10.26, 9.85, 9.55, 8.15, 7.70, 6.85, 6.73, 5.89, 5.63, 5.21]
+};
+
+// ── HELPER ──
+function fmtV(v) {
+  if (v >= 1000000) return '€' + (v/1000000).toFixed(2) + 'M';
+  return '€' + (v/1000).toFixed(0) + 'K';
+}
+
+function colorJugador(c) {
+  if (!c) return GRIS;
+  if (c === '31/12/2026') return ROJO;
+  return VERDE;
+}
+
+// ── CHART 1: Liga valores (horizontal bar) ──
+new Chart(document.getElementById('chartLiga'), {
+  type: 'bar',
+  data: {
+    labels: LIGA.labels,
+    datasets: [{
+      data: LIGA.values,
+      backgroundColor: LIGA.labels.map(l => l === 'Audax' ? VERDE : '#D0D8D0'),
+      borderColor: LIGA.labels.map(l => l === 'Audax' ? '#005229' : '#B8C0B8'),
+      borderWidth: 1,
+    }]
+  },
+  options: {
+    indexAxis: 'y',
+    responsive: true,
+    plugins: {
+      legend: { display: false },
+      tooltip: {
+        callbacks: {
+          label: ctx => ' €' + ctx.parsed.x.toFixed(2) + 'M'
+        }
+      }
+    },
+    scales: {
+      x: {
+        grid: { color: '#F0F0F0' },
+        ticks: {
+          font: { size: 11 },
+          callback: v => '€' + v + 'M'
+        }
+      },
+      y: {
+        ticks: {
+          font: { size: 11.5 },
+          color: ctx => ctx.tick.label === 'Audax' ? '#005229' : '#444',
+        },
+        grid: { display: false }
+      }
+    }
+  }
+});
+
+// ── CHART 2: Top jugadores (horizontal bar) ──
+const top10 = PLANTEL.slice().sort((a,b) => b.v - a.v).slice(0,10);
+new Chart(document.getElementById('chartPlantel'), {
+  type: 'bar',
+  data: {
+    labels: top10.map(j => j.n),
+    datasets: [{
+      data: top10.map(j => j.v / 1000000),
+      backgroundColor: top10.map(j => colorJugador(j.c)),
+      borderWidth: 0,
+      borderRadius: 3,
+    }]
+  },
+  options: {
+    indexAxis: 'y',
+    responsive: true,
+    plugins: {
+      legend: { display: false },
+      tooltip: {
+        callbacks: {
+          label: ctx => ' ' + fmtV(top10[ctx.dataIndex].v) + ' · Contrato: ' + (top10[ctx.dataIndex].c || 'sin fecha')
+        }
+      }
+    },
+    scales: {
+      x: {
+        grid: { color: '#F0F0F0' },
+        ticks: { font: { size: 10.5 }, callback: v => '€' + v + 'M' }
+      },
+      y: {
+        ticks: { font: { size: 11.5 } },
+        grid: { display: false }
+      }
+    }
+  }
+});
+
+// ── CHART 3: Distribución de contratos (bar) ──
+new Chart(document.getElementById('chartContratos'), {
+  type: 'bar',
+  data: {
+    labels: ['Vencen dic. 2026', 'Vencen 2027', 'Sin fecha informada'],
+    datasets: [{
+      data: [12, 7, 8],
+      backgroundColor: [ROJO, VERDE, GRIS],
+      borderWidth: 0,
+      borderRadius: 4,
+    }]
+  },
+  options: {
+    responsive: true,
+    plugins: {
+      legend: { display: false },
+      tooltip: {
+        callbacks: { label: ctx => ' ' + ctx.parsed.y + ' jugadores' }
+      }
+    },
+    scales: {
+      y: {
+        beginAtZero: true,
+        grid: { color: '#F0F0F0' },
+        ticks: { font: { size: 11 }, stepSize: 2 }
+      },
+      x: {
+        grid: { display: false },
+        ticks: { font: { size: 11.5 } }
+      }
+    }
+  }
+});
+
+// ── CHART 4: Premios Copa Sudamericana ──
+new Chart(document.getElementById('chartPremios'), {
+  type: 'bar',
+  data: {
+    labels: ['Ya ganado', 'Si clasifica\n8vos', 'Si llega a\nCuartos', 'Si llega a\nSemifinal'],
+    datasets: [{
+      label: 'USD',
+      data: [550000, 1050000, 1650000, 2350000],
+      backgroundColor: ['#2E7D32', NARANJA, NARANJA, NARANJA],
+      borderWidth: 0,
+      borderRadius: 4,
+    }]
+  },
+  options: {
+    responsive: true,
+    plugins: {
+      legend: { display: false },
+      tooltip: {
+        callbacks: {
+          label: ctx => ' USD ' + ctx.parsed.y.toLocaleString('es-CL')
+        }
+      }
+    },
+    scales: {
+      y: {
+        beginAtZero: true,
+        grid: { color: '#F0F0F0' },
+        ticks: {
+          font: { size: 10.5 },
+          callback: v => 'USD ' + (v/1000).toFixed(0) + 'K'
+        }
+      },
+      x: { grid: { display: false }, ticks: { font: { size: 10.5 } } }
+    }
+  }
+});
+
+// ── TABLA: jugadores vencen 2026 ──
+function fmtRating(r) {
+  if (r === null) return `<span style="color:#bbb;font-size:11px;">s/d</span>`;
+  const col = r >= 7.0 ? '#2E7D32' : r >= 6.7 ? '#E65100' : '#C62828';
+  return `<span style="font-weight:700;color:${col};">${r.toFixed(2)}</span>`;
+}
+function fmtMin(m) {
+  if (m === null) return `<span style="color:#bbb;font-size:11px;">s/d</span>`;
+  if (m === 0)    return `<span style="color:#bbb;font-size:11px;">0'</span>`;
+  const col = m < 350 ? '#C62828' : '#555';
+  return `<span style="color:${col};">${m}'</span>`;
+}
+
+const tbody = document.getElementById('tablaVencidos');
+TODOS_VENCEN_2026.forEach(j => {
+  let ligaCell, copaCell;
+
+  if (j.nota) {
+    // Baja confirmada: abarca ambas columnas lógicamente, mostramos la nota en Liga
+    ligaCell = `<span style="color:#C62828;font-size:11px;font-weight:600;">${j.nota}</span>`;
+    copaCell = `<span style="color:#C62828;font-size:11px;">baja</span>`;
+  } else {
+    const minFmt = fmtMin(j.min);
+    const minWarn = j.min !== null && j.min < 350 ? '' : '';
+    ligaCell = j.notaLiga
+      ? `${fmtRating(j.r)} <span style="font-size:11px;color:#888;">${j.notaLiga}</span>`
+      : `${fmtRating(j.r)} <span style="font-size:11px;color:#999;">${fmtMin(j.min)}</span>`;
+
+    if (j.notaCopa) {
+      copaCell = `<span style="color:#888;font-size:11px;">${j.notaCopa}</span>`;
+    } else if (j.rc !== null) {
+      copaCell = `${fmtRating(j.rc)} <span style="font-size:11px;color:#999;">${fmtMin(j.minc)}</span>`;
+    } else {
+      copaCell = `<span style="color:#bbb;font-size:11px;">no participa</span>`;
+    }
+  }
+
+  const tr = document.createElement('tr');
+  tr.innerHTML = `
+    <td style="font-weight:600;">${j.n}</td>
+    <td style="text-align:center;color:#666;">${j.e}</td>
+    <td style="text-align:right;font-weight:700;">${fmtV(j.v)}</td>
+    <td style="text-align:center;">${ligaCell}</td>
+    <td style="text-align:center;">${copaCell}</td>
+  `;
+  tbody.appendChild(tr);
+});
+
+// ── CHART 5: Escenarios financieros (por copa, fila permanencia vs descenso) ──
+new Chart(document.getElementById('chartEscenarios'), {
+  type: 'bar',
+  data: {
+    labels: ['Elim. grupos', 'Clasif. 8vos ★', 'Clasif. Cuartos', 'Clasif. Semis'],
+    datasets: [
+      {
+        label: 'Descenso',
+        data: [1.94, 2.44, 3.04, 3.74],
+        backgroundColor: '#FFCDD2',
+        borderColor: '#C62828',
+        borderWidth: 1,
+        borderRadius: 3,
+      },
+      {
+        label: 'Permanencia',
+        data: [3.83, 4.33, 4.93, 5.63],
+        backgroundColor: '#B0BEC5',
+        borderWidth: 0,
+        borderRadius: 3,
+      },
+      {
+        label: 'Campeón Liga',
+        data: [6.83, 7.33, 7.93, 8.63],
+        backgroundColor: '#A5D6A7',
+        borderColor: '#2E7D32',
+        borderWidth: 1,
+        borderRadius: 3,
+      }
+    ]
+  },
+  options: {
+    responsive: true,
+    plugins: {
+      legend: { position: 'bottom', labels: { font: { size: 11 }, padding: 10 } },
+      tooltip: {
+        callbacks: { label: ctx => ' USD ' + ctx.parsed.y.toFixed(2) + 'M' }
+      }
+    },
+    scales: {
+      x: { grid: { display: false }, ticks: { font: { size: 10.5 } } },
+      y: {
+        beginAtZero: true,
+        grid: { color: '#F0F0F0' },
+        ticks: { font: { size: 11 }, callback: v => 'USD ' + v + 'M' }
+      }
+    }
+  }
+});
+
+// ── CHART 6: Regresión Puntos vs Diferencial de Goles ──
+// bcc = grandes ocasiones creadas · bcm = grandes ocasiones falladas (SofaScore, mayo 2026, agregado por equipo)
+const LIGA_TABLE = [
+  {team:'Colo-Colo',    pts:24, gd: 7, bcc:24, bcm:15},
+  {team:'Huachipato',   pts:22, gd: 6, bcc:19, bcm:18},
+  {team:'Limache',      pts:21, gd:12, bcc:20, bcm:13},
+  {team:'U. Católica',  pts:20, gd: 9, bcc:28, bcm:17},
+  {team:'Coquimbo',     pts:19, gd: 3, bcc:23, bcm:17},
+  {team:"O'Higgins",    pts:19, gd: 0, bcc:24, bcm:20},
+  {team:'U. de Chile',  pts:17, gd: 4, bcc:14, bcm:10},
+  {team:'Ñublense',     pts:17, gd: 2, bcc:10, bcm:13},
+  {team:'Palestino',    pts:17, gd: 0, bcc:18, bcm:13},
+  {team:'U. Concepción',pts:17, gd:-9, bcc:12, bcm:11},
+  {team:'Everton',      pts:15, gd: 2, bcc:18, bcm:16},
+  {team:'La Serena',    pts:14, gd:-5, bcc:10, bcm: 9},
+  {team:'Cobresal',     pts:13, gd:-5, bcc: 9, bcm: 8},
+  {team:'Audax',        pts:11, gd:-4, bcc:14, bcm: 9},
+  {team:'La Calera',    pts:10, gd:-13,bcc:18, bcm:10},
+  {team:'D. Concepción',pts: 8, gd:-9, bcc: 6, bcm: 9},
+];
+
+// ── CHART: Grandes Ocasiones por equipo ──
+const ligaSortedBCC = [...LIGA_TABLE].sort((a,b) => b.bcc - a.bcc);
+new Chart(document.getElementById('chartGrandesOcasiones'), {
+  type: 'bar',
+  data: {
+    labels: ligaSortedBCC.map(t => t.team),
+    datasets: [
+      {
+        label: 'Creadas (BCC)',
+        data: ligaSortedBCC.map(t => t.bcc),
+        backgroundColor: ligaSortedBCC.map(t => t.team === 'Audax' ? '#007A3D' : '#90CAF9'),
+        borderWidth: 0,
+        borderRadius: 2,
+      },
+      {
+        label: 'Falladas (BCM)',
+        data: ligaSortedBCC.map(t => -t.bcm),
+        backgroundColor: ligaSortedBCC.map(t => t.team === 'Audax' ? '#C62828' : '#FFCDD2'),
+        borderWidth: 0,
+        borderRadius: 2,
+      }
+    ]
+  },
+  options: {
+    responsive: true,
+    plugins: {
+      legend: { position: 'bottom', labels: { font: { size: 11 }, padding: 10 } },
+      tooltip: {
+        callbacks: {
+          label: ctx => {
+            const v = Math.abs(ctx.parsed.y);
+            return ` ${ctx.dataset.label}: ${v}`;
+          }
+        }
+      }
+    },
+    scales: {
+      x: {
+        stacked: true,
+        grid: { display: false },
+        ticks: { font: { size: 10.5 },
+          color: ctx => ligaSortedBCC[ctx.index]?.team === 'Audax' ? '#005229' : '#555'
+        }
+      },
+      y: {
+        stacked: true,
+        grid: { color: '#F0F0F0' },
+        ticks: {
+          font: { size: 11 },
+          callback: v => Math.abs(v)
+        }
+      }
+    }
+  }
+});
+
+// Regresión lineal: pts = a + b*gd (media GD=0 → a=media pts=15.875, b=0.523)
+const REG_A = 15.875, REG_B = 0.523;
+
+new Chart(document.getElementById('chartRegresion'), {
+  type: 'scatter',
+  data: {
+    datasets: [
+      {
+        label: 'Otros equipos',
+        data: LIGA_TABLE.filter(t => t.team !== 'Audax').map(t => ({x: t.gd, y: t.pts, label: t.team})),
+        backgroundColor: '#B0BEC5',
+        pointRadius: 6,
+        pointHoverRadius: 8,
+      },
+      {
+        label: 'Audax Italiano',
+        data: [{x: -4, y: 11, label: 'Audax (real)'}],
+        backgroundColor: '#007A3D',
+        pointRadius: 9,
+        pointHoverRadius: 11,
+        pointStyle: 'triangle',
+      },
+      {
+        label: 'Audax esperado (~14 pts)',
+        data: [{x: -4, y: REG_A + REG_B * (-4)}],
+        backgroundColor: 'transparent',
+        borderColor: '#007A3D',
+        pointRadius: 9,
+        pointHoverRadius: 11,
+        pointStyle: 'circle',
+        borderWidth: 2,
+      },
+      {
+        label: 'Línea de regresión',
+        type: 'line',
+        data: [{x:-13, y: REG_A + REG_B*(-13)}, {x:12, y: REG_A + REG_B*12}],
+        borderColor: '#E65100',
+        borderWidth: 2,
+        borderDash: [5, 4],
+        pointRadius: 0,
+        fill: false,
+        tension: 0,
+      }
+    ]
+  },
+  options: {
+    responsive: true,
+    plugins: {
+      legend: { position: 'bottom', labels: { font: { size: 11 }, padding: 10 } },
+      tooltip: {
+        callbacks: {
+          label: ctx => {
+            const lbl = ctx.raw.label || ctx.dataset.label;
+            return ` ${lbl}: ${ctx.parsed.y.toFixed(1)} pts (DG ${ctx.parsed.x > 0 ? '+' : ''}${ctx.parsed.x})`;
+          }
+        }
+      }
+    },
+    scales: {
+      x: {
+        title: { display: true, text: 'Diferencial de Goles (DG)', font: { size: 11 }, color: '#888' },
+        grid: { color: '#F0F0F0' },
+        ticks: { font: { size: 11 } }
+      },
+      y: {
+        title: { display: true, text: 'Puntos', font: { size: 11 }, color: '#888' },
+        grid: { color: '#F0F0F0' },
+        ticks: { font: { size: 11 } }
+      }
+    }
+  }
+});
+
+</script>
+</body>
+</html>

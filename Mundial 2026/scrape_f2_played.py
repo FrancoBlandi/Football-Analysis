@@ -9,16 +9,13 @@ sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="repla
 BASE          = "https://www.sofascore.com/api/v1"
 CDP_PORT      = "http://localhost:9222"
 MISSING_EIDS  = [
-    # Grupos K, L — F2 pendientes
-    15186858,  # Portugal vs Uzbekistan (K)
-    15186672,  # England vs Ghana (L)
-    15186520,  # Panama vs Croatia (L)
-    15186713,  # Colombia vs DR Congo (K)
-    # Grupos I, J (June 22-23)
-    15186502,  # Argentina vs Austria (J)
-    15186769,  # France vs Iraq (I)
-    15186770,  # Norway vs Senegal (I)
-    15186740,  # Jordan vs Algeria (J)
+    # F3 — grupos J, K, L (pendientes)
+    15186676,  # Panama vs England (L)
+    15186624,  # Croatia vs Ghana (L)
+    15186696,  # Colombia vs Portugal (K)
+    15186717,  # DR Congo vs Uzbekistan (K)
+    15186734,  # Jordan vs Argentina (J)
+    15186747,  # Algeria vs Austria (J)
 ]
 BASE_DIR      = Path(__file__).parent
 FIXTURES_PATH = BASE_DIR / "wc2026_fixtures.json"
@@ -278,7 +275,7 @@ def main():
             "home_id":    home_id,
             "away_id":    away_id,
             "group":      group,
-            "round_num":  2,
+            "round_num":  3,
             "timestamp":  fx.get("timestamp"),
             "score_home": sh,
             "score_away": sa,

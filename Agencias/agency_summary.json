@@ -1,0 +1,571 @@
+{
+  "Score Futbol": {
+    "n_players": 25,
+    "n_exported": 17,
+    "pct_exported": 68.0,
+    "total_mv": 89600000,
+    "avg_mv": 3584000,
+    "median_mv": 1700000,
+    "top_player_mv": 40000000,
+    "total_fees_generated": 144657367,
+    "avg_fees_per_player": 5786295,
+    "n_with_fees": 21,
+    "avg_age": 28.1,
+    "players_top5_mv": [
+      {
+        "name": "Lisandro Martínez",
+        "mv": 40000000,
+        "club": "Manchester United"
+      },
+      {
+        "name": "Juan Pablo Freytes",
+        "mv": 5000000,
+        "club": "Fluminense Football Club"
+      },
+      {
+        "name": "Santiago Simón",
+        "mv": 4500000,
+        "club": "Deportivo Toluca"
+      },
+      {
+        "name": "Ignacio Russo",
+        "mv": 4000000,
+        "club": "Club Atlético Tigre"
+      },
+      {
+        "name": "Nicolás Fernández",
+        "mv": 3500000,
+        "club": "Club Atlético Belgrano"
+      }
+    ],
+    "agency_since_coverage": 100.0
+  },
+  "Star Makers Agency": {
+    "n_players": 4,
+    "n_exported": 3,
+    "pct_exported": 75.0,
+    "total_mv": 47500000,
+    "avg_mv": 11875000,
+    "median_mv": 15000000,
+    "top_player_mv": 20000000,
+    "total_fees_generated": 151350000,
+    "avg_fees_per_player": 37837500,
+    "n_with_fees": 4,
+    "avg_age": 29.1,
+    "players_top5_mv": [
+      {
+        "name": "Thiago Almada",
+        "mv": 20000000,
+        "club": "Atlético de Madrid"
+      },
+      {
+        "name": "Rodrigo De Paul",
+        "mv": 15000000,
+        "club": "Inter Miami CF"
+      },
+      {
+        "name": "Ángel Correa",
+        "mv": 9000000,
+        "club": "Tigres UANL"
+      },
+      {
+        "name": "Matías Zaracho",
+        "mv": 3500000,
+        "club": "Racing Club"
+      }
+    ],
+    "agency_since_coverage": 100.0
+  },
+  "Dodici Sports": {
+    "n_players": 25,
+    "n_exported": 6,
+    "pct_exported": 24.0,
+    "total_mv": 18975000,
+    "avg_mv": 759000,
+    "median_mv": 200000,
+    "top_player_mv": 6000000,
+    "total_fees_generated": 42651270,
+    "avg_fees_per_player": 1706051,
+    "n_with_fees": 7,
+    "avg_age": 23.7,
+    "players_top5_mv": [
+      {
+        "name": "Tomás Cuello",
+        "mv": 6000000,
+        "club": "Clube Atlético Mineiro"
+      },
+      {
+        "name": "Almoez Ali",
+        "mv": 2500000,
+        "club": "Al-Duhail SC"
+      },
+      {
+        "name": "Gonzalo Piovi",
+        "mv": 2200000,
+        "club": "CD Cruz Azul"
+      },
+      {
+        "name": "Julián Vignolo",
+        "mv": 2000000,
+        "club": "FC Toulouse"
+      },
+      {
+        "name": "Thaiel Peralta",
+        "mv": 1000000,
+        "club": "CA Huracán"
+      }
+    ],
+    "agency_since_coverage": 100.0
+  },
+  "Proyecta Players": {
+    "n_players": 25,
+    "n_exported": 17,
+    "pct_exported": 68.0,
+    "total_mv": 49800000,
+    "avg_mv": 1992000,
+    "median_mv": 700000,
+    "top_player_mv": 22000000,
+    "total_fees_generated": 42660544,
+    "avg_fees_per_player": 1706422,
+    "n_with_fees": 17,
+    "avg_age": 27.8,
+    "players_top5_mv": [
+      {
+        "name": "José Manuel López",
+        "mv": 22000000,
+        "club": "Sociedade Esportiva Palmeiras"
+      },
+      {
+        "name": "Alan Lescano",
+        "mv": 7500000,
+        "club": "AA Argentinos Juniors"
+      },
+      {
+        "name": "Malcom Braida",
+        "mv": 2500000,
+        "club": "CA Boca Juniors"
+      },
+      {
+        "name": "Joaquín Gho",
+        "mv": 2000000,
+        "club": "AA Argentinos Juniors"
+      },
+      {
+        "name": "Lorenzo Faravelli",
+        "mv": 1500000,
+        "club": "Club Necaxa"
+      }
+    ],
+    "agency_since_coverage": 100.0
+  },
+  "INSUA GROUP": {
+    "n_players": 25,
+    "n_exported": 17,
+    "pct_exported": 68.0,
+    "total_mv": 27925000,
+    "avg_mv": 1117000,
+    "median_mv": 600000,
+    "top_player_mv": 4500000,
+    "total_fees_generated": 30011676,
+    "avg_fees_per_player": 1200467,
+    "n_with_fees": 10,
+    "avg_age": 27.4,
+    "players_top5_mv": [
+      {
+        "name": "Tiago Palacios",
+        "mv": 4500000,
+        "club": "Club Estudiantes de La Plata"
+      },
+      {
+        "name": "Mateo Del Blanco",
+        "mv": 4500000,
+        "club": "CA Unión (Santa Fe)"
+      },
+      {
+        "name": "Ramiro Enrique",
+        "mv": 4000000,
+        "club": "Al-Kholood Club"
+      },
+      {
+        "name": "Facundo Mura",
+        "mv": 2000000,
+        "club": "Inter Miami CF"
+      },
+      {
+        "name": "Juan Bisanz",
+        "mv": 1500000,
+        "club": "CA Huracán"
+      }
+    ],
+    "agency_since_coverage": 100.0
+  },
+  "MVP Group": {
+    "n_players": 21,
+    "n_exported": 13,
+    "pct_exported": 61.9,
+    "total_mv": 8500000,
+    "avg_mv": 566667,
+    "median_mv": 175000,
+    "top_player_mv": 2000000,
+    "total_fees_generated": 30301595,
+    "avg_fees_per_player": 1442933,
+    "n_with_fees": 7,
+    "avg_age": 26.8,
+    "players_top5_mv": [
+      {
+        "name": "Claudio Spinelli",
+        "mv": 2000000,
+        "club": "Clube de Regatas Vasco da Gama"
+      },
+      {
+        "name": "Ezequiel Bullaude",
+        "mv": 2000000,
+        "club": "Santos Laguna"
+      },
+      {
+        "name": "Ignacio Pussetto",
+        "mv": 1800000,
+        "club": "CA Independiente"
+      },
+      {
+        "name": "Claudio Aquino",
+        "mv": 700000,
+        "club": "CSD Colo-Colo"
+      },
+      {
+        "name": "Nicolás Orsini",
+        "mv": 400000,
+        "club": "CA Boca Juniors"
+      }
+    ],
+    "agency_since_coverage": 95.2
+  },
+  "Luis Grillo": {
+    "n_players": 25,
+    "n_exported": 20,
+    "pct_exported": 80.0,
+    "total_mv": 12810000,
+    "avg_mv": 610000,
+    "median_mv": 225000,
+    "top_player_mv": 2500000,
+    "total_fees_generated": 13414500,
+    "avg_fees_per_player": 536580,
+    "n_with_fees": 8,
+    "avg_age": 28.9,
+    "players_top5_mv": [
+      {
+        "name": "Damián Puebla",
+        "mv": 2500000,
+        "club": "FC Orenburg"
+      },
+      {
+        "name": "Gastón Benavídez",
+        "mv": 2500000,
+        "club": "Club Athletico Paranaense"
+      },
+      {
+        "name": "Guido Herrera",
+        "mv": 1700000,
+        "club": "CA Talleres"
+      },
+      {
+        "name": "Nicolás Dubersarsky",
+        "mv": 1500000,
+        "club": "Austin FC"
+      },
+      {
+        "name": "Mateo García",
+        "mv": 1200000,
+        "club": "Atlas Guadalajara"
+      }
+    ],
+    "agency_since_coverage": 96.0
+  },
+  "JEP Sports": {
+    "n_players": 25,
+    "n_exported": 3,
+    "pct_exported": 12.0,
+    "total_mv": 1300000,
+    "avg_mv": 185714,
+    "median_mv": 150000,
+    "top_player_mv": 450000,
+    "total_fees_generated": 0,
+    "avg_fees_per_player": 0,
+    "n_with_fees": 0,
+    "avg_age": 27.8,
+    "players_top5_mv": [
+      {
+        "name": "Óscar Millán",
+        "mv": 450000,
+        "club": "Atlético La Paz"
+      },
+      {
+        "name": "Delio Ramírez",
+        "mv": 300000,
+        "club": "Boyacá Chicó FC"
+      },
+      {
+        "name": "Marc Van de Bovenkamp",
+        "mv": 200000,
+        "club": "Gzira United FC"
+      },
+      {
+        "name": "Deivid Andreas",
+        "mv": 150000,
+        "club": "FC Kuressaare"
+      },
+      {
+        "name": "Néstor Vidrio",
+        "mv": 125000,
+        "club": "Without Club"
+      }
+    ],
+    "agency_since_coverage": 100.0
+  },
+  "PROSPORTS Argentina": {
+    "n_players": 7,
+    "n_exported": 6,
+    "pct_exported": 85.7,
+    "total_mv": 3100000,
+    "avg_mv": 1550000,
+    "median_mv": 3000000,
+    "top_player_mv": 3000000,
+    "total_fees_generated": 7700000,
+    "avg_fees_per_player": 1100000,
+    "n_with_fees": 3,
+    "avg_age": 32.8,
+    "players_top5_mv": [
+      {
+        "name": "Enzo Díaz",
+        "mv": 3000000,
+        "club": "São Paulo Futebol Clube"
+      },
+      {
+        "name": "Felipe Cadenazzi",
+        "mv": 100000,
+        "club": "PSMS Medan"
+      },
+      {
+        "name": "Emilio Zelaya",
+        "mv": null,
+        "club": "Retired"
+      },
+      {
+        "name": "Hernán Bernardello",
+        "mv": null,
+        "club": "Retired"
+      },
+      {
+        "name": "Facundo Britos",
+        "mv": null,
+        "club": "AC San Martín (Mendoza)"
+      }
+    ],
+    "agency_since_coverage": 100.0
+  },
+  "Sports360": {
+    "n_players": 25,
+    "n_exported": 24,
+    "pct_exported": 96.0,
+    "total_mv": 4445000,
+    "avg_mv": 246944,
+    "median_mv": 175000,
+    "top_player_mv": 1000000,
+    "total_fees_generated": 1135218,
+    "avg_fees_per_player": 45409,
+    "n_with_fees": 5,
+    "avg_age": 26.8,
+    "players_top5_mv": [
+      {
+        "name": "Renzo Tesuri",
+        "mv": 1000000,
+        "club": "Club Atlético Tucumán"
+      },
+      {
+        "name": "Alan Cantero",
+        "mv": 750000,
+        "club": "Club Alianza Lima"
+      },
+      {
+        "name": "Matías Ramírez",
+        "mv": 450000,
+        "club": "CD Godoy Cruz Antonio Tomba"
+      },
+      {
+        "name": "Gerónimo Poblete",
+        "mv": 400000,
+        "club": "Sharjah FC"
+      },
+      {
+        "name": "Lautaro Godoy",
+        "mv": 325000,
+        "club": "Club Atlético Tucumán"
+      }
+    ],
+    "agency_since_coverage": 100.0
+  },
+  "Agencia Continental": {
+    "n_players": 16,
+    "n_exported": 6,
+    "pct_exported": 37.5,
+    "total_mv": 700000,
+    "avg_mv": 140000,
+    "median_mv": 125000,
+    "top_player_mv": 300000,
+    "total_fees_generated": 0,
+    "avg_fees_per_player": 0,
+    "n_with_fees": 0,
+    "avg_age": 28.7,
+    "players_top5_mv": [
+      {
+        "name": "Francisco López",
+        "mv": 300000,
+        "club": "Venados FC Yucatán"
+      },
+      {
+        "name": "Brian Andrada",
+        "mv": 200000,
+        "club": "Gimnasia y Esgrima de Mendoza"
+      },
+      {
+        "name": "Walter Juárez",
+        "mv": 125000,
+        "club": "CA Güemes"
+      },
+      {
+        "name": "Juan Pablo Morales",
+        "mv": 50000,
+        "club": "Kendal Tornado FC"
+      },
+      {
+        "name": "César Urpín",
+        "mv": 25000,
+        "club": "Portuguesa FC"
+      }
+    ],
+    "agency_since_coverage": 100.0
+  },
+  "Interplayers": {
+    "n_players": 25,
+    "n_exported": 19,
+    "pct_exported": 76.0,
+    "total_mv": 106500000,
+    "avg_mv": 4260000,
+    "median_mv": 3500000,
+    "top_player_mv": 16000000,
+    "total_fees_generated": 171912605,
+    "avg_fees_per_player": 6876504,
+    "n_with_fees": 20,
+    "avg_age": 26.2,
+    "players_top5_mv": [
+      {
+        "name": "Nicolás Domínguez",
+        "mv": 16000000,
+        "club": "Nottingham Forest"
+      },
+      {
+        "name": "Mateo Pellegrino",
+        "mv": 15000000,
+        "club": "Parma Calcio 1913"
+      },
+      {
+        "name": "Benja Domínguez",
+        "mv": 10000000,
+        "club": "Bologna FC 1909"
+      },
+      {
+        "name": "Christian Ordóñez",
+        "mv": 6500000,
+        "club": "Parma Calcio 1913"
+      },
+      {
+        "name": "Guido Rodríguez",
+        "mv": 5000000,
+        "club": "Valencia CF"
+      }
+    ],
+    "agency_since_coverage": 100.0
+  },
+  "CAA Base": {
+    "n_players": 25,
+    "n_exported": 3,
+    "pct_exported": 12.0,
+    "total_mv": 827000000,
+    "avg_mv": 33080000,
+    "median_mv": 25000000,
+    "top_player_mv": 110000000,
+    "total_fees_generated": 884894652,
+    "avg_fees_per_player": 35395786,
+    "n_with_fees": 23,
+    "avg_age": 25.6,
+    "players_top5_mv": [
+      {
+        "name": "Cole Palmer",
+        "mv": 110000000,
+        "club": "Chelsea FC"
+      },
+      {
+        "name": "Moisés Caicedo",
+        "mv": 110000000,
+        "club": "Chelsea FC"
+      },
+      {
+        "name": "Eberechi Eze",
+        "mv": 60000000,
+        "club": "Arsenal FC"
+      },
+      {
+        "name": "Jarell Quansah",
+        "mv": 45000000,
+        "club": "Bayer 04 Leverkusen"
+      },
+      {
+        "name": "Trevoh Chalobah",
+        "mv": 40000000,
+        "club": "Chelsea FC"
+      }
+    ],
+    "agency_since_coverage": 100.0
+  },
+  "Footfeel ISM": {
+    "n_players": 25,
+    "n_exported": 5,
+    "pct_exported": 20.0,
+    "total_mv": 264800000,
+    "avg_mv": 10592000,
+    "median_mv": 1200000,
+    "top_player_mv": 85000000,
+    "total_fees_generated": 193690000,
+    "avg_fees_per_player": 7747600,
+    "n_with_fees": 14,
+    "avg_age": 24.9,
+    "players_top5_mv": [
+      {
+        "name": "Lautaro Martínez",
+        "mv": 85000000,
+        "club": "Inter Milan"
+      },
+      {
+        "name": "Achraf Hakimi",
+        "mv": 80000000,
+        "club": "Paris Saint-Germain"
+      },
+      {
+        "name": "Mario Gila",
+        "mv": 30000000,
+        "club": "SS Lazio"
+      },
+      {
+        "name": "Sergio Arribas",
+        "mv": 15000000,
+        "club": "UD Almería"
+      },
+      {
+        "name": "Hugo Bueno",
+        "mv": 12000000,
+        "club": "Wolverhampton Wanderers"
+      }
+    ],
+    "agency_since_coverage": 100.0
+  }
+}

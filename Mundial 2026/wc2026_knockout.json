@@ -15,10 +15,10 @@
       "timestamp": 1783198800,
       "date": "2026-07-04",
       "confirmed": true,
-      "lambda_home": 1.3459,
-      "lambda_away": 0.462,
-      "p_home_win": 0.59,
-      "p_draw": 0.283,
+      "lambda_home": 1.3583,
+      "lambda_away": 0.4663,
+      "p_home_win": 0.592,
+      "p_draw": 0.281,
       "p_away_win": 0.127
     },
     {
@@ -35,10 +35,10 @@
       "timestamp": 1783198800,
       "date": "2026-07-04",
       "confirmed": true,
-      "lambda_home": 2.0226,
-      "lambda_away": 0.8359,
-      "p_home_win": 0.649,
-      "p_draw": 0.204,
+      "lambda_home": 2.0414,
+      "lambda_away": 0.8436,
+      "p_home_win": 0.651,
+      "p_draw": 0.202,
       "p_away_win": 0.146
     },
     {
@@ -55,11 +55,11 @@
       "timestamp": 1783285200,
       "date": "2026-07-05",
       "confirmed": true,
-      "lambda_home": 0.6429,
-      "lambda_away": 1.1005,
+      "lambda_home": 0.6488,
+      "lambda_away": 1.1105,
       "p_home_win": 0.214,
-      "p_draw": 0.322,
-      "p_away_win": 0.464
+      "p_draw": 0.32,
+      "p_away_win": 0.466
     },
     {
       "event_id": 90000004,
@@ -75,10 +75,10 @@
       "timestamp": 1783285200,
       "date": "2026-07-05",
       "confirmed": true,
-      "lambda_home": 1.2616,
-      "lambda_away": 1.1954,
+      "lambda_home": 1.2732,
+      "lambda_away": 1.2065,
       "p_home_win": 0.38,
-      "p_draw": 0.273,
+      "p_draw": 0.271,
       "p_away_win": 0.348
     },
     {
@@ -90,16 +90,16 @@
       "desc": "2K vs 2L",
       "home_id": 4704,
       "home_name": "Portugal",
-      "away_id": 4764,
-      "away_name": "Ghana",
+      "away_id": 4715,
+      "away_name": "Croatia",
       "timestamp": 1783371600,
       "date": "2026-07-06",
-      "confirmed": false,
-      "lambda_home": 1.1575,
-      "lambda_away": 0.315,
-      "p_home_win": 0.579,
-      "p_draw": 0.321,
-      "p_away_win": 0.1
+      "confirmed": true,
+      "lambda_home": 1.3244,
+      "lambda_away": 0.6464,
+      "p_home_win": 0.531,
+      "p_draw": 0.287,
+      "p_away_win": 0.182
     },
     {
       "event_id": 90000006,
@@ -114,12 +114,12 @@
       "away_name": "Austria",
       "timestamp": 1783371600,
       "date": "2026-07-06",
-      "confirmed": false,
-      "lambda_home": 1.6799,
-      "lambda_away": 0.24,
-      "p_home_win": 0.74,
-      "p_draw": 0.212,
-      "p_away_win": 0.048
+      "confirmed": true,
+      "lambda_home": 1.9696,
+      "lambda_away": 0.2689,
+      "p_home_win": 0.786,
+      "p_draw": 0.171,
+      "p_away_win": 0.042
     },
     {
       "event_id": 90000007,
@@ -135,10 +135,10 @@
       "timestamp": 1783458000,
       "date": "2026-07-07",
       "confirmed": true,
-      "lambda_home": 1.389,
-      "lambda_away": 0.956,
-      "p_home_win": 0.469,
-      "p_draw": 0.272,
+      "lambda_home": 1.402,
+      "lambda_away": 0.9649,
+      "p_home_win": 0.47,
+      "p_draw": 0.271,
       "p_away_win": 0.259
     },
     {
@@ -155,11 +155,11 @@
       "timestamp": 1783458000,
       "date": "2026-07-07",
       "confirmed": true,
-      "lambda_home": 0.8058,
-      "lambda_away": 0.6344,
-      "p_home_win": 0.364,
-      "p_draw": 0.374,
-      "p_away_win": 0.262
+      "lambda_home": 0.8133,
+      "lambda_away": 0.6402,
+      "p_home_win": 0.365,
+      "p_draw": 0.372,
+      "p_away_win": 0.263
     },
     {
       "event_id": 90000009,
@@ -175,11 +175,11 @@
       "timestamp": 1783544400,
       "date": "2026-07-08",
       "confirmed": true,
-      "lambda_home": 0.7437,
-      "lambda_away": 0.8891,
-      "p_home_win": 0.285,
-      "p_draw": 0.348,
-      "p_away_win": 0.367
+      "lambda_home": 0.7507,
+      "lambda_away": 0.8973,
+      "p_home_win": 0.286,
+      "p_draw": 0.346,
+      "p_away_win": 0.369
     },
     {
       "event_id": 90000010,
@@ -195,11 +195,11 @@
       "timestamp": 1783544400,
       "date": "2026-07-08",
       "confirmed": true,
-      "lambda_home": 1.2444,
-      "lambda_away": 1.3433,
+      "lambda_home": 1.2559,
+      "lambda_away": 1.3556,
       "p_home_win": 0.345,
-      "p_draw": 0.264,
-      "p_away_win": 0.391
+      "p_draw": 0.263,
+      "p_away_win": 0.392
     },
     {
       "event_id": 90000011,
@@ -215,11 +215,11 @@
       "timestamp": 1783630800,
       "date": "2026-07-09",
       "confirmed": true,
-      "lambda_home": 1.0458,
-      "lambda_away": 0.5322,
-      "p_home_win": 0.476,
-      "p_draw": 0.338,
-      "p_away_win": 0.185
+      "lambda_home": 1.0555,
+      "lambda_away": 0.5372,
+      "p_home_win": 0.478,
+      "p_draw": 0.336,
+      "p_away_win": 0.186
     },
     {
       "event_id": 90000012,
@@ -230,16 +230,16 @@
       "desc": "1L vs 3ro EHIJK",
       "home_id": 4713,
       "home_name": "England",
-      "away_id": 4691,
-      "away_name": "Algeria",
+      "away_id": 4823,
+      "away_name": "DR Congo",
       "timestamp": 1783630800,
       "date": "2026-07-09",
-      "confirmed": false,
-      "lambda_home": 1.3873,
-      "lambda_away": 0.3948,
-      "p_home_win": 0.622,
-      "p_draw": 0.274,
-      "p_away_win": 0.104
+      "confirmed": true,
+      "lambda_home": 0.8546,
+      "lambda_away": 0.4042,
+      "p_home_win": 0.444,
+      "p_draw": 0.391,
+      "p_away_win": 0.166
     },
     {
       "event_id": 90000013,
@@ -255,11 +255,11 @@
       "timestamp": 1783717200,
       "date": "2026-07-10",
       "confirmed": true,
-      "lambda_home": 1.5329,
-      "lambda_away": 0.2624,
-      "p_home_win": 0.7,
-      "p_draw": 0.24,
-      "p_away_win": 0.06
+      "lambda_home": 1.5278,
+      "lambda_away": 0.3843,
+      "p_home_win": 0.662,
+      "p_draw": 0.248,
+      "p_away_win": 0.09
     },
     {
       "event_id": 90000014,
@@ -275,11 +275,11 @@
       "timestamp": 1783717200,
       "date": "2026-07-10",
       "confirmed": true,
-      "lambda_home": 0.8044,
-      "lambda_away": 0.5756,
-      "p_home_win": 0.378,
-      "p_draw": 0.382,
-      "p_away_win": 0.24
+      "lambda_home": 0.8118,
+      "lambda_away": 0.5809,
+      "p_home_win": 0.379,
+      "p_draw": 0.38,
+      "p_away_win": 0.241
     },
     {
       "event_id": 90000015,
@@ -290,16 +290,16 @@
       "desc": "Switzerland vs 3ro EGIJ",
       "home_id": 4699,
       "home_name": "Switzerland",
-      "away_id": 4766,
-      "away_name": "Iran",
+      "away_id": 4691,
+      "away_name": "Algeria",
       "timestamp": 1783803600,
       "date": "2026-07-11",
       "confirmed": true,
-      "lambda_home": 1.317,
-      "lambda_away": 1.0652,
-      "p_home_win": 0.423,
-      "p_draw": 0.275,
-      "p_away_win": 0.301
+      "lambda_home": 1.2961,
+      "lambda_away": 1.0662,
+      "p_home_win": 0.417,
+      "p_draw": 0.277,
+      "p_away_win": 0.306
     },
     {
       "event_id": 90000016,
@@ -310,16 +310,16 @@
       "desc": "1K vs 3ro IJL",
       "home_id": 4820,
       "home_name": "Colombia",
-      "away_id": 4715,
-      "away_name": "Croatia",
+      "away_id": 4764,
+      "away_name": "Ghana",
       "timestamp": 1783803600,
       "date": "2026-07-11",
-      "confirmed": false,
-      "lambda_home": 1.1949,
-      "lambda_away": 0.748,
-      "p_home_win": 0.466,
-      "p_draw": 0.303,
-      "p_away_win": 0.231
+      "confirmed": true,
+      "lambda_home": 0.7669,
+      "lambda_away": 0.3309,
+      "p_home_win": 0.429,
+      "p_draw": 0.424,
+      "p_away_win": 0.147
     }
   ],
   "positions": {
@@ -614,97 +614,97 @@
     "1J": {
       "team": "Argentina",
       "team_id": 4819,
-      "confirmed": false,
-      "pts": 6,
-      "gd": 5,
-      "gf": 5
+      "confirmed": true,
+      "pts": 9,
+      "gd": 7,
+      "gf": 8
     },
     "2J": {
       "team": "Austria",
       "team_id": 4718,
-      "confirmed": false,
-      "pts": 3,
+      "confirmed": true,
+      "pts": 4,
       "gd": 0,
-      "gf": 3
+      "gf": 6
     },
     "3J": {
       "team": "Algeria",
       "team_id": 4691,
-      "confirmed": false,
-      "pts": 3,
+      "confirmed": true,
+      "pts": 4,
       "gd": -2,
-      "gf": 2
+      "gf": 5
     },
     "4J": {
       "team": "Jordan",
       "team_id": 4771,
-      "confirmed": false,
+      "confirmed": true,
       "pts": 0,
-      "gd": -3,
-      "gf": 2
+      "gd": -5,
+      "gf": 3
     },
     "1K": {
       "team": "Colombia",
       "team_id": 4820,
-      "confirmed": false,
-      "pts": 6,
+      "confirmed": true,
+      "pts": 7,
       "gd": 3,
       "gf": 4
     },
     "2K": {
       "team": "Portugal",
       "team_id": 4704,
-      "confirmed": false,
-      "pts": 4,
+      "confirmed": true,
+      "pts": 5,
       "gd": 5,
       "gf": 6
     },
     "3K": {
       "team": "DR Congo",
       "team_id": 4823,
-      "confirmed": false,
-      "pts": 1,
-      "gd": -1,
-      "gf": 1
+      "confirmed": true,
+      "pts": 4,
+      "gd": 1,
+      "gf": 4
     },
     "4K": {
       "team": "Uzbekistan",
       "team_id": 4723,
-      "confirmed": false,
+      "confirmed": true,
       "pts": 0,
-      "gd": -7,
-      "gf": 1
+      "gd": -9,
+      "gf": 2
     },
     "1L": {
       "team": "England",
       "team_id": 4713,
-      "confirmed": false,
-      "pts": 4,
-      "gd": 2,
-      "gf": 4
+      "confirmed": true,
+      "pts": 7,
+      "gd": 4,
+      "gf": 6
     },
     "2L": {
-      "team": "Ghana",
-      "team_id": 4764,
-      "confirmed": false,
-      "pts": 4,
-      "gd": 1,
-      "gf": 1
-    },
-    "3L": {
       "team": "Croatia",
       "team_id": 4715,
-      "confirmed": false,
-      "pts": 3,
-      "gd": -1,
-      "gf": 3
+      "confirmed": true,
+      "pts": 6,
+      "gd": 0,
+      "gf": 5
+    },
+    "3L": {
+      "team": "Ghana",
+      "team_id": 4764,
+      "confirmed": true,
+      "pts": 4,
+      "gd": 0,
+      "gf": 2
     },
     "4L": {
       "team": "Panama",
       "team_id": 5164,
-      "confirmed": false,
+      "confirmed": true,
       "pts": 0,
-      "gd": -2,
+      "gd": -4,
       "gf": 0
     },
     "best3_AEHI": {
@@ -724,28 +724,28 @@
       "gf": 8
     },
     "best3_EHIJ": {
-      "team": "Algeria",
-      "team_id": 4691,
-      "confirmed": false,
-      "pts": 3,
-      "gd": -2,
-      "gf": 2
+      "team": "DR Congo",
+      "team_id": 4823,
+      "confirmed": true,
+      "pts": 4,
+      "gd": 1,
+      "gf": 4
     },
     "best3_EGIJ": {
-      "team": "Iran",
-      "team_id": 4766,
+      "team": "Algeria",
+      "team_id": 4691,
       "confirmed": true,
-      "pts": 3,
-      "gd": 0,
-      "gf": 3
+      "pts": 4,
+      "gd": -2,
+      "gf": 5
     },
     "best3_IJL": {
-      "team": "Croatia",
-      "team_id": 4715,
-      "confirmed": false,
-      "pts": 3,
-      "gd": -1,
-      "gf": 3
+      "team": "Ghana",
+      "team_id": 4764,
+      "confirmed": true,
+      "pts": 4,
+      "gd": 0,
+      "gf": 2
     }
   },
   "thirds_pool": {
@@ -806,29 +806,29 @@
     "J": {
       "team": "Algeria",
       "team_id": 4691,
-      "pts": 3,
+      "pts": 4,
       "gd": -2,
-      "gf": 2,
+      "gf": 5,
       "group": "J",
-      "confirmed": false
+      "confirmed": true
     },
     "K": {
       "team": "DR Congo",
       "team_id": 4823,
-      "pts": 1,
-      "gd": -1,
-      "gf": 1,
+      "pts": 4,
+      "gd": 1,
+      "gf": 4,
       "group": "K",
-      "confirmed": false
+      "confirmed": true
     },
     "L": {
-      "team": "Croatia",
-      "team_id": 4715,
-      "pts": 3,
-      "gd": -1,
-      "gf": 3,
+      "team": "Ghana",
+      "team_id": 4764,
+      "pts": 4,
+      "gd": 0,
+      "gf": 2,
       "group": "L",
-      "confirmed": false
+      "confirmed": true
     }
   }
 }

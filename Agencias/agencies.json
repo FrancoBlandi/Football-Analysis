@@ -1,0 +1,17 @@
+[
+  { "name": "Score Futbol",          "tm_id": 1705,  "slug": "score-futbol" },
+  { "name": "Star Makers Agency",    "tm_id": 5630,  "slug": "star-makers-agency" },
+  { "name": "Dodici Sports",         "tm_id": null,  "slug": "dodici-sports-management" },
+  { "name": "Proyecta Players",      "tm_id": 11856, "slug": "proyecta-players" },
+  { "name": "INSUA GROUP",           "tm_id": 4545,  "slug": "insua-group" },
+  { "name": "MVP Group",             "tm_id": 5565,  "slug": "mvp-group" },
+  { "name": "Luis Grillo",           "tm_id": 1539,  "slug": "luis-grillo-asociados" },
+  { "name": "JEP Sports",            "tm_id": 3963,  "slug": "jep-sports-management" },
+  { "name": "PROSPORTS Argentina",   "tm_id": 4859,  "slug": "prosports-argentina" },
+  { "name": "Sports360",             "tm_id": 12707, "slug": "sports360-argentina" },
+  { "name": "Agencia Continental",   "tm_id": 9153,  "slug": "agencia-continental-argentina" },
+  { "name": "Interplayers",          "tm_id": 5789,  "slug": "interplayers" },
+  { "name": "CAA Base",              "tm_id": 674,   "slug": "caa-base-ltd", "note": "Global agency, division LATAM incluye Mac Allister, Caicedo" },
+  { "name": "Footfeel ISM",          "tm_id": null,  "slug": "footfeel-ism", "note": "Representa Lautaro Martinez, buscar ID en TM" },
+  { "name": "Dodici Sports",         "tm_id": null,  "slug": "dodici-sports-management", "note": "Representa Enzo Fernandez, Paredes, Otamendi" }
+]

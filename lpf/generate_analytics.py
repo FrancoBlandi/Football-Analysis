@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+﻿#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
 LPF Fantasy Analytics — Generador
@@ -9,13 +9,13 @@ Metodología inspirada en Opta / FPL Review
 import json, math, os
 from pathlib import Path
 
-JSON_PATH      = r"c:/Users/Franco/DashBoards Futbol/lpf/lpf_data.json"
-FORM_PATH      = Path(r"c:/Users/Franco/DashBoards Futbol/lpf/form_data.json")
-XGC_PATH       = Path(r"c:/Users/Franco/DashBoards Futbol/lpf/team_xgc.json")
-SHOTMAP_PATH   = Path(r"c:/Users/Franco/DashBoards Futbol/lpf/shotmap_xgc.json")
-FM_PATH        = Path(r"c:/Users/Franco/DashBoards Futbol/lpf/fm_mapped.json")
-FM_PLAYERS_PATH= Path(r"c:/Users/Franco/DashBoards Futbol/lpf/fm_players.json")
-OUT_PATH       = r"c:/Users/Franco/DashBoards Futbol/lpf/analytics.html"
+JSON_PATH      = r"c:/Users/Franco/Franco Analytics/lpf/lpf_data.json"
+FORM_PATH      = Path(r"c:/Users/Franco/Franco Analytics/lpf/form_data.json")
+XGC_PATH       = Path(r"c:/Users/Franco/Franco Analytics/lpf/team_xgc.json")
+SHOTMAP_PATH   = Path(r"c:/Users/Franco/Franco Analytics/lpf/shotmap_xgc.json")
+FM_PATH        = Path(r"c:/Users/Franco/Franco Analytics/lpf/fm_mapped.json")
+FM_PLAYERS_PATH= Path(r"c:/Users/Franco/Franco Analytics/lpf/fm_players.json")
+OUT_PATH       = r"c:/Users/Franco/Franco Analytics/lpf/analytics.html"
 
 # Form weight: 55% recent form / 45% full-season (only applied when form data exists)
 FORM_WEIGHT    = 0.55
@@ -2201,3 +2201,4 @@ if _warn_players:
         games = p.get("games", 1)
         avg_m = mins / max(games, 1)
         print(f"  {p['name'][:28]:<28} {p['club'][:8]:<8}  {p['pos']}  {avg_m:>5.1f}  {p.get('xg_90',0):.3f}  {p['role']}")
+
