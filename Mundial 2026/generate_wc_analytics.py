@@ -422,8 +422,8 @@ SP_BONUS = {
 # ── Pesos de blend ────────────────────────────────────────────────────────────
 CLUB_WEIGHT   = 0.70   # peso stats de club 2024-25
 INTL_WEIGHT   = 0.30   # peso stats internacionales (clasificatorias, etc.)
-FORM_WEIGHT   = 0.30   # peso forma (últimos 10 con selección) — subido desde 0.25
-SEASON_WEIGHT = 1.0 - FORM_WEIGHT  # 0.70
+FORM_WEIGHT   = 0.45   # peso forma WC F1/F2/F3 — aumentado desde 0.30 post grupo completo
+SEASON_WEIGHT = 1.0 - FORM_WEIGHT  # 0.55
 
 MIN_INTL_GAMES = 3     # mínimo de partidos internacionales para usar blend; si no, solo club
 MIN_CLUB_MINS  = 200   # mínimo mins de club para stats confiables
@@ -719,6 +719,31 @@ def load_data(fecha_filter=None):
             lineups = json.load(f)
         confirmed_matches = sum(1 for v in lineups.values() if v.get("confirmed"))
         print(f"[lineups] {len(lineups)} partidos cargados  ({confirmed_matches} confirmados)")
+
+    # Corrección: sobrescribir status en lineups con minutos reales de wc_results.
+    # wc_results tiene el status post-sustitución (sub_in si jugó <60min aunque haya empezado).
+    # lineups solo refleja si arrancó de titular, sin importar si fue cambiado temprano.
+    # Esto afecta principalmente el fallback F3→Octavos (Cancelo, etc.).
+    _WC_RESULTS_EARLY = BASE_DIR / "wc2026_wc_results.json"
+    if _WC_RESULTS_EARLY.exists():
+        _wc_tmp = json.load(open(_WC_RESULTS_EARLY, encoding="utf-8"))
+        _patched = 0
+        for eid_str, md in _wc_tmp.get("matches", {}).items():
+            if eid_str not in lineups:
+                continue
+            lu_players = lineups[eid_str].get("players", {})
+            for pid_str, ps in md.get("player_stats", {}).items():
+                if pid_str not in lu_players:
+                    continue
+                real_mins   = ps.get("mins") or 0
+                real_status = ps.get("status", "")
+                prev_status = lu_players[pid_str].get("status")
+                # Si lineups dice "starter" pero en realidad jugó <60min → rotacional/sub
+                if prev_status == "starter" and real_status == "sub_in":
+                    lu_players[pid_str]["status"] = "rotacional" if real_mins >= 30 else "sub_in"
+                    _patched += 1
+        if _patched:
+            print(f"[lineups] {_patched} status corregidos con minutos reales de wc_results")
 
     setpieces = {}
     if SETPIECES_PATH.exists():
