@@ -1296,19 +1296,26 @@ def main():
             if 0 < mins < 200:   # excluye 0 (no jugó) y bugs residuales
                 wc_mins_by_round.setdefault(pid_str, {})[rnd] = mins
 
-    # Promedio ponderado de minutos: refleja tendencia reciente más que la F3 de rotación
+    # Promedio ponderado de minutos: solo incluye jugadores con F1 o F2.
+    # F3 se excluye como señal primaria porque muchos equipos rotaron.
     wc_avg_mins    = {}
-    wc_recent_mins = {}  # minutos en F2+F3 solamente — gate de disponibilidad reciente
+    wc_recent_mins = {}  # minutos en F2+F3 — no se usa en gate, solo referencia
+    wc_f1f2_mins   = {}  # minutos reales en F1+F2 (señal primaria para Octavos)
     for pid_str, rnd_mins in wc_mins_by_round.items():
-        total_w = total_wm = 0.0
-        for rnd, mins in rnd_mins.items():
-            w = WC_ROUND_WEIGHTS.get(rnd, 1.0)
-            total_wm += mins * w
-            total_w  += w
-        if total_w > 0:
-            wc_avg_mins[pid_str] = total_wm / total_w
-        # Minutos recientes (F2+F3): si es 0, el jugador no estuvo disponible en las
-        # últimas 2 fechas → muy poca probabilidad de jugar en Octavos.
+        # wc_avg_mins: solo para jugadores con algún minuto en F1 o F2
+        has_f1f2 = any(rnd in rnd_mins for rnd in (1, 2))
+        if has_f1f2:
+            total_w = total_wm = 0.0
+            for rnd, mins in rnd_mins.items():
+                w = WC_ROUND_WEIGHTS.get(rnd, 1.0)
+                total_wm += mins * w
+                total_w  += w
+            if total_w > 0:
+                wc_avg_mins[pid_str] = total_wm / total_w
+        # F1+F2 mins: señal principal para determinar status en Octavos
+        f1f2 = sum(rnd_mins.get(rnd, 0) for rnd in (1, 2))
+        if f1f2 > 0:
+            wc_f1f2_mins[pid_str] = f1f2
         recent = sum(mins for rnd, mins in rnd_mins.items() if rnd in (2, 3))
         if recent > 0:
             wc_recent_mins[pid_str] = recent
@@ -1567,15 +1574,18 @@ def main():
             # No aplica si hay override manual ni si el jugador no fue sub en ambas fechas.
             _pid_str  = pid_str          # string ID del jugador actual (clave en lineups/wc_avg_mins)
             _pid_int  = int(pid_str)     # int para STARTER/ROTACIONAL/BAJA_OVERRIDES
-            if (round_num == 4
-                    and _pid_int not in STARTER_OVERRIDES
-                    and _pid_int not in ROTACIONAL_OVERRIDES
-                    and _pid_int not in BAJA_OVERRIDES
-                    and _pid_str in wc_early_sub_pattern):
-                _lu_match = lineups.setdefault(str(lineup_event_id), {}).setdefault("players", {})
-                if _lu_match.get(_pid_str, {}).get("status") == "starter":
-                    _lu_match[_pid_str] = dict(_lu_match[_pid_str])
-                    _lu_match[_pid_str]["status"] = "rotacional"
+
+            # Para Octavos: corregir el lineup status usando F1+F2 como señal primaria.
+            # El lookup usa F3 donde muchos titulares descansaron.
+            # Si jugó ≥60min en F1+F2: fue titular real → forzar "starter".
+            # Si jugó 0min en F1+F2: no era titular → dejar el F3 status pero gate lo filtra.
+            if round_num == 4 and _pid_int not in STARTER_OVERRIDES and _pid_int not in ROTACIONAL_OVERRIDES:
+                _f1f2 = wc_f1f2_mins.get(_pid_str, 0)
+                if _f1f2 >= 60:
+                    _lu = lineups.setdefault(str(lineup_event_id), {}).setdefault("players", {})
+                    _cur = _lu.get(_pid_str, {})
+                    if _cur.get("status") not in ("starter",):
+                        _lu[_pid_str] = {**_cur, "status": "starter"}
 
             proj = project_player(p_meta, cs, intl_s, fe, opp_ts, own_ts, is_home, pos_avgs,
                                   opp_name=opp_name, lineups=lineups, event_id=lineup_event_id,
@@ -1609,14 +1619,13 @@ def main():
                     else:
                         proj["role"] = "Suplente"
 
-            # 2) Gate de disponibilidad reciente — aplicar DESPUÉS del ajuste de minutos.
-            # Si un jugador no jugó en F2 ni F3 (lesión, exclusión, rotación total)
-            # no debería proyectarse alto para Octavos, sin importar su F1 o stats de club.
-            # Solo se excluye del gate si el lineup de F3 lo confirma como "starter".
-            if round_num == 4:
-                _recent = wc_recent_mins.get(_pid_str, 0)
-                _ls     = proj.get("lineup_status")
-                if _recent < 30 and _ls not in ("starter",):
+            # 2) Gate de F1+F2 — aplicar DESPUÉS del ajuste de minutos.
+            # Si un jugador no jugó en F1 ni F2, no es un titular del equipo.
+            # El F3 de rotación no cuenta: muchos equipos descansan titulares en F3.
+            # No se aplica a jugadores con STARTER_OVERRIDE o BAJA_OVERRIDE.
+            if round_num == 4 and _pid_int not in STARTER_OVERRIDES and _pid_int not in BAJA_OVERRIDES:
+                _f1f2 = wc_f1f2_mins.get(_pid_str, 0)
+                if _f1f2 < 30:   # no jugó en F1 ni F2 → probable suplente/rotación F3
                     old_pp = proj.get("p_play", 0.9)
                     new_pp = 0.20
                     if old_pp > new_pp:   # solo baja, nunca sube
