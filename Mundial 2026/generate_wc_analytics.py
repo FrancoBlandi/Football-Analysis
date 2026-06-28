@@ -1296,29 +1296,40 @@ def main():
             if 0 < mins < 200:   # excluye 0 (no jugó) y bugs residuales
                 wc_mins_by_round.setdefault(pid_str, {})[rnd] = mins
 
-    # Promedio ponderado de minutos: solo incluye jugadores con F1 o F2.
-    # F3 se excluye como señal primaria porque muchos equipos rotaron.
-    wc_avg_mins    = {}
-    wc_recent_mins = {}  # minutos en F2+F3 — no se usa en gate, solo referencia
-    wc_f1f2_mins   = {}  # minutos reales en F1+F2 (señal primaria para Octavos)
+    # Proyección de minutos para Octavos basada en partidos donde fue titular (>=60min).
+    # Si jugó como sub en alguna fecha, esa fecha NO pesa en los minutos proyectados.
+    # Esto evita que un titular que descansó en F3 (9min) baje su proyección.
+    WC_STARTER_THRESHOLD = 60   # minutos mínimos para considerar que "fue titular"
+    wc_starter_mins = {}        # pid → promedio ponderado de fechas donde fue titular
+    wc_f1f2_mins    = {}        # pid → minutos totales F1+F2 (gate de titularidad)
+    wc_starter_f1   = set()     # jugadores titulares en F1
+    wc_starter_f2   = set()     # jugadores titulares en F2
+    wc_starter_f3   = set()     # jugadores titulares en F3
+
     for pid_str, rnd_mins in wc_mins_by_round.items():
-        # wc_avg_mins: solo para jugadores con algún minuto en F1 o F2
-        has_f1f2 = any(rnd in rnd_mins for rnd in (1, 2))
-        if has_f1f2:
-            total_w = total_wm = 0.0
-            for rnd, mins in rnd_mins.items():
-                w = WC_ROUND_WEIGHTS.get(rnd, 1.0)
-                total_wm += mins * w
-                total_w  += w
-            if total_w > 0:
-                wc_avg_mins[pid_str] = total_wm / total_w
-        # F1+F2 mins: señal principal para determinar status en Octavos
+        # Clasificar como titular por fecha
+        if rnd_mins.get(1, 0) >= WC_STARTER_THRESHOLD: wc_starter_f1.add(pid_str)
+        if rnd_mins.get(2, 0) >= WC_STARTER_THRESHOLD: wc_starter_f2.add(pid_str)
+        if rnd_mins.get(3, 0) >= WC_STARTER_THRESHOLD: wc_starter_f3.add(pid_str)
+
+        # Promedio ponderado solo de fechas donde fue titular
+        total_w = total_wm = 0.0
+        for rnd, mins in rnd_mins.items():
+            if mins < WC_STARTER_THRESHOLD:
+                continue  # sub_in — no cuenta para proyección de minutos
+            w = WC_ROUND_WEIGHTS.get(rnd, 1.0)
+            total_wm += mins * w
+            total_w  += w
+        if total_w > 0:
+            wc_starter_mins[pid_str] = total_wm / total_w
+
+        # F1+F2 totales (para gate: si no jugó en F1 ni F2, no es titular del equipo)
         f1f2 = sum(rnd_mins.get(rnd, 0) for rnd in (1, 2))
         if f1f2 > 0:
             wc_f1f2_mins[pid_str] = f1f2
-        recent = sum(mins for rnd, mins in rnd_mins.items() if rnd in (2, 3))
-        if recent > 0:
-            wc_recent_mins[pid_str] = recent
+
+    # wc_avg_mins = alias de wc_starter_mins (compatibilidad con código downstream)
+    wc_avg_mins = wc_starter_mins
 
     # Patrón F2+F3: no se usa para sub_in detection — eliminado porque genera
     # demasiados falsos positivos (titulares que salen antes de 60min en ambos juegos).
@@ -1575,13 +1586,23 @@ def main():
             _pid_str  = pid_str          # string ID del jugador actual (clave en lineups/wc_avg_mins)
             _pid_int  = int(pid_str)     # int para STARTER/ROTACIONAL/BAJA_OVERRIDES
 
-            # Para Octavos: corregir el lineup status usando F1+F2 como señal primaria.
-            # El lookup usa F3 donde muchos titulares descansaron.
-            # Si jugó ≥60min en F1+F2: fue titular real → forzar "starter".
-            # Si jugó 0min en F1+F2: no era titular → dejar el F3 status pero gate lo filtra.
+            # Para Octavos: determinar lineup status desde historial WC real.
+            # Lógica:
+            #   1. Titular en F1 Y F2 → starter directo (señal clara)
+            #   2. Titular en uno solo de F1/F2 → F3 desempata:
+            #      si también fue titular en F3 → starter; si no → dejar sin forzar
+            #   3. Sin minutos de titular en F1 ni F2 → gate lo baja a Suplente
             if round_num == 4 and _pid_int not in STARTER_OVERRIDES and _pid_int not in ROTACIONAL_OVERRIDES:
-                _f1f2 = wc_f1f2_mins.get(_pid_str, 0)
-                if _f1f2 >= 60:
+                _in_f1 = _pid_str in wc_starter_f1
+                _in_f2 = _pid_str in wc_starter_f2
+                _in_f3 = _pid_str in wc_starter_f3
+                _force_starter = False
+                if _in_f1 and _in_f2:
+                    _force_starter = True          # caso 1: titular en ambas
+                elif _in_f1 or _in_f2:
+                    _force_starter = _in_f3        # caso 2: F3 desempata
+                # caso 3: ninguna → gate lo filtra más abajo, no forzamos nada
+                if _force_starter:
                     _lu = lineups.setdefault(str(lineup_event_id), {}).setdefault("players", {})
                     _cur = _lu.get(_pid_str, {})
                     if _cur.get("status") not in ("starter",):
