@@ -65,7 +65,8 @@ SUPLENTE_OVERRIDES = {
 }
 
 ROTACIONAL_OVERRIDES = {
-    138892,  # João Cancelo (Portugal) — cambiado al min 45 en F2 y F3, perdió el puesto
+    # El threshold de 180 min WC (2+ partidos) cubre la mayoría de los casos automáticamente.
+    # Solo agregar aquí jugadores con situación especial que el threshold no detecta.
 }
 
 # Solo jugadores donde la auto-detección por minutos falla
@@ -1278,6 +1279,27 @@ def main():
             if fx.get("home_name"): team_f3_eid[fx["home_name"]] = fx["event_id"]
             if fx.get("away_name"): team_f3_eid[fx["away_name"]] = fx["event_id"]
 
+    # Patrón de sustitución temprana: jugador con sub_in en F2 Y F3 consecutivamente
+    # → lo tratamos como rotacional en Octavos, sin importar su historial de club.
+    # Detecta pérdida real del puesto (Cancelo) vs descanso táctico puntual (Messi en F3).
+    # Usa solo F2 y F3 para evitar bugs de minutos en datos de F1.
+    wc_status_by_round = {}   # pid_str → {round_num: status}
+    for eid_str, md in wc_results.get("matches", {}).items():
+        rnd = md.get("round_num")
+        if rnd not in (2, 3):
+            continue
+        for pid_str, ps in md.get("player_stats", {}).items():
+            if not wc_status_by_round.get(pid_str):
+                wc_status_by_round[pid_str] = {}
+            wc_status_by_round[pid_str][rnd] = ps.get("status", "")
+
+    # pid_str → True si sub_in en F2 y F3
+    wc_early_sub_pattern = {
+        pid_str
+        for pid_str, rnd_map in wc_status_by_round.items()
+        if rnd_map.get(2) == "sub_in" and rnd_map.get(3) == "sub_in"
+    }
+
     pos_avgs = compute_positional_averages(players_raw)
 
     # Perfiles defensivos por selección (box/wide vulnerability)
@@ -1522,6 +1544,19 @@ def main():
             lineup_event_id = event_id
             if round_num == 4:
                 lineup_event_id = team_f3_eid.get(team, event_id)
+
+            # Patrón sub_in F2+F3: baja a rotacional para Octavos.
+            # No aplica si hay override manual ni si el jugador no fue sub en ambas fechas.
+            _pid_str = str(pid)
+            if (round_num == 4
+                    and pid not in STARTER_OVERRIDES
+                    and pid not in ROTACIONAL_OVERRIDES
+                    and pid not in BAJA_OVERRIDES
+                    and _pid_str in wc_early_sub_pattern):
+                _lu_match = lineups.setdefault(str(lineup_event_id), {}).setdefault("players", {})
+                if _lu_match.get(_pid_str, {}).get("status") == "starter":
+                    _lu_match[_pid_str] = dict(_lu_match[_pid_str])
+                    _lu_match[_pid_str]["status"] = "rotacional"
 
             proj = project_player(p_meta, cs, intl_s, fe, opp_ts, own_ts, is_home, pos_avgs,
                                   opp_name=opp_name, lineups=lineups, event_id=lineup_event_id,
