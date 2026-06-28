@@ -1284,14 +1284,16 @@ def main():
     # Detecta pérdida real del puesto (Cancelo) vs descanso táctico puntual (Messi en F3).
     # Usa solo F2 y F3 para evitar bugs de minutos en datos de F1.
     wc_status_by_round = {}   # pid_str → {round_num: status}
+    wc_mins_by_round   = {}   # pid_str → {round_num: mins}
     for eid_str, md in wc_results.get("matches", {}).items():
         rnd = md.get("round_num")
         if rnd not in (2, 3):
             continue
         for pid_str, ps in md.get("player_stats", {}).items():
-            if not wc_status_by_round.get(pid_str):
-                wc_status_by_round[pid_str] = {}
-            wc_status_by_round[pid_str][rnd] = ps.get("status", "")
+            wc_status_by_round.setdefault(pid_str, {})[rnd] = ps.get("status", "")
+            mins = ps.get("mins") or 0
+            if mins < 200:   # cap para filtrar bugs de F1 (1089min, etc.)
+                wc_mins_by_round.setdefault(pid_str, {})[rnd] = mins
 
     # pid_str → True si sub_in en F2 y F3
     wc_early_sub_pattern = {
@@ -1299,6 +1301,15 @@ def main():
         for pid_str, rnd_map in wc_status_by_round.items()
         if rnd_map.get(2) == "sub_in" and rnd_map.get(3) == "sub_in"
     }
+
+    # Promedio de minutos reales en F2+F3 (fuente de verdad para exp_mins en Octavos).
+    # Solo F2 y F3 para evitar bugs de minutos de F1.
+    # pid_str → avg_mins (promedio de los partidos en que tuvo datos)
+    wc_avg_mins = {}
+    for pid_str, rnd_mins in wc_mins_by_round.items():
+        vals = [m for m in rnd_mins.values() if m > 0]
+        if vals:
+            wc_avg_mins[pid_str] = sum(vals) / len(vals)
 
     pos_avgs = compute_positional_averages(players_raw)
 
@@ -1547,11 +1558,12 @@ def main():
 
             # Patrón sub_in F2+F3: baja a rotacional para Octavos.
             # No aplica si hay override manual ni si el jugador no fue sub en ambas fechas.
-            _pid_str = str(pid)
+            _pid_str  = pid_str          # string ID del jugador actual (clave en lineups/wc_avg_mins)
+            _pid_int  = int(pid_str)     # int para STARTER/ROTACIONAL/BAJA_OVERRIDES
             if (round_num == 4
-                    and pid not in STARTER_OVERRIDES
-                    and pid not in ROTACIONAL_OVERRIDES
-                    and pid not in BAJA_OVERRIDES
+                    and _pid_int not in STARTER_OVERRIDES
+                    and _pid_int not in ROTACIONAL_OVERRIDES
+                    and _pid_int not in BAJA_OVERRIDES
                     and _pid_str in wc_early_sub_pattern):
                 _lu_match = lineups.setdefault(str(lineup_event_id), {}).setdefault("players", {})
                 if _lu_match.get(_pid_str, {}).get("status") == "starter":
@@ -1566,6 +1578,24 @@ def main():
                                   intl_schedules=intl_schedules)
             if proj is None:
                 continue
+
+            # Ajuste de minutos reales del Mundial (F2+F3) para Octavos.
+            # Reemplaza exp_mins/mins_fac/p_over60 calculados por historial de selección
+            # con el promedio real del torneo — más preciso para proyectar Octavos.
+            # xpts se escala proporcionalmente (mins_fac y p_play afectan linealmente la proj).
+            if round_num == 4 and _pid_str in wc_avg_mins:
+                avg_m        = wc_avg_mins[_pid_str]
+                old_mf       = proj.get("mins_fac", 1.0)
+                old_pp       = proj.get("p_play", 0.9)
+                new_mf       = round(min(1.0, avg_m / 90), 3)
+                new_p_over60 = round(min(0.95, max(0.05, avg_m / 75)), 2)
+                if old_mf > 0 and old_pp > 0:
+                    scale           = (new_mf / old_mf) * (new_p_over60 / old_pp)
+                    proj["xpts"]    = round(proj["xpts"] * scale, 2)
+                proj["exp_mins"]  = round(avg_m)
+                proj["mins_fac"]  = new_mf
+                proj["p_over60"]  = new_p_over60
+                proj["p_play"]    = new_p_over60
 
             xbpr = min(round(_bpr_ev(pid_str, event_id), 3), 0.80)  # cap: un partido no puede garantizar BPR
 
