@@ -1280,36 +1280,37 @@ def main():
             if fx.get("away_name"): team_f3_eid[fx["away_name"]] = fx["event_id"]
 
     # Patrón de sustitución temprana: jugador con sub_in en F2 Y F3 consecutivamente
-    # → lo tratamos como rotacional en Octavos, sin importar su historial de club.
-    # Detecta pérdida real del puesto (Cancelo) vs descanso táctico puntual (Messi en F3).
-    # Usa solo F2 y F3 para evitar bugs de minutos en datos de F1.
-    wc_status_by_round = {}   # pid_str → {round_num: status}
-    wc_mins_by_round   = {}   # pid_str → {round_num: mins}
+    # Minutos reales del Mundial F1+F2+F3 para ajustar exp_mins en Octavos.
+    # F1 fue re-scrapeado con minutesPlayed correcto (bug de 1089min resuelto).
+    # Cap <200 como seguridad extra.
+    # F3 incluido pero con peso menor: muchos equipos rotaron al tener el grupo resuelto.
+    # Pesos: F2=2.0, F1=1.5, F3=0.5 → F2 pesa más (partido más serio y reciente).
+    WC_ROUND_WEIGHTS = {1: 1.5, 2: 2.0, 3: 0.5}
+    wc_mins_by_round = {}   # pid_str → {round_num: mins}
     for eid_str, md in wc_results.get("matches", {}).items():
         rnd = md.get("round_num")
-        if rnd not in (2, 3):
+        if rnd not in (1, 2, 3):
             continue
         for pid_str, ps in md.get("player_stats", {}).items():
-            wc_status_by_round.setdefault(pid_str, {})[rnd] = ps.get("status", "")
             mins = ps.get("mins") or 0
-            if mins < 200:   # cap para filtrar bugs de F1 (1089min, etc.)
+            if 0 < mins < 200:   # excluye 0 (no jugó) y bugs residuales
                 wc_mins_by_round.setdefault(pid_str, {})[rnd] = mins
 
-    # pid_str → True si sub_in en F2 y F3
-    wc_early_sub_pattern = {
-        pid_str
-        for pid_str, rnd_map in wc_status_by_round.items()
-        if rnd_map.get(2) == "sub_in" and rnd_map.get(3) == "sub_in"
-    }
-
-    # Promedio de minutos reales en F2+F3 (fuente de verdad para exp_mins en Octavos).
-    # Solo F2 y F3 para evitar bugs de minutos de F1.
-    # pid_str → avg_mins (promedio de los partidos en que tuvo datos)
+    # Promedio ponderado de minutos: refleja tendencia reciente más que la F3 de rotación
     wc_avg_mins = {}
     for pid_str, rnd_mins in wc_mins_by_round.items():
-        vals = [m for m in rnd_mins.values() if m > 0]
-        if vals:
-            wc_avg_mins[pid_str] = sum(vals) / len(vals)
+        total_w = total_wm = 0.0
+        for rnd, mins in rnd_mins.items():
+            w = WC_ROUND_WEIGHTS.get(rnd, 1.0)
+            total_wm += mins * w
+            total_w  += w
+        if total_w > 0:
+            wc_avg_mins[pid_str] = total_wm / total_w
+
+    # Patrón F2+F3: no se usa para sub_in detection — eliminado porque genera
+    # demasiados falsos positivos (titulares que salen antes de 60min en ambos juegos).
+    # El ajuste de minutos via wc_avg_mins es suficiente.
+    wc_early_sub_pattern: set = set()
 
     pos_avgs = compute_positional_averages(players_raw)
 
@@ -1596,6 +1597,16 @@ def main():
                 proj["mins_fac"]  = new_mf
                 proj["p_over60"]  = new_p_over60
                 proj["p_play"]    = new_p_over60
+                # Sincronizar label de rol con los minutos reales ajustados.
+                # Sin esto, jugadores sin lineup data F3 quedan con "Rotacional"
+                # aunque su avg WC sea de titular (>75min).
+                if proj.get("lineup_status") not in ("starter", "rotacional", "substitute", "missing"):
+                    if new_p_over60 >= 0.80:
+                        proj["role"] = "Titular"
+                    elif new_p_over60 >= 0.50:
+                        proj["role"] = "Rotacional"
+                    else:
+                        proj["role"] = "Suplente"
 
             xbpr = min(round(_bpr_ev(pid_str, event_id), 3), 0.80)  # cap: un partido no puede garantizar BPR
 
