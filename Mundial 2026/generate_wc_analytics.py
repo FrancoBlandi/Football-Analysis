@@ -424,7 +424,7 @@ SP_BONUS = {
 # ── Pesos de blend ────────────────────────────────────────────────────────────
 CLUB_WEIGHT   = 0.70   # peso stats de club 2024-25
 INTL_WEIGHT   = 0.30   # peso stats internacionales (clasificatorias, etc.)
-FORM_WEIGHT   = 0.45   # peso forma WC F1/F2/F3 — aumentado desde 0.30 post grupo completo
+FORM_WEIGHT   = 0.62   # peso forma WC F1/F2/F3 — aumentado post grupo completo (era 0.45)
 SEASON_WEIGHT = 1.0 - FORM_WEIGHT  # 0.55
 
 MIN_INTL_GAMES = 3     # mínimo de partidos internacionales para usar blend; si no, solo club
@@ -976,7 +976,8 @@ def apply_setpiece_bonus(xg90, xa90, roles):
 
 def project_player(p_meta, cs, intl_s, form_entry, opp_ts, own_ts, is_home, pos_avgs,
                    opp_name="", lineups=None, event_id=None, setpieces=None, gk_starters=None,
-                   lam_opp=None, lam_own=None, def_profiles=None, intl_schedules=None):
+                   lam_opp=None, lam_own=None, def_profiles=None, intl_schedules=None,
+                   wc_def_mult=None):
     """
     Proyecta xPts de un jugador para un partido dado.
     p_meta: dict con name, position, national_team, etc.
@@ -1041,8 +1042,12 @@ def project_player(p_meta, cs, intl_s, form_entry, opp_ts, own_ts, is_home, pos_
         POS_XG_CAP = {"G": 0.20, "D": 0.50, "M": 0.70, "F": 1.10}
         form_xg = min(form_entry["form"]["form_xg_90"], POS_XG_CAP.get(pos, 0.80))
         form_xa = min(form_entry["form"]["form_xa_90"], 0.80)
-        xg90 = SEASON_WEIGHT * xg90 + FORM_WEIGHT * form_xg
-        xa90 = SEASON_WEIGHT * xa90 + FORM_WEIGHT * form_xa
+        # Con pocos PJ de club (<15), la forma WC es más informativa que el historial
+        _low_sample_boost = max(0.0, (15 - club_games) / 15 * 0.25) if club_games < 15 else 0.0
+        _fw = min(0.75, FORM_WEIGHT + _low_sample_boost)
+        _sw = 1.0 - _fw
+        xg90 = _sw * xg90 + _fw * form_xg
+        xa90 = _sw * xa90 + _fw * form_xa
 
     # ── Bayesian regression to mean ─────────────────────────────────────────
     effective_games = club_games + intl_games * 0.5   # intl vale menos peso
@@ -1155,7 +1160,8 @@ def project_player(p_meta, cs, intl_s, form_entry, opp_ts, own_ts, is_home, pos_
     own_gc_pg  = (own_ts or {}).get("gc_pg")   or LEAGUE_AVG_GC_PG
     own_xgc_pg = (own_ts or {}).get("xgc_pg")  or own_gc_pg
     if lam_opp is not None:
-        lam = lam_opp
+        _def_m = (wc_def_mult or {}).get(own_team, 1.0)
+        lam = lam_opp * _def_m
     else:
         opp_xgf_pg = (opp_ts or {}).get("gf_pg")   or LEAGUE_AVG_GC_PG
         own_def_pg = own_xgc_pg * 0.60 + own_gc_pg * 0.40
@@ -1360,6 +1366,34 @@ def main():
 
     # wc_avg_mins alias para compatibilidad con el bloque de ajuste de minutos downstream
     wc_avg_mins = wc_starter_mins
+
+    # ── WC Defensive Form: ajuste lambda rival por GC ponderados en F1/F2/F3 ──
+    # F3 con rotaciones pesa menos (WC_ROUND_WEIGHTS). Reduce lam_opp si el equipo
+    # defendió mejor de lo esperado históricamente.
+    WC_DEF_WEIGHT    = 0.45   # cuánto pesa el WC vs el DC histórico
+    WC_DEF_CAP       = (0.60, 1.35)
+    LEAGUE_AVG_GC_PG = 1.15
+
+    _wc_gc_w: dict[str, float] = {}   # team → weighted goals conceded
+    _wc_gc_n: dict[str, float] = {}   # team → sum of round weights
+
+    for _eid_str, _md in wc_results.get("matches", {}).items():
+        _rnd = _md.get("round_num")
+        if _rnd not in (1, 2, 3): continue
+        _sh = _md.get("score_home"); _sa = _md.get("score_away")
+        if _sh is None or _sa is None: continue
+        _rnd_w = WC_ROUND_WEIGHTS.get(_rnd, 1.0)
+        for _tname, _is_h in [(_md["home"], True), (_md["away"], False)]:
+            _gc = _sa if _is_h else _sh
+            _wc_gc_w[_tname] = _wc_gc_w.get(_tname, 0.0) + _gc * _rnd_w
+            _wc_gc_n[_tname] = _wc_gc_n.get(_tname, 0.0) + _rnd_w
+
+    wc_def_mult: dict[str, float] = {}
+    for _tname in _wc_gc_w:
+        _gc_pg = _wc_gc_w[_tname] / _wc_gc_n[_tname]
+        _ratio = _gc_pg / LEAGUE_AVG_GC_PG           # < 1 = mejor defensa de lo esperado
+        _mult  = (1 - WC_DEF_WEIGHT) + WC_DEF_WEIGHT * _ratio
+        wc_def_mult[_tname] = max(WC_DEF_CAP[0], min(WC_DEF_CAP[1], _mult))
 
     # Patrón F2+F3: no se usa para sub_in detection — eliminado porque genera
     # demasiados falsos positivos (titulares que salen antes de 60min en ambos juegos).
@@ -1670,7 +1704,8 @@ def main():
                                   setpieces=setpieces, gk_starters=gk_starters,
                                   lam_opp=lam_opp, lam_own=lam_own,
                                   def_profiles=def_profiles,
-                                  intl_schedules=intl_schedules)
+                                  intl_schedules=intl_schedules,
+                                  wc_def_mult=wc_def_mult)
             if proj is None:
                 continue
 

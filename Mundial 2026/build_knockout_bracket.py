@@ -145,9 +145,25 @@ def main():
     }
     SLOT_ORDER = ["best3_AEHI", "best3_CEHI", "best3_EHIJ", "best3_EGIJ", "best3_IJL"]
 
+    # Asignación oficial FIFA confirmada (override del algoritmo greedy)
+    CONFIRMED_SLOT_GROUPS = {
+        "best3_CEHI": "E",   # Ecuador (3ro E) → Mexico (slot CEHI) — bracket oficial FIFA
+    }
+
     # Greedy: asignar el mejor 3ro disponible a cada slot que lo acepte
     used_groups = set()
     slot_assigned = {}
+
+    # Aplicar overrides confirmados primero
+    for slot, grp in CONFIRMED_SLOT_GROUPS.items():
+        if grp in pool_thirds:
+            t = pool_thirds[grp]
+            slot_assigned[slot] = (grp, t)
+            used_groups.add(grp)
+            position[slot] = {"team": t["team"], "team_id": t["team_id"],
+                               "confirmed": t["confirmed"],
+                               "pts": t["pts"], "gd": t["gd"], "gf": t["gf"]}
+            print(f"  {slot} → 3{grp}: {t['team']} [CONFIRMADO FIFA]")
 
     # Primero asignar los que solo tienen UNA posibilidad de grupo (más restrictivos)
     # Calcular cuántos slots puede llenar cada grupo
@@ -159,6 +175,8 @@ def main():
 
     # Iterar slots en orden; para cada slot, asignar el mejor 3ro disponible del grupo correcto
     for slot in SLOT_ORDER:
+        if slot in slot_assigned:
+            continue   # ya asignado por override confirmado
         candidates = [
             (grp, pool_thirds[grp]) for grp in SLOT_GROUPS[slot]
             if grp in pool_thirds and grp not in used_groups
