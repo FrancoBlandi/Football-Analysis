@@ -150,16 +150,16 @@
       "desc": "Belgium vs 3ro AEHIJ",
       "home_id": 4717,
       "home_name": "Belgium",
-      "away_id": 4691,
-      "away_name": "Algeria",
+      "away_id": 4739,
+      "away_name": "Senegal",
       "timestamp": 1783458000,
       "date": "2026-07-07",
       "confirmed": true,
-      "lambda_home": 1.4155,
-      "lambda_away": 0.7304,
-      "p_home_win": 0.534,
-      "p_draw": 0.273,
-      "p_away_win": 0.193
+      "lambda_home": 1.4534,
+      "lambda_away": 0.8977,
+      "p_home_win": 0.501,
+      "p_draw": 0.266,
+      "p_away_win": 0.233
     },
     {
       "event_id": 90000009,
@@ -290,16 +290,16 @@
       "desc": "Switzerland vs 3ro EGIJ",
       "home_id": 4699,
       "home_name": "Switzerland",
-      "away_id": 4739,
-      "away_name": "Senegal",
+      "away_id": 4691,
+      "away_name": "Algeria",
       "timestamp": 1783803600,
       "date": "2026-07-11",
       "confirmed": true,
-      "lambda_home": 1.3308,
-      "lambda_away": 1.3104,
-      "p_home_win": 0.374,
-      "p_draw": 0.261,
-      "p_away_win": 0.364
+      "lambda_home": 1.2961,
+      "lambda_away": 1.0662,
+      "p_home_win": 0.417,
+      "p_draw": 0.277,
+      "p_away_win": 0.306
     },
     {
       "event_id": 90000016,
@@ -707,6 +707,14 @@
       "gd": -4,
       "gf": 0
     },
+    "best3_AEHI": {
+      "team": "Senegal",
+      "team_id": 4739,
+      "confirmed": true,
+      "pts": 3,
+      "gd": 2,
+      "gf": 8
+    },
     "best3_CEHI": {
       "team": "Ecuador",
       "team_id": 4757,
@@ -715,7 +723,7 @@
       "gd": 0,
       "gf": 2
     },
-    "best3_AEHI": {
+    "best3_EGIJ": {
       "team": "Algeria",
       "team_id": 4691,
       "confirmed": true,
@@ -730,14 +738,6 @@
       "pts": 4,
       "gd": 1,
       "gf": 4
-    },
-    "best3_EGIJ": {
-      "team": "Senegal",
-      "team_id": 4739,
-      "confirmed": true,
-      "pts": 3,
-      "gd": 2,
-      "gf": 8
     },
     "best3_IJL": {
       "team": "Ghana",

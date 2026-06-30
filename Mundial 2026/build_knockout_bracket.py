@@ -147,7 +147,9 @@ def main():
 
     # Asignación oficial FIFA confirmada (override del algoritmo greedy)
     CONFIRMED_SLOT_GROUPS = {
-        "best3_CEHI": "E",   # Ecuador (3ro E) → Mexico (slot CEHI) — bracket oficial FIFA
+        "best3_AEHI": "I",   # Senegal  (3ro I) → Bélgica
+        "best3_CEHI": "E",   # Ecuador  (3ro E) → México
+        "best3_EGIJ": "J",   # Argelia  (3ro J) → Suiza
     }
 
     # Greedy: asignar el mejor 3ro disponible a cada slot que lo acepte
