@@ -32,8 +32,34 @@ WC_RESULTS     = BASE_DIR / "wc2026_wc_results.json"
 FIXTURES_PATH  = BASE_DIR / "wc2026_fixtures.json"
 PREDICTIONS    = BASE_DIR / "wc2026_predictions.json"
 KNOCKOUT_PATH  = BASE_DIR / "wc2026_knockout.json"
+TEAM_STATS     = BASE_DIR / "wc2026_team_stats.json"
 
-HOME_ADV = 1.02   # sede neutra en mundiales (ventaja local mínima)
+HOME_ADV      = 1.02   # sede neutra en mundiales (ventaja local mínima)
+HOST_ADV      = 1.10   # bonus local real: juegan en estadio de su propio país
+# Canada juega en Houston/Los Angeles (USA) → sin bonus de localía
+HOST_TEAMS    = {"USA", "Mexico"}  # USA en Seattle, Mexico en Azteca — confirmados
+
+# Corrección de forma WC: cuánto peso tiene el rendimiento real en el Mundial
+# vs el parámetro Dixon-Coles histórico para calcular lambdas KO.
+# 0.45 = 45% WC actual, 55% histórico DC.
+WC_FORM_WEIGHT = 0.60
+WC_ATT_CAP     = (0.60, 1.30)   # límites multiplicador de ataque
+WC_DEF_CAP     = (0.50, 1.30)   # límites multiplicador de defensa — floor más bajo porque
+                                 # conceder 0 goles en KO es genuino, no ruido pequeño
+
+# Pesos por ronda. F3=0.25 (rotaciones, equipos clasificados) vs F2=2.0 (partido decisivo).
+WC_ROUND_WEIGHTS = {1: 1.5, 2: 2.0, 3: 0.25, 4: 3.0}
+
+# Piso del baseline histórico defensivo: ningún equipo debería tener hist_gc < 0.80
+# porque eso inflata el ratio WC y hace parecer un desastre defensivo lo que es normal al WC.
+WC_HIST_GC_FLOOR = 0.80
+
+# Regresión del baseline hacia la media WC.
+# Los parámetros DC extremos de equipos que jugaron vs rivales fáciles (Marruecos en AFCON,
+# USA en CONCACAF) tienen alpha/beta inflados. Al comparar forma WC, el baseline justo
+# es 70% propio DC + 30% media del torneo (mu para ataque, 1.0 para defensa).
+# Esto corrige que Marruecos "underperformea" su alpha inflado al anotar 1 vs Brasil.
+WC_BASELINE_REG = 0.30   # 30% regresión hacia media WC
 
 # Bracket oficial WC 2026 — (eid, home_pos, away_pos, fecha, descripcion)
 # Las posiciones 3rd_AEHI etc. se resuelven dinámicamente según standings
@@ -66,9 +92,10 @@ CONFIRMED_MATCH_OVERRIDES = {
 
 
 def main():
-    wc    = json.load(open(WC_RESULTS,    encoding="utf-8"))
-    fix   = json.load(open(FIXTURES_PATH, encoding="utf-8"))["fixtures"]
-    pred  = json.load(open(PREDICTIONS,   encoding="utf-8"))
+    wc       = json.load(open(WC_RESULTS,    encoding="utf-8"))
+    fix      = json.load(open(FIXTURES_PATH, encoding="utf-8"))["fixtures"]
+    pred     = json.load(open(PREDICTIONS,   encoding="utf-8"))
+    ts_data  = json.load(open(TEAM_STATS,    encoding="utf-8")) if TEAM_STATS.exists() else {}
 
     # ── Standings ─────────────────────────────────────────────────────────────
     standings = defaultdict(lambda: {"pts":0,"gf":0,"ga":0,"gd":0,"played":0,"team_id":None,"group":""})
@@ -200,11 +227,124 @@ def main():
     team_params = pred.get("team_params", {})
     mu = pred.get("mu", 1.3)
 
+    # ── Corrección de forma WC para lambdas KO ────────────────────────────────
+    # Ajustada por calidad de rival + xG (luck-adjusted):
+    #   att_signal = xGF / beta_rival    → luck-adjusted ataque vs defensa fuerte
+    #   def_signal = xGA / alpha_rival   → luck-adjusted defensa vs ataque fuerte
+    # Usa xGF/xGA de player_stats cuando está disponible; fallback a goles reales.
+    # xG resuelve: Marruecos concedió 1 a Holanda con solo 0.24 xGA → mala suerte,
+    #              su defensa real fue excelente. Canada vs Qatar: xGF=4.91 vs 6 goles.
+    # Baseline de comparación: propio alpha/beta DC.
+
+    # Paso 1: extraer xGF/xGA por equipo por partido desde player_stats.
+    # Normalizar a 90 min para partidos con alargue (max_mins=120 → scale=0.75).
+    _match_xga: dict  = {}   # eid → {team: xga_90min}
+    _match_norm: dict = {}   # eid → scale (90/actual_mins)
+    for _eid, _md in wc.get("matches", {}).items():
+        _ps = _md.get("player_stats") or {}
+        if not _ps: continue
+        _home = _md.get("home"); _away = _md.get("away")
+        if not _home or not _away: continue
+        _max_m = max((p.get("mins") or 0) for p in _ps.values())
+        _scale = 90 / _max_m if _max_m > 90 else 1.0   # alargue → normalizar a 90min
+        _match_norm[_eid] = _scale
+        _xg_h = sum((p.get("xg") or 0) for p in _ps.values() if p.get("is_home") is True) * _scale
+        _xg_a = sum((p.get("xg") or 0) for p in _ps.values() if p.get("is_home") is False) * _scale
+        _match_xga[_eid] = {_home: _xg_a, _away: _xg_h}   # xGA del home = xGF del away
+
+    _wc_gf_w: dict = {}; _wc_gc_w: dict = {}; _wc_rw: dict = {}
+    for _eid, _md in wc.get("matches", {}).items():
+        _rn = _md.get("round_num")
+        if _rn not in WC_ROUND_WEIGHTS: continue
+        _sh = _md.get("score_home"); _sa = _md.get("score_away")
+        if _sh is None or _sa is None: continue
+        _w     = WC_ROUND_WEIGHTS[_rn]
+        _home  = _md["home"]; _away = _md["away"]
+        _h_p   = team_params.get(_home, {}); _a_p = team_params.get(_away, {})
+        _h_alp = _h_p.get("alpha", mu);  _h_bet = _h_p.get("beta", 1.0)
+        _a_alp = _a_p.get("alpha", mu);  _a_bet = _a_p.get("beta", 1.0)
+        # Ataque: goles reales normalizados a 90min (partidos con alargue se escalan
+        #         para no inflar la señal por 30 min extra de juego).
+        # Defensa: xGA solo en partidos KO (round_num >= 4) ya normalizados a 90min.
+        #          En grupos la muestra de 3 partidos promedia la suerte.
+        # KO xGA: Marruecos-Holanda (0.18 xGA/90, concedió 0.75 → gran defensa)
+        #         Bélgica-Senegal (2.79 xGA/90, concedió 2.25 → tuvo suerte)
+        _norm = _match_norm.get(_eid, 1.0)
+        _sh_n = _sh * _norm   # goles home normalizados a 90min
+        _sa_n = _sa * _norm   # goles away normalizados a 90min
+        if _rn >= 4:
+            _xga  = _match_xga.get(_eid, {})
+            _h_gc = _xga.get(_home, _sa_n)  # xGA ya normalizado; fallback a goles norm.
+            _a_gc = _xga.get(_away, _sh_n)
+        else:
+            _h_gc = _sa_n   # grupos: goles reales normalizados
+            _a_gc = _sh_n
+        # Home team: goles normalizados vs beta_rival; (x)GA de alpha_rival
+        _wc_gf_w[_home] = _wc_gf_w.get(_home, 0.0) + (_sh_n / _a_bet) * _w
+        _wc_gc_w[_home] = _wc_gc_w.get(_home, 0.0) + (_h_gc / _a_alp) * _w
+        _wc_rw[_home]   = _wc_rw.get(_home, 0.0)   + _w
+        # Away team: goles normalizados vs beta_rival; (x)GA de alpha_rival
+        _wc_gf_w[_away] = _wc_gf_w.get(_away, 0.0) + (_sa_n / _h_bet) * _w
+        _wc_gc_w[_away] = _wc_gc_w.get(_away, 0.0) + (_a_gc / _h_alp) * _w
+        _wc_rw[_away]   = _wc_rw.get(_away, 0.0)   + _w
+
+    # Dificultad de calendario WC por equipo: promedio ponderado del alpha DC de sus rivales.
+    # Equipos que enfrentaron rivales más fuertes → señal WC más confiable → mayor peso.
+    # Equipos que jugaron contra Qatar/SA → señal menos confiable → menor peso.
+    _sched: dict = {}
+    for _eid, _md in wc.get("matches", {}).items():
+        _rn = _md.get("round_num")
+        if _rn not in WC_ROUND_WEIGHTS: continue
+        _w = WC_ROUND_WEIGHTS[_rn]
+        _h, _a = _md["home"], _md["away"]
+        _ha = team_params.get(_h, {}).get("alpha", mu)
+        _aa = team_params.get(_a, {}).get("alpha", mu)
+        _sched[_h] = _sched.get(_h, 0.0) + _aa * _w
+        _sched[_a] = _sched.get(_a, 0.0) + _ha * _w
+    # Normalizar por total_weight por equipo y calcular promedio global
+    _sched_pg = {_t: _sched[_t] / _wc_rw[_t] for _t in _sched if _wc_rw.get(_t, 0) > 0}
+    _global_ss = sum(_sched_pg.values()) / len(_sched_pg) if _sched_pg else 1.0
+
+    def _eff_wc_weight(team):
+        ss = _sched_pg.get(team, _global_ss)
+        w  = WC_FORM_WEIGHT * (ss / _global_ss)
+        return max(0.25, min(0.75, w))   # bounds: nunca menos de 25% ni más de 75%
+
+    _wc_form: dict = {}   # team → (att_mult, def_mult)
+    for _t, _rw in _wc_rw.items():
+        if _rw == 0: continue
+        _tp       = team_params.get(_t, {})
+        _own_alp  = _tp.get("alpha", mu)
+        _own_bet  = _tp.get("beta",  1.0)
+        _wc_gf_pg = _wc_gf_w[_t] / _rw
+        _wc_gc_pg = _wc_gc_w[_t] / _rw
+        _att_ratio = _wc_gf_pg / _own_alp
+        _def_ratio = _wc_gc_pg / _own_bet
+        _fw = _eff_wc_weight(_t)   # peso ajustado por dificultad de calendario
+        _att_m = max(WC_ATT_CAP[0], min(WC_ATT_CAP[1], (1 - _fw) + _fw * _att_ratio))
+        _def_m = max(WC_DEF_CAP[0], min(WC_DEF_CAP[1], (1 - _fw) + _fw * _def_ratio))
+        _wc_form[_t] = (_att_m, _def_m)
+
+    def _form(team):
+        return _wc_form.get(team, (1.0, 1.0))
+
     def get_lam(home_name, away_name):
         hp = team_params.get(home_name, {})
         ap = team_params.get(away_name, {})
-        lam_h = round(hp.get("alpha", mu) * ap.get("beta", 1.0) * HOME_ADV, 4)
-        lam_a = round(ap.get("alpha", mu) * hp.get("beta", 1.0), 4)
+        h_att, h_def = _form(home_name)
+        a_att, a_def = _form(away_name)
+        # Co-sede en su propio estadio → HOST_ADV.
+        # Canada juega en Houston/LA (USA) → sede neutra real = 1.0 (no HOME_ADV).
+        # Otros partidos KO en sedes neutras → HOME_ADV mínimo (1.02).
+        if home_name in HOST_TEAMS:
+            local_mult = HOST_ADV
+        elif home_name == "Canada":
+            local_mult = 1.0   # juega en USA, no hay ventaja de local
+        else:
+            local_mult = HOME_ADV
+        # alpha ajustado por forma atacante; beta del rival ajustado por forma defensiva
+        lam_h = round(hp.get("alpha", mu) * h_att * ap.get("beta", 1.0) * a_def * local_mult, 4)
+        lam_a = round(ap.get("alpha", mu) * a_att * hp.get("beta", 1.0) * h_def, 4)
         return lam_h, lam_a
 
     def win_prob(lam_h, lam_a, max_g=8):
@@ -273,16 +413,119 @@ def main():
         else:
             print(f"  M{m_num:02d}: {h_pos:<26} vs {a_pos:<26} — TBD")
 
+    # ── Build Cuartos de Final (R16) bracket ──────────────────────────────────
+    # Determinar ganadores de cada R32 match para proyectar R16
+    wc_matches = wc.get("matches", {})
+    r32_winners: dict[int, dict] = {}  # eid → {team, team_id, confirmed}
+
+    # Leer resultados de partidos ya jugados (player_stats implica que se jugó)
+    played_map: dict = {}  # eid → {home, home_id, away, away_id, sh, sa, pens_winner}
+    for eid_str, md in wc_matches.items():
+        if md.get("round_num") == 4 and md.get("score_home") is not None:
+            played_map[md["event_id"]] = md
+
+    for fx in knockout_fixtures:
+        eid    = fx["event_id"]
+        h_name = fx["home_name"]; h_id = fx["home_id"]
+        a_name = fx["away_name"]; a_id = fx["away_id"]
+        ph     = fx.get("p_home_win", 0.5) or 0.5
+        pa     = fx.get("p_away_win", 0.25) or 0.25
+
+        # Buscar por eid en wc_matches (los EIDs reales, no los sintéticos 9000000x)
+        # Los eids en wc_matches tienen el eid real de SofaScore
+        actual_md = None
+        for eid_str, md in wc_matches.items():
+            if md.get("round_num") == 4:
+                if ((md.get("home") == h_name or md.get("away") == h_name) and
+                    (md.get("home") == a_name or md.get("away") == a_name)):
+                    actual_md = md
+                    break
+
+        if actual_md:
+            sh = actual_md.get("score_home", 0); sa = actual_md.get("score_away", 0)
+            pens = actual_md.get("pens_winner")
+            if pens == "home" or (sh > sa and not pens):
+                winner_name = actual_md["home"]; winner_id = actual_md.get("home_id")
+            elif pens == "away" or (sa > sh and not pens):
+                winner_name = actual_md["away"]; winner_id = actual_md.get("away_id")
+            else:
+                winner_name = h_name; winner_id = h_id  # fallback home
+            r32_winners[eid] = {"team": winner_name, "team_id": winner_id, "confirmed": True}
+        elif h_name != "TBD" and a_name != "TBD":
+            # Proyección: ganador más probable por modelo
+            if ph >= pa:
+                winner_name = h_name; winner_id = h_id
+            else:
+                winner_name = a_name; winner_id = a_id
+            r32_winners[eid] = {"team": winner_name, "team_id": winner_id, "confirmed": False}
+
+    # Bracket R16 (Cuartos): M(2k-1) winner vs M(2k) winner
+    R16_BRACKET = [
+        (90000101, 90000001, 90000002, "2026-07-14"),  # C01: M01w vs M02w
+        (90000102, 90000003, 90000004, "2026-07-14"),  # C02: M03w vs M04w
+        (90000103, 90000005, 90000006, "2026-07-15"),  # C03: M05w vs M06w
+        (90000104, 90000007, 90000008, "2026-07-15"),  # C04: M07w vs M08w
+        (90000105, 90000009, 90000010, "2026-07-16"),  # C05: M09w vs M10w
+        (90000106, 90000011, 90000012, "2026-07-16"),  # C06: M11w vs M12w
+        (90000107, 90000013, 90000014, "2026-07-17"),  # C07: M13w vs M14w
+        (90000108, 90000015, 90000016, "2026-07-17"),  # C08: M15w vs M16w
+    ]
+
+    cuartos_fixtures = []
+    print("\nBracket Cuartos de Final (proyectado):")
+    for c_eid, m_h, m_a, date in R16_BRACKET:
+        hw = r32_winners.get(m_h, {})
+        aw = r32_winners.get(m_a, {})
+        h_name = hw.get("team", "TBD"); h_id = hw.get("team_id")
+        a_name = aw.get("team", "TBD"); a_id = aw.get("team_id")
+        confirmed = hw.get("confirmed", False) and aw.get("confirmed", False)
+
+        ts = int(_t.mktime(_t.strptime(date, "%Y-%m-%d"))) + 18*3600
+        lam_h = lam_a = p_hw = p_d = p_aw = None
+        if h_name != "TBD" and a_name != "TBD":
+            lam_h, lam_a = get_lam(h_name, a_name)
+            p_hw, p_d, p_aw = win_prob(lam_h, lam_a)
+
+        c_num = c_eid - 90000100
+        conf_tag = "✓" if confirmed else "~"
+        if lam_h:
+            print(f"  C{c_num:02d}: {h_name:<26} vs {a_name:<26} "
+                  f"λ={lam_h:.2f}/{lam_a:.2f}  {p_hw*100:.0f}%D{p_d*100:.0f}%/{p_aw*100:.0f}%  {conf_tag}")
+        else:
+            print(f"  C{c_num:02d}: {'TBD':<26} vs {'TBD':<26} — pendiente R32")
+
+        cuartos_fixtures.append({
+            "event_id":    c_eid,
+            "round":       "Cuartos de Final",
+            "round_num":   5,
+            "home_id":     h_id,
+            "home_name":   h_name,
+            "away_id":     a_id,
+            "away_name":   a_name,
+            "timestamp":   ts,
+            "date":        date,
+            "confirmed":   confirmed,
+            "lambda_home": lam_h,
+            "lambda_away": lam_a,
+            "p_home_win":  p_hw,
+            "p_draw":      p_d,
+            "p_away_win":  p_aw,
+            "r32_home_eid": m_h,
+            "r32_away_eid": m_a,
+        })
+
     # ── Write knockout JSON ───────────────────────────────────────────────────
     out = {
         "round": "Octavos de Final",
         "fixtures": knockout_fixtures,
+        "cuartos":  cuartos_fixtures,
         "positions": position,
         "thirds_pool": {grp: t for grp, t in pool_thirds.items()},
     }
     json.dump(out, open(KNOCKOUT_PATH, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
     confirmed_count = sum(1 for f in knockout_fixtures if f["confirmed"])
-    print(f"\nEscrito: {KNOCKOUT_PATH}  ({confirmed_count}/16 confirmados)")
+    cuartos_conf    = sum(1 for f in cuartos_fixtures  if f["confirmed"])
+    print(f"\nEscrito: {KNOCKOUT_PATH}  ({confirmed_count}/16 octavos confirmados, {cuartos_conf}/8 cuartos confirmados)")
 
 
 if __name__ == "__main__":

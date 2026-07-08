@@ -59,6 +59,8 @@ BAJA_OVERRIDES = {
     822572,   # Kye Rowles (Australia)
     1021272,  # Daniel Svensson (Sweden)
     1026122,  # Yu-min Cho (South Korea)
+    # Suspensiones por roja en Octavos (round_num=4)
+    934237,   # Folarin Balogun (USA) — roja min 64 vs Bosnia → suspendido vs Bélgica
 }
 
 SUPLENTE_OVERRIDES = {
@@ -1160,8 +1162,7 @@ def project_player(p_meta, cs, intl_s, form_entry, opp_ts, own_ts, is_home, pos_
     own_gc_pg  = (own_ts or {}).get("gc_pg")   or LEAGUE_AVG_GC_PG
     own_xgc_pg = (own_ts or {}).get("xgc_pg")  or own_gc_pg
     if lam_opp is not None:
-        _def_m = (wc_def_mult or {}).get(own_team, 1.0)
-        lam = lam_opp * _def_m
+        lam = lam_opp   # lambda del bracket ya incorpora WC form defensivo
     else:
         opp_xgf_pg = (opp_ts or {}).get("gf_pg")   or LEAGUE_AVG_GC_PG
         own_def_pg = own_xgc_pg * 0.60 + own_gc_pg * 0.40
@@ -1286,17 +1287,24 @@ def main():
             if fx.get("home_name"): team_f3_eid[fx["home_name"]] = fx["event_id"]
             if fx.get("away_name"): team_f3_eid[fx["away_name"]] = fx["event_id"]
 
+    # Para cuartos (round_num=5) usar el lineup de Octavos (round_num=4) del mismo equipo.
+    team_ko_eid = {}  # team_name → event_id de su partido de Octavos
+    for fx in fixtures:
+        if fx.get("round_num") == 4:
+            if fx.get("home_name"): team_ko_eid[fx["home_name"]] = fx["event_id"]
+            if fx.get("away_name"): team_ko_eid[fx["away_name"]] = fx["event_id"]
+
     # Patrón de sustitución temprana: jugador con sub_in en F2 Y F3 consecutivamente
     # Minutos reales del Mundial F1+F2+F3 para ajustar exp_mins en Octavos.
     # F1 fue re-scrapeado con minutesPlayed correcto (bug de 1089min resuelto).
     # Cap <200 como seguridad extra.
     # F3 incluido pero con peso menor: muchos equipos rotaron al tener el grupo resuelto.
     # Pesos: F2=2.0, F1=1.5, F3=0.5 → F2 pesa más (partido más serio y reciente).
-    WC_ROUND_WEIGHTS = {1: 1.5, 2: 2.0, 3: 0.5}
+    WC_ROUND_WEIGHTS = {1: 1.5, 2: 2.0, 3: 0.5, 4: 3.0}   # round 4 = Octavos (peso máximo)
     wc_mins_by_round = {}   # pid_str → {round_num: mins}
     for eid_str, md in wc_results.get("matches", {}).items():
         rnd = md.get("round_num")
-        if rnd not in (1, 2, 3):
+        if rnd not in (1, 2, 3, 4):
             continue
         for pid_str, ps in md.get("player_stats", {}).items():
             mins = ps.get("mins") or 0
@@ -1367,6 +1375,9 @@ def main():
     # wc_avg_mins alias para compatibilidad con el bloque de ajuste de minutos downstream
     wc_avg_mins = wc_starter_mins
 
+    # Minutos de cada jugador en Octavos (round_num=4) — usado como señal primaria para Cuartos gate
+    wc_ko_mins = {pid: rnd_mins[4] for pid, rnd_mins in wc_mins_by_round.items() if 4 in rnd_mins}
+
     # ── WC Defensive Form: ajuste lambda rival por GC ponderados en F1/F2/F3 ──
     # F3 con rotaciones pesa menos (WC_ROUND_WEIGHTS). Reduce lam_opp si el equipo
     # defendió mejor de lo esperado históricamente.
@@ -1379,7 +1390,7 @@ def main():
 
     for _eid_str, _md in wc_results.get("matches", {}).items():
         _rnd = _md.get("round_num")
-        if _rnd not in (1, 2, 3): continue
+        if _rnd not in (1, 2, 3, 4): continue
         _sh = _md.get("score_home"); _sa = _md.get("score_away")
         if _sh is None or _sa is None: continue
         _rnd_w = WC_ROUND_WEIGHTS.get(_rnd, 1.0)
@@ -1391,7 +1402,10 @@ def main():
     wc_def_mult: dict[str, float] = {}
     for _tname in _wc_gc_w:
         _gc_pg = _wc_gc_w[_tname] / _wc_gc_n[_tname]
-        _ratio = _gc_pg / LEAGUE_AVG_GC_PG           # < 1 = mejor defensa de lo esperado
+        # Comparar vs el histórico propio del equipo, no vs promedio de liga genérico.
+        # Así si un equipo concede MÁS que su histórico → mult > 1 → p_cs baja (correcto).
+        _hist_gc = (team_stats.get(_tname) or {}).get("gc_pg") or LEAGUE_AVG_GC_PG
+        _ratio = _gc_pg / _hist_gc                   # < 1 = mejor que su propio histórico
         _mult  = (1 - WC_DEF_WEIGHT) + WC_DEF_WEIGHT * _ratio
         wc_def_mult[_tname] = max(WC_DEF_CAP[0], min(WC_DEF_CAP[1], _mult))
 
@@ -1557,6 +1571,49 @@ def main():
             _ko_added += 1
         print(f"[knockout] {_ko_added} matchups de octavos cargados en fixture_map")
 
+        # ── Cuartos de Final (round_num=5) ────────────────────────────────────
+        _cuartos_added = 0
+        for fx in _ko.get("cuartos", []):
+            h = fx.get("home_name", "TBD")
+            a = fx.get("away_name", "TBD")
+            eid  = fx.get("event_id")
+            lam_h = fx.get("lambda_home")
+            lam_a = fx.get("lambda_away")
+            if h == "TBD" or a == "TBD" or not eid:
+                continue
+            fixture_map[h].append((a, True,  eid, 5))
+            fixture_map[a].append((h, False, eid, 5))
+            if lam_h and lam_a:
+                lambda_index[eid] = {h: lam_a, a: lam_h}
+                _ev_h = _ev_a = 0.0
+                _score_dist_c: dict = {}
+                for _i in range(9):
+                    for _j in range(9):
+                        _p = (math.exp(-lam_h)*lam_h**_i/math.factorial(_i) *
+                              math.exp(-lam_a)*lam_a**_j/math.factorial(_j))
+                        _ev_h += _p * (_i - _j)
+                        _ev_a += _p * (_j - _i)
+                        _score_dist_c[f"{_i}-{_j}"] = round(_p, 4)
+                predictions.setdefault("fixtures", []).append({
+                    "event_id":    eid,
+                    "round":       5,
+                    "group":       "KO",
+                    "home":        h,
+                    "away":        a,
+                    "lambda_home": lam_h,
+                    "lambda_away": lam_a,
+                    "p_home_win":  fx.get("p_home_win"),
+                    "p_draw":      fx.get("p_draw"),
+                    "p_away_win":  fx.get("p_away_win"),
+                    "ev_home_dt":  round(_ev_h, 3),
+                    "ev_away_dt":  round(_ev_a, 3),
+                    "score_dist":  _score_dist_c,
+                    "home_form":   None,
+                    "away_form":   None,
+                })
+            _cuartos_added += 1
+        print(f"[knockout] {_cuartos_added} matchups de cuartos cargados en fixture_map")
+
     # ── BPR: rating promedio ponderado por calidad del rival ─────────────────
     # Lookup event_id → opponent_fifa_score usando nombre del rival (como compute_intl_schedules)
     _fifa_all: dict = {}
@@ -1673,6 +1730,8 @@ def main():
             lineup_event_id = event_id
             if round_num == 4:
                 lineup_event_id = team_f3_eid.get(team, event_id)
+            elif round_num == 5:
+                lineup_event_id = team_ko_eid.get(team, team_f3_eid.get(team, event_id))
 
             # Patrón sub_in F2+F3: baja a rotacional para Octavos.
             # No aplica si hay override manual ni si el jugador no fue sub en ambas fechas.
@@ -1699,6 +1758,16 @@ def main():
                     if _cur.get("status") not in ("starter",):
                         _lu[_pid_str] = {**_cur, "status": "starter"}
 
+            # Para Cuartos (round_num=5): solo minutos de Octavos.
+            # ≥60 min → titular; gate downstream maneja el resto.
+            if round_num == 5 and _pid_int not in STARTER_OVERRIDES and _pid_int not in ROTACIONAL_OVERRIDES:
+                _ko_mins = wc_ko_mins.get(_pid_str, 0)
+                if _ko_mins >= 60:
+                    _lu = lineups.setdefault(str(lineup_event_id), {}).setdefault("players", {})
+                    _cur = _lu.get(_pid_str, {})
+                    if _cur.get("status") not in ("starter",):
+                        _lu[_pid_str] = {**_cur, "status": "starter"}
+
             proj = project_player(p_meta, cs, intl_s, fe, opp_ts, own_ts, is_home, pos_avgs,
                                   opp_name=opp_name, lineups=lineups, event_id=lineup_event_id,
                                   setpieces=setpieces, gk_starters=gk_starters,
@@ -1709,8 +1778,9 @@ def main():
             if proj is None:
                 continue
 
-            # 1) Ajuste de minutos reales del Mundial para Octavos.
-            # Usa el promedio ponderado de F1+F2+F3 para calibrar exp_mins/p_play.
+            # 1) Ajuste de minutos reales del Mundial para KO rounds.
+            # Octavos (round_num=4): usa promedio ponderado de F1+F2+F3.
+            # Cuartos (round_num=5): usa minutos reales jugados en Octavos.
             if round_num == 4 and _pid_str in wc_avg_mins:
                 avg_m        = wc_avg_mins[_pid_str]
                 old_mf       = proj.get("mins_fac", 1.0)
@@ -1721,6 +1791,27 @@ def main():
                     scale        = (new_mf / old_mf) * (new_p_over60 / old_pp)
                     proj["xpts"] = round(proj["xpts"] * scale, 2)
                 proj["exp_mins"] = round(avg_m)
+                proj["mins_fac"] = new_mf
+                proj["p_over60"] = new_p_over60
+                proj["p_play"]   = new_p_over60
+                if proj.get("lineup_status") not in ("starter", "rotacional", "substitute", "missing"):
+                    if new_p_over60 >= 0.80:
+                        proj["role"] = "Titular"
+                    elif new_p_over60 >= 0.50:
+                        proj["role"] = "Rotacional"
+                    else:
+                        proj["role"] = "Suplente"
+
+            if round_num == 5 and _pid_str in wc_ko_mins:
+                ko_m         = wc_ko_mins[_pid_str]
+                old_mf       = proj.get("mins_fac", 1.0)
+                old_pp       = proj.get("p_play", 0.9)
+                new_mf       = round(min(1.0, ko_m / 90), 3)
+                new_p_over60 = round(min(0.95, max(0.05, ko_m / 75)), 2)
+                if old_mf > 0 and old_pp > 0:
+                    scale        = (new_mf / old_mf) * (new_p_over60 / old_pp)
+                    proj["xpts"] = round(proj["xpts"] * scale, 2)
+                proj["exp_mins"] = round(ko_m)
                 proj["mins_fac"] = new_mf
                 proj["p_over60"] = new_p_over60
                 proj["p_play"]   = new_p_over60
@@ -1761,6 +1852,34 @@ def main():
                     proj["exp_mins"] = min(proj.get("exp_mins", 40), 40)
                     proj["mins_fac"] = round(proj["exp_mins"] / 90, 3)
                     proj["role"]     = "Rotacional"
+
+            # Gate para Cuartos (round_num=5): basado exclusivamente en minutos de Octavos.
+            # ≤30 min (o 0) → Suplente; 31-59 min → Rotacional ajustado; ≥60 → libre (titular).
+            if round_num == 5 and _pid_int not in STARTER_OVERRIDES and _pid_int not in BAJA_OVERRIDES:
+                _ko_mins = wc_ko_mins.get(_pid_str, 0)
+                if _ko_mins <= 30:
+                    # No jugó Octavos o solo minutos testimoniales → Suplente
+                    old_pp = proj.get("p_play", 0.9)
+                    new_pp = 0.20
+                    if old_pp > new_pp:
+                        proj["xpts"] = round(proj["xpts"] * (new_pp / old_pp), 2)
+                    proj["p_play"]   = min(old_pp, new_pp)
+                    proj["p_over60"] = min(old_pp, new_pp)
+                    proj["exp_mins"] = round(_ko_mins * 0.6) if _ko_mins > 0 else 15
+                    proj["mins_fac"] = round(proj["exp_mins"] / 90, 3)
+                    proj["role"]     = "Suplente"
+                elif _ko_mins < 60:
+                    # Jugó entre 31 y 59 min → Rotacional, exp_mins = 60% de lo jugado
+                    old_pp = proj.get("p_play", 0.9)
+                    new_pp = round(min(0.55, _ko_mins / 90), 2)
+                    if old_pp > new_pp:
+                        proj["xpts"] = round(proj["xpts"] * (new_pp / old_pp), 2)
+                    proj["p_play"]   = min(old_pp, new_pp)
+                    proj["p_over60"] = min(old_pp, new_pp)
+                    proj["exp_mins"] = round(_ko_mins * 0.75)
+                    proj["mins_fac"] = round(proj["exp_mins"] / 90, 3)
+                    proj["role"]     = "Rotacional"
+                # ≥60 min → no tocar, la proyección normal es válida
 
             xbpr = min(round(_bpr_ev(pid_str, event_id), 3), 0.80)  # cap: un partido no puede garantizar BPR
 
@@ -2065,7 +2184,8 @@ def build_html(data_json, fecha, missing_teams=None):
     <button class="filter-btn" id="tab-1" onclick="setFecha(1,this)">Fecha 1</button>
     <button class="filter-btn" id="tab-2" onclick="setFecha(2,this)">Fecha 2</button>
     <button class="filter-btn" id="tab-3" onclick="setFecha(3,this)">Fecha 3</button>
-    <button class="filter-btn active" id="tab-4" onclick="setFecha(4,this)" style="border-color:#f59e0b;color:#f59e0b">Octavos</button>
+    <button class="filter-btn" id="tab-4" onclick="setFecha(4,this)" style="border-color:#f59e0b;color:#f59e0b">Octavos</button>
+    <button class="filter-btn active" id="tab-5" onclick="setFecha(5,this)" style="border-color:#10b981;color:#10b981">Cuartos</button>
     <button class="filter-btn" id="tab-0" onclick="setFecha(0,this)">Todas</button>
     <span style="width:1px;height:24px;background:var(--border);margin:0 4px"></span>
     <button class="filter-btn" id="tab-res1" onclick="showResultsF1(this)"
@@ -2281,7 +2401,7 @@ def build_html(data_json, fecha, missing_teams=None):
 const D = {data_json};
 let activePos   = null;
 let activeGroup = null;
-let activeFecha = 4;
+let activeFecha = 5;
 let sortCol     = 7;
 let sortDir     = 1;
 

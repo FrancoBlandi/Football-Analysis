@@ -1,280 +1,10 @@
 {
   "team_params": {
-    "Türkiye": {
-      "alpha": 1.4833,
-      "beta": 1.1196,
-      "n_matches": 29.09,
-      "fifa": 38
-    },
-    "Tunisia": {
-      "alpha": 0.6293,
-      "beta": 1.5574,
-      "n_matches": 34.52,
-      "fifa": 31
-    },
-    "Bosnia & Herzegovina": {
-      "alpha": 0.6454,
-      "beta": 1.2464,
-      "n_matches": 26.66,
-      "fifa": 35
-    },
-    "Japan": {
-      "alpha": 1.1801,
-      "beta": 0.4599,
-      "n_matches": 31.41,
-      "fifa": 56
-    },
-    "Portugal": {
-      "alpha": 1.2417,
-      "beta": 0.7109,
-      "n_matches": 32.08,
-      "fifa": 82
-    },
-    "Cabo Verde": {
-      "alpha": 0.7835,
-      "beta": 0.9565,
-      "n_matches": 33.63,
-      "fifa": 35
-    },
-    "France": {
-      "alpha": 1.598,
-      "beta": 0.8736,
-      "n_matches": 31.8,
-      "fifa": 95
-    },
-    "Paraguay": {
-      "alpha": 0.4615,
-      "beta": 0.9326,
-      "n_matches": 30.23,
-      "fifa": 23
-    },
-    "DR Congo": {
-      "alpha": 0.8607,
-      "beta": 0.5489,
-      "n_matches": 33.06,
-      "fifa": 30
-    },
-    "Croatia": {
-      "alpha": 0.9093,
-      "beta": 1.0457,
-      "n_matches": 29.9,
-      "fifa": 60
-    },
-    "South Africa": {
-      "alpha": 0.8114,
-      "beta": 0.9028,
-      "n_matches": 28.36,
-      "fifa": 25
-    },
-    "Netherlands": {
-      "alpha": 1.4531,
-      "beta": 0.813,
-      "n_matches": 29.56,
-      "fifa": 79
-    },
-    "Côte d'Ivoire": {
-      "alpha": 1.1438,
-      "beta": 0.835,
-      "n_matches": 30.15,
-      "fifa": 45
-    },
-    "Brazil": {
-      "alpha": 1.6003,
-      "beta": 0.7604,
-      "n_matches": 27.88,
-      "fifa": 85
-    },
-    "Uzbekistan": {
-      "alpha": 0.7023,
-      "beta": 1.7918,
-      "n_matches": 33.28,
-      "fifa": 32
-    },
-    "USA": {
-      "alpha": 1.1028,
-      "beta": 1.495,
-      "n_matches": 28.6,
-      "fifa": 62
-    },
-    "Argentina": {
-      "alpha": 1.566,
-      "beta": 0.4905,
-      "n_matches": 29.57,
-      "fifa": 100
-    },
-    "New Zealand": {
-      "alpha": 0.5869,
-      "beta": 1.9996,
-      "n_matches": 31.42,
-      "fifa": 20
-    },
-    "Iran": {
-      "alpha": 1.0807,
-      "beta": 1.0686,
-      "n_matches": 30.54,
-      "fifa": 36
-    },
-    "Egypt": {
-      "alpha": 0.8689,
-      "beta": 1.2523,
-      "n_matches": 31.77,
-      "fifa": 34
-    },
-    "Iraq": {
-      "alpha": 0.5323,
-      "beta": 1.99,
-      "n_matches": 33.81,
-      "fifa": 30
-    },
-    "Germany": {
-      "alpha": 1.4279,
-      "beta": 1.0104,
-      "n_matches": 30.43,
-      "fifa": 74
-    },
-    "Mexico": {
-      "alpha": 0.9672,
-      "beta": 0.4078,
-      "n_matches": 29.37,
-      "fifa": 52
-    },
-    "Senegal": {
-      "alpha": 1.3172,
-      "beta": 1.0699,
-      "n_matches": 32.86,
-      "fifa": 54
-    },
-    "Saudi Arabia": {
-      "alpha": 0.4925,
-      "beta": 1.2207,
-      "n_matches": 35.51,
-      "fifa": 38
-    },
-    "South Korea": {
-      "alpha": 0.9721,
-      "beta": 0.8917,
-      "n_matches": 27.11,
-      "fifa": 50
-    },
-    "Morocco": {
-      "alpha": 1.484,
-      "beta": 0.859,
-      "n_matches": 27.69,
-      "fifa": 65
-    },
-    "Canada": {
-      "alpha": 1.2301,
-      "beta": 0.7839,
-      "n_matches": 28.27,
-      "fifa": 35
-    },
-    "Panama": {
-      "alpha": 0.6289,
-      "beta": 1.1101,
-      "n_matches": 33.99,
-      "fifa": 24
-    },
-    "Sweden": {
-      "alpha": 0.9657,
-      "beta": 1.2524,
-      "n_matches": 33.64,
-      "fifa": 30
-    },
-    "Austria": {
-      "alpha": 1.1274,
-      "beta": 1.2623,
-      "n_matches": 32.66,
-      "fifa": 45
-    },
-    "Norway": {
-      "alpha": 1.6235,
-      "beta": 1.0765,
-      "n_matches": 34.58,
-      "fifa": 41
-    },
-    "Belgium": {
-      "alpha": 1.3318,
-      "beta": 0.6815,
-      "n_matches": 27.96,
-      "fifa": 76
-    },
-    "Colombia": {
-      "alpha": 1.0787,
-      "beta": 0.5756,
-      "n_matches": 33.15,
-      "fifa": 68
-    },
-    "Curaçao": {
-      "alpha": 0.4226,
-      "beta": 1.859,
-      "n_matches": 30.27,
-      "fifa": 18
-    },
     "England": {
       "alpha": 1.5264,
       "beta": 0.4696,
       "n_matches": 28.77,
       "fifa": 88
-    },
-    "Czechia": {
-      "alpha": 0.7433,
-      "beta": 1.5786,
-      "n_matches": 27.36,
-      "fifa": 39
-    },
-    "Ghana": {
-      "alpha": 0.5748,
-      "beta": 0.697,
-      "n_matches": 34.02,
-      "fifa": 27
-    },
-    "Spain": {
-      "alpha": 1.5297,
-      "beta": 0.2385,
-      "n_matches": 33.52,
-      "fifa": 92
-    },
-    "Australia": {
-      "alpha": 0.6355,
-      "beta": 0.6685,
-      "n_matches": 27.05,
-      "fifa": 47
-    },
-    "Switzerland": {
-      "alpha": 1.2195,
-      "beta": 0.9948,
-      "n_matches": 26.98,
-      "fifa": 58
-    },
-    "Algeria": {
-      "alpha": 1.0718,
-      "beta": 1.042,
-      "n_matches": 32.38,
-      "fifa": 44
-    },
-    "Haiti": {
-      "alpha": 0.7069,
-      "beta": 1.8234,
-      "n_matches": 28.29,
-      "fifa": 17
-    },
-    "Qatar": {
-      "alpha": 0.5555,
-      "beta": 1.9899,
-      "n_matches": 27.13,
-      "fifa": 25
-    },
-    "Jordan": {
-      "alpha": 0.7146,
-      "beta": 1.4328,
-      "n_matches": 35.63,
-      "fifa": 28
-    },
-    "Uruguay": {
-      "alpha": 0.8061,
-      "beta": 0.7099,
-      "n_matches": 33.56,
-      "fifa": 80
     },
     "Scotland": {
       "alpha": 0.7425,
@@ -282,10 +12,280 @@
       "n_matches": 30.39,
       "fifa": 33
     },
+    "France": {
+      "alpha": 1.598,
+      "beta": 0.8736,
+      "n_matches": 31.8,
+      "fifa": 95
+    },
+    "Norway": {
+      "alpha": 1.6235,
+      "beta": 1.0765,
+      "n_matches": 34.58,
+      "fifa": 41
+    },
+    "Egypt": {
+      "alpha": 0.8689,
+      "beta": 1.2523,
+      "n_matches": 31.77,
+      "fifa": 34
+    },
+    "New Zealand": {
+      "alpha": 0.5869,
+      "beta": 1.9996,
+      "n_matches": 31.41,
+      "fifa": 20
+    },
+    "Japan": {
+      "alpha": 1.1801,
+      "beta": 0.4599,
+      "n_matches": 31.41,
+      "fifa": 56
+    },
+    "Algeria": {
+      "alpha": 1.0718,
+      "beta": 1.042,
+      "n_matches": 32.38,
+      "fifa": 44
+    },
+    "Netherlands": {
+      "alpha": 1.4531,
+      "beta": 0.813,
+      "n_matches": 29.56,
+      "fifa": 79
+    },
+    "Switzerland": {
+      "alpha": 1.2195,
+      "beta": 0.9948,
+      "n_matches": 26.98,
+      "fifa": 58
+    },
+    "Haiti": {
+      "alpha": 0.7069,
+      "beta": 1.8234,
+      "n_matches": 28.28,
+      "fifa": 17
+    },
+    "Sweden": {
+      "alpha": 0.9657,
+      "beta": 1.2524,
+      "n_matches": 33.64,
+      "fifa": 30
+    },
+    "Spain": {
+      "alpha": 1.5297,
+      "beta": 0.2385,
+      "n_matches": 33.52,
+      "fifa": 92
+    },
+    "DR Congo": {
+      "alpha": 0.8607,
+      "beta": 0.5489,
+      "n_matches": 33.06,
+      "fifa": 30
+    },
+    "Côte d'Ivoire": {
+      "alpha": 1.1438,
+      "beta": 0.835,
+      "n_matches": 30.15,
+      "fifa": 45
+    },
+    "Croatia": {
+      "alpha": 0.9093,
+      "beta": 1.0457,
+      "n_matches": 29.9,
+      "fifa": 60
+    },
+    "Canada": {
+      "alpha": 1.2301,
+      "beta": 0.7839,
+      "n_matches": 28.27,
+      "fifa": 35
+    },
+    "Czechia": {
+      "alpha": 0.7433,
+      "beta": 1.5786,
+      "n_matches": 27.36,
+      "fifa": 39
+    },
+    "Brazil": {
+      "alpha": 1.6003,
+      "beta": 0.7604,
+      "n_matches": 27.87,
+      "fifa": 85
+    },
+    "Qatar": {
+      "alpha": 0.5555,
+      "beta": 1.9899,
+      "n_matches": 27.13,
+      "fifa": 25
+    },
+    "Türkiye": {
+      "alpha": 1.4833,
+      "beta": 1.1196,
+      "n_matches": 29.09,
+      "fifa": 38
+    },
+    "Germany": {
+      "alpha": 1.4279,
+      "beta": 1.0104,
+      "n_matches": 30.43,
+      "fifa": 74
+    },
+    "Bosnia & Herzegovina": {
+      "alpha": 0.6454,
+      "beta": 1.2464,
+      "n_matches": 26.66,
+      "fifa": 35
+    },
+    "Curaçao": {
+      "alpha": 0.4226,
+      "beta": 1.859,
+      "n_matches": 30.27,
+      "fifa": 18
+    },
+    "Uruguay": {
+      "alpha": 0.8061,
+      "beta": 0.7099,
+      "n_matches": 33.56,
+      "fifa": 80
+    },
     "Ecuador": {
       "alpha": 0.9394,
       "beta": 0.5987,
-      "n_matches": 32.61,
+      "n_matches": 32.6,
+      "fifa": 38
+    },
+    "Belgium": {
+      "alpha": 1.3318,
+      "beta": 0.6815,
+      "n_matches": 27.96,
+      "fifa": 76
+    },
+    "Jordan": {
+      "alpha": 0.7146,
+      "beta": 1.4328,
+      "n_matches": 35.63,
+      "fifa": 28
+    },
+    "Iran": {
+      "alpha": 1.0807,
+      "beta": 1.0686,
+      "n_matches": 30.54,
+      "fifa": 36
+    },
+    "South Africa": {
+      "alpha": 0.8114,
+      "beta": 0.9028,
+      "n_matches": 28.36,
+      "fifa": 25
+    },
+    "Senegal": {
+      "alpha": 1.3172,
+      "beta": 1.0699,
+      "n_matches": 32.86,
+      "fifa": 54
+    },
+    "Uzbekistan": {
+      "alpha": 0.7023,
+      "beta": 1.7918,
+      "n_matches": 33.28,
+      "fifa": 32
+    },
+    "Morocco": {
+      "alpha": 1.484,
+      "beta": 0.859,
+      "n_matches": 27.69,
+      "fifa": 65
+    },
+    "Cabo Verde": {
+      "alpha": 0.7835,
+      "beta": 0.9565,
+      "n_matches": 33.63,
+      "fifa": 35
+    },
+    "USA": {
+      "alpha": 1.1028,
+      "beta": 1.495,
+      "n_matches": 28.6,
+      "fifa": 62
+    },
+    "Tunisia": {
+      "alpha": 0.6293,
+      "beta": 1.5574,
+      "n_matches": 34.52,
+      "fifa": 31
+    },
+    "Colombia": {
+      "alpha": 1.0787,
+      "beta": 0.5756,
+      "n_matches": 33.15,
+      "fifa": 68
+    },
+    "Austria": {
+      "alpha": 1.1274,
+      "beta": 1.2623,
+      "n_matches": 32.66,
+      "fifa": 45
+    },
+    "South Korea": {
+      "alpha": 0.9721,
+      "beta": 0.8917,
+      "n_matches": 27.11,
+      "fifa": 50
+    },
+    "Australia": {
+      "alpha": 0.6355,
+      "beta": 0.6685,
+      "n_matches": 27.04,
+      "fifa": 47
+    },
+    "Mexico": {
+      "alpha": 0.9672,
+      "beta": 0.4078,
+      "n_matches": 29.37,
+      "fifa": 52
+    },
+    "Ghana": {
+      "alpha": 0.5748,
+      "beta": 0.697,
+      "n_matches": 34.02,
+      "fifa": 27
+    },
+    "Argentina": {
+      "alpha": 1.566,
+      "beta": 0.4905,
+      "n_matches": 29.57,
+      "fifa": 100
+    },
+    "Panama": {
+      "alpha": 0.6289,
+      "beta": 1.1101,
+      "n_matches": 33.98,
+      "fifa": 24
+    },
+    "Portugal": {
+      "alpha": 1.2417,
+      "beta": 0.7109,
+      "n_matches": 32.08,
+      "fifa": 82
+    },
+    "Iraq": {
+      "alpha": 0.5323,
+      "beta": 1.99,
+      "n_matches": 33.81,
+      "fifa": 30
+    },
+    "Paraguay": {
+      "alpha": 0.4615,
+      "beta": 0.9326,
+      "n_matches": 30.23,
+      "fifa": 23
+    },
+    "Saudi Arabia": {
+      "alpha": 0.4925,
+      "beta": 1.2207,
+      "n_matches": 35.51,
       "fifa": 38
     }
   },
