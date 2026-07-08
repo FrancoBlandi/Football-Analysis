@@ -514,18 +514,112 @@ def main():
             "r32_away_eid": m_a,
         })
 
+    # ── Build Cuartos de Final (QF) bracket from Octavos winners ─────────────
+    # Leer resultados de Octavos (round_num=5) desde wc_results
+    r16_winners: dict[int, dict] = {}  # c_eid → {team, team_id, confirmed}
+
+    for fx in cuartos_fixtures:
+        c_eid  = fx["event_id"]
+        h_name = fx["home_name"]; h_id = fx.get("home_id")
+        a_name = fx["away_name"]; a_id = fx.get("away_id")
+        ph     = fx.get("p_home_win", 0.5) or 0.5
+        pa     = fx.get("p_away_win", 0.25) or 0.25
+
+        # Buscar resultado real en wc_matches (round_num=5)
+        actual_md = None
+        for eid_str, md in wc_matches.items():
+            if md.get("round_num") == 5:
+                if ((md.get("home") == h_name or md.get("away") == h_name) and
+                    (md.get("home") == a_name or md.get("away") == a_name)):
+                    actual_md = md
+                    break
+
+        if actual_md and actual_md.get("score_home") is not None:
+            sh = actual_md["score_home"]; sa = actual_md["score_away"]
+            pens = actual_md.get("pens_winner") or fx.get("pens_winner")
+            if pens == "home" or (sh > sa and not pens):
+                winner_name = actual_md["home"]; winner_id = actual_md.get("home_id")
+            elif pens == "away" or (sa > sh and not pens):
+                winner_name = actual_md["away"]; winner_id = actual_md.get("away_id")
+            else:
+                winner_name = h_name; winner_id = h_id
+            r16_winners[c_eid] = {"team": winner_name, "team_id": winner_id, "confirmed": True}
+            # Pegar score real en cuartos_fixture
+            fx["score_home"] = sh; fx["score_away"] = sa
+            if pens: fx["pens_winner"] = pens
+        elif h_name != "TBD" and a_name != "TBD":
+            # Proyección: ganador más probable
+            if ph >= pa:
+                winner_name = h_name; winner_id = h_id
+            else:
+                winner_name = a_name; winner_id = a_id
+            r16_winners[c_eid] = {"team": winner_name, "team_id": winner_id, "confirmed": False}
+
+    # Bracket QF: C01w vs C02w, C03w vs C04w, C05w vs C06w, C07w vs C08w
+    QF_BRACKET = [
+        (90000201, 90000101, 90000102, "2026-07-18"),  # QF1: C01w vs C02w
+        (90000202, 90000103, 90000104, "2026-07-18"),  # QF2: C03w vs C04w
+        (90000203, 90000105, 90000106, "2026-07-19"),  # QF3: C05w vs C06w
+        (90000204, 90000107, 90000108, "2026-07-19"),  # QF4: C07w vs C08w
+    ]
+
+    semifinales_fixtures = []
+    print("\nBracket Cuartos de Final / QF (proyectado):")
+    for qf_eid, c_h, c_a, date in QF_BRACKET:
+        hw = r16_winners.get(c_h, {})
+        aw = r16_winners.get(c_a, {})
+        h_name = hw.get("team", "TBD"); h_id = hw.get("team_id")
+        a_name = aw.get("team", "TBD"); a_id = aw.get("team_id")
+        confirmed = hw.get("confirmed", False) and aw.get("confirmed", False)
+
+        ts = int(_t.mktime(_t.strptime(date, "%Y-%m-%d"))) + 18*3600
+        lam_h = lam_a = p_hw = p_d = p_aw = None
+        if h_name != "TBD" and a_name != "TBD":
+            lam_h, lam_a = get_lam(h_name, a_name)
+            p_hw, p_d, p_aw = win_prob(lam_h, lam_a)
+
+        qf_num = qf_eid - 90000200
+        conf_tag = "✓" if confirmed else "~"
+        if lam_h:
+            print(f"  QF{qf_num}: {h_name:<26} vs {a_name:<26} "
+                  f"λ={lam_h:.2f}/{lam_a:.2f}  {p_hw*100:.0f}%D{p_d*100:.0f}%/{p_aw*100:.0f}%  {conf_tag}")
+        else:
+            print(f"  QF{qf_num}: {'TBD':<26} vs {'TBD':<26} — pendiente Octavos")
+
+        semifinales_fixtures.append({
+            "event_id":    qf_eid,
+            "round":       "Cuartos de Final",
+            "round_num":   6,
+            "home_id":     h_id,
+            "home_name":   h_name,
+            "away_id":     a_id,
+            "away_name":   a_name,
+            "timestamp":   ts,
+            "date":        date,
+            "confirmed":   confirmed,
+            "lambda_home": lam_h,
+            "lambda_away": lam_a,
+            "p_home_win":  p_hw,
+            "p_draw":      p_d,
+            "p_away_win":  p_aw,
+            "r16_home_eid": c_h,
+            "r16_away_eid": c_a,
+        })
+
     # ── Write knockout JSON ───────────────────────────────────────────────────
     out = {
         "round": "Octavos de Final",
         "fixtures": knockout_fixtures,
         "cuartos":  cuartos_fixtures,
+        "semifinales": semifinales_fixtures,
         "positions": position,
         "thirds_pool": {grp: t for grp, t in pool_thirds.items()},
     }
     json.dump(out, open(KNOCKOUT_PATH, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
     confirmed_count = sum(1 for f in knockout_fixtures if f["confirmed"])
     cuartos_conf    = sum(1 for f in cuartos_fixtures  if f["confirmed"])
-    print(f"\nEscrito: {KNOCKOUT_PATH}  ({confirmed_count}/16 octavos confirmados, {cuartos_conf}/8 cuartos confirmados)")
+    semis_conf      = sum(1 for f in semifinales_fixtures if f["confirmed"])
+    print(f"\nEscrito: {KNOCKOUT_PATH}  ({confirmed_count}/16 octavos, {cuartos_conf}/8 cuartos, {semis_conf}/4 QF confirmados)")
 
 
 if __name__ == "__main__":
