@@ -621,7 +621,10 @@ function evClass(ev) {
 function renderDTTop() {
   const pred    = D.predictions || {};
   const coaches = D.coaches || {};
-  const fixtures = (pred.fixtures || []).filter(f => !activeFecha || f.round === activeFecha);
+  const allRounds = (pred.fixtures || []).map(f => f.round).filter(Boolean);
+  const maxRound  = allRounds.length ? Math.max(...allRounds) : 0;
+  const dtRound   = activeFecha || maxRound;
+  const fixtures = (pred.fixtures || []).filter(f => f.round === dtRound);
 
   // Construir lista de DTs: un entry por equipo (home y away) con su EV
   const dtList = [];
@@ -668,7 +671,10 @@ function renderDTTop() {
 
 function renderDTPanel() {
   const pred = D.predictions || {};
-  const fixtures = (pred.fixtures || []).filter(f => !activeFecha || f.round === activeFecha);
+  const allRounds2 = (pred.fixtures || []).map(f => f.round).filter(Boolean);
+  const maxRound2  = allRounds2.length ? Math.max(...allRounds2) : 0;
+  const dtRound2   = activeFecha || maxRound2;
+  const fixtures = (pred.fixtures || []).filter(f => f.round === dtRound2);
   const sorted = [...fixtures].sort((a, b) => Math.abs(b.ev_home_dt) - Math.abs(a.ev_home_dt));
 
   const el = document.getElementById("dt-panel");
