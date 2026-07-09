@@ -43,12 +43,14 @@ HOST_TEAMS    = {"USA", "Mexico"}  # USA en Seattle, Mexico en Azteca — confir
 # vs el parámetro Dixon-Coles histórico para calcular lambdas KO.
 # 0.45 = 45% WC actual, 55% histórico DC.
 WC_FORM_WEIGHT = 0.60
-WC_ATT_CAP     = (0.60, 1.30)   # límites multiplicador de ataque
-WC_DEF_CAP     = (0.50, 1.30)   # límites multiplicador de defensa — floor más bajo porque
-                                 # conceder 0 goles en KO es genuino, no ruido pequeño
+WC_ATT_CAP     = (0.72, 1.18)   # límites multiplicador de ataque
+WC_DEF_CAP     = (0.65, 1.15)   # límites multiplicador de defensa
+KO_EFF_DEF_FLOOR = 0.45         # piso del producto beta*def_m en get_lam: ningún equipo
+                                 # es tan infranqueable que el rival espera < 0.45 goles
+                                 # (evita que Spain.beta=0.238 haga λ_Belgium ≈ 0.40)
 
 # Pesos por ronda. F3=0.25 (rotaciones, equipos clasificados) vs F2=2.0 (partido decisivo).
-WC_ROUND_WEIGHTS = {1: 1.5, 2: 2.0, 3: 0.25, 4: 3.0}
+WC_ROUND_WEIGHTS = {1: 1.5, 2: 2.0, 3: 0.25, 4: 3.0, 5: 4.5}
 
 # Piso del baseline histórico defensivo: ningún equipo debería tener hist_gc < 0.80
 # porque eso inflata el ratio WC y hace parecer un desastre defensivo lo que es normal al WC.
@@ -342,9 +344,13 @@ def main():
             local_mult = 1.0   # juega en USA, no hay ventaja de local
         else:
             local_mult = HOME_ADV
-        # alpha ajustado por forma atacante; beta del rival ajustado por forma defensiva
-        lam_h = round(hp.get("alpha", mu) * h_att * ap.get("beta", 1.0) * a_def * local_mult, 4)
-        lam_a = round(ap.get("alpha", mu) * a_att * hp.get("beta", 1.0) * h_def, 4)
+        # alpha ajustado por forma atacante; beta del rival ajustado por forma defensiva.
+        # Piso en el producto efectivo de defensa (beta * def_m): evita que DC betas
+        # extremadamente bajos (ej. Spain 0.238) hagan al rival casi imposible de anotar.
+        eff_h_def = max(KO_EFF_DEF_FLOOR, hp.get("beta", 1.0) * h_def)
+        eff_a_def = max(KO_EFF_DEF_FLOOR, ap.get("beta", 1.0) * a_def)
+        lam_h = round(hp.get("alpha", mu) * h_att * eff_a_def * local_mult, 4)
+        lam_a = round(ap.get("alpha", mu) * a_att * eff_h_def, 4)
         return lam_h, lam_a
 
     def win_prob(lam_h, lam_a, max_g=8):
