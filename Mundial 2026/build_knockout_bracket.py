@@ -265,28 +265,30 @@ def main():
         _h_p   = team_params.get(_home, {}); _a_p = team_params.get(_away, {})
         _h_alp = _h_p.get("alpha", mu);  _h_bet = _h_p.get("beta", 1.0)
         _a_alp = _a_p.get("alpha", mu);  _a_bet = _a_p.get("beta", 1.0)
-        # Ataque: goles reales normalizados a 90min (partidos con alargue se escalan
-        #         para no inflar la señal por 30 min extra de juego).
-        # Defensa: xGA solo en partidos KO (round_num >= 4) ya normalizados a 90min.
-        #          En grupos la muestra de 3 partidos promedia la suerte.
-        # KO xGA: Marruecos-Holanda (0.18 xGA/90, concedió 0.75 → gran defensa)
-        #         Bélgica-Senegal (2.79 xGA/90, concedió 2.25 → tuvo suerte)
+        # Ataque KO: xGF (simétrico con xGA de defensa) — evita que goles de suerte
+        #   (Morocco 3 goles / 0.82 xG vs Canada; Switzerland 4 / 0.39 xG vs Colombia)
+        #   inflen el att_mult. En grupos usamos goles reales (3 partidos promedian suerte).
+        # Defensa KO: xGA — ya estaba así.
         _norm = _match_norm.get(_eid, 1.0)
-        _sh_n = _sh * _norm   # goles home normalizados a 90min
-        _sa_n = _sa * _norm   # goles away normalizados a 90min
+        _sh_n = _sh * _norm   # goles home normalizados (solo grupos)
+        _sa_n = _sa * _norm   # goles away normalizados (solo grupos)
         if _rn >= 4:
             _xga  = _match_xga.get(_eid, {})
-            _h_gc = _xga.get(_home, _sa_n)  # xGA ya normalizado; fallback a goles norm.
-            _a_gc = _xga.get(_away, _sh_n)
+            _h_gc = _xga.get(_home, _sa_n)  # home xGA (= xGF del away)
+            _a_gc = _xga.get(_away, _sh_n)  # away xGA (= xGF del home)
+            _h_gf = _a_gc   # home xGF = away xGA
+            _a_gf = _h_gc   # away xGF = home xGA
         else:
             _h_gc = _sa_n   # grupos: goles reales normalizados
             _a_gc = _sh_n
-        # Home team: goles normalizados vs beta_rival; (x)GA de alpha_rival
-        _wc_gf_w[_home] = _wc_gf_w.get(_home, 0.0) + (_sh_n / _a_bet) * _w
+            _h_gf = _sh_n
+            _a_gf = _sa_n
+        # Home team: xGF en KO / goles reales en grupos vs beta_rival; xGA vs alpha_rival
+        _wc_gf_w[_home] = _wc_gf_w.get(_home, 0.0) + (_h_gf / _a_bet) * _w
         _wc_gc_w[_home] = _wc_gc_w.get(_home, 0.0) + (_h_gc / _a_alp) * _w
         _wc_rw[_home]   = _wc_rw.get(_home, 0.0)   + _w
-        # Away team: goles normalizados vs beta_rival; (x)GA de alpha_rival
-        _wc_gf_w[_away] = _wc_gf_w.get(_away, 0.0) + (_sa_n / _h_bet) * _w
+        # Away team: xGF en KO / goles reales en grupos vs beta_rival; xGA vs alpha_rival
+        _wc_gf_w[_away] = _wc_gf_w.get(_away, 0.0) + (_a_gf / _h_bet) * _w
         _wc_gc_w[_away] = _wc_gc_w.get(_away, 0.0) + (_a_gc / _h_alp) * _w
         _wc_rw[_away]   = _wc_rw.get(_away, 0.0)   + _w
 
