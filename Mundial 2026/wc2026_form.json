@@ -7060,6 +7060,14 @@
     "team": "Canada",
     "matches": [
       {
+        "event_id": 12813009,
+        "mins": 90,
+        "xg": 0.2795,
+        "xa": 0.0666,
+        "goals": 0,
+        "weight": 20
+      },
+      {
         "event_id": 12813000,
         "mins": 90,
         "xg": 0.1773,
@@ -7219,9 +7227,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.3612,
-      "form_xa_90": 0.0515,
-      "n": 14
+      "form_xg_90": 0.3203,
+      "form_xa_90": 0.0591,
+      "n": 15
     },
     "v2": true
   },
@@ -7229,6 +7237,14 @@
     "name": "Tani Oluwaseyi",
     "team": "Canada",
     "matches": [
+      {
+        "event_id": 12813009,
+        "mins": 63,
+        "xg": 0.3172,
+        "xa": 0.0052,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12813000,
         "mins": 70,
@@ -7389,9 +7405,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.2743,
-      "form_xa_90": 0.0735,
-      "n": 12
+      "form_xg_90": 0.3681,
+      "form_xa_90": 0.0388,
+      "n": 13
     },
     "v2": true
   },
@@ -7399,6 +7415,14 @@
     "name": "Cyle Larin",
     "team": "Canada",
     "matches": [
+      {
+        "event_id": 12813009,
+        "mins": 27,
+        "xg": 0.0,
+        "xa": 0.008,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 15186821,
         "mins": 58,
@@ -7551,9 +7575,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.6406,
-      "form_xa_90": 0.035,
-      "n": 9
+      "form_xg_90": 0.1504,
+      "form_xa_90": 0.0286,
+      "n": 10
     },
     "v2": true
   },
@@ -7910,6 +7934,14 @@
     "team": "Canada",
     "matches": [
       {
+        "event_id": 12813009,
+        "mins": 87,
+        "xg": 0.0287,
+        "xa": 0.0075,
+        "goals": 0,
+        "weight": 20
+      },
+      {
         "event_id": 12813000,
         "mins": 75,
         "xg": 0.1757,
@@ -8069,9 +8101,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.2082,
-      "form_xa_90": 0.0378,
-      "n": 14
+      "form_xg_90": 0.1188,
+      "form_xa_90": 0.0227,
+      "n": 15
     },
     "v2": true
   },
@@ -8270,6 +8302,14 @@
     "team": "Canada",
     "matches": [
       {
+        "event_id": 12813009,
+        "mins": 78,
+        "xg": 0.0,
+        "xa": 0.0363,
+        "goals": 0,
+        "weight": 20
+      },
+      {
         "event_id": 15186821,
         "mins": 58,
         "xg": 0.0657,
@@ -8421,9 +8461,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.1138,
-      "form_xa_90": 0.1435,
-      "n": 10
+      "form_xg_90": 0.0308,
+      "form_xa_90": 0.0694,
+      "n": 11
     },
     "v2": true
   },
@@ -8771,6 +8811,14 @@
     "name": "Jonathan Osorio",
     "team": "Canada",
     "matches": [
+      {
+        "event_id": 12813009,
+        "mins": 13,
+        "xg": 0.0238,
+        "xa": 0.0048,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 15186798,
         "mins": 1089,
@@ -9148,6 +9196,14 @@
     "team": "Canada",
     "matches": [
       {
+        "event_id": 12813009,
+        "mins": 87,
+        "xg": 0.0,
+        "xa": 0.0649,
+        "goals": 0,
+        "weight": 20
+      },
+      {
         "event_id": 12813000,
         "mins": 31,
         "xg": 0.0,
@@ -9299,9 +9355,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.0065,
-      "form_xa_90": 0.4314,
-      "n": 12
+      "form_xg_90": 0.003,
+      "form_xa_90": 0.2342,
+      "n": 13
     },
     "v2": true
   },
@@ -9612,6 +9668,14 @@
     "team": "Canada",
     "matches": [
       {
+        "event_id": 12813009,
+        "mins": 78,
+        "xg": 0.0,
+        "xa": 0.0142,
+        "goals": 0,
+        "weight": 20
+      },
+      {
         "event_id": 12813000,
         "mins": 90,
         "xg": 0.0,
@@ -9771,9 +9835,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.0234,
-      "form_xa_90": 0.1027,
-      "n": 14
+      "form_xg_90": 0.0117,
+      "form_xa_90": 0.0595,
+      "n": 15
     },
     "v2": true
   },
@@ -9781,6 +9845,14 @@
     "name": "Luc De Fougerolles",
     "team": "Canada",
     "matches": [
+      {
+        "event_id": 12813009,
+        "mins": 90,
+        "xg": 0.1085,
+        "xa": 0.0557,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12813000,
         "mins": 31,
@@ -9941,9 +10013,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.0726,
-      "form_xa_90": 0.0217,
-      "n": 13
+      "form_xg_90": 0.0906,
+      "form_xa_90": 0.0388,
+      "n": 14
     },
     "v2": true
   },
@@ -10296,6 +10368,14 @@
     "team": "Canada",
     "matches": [
       {
+        "event_id": 12813009,
+        "mins": 90,
+        "xg": 0.0,
+        "xa": 0.0008,
+        "goals": 0,
+        "weight": 20
+      },
+      {
         "event_id": 12813000,
         "mins": 90,
         "xg": 0.0,
@@ -10456,8 +10536,8 @@
     ],
     "form": {
       "form_xg_90": 0.0,
-      "form_xa_90": 0.0007,
-      "n": 14
+      "form_xa_90": 0.0008,
+      "n": 15
     },
     "v2": true
   },
@@ -17620,6 +17700,14 @@
     "team": "Switzerland",
     "matches": [
       {
+        "event_id": 12812991,
+        "mins": 87,
+        "xg": 0.0,
+        "xa": 0.0208,
+        "goals": 0,
+        "weight": 20
+      },
+      {
         "event_id": 12813019,
         "mins": 83,
         "xg": 1.0,
@@ -17779,9 +17867,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.9148,
-      "form_xa_90": 0.0905,
-      "n": 14
+      "form_xg_90": 0.4566,
+      "form_xa_90": 0.0559,
+      "n": 15
     },
     "v2": true
   },
@@ -17789,6 +17877,14 @@
     "name": "Zeki Amdouni",
     "team": "Switzerland",
     "matches": [
+      {
+        "event_id": 12812991,
+        "mins": 17,
+        "xg": 0.0,
+        "xa": 0.0011,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12813019,
         "mins": 14,
@@ -17952,6 +18048,14 @@
     "team": "Switzerland",
     "matches": [
       {
+        "event_id": 12812991,
+        "mins": 120,
+        "xg": 0.0446,
+        "xa": 0.0651,
+        "goals": 0,
+        "weight": 20
+      },
+      {
         "event_id": 12813019,
         "mins": 90,
         "xg": 0.0,
@@ -18111,9 +18215,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.0993,
-      "form_xa_90": 0.0406,
-      "n": 14
+      "form_xg_90": 0.0663,
+      "form_xa_90": 0.0447,
+      "n": 15
     },
     "v2": true
   },
@@ -18121,6 +18225,14 @@
     "name": "Ardon Jashari",
     "team": "Switzerland",
     "matches": [
+      {
+        "event_id": 12812991,
+        "mins": 45,
+        "xg": 0.0,
+        "xa": 0.0147,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 15186806,
         "mins": 1089,
@@ -18205,9 +18317,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.0376,
-      "form_xa_90": 0.0462,
-      "n": 6
+      "form_xg_90": 0.0068,
+      "form_xa_90": 0.0324,
+      "n": 7
     },
     "v2": true
   },
@@ -18215,6 +18327,14 @@
     "name": "Dan Ndoye",
     "team": "Switzerland",
     "matches": [
+      {
+        "event_id": 12812991,
+        "mins": 89,
+        "xg": 0.0534,
+        "xa": 0.0218,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12813019,
         "mins": 87,
@@ -18375,9 +18495,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.174,
-      "form_xa_90": 0.0638,
-      "n": 13
+      "form_xg_90": 0.1107,
+      "form_xa_90": 0.0418,
+      "n": 14
     },
     "v2": true
   },
@@ -18556,6 +18676,14 @@
     "team": "Switzerland",
     "matches": [
       {
+        "event_id": 12812991,
+        "mins": 87,
+        "xg": 0.0,
+        "xa": 0.0063,
+        "goals": 0,
+        "weight": 20
+      },
+      {
         "event_id": 12813019,
         "mins": 87,
         "xg": 0.38,
@@ -18707,9 +18835,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.3034,
-      "form_xa_90": 0.273,
-      "n": 11
+      "form_xg_90": 0.1458,
+      "form_xa_90": 0.1346,
+      "n": 12
     },
     "v2": true
   },
@@ -18717,6 +18845,14 @@
     "name": "Rubén Vargas",
     "team": "Switzerland",
     "matches": [
+      {
+        "event_id": 12812991,
+        "mins": 31,
+        "xg": 0.0,
+        "xa": 0.0145,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12813019,
         "mins": 71,
@@ -18877,9 +19013,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.0775,
-      "form_xa_90": 0.2686,
-      "n": 13
+      "form_xg_90": 0.037,
+      "form_xa_90": 0.1502,
+      "n": 14
     },
     "v2": true
   },
@@ -18887,6 +19023,14 @@
     "name": "Djibril Sow",
     "team": "Switzerland",
     "matches": [
+      {
+        "event_id": 12812991,
+        "mins": 75,
+        "xg": 0.1851,
+        "xa": 0.0777,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 15186821,
         "mins": 74,
@@ -19039,9 +19183,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.0382,
-      "form_xa_90": 0.0255,
-      "n": 10
+      "form_xg_90": 0.1792,
+      "form_xa_90": 0.0774,
+      "n": 11
     },
     "v2": true
   },
@@ -19049,6 +19193,14 @@
     "name": "Remo Freuler",
     "team": "Switzerland",
     "matches": [
+      {
+        "event_id": 12812991,
+        "mins": 120,
+        "xg": 0.0,
+        "xa": 0.0355,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12813019,
         "mins": 90,
@@ -19209,9 +19361,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.0367,
-      "form_xa_90": 0.2395,
-      "n": 13
+      "form_xg_90": 0.0183,
+      "form_xa_90": 0.1326,
+      "n": 14
     },
     "v2": true
   },
@@ -19219,6 +19371,14 @@
     "name": "Fabian Rieder",
     "team": "Switzerland",
     "matches": [
+      {
+        "event_id": 12812991,
+        "mins": 103,
+        "xg": 0.1061,
+        "xa": 0.0269,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12813019,
         "mins": 19,
@@ -19371,9 +19531,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.0968,
-      "form_xa_90": 0.0524,
-      "n": 11
+      "form_xg_90": 0.0936,
+      "form_xa_90": 0.0298,
+      "n": 12
     },
     "v2": true
   },
@@ -19544,6 +19704,14 @@
     "team": "Switzerland",
     "matches": [
       {
+        "event_id": 12812991,
+        "mins": 49,
+        "xg": 0.0,
+        "xa": 0.0197,
+        "goals": 0,
+        "weight": 20
+      },
+      {
         "event_id": 15186526,
         "timestamp": 1781377200,
         "tournament": "FIFA World Cup 2026",
@@ -19667,9 +19835,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.1664,
-      "form_xa_90": 0.1091,
-      "n": 8
+      "form_xg_90": 0.0189,
+      "form_xa_90": 0.0444,
+      "n": 9
     },
     "v2": true
   },
@@ -19677,6 +19845,14 @@
     "name": "Silvan Widmer",
     "team": "Switzerland",
     "matches": [
+      {
+        "event_id": 12812991,
+        "mins": 33,
+        "xg": 0.0,
+        "xa": 0.0113,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 15186821,
         "mins": 16,
@@ -19829,9 +20005,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.0191,
-      "form_xa_90": 0.0137,
-      "n": 12
+      "form_xg_90": 0.0043,
+      "form_xa_90": 0.0269,
+      "n": 13
     },
     "v2": true
   },
@@ -19839,6 +20015,14 @@
     "name": "Manuel Akanji",
     "team": "Switzerland",
     "matches": [
+      {
+        "event_id": 12812991,
+        "mins": 120,
+        "xg": 0.0,
+        "xa": 0.0185,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12813019,
         "mins": 90,
@@ -19999,9 +20183,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.0232,
-      "form_xa_90": 0.0206,
-      "n": 14
+      "form_xg_90": 0.0116,
+      "form_xa_90": 0.0172,
+      "n": 15
     },
     "v2": true
   },
@@ -20009,6 +20193,14 @@
     "name": "Ricardo Rodríguez",
     "team": "Switzerland",
     "matches": [
+      {
+        "event_id": 12812991,
+        "mins": 71,
+        "xg": 0.0,
+        "xa": 0.0236,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12813019,
         "mins": 90,
@@ -20169,9 +20361,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.0151,
-      "form_xa_90": 0.2075,
-      "n": 14
+      "form_xg_90": 0.0076,
+      "form_xa_90": 0.1185,
+      "n": 15
     },
     "v2": true
   },
@@ -20179,6 +20371,14 @@
     "name": "Nico Elvedi",
     "team": "Switzerland",
     "matches": [
+      {
+        "event_id": 12812991,
+        "mins": 120,
+        "xg": 0.0,
+        "xa": 0.0051,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12813019,
         "mins": 90,
@@ -20339,9 +20539,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.084,
-      "form_xa_90": 0.0084,
-      "n": 14
+      "form_xg_90": 0.0419,
+      "form_xa_90": 0.0061,
+      "n": 15
     },
     "v2": true
   },
@@ -21848,6 +22048,14 @@
     "team": "Switzerland",
     "matches": [
       {
+        "event_id": 12812991,
+        "mins": 33,
+        "xg": 0.0,
+        "xa": 0.0004,
+        "goals": 0,
+        "weight": 20
+      },
+      {
         "event_id": 15186821,
         "mins": 12,
         "xg": 0.0,
@@ -21939,9 +22147,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.1364,
-      "form_xa_90": 0.0184,
-      "n": 4
+      "form_xg_90": 0.0147,
+      "form_xa_90": 0.003,
+      "n": 5
     },
     "v2": true
   },
@@ -22378,6 +22586,14 @@
     "team": "Switzerland",
     "matches": [
       {
+        "event_id": 12812991,
+        "mins": 120,
+        "xg": 0.0,
+        "xa": 0.0005,
+        "goals": 0,
+        "weight": 20
+      },
+      {
         "event_id": 12813019,
         "mins": 90,
         "xg": 0.0,
@@ -22538,8 +22754,8 @@
     ],
     "form": {
       "form_xg_90": 0.0,
-      "form_xa_90": 0.0001,
-      "n": 14
+      "form_xa_90": 0.0003,
+      "n": 15
     },
     "v2": true
   },
@@ -22724,6 +22940,14 @@
     "team": "Brazil",
     "matches": [
       {
+        "event_id": 12813006,
+        "mins": 90,
+        "xg": 0.1705,
+        "xa": 0.2493,
+        "goals": 0,
+        "weight": 20
+      },
+      {
         "event_id": 12813012,
         "mins": 90,
         "xg": 0.3631,
@@ -22883,9 +23107,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.6505,
-      "form_xa_90": 0.2203,
-      "n": 14
+      "form_xg_90": 0.4101,
+      "form_xa_90": 0.2349,
+      "n": 15
     },
     "v2": true
   },
@@ -22893,6 +23117,14 @@
     "name": "Neymar",
     "team": "Brazil",
     "matches": [
+      {
+        "event_id": 12813006,
+        "mins": 23,
+        "xg": 0.8069,
+        "xa": 0.0148,
+        "goals": 1,
+        "weight": 20
+      },
       {
         "event_id": 15186861,
         "mins": 14,
@@ -23023,9 +23255,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.4783,
-      "form_xa_90": 0.1941,
-      "n": 10
+      "form_xg_90": 2.7857,
+      "form_xa_90": 0.0768,
+      "n": 11
     },
     "v2": true
   },
@@ -23033,6 +23265,14 @@
     "name": "Endrick",
     "team": "Brazil",
     "matches": [
+      {
+        "event_id": 12813006,
+        "mins": 32,
+        "xg": 0.5798,
+        "xa": 0.0,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12813012,
         "mins": 45,
@@ -23193,9 +23433,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.1294,
-      "form_xa_90": 0.0161,
-      "n": 7
+      "form_xg_90": 0.9409,
+      "form_xa_90": 0.0074,
+      "n": 8
     },
     "v2": true
   },
@@ -23203,6 +23443,14 @@
     "name": "Matheus Cunha",
     "team": "Brazil",
     "matches": [
+      {
+        "event_id": 12813006,
+        "mins": 58,
+        "xg": 0.031,
+        "xa": 0.0037,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12813012,
         "mins": 66,
@@ -23363,9 +23611,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.3131,
-      "form_xa_90": 0.0607,
-      "n": 14
+      "form_xg_90": 0.1804,
+      "form_xa_90": 0.0332,
+      "n": 15
     },
     "v2": true
   },
@@ -23373,6 +23621,14 @@
     "name": "Gabriel Martinelli",
     "team": "Brazil",
     "matches": [
+      {
+        "event_id": 12813006,
+        "mins": 67,
+        "xg": 0.0,
+        "xa": 0.1144,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12813012,
         "mins": 24,
@@ -23533,9 +23789,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 1.2209,
-      "form_xa_90": 0.1326,
-      "n": 11
+      "form_xg_90": 0.6058,
+      "form_xa_90": 0.1432,
+      "n": 12
     },
     "v2": true
   },
@@ -23768,6 +24024,14 @@
     "team": "Brazil",
     "matches": [
       {
+        "event_id": 12813006,
+        "mins": 90,
+        "xg": 0.0212,
+        "xa": 0.0468,
+        "goals": 0,
+        "weight": 20
+      },
+      {
         "event_id": 12813012,
         "mins": 89,
         "xg": 0.6158,
@@ -23927,9 +24191,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.4502,
-      "form_xa_90": 0.0865,
-      "n": 14
+      "form_xg_90": 0.2353,
+      "form_xa_90": 0.0666,
+      "n": 15
     },
     "v2": true
   },
@@ -24108,6 +24372,14 @@
     "team": "Brazil",
     "matches": [
       {
+        "event_id": 12813006,
+        "mins": 67,
+        "xg": 0.0913,
+        "xa": 0.0761,
+        "goals": 0,
+        "weight": 20
+      },
+      {
         "event_id": 12813012,
         "mins": 90,
         "xg": 0.0684,
@@ -24171,9 +24443,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.1458,
-      "form_xa_90": 0.1038,
-      "n": 5
+      "form_xg_90": 0.1338,
+      "form_xa_90": 0.103,
+      "n": 6
     },
     "v2": true
   },
@@ -24181,6 +24453,14 @@
     "name": "Bruno Guimarães",
     "team": "Brazil",
     "matches": [
+      {
+        "event_id": 12813006,
+        "mins": 79,
+        "xg": 0.8144,
+        "xa": 0.0845,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12813012,
         "mins": 89,
@@ -24341,9 +24621,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.1489,
-      "form_xa_90": 0.2964,
-      "n": 14
+      "form_xg_90": 0.5391,
+      "form_xa_90": 0.1961,
+      "n": 15
     },
     "v2": true
   },
@@ -24602,6 +24882,14 @@
     "team": "Brazil",
     "matches": [
       {
+        "event_id": 12813006,
+        "mins": 23,
+        "xg": 0.0,
+        "xa": 0.0366,
+        "goals": 0,
+        "weight": 20
+      },
+      {
         "event_id": 15186856,
         "mins": 9,
         "xg": 0.0,
@@ -24661,9 +24949,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.8162,
-      "form_xa_90": 0.2185,
-      "n": 2
+      "form_xg_90": 0.039,
+      "form_xa_90": 0.1468,
+      "n": 3
     },
     "v2": true
   },
@@ -24769,6 +25057,14 @@
     "name": "Gabriel Magalhães",
     "team": "Brazil",
     "matches": [
+      {
+        "event_id": 12813006,
+        "mins": 90,
+        "xg": 0.0,
+        "xa": 0.0178,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12813012,
         "mins": 90,
@@ -24929,9 +25225,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.0099,
-      "form_xa_90": 0.2987,
-      "n": 14
+      "form_xg_90": 0.0049,
+      "form_xa_90": 0.158,
+      "n": 15
     },
     "v2": true
   },
@@ -24939,6 +25235,14 @@
     "name": "Marquinhos",
     "team": "Brazil",
     "matches": [
+      {
+        "event_id": 12813006,
+        "mins": 90,
+        "xg": 0.0,
+        "xa": 0.0065,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12813012,
         "mins": 90,
@@ -25099,9 +25403,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.0082,
-      "form_xa_90": 0.107,
-      "n": 14
+      "form_xg_90": 0.0041,
+      "form_xa_90": 0.0566,
+      "n": 15
     },
     "v2": true
   },
@@ -25109,6 +25413,14 @@
     "name": "Danilo",
     "team": "Brazil",
     "matches": [
+      {
+        "event_id": 12813006,
+        "mins": 90,
+        "xg": 0.0713,
+        "xa": 0.0339,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12813012,
         "mins": 90,
@@ -25269,9 +25581,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.0008,
-      "form_xa_90": 0.1689,
-      "n": 13
+      "form_xg_90": 0.0363,
+      "form_xa_90": 0.1009,
+      "n": 14
     },
     "v2": true
   },
@@ -25546,6 +25858,14 @@
     "team": "Brazil",
     "matches": [
       {
+        "event_id": 12813006,
+        "mins": 90,
+        "xg": 0.0,
+        "xa": 0.0252,
+        "goals": 0,
+        "weight": 20
+      },
+      {
         "event_id": 12813012,
         "mins": 90,
         "xg": 0.0,
@@ -25645,9 +25965,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.0144,
-      "form_xa_90": 0.2409,
-      "n": 9
+      "form_xg_90": 0.0071,
+      "form_xa_90": 0.1315,
+      "n": 10
     },
     "v2": true
   },
@@ -25737,6 +26057,14 @@
     "name": "Alisson",
     "team": "Brazil",
     "matches": [
+      {
+        "event_id": 12813006,
+        "mins": 90,
+        "xg": 0.0,
+        "xa": 0.0011,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12813012,
         "mins": 90,
@@ -25898,8 +26226,8 @@
     ],
     "form": {
       "form_xg_90": 0.0,
-      "form_xa_90": 0.001,
-      "n": 14
+      "form_xa_90": 0.0011,
+      "n": 15
     },
     "v2": true
   },
@@ -26257,6 +26585,14 @@
     "team": "Morocco",
     "matches": [
       {
+        "event_id": 12813009,
+        "mins": 68,
+        "xg": 0.5814,
+        "xa": 0.0076,
+        "goals": 1,
+        "weight": 20
+      },
+      {
         "event_id": 12812998,
         "mins": 34,
         "xg": 0.7439,
@@ -26416,9 +26752,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 1.7025,
-      "form_xa_90": 0.2448,
-      "n": 8
+      "form_xg_90": 1.1875,
+      "form_xa_90": 0.1152,
+      "n": 9
     },
     "v2": true
   },
@@ -26472,6 +26808,14 @@
     "name": "Brahim Díaz",
     "team": "Morocco",
     "matches": [
+      {
+        "event_id": 12813009,
+        "mins": 90,
+        "xg": 0.0,
+        "xa": 0.1269,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12812998,
         "mins": 79,
@@ -26632,9 +26976,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.0666,
-      "form_xa_90": 0.1292,
-      "n": 13
+      "form_xg_90": 0.0329,
+      "form_xa_90": 0.128,
+      "n": 14
     },
     "v2": true
   },
@@ -26774,6 +27118,14 @@
     "name": "Azzedine Ounahi",
     "team": "Morocco",
     "matches": [
+      {
+        "event_id": 12813009,
+        "mins": 87,
+        "xg": 0.2355,
+        "xa": 0.0656,
+        "goals": 2,
+        "weight": 20
+      },
       {
         "event_id": 12812998,
         "mins": 86,
@@ -26934,9 +27286,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.0455,
-      "form_xa_90": 0.3142,
-      "n": 13
+      "form_xg_90": 0.145,
+      "form_xa_90": 0.1905,
+      "n": 14
     },
     "v2": true
   },
@@ -26944,6 +27296,14 @@
     "name": "Bilal El Khannouss",
     "team": "Morocco",
     "matches": [
+      {
+        "event_id": 12813009,
+        "mins": 63,
+        "xg": 0.0,
+        "xa": 0.0076,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12812998,
         "mins": 87,
@@ -27104,9 +27464,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.0659,
-      "form_xa_90": 0.0922,
-      "n": 10
+      "form_xg_90": 0.0325,
+      "form_xa_90": 0.0509,
+      "n": 11
     },
     "v2": true
   },
@@ -27114,6 +27474,14 @@
     "name": "Sofyan Amrabat",
     "team": "Morocco",
     "matches": [
+      {
+        "event_id": 12813009,
+        "mins": 27,
+        "xg": 0.0,
+        "xa": 0.0004,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 15186864,
         "mins": 94,
@@ -27266,9 +27634,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.0013,
-      "form_xa_90": 0.0239,
-      "n": 13
+      "form_xg_90": 0.0004,
+      "form_xa_90": 0.0079,
+      "n": 14
     },
     "v2": true
   },
@@ -27276,6 +27644,14 @@
     "name": "Ismael Saibari",
     "team": "Morocco",
     "matches": [
+      {
+        "event_id": 12813009,
+        "mins": 22,
+        "xg": 0.0,
+        "xa": 0.0,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12812998,
         "mins": 120,
@@ -27436,9 +27812,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.2252,
-      "form_xa_90": 0.2125,
-      "n": 13
+      "form_xg_90": 0.1122,
+      "form_xa_90": 0.1059,
+      "n": 14
     },
     "v2": true
   },
@@ -27446,6 +27822,14 @@
     "name": "Neil El Aynaoui",
     "team": "Morocco",
     "matches": [
+      {
+        "event_id": 12813009,
+        "mins": 90,
+        "xg": 0.0,
+        "xa": 0.0025,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12812998,
         "mins": 120,
@@ -27606,9 +27990,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.0981,
-      "form_xa_90": 0.0708,
-      "n": 14
+      "form_xg_90": 0.049,
+      "form_xa_90": 0.0366,
+      "n": 15
     },
     "v2": true
   },
@@ -27616,6 +28000,14 @@
     "name": "Chemsdine Talbi",
     "team": "Morocco",
     "matches": [
+      {
+        "event_id": 12813009,
+        "mins": 27,
+        "xg": 0.0,
+        "xa": 0.0048,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12812998,
         "mins": 33,
@@ -27709,8 +28101,8 @@
     ],
     "form": {
       "form_xg_90": 0.0,
-      "form_xa_90": 0.2746,
-      "n": 3
+      "form_xa_90": 0.1278,
+      "n": 4
     },
     "v2": true
   },
@@ -27805,6 +28197,14 @@
     "team": "Morocco",
     "matches": [
       {
+        "event_id": 12813009,
+        "mins": 63,
+        "xg": 0.0,
+        "xa": 0.0013,
+        "goals": 0,
+        "weight": 20
+      },
+      {
         "event_id": 12812998,
         "mins": 79,
         "xg": 0.0651,
@@ -27848,9 +28248,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.0578,
-      "form_xa_90": 0.0109,
-      "n": 4
+      "form_xg_90": 0.0267,
+      "form_xa_90": 0.006,
+      "n": 5
     },
     "v2": true
   },
@@ -27858,6 +28258,14 @@
     "name": "Samir El Mourabet",
     "team": "Morocco",
     "matches": [
+      {
+        "event_id": 12813009,
+        "mins": 13,
+        "xg": 0.0,
+        "xa": 0.0016,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12812998,
         "mins": 41,
@@ -27944,6 +28352,14 @@
     "name": "Achraf Hakimi",
     "team": "Morocco",
     "matches": [
+      {
+        "event_id": 12813009,
+        "mins": 90,
+        "xg": 0.0,
+        "xa": 0.0313,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12812998,
         "mins": 120,
@@ -28104,9 +28520,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.3053,
-      "form_xa_90": 0.2138,
-      "n": 13
+      "form_xg_90": 0.1521,
+      "form_xa_90": 0.1222,
+      "n": 14
     },
     "v2": true
   },
@@ -28114,6 +28530,14 @@
     "name": "Noussair Mazraoui",
     "team": "Morocco",
     "matches": [
+      {
+        "event_id": 12813009,
+        "mins": 90,
+        "xg": 0.0,
+        "xa": 0.0035,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12812998,
         "mins": 120,
@@ -28274,9 +28698,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.0032,
-      "form_xa_90": 0.0273,
-      "n": 13
+      "form_xg_90": 0.0015,
+      "form_xa_90": 0.0147,
+      "n": 14
     },
     "v2": true
   },
@@ -28661,6 +29085,14 @@
     "team": "Morocco",
     "matches": [
       {
+        "event_id": 12813009,
+        "mins": 87,
+        "xg": 0.0,
+        "xa": 0.0016,
+        "goals": 0,
+        "weight": 20
+      },
+      {
         "event_id": 12812998,
         "mins": 120,
         "xg": 0.1783,
@@ -28728,9 +29160,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.0979,
-      "form_xa_90": 0.0067,
-      "n": 6
+      "form_xg_90": 0.0463,
+      "form_xa_90": 0.0041,
+      "n": 7
     },
     "v2": true
   },
@@ -28951,6 +29383,14 @@
     "team": "Morocco",
     "matches": [
       {
+        "event_id": 12813009,
+        "mins": 90,
+        "xg": 0.0,
+        "xa": 0.0009,
+        "goals": 0,
+        "weight": 20
+      },
+      {
         "event_id": 15186864,
         "mins": 90,
         "xg": 0.0,
@@ -29006,9 +29446,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.0124,
-      "form_xa_90": 0.0053,
-      "n": 5
+      "form_xg_90": 0.0032,
+      "form_xa_90": 0.002,
+      "n": 6
     },
     "v2": true
   },
@@ -29016,6 +29456,14 @@
     "name": "Bono",
     "team": "Morocco",
     "matches": [
+      {
+        "event_id": 12813009,
+        "mins": 90,
+        "xg": 0.0,
+        "xa": 0.0001,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12812998,
         "mins": 120,
@@ -29178,7 +29626,7 @@
     "form": {
       "form_xg_90": 0.0,
       "form_xa_90": 0.0002,
-      "n": 14
+      "n": 15
     },
     "v2": true
   },
@@ -35181,6 +35629,14 @@
     "team": "Portugal",
     "matches": [
       {
+        "event_id": 12812990,
+        "mins": 90,
+        "xg": 0.2838,
+        "xa": 0.0066,
+        "goals": 0,
+        "weight": 20
+      },
+      {
         "event_id": 12812997,
         "mins": 81,
         "xg": 0.82,
@@ -35334,9 +35790,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.8516,
-      "form_xa_90": 0.0233,
-      "n": 14
+      "form_xg_90": 0.5671,
+      "form_xa_90": 0.0149,
+      "n": 15
     },
     "v2": true
   },
@@ -35344,6 +35800,14 @@
     "name": "João Félix",
     "team": "Portugal",
     "matches": [
+      {
+        "event_id": 12812990,
+        "mins": 71,
+        "xg": 0.0,
+        "xa": 0.077,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 15186696,
         "mins": 70,
@@ -35490,9 +35954,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.3735,
-      "form_xa_90": 0.0829,
-      "n": 10
+      "form_xg_90": 0.1064,
+      "form_xa_90": 0.0934,
+      "n": 11
     },
     "v2": true
   },
@@ -35500,6 +35964,14 @@
     "name": "Rafael Leão",
     "team": "Portugal",
     "matches": [
+      {
+        "event_id": 12812990,
+        "mins": 19,
+        "xg": 0.0,
+        "xa": 0.0026,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12812997,
         "mins": 90,
@@ -35813,6 +36285,14 @@
     "team": "Portugal",
     "matches": [
       {
+        "event_id": 12812990,
+        "mins": 16,
+        "xg": 0.0,
+        "xa": 0.2542,
+        "goals": 0,
+        "weight": 20
+      },
+      {
         "event_id": 12812997,
         "mins": 27,
         "xg": 0.04,
@@ -35969,6 +36449,14 @@
     "team": "Portugal",
     "matches": [
       {
+        "event_id": 12812990,
+        "mins": 90,
+        "xg": 0.0333,
+        "xa": 0.0784,
+        "goals": 0,
+        "weight": 20
+      },
+      {
         "event_id": 12812997,
         "mins": 63,
         "xg": 0.53,
@@ -36122,9 +36610,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.5724,
-      "form_xa_90": 0.1707,
-      "n": 14
+      "form_xg_90": 0.3023,
+      "form_xa_90": 0.1245,
+      "n": 15
     },
     "v2": true
   },
@@ -36132,6 +36620,14 @@
     "name": "Bernardo Silva",
     "team": "Portugal",
     "matches": [
+      {
+        "event_id": 12812990,
+        "mins": 16,
+        "xg": 0.161,
+        "xa": 0.0037,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12812997,
         "mins": 28,
@@ -36289,6 +36785,14 @@
     "team": "Portugal",
     "matches": [
       {
+        "event_id": 12812990,
+        "mins": 83,
+        "xg": 0.0274,
+        "xa": 0.0181,
+        "goals": 0,
+        "weight": 20
+      },
+      {
         "event_id": 12812997,
         "mins": 62,
         "xg": 0.03,
@@ -36442,9 +36946,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.0444,
-      "form_xa_90": 0.0635,
-      "n": 14
+      "form_xg_90": 0.037,
+      "form_xa_90": 0.0415,
+      "n": 15
     },
     "v2": true
   },
@@ -36452,6 +36956,14 @@
     "name": "João Neves",
     "team": "Portugal",
     "matches": [
+      {
+        "event_id": 12812990,
+        "mins": 90,
+        "xg": 0.0572,
+        "xa": 0.0164,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12812997,
         "mins": 90,
@@ -36606,9 +37118,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.0977,
-      "form_xa_90": 0.1058,
-      "n": 14
+      "form_xg_90": 0.0774,
+      "form_xa_90": 0.061,
+      "n": 15
     },
     "v2": true
   },
@@ -36616,6 +37128,14 @@
     "name": "Pedro Neto",
     "team": "Portugal",
     "matches": [
+      {
+        "event_id": 12812990,
+        "mins": 83,
+        "xg": 0.007,
+        "xa": 0.0683,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12812997,
         "mins": 63,
@@ -36770,9 +37290,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.0145,
-      "form_xa_90": 0.0704,
-      "n": 14
+      "form_xg_90": 0.011,
+      "form_xa_90": 0.0723,
+      "n": 15
     },
     "v2": true
   },
@@ -37193,6 +37713,14 @@
     "team": "Portugal",
     "matches": [
       {
+        "event_id": 12812990,
+        "mins": 71,
+        "xg": 0.0318,
+        "xa": 0.0078,
+        "goals": 0,
+        "weight": 20
+      },
+      {
         "event_id": 12812997,
         "mins": 63,
         "xg": 0.04,
@@ -37346,9 +37874,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.0602,
-      "form_xa_90": 0.0851,
-      "n": 14
+      "form_xg_90": 0.0502,
+      "form_xa_90": 0.0474,
+      "n": 15
     },
     "v2": true
   },
@@ -37356,6 +37884,14 @@
     "name": "Nuno Mendes",
     "team": "Portugal",
     "matches": [
+      {
+        "event_id": 12812990,
+        "mins": 56,
+        "xg": 0.03,
+        "xa": 0.0036,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12812997,
         "mins": 90,
@@ -37510,9 +38046,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.027,
-      "form_xa_90": 0.3812,
-      "n": 14
+      "form_xg_90": 0.0376,
+      "form_xa_90": 0.1931,
+      "n": 15
     },
     "v2": true
   },
@@ -37520,6 +38056,14 @@
     "name": "Rúben Dias",
     "team": "Portugal",
     "matches": [
+      {
+        "event_id": 12812990,
+        "mins": 90,
+        "xg": 0.0,
+        "xa": 0.0118,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12812997,
         "mins": 90,
@@ -37674,9 +38218,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.0031,
-      "form_xa_90": 0.0313,
-      "n": 14
+      "form_xg_90": 0.0016,
+      "form_xa_90": 0.0215,
+      "n": 15
     },
     "v2": true
   },
@@ -37684,6 +38228,14 @@
     "name": "Diogo Dalot",
     "team": "Portugal",
     "matches": [
+      {
+        "event_id": 12812990,
+        "mins": 19,
+        "xg": 0.0,
+        "xa": 0.0055,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 15186696,
         "mins": 45,
@@ -37957,6 +38509,14 @@
     "team": "Portugal",
     "matches": [
       {
+        "event_id": 12812990,
+        "mins": 90,
+        "xg": 0.0,
+        "xa": 0.0055,
+        "goals": 0,
+        "weight": 20
+      },
+      {
         "event_id": 12812997,
         "mins": 90,
         "xg": 0.42,
@@ -38110,9 +38670,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.2899,
-      "form_xa_90": 0.0126,
-      "n": 14
+      "form_xg_90": 0.1447,
+      "form_xa_90": 0.0091,
+      "n": 15
     },
     "v2": true
   },
@@ -38120,6 +38680,14 @@
     "name": "Nélson Semedo",
     "team": "Portugal",
     "matches": [
+      {
+        "event_id": 12812990,
+        "mins": 34,
+        "xg": 0.0,
+        "xa": 0.0043,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12812997,
         "mins": 27,
@@ -38266,9 +38834,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.0102,
-      "form_xa_90": 0.0269,
-      "n": 11
+      "form_xg_90": 0.0047,
+      "form_xa_90": 0.0186,
+      "n": 12
     },
     "v2": true
   },
@@ -38473,6 +39041,14 @@
     "team": "Portugal",
     "matches": [
       {
+        "event_id": 12812990,
+        "mins": 90,
+        "xg": 0.0,
+        "xa": 0.0003,
+        "goals": 0,
+        "weight": 20
+      },
+      {
         "event_id": 12812997,
         "mins": 90,
         "xg": 0.0,
@@ -38627,8 +39203,8 @@
     ],
     "form": {
       "form_xg_90": 0.0,
-      "form_xa_90": 0.0008,
-      "n": 14
+      "form_xa_90": 0.0005,
+      "n": 15
     },
     "v2": true
   },
@@ -42361,6 +42937,14 @@
     "team": "Colombia",
     "matches": [
       {
+        "event_id": 12812991,
+        "mins": 82,
+        "xg": 0.098,
+        "xa": 0.0041,
+        "goals": 0,
+        "weight": 20
+      },
+      {
         "event_id": 12813011,
         "mins": 82,
         "xg": 0.08,
@@ -42478,9 +43062,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.1934,
-      "form_xa_90": 0.1035,
-      "n": 11
+      "form_xg_90": 0.1502,
+      "form_xa_90": 0.0536,
+      "n": 12
     },
     "v2": true
   },
@@ -42488,6 +43072,14 @@
     "name": "Cucho Hernández",
     "team": "Colombia",
     "matches": [
+      {
+        "event_id": 12812991,
+        "mins": 38,
+        "xg": 0.0662,
+        "xa": 0.01,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 15186722,
         "mins": 10,
@@ -42558,9 +43150,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.1611,
-      "form_xa_90": 0.0878,
-      "n": 4
+      "form_xg_90": 0.1572,
+      "form_xa_90": 0.0295,
+      "n": 5
     },
     "v2": true
   },
@@ -42733,6 +43325,14 @@
     "team": "Colombia",
     "matches": [
       {
+        "event_id": 12812991,
+        "mins": 120,
+        "xg": 0.219,
+        "xa": 0.0373,
+        "goals": 0,
+        "weight": 20
+      },
+      {
         "event_id": 12813011,
         "mins": 89,
         "xg": 0.53,
@@ -42886,9 +43486,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.4651,
-      "form_xa_90": 0.106,
-      "n": 14
+      "form_xg_90": 0.3144,
+      "form_xa_90": 0.0669,
+      "n": 15
     },
     "v2": true
   },
@@ -42896,6 +43496,14 @@
     "name": "James Rodríguez",
     "team": "Colombia",
     "matches": [
+      {
+        "event_id": 12812991,
+        "mins": 66,
+        "xg": 0.0,
+        "xa": 0.0158,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12813011,
         "mins": 45,
@@ -43050,9 +43658,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.0604,
-      "form_xa_90": 0.1329,
-      "n": 14
+      "form_xg_90": 0.0301,
+      "form_xa_90": 0.0771,
+      "n": 15
     },
     "v2": true
   },
@@ -43060,6 +43668,14 @@
     "name": "Richard Ríos",
     "team": "Colombia",
     "matches": [
+      {
+        "event_id": 12812991,
+        "mins": 38,
+        "xg": 0.0184,
+        "xa": 0.06,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12813011,
         "mins": 45,
@@ -43214,9 +43830,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.7137,
-      "form_xa_90": 0.0228,
-      "n": 10
+      "form_xg_90": 0.3487,
+      "form_xa_90": 0.0878,
+      "n": 11
     },
     "v2": true
   },
@@ -43224,6 +43840,14 @@
     "name": "Jhon Arias",
     "team": "Colombia",
     "matches": [
+      {
+        "event_id": 12812991,
+        "mins": 66,
+        "xg": 0.0475,
+        "xa": 0.0048,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12813011,
         "mins": 73,
@@ -43378,9 +44002,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.4335,
-      "form_xa_90": 0.0665,
-      "n": 12
+      "form_xg_90": 0.2475,
+      "form_xa_90": 0.0363,
+      "n": 13
     },
     "v2": true
   },
@@ -43528,6 +44152,14 @@
     "name": "Juan Fernando Quintero",
     "team": "Colombia",
     "matches": [
+      {
+        "event_id": 12812991,
+        "mins": 54,
+        "xg": 0.0203,
+        "xa": 0.2077,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12813011,
         "mins": 17,
@@ -43682,9 +44314,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.1011,
-      "form_xa_90": 0.2496,
-      "n": 9
+      "form_xg_90": 0.0453,
+      "form_xa_90": 0.3297,
+      "n": 10
     },
     "v2": true
   },
@@ -43692,6 +44324,14 @@
     "name": "Daniel Muñoz",
     "team": "Colombia",
     "matches": [
+      {
+        "event_id": 12812991,
+        "mins": 120,
+        "xg": 0.0,
+        "xa": 0.0055,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12813011,
         "mins": 90,
@@ -43846,9 +44486,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.0663,
-      "form_xa_90": 0.2601,
-      "n": 12
+      "form_xg_90": 0.031,
+      "form_xa_90": 0.1237,
+      "n": 13
     },
     "v2": true
   },
@@ -43960,6 +44600,14 @@
     "name": "Jefferson Lerma",
     "team": "Colombia",
     "matches": [
+      {
+        "event_id": 12812991,
+        "mins": 82,
+        "xg": 0.0,
+        "xa": 0.0186,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12813011,
         "mins": 90,
@@ -44114,9 +44762,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.0318,
-      "form_xa_90": 0.0464,
-      "n": 12
+      "form_xg_90": 0.0157,
+      "form_xa_90": 0.0332,
+      "n": 13
     },
     "v2": true
   },
@@ -44273,6 +44921,14 @@
     "team": "Colombia",
     "matches": [
       {
+        "event_id": 12812991,
+        "mins": 120,
+        "xg": 0.1032,
+        "xa": 0.0153,
+        "goals": 0,
+        "weight": 20
+      },
+      {
         "event_id": 12813011,
         "mins": 90,
         "xg": 0.05,
@@ -44366,9 +45022,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.0786,
-      "form_xa_90": 0.1687,
-      "n": 8
+      "form_xg_90": 0.078,
+      "form_xa_90": 0.0885,
+      "n": 9
     },
     "v2": true
   },
@@ -44376,6 +45032,14 @@
     "name": "Jaminton Campaz",
     "team": "Colombia",
     "matches": [
+      {
+        "event_id": 12812991,
+        "mins": 54,
+        "xg": 0.3612,
+        "xa": 0.0036,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12813011,
         "mins": 8,
@@ -44490,9 +45154,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.4268,
-      "form_xa_90": 0.0512,
-      "n": 7
+      "form_xg_90": 0.5839,
+      "form_xa_90": 0.0107,
+      "n": 8
     },
     "v2": true
   },
@@ -44628,6 +45292,14 @@
     "name": "Davinson Sánchez",
     "team": "Colombia",
     "matches": [
+      {
+        "event_id": 12812991,
+        "mins": 120,
+        "xg": 0.0514,
+        "xa": 0.0047,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12813011,
         "mins": 90,
@@ -44782,9 +45454,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.2472,
-      "form_xa_90": 0.0245,
-      "n": 14
+      "form_xg_90": 0.1427,
+      "form_xa_90": 0.014,
+      "n": 15
     },
     "v2": true
   },
@@ -44792,6 +45464,14 @@
     "name": "Yerry Mina",
     "team": "Colombia",
     "matches": [
+      {
+        "event_id": 12812991,
+        "mins": 1,
+        "xg": 0.0,
+        "xa": 0.0,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 15186722,
         "mins": 1089,
@@ -44932,6 +45612,14 @@
     "name": "Jhon Lucumí",
     "team": "Colombia",
     "matches": [
+      {
+        "event_id": 12812991,
+        "mins": 119,
+        "xg": 0.1028,
+        "xa": 0.0017,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12813011,
         "mins": 90,
@@ -45086,9 +45774,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.008,
-      "form_xa_90": 0.0098,
-      "n": 14
+      "form_xg_90": 0.043,
+      "form_xa_90": 0.0055,
+      "n": 15
     },
     "v2": true
   },
@@ -45096,6 +45784,14 @@
     "name": "Johan Mojica",
     "team": "Colombia",
     "matches": [
+      {
+        "event_id": 12812991,
+        "mins": 120,
+        "xg": 0.0,
+        "xa": 0.0316,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12813011,
         "mins": 90,
@@ -45242,9 +45938,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.1496,
-      "form_xa_90": 0.0209,
-      "n": 13
+      "form_xg_90": 0.0728,
+      "form_xa_90": 0.0224,
+      "n": 14
     },
     "v2": true
   },
@@ -45689,6 +46385,14 @@
     "team": "Colombia",
     "matches": [
       {
+        "event_id": 12812991,
+        "mins": 120,
+        "xg": 0.0,
+        "xa": 0.0026,
+        "goals": 0,
+        "weight": 20
+      },
+      {
         "event_id": 12813011,
         "mins": 90,
         "xg": 0.0,
@@ -45843,8 +46547,8 @@
     ],
     "form": {
       "form_xg_90": 0.0,
-      "form_xa_90": 0.0014,
-      "n": 14
+      "form_xa_90": 0.0017,
+      "n": 15
     },
     "v2": true
   },
@@ -46085,6 +46789,14 @@
     "team": "England",
     "matches": [
       {
+        "event_id": 12813007,
+        "mins": 89,
+        "xg": 0.7884,
+        "xa": 0.6694,
+        "goals": 1,
+        "weight": 20
+      },
+      {
         "event_id": 12813020,
         "mins": 90,
         "xg": 0.5426,
@@ -46238,9 +46950,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.5854,
-      "form_xa_90": 0.0527,
-      "n": 14
+      "form_xg_90": 0.6915,
+      "form_xa_90": 0.3654,
+      "n": 15
     },
     "v2": true
   },
@@ -46248,6 +46960,14 @@
     "name": "Bukayo Saka",
     "team": "England",
     "matches": [
+      {
+        "event_id": 12813007,
+        "mins": 57,
+        "xg": 0.0,
+        "xa": 0.3167,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12813020,
         "mins": 29,
@@ -46402,9 +47122,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.0985,
-      "form_xa_90": 0.061,
-      "n": 13
+      "form_xg_90": 0.0474,
+      "form_xa_90": 0.2887,
+      "n": 14
     },
     "v2": true
   },
@@ -46412,6 +47132,14 @@
     "name": "Anthony Gordon",
     "team": "England",
     "matches": [
+      {
+        "event_id": 12813007,
+        "mins": 90,
+        "xg": 0.0385,
+        "xa": 0.0217,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12813020,
         "mins": 29,
@@ -46558,9 +47286,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.145,
-      "form_xa_90": 0.5631,
-      "n": 11
+      "form_xg_90": 0.09,
+      "form_xa_90": 0.2834,
+      "n": 12
     },
     "v2": true
   },
@@ -46821,6 +47549,14 @@
     "team": "England",
     "matches": [
       {
+        "event_id": 12813007,
+        "mins": 90,
+        "xg": 0.7287,
+        "xa": 0.0521,
+        "goals": 2,
+        "weight": 20
+      },
+      {
         "event_id": 12813020,
         "mins": 90,
         "xg": 0.6575,
@@ -46974,9 +47710,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.5201,
-      "form_xa_90": 0.2889,
-      "n": 13
+      "form_xg_90": 0.6253,
+      "form_xa_90": 0.1695,
+      "n": 14
     },
     "v2": true
   },
@@ -46984,6 +47720,14 @@
     "name": "Declan Rice",
     "team": "England",
     "matches": [
+      {
+        "event_id": 12813007,
+        "mins": 90,
+        "xg": 0.0,
+        "xa": 0.0064,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12813020,
         "mins": 89,
@@ -47130,9 +47874,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.0398,
-      "form_xa_90": 0.2757,
-      "n": 12
+      "form_xg_90": 0.0193,
+      "form_xa_90": 0.137,
+      "n": 13
     },
     "v2": true
   },
@@ -47609,6 +48353,14 @@
     "team": "England",
     "matches": [
       {
+        "event_id": 12813007,
+        "mins": 13,
+        "xg": 0.0,
+        "xa": 0.0,
+        "goals": 0,
+        "weight": 20
+      },
+      {
         "event_id": 15186676,
         "mins": 90,
         "xg": 0.0,
@@ -47765,6 +48517,14 @@
     "team": "England",
     "matches": [
       {
+        "event_id": 12813007,
+        "mins": 75,
+        "xg": 0.0,
+        "xa": 0.0035,
+        "goals": 0,
+        "weight": 20
+      },
+      {
         "event_id": 12813020,
         "mins": 90,
         "xg": 0.0374,
@@ -47882,9 +48642,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.0555,
-      "form_xa_90": 0.1689,
-      "n": 10
+      "form_xg_90": 0.0273,
+      "form_xa_90": 0.0853,
+      "n": 11
     },
     "v2": true
   },
@@ -48189,6 +48949,14 @@
     "team": "England",
     "matches": [
       {
+        "event_id": 12813007,
+        "mins": 74,
+        "xg": 0.0574,
+        "xa": 0.0054,
+        "goals": 0,
+        "weight": 20
+      },
+      {
         "event_id": 12813020,
         "mins": 90,
         "xg": 0.4396,
@@ -48258,9 +49026,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.408,
-      "form_xa_90": 0.0304,
-      "n": 7
+      "form_xg_90": 0.2349,
+      "form_xa_90": 0.0182,
+      "n": 8
     },
     "v2": true
   },
@@ -48268,6 +49036,14 @@
     "name": "Marc Guéhi",
     "team": "England",
     "matches": [
+      {
+        "event_id": 12813007,
+        "mins": 90,
+        "xg": 0.0,
+        "xa": 0.2263,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12813020,
         "mins": 90,
@@ -48422,9 +49198,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.0295,
-      "form_xa_90": 0.0753,
-      "n": 12
+      "form_xg_90": 0.0142,
+      "form_xa_90": 0.1538,
+      "n": 13
     },
     "v2": true
   },
@@ -48432,6 +49208,14 @@
     "name": "John Stones",
     "team": "England",
     "matches": [
+      {
+        "event_id": 12813007,
+        "mins": 33,
+        "xg": 0.0,
+        "xa": 0.0008,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 15186504,
         "mins": 87,
@@ -48563,8 +49347,8 @@
     ],
     "form": {
       "form_xg_90": 0.0,
-      "form_xa_90": 0.0321,
-      "n": 10
+      "form_xa_90": 0.0087,
+      "n": 11
     },
     "v2": true
   },
@@ -48572,6 +49356,14 @@
     "name": "Jarell Quansah",
     "team": "England",
     "matches": [
+      {
+        "event_id": 12813007,
+        "mins": 54,
+        "xg": 0.0,
+        "xa": 0.0012,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 15186676,
         "mins": 63,
@@ -48602,9 +49394,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.0104,
-      "form_xa_90": 0.0092,
-      "n": 3
+      "form_xg_90": 0.0021,
+      "form_xa_90": 0.0035,
+      "n": 4
     },
     "v2": true
   },
@@ -48684,6 +49476,14 @@
     "name": "Djed Spence",
     "team": "England",
     "matches": [
+      {
+        "event_id": 12813007,
+        "mins": 16,
+        "xg": 0.0,
+        "xa": 0.0,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12813020,
         "mins": 70,
@@ -48777,6 +49577,14 @@
     "team": "England",
     "matches": [
       {
+        "event_id": 12813007,
+        "mins": 15,
+        "xg": 0.0,
+        "xa": 0.0,
+        "goals": 0,
+        "weight": 20
+      },
+      {
         "event_id": 15186504,
         "mins": 1089,
         "xg": 0.0,
@@ -48868,6 +49676,14 @@
     "name": "Ezri Konsa",
     "team": "England",
     "matches": [
+      {
+        "event_id": 12813007,
+        "mins": 90,
+        "xg": 0.0,
+        "xa": 0.0022,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12813020,
         "mins": 90,
@@ -49022,9 +49838,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.052,
-      "form_xa_90": 0.0243,
-      "n": 13
+      "form_xg_90": 0.0258,
+      "form_xa_90": 0.0132,
+      "n": 14
     },
     "v2": true
   },
@@ -49064,6 +49880,14 @@
     "name": "Jordan Pickford",
     "team": "England",
     "matches": [
+      {
+        "event_id": 12813007,
+        "mins": 90,
+        "xg": 0.0,
+        "xa": 0.0105,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12813020,
         "mins": 90,
@@ -49219,8 +50043,8 @@
     ],
     "form": {
       "form_xg_90": 0.0,
-      "form_xa_90": 0.0018,
-      "n": 14
+      "form_xa_90": 0.0062,
+      "n": 15
     },
     "v2": true
   },
@@ -69298,6 +70122,14 @@
     "team": "USA",
     "matches": [
       {
+        "event_id": 12813002,
+        "mins": 59,
+        "xg": 0.0,
+        "xa": 0.0197,
+        "goals": 0,
+        "weight": 20
+      },
+      {
         "event_id": 12812992,
         "mins": 88,
         "xg": 0.0869,
@@ -69449,9 +70281,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.2898,
-      "form_xa_90": 0.1333,
-      "n": 12
+      "form_xg_90": 0.1402,
+      "form_xa_90": 0.08,
+      "n": 13
     },
     "v2": true
   },
@@ -69459,6 +70291,14 @@
     "name": "Folarin Balogun",
     "team": "USA",
     "matches": [
+      {
+        "event_id": 12813002,
+        "mins": 89,
+        "xg": 0.4288,
+        "xa": 0.0049,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12812992,
         "mins": 64,
@@ -69611,9 +70451,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.7373,
-      "form_xa_90": 0.0309,
-      "n": 13
+      "form_xg_90": 0.5814,
+      "form_xa_90": 0.0176,
+      "n": 14
     },
     "v2": true
   },
@@ -69621,6 +70461,14 @@
     "name": "Ricardo Pepi",
     "team": "USA",
     "matches": [
+      {
+        "event_id": 12813002,
+        "mins": 18,
+        "xg": 0.0,
+        "xa": 0.0011,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12812992,
         "mins": 12,
@@ -69791,6 +70639,14 @@
     "name": "Haji Wright",
     "team": "USA",
     "matches": [
+      {
+        "event_id": 12813002,
+        "mins": 1,
+        "xg": 0.0,
+        "xa": 0.0006,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 15186878,
         "mins": 1,
@@ -70108,6 +70964,14 @@
     "team": "USA",
     "matches": [
       {
+        "event_id": 12813002,
+        "mins": 90,
+        "xg": 0.0,
+        "xa": 0.0383,
+        "goals": 0,
+        "weight": 20
+      },
+      {
         "event_id": 12812992,
         "mins": 89,
         "xg": 0.0,
@@ -70267,9 +71131,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.0712,
-      "form_xa_90": 0.2515,
-      "n": 14
+      "form_xg_90": 0.0355,
+      "form_xa_90": 0.1447,
+      "n": 15
     },
     "v2": true
   },
@@ -70277,6 +71141,14 @@
     "name": "Malik Tillman",
     "team": "USA",
     "matches": [
+      {
+        "event_id": 12813002,
+        "mins": 90,
+        "xg": 0.0707,
+        "xa": 0.0475,
+        "goals": 1,
+        "weight": 20
+      },
       {
         "event_id": 12812992,
         "mins": 90,
@@ -70437,9 +71309,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.209,
-      "form_xa_90": 0.1498,
-      "n": 13
+      "form_xg_90": 0.136,
+      "form_xa_90": 0.0958,
+      "n": 14
     },
     "v2": true
   },
@@ -70447,6 +71319,14 @@
     "name": "Giovanni Reyna",
     "team": "USA",
     "matches": [
+      {
+        "event_id": 12813002,
+        "mins": 45,
+        "xg": 0.0,
+        "xa": 0.0106,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 15186887,
         "mins": 76,
@@ -70599,9 +71479,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.0918,
-      "form_xa_90": 0.0927,
-      "n": 10
+      "form_xg_90": 0.0161,
+      "form_xa_90": 0.0338,
+      "n": 11
     },
     "v2": true
   },
@@ -70609,6 +71489,14 @@
     "name": "Tyler Adams",
     "team": "USA",
     "matches": [
+      {
+        "event_id": 12813002,
+        "mins": 72,
+        "xg": 0.0,
+        "xa": 0.27,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12812992,
         "mins": 90,
@@ -70762,8 +71650,8 @@
     ],
     "form": {
       "form_xg_90": 0.0,
-      "form_xa_90": 0.0731,
-      "n": 13
+      "form_xa_90": 0.2088,
+      "n": 14
     },
     "v2": true
   },
@@ -71060,6 +71948,14 @@
     "team": "USA",
     "matches": [
       {
+        "event_id": 12813002,
+        "mins": 31,
+        "xg": 0.0576,
+        "xa": 0.1278,
+        "goals": 0,
+        "weight": 20
+      },
+      {
         "event_id": 12812992,
         "mins": 13,
         "xg": 0.0,
@@ -71219,9 +72115,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.0833,
-      "form_xa_90": 0.1898,
-      "n": 11
+      "form_xg_90": 0.1505,
+      "form_xa_90": 0.3349,
+      "n": 12
     },
     "v2": true
   },
@@ -71384,6 +72280,14 @@
     "team": "USA",
     "matches": [
       {
+        "event_id": 12813002,
+        "mins": 1,
+        "xg": 0.0,
+        "xa": 0.0,
+        "goals": 0,
+        "weight": 20
+      },
+      {
         "event_id": 15186878,
         "mins": 1089,
         "xg": 0.0,
@@ -71537,6 +72441,14 @@
     "name": "Sergiño Dest",
     "team": "USA",
     "matches": [
+      {
+        "event_id": 12813002,
+        "mins": 45,
+        "xg": 0.0,
+        "xa": 0.1219,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12812992,
         "mins": 87,
@@ -71697,9 +72609,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.0444,
-      "form_xa_90": 0.2083,
-      "n": 13
+      "form_xg_90": 0.021,
+      "form_xa_90": 0.2271,
+      "n": 14
     },
     "v2": true
   },
@@ -71707,6 +72619,14 @@
     "name": "Antonee Robinson",
     "team": "USA",
     "matches": [
+      {
+        "event_id": 12813002,
+        "mins": 89,
+        "xg": 0.0,
+        "xa": 0.0272,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12812992,
         "mins": 90,
@@ -71859,9 +72779,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.0126,
-      "form_xa_90": 0.1035,
-      "n": 13
+      "form_xg_90": 0.0061,
+      "form_xa_90": 0.0645,
+      "n": 14
     },
     "v2": true
   },
@@ -71869,6 +72789,14 @@
     "name": "Chris Richards",
     "team": "USA",
     "matches": [
+      {
+        "event_id": 12813002,
+        "mins": 90,
+        "xg": 0.0,
+        "xa": 0.0133,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12812992,
         "mins": 90,
@@ -72021,9 +72949,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.0197,
-      "form_xa_90": 0.0065,
-      "n": 13
+      "form_xg_90": 0.0096,
+      "form_xa_90": 0.01,
+      "n": 14
     },
     "v2": true
   },
@@ -72296,6 +73224,14 @@
     "team": "USA",
     "matches": [
       {
+        "event_id": 12813002,
+        "mins": 90,
+        "xg": 0.0758,
+        "xa": 0.022,
+        "goals": 0,
+        "weight": 20
+      },
+      {
         "event_id": 12812992,
         "mins": 90,
         "xg": 0.0402,
@@ -72455,9 +73391,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.0763,
-      "form_xa_90": 0.028,
-      "n": 13
+      "form_xg_90": 0.076,
+      "form_xa_90": 0.0248,
+      "n": 14
     },
     "v2": true
   },
@@ -72628,6 +73564,14 @@
     "team": "USA",
     "matches": [
       {
+        "event_id": 12813002,
+        "mins": 90,
+        "xg": 0.0,
+        "xa": 0.0141,
+        "goals": 0,
+        "weight": 20
+      },
+      {
         "event_id": 12812992,
         "mins": 90,
         "xg": 0.0,
@@ -72780,8 +73724,8 @@
     ],
     "form": {
       "form_xg_90": 0.0,
-      "form_xa_90": 0.0154,
-      "n": 13
+      "form_xa_90": 0.0148,
+      "n": 14
     },
     "v2": true
   },
@@ -73114,6 +74058,14 @@
     "team": "USA",
     "matches": [
       {
+        "event_id": 12813002,
+        "mins": 90,
+        "xg": 0.0,
+        "xa": 0.0002,
+        "goals": 0,
+        "weight": 20
+      },
+      {
         "event_id": 12812992,
         "mins": 90,
         "xg": 0.0,
@@ -73267,7 +74219,7 @@
     "form": {
       "form_xg_90": 0.0,
       "form_xa_90": 0.0003,
-      "n": 13
+      "n": 14
     },
     "v2": true
   },
@@ -73792,6 +74744,14 @@
     "team": "Paraguay",
     "matches": [
       {
+        "event_id": 12813010,
+        "mins": 19,
+        "xg": 0.0,
+        "xa": 0.0,
+        "goals": 0,
+        "weight": 20
+      },
+      {
         "event_id": 12813014,
         "mins": 55,
         "xg": 0.0,
@@ -73962,6 +74922,14 @@
     "team": "Paraguay",
     "matches": [
       {
+        "event_id": 12813010,
+        "mins": 61,
+        "xg": 0.0,
+        "xa": 0.0,
+        "goals": 0,
+        "weight": 20
+      },
+      {
         "event_id": 12813014,
         "mins": 57,
         "xg": 0.1408,
@@ -74121,9 +75089,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.1944,
-      "form_xa_90": 0.1176,
-      "n": 14
+      "form_xg_90": 0.097,
+      "form_xa_90": 0.0587,
+      "n": 15
     },
     "v2": true
   },
@@ -74131,6 +75099,14 @@
     "name": "Diego Gómez",
     "team": "Paraguay",
     "matches": [
+      {
+        "event_id": 12813010,
+        "mins": 71,
+        "xg": 0.0101,
+        "xa": 0.0018,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 15186891,
         "mins": 91,
@@ -74283,9 +75259,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.1262,
-      "form_xa_90": 0.0402,
-      "n": 13
+      "form_xg_90": 0.0461,
+      "form_xa_90": 0.0134,
+      "n": 14
     },
     "v2": true
   },
@@ -74293,6 +75269,14 @@
     "name": "Miguel Almirón",
     "team": "Paraguay",
     "matches": [
+      {
+        "event_id": 12813010,
+        "mins": 71,
+        "xg": 0.0193,
+        "xa": 0.0006,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12813014,
         "mins": 90,
@@ -74445,9 +75429,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.0413,
-      "form_xa_90": 0.0217,
-      "n": 13
+      "form_xg_90": 0.0327,
+      "form_xa_90": 0.0109,
+      "n": 14
     },
     "v2": true
   },
@@ -74455,6 +75439,14 @@
     "name": "Mauricio",
     "team": "Paraguay",
     "matches": [
+      {
+        "event_id": 12813010,
+        "mins": 19,
+        "xg": 0.0616,
+        "xa": 0.0144,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12813014,
         "mins": 63,
@@ -74700,6 +75692,14 @@
     "team": "Paraguay",
     "matches": [
       {
+        "event_id": 12813010,
+        "mins": 90,
+        "xg": 0.0,
+        "xa": 0.0076,
+        "goals": 0,
+        "weight": 20
+      },
+      {
         "event_id": 12813014,
         "mins": 120,
         "xg": 0.0,
@@ -74859,9 +75859,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.0255,
-      "form_xa_90": 0.0631,
-      "n": 14
+      "form_xg_90": 0.0127,
+      "form_xa_90": 0.0353,
+      "n": 15
     },
     "v2": true
   },
@@ -74869,6 +75869,14 @@
     "name": "Gustavo Caballero",
     "team": "Paraguay",
     "matches": [
+      {
+        "event_id": 12813010,
+        "mins": 29,
+        "xg": 0.0,
+        "xa": 0.0,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12813014,
         "mins": 65,
@@ -74925,9 +75933,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.1077,
-      "form_xa_90": 0.0079,
-      "n": 5
+      "form_xg_90": 0.0504,
+      "form_xa_90": 0.0037,
+      "n": 6
     },
     "v2": true
   },
@@ -75109,6 +76117,14 @@
     "team": "Paraguay",
     "matches": [
       {
+        "event_id": 12813010,
+        "mins": 90,
+        "xg": 0.0,
+        "xa": 0.0107,
+        "goals": 0,
+        "weight": 20
+      },
+      {
         "event_id": 12813014,
         "mins": 120,
         "xg": 0.0334,
@@ -75268,9 +76284,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.0284,
-      "form_xa_90": 0.0018,
-      "n": 14
+      "form_xg_90": 0.0142,
+      "form_xa_90": 0.0063,
+      "n": 15
     },
     "v2": true
   },
@@ -75278,6 +76294,14 @@
     "name": "Omar Alderete",
     "team": "Paraguay",
     "matches": [
+      {
+        "event_id": 12813010,
+        "mins": 58,
+        "xg": 0.0,
+        "xa": 0.0,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 15186891,
         "mins": 84,
@@ -75430,9 +76454,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.0252,
-      "form_xa_90": 0.0097,
-      "n": 13
+      "form_xg_90": 0.0074,
+      "form_xa_90": 0.0029,
+      "n": 14
     },
     "v2": true
   },
@@ -75440,6 +76464,14 @@
     "name": "Junior Alonso",
     "team": "Paraguay",
     "matches": [
+      {
+        "event_id": 12813010,
+        "mins": 90,
+        "xg": 0.0375,
+        "xa": 0.0057,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12813014,
         "mins": 119,
@@ -75600,9 +76632,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.0615,
-      "form_xa_90": 0.0046,
-      "n": 12
+      "form_xg_90": 0.0487,
+      "form_xa_90": 0.0052,
+      "n": 13
     },
     "v2": true
   },
@@ -75765,6 +76797,14 @@
     "team": "Paraguay",
     "matches": [
       {
+        "event_id": 12813010,
+        "mins": 90,
+        "xg": 0.0,
+        "xa": 0.0011,
+        "goals": 0,
+        "weight": 20
+      },
+      {
         "event_id": 12813014,
         "mins": 99,
         "xg": 0.0,
@@ -75924,9 +76964,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.0094,
-      "form_xa_90": 0.0169,
-      "n": 14
+      "form_xg_90": 0.0047,
+      "form_xa_90": 0.009,
+      "n": 15
     },
     "v2": true
   },
@@ -75934,6 +76974,14 @@
     "name": "Gustavo Velázquez",
     "team": "Paraguay",
     "matches": [
+      {
+        "event_id": 12813010,
+        "mins": 90,
+        "xg": 0.0,
+        "xa": 0.001,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12813014,
         "mins": 30,
@@ -76094,9 +77142,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.0018,
-      "form_xa_90": 0.016,
-      "n": 12
+      "form_xg_90": 0.0009,
+      "form_xa_90": 0.0081,
+      "n": 13
     },
     "v2": true
   },
@@ -76206,6 +77254,14 @@
     "team": "Paraguay",
     "matches": [
       {
+        "event_id": 12813010,
+        "mins": 32,
+        "xg": 0.0,
+        "xa": 0.0072,
+        "goals": 0,
+        "weight": 20
+      },
+      {
         "event_id": 12813014,
         "mins": 120,
         "xg": 0.0,
@@ -76258,8 +77314,8 @@
     ],
     "form": {
       "form_xg_90": 0.0,
-      "form_xa_90": 0.0063,
-      "n": 3
+      "form_xa_90": 0.0143,
+      "n": 4
     },
     "v2": true
   },
@@ -76422,6 +77478,14 @@
     "team": "Paraguay",
     "matches": [
       {
+        "event_id": 12813010,
+        "mins": 90,
+        "xg": 0.0,
+        "xa": 0.0012,
+        "goals": 0,
+        "weight": 20
+      },
+      {
         "event_id": 12813014,
         "mins": 120,
         "xg": 0.0,
@@ -76522,8 +77586,8 @@
     ],
     "form": {
       "form_xg_90": 0.0,
-      "form_xa_90": 0.003,
-      "n": 9
+      "form_xa_90": 0.0021,
+      "n": 10
     },
     "v2": true
   },
@@ -95148,6 +96212,14 @@
     "team": "Belgium",
     "matches": [
       {
+        "event_id": 12813002,
+        "mins": 23,
+        "xg": 0.0444,
+        "xa": 0.0024,
+        "goals": 1,
+        "weight": 20
+      },
+      {
         "event_id": 12813013,
         "mins": 75,
         "xg": 0.1589,
@@ -95297,9 +96369,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.2601,
-      "form_xa_90": 0.1337,
-      "n": 12
+      "form_xg_90": 0.2141,
+      "form_xa_90": 0.0674,
+      "n": 13
     },
     "v2": true
   },
@@ -95307,6 +96379,14 @@
     "name": "Leandro Trossard",
     "team": "Belgium",
     "matches": [
+      {
+        "event_id": 12813002,
+        "mins": 89,
+        "xg": 0.1649,
+        "xa": 0.438,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12813013,
         "mins": 109,
@@ -95457,9 +96537,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.248,
-      "form_xa_90": 0.3691,
-      "n": 14
+      "form_xg_90": 0.2073,
+      "form_xa_90": 0.4061,
+      "n": 15
     },
     "v2": true
   },
@@ -95467,6 +96547,14 @@
     "name": "Charles De Ketelaere",
     "team": "Belgium",
     "matches": [
+      {
+        "event_id": 12813002,
+        "mins": 67,
+        "xg": 1.113,
+        "xa": 0.0161,
+        "goals": 2,
+        "weight": 20
+      },
       {
         "event_id": 12813013,
         "mins": 45,
@@ -95617,9 +96705,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.0549,
-      "form_xa_90": 0.0929,
-      "n": 14
+      "form_xg_90": 0.7763,
+      "form_xa_90": 0.0572,
+      "n": 15
     },
     "v2": true
   },
@@ -95841,6 +96929,14 @@
     "team": "Belgium",
     "matches": [
       {
+        "event_id": 12813002,
+        "mins": 23,
+        "xg": 0.0,
+        "xa": 0.0809,
+        "goals": 0,
+        "weight": 20
+      },
+      {
         "event_id": 12813013,
         "mins": 56,
         "xg": 0.0,
@@ -95982,9 +97078,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.0854,
-      "form_xa_90": 0.1628,
-      "n": 13
+      "form_xg_90": 0.0416,
+      "form_xa_90": 0.2417,
+      "n": 14
     },
     "v2": true
   },
@@ -95992,6 +97088,14 @@
     "name": "Youri Tielemans",
     "team": "Belgium",
     "matches": [
+      {
+        "event_id": 12813002,
+        "mins": 90,
+        "xg": 0.3405,
+        "xa": 0.0398,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12813013,
         "mins": 120,
@@ -96142,9 +97246,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.526,
-      "form_xa_90": 0.0833,
-      "n": 13
+      "form_xg_90": 0.4327,
+      "form_xa_90": 0.0614,
+      "n": 14
     },
     "v2": true
   },
@@ -96152,6 +97256,14 @@
     "name": "Axel Witsel",
     "team": "Belgium",
     "matches": [
+      {
+        "event_id": 12813002,
+        "mins": 1,
+        "xg": 0.0,
+        "xa": 0.0004,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 15186499,
         "mins": 1089,
@@ -96263,6 +97375,14 @@
     "name": "Amadou Onana",
     "team": "Belgium",
     "matches": [
+      {
+        "event_id": 12813002,
+        "mins": 21,
+        "xg": 0.0,
+        "xa": 0.0088,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12813013,
         "mins": 11,
@@ -96413,9 +97533,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.0477,
-      "form_xa_90": 0.1165,
-      "n": 11
+      "form_xg_90": 0.009,
+      "form_xa_90": 0.0526,
+      "n": 12
     },
     "v2": true
   },
@@ -96423,6 +97543,14 @@
     "name": "Alexis Saelemaekers",
     "team": "Belgium",
     "matches": [
+      {
+        "event_id": 12813002,
+        "mins": 1,
+        "xg": 0.0,
+        "xa": 0.0,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 15186822,
         "mins": 18,
@@ -96640,6 +97768,14 @@
     "team": "Belgium",
     "matches": [
       {
+        "event_id": 12813002,
+        "mins": 67,
+        "xg": 0.158,
+        "xa": 0.0178,
+        "goals": 0,
+        "weight": 20
+      },
+      {
         "event_id": 12813013,
         "mins": 64,
         "xg": 0.1858,
@@ -96781,9 +97917,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.29,
-      "form_xa_90": 0.1512,
-      "n": 10
+      "form_xg_90": 0.2495,
+      "form_xa_90": 0.0849,
+      "n": 11
     },
     "v2": true
   },
@@ -96791,6 +97927,14 @@
     "name": "Hans Vanaken",
     "team": "Belgium",
     "matches": [
+      {
+        "event_id": 12813002,
+        "mins": 69,
+        "xg": 0.0836,
+        "xa": 0.0058,
+        "goals": 1,
+        "weight": 20
+      },
       {
         "event_id": 12813013,
         "mins": 63,
@@ -96941,9 +98085,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.0882,
-      "form_xa_90": 0.1489,
-      "n": 12
+      "form_xg_90": 0.099,
+      "form_xa_90": 0.0754,
+      "n": 13
     },
     "v2": true
   },
@@ -96951,6 +98095,14 @@
     "name": "Nicolas Raskin",
     "team": "Belgium",
     "matches": [
+      {
+        "event_id": 12813002,
+        "mins": 89,
+        "xg": 0.082,
+        "xa": 0.6216,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12813013,
         "mins": 64,
@@ -97101,9 +98253,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.0645,
-      "form_xa_90": 0.1912,
-      "n": 12
+      "form_xg_90": 0.0742,
+      "form_xa_90": 0.4224,
+      "n": 13
     },
     "v2": true
   },
@@ -97111,6 +98263,14 @@
     "name": "Maxim De Cuyper",
     "team": "Belgium",
     "matches": [
+      {
+        "event_id": 12813002,
+        "mins": 90,
+        "xg": 0.0,
+        "xa": 0.1566,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12813013,
         "mins": 78,
@@ -97261,9 +98421,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.1429,
-      "form_xa_90": 0.0836,
-      "n": 13
+      "form_xg_90": 0.0709,
+      "form_xa_90": 0.1204,
+      "n": 14
     },
     "v2": true
   },
@@ -97667,6 +98827,14 @@
     "team": "Belgium",
     "matches": [
       {
+        "event_id": 12813002,
+        "mins": 90,
+        "xg": 0.0274,
+        "xa": 0.2571,
+        "goals": 0,
+        "weight": 20
+      },
+      {
         "event_id": 12813013,
         "mins": 120,
         "xg": 0.0636,
@@ -97816,9 +98984,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.0406,
-      "form_xa_90": 0.1293,
-      "n": 14
+      "form_xg_90": 0.034,
+      "form_xa_90": 0.1933,
+      "n": 15
     },
     "v2": true
   },
@@ -97826,6 +98994,14 @@
     "name": "Nathan Ngoy",
     "team": "Belgium",
     "matches": [
+      {
+        "event_id": 12813002,
+        "mins": 90,
+        "xg": 0.0,
+        "xa": 0.0181,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 15186499,
         "mins": 66,
@@ -97883,9 +99059,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.0302,
-      "form_xa_90": 0.0347,
-      "n": 5
+      "form_xg_90": 0.0068,
+      "form_xa_90": 0.0219,
+      "n": 6
     },
     "v2": true
   },
@@ -98143,6 +99319,14 @@
     "team": "Belgium",
     "matches": [
       {
+        "event_id": 12813002,
+        "mins": 90,
+        "xg": 0.0,
+        "xa": 0.0014,
+        "goals": 0,
+        "weight": 20
+      },
+      {
         "event_id": 12813013,
         "mins": 120,
         "xg": 0.0656,
@@ -98237,9 +99421,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.0774,
-      "form_xa_90": 0.0198,
-      "n": 8
+      "form_xg_90": 0.038,
+      "form_xa_90": 0.0104,
+      "n": 9
     },
     "v2": true
   },
@@ -98247,6 +99431,14 @@
     "name": "Thibaut Courtois",
     "team": "Belgium",
     "matches": [
+      {
+        "event_id": 12813002,
+        "mins": 90,
+        "xg": 0.0,
+        "xa": 0.005,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12813013,
         "mins": 120,
@@ -98376,8 +99568,8 @@
     ],
     "form": {
       "form_xg_90": 0.0,
-      "form_xa_90": 0.0037,
-      "n": 12
+      "form_xa_90": 0.0044,
+      "n": 13
     },
     "v2": true
   },
@@ -98475,6 +99667,14 @@
     "name": "Omar Marmoush",
     "team": "Egypt",
     "matches": [
+      {
+        "event_id": 12812993,
+        "mins": 10,
+        "xg": 0.0,
+        "xa": 0.0002,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12813018,
         "mins": 105,
@@ -98703,6 +99903,14 @@
     "team": "Egypt",
     "matches": [
       {
+        "event_id": 12812993,
+        "mins": 90,
+        "xg": 0.0,
+        "xa": 0.0075,
+        "goals": 0,
+        "weight": 20
+      },
+      {
         "event_id": 12813018,
         "mins": 120,
         "xg": 0.13,
@@ -98852,9 +100060,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.167,
-      "form_xa_90": 0.183,
-      "n": 14
+      "form_xg_90": 0.0833,
+      "form_xa_90": 0.0951,
+      "n": 15
     },
     "v2": true
   },
@@ -98862,6 +100070,14 @@
     "name": "Emam Ashour",
     "team": "Egypt",
     "matches": [
+      {
+        "event_id": 12812993,
+        "mins": 45,
+        "xg": 0.0,
+        "xa": 0.0142,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12813018,
         "mins": 120,
@@ -99012,9 +100228,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.2323,
-      "form_xa_90": 0.0501,
-      "n": 14
+      "form_xg_90": 0.1159,
+      "form_xa_90": 0.0392,
+      "n": 15
     },
     "v2": true
   },
@@ -99022,6 +100238,14 @@
     "name": "Zizo",
     "team": "Egypt",
     "matches": [
+      {
+        "event_id": 12812993,
+        "mins": 1,
+        "xg": 0.0,
+        "xa": 0.0,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 15186828,
         "mins": 33,
@@ -99174,6 +100398,14 @@
     "name": "Mahmoud Trézéguet",
     "team": "Egypt",
     "matches": [
+      {
+        "event_id": 12812993,
+        "mins": 17,
+        "xg": 0.1227,
+        "xa": 0.0039,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12813018,
         "mins": 40,
@@ -99335,6 +100567,14 @@
     "team": "Egypt",
     "matches": [
       {
+        "event_id": 12812993,
+        "mins": 73,
+        "xg": 0.0,
+        "xa": 0.3548,
+        "goals": 0,
+        "weight": 20
+      },
+      {
         "event_id": 12813018,
         "mins": 53,
         "xg": 0.15,
@@ -99399,9 +100639,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.1897,
-      "form_xa_90": 0.1519,
-      "n": 6
+      "form_xg_90": 0.0897,
+      "form_xa_90": 0.3025,
+      "n": 7
     },
     "v2": true
   },
@@ -99554,6 +100794,14 @@
     "team": "Egypt",
     "matches": [
       {
+        "event_id": 12812993,
+        "mins": 90,
+        "xg": 0.0,
+        "xa": 0.2152,
+        "goals": 0,
+        "weight": 20
+      },
+      {
         "event_id": 12813018,
         "mins": 119,
         "xg": 0.09,
@@ -99703,9 +100951,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.054,
-      "form_xa_90": 0.2997,
-      "n": 14
+      "form_xg_90": 0.027,
+      "form_xa_90": 0.2574,
+      "n": 15
     },
     "v2": true
   },
@@ -99713,6 +100961,14 @@
     "name": "Hamdy Fathy",
     "team": "Egypt",
     "matches": [
+      {
+        "event_id": 12812993,
+        "mins": 45,
+        "xg": 0.0,
+        "xa": 0.0003,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12813018,
         "mins": 67,
@@ -99856,8 +101112,8 @@
     ],
     "form": {
       "form_xg_90": 0.0,
-      "form_xa_90": 0.0127,
-      "n": 12
+      "form_xa_90": 0.0065,
+      "n": 13
     },
     "v2": true
   },
@@ -100085,6 +101341,14 @@
     "team": "Egypt",
     "matches": [
       {
+        "event_id": 12812993,
+        "mins": 89,
+        "xg": 0.0,
+        "xa": 0.0122,
+        "goals": 0,
+        "weight": 20
+      },
+      {
         "event_id": 15186828,
         "mins": 90,
         "xg": 0.169,
@@ -100182,9 +101446,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.0585,
-      "form_xa_90": 0.02,
-      "n": 8
+      "form_xg_90": 0.0163,
+      "form_xa_90": 0.0145,
+      "n": 9
     },
     "v2": true
   },
@@ -100192,6 +101456,14 @@
     "name": "Mostafa Ziko",
     "team": "Egypt",
     "matches": [
+      {
+        "event_id": 12812993,
+        "mins": 80,
+        "xg": 0.644,
+        "xa": 0.0137,
+        "goals": 1,
+        "weight": 20
+      },
       {
         "event_id": 12813018,
         "mins": 67,
@@ -100243,9 +101515,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.0903,
-      "form_xa_90": 0.0687,
-      "n": 5
+      "form_xg_90": 0.4196,
+      "form_xa_90": 0.041,
+      "n": 6
     },
     "v2": true
   },
@@ -100406,6 +101678,14 @@
     "team": "Egypt",
     "matches": [
       {
+        "event_id": 12812993,
+        "mins": 90,
+        "xg": 0.0,
+        "xa": 0.1401,
+        "goals": 0,
+        "weight": 20
+      },
+      {
         "event_id": 12813018,
         "mins": 120,
         "xg": 0.0,
@@ -100555,9 +101835,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.0095,
-      "form_xa_90": 0.1195,
-      "n": 14
+      "form_xg_90": 0.0048,
+      "form_xa_90": 0.1298,
+      "n": 15
     },
     "v2": true
   },
@@ -100565,6 +101845,14 @@
     "name": "Yasser Ibrahim",
     "team": "Egypt",
     "matches": [
+      {
+        "event_id": 12812993,
+        "mins": 90,
+        "xg": 0.1032,
+        "xa": 0.0008,
+        "goals": 1,
+        "weight": 20
+      },
       {
         "event_id": 12813018,
         "mins": 120,
@@ -100715,9 +102003,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.0052,
-      "form_xa_90": 0.0091,
-      "n": 14
+      "form_xg_90": 0.0543,
+      "form_xa_90": 0.005,
+      "n": 15
     },
     "v2": true
   },
@@ -100725,6 +102013,14 @@
     "name": "Rami Rabia",
     "team": "Egypt",
     "matches": [
+      {
+        "event_id": 12812993,
+        "mins": 90,
+        "xg": 0.0,
+        "xa": 0.0005,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12813018,
         "mins": 120,
@@ -100875,9 +102171,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.0845,
-      "form_xa_90": 0.0121,
-      "n": 13
+      "form_xg_90": 0.0407,
+      "form_xa_90": 0.0061,
+      "n": 14
     },
     "v2": true
   },
@@ -101190,6 +102486,14 @@
     "team": "Egypt",
     "matches": [
       {
+        "event_id": 12812993,
+        "mins": 90,
+        "xg": 0.0162,
+        "xa": 0.0199,
+        "goals": 0,
+        "weight": 20
+      },
+      {
         "event_id": 12813018,
         "mins": 80,
         "xg": 0.0,
@@ -101232,9 +102536,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.0,
-      "form_xa_90": 0.1799,
-      "n": 3
+      "form_xg_90": 0.0091,
+      "form_xa_90": 0.09,
+      "n": 4
     },
     "v2": true
   },
@@ -101443,6 +102747,14 @@
     "team": "Egypt",
     "matches": [
       {
+        "event_id": 12812993,
+        "mins": 90,
+        "xg": 0.0,
+        "xa": 0.0001,
+        "goals": 0,
+        "weight": 20
+      },
+      {
         "event_id": 12813018,
         "mins": 120,
         "xg": 0.0,
@@ -101560,8 +102872,8 @@
     ],
     "form": {
       "form_xg_90": 0.0,
-      "form_xa_90": 0.0009,
-      "n": 11
+      "form_xa_90": 0.0005,
+      "n": 12
     },
     "v2": true
   },
@@ -104246,6 +105558,14 @@
     "team": "Mexico",
     "matches": [
       {
+        "event_id": 12813007,
+        "mins": 29,
+        "xg": 0.0815,
+        "xa": 0.0,
+        "goals": 0,
+        "weight": 20
+      },
+      {
         "event_id": 12813001,
         "mins": 16,
         "xg": 0.0,
@@ -104395,9 +105715,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.2326,
-      "form_xa_90": 0.0386,
-      "n": 10
+      "form_xg_90": 0.2489,
+      "form_xa_90": 0.0076,
+      "n": 11
     },
     "v2": true
   },
@@ -104405,6 +105725,14 @@
     "name": "Raúl Jiménez",
     "team": "Mexico",
     "matches": [
+      {
+        "event_id": 12813007,
+        "mins": 90,
+        "xg": 1.1821,
+        "xa": 0.3612,
+        "goals": 1,
+        "weight": 20
+      },
       {
         "event_id": 12813001,
         "mins": 74,
@@ -104547,9 +105875,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.5385,
-      "form_xa_90": 0.0343,
-      "n": 13
+      "form_xg_90": 0.8689,
+      "form_xa_90": 0.2021,
+      "n": 14
     },
     "v2": true
   },
@@ -104557,6 +105885,14 @@
     "name": "Julián Quiñones",
     "team": "Mexico",
     "matches": [
+      {
+        "event_id": 12813007,
+        "mins": 81,
+        "xg": 0.2249,
+        "xa": 0.114,
+        "goals": 1,
+        "weight": 20
+      },
       {
         "event_id": 12813001,
         "mins": 80,
@@ -104707,9 +106043,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.2236,
-      "form_xa_90": 0.0654,
-      "n": 11
+      "form_xg_90": 0.2369,
+      "form_xa_90": 0.0964,
+      "n": 12
     },
     "v2": true
   },
@@ -104828,6 +106164,14 @@
     "name": "Roberto Alvarado",
     "team": "Mexico",
     "matches": [
+      {
+        "event_id": 12813007,
+        "mins": 90,
+        "xg": 0.0,
+        "xa": 0.5006,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12813001,
         "mins": 80,
@@ -104978,9 +106322,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.1265,
-      "form_xa_90": 0.3191,
-      "n": 14
+      "form_xg_90": 0.0631,
+      "form_xa_90": 0.41,
+      "n": 15
     },
     "v2": true
   },
@@ -104988,6 +106332,14 @@
     "name": "Guillermo Martínez",
     "team": "Mexico",
     "matches": [
+      {
+        "event_id": 12813007,
+        "mins": 9,
+        "xg": 0.0,
+        "xa": 0.0027,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 15186732,
         "mins": 63,
@@ -105141,6 +106493,14 @@
     "team": "Mexico",
     "matches": [
       {
+        "event_id": 12813007,
+        "mins": 61,
+        "xg": 0.0438,
+        "xa": 0.0089,
+        "goals": 0,
+        "weight": 20
+      },
+      {
         "event_id": 12813001,
         "mins": 58,
         "xg": 0.0798,
@@ -105257,9 +106617,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.1092,
-      "form_xa_90": 0.1924,
-      "n": 11
+      "form_xg_90": 0.0868,
+      "form_xa_90": 0.1021,
+      "n": 12
     },
     "v2": true
   },
@@ -105267,6 +106627,14 @@
     "name": "Edson Álvarez",
     "team": "Mexico",
     "matches": [
+      {
+        "event_id": 12813007,
+        "mins": 45,
+        "xg": 0.2162,
+        "xa": 0.0118,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 15186732,
         "mins": 90,
@@ -105409,9 +106777,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.0311,
-      "form_xa_90": 0.0225,
-      "n": 12
+      "form_xg_90": 0.3323,
+      "form_xa_90": 0.0233,
+      "n": 13
     },
     "v2": true
   },
@@ -105535,6 +106903,14 @@
     "name": "Álvaro Fidalgo",
     "team": "Mexico",
     "matches": [
+      {
+        "event_id": 12813007,
+        "mins": 11,
+        "xg": 0.0563,
+        "xa": 0.1037,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 15186732,
         "mins": 18,
@@ -106051,6 +107427,14 @@
     "team": "Mexico",
     "matches": [
       {
+        "event_id": 12813007,
+        "mins": 29,
+        "xg": 0.0302,
+        "xa": 0.0245,
+        "goals": 0,
+        "weight": 20
+      },
+      {
         "event_id": 12813001,
         "mins": 32,
         "xg": 0.0,
@@ -106148,9 +107532,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.0657,
-      "form_xa_90": 0.0453,
-      "n": 8
+      "form_xg_90": 0.0803,
+      "form_xa_90": 0.0613,
+      "n": 9
     },
     "v2": true
   },
@@ -106303,6 +107687,14 @@
     "team": "Mexico",
     "matches": [
       {
+        "event_id": 12813007,
+        "mins": 90,
+        "xg": 0.0,
+        "xa": 0.0363,
+        "goals": 0,
+        "weight": 20
+      },
+      {
         "event_id": 12813001,
         "mins": 90,
         "xg": 0.101,
@@ -106444,9 +107836,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.086,
-      "form_xa_90": 0.0049,
-      "n": 13
+      "form_xg_90": 0.0418,
+      "form_xa_90": 0.021,
+      "n": 14
     },
     "v2": true
   },
@@ -106596,6 +107988,14 @@
     "team": "Mexico",
     "matches": [
       {
+        "event_id": 12813007,
+        "mins": 45,
+        "xg": 0.0,
+        "xa": 0.0093,
+        "goals": 0,
+        "weight": 20
+      },
+      {
         "event_id": 12813001,
         "mins": 90,
         "xg": 0.089,
@@ -106737,9 +108137,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.0621,
-      "form_xa_90": 0.0039,
-      "n": 13
+      "form_xg_90": 0.0302,
+      "form_xa_90": 0.0115,
+      "n": 14
     },
     "v2": true
   },
@@ -106747,6 +108147,14 @@
     "name": "Jorge Sánchez",
     "team": "Mexico",
     "matches": [
+      {
+        "event_id": 12813007,
+        "mins": 79,
+        "xg": 0.0,
+        "xa": 0.0148,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12813001,
         "mins": 90,
@@ -106897,9 +108305,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.012,
-      "form_xa_90": 0.0373,
-      "n": 13
+      "form_xg_90": 0.006,
+      "form_xa_90": 0.027,
+      "n": 14
     },
     "v2": true
   },
@@ -107068,6 +108476,14 @@
     "team": "Mexico",
     "matches": [
       {
+        "event_id": 12813007,
+        "mins": 90,
+        "xg": 0.0,
+        "xa": 0.0785,
+        "goals": 0,
+        "weight": 20
+      },
+      {
         "event_id": 12813001,
         "mins": 90,
         "xg": 0.0,
@@ -107209,9 +108625,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.0032,
-      "form_xa_90": 0.0278,
-      "n": 13
+      "form_xg_90": 0.0015,
+      "form_xa_90": 0.0538,
+      "n": 14
     },
     "v2": true
   },
@@ -107219,6 +108635,14 @@
     "name": "Jesús Gallardo",
     "team": "Mexico",
     "matches": [
+      {
+        "event_id": 12813007,
+        "mins": 90,
+        "xg": 0.0275,
+        "xa": 0.2023,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12813001,
         "mins": 90,
@@ -107369,9 +108793,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.0188,
-      "form_xa_90": 0.018,
-      "n": 12
+      "form_xg_90": 0.0234,
+      "form_xa_90": 0.1155,
+      "n": 13
     },
     "v2": true
   },
@@ -107379,6 +108803,14 @@
     "name": "Luis Romo",
     "team": "Mexico",
     "matches": [
+      {
+        "event_id": 12813007,
+        "mins": 61,
+        "xg": 0.0189,
+        "xa": 0.0091,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12813001,
         "mins": 73,
@@ -107529,9 +108961,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.0316,
-      "form_xa_90": 0.1283,
-      "n": 13
+      "form_xg_90": 0.0298,
+      "form_xa_90": 0.0704,
+      "n": 14
     },
     "v2": true
   },
@@ -107692,6 +109124,14 @@
     "team": "Mexico",
     "matches": [
       {
+        "event_id": 12813007,
+        "mins": 90,
+        "xg": 0.0,
+        "xa": 0.0009,
+        "goals": 0,
+        "weight": 20
+      },
+      {
         "event_id": 12813001,
         "mins": 90,
         "xg": 0.0,
@@ -107842,8 +109282,8 @@
     ],
     "form": {
       "form_xg_90": 0.0,
-      "form_xa_90": 0.0016,
-      "n": 14
+      "form_xa_90": 0.0013,
+      "n": 15
     },
     "v2": true
   },
@@ -108634,6 +110074,14 @@
     "team": "Spain",
     "matches": [
       {
+        "event_id": 12812990,
+        "mins": 15,
+        "xg": 0.0084,
+        "xa": 0.3564,
+        "goals": 0,
+        "weight": 20
+      },
+      {
         "event_id": 12813004,
         "mins": 19,
         "xg": 0.0518,
@@ -108850,6 +110298,14 @@
     "team": "Spain",
     "matches": [
       {
+        "event_id": 12812990,
+        "mins": 89,
+        "xg": 0.6515,
+        "xa": 0.0317,
+        "goals": 0,
+        "weight": 20
+      },
+      {
         "event_id": 12813004,
         "mins": 90,
         "xg": 1.0858,
@@ -108999,9 +110455,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.955,
-      "form_xa_90": 0.1039,
-      "n": 14
+      "form_xg_90": 0.8066,
+      "form_xa_90": 0.0679,
+      "n": 15
     },
     "v2": true
   },
@@ -109162,6 +110618,14 @@
     "team": "Spain",
     "matches": [
       {
+        "event_id": 12812990,
+        "mins": 1,
+        "xg": 0.0,
+        "xa": 0.0,
+        "goals": 0,
+        "weight": 20
+      },
+      {
         "event_id": 15186840,
         "mins": 1089,
         "xg": 0.0,
@@ -109250,6 +110714,14 @@
     "name": "Lamine Yamal",
     "team": "Spain",
     "matches": [
+      {
+        "event_id": 12812990,
+        "mins": 90,
+        "xg": 0.1152,
+        "xa": 0.1538,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12813004,
         "mins": 85,
@@ -109400,9 +110872,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.6412,
-      "form_xa_90": 0.1527,
-      "n": 13
+      "form_xg_90": 0.3684,
+      "form_xa_90": 0.1533,
+      "n": 14
     },
     "v2": true
   },
@@ -109410,6 +110882,14 @@
     "name": "Pedri",
     "team": "Spain",
     "matches": [
+      {
+        "event_id": 12812990,
+        "mins": 85,
+        "xg": 0.0621,
+        "xa": 0.0569,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12813004,
         "mins": 89,
@@ -109560,9 +111040,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.0467,
-      "form_xa_90": 0.2066,
-      "n": 14
+      "form_xg_90": 0.0562,
+      "form_xa_90": 0.1333,
+      "n": 15
     },
     "v2": true
   },
@@ -109723,6 +111203,14 @@
     "team": "Spain",
     "matches": [
       {
+        "event_id": 12812990,
+        "mins": 85,
+        "xg": 0.0967,
+        "xa": 0.3261,
+        "goals": 0,
+        "weight": 20
+      },
+      {
         "event_id": 12813004,
         "mins": 71,
         "xg": 0.155,
@@ -109872,9 +111360,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.2316,
-      "form_xa_90": 0.1882,
-      "n": 12
+      "form_xg_90": 0.1643,
+      "form_xa_90": 0.27,
+      "n": 13
     },
     "v2": true
   },
@@ -109882,6 +111370,14 @@
     "name": "Rodri",
     "team": "Spain",
     "matches": [
+      {
+        "event_id": 12812990,
+        "mins": 90,
+        "xg": 0.0229,
+        "xa": 0.0545,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12813004,
         "mins": 90,
@@ -110032,9 +111528,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.0362,
-      "form_xa_90": 0.0631,
-      "n": 13
+      "form_xg_90": 0.0295,
+      "form_xa_90": 0.0588,
+      "n": 14
     },
     "v2": true
   },
@@ -110194,6 +111690,14 @@
     "name": "Mikel Merino",
     "team": "Spain",
     "matches": [
+      {
+        "event_id": 12812990,
+        "mins": 14,
+        "xg": 0.5504,
+        "xa": 0.0028,
+        "goals": 1,
+        "weight": 20
+      },
       {
         "event_id": 12813004,
         "mins": 19,
@@ -110499,6 +112003,14 @@
     "team": "Spain",
     "matches": [
       {
+        "event_id": 12812990,
+        "mins": 14,
+        "xg": 0.0,
+        "xa": 0.0046,
+        "goals": 0,
+        "weight": 20
+      },
+      {
         "event_id": 15186841,
         "mins": 30,
         "xg": 0.0,
@@ -110795,6 +112307,14 @@
     "team": "Spain",
     "matches": [
       {
+        "event_id": 12812990,
+        "mins": 75,
+        "xg": 0.172,
+        "xa": 0.0301,
+        "goals": 0,
+        "weight": 20
+      },
+      {
         "event_id": 12813004,
         "mins": 71,
         "xg": 0.0481,
@@ -110944,9 +112464,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.0918,
-      "form_xa_90": 0.6794,
-      "n": 13
+      "form_xg_90": 0.1494,
+      "form_xa_90": 0.3564,
+      "n": 14
     },
     "v2": true
   },
@@ -110954,6 +112474,14 @@
     "name": "Pau Cubarsí",
     "team": "Spain",
     "matches": [
+      {
+        "event_id": 12812990,
+        "mins": 90,
+        "xg": 0.0,
+        "xa": 0.0165,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12813004,
         "mins": 90,
@@ -111093,9 +112621,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.016,
-      "form_xa_90": 0.0432,
-      "n": 12
+      "form_xg_90": 0.0079,
+      "form_xa_90": 0.0298,
+      "n": 13
     },
     "v2": true
   },
@@ -111148,6 +112676,14 @@
     "name": "Marc Cucurella",
     "team": "Spain",
     "matches": [
+      {
+        "event_id": 12812990,
+        "mins": 90,
+        "xg": 0.0,
+        "xa": 0.0122,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12813004,
         "mins": 90,
@@ -111298,9 +112834,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.0276,
-      "form_xa_90": 0.2992,
-      "n": 14
+      "form_xg_90": 0.0138,
+      "form_xa_90": 0.1554,
+      "n": 15
     },
     "v2": true
   },
@@ -111308,6 +112844,14 @@
     "name": "Pedro Porro",
     "team": "Spain",
     "matches": [
+      {
+        "event_id": 12812990,
+        "mins": 90,
+        "xg": 0.0108,
+        "xa": 0.0201,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12813004,
         "mins": 90,
@@ -111450,9 +112994,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.3991,
-      "form_xa_90": 0.0943,
-      "n": 13
+      "form_xg_90": 0.1998,
+      "form_xa_90": 0.0562,
+      "n": 14
     },
     "v2": true
   },
@@ -111557,6 +113101,14 @@
     "name": "Aymeric Laporte",
     "team": "Spain",
     "matches": [
+      {
+        "event_id": 12812990,
+        "mins": 90,
+        "xg": 0.0,
+        "xa": 0.024,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12813004,
         "mins": 89,
@@ -111707,9 +113259,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.1392,
-      "form_xa_90": 0.0291,
-      "n": 14
+      "form_xg_90": 0.0694,
+      "form_xa_90": 0.0265,
+      "n": 15
     },
     "v2": true
   },
@@ -111941,6 +113493,14 @@
     "team": "Spain",
     "matches": [
       {
+        "event_id": 12812990,
+        "mins": 90,
+        "xg": 0.0,
+        "xa": 0.0003,
+        "goals": 0,
+        "weight": 20
+      },
+      {
         "event_id": 12813004,
         "mins": 90,
         "xg": 0.0,
@@ -112092,7 +113652,7 @@
     "form": {
       "form_xg_90": 0.0,
       "form_xa_90": 0.0002,
-      "n": 14
+      "n": 15
     },
     "v2": true
   },
@@ -115606,6 +117166,14 @@
     "team": "France",
     "matches": [
       {
+        "event_id": 12813010,
+        "mins": 90,
+        "xg": 1.1738,
+        "xa": 0.0306,
+        "goals": 1,
+        "weight": 20
+      },
+      {
         "event_id": 12812995,
         "mins": 85,
         "xg": 0.5974,
@@ -115755,9 +117323,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.6705,
-      "form_xa_90": 0.1585,
-      "n": 13
+      "form_xg_90": 0.9246,
+      "form_xa_90": 0.0939,
+      "n": 14
     },
     "v2": true
   },
@@ -115765,6 +117333,14 @@
     "name": "Ousmane Dembélé",
     "team": "France",
     "matches": [
+      {
+        "event_id": 12813010,
+        "mins": 84,
+        "xg": 0.0631,
+        "xa": 0.0628,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12812995,
         "mins": 75,
@@ -115915,9 +117491,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.3366,
-      "form_xa_90": 0.1614,
-      "n": 14
+      "form_xg_90": 0.2018,
+      "form_xa_90": 0.1143,
+      "n": 15
     },
     "v2": true
   },
@@ -115925,6 +117501,14 @@
     "name": "Désiré Doué",
     "team": "France",
     "matches": [
+      {
+        "event_id": 12813010,
+        "mins": 29,
+        "xg": 0.026,
+        "xa": 0.0395,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12812995,
         "mins": 15,
@@ -116031,9 +117615,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.2363,
-      "form_xa_90": 0.115,
-      "n": 9
+      "form_xg_90": 0.1187,
+      "form_xa_90": 0.1207,
+      "n": 10
     },
     "v2": true
   },
@@ -116041,6 +117625,14 @@
     "name": "Bradley Barcola",
     "team": "France",
     "matches": [
+      {
+        "event_id": 12813010,
+        "mins": 61,
+        "xg": 0.0398,
+        "xa": 0.0401,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12812995,
         "mins": 90,
@@ -116191,9 +117783,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.7517,
-      "form_xa_90": 0.0846,
-      "n": 11
+      "form_xg_90": 0.388,
+      "form_xa_90": 0.0713,
+      "n": 12
     },
     "v2": true
   },
@@ -116440,6 +118032,14 @@
     "team": "France",
     "matches": [
       {
+        "event_id": 12813010,
+        "mins": 90,
+        "xg": 0.0,
+        "xa": 0.0653,
+        "goals": 0,
+        "weight": 20
+      },
+      {
         "event_id": 12812995,
         "mins": 85,
         "xg": 0.8643,
@@ -116589,9 +118189,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.7521,
-      "form_xa_90": 0.6978,
-      "n": 13
+      "form_xg_90": 0.3724,
+      "form_xa_90": 0.3785,
+      "n": 14
     },
     "v2": true
   },
@@ -116759,6 +118359,14 @@
     "name": "Rayan Cherki",
     "team": "France",
     "matches": [
+      {
+        "event_id": 12813010,
+        "mins": 17,
+        "xg": 0.0,
+        "xa": 0.009,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12812995,
         "mins": 9,
@@ -117153,6 +118761,14 @@
     "team": "France",
     "matches": [
       {
+        "event_id": 12813010,
+        "mins": 90,
+        "xg": 0.0922,
+        "xa": 0.031,
+        "goals": 0,
+        "weight": 20
+      },
+      {
         "event_id": 12812995,
         "mins": 90,
         "xg": 0.0603,
@@ -117294,9 +118910,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.1276,
-      "form_xa_90": 0.146,
-      "n": 11
+      "form_xg_90": 0.1093,
+      "form_xa_90": 0.0865,
+      "n": 12
     },
     "v2": true
   },
@@ -117426,6 +119042,14 @@
     "name": "Manu Koné",
     "team": "France",
     "matches": [
+      {
+        "event_id": 12813010,
+        "mins": 90,
+        "xg": 0.0579,
+        "xa": 0.0772,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 15186537,
         "mins": 90,
@@ -117568,9 +119192,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.0681,
-      "form_xa_90": 0.0546,
-      "n": 12
+      "form_xg_90": 0.0609,
+      "form_xa_90": 0.0706,
+      "n": 13
     },
     "v2": true
   },
@@ -117578,6 +119202,14 @@
     "name": "Jules Koundé",
     "team": "France",
     "matches": [
+      {
+        "event_id": 12813010,
+        "mins": 90,
+        "xg": 0.0,
+        "xa": 0.0718,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12812995,
         "mins": 75,
@@ -117728,9 +119360,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.0362,
-      "form_xa_90": 0.2027,
-      "n": 14
+      "form_xg_90": 0.0181,
+      "form_xa_90": 0.1371,
+      "n": 15
     },
     "v2": true
   },
@@ -117738,6 +119370,14 @@
     "name": "William Saliba",
     "team": "France",
     "matches": [
+      {
+        "event_id": 12813010,
+        "mins": 90,
+        "xg": 0.0,
+        "xa": 0.0281,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12812995,
         "mins": 90,
@@ -117880,9 +119520,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.0073,
-      "form_xa_90": 0.0104,
-      "n": 13
+      "form_xg_90": 0.0036,
+      "form_xa_90": 0.0195,
+      "n": 14
     },
     "v2": true
   },
@@ -118352,6 +119992,14 @@
     "team": "France",
     "matches": [
       {
+        "event_id": 12813010,
+        "mins": 90,
+        "xg": 0.0,
+        "xa": 0.0544,
+        "goals": 0,
+        "weight": 20
+      },
+      {
         "event_id": 12812995,
         "mins": 90,
         "xg": 0.1305,
@@ -118501,9 +120149,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.0867,
-      "form_xa_90": 0.0383,
-      "n": 14
+      "form_xg_90": 0.0433,
+      "form_xa_90": 0.0463,
+      "n": 15
     },
     "v2": true
   },
@@ -118698,6 +120346,14 @@
     "team": "France",
     "matches": [
       {
+        "event_id": 12813010,
+        "mins": 90,
+        "xg": 0.0,
+        "xa": 0.0185,
+        "goals": 0,
+        "weight": 20
+      },
+      {
         "event_id": 12812995,
         "mins": 78,
         "xg": 0.0154,
@@ -118839,9 +120495,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.0214,
-      "form_xa_90": 0.0424,
-      "n": 11
+      "form_xg_90": 0.0103,
+      "form_xa_90": 0.03,
+      "n": 12
     },
     "v2": true
   },
@@ -118849,6 +120505,14 @@
     "name": "Mike Maignan",
     "team": "France",
     "matches": [
+      {
+        "event_id": 12813010,
+        "mins": 90,
+        "xg": 0.0,
+        "xa": 0.0051,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12812995,
         "mins": 90,
@@ -119000,8 +120664,8 @@
     ],
     "form": {
       "form_xg_90": 0.0,
-      "form_xa_90": 0.0006,
-      "n": 14
+      "form_xa_90": 0.0029,
+      "n": 15
     },
     "v2": true
   },
@@ -119110,6 +120774,14 @@
     "name": "Erling Haaland",
     "team": "Norway",
     "matches": [
+      {
+        "event_id": 12813006,
+        "mins": 90,
+        "xg": 0.4674,
+        "xa": 0.0742,
+        "goals": 2,
+        "weight": 20
+      },
       {
         "event_id": 12812989,
         "mins": 90,
@@ -119252,9 +120924,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 1.1639,
-      "form_xa_90": 0.0348,
-      "n": 13
+      "form_xg_90": 0.8063,
+      "form_xa_90": 0.055,
+      "n": 14
     },
     "v2": true
   },
@@ -119262,6 +120934,14 @@
     "name": "Alexander Sørloth",
     "team": "Norway",
     "matches": [
+      {
+        "event_id": 12813006,
+        "mins": 45,
+        "xg": 0.0,
+        "xa": 0.0087,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12812989,
         "mins": 71,
@@ -119404,9 +121084,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.2644,
-      "form_xa_90": 0.794,
-      "n": 13
+      "form_xg_90": 0.1287,
+      "form_xa_90": 0.3953,
+      "n": 14
     },
     "v2": true
   },
@@ -119414,6 +121094,14 @@
     "name": "Antonio Nusa",
     "team": "Norway",
     "matches": [
+      {
+        "event_id": 12813006,
+        "mins": 45,
+        "xg": 0.0,
+        "xa": 0.0194,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12812989,
         "mins": 71,
@@ -119564,9 +121252,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.0732,
-      "form_xa_90": 0.0637,
-      "n": 13
+      "form_xg_90": 0.0346,
+      "form_xa_90": 0.0505,
+      "n": 14
     },
     "v2": true
   },
@@ -119671,6 +121359,14 @@
     "name": "Andreas Schjelderup",
     "team": "Norway",
     "matches": [
+      {
+        "event_id": 12813006,
+        "mins": 45,
+        "xg": 0.0748,
+        "xa": 0.1988,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12812989,
         "mins": 19,
@@ -119821,9 +121517,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.16,
-      "form_xa_90": 0.2163,
-      "n": 9
+      "form_xg_90": 0.1512,
+      "form_xa_90": 0.3703,
+      "n": 10
     },
     "v2": true
   },
@@ -119984,6 +121680,14 @@
     "team": "Norway",
     "matches": [
       {
+        "event_id": 12813006,
+        "mins": 90,
+        "xg": 0.4734,
+        "xa": 0.087,
+        "goals": 0,
+        "weight": 20
+      },
+      {
         "event_id": 12812989,
         "mins": 90,
         "xg": 0.0281,
@@ -120125,9 +121829,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.1374,
-      "form_xa_90": 0.2599,
-      "n": 13
+      "form_xg_90": 0.3099,
+      "form_xa_90": 0.1711,
+      "n": 14
     },
     "v2": true
   },
@@ -120135,6 +121839,14 @@
     "name": "Oscar Bobb",
     "team": "Norway",
     "matches": [
+      {
+        "event_id": 12813006,
+        "mins": 45,
+        "xg": 0.0,
+        "xa": 0.0466,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12812989,
         "mins": 19,
@@ -120285,9 +121997,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.2294,
-      "form_xa_90": 0.1078,
-      "n": 10
+      "form_xg_90": 0.0349,
+      "form_xa_90": 0.0954,
+      "n": 11
     },
     "v2": true
   },
@@ -120295,6 +122007,14 @@
     "name": "Fredrik Aursnes",
     "team": "Norway",
     "matches": [
+      {
+        "event_id": 12813006,
+        "mins": 27,
+        "xg": 0.0,
+        "xa": 0.0045,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12812989,
         "mins": 15,
@@ -120368,9 +122088,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.0212,
-      "form_xa_90": 0.0581,
-      "n": 6
+      "form_xg_90": 0.0049,
+      "form_xa_90": 0.0249,
+      "n": 7
     },
     "v2": true
   },
@@ -120497,6 +122217,14 @@
     "name": "Julian Ryerson",
     "team": "Norway",
     "matches": [
+      {
+        "event_id": 12813006,
+        "mins": 63,
+        "xg": 0.0,
+        "xa": 0.0257,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 15186770,
         "mins": 13,
@@ -120631,9 +122359,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.0343,
-      "form_xa_90": 0.3363,
-      "n": 11
+      "form_xg_90": 0.0065,
+      "form_xa_90": 0.0933,
+      "n": 12
     },
     "v2": true
   },
@@ -120641,6 +122369,14 @@
     "name": "Sander Berge",
     "team": "Norway",
     "matches": [
+      {
+        "event_id": 12813006,
+        "mins": 90,
+        "xg": 0.0,
+        "xa": 0.0385,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12812989,
         "mins": 90,
@@ -120783,9 +122519,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.0043,
-      "form_xa_90": 0.0275,
-      "n": 13
+      "form_xg_90": 0.0021,
+      "form_xa_90": 0.0331,
+      "n": 14
     },
     "v2": true
   },
@@ -120793,6 +122529,14 @@
     "name": "Patrick Berg",
     "team": "Norway",
     "matches": [
+      {
+        "event_id": 12813006,
+        "mins": 90,
+        "xg": 0.0377,
+        "xa": 0.0204,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12812989,
         "mins": 90,
@@ -120943,9 +122687,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.0151,
-      "form_xa_90": 0.8255,
-      "n": 11
+      "form_xg_90": 0.0269,
+      "form_xa_90": 0.4038,
+      "n": 12
     },
     "v2": true
   },
@@ -121418,6 +123162,14 @@
     "team": "Norway",
     "matches": [
       {
+        "event_id": 12813006,
+        "mins": 1,
+        "xg": 0.0,
+        "xa": 0.0,
+        "goals": 0,
+        "weight": 20
+      },
+      {
         "event_id": 15186537,
         "mins": 90,
         "xg": 0.0704,
@@ -121570,6 +123322,14 @@
     "team": "Norway",
     "matches": [
       {
+        "event_id": 12813006,
+        "mins": 90,
+        "xg": 0.0,
+        "xa": 0.3371,
+        "goals": 0,
+        "weight": 20
+      },
+      {
         "event_id": 12812989,
         "mins": 90,
         "xg": 0.0,
@@ -121711,9 +123471,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.0239,
-      "form_xa_90": 0.0111,
-      "n": 13
+      "form_xg_90": 0.0116,
+      "form_xa_90": 0.1784,
+      "n": 14
     },
     "v2": true
   },
@@ -121721,6 +123481,14 @@
     "name": "David Møller Wolfe",
     "team": "Norway",
     "matches": [
+      {
+        "event_id": 12813006,
+        "mins": 89,
+        "xg": 0.0,
+        "xa": 0.0116,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12812989,
         "mins": 90,
@@ -121863,9 +123631,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.0058,
-      "form_xa_90": 0.0909,
-      "n": 12
+      "form_xg_90": 0.0028,
+      "form_xa_90": 0.0499,
+      "n": 13
     },
     "v2": true
   },
@@ -121873,6 +123641,14 @@
     "name": "Torbjørn Heggem",
     "team": "Norway",
     "matches": [
+      {
+        "event_id": 12813006,
+        "mins": 90,
+        "xg": 0.0,
+        "xa": 0.0103,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12812989,
         "mins": 90,
@@ -122015,9 +123791,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.2781,
-      "form_xa_90": 0.0052,
-      "n": 12
+      "form_xg_90": 0.134,
+      "form_xa_90": 0.0078,
+      "n": 13
     },
     "v2": true
   },
@@ -122306,6 +124082,14 @@
     "team": "Norway",
     "matches": [
       {
+        "event_id": 12813006,
+        "mins": 90,
+        "xg": 0.0,
+        "xa": 0.0026,
+        "goals": 0,
+        "weight": 20
+      },
+      {
         "event_id": 12812989,
         "mins": 90,
         "xg": 0.0,
@@ -122448,8 +124232,8 @@
     ],
     "form": {
       "form_xg_90": 0.0,
-      "form_xa_90": 0.0041,
-      "n": 13
+      "form_xa_90": 0.0033,
+      "n": 14
     },
     "v2": true
   },
@@ -122600,6 +124384,14 @@
     "team": "Argentina",
     "matches": [
       {
+        "event_id": 12812993,
+        "mins": 90,
+        "xg": 1.0079,
+        "xa": 0.972,
+        "goals": 1,
+        "weight": 20
+      },
+      {
         "event_id": 12812999,
         "mins": 120,
         "xg": 1.33,
@@ -122749,9 +124541,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.9824,
-      "form_xa_90": 0.5189,
-      "n": 14
+      "form_xg_90": 0.9952,
+      "form_xa_90": 0.7459,
+      "n": 15
     },
     "v2": true
   },
@@ -122759,6 +124551,14 @@
     "name": "Julián Alvarez",
     "team": "Argentina",
     "matches": [
+      {
+        "event_id": 12812993,
+        "mins": 89,
+        "xg": 0.3083,
+        "xa": 0.1368,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12812999,
         "mins": 57,
@@ -122909,9 +124709,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.2116,
-      "form_xa_90": 0.1321,
-      "n": 14
+      "form_xg_90": 0.2618,
+      "form_xa_90": 0.1352,
+      "n": 15
     },
     "v2": true
   },
@@ -122919,6 +124719,14 @@
     "name": "Lautaro Martínez",
     "team": "Argentina",
     "matches": [
+      {
+        "event_id": 12812993,
+        "mins": 24,
+        "xg": 0.4319,
+        "xa": 0.1195,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12812999,
         "mins": 63,
@@ -123069,9 +124877,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.3236,
-      "form_xa_90": 0.2799,
-      "n": 12
+      "form_xg_90": 0.9768,
+      "form_xa_90": 0.3647,
+      "n": 13
     },
     "v2": true
   },
@@ -123154,6 +124962,14 @@
     "name": "Enzo Fernández",
     "team": "Argentina",
     "matches": [
+      {
+        "event_id": 12812993,
+        "mins": 90,
+        "xg": 0.2528,
+        "xa": 0.5587,
+        "goals": 1,
+        "weight": 20
+      },
       {
         "event_id": 12812999,
         "mins": 120,
@@ -123296,9 +125112,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.1863,
-      "form_xa_90": 0.0564,
-      "n": 13
+      "form_xg_90": 0.2204,
+      "form_xa_90": 0.3143,
+      "n": 14
     },
     "v2": true
   },
@@ -123436,6 +125252,14 @@
     "name": "Alexis Mac Allister",
     "team": "Argentina",
     "matches": [
+      {
+        "event_id": 12812993,
+        "mins": 90,
+        "xg": 0.4067,
+        "xa": 0.1805,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12812999,
         "mins": 120,
@@ -123586,9 +125410,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.0899,
-      "form_xa_90": 0.0633,
-      "n": 13
+      "form_xg_90": 0.2493,
+      "form_xa_90": 0.1222,
+      "n": 14
     },
     "v2": true
   },
@@ -123596,6 +125420,14 @@
     "name": "Rodrigo De Paul",
     "team": "Argentina",
     "matches": [
+      {
+        "event_id": 12812993,
+        "mins": 66,
+        "xg": 0.0383,
+        "xa": 0.2136,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12812999,
         "mins": 84,
@@ -123738,9 +125570,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.0071,
-      "form_xa_90": 0.4872,
-      "n": 12
+      "form_xg_90": 0.0304,
+      "form_xa_90": 0.3861,
+      "n": 13
     },
     "v2": true
   },
@@ -123909,6 +125741,14 @@
     "team": "Argentina",
     "matches": [
       {
+        "event_id": 12812993,
+        "mins": 90,
+        "xg": 0.0273,
+        "xa": 0.2103,
+        "goals": 0,
+        "weight": 20
+      },
+      {
         "event_id": 12812999,
         "mins": 36,
         "xg": 0.02,
@@ -124058,9 +125898,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.0403,
-      "form_xa_90": 0.0941,
-      "n": 11
+      "form_xg_90": 0.0335,
+      "form_xa_90": 0.1551,
+      "n": 12
     },
     "v2": true
   },
@@ -124221,6 +126061,14 @@
     "team": "Argentina",
     "matches": [
       {
+        "event_id": 12812993,
+        "mins": 24,
+        "xg": 0.0,
+        "xa": 0.2346,
+        "goals": 0,
+        "weight": 20
+      },
+      {
         "event_id": 12812999,
         "mins": 56,
         "xg": 0.23,
@@ -124362,9 +126210,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.373,
-      "form_xa_90": 0.1097,
-      "n": 13
+      "form_xg_90": 0.1815,
+      "form_xa_90": 0.505,
+      "n": 14
     },
     "v2": true
   },
@@ -124741,6 +126589,14 @@
     "team": "Argentina",
     "matches": [
       {
+        "event_id": 12812993,
+        "mins": 90,
+        "xg": 0.0194,
+        "xa": 0.0211,
+        "goals": 0,
+        "weight": 20
+      },
+      {
         "event_id": 12812999,
         "mins": 120,
         "xg": 0.05,
@@ -124882,9 +126738,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.0395,
-      "form_xa_90": 0.2727,
-      "n": 12
+      "form_xg_90": 0.029,
+      "form_xa_90": 0.142,
+      "n": 13
     },
     "v2": true
   },
@@ -124892,6 +126748,14 @@
     "name": "Cristian Romero",
     "team": "Argentina",
     "matches": [
+      {
+        "event_id": 12812993,
+        "mins": 89,
+        "xg": 0.3505,
+        "xa": 0.0187,
+        "goals": 1,
+        "weight": 20
+      },
       {
         "event_id": 12812999,
         "mins": 120,
@@ -125034,9 +126898,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.0623,
-      "form_xa_90": 0.0276,
-      "n": 13
+      "form_xg_90": 0.2123,
+      "form_xa_90": 0.0231,
+      "n": 14
     },
     "v2": true
   },
@@ -125044,6 +126908,14 @@
     "name": "Nicolás Otamendi",
     "team": "Argentina",
     "matches": [
+      {
+        "event_id": 12812993,
+        "mins": 1,
+        "xg": 0.0,
+        "xa": 0.0,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 15186734,
         "mins": 90,
@@ -125197,6 +127069,14 @@
     "team": "Argentina",
     "matches": [
       {
+        "event_id": 12812993,
+        "mins": 73,
+        "xg": 0.0,
+        "xa": 0.015,
+        "goals": 0,
+        "weight": 20
+      },
+      {
         "event_id": 12812999,
         "mins": 104,
         "xg": 0.0,
@@ -125339,8 +127219,8 @@
     ],
     "form": {
       "form_xg_90": 0.0,
-      "form_xa_90": 0.0397,
-      "n": 13
+      "form_xa_90": 0.0288,
+      "n": 14
     },
     "v2": true
   },
@@ -125348,6 +127228,14 @@
     "name": "Nicolás Tagliafico",
     "team": "Argentina",
     "matches": [
+      {
+        "event_id": 12812993,
+        "mins": 66,
+        "xg": 0.0,
+        "xa": 0.1914,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12812999,
         "mins": 34,
@@ -125498,9 +127386,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.003,
-      "form_xa_90": 0.1006,
-      "n": 13
+      "form_xg_90": 0.0014,
+      "form_xa_90": 0.1844,
+      "n": 14
     },
     "v2": true
   },
@@ -125508,6 +127396,14 @@
     "name": "Gonzalo Montiel",
     "team": "Argentina",
     "matches": [
+      {
+        "event_id": 12812993,
+        "mins": 17,
+        "xg": 0.0,
+        "xa": 0.3644,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12812999,
         "mins": 16,
@@ -125771,6 +127667,14 @@
     "team": "Argentina",
     "matches": [
       {
+        "event_id": 12812993,
+        "mins": 1,
+        "xg": 0.0,
+        "xa": 0.0,
+        "goals": 0,
+        "weight": 20
+      },
+      {
         "event_id": 12812999,
         "mins": 86,
         "xg": 0.0,
@@ -125867,6 +127771,14 @@
     "name": "Emiliano Martínez",
     "team": "Argentina",
     "matches": [
+      {
+        "event_id": 12812993,
+        "mins": 90,
+        "xg": 0.0,
+        "xa": 0.0018,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12812999,
         "mins": 120,
@@ -126018,8 +127930,8 @@
     ],
     "form": {
       "form_xg_90": 0.0,
-      "form_xa_90": 0.0001,
-      "n": 14
+      "form_xa_90": 0.001,
+      "n": 15
     },
     "v2": true
   },
@@ -148235,6 +150147,14 @@
     "team": "Paraguay",
     "matches": [
       {
+        "event_id": 12813010,
+        "mins": 90,
+        "xg": 0.0,
+        "xa": 0.0019,
+        "goals": 0,
+        "weight": 20
+      },
+      {
         "event_id": 12813014,
         "mins": 120,
         "xg": 0.0,
@@ -148384,9 +150304,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.0051,
-      "form_xa_90": 0.0088,
-      "n": 14
+      "form_xg_90": 0.0025,
+      "form_xa_90": 0.0053,
+      "n": 15
     },
     "v2": true
   },
@@ -165024,6 +166944,14 @@
     "team": "Canada",
     "matches": [
       {
+        "event_id": 12813009,
+        "mins": 90,
+        "xg": 0.0527,
+        "xa": 0.0345,
+        "goals": 0,
+        "weight": 20
+      },
+      {
         "event_id": 12813000,
         "mins": 90,
         "xg": 0.0,
@@ -165063,9 +166991,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.0236,
-      "form_xa_90": 0.2069,
-      "n": 4
+      "form_xg_90": 0.0388,
+      "form_xa_90": 0.1165,
+      "n": 5
     },
     "v2": true
   },
@@ -165073,6 +167001,14 @@
     "name": "Stephen Eustaquio",
     "team": "Canada",
     "matches": [
+      {
+        "event_id": 12813009,
+        "mins": 90,
+        "xg": 0.0,
+        "xa": 0.2111,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12813000,
         "mins": 90,
@@ -165113,9 +167049,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.0864,
-      "form_xa_90": 0.5093,
-      "n": 4
+      "form_xg_90": 0.0411,
+      "form_xa_90": 0.353,
+      "n": 5
     },
     "v2": true
   },
@@ -165123,6 +167059,14 @@
     "name": "Jacob Shaffelburg",
     "team": "Canada",
     "matches": [
+      {
+        "event_id": 12813009,
+        "mins": 12,
+        "xg": 0.0,
+        "xa": 0.0265,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12813000,
         "mins": 20,
@@ -165173,6 +167117,14 @@
     "name": "Promise David",
     "team": "Canada",
     "matches": [
+      {
+        "event_id": 12813009,
+        "mins": 12,
+        "xg": 0.0,
+        "xa": 0.0138,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 12813000,
         "mins": 20,
@@ -165250,6 +167202,14 @@
     "team": "Canada",
     "matches": [
       {
+        "event_id": 12813009,
+        "mins": 90,
+        "xg": 0.0,
+        "xa": 0.0082,
+        "goals": 0,
+        "weight": 20
+      },
+      {
         "event_id": 12813000,
         "mins": 59,
         "xg": 0.2625,
@@ -165281,9 +167241,9 @@
       }
     ],
     "form": {
-      "form_xg_90": 0.3129,
-      "form_xa_90": 0.0252,
-      "n": 3
+      "form_xg_90": 0.1428,
+      "form_xa_90": 0.016,
+      "n": 4
     },
     "v2": true
   },
@@ -165333,6 +167293,14 @@
     "name": "Jayden Nelson",
     "team": "Canada",
     "matches": [
+      {
+        "event_id": 12813009,
+        "mins": 13,
+        "xg": 0.0308,
+        "xa": 0.0098,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 15186798,
         "mins": 1089,
@@ -165444,6 +167412,14 @@
     "team": "Brazil",
     "matches": [
       {
+        "event_id": 12813006,
+        "mins": 11,
+        "xg": 0.0276,
+        "xa": 0.0011,
+        "goals": 0,
+        "weight": 20
+      },
+      {
         "event_id": 15186856,
         "mins": 9,
         "xg": 0.2456,
@@ -165477,6 +167453,14 @@
     "name": "Marwane Saadane",
     "team": "Morocco",
     "matches": [
+      {
+        "event_id": 12813009,
+        "mins": 13,
+        "xg": 0.0,
+        "xa": 0.0,
+        "goals": 0,
+        "weight": 20
+      },
       {
         "event_id": 15186859,
         "mins": 1089,

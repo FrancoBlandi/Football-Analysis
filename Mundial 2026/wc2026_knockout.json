@@ -340,7 +340,9 @@
       "p_draw": 0.159,
       "p_away_win": 0.783,
       "r32_home_eid": 90000001,
-      "r32_away_eid": 90000002
+      "r32_away_eid": 90000002,
+      "score_home": 0,
+      "score_away": 1
     },
     {
       "event_id": 90000102,
@@ -359,7 +361,9 @@
       "p_draw": 0.387,
       "p_away_win": 0.339,
       "r32_home_eid": 90000003,
-      "r32_away_eid": 90000004
+      "r32_away_eid": 90000004,
+      "score_home": 0,
+      "score_away": 3
     },
     {
       "event_id": 90000103,
@@ -378,7 +382,9 @@
       "p_draw": 0.257,
       "p_away_win": 0.667,
       "r32_home_eid": 90000005,
-      "r32_away_eid": 90000006
+      "r32_away_eid": 90000006,
+      "score_home": 0,
+      "score_away": 1
     },
     {
       "event_id": 90000104,
@@ -397,7 +403,9 @@
       "p_draw": 0.246,
       "p_away_win": 0.405,
       "r32_home_eid": 90000007,
-      "r32_away_eid": 90000008
+      "r32_away_eid": 90000008,
+      "score_home": 1,
+      "score_away": 4
     },
     {
       "event_id": 90000105,
@@ -416,7 +424,9 @@
       "p_draw": 0.144,
       "p_away_win": 0.102,
       "r32_home_eid": 90000009,
-      "r32_away_eid": 90000010
+      "r32_away_eid": 90000010,
+      "score_home": 1,
+      "score_away": 2
     },
     {
       "event_id": 90000106,
@@ -435,7 +445,9 @@
       "p_draw": 0.353,
       "p_away_win": 0.297,
       "r32_home_eid": 90000011,
-      "r32_away_eid": 90000012
+      "r32_away_eid": 90000012,
+      "score_home": 2,
+      "score_away": 3
     },
     {
       "event_id": 90000107,
@@ -454,7 +466,9 @@
       "p_draw": 0.137,
       "p_away_win": 0.045,
       "r32_home_eid": 90000013,
-      "r32_away_eid": 90000014
+      "r32_away_eid": 90000014,
+      "score_home": 3,
+      "score_away": 2
     },
     {
       "event_id": 90000108,
@@ -473,7 +487,9 @@
       "p_draw": 0.274,
       "p_away_win": 0.483,
       "r32_home_eid": 90000015,
-      "r32_away_eid": 90000016
+      "r32_away_eid": 90000016,
+      "score_home": 4,
+      "score_away": 3
     }
   ],
   "semifinales": [
@@ -487,7 +503,7 @@
       "away_name": "Morocco",
       "timestamp": 1784408400,
       "date": "2026-07-18",
-      "confirmed": false,
+      "confirmed": true,
       "lambda_home": 0.9171,
       "lambda_away": 0.7521,
       "p_home_win": 0.375,
@@ -506,7 +522,7 @@
       "away_name": "Belgium",
       "timestamp": 1784408400,
       "date": "2026-07-18",
-      "confirmed": false,
+      "confirmed": true,
       "lambda_home": 1.6244,
       "lambda_away": 0.2303,
       "p_home_win": 0.731,
@@ -519,18 +535,18 @@
       "event_id": 90000203,
       "round": "Cuartos de Final",
       "round_num": 6,
-      "home_id": 4748,
-      "home_name": "Brazil",
-      "away_id": 4781,
-      "away_name": "Mexico",
+      "home_id": 4475,
+      "home_name": "Norway",
+      "away_id": 4713,
+      "away_name": "England",
       "timestamp": 1784494800,
       "date": "2026-07-19",
-      "confirmed": false,
-      "lambda_home": 0.8076,
-      "lambda_away": 0.5725,
-      "p_home_win": 0.38,
-      "p_draw": 0.382,
-      "p_away_win": 0.238,
+      "confirmed": true,
+      "lambda_home": 1.3029,
+      "lambda_away": 2.5861,
+      "p_home_win": 0.175,
+      "p_draw": 0.175,
+      "p_away_win": 0.645,
       "r16_home_eid": 90000105,
       "r16_away_eid": 90000106
     },
@@ -540,16 +556,16 @@
       "round_num": 6,
       "home_id": 4819,
       "home_name": "Argentina",
-      "away_id": 4820,
-      "away_name": "Colombia",
+      "away_id": 4699,
+      "away_name": "Switzerland",
       "timestamp": 1784494800,
       "date": "2026-07-19",
-      "confirmed": false,
-      "lambda_home": 1.0911,
-      "lambda_away": 0.4647,
-      "p_home_win": 0.511,
-      "p_draw": 0.332,
-      "p_away_win": 0.156,
+      "confirmed": true,
+      "lambda_home": 2.1452,
+      "lambda_away": 0.5797,
+      "p_home_win": 0.735,
+      "p_draw": 0.176,
+      "p_away_win": 0.087,
       "r16_home_eid": 90000107,
       "r16_away_eid": 90000108
     }

@@ -33,7 +33,14 @@ ROUND_NUM    = 5    # Octavos = Round of 16 en nuestro sistema
 # Si están vacíos, el script los descubre automáticamente desde la API.
 # Formato: {event_id: {"home": "Team A", "away": "Team B", "sh": 0, "sa": 0, "pens": None}}
 KO_OCTAVOS_EIDS = {
-    # Descubiertos dinámicamente — se completan durante el run
+    12812990: {"home": "Portugal",     "away": "Spain",      "sh": 0, "sa": 1, "pens": None},
+    12812991: {"home": "Switzerland",  "away": "Colombia",   "sh": 4, "sa": 3, "pens": None},
+    12812993: {"home": "Argentina",    "away": "Egypt",      "sh": 3, "sa": 2, "pens": None},
+    12813002: {"home": "USA",          "away": "Belgium",    "sh": 1, "sa": 4, "pens": None},
+    12813006: {"home": "Brazil",       "away": "Norway",     "sh": 1, "sa": 2, "pens": None},
+    12813007: {"home": "Mexico",       "away": "England",    "sh": 2, "sa": 3, "pens": None},
+    12813009: {"home": "Canada",       "away": "Morocco",    "sh": 0, "sa": 3, "pens": None},
+    12813010: {"home": "Paraguay",     "away": "France",     "sh": 0, "sa": 1, "pens": None},
 }
 
 
